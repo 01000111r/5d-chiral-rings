@@ -1,0 +1,13 @@
+id: su3_nf5_k3o2_to_manifest
+source_theory_id: su3_nf5_k3o2_infinite
+parent_simple_factor: A5
+child_simple_factor: A4
+embedding_type: A_n_to_A_n_minus_1_u1
+child_display_name: SU(5)
+raw_branching_u1_name: x
+preserved_abelian_factors: [q]
+normalization:
+  parent_fundamental: [1, 0, 0, 0, 0]
+  branches:
+    - {child_dynkin_labels: [1, 0, 0, 0], x_charge: 1}
+    - {child_dynkin_labels: [0, 0, 0, 0], x_charge: -5}

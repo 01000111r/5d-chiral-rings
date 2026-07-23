@@ -1,0 +1,171 @@
+{
+  "branching_id": "su3_nf5_k3o2_to_manifest",
+  "charge_vector_order": [
+    "x",
+    "q"
+  ],
+  "child_simple_factor": "A4",
+  "embedding_type": "A_n_to_A_n_minus_1_u1",
+  "generator_candidates_by_t_degree": {
+    "2": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "signed_multiplicity": 2,
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "signed_multiplicity": 1,
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "signed_multiplicity": 1,
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "signed_multiplicity": 1,
+        "t_degree": 2
+      }
+    ],
+    "3": [
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "signed_multiplicity": 1,
+        "t_degree": 3
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "signed_multiplicity": 1,
+        "t_degree": 3
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "signed_multiplicity": 1,
+        "t_degree": 3
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "signed_multiplicity": 1,
+        "t_degree": 3
+      }
+    ]
+  },
+  "maximum_t_degree": 10,
+  "parent_simple_factor": "A5",
+  "raw_charge_basis": true,
+  "theory_id": "su3_nf5_k3o2_infinite"
+}

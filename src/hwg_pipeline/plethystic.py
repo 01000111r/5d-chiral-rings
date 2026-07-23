@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 from math import prod
 
-from sage.all import QQ, ZZ, moebius
+from sage.all import QQ, ZZ, factorial, moebius
 
 from .characters import RepresentationContent
 from .sage_backend import adams_decomposition, irrep_dimension, tensor_product
@@ -123,6 +123,46 @@ def formal_logarithm(series, max_degree=None):
     return result
 
 
+def formal_exp(series, max_degree=None):
+    """Return the exact, t-adically truncated ordinary exponential.
+
+    This is deliberately separate from :func:`plethystic_exponential`: no
+    Adams operations occur here.  Every product is formed by the truncated
+    ``VirtualCharacterSeries.__mul__`` operation.
+    """
+    maximum = ZZ(series.max_degree if max_degree is None else max_degree)
+    source = VirtualCharacterSeries(series.theory, series.terms, maximum)
+    if any(degree == 0 for (degree, _), _ in source):
+        raise ValueError("formal exponential requires zero constant term")
+    neutral = tuple((a.id, QQ.zero()) for a in source.theory.abelian_factors)
+    unit = VirtualCharacterSeries(source.theory, [
+        ((ZZ.zero(), neutral),
+         VirtualRepresentationContent.trivial(source.theory.simple_factors))
+    ], maximum)
+    result, power = unit, unit
+    # Positive integral t-degrees imply that no power beyond D contributes.
+    for n in range(1, int(maximum) + 1):
+        power = power * source
+        if not power.terms:
+            break
+        result = result + QQ.one() / factorial(n) * power
+    return result
+
+
+def plethystic_exponential(virtual_series, max_degree):
+    """Exact refined PE, ``exp(sum_k psi_k(F)/k)``, through ``max_degree``."""
+    maximum = ZZ(max_degree)
+    source = VirtualCharacterSeries(virtual_series.theory,
+                                    virtual_series.terms, maximum)
+    if any(degree == 0 for (degree, _), _ in source):
+        raise ValueError("plethystic exponential requires zero constant term")
+    exponent = VirtualCharacterSeries(source.theory, (), maximum)
+    minimum = min((degree for (degree, _), _ in source), default=maximum + 1)
+    for k in range(1, int(maximum // minimum) + 1):
+        exponent = exponent + (QQ.one() / k) * adams_series(source, k, maximum)
+    return formal_exp(exponent, maximum)
+
+
 def adams_series(series, k, max_degree):
     if isinstance(k, bool) or k not in ZZ or ZZ(k) <= 0: raise ValueError("k must be a positive integer")
     k, maximum, out = ZZ(k), ZZ(max_degree), []
@@ -166,3 +206,26 @@ def scalar_plethystic_logarithm(coefficients, max_degree):
             answer += (QQ(moebius(k))/k)*(QQ((-1)**(n+1))/n)*power
             power=(power*u).truncate(max_degree+1)
     return tuple((ZZ(d), QQ(answer[d])) for d in range(1,int(max_degree)+1) if answer[d])
+
+
+def scalar_plethystic_exponential(coefficients, max_degree):
+    """Independent exact scalar PE for ``(degree, coefficient)`` pairs."""
+    maximum = ZZ(max_degree)
+    data = tuple((ZZ(d), QQ(c)) for d, c in coefficients if QQ(c))
+    if any(d == 0 for d, _ in data):
+        raise ValueError("scalar plethystic exponential requires zero constant term")
+    if any(d < 0 for d, _ in data):
+        raise ValueError("degrees must be nonnegative")
+    R = QQ['t']; t = R.gen(); exponent = R.zero()
+    minimum = min((d for d, _ in data), default=maximum + 1)
+    for k in range(1, int(maximum // minimum) + 1):
+        exponent += sum((c / k) * t ** (d * k) for d, c in data
+                        if d * k <= maximum)
+    result, power = R.one(), R.one()
+    for n in range(1, int(maximum) + 1):
+        power = (power * exponent).truncate(maximum + 1)
+        if not power:
+            break
+        result += power / factorial(n)
+    return tuple((ZZ(d), QQ(result[d])) for d in range(int(maximum) + 1)
+                 if result[d])

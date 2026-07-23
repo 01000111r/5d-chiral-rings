@@ -1,0 +1,8927 @@
+{
+  "branching_id": "su3_nf5_k3o2_to_manifest",
+  "charge_vector_order": [
+    "x",
+    "q"
+  ],
+  "child_simple_factor": "A4",
+  "coefficients_by_t_degree": {
+    "0": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 0
+      }
+    ],
+    "10": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "multiplicity": 6,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-24"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-30",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          5
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-30"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 224,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 50,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-16",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "child_representation_dimension": 420,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-16"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "14",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          4
+        ],
+        "child_representation_dimension": 540,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 75,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          3
+        ],
+        "child_representation_dimension": 1440,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          3,
+          0
+        ],
+        "child_representation_dimension": 980,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 50,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1200,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1120,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "child_representation_dimension": 1176,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          2,
+          1
+        ],
+        "child_representation_dimension": 3780,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "10",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          3,
+          0,
+          1
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          3,
+          1,
+          0
+        ],
+        "child_representation_dimension": 980,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 9,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 7,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "14",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          5
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-24"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 945,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-24"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 945,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 720,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          2
+        ],
+        "child_representation_dimension": 1701,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          3,
+          0
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          4
+        ],
+        "child_representation_dimension": 2000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1024,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "child_representation_dimension": 5120,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "child_representation_dimension": 1120,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "child_representation_dimension": 3675,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "10",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 720,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1890,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1890,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "child_representation_dimension": 4000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          1,
+          0
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "child_representation_dimension": 3675,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "child_representation_dimension": 8750,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          2,
+          0
+        ],
+        "child_representation_dimension": 3780,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          2,
+          1
+        ],
+        "child_representation_dimension": 12000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "-14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 7,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-20",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-20"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 9,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "20",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "20"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 6,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "14",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          5
+        ],
+        "child_representation_dimension": 1540,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "14",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 1890,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 1890,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          2
+        ],
+        "child_representation_dimension": 4410,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 2625,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          4
+        ],
+        "child_representation_dimension": 4950,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 6125,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          3
+        ],
+        "child_representation_dimension": 12320,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          2,
+          0
+        ],
+        "child_representation_dimension": 2700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "child_representation_dimension": 8750,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "16",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 420,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "16"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "10",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1701,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 4410,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 6,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1000,
+        "multiplicity": 6,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 1925,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          5
+        ],
+        "child_representation_dimension": 3360,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-14"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2625,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 5390,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 1200,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 4000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "10",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 224,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "10"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 945,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 945,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "24"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 5390,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          4
+        ],
+        "child_representation_dimension": 10080,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 1440,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 5120,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 12320,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          1,
+          3
+        ],
+        "child_representation_dimension": 24576,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "24"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1925,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 3675,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          5
+        ],
+        "child_representation_dimension": 6370,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 540,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 4950,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 10080,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "30",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          5,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "30"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          5,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "24"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          5,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1540,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          5,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 3360,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          5,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 6370,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          5,
+          0,
+          0,
+          5
+        ],
+        "child_representation_dimension": 10976,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 10
+      }
+    ],
+    "2": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 2
+      }
+    ],
+    "3": [
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 3
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 3
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 3
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 3
+      }
+    ],
+    "4": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 75,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 4
+      }
+    ],
+    "5": [
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 5
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 5
+      }
+    ],
+    "6": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 50,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 75,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 50,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1024,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 6
+      }
+    ],
+    "7": [
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-14"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-16",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-16"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "16",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "16"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "14",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "14"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 7
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 7
+      }
+    ],
+    "8": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-24"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 50,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-10"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 75,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 50,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1120,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          2,
+          0
+        ],
+        "child_representation_dimension": 1176,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 7,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "14",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "14"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "8",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "8"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-18"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 720,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-4"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1024,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "child_representation_dimension": 1120,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "10",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "10"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 720,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-14"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 6,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "4",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "4"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 2625,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 6125,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-8"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1000,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 1925,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2625,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "24",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "24"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "18",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "18"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "12",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "12"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "6",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1925,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "6"
+        },
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 3675,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "t_degree": 8
+      }
+    ],
+    "9": [
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "12",
+          "-3"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-3",
+          "x": "12"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "6",
+          "-3"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-3",
+          "x": "6"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-20",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 224,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-20"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-3"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-3",
+          "x": "0"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "-3"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          3,
+          0
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-3",
+          "x": "-6"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 10,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-16",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          2,
+          1
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          1,
+          0
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1120,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "6",
+          "3"
+        ],
+        "child_dynkin_labels": [
+          0,
+          3,
+          0,
+          0
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "3",
+          "x": "6"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "multiplicity": 4,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-16",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-22",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-22"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 45,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 945,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-14",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 720,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 40,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "16",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1024,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1024,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "child_representation_dimension": 1120,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          2,
+          1
+        ],
+        "child_representation_dimension": 3675,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "0",
+          "3"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 175,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "3",
+          "x": "0"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "14",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 720,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1890,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          1,
+          0
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "child_representation_dimension": 3675,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 15,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 5,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "16",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 200,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-16",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 126,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-16",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 480,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 560,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-8",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          2,
+          1
+        ],
+        "child_representation_dimension": 1890,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-6",
+          "3"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "3",
+          "x": "-6"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "14",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 105,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 1215,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 2625,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          0
+        ],
+        "child_representation_dimension": 700,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-12",
+          "3"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "3",
+          "x": "-12"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "multiplicity": 2,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "22",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 160,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "22"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "16",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 450,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1000,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 1925,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "16",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 280,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "16"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-10",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "10",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 1050,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "10"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "4",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2625,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "4"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          1,
+          3
+        ],
+        "child_representation_dimension": 5390,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "20",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 224,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "20"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "14",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 945,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 2520,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          1,
+          0,
+          3
+        ],
+        "child_representation_dimension": 5390,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "14",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 70,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "14"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "8",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 315,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "8"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "2",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 875,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "2"
+        },
+        "t_degree": 9
+      },
+      {
+        "charge_vector": [
+          "-4",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 1925,
+        "multiplicity": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-4"
+        },
+        "t_degree": 9
+      }
+    ]
+  },
+  "embedding_type": "A_n_to_A_n_minus_1_u1",
+  "maximum_t_degree": 10,
+  "parent_simple_factor": "A5",
+  "raw_charge_basis": true,
+  "theory_id": "su3_nf5_k3o2_infinite"
+}

@@ -16,6 +16,8 @@ from .plethystic import (dimension_refine_virtual, plethystic_logarithm,
                          VirtualCharacterSeries, VirtualRepresentationContent,
                          plethystic_exponential)
 from .operator_outputs import write_operator_outputs
+from .branching import load_branching_spec
+from .branching_outputs import write_branching_outputs
 
 
 def _root():
@@ -340,10 +342,12 @@ def main(argv=None):
                             ("characters", "restore irreducible characters and dimensions"),
                             ("plethystic-log", "compute the exact refined plethystic logarithm"),
                             ("reconstruct", "reconstruct a character series from its refined PL"),
-                            ("analyze-pl", "classify PL content and first relation channels")):
+                            ("analyze-pl", "classify PL content and first relation channels"),
+                            ("branch", "branch exact character content to a manifest subgroup")):
         command = commands.add_parser(name, help=help_text)
         command.add_argument("theory_id")
         command.add_argument("--order", required=True, type=int)
+        if name == "branch": command.add_argument("--branching", required=True)
     args = parser.parse_args(argv)
     if args.order < 0:
         parser.error("--order must be nonnegative")
@@ -364,11 +368,17 @@ def main(argv=None):
     elif args.command == "reconstruct":
         output.mkdir(parents=True, exist_ok=True)
         checks = _reconstruction_outputs(theory, args.order, pe, output)
-    else:
+    elif args.command == "analyze-pl":
         output.mkdir(parents=True, exist_ok=True)
         pl = _load_virtual_pl(theory, output / "refined_plethystic_logarithm.json", args.order)
         characters = json.loads((output / "character_series.json").read_text())
         checks = write_operator_outputs(theory, args.order, pl, characters, output)
+    else:
+        spec = load_branching_spec(root / "theories" / "branchings" / f"{args.branching}.yaml")
+        if spec.source_theory_id != theory.id:
+            parser.error("branching specification belongs to a different source theory")
+        checks = write_branching_outputs(theory, args.order, spec, output,
+                                         output / "manifest_branching")
     if not checks["all_passed"]:
         raise SystemExit("expansion validation failed")
 

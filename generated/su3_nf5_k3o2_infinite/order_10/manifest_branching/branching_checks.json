@@ -1,0 +1,2230 @@
+{
+  "branching_id": "su3_nf5_k3o2_to_manifest",
+  "dimension_checks": [
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 5040,
+      "parent_dimension": 5040,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        3,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2205,
+      "parent_dimension": 2205,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 18480,
+      "parent_dimension": 18480,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 6720,
+      "parent_dimension": 6720,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 93555,
+      "parent_dimension": 93555,
+      "parent_dynkin_labels": [
+        1,
+        2,
+        0,
+        2,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 405,
+      "parent_dimension": 405,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 29700,
+      "parent_dimension": 29700,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2695,
+      "parent_dimension": 2695,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        0,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 154791,
+      "parent_dimension": 154791,
+      "parent_dynkin_labels": [
+        3,
+        1,
+        0,
+        1,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 12740,
+      "parent_dimension": 12740,
+      "parent_dynkin_labels": [
+        4,
+        0,
+        0,
+        0,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 47628,
+      "parent_dimension": 47628,
+      "parent_dynkin_labels": [
+        5,
+        0,
+        0,
+        0,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 5040,
+      "parent_dimension": 5040,
+      "parent_dynkin_labels": [
+        0,
+        3,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2205,
+      "parent_dimension": 2205,
+      "parent_dynkin_labels": [
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 18480,
+      "parent_dimension": 18480,
+      "parent_dynkin_labels": [
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 405,
+      "parent_dimension": 405,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 405,
+      "parent_dimension": 405,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2695,
+      "parent_dimension": 2695,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        0,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2205,
+      "parent_dimension": 2205,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        2,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 6720,
+      "parent_dimension": 6720,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 405,
+      "parent_dimension": 405,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 29700,
+      "parent_dimension": 29700,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2695,
+      "parent_dimension": 2695,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        0,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 12740,
+      "parent_dimension": 12740,
+      "parent_dynkin_labels": [
+        4,
+        0,
+        0,
+        0,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2205,
+      "parent_dimension": 2205,
+      "parent_dynkin_labels": [
+        1,
+        2,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 490,
+      "parent_dimension": 490,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 19200,
+      "parent_dimension": 19200,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        2,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21504,
+      "parent_dimension": 21504,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        1,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 19200,
+      "parent_dimension": 19200,
+      "parent_dynkin_labels": [
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21504,
+      "parent_dimension": 21504,
+      "parent_dynkin_labels": [
+        3,
+        1,
+        0,
+        0,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 490,
+      "parent_dimension": 490,
+      "parent_dynkin_labels": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1701,
+      "parent_dimension": 1701,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1050,
+      "parent_dimension": 1050,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2430,
+      "parent_dimension": 2430,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 315,
+      "parent_dimension": 315,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1134,
+      "parent_dimension": 1134,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 490,
+      "parent_dimension": 490,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 840,
+      "parent_dimension": 840,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 896,
+      "parent_dimension": 896,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 175,
+      "parent_dimension": 175,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 280,
+      "parent_dimension": 280,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 490,
+      "parent_dimension": 490,
+      "parent_dynkin_labels": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3969,
+      "parent_dimension": 3969,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 896,
+      "parent_dimension": 896,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 405,
+      "parent_dimension": 405,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 280,
+      "parent_dimension": 280,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1134,
+      "parent_dimension": 1134,
+      "parent_dynkin_labels": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 840,
+      "parent_dimension": 840,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 2430,
+      "parent_dimension": 2430,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1050,
+      "parent_dimension": 1050,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 315,
+      "parent_dimension": 315,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1701,
+      "parent_dimension": 1701,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 175,
+      "parent_dimension": 175,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 896,
+      "parent_dimension": 896,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 175,
+      "parent_dimension": 175,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 280,
+      "parent_dimension": 280,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 896,
+      "parent_dimension": 896,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 280,
+      "parent_dimension": 280,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1470,
+      "parent_dimension": 1470,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1050,
+      "parent_dimension": 1050,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 315,
+      "parent_dimension": 315,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1701,
+      "parent_dimension": 1701,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 126,
+      "parent_dimension": 126,
+      "parent_dynkin_labels": [
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 126,
+      "parent_dimension": 126,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 105,
+      "parent_dimension": 105,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1470,
+      "parent_dimension": 1470,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1701,
+      "parent_dimension": 1701,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1050,
+      "parent_dimension": 1050,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 384,
+      "parent_dimension": 384,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 315,
+      "parent_dimension": 315,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 15,
+      "parent_dimension": 15,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "branched_dimension": 35,
+      "parent_dimension": 35,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true
+    }
+  ],
+  "theory_id": "su3_nf5_k3o2_infinite",
+  "validation_results": {
+    "all_parent_dimensions_preserved": true,
+    "all_passed": true,
+    "candidate_generator_dimension": true,
+    "character_unrefinement_preserved": true,
+    "first_relation_dimension": true,
+    "ordinary_multiplicities_nonnegative_integers": true,
+    "physical_charge_map_assumed": false,
+    "plethystic_log_unrefinement_preserved": true,
+    "q_charges_preserved": true,
+    "raw_charge_basis_only": true,
+    "reconstructed_character_branching_equal": true,
+    "signed_virtual_multiplicities_retained": true,
+    "t_degrees_preserved": true,
+    "x_charges_are_exact_integers": true
+  }
+}

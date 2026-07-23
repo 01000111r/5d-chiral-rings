@@ -1,0 +1,6 @@
+#!/bin/sh
+# Run Python inside the SageMath environment, preserving arguments and status.
+set -eu
+
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec "$script_dir/sage" -python "$@"

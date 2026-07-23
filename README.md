@@ -1,13 +1,14 @@
 # HWG Pipeline
 
-`hwg-pipeline` is the repository scaffold for a SageMath-only scientific
-codebase. Essential code is run with `sage -python`, ensuring that Sage's exact
-arithmetic and representation-theory facilities are available.
+`hwg-pipeline` is a SageMath-only scientific codebase. Essential code is run
+with `./scripts/sage-python`, ensuring that Sage's exact arithmetic and
+representation-theory facilities are available even when `sage` is not on the
+noninteractive shell's `PATH`.
 
-This initial version contains infrastructure and environment checks only. It
-does **not** implement HWG expansion, representation conversion, characters,
-plethystic functions, branching, charge maps, monopole formula calculations,
-or any other stage of the planned mathematical pipeline.
+The implemented stages expand structured HWGs, restore irreducible Sage
+characters, and compute exact dimension-refined and unrefined Hilbert series.
+Later stages such as Adams operations, plethystic logarithms, branching, charge
+maps, and monopole-formula calculations remain unimplemented.
 
 ## Environment
 
@@ -21,16 +22,24 @@ conda activate hwg-pipeline
 Install the package in editable mode and run its checks:
 
 ```console
-sage -python -m pip install -e .
+./scripts/sage-python -m pip install -e .
 make test
 make environment-check
 ```
 
+The launcher checks `HWG_SAGE_EXECUTABLE` first, then `sage` on `PATH`, and
+finally `$HOME/miniforge3/envs/hwg-sage/bin/sage`. For example:
+
+```console
+HWG_SAGE_EXECUTABLE=/opt/sage/bin/sage ./scripts/sage --version
+./scripts/sage-python -m hwg_pipeline characters su3_nf5_k3o2_infinite --order 10
+```
+
 ## Repository layout
 
-- `src/hwg_pipeline/`: generic implementation code (currently only the package
-  scaffold)
-- `tests/`: environment and, in future milestones, mathematical tests
+- `src/hwg_pipeline/`: generic exact-arithmetic pipeline implementation
+- `scripts/`: noninteractive Sage and Sage-Python launchers
+- `tests/`: environment and mathematical tests
 - `theories/`: theory-specific data
 - `references/overleaf/`: source LaTeX
 - `generated/`: generated outputs

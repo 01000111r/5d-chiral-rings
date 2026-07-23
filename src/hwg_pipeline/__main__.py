@@ -9,6 +9,7 @@ from sage.all import ZZ
 from .expansion import expand_hwg, expand_pe, expand_rational_product
 from .io import load_theory
 from .render import render_monomial
+from .characters import dimension_refine, restore_characters, unrefine
 
 
 def _root():
@@ -81,22 +82,118 @@ def _write_outputs(theory, order, series, checks, output):
     (output / "checks.md").write_text("\n".join(md) + "\n", encoding="utf-8")
 
 
+def _charge_dict(charges):
+    return {key: str(value) for key, value in charges}
+
+
+def _character_outputs(theory, order, hwg, output):
+    series = restore_characters(theory, hwg)
+    refined = dimension_refine(series)
+    plain = unrefine(series)
+    groups = {}
+    latex_groups = {}
+    for (degree, charges), content in series:
+        entries = groups.setdefault(str(degree), [])
+        rendered = latex_groups.setdefault(int(degree), [])
+        for labels, multiplicity in content:
+            entry = {
+                "abelian_charges": _charge_dict(charges),
+                "irreducible_representations": [
+                    {"cartan_factor_id": factor.id,
+                     "dynkin_labels": [int(x) for x in factor_labels]}
+                    for factor, factor_labels in zip(theory.simple_factors, labels)],
+                "multiplicity": int(multiplicity),
+            }
+            entries.append(entry)
+            reps = " ".join("[" + ",".join(str(x) for x in factor_labels) +
+                            rf"]_{{{factor.cartan_type}_{factor.rank}}}"
+                            for factor, factor_labels in zip(theory.simple_factors, labels))
+            charge = " ".join(_latex_power(key, value) for key, value in charges if value)
+            rendered.append(("" if multiplicity == 1 else str(multiplicity), reps, charge))
+    character_payload = {"theory_id": theory.id, "maximum_t_degree": int(order),
+                         "simple_factors": [{"cartan_factor_id": x.id,
+                                             "cartan_type": x.cartan_name}
+                                            for x in theory.simple_factors],
+                         "coefficients_by_t_degree": groups}
+    (output / "character_series.json").write_text(json.dumps(character_payload, indent=2, sort_keys=True) + "\n")
+    lines = [rf"% Irreducible-character series through $t^{{{order}}}$.", r"\begin{align*}", "H(t,q) = {}"]
+    pieces = []
+    for degree in sorted(latex_groups):
+        coefficient = " + ".join(" ".join(x for x in entry if x) for entry in latex_groups[degree])
+        pieces.append(rf"\left({coefficient}\right)t^{{{degree}}}")
+    lines[-1] += " \\\\\n  + ".join(pieces) if pieces else "0"
+    lines += [r"\end{align*}", ""]
+    (output / "character_series.tex").write_text("\n".join(lines))
+
+    refined_groups = {}
+    refined_latex = []
+    for (degree, charges), coefficient in refined:
+        refined_groups.setdefault(str(degree), []).append({
+            "abelian_charges": _charge_dict(charges), "coefficient": int(coefficient)})
+        refined_latex.append((int(degree), charges, coefficient))
+    refined_payload = {"theory_id": theory.id, "maximum_t_degree": int(order),
+                       "coefficients_by_t_degree": refined_groups}
+    (output / "q_refined_dimension_series.json").write_text(json.dumps(refined_payload, indent=2, sort_keys=True) + "\n")
+    rtex = [rf"% Exact q-refined dimension series through $t^{{{order}}}$.", r"\begin{align*}",
+            "H_{\\dim}(t,q) = " + " + ".join(
+                f"{coefficient}" + "".join(_latex_power(k, v) for k, v in charges if v) + rf"t^{{{degree}}}"
+                for degree, charges, coefficient in refined_latex), r"\end{align*}", ""]
+    (output / "q_refined_dimension_series.tex").write_text("\n".join(rtex))
+
+    plain_payload = {"theory_id": theory.id, "maximum_t_degree": int(order),
+                     "coefficients_by_t_degree": {str(d): int(c) for d, c in plain}}
+    (output / "unrefined_hilbert_series.json").write_text(json.dumps(plain_payload, indent=2, sort_keys=True) + "\n")
+    utex = [rf"% Exact unrefined Hilbert series through $t^{{{order}}}$.", r"\begin{align*}",
+            "H(t) = " + " + ".join(f"{c}t^{{{d}}}" for d, c in plain), r"\end{align*}", ""]
+    (output / "unrefined_hilbert_series.tex").write_text("\n".join(utex))
+
+    checks = {
+        "one_irrep_per_hwg_monomial_before_combining": len(hwg) == sum(len(c.terms) for _, c in series),
+        "t_degrees_preserved": sorted(set(m.t_degree for m, _ in hwg)) == sorted(set(s[0] for s, _ in series)),
+        "q_charges_preserved": sorted(set(m.abelian_charges for m, _ in hwg)) == sorted(set(s[1] for s, _ in series)),
+        "representation_multiplicities_nonnegative_integers": all(c in ZZ and c >= 0 for _, content in series for _, c in content),
+        "dimensions_nonnegative_integers": all(c in ZZ and c >= 0 for _, c in refined),
+        "q_equals_one_matches_unrefined": dict(plain) == {d: sum(c for (sd, _), c in refined if sd == d) for d, _ in plain},
+    }
+    expected = {0: 1, 1: 0, 2: 36, 3: 30, 4: 630}
+    actual = {int(d): int(c) for d, c in plain}
+    checks["leading_coefficients"] = all(actual.get(d, 0) == c for d, c in expected.items())
+    checks["all_passed"] = all(checks.values())
+    check_payload = {"theory_id": theory.id, "maximum_t_degree": int(order), "validation_results": checks}
+    (output / "character_checks.json").write_text(json.dumps(check_payload, indent=2, sort_keys=True) + "\n")
+    md = [f"# Character checks: `{theory.id}` through t^{order}", ""] + [
+        f"- **{'PASS' if value else 'FAIL'} — {key}**" for key, value in checks.items()]
+    (output / "character_checks.md").write_text("\n".join(md) + "\n")
+    return checks
+
+
+def _latex_power(name, value):
+    if value == 1: return name
+    return rf"{name}^{{{value}}}"
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="python -m hwg_pipeline")
     commands = parser.add_subparsers(dest="command", required=True)
-    expand = commands.add_parser("expand", help="expand a structured HWG")
-    expand.add_argument("theory_id")
-    expand.add_argument("--order", required=True, type=int)
+    for name, help_text in (("expand", "expand a structured HWG"),
+                            ("characters", "restore irreducible characters and dimensions")):
+        command = commands.add_parser(name, help=help_text)
+        command.add_argument("theory_id")
+        command.add_argument("--order", required=True, type=int)
     args = parser.parse_args(argv)
     if args.order < 0:
         parser.error("--order must be nonnegative")
     root = _root()
     theory = load_theory(root / "theories" / f"{args.theory_id}.yaml")
     pe = expand_pe(theory, args.order)
-    product = expand_rational_product(theory, args.order)
-    checks = _validations(theory, args.order, pe, product)
-    _write_outputs(theory, args.order, pe, checks,
-                   root / "generated" / theory.id / f"order_{args.order}")
+    output = root / "generated" / theory.id / f"order_{args.order}"
+    if args.command == "expand":
+        product = expand_rational_product(theory, args.order)
+        checks = _validations(theory, args.order, pe, product)
+        _write_outputs(theory, args.order, pe, checks, output)
+    else:
+        output.mkdir(parents=True, exist_ok=True)
+        checks = _character_outputs(theory, args.order, pe, output)
     if not checks["all_passed"]:
         raise SystemExit("expansion validation failed")
 

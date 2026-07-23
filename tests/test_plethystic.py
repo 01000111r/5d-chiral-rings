@@ -1,12 +1,14 @@
 import pytest
-from sage.all import QQ
+from sage.all import QQ, ZZ
 
 from hwg_pipeline.io import load_theory
 from hwg_pipeline.expansion import expand_pe
 from hwg_pipeline.characters import restore_characters
 from hwg_pipeline.model import SimpleGroupSpec
 from hwg_pipeline.plethystic import (VirtualCharacterSeries, VirtualRepresentationContent,
-    adams_series, formal_logarithm, plethystic_logarithm, unrefine_virtual)
+    adams_series, formal_exp, formal_logarithm, plethystic_exponential,
+    plethystic_logarithm, scalar_plethystic_exponential,
+    scalar_plethystic_logarithm, unrefine_virtual)
 
 
 def spec(letter, rank):
@@ -63,3 +65,39 @@ def test_physical_fixture_leading_terms_and_stability():
     assert tuple(pl11)[:len(tuple(pl))] == tuple(pl)
     assert all(c.denominator()==1 for _,x in pl for _,c in x)
     assert any(c<0 for _,x in pl for _,c in x)
+
+
+def test_exact_formal_exponential_and_validation():
+    theory,_=fixture_series(2); z=tuple((a.id,0) for a in theory.abelian_factors)
+    one=VirtualRepresentationContent.trivial(theory.simple_factors)
+    source=VirtualCharacterSeries(theory,[((2,z),one)],7)
+    snapshot=source.terms
+    result=unrefine_virtual(formal_exp(source,6))
+    assert result == ((0,QQ(1)),(2,QQ(1)),(4,QQ(1)/2),(6,QQ(1)/6))
+    assert source.terms == snapshot
+    assert formal_exp(source,6) == VirtualCharacterSeries(
+        formal_exp(source,7).theory, formal_exp(source,7).terms, 6)
+    with pytest.raises(ValueError):
+        formal_exp(VirtualCharacterSeries(theory,[((0,z),one)],6),6)
+    assert all(not isinstance(c,float) for _,x in formal_exp(source,6) for _,c in x)
+
+
+def test_scalar_plethystic_exponential_examples_and_round_trips():
+    assert scalar_plethystic_exponential(((2,1),),6) == tuple((d,QQ(1)) for d in (0,2,4,6))
+    assert scalar_plethystic_exponential(((2,1),(4,-1)),8) == ((0,QQ(1)),(2,QQ(1)))
+    assert scalar_plethystic_exponential(((2,2),),6) == ((0,QQ(1)),(2,QQ(2)),(4,QQ(3)),(6,QQ(4)))
+    for f in (((2,1),),((2,1),(4,-1)),((2,2),(3,-1))):
+        h=scalar_plethystic_exponential(f,10)
+        assert scalar_plethystic_logarithm(h,10) == tuple((ZZ(d),QQ(c)) for d,c in f)
+
+
+def test_a1_character_plethystic_exponential():
+    from types import SimpleNamespace
+    a1=spec("A",1)
+    theory=SimpleNamespace(simple_factors=(a1,),abelian_factors=())
+    v=VirtualRepresentationContent.single_irrep((a1,),((1,),))
+    f=VirtualCharacterSeries(theory,[((2,()),v)],6)
+    answer=plethystic_exponential(f,6)
+    assert {int(d):dict(content.terms) for (d,_),content in answer} == {
+        0:{((0,),):QQ(1)},2:{((1,),):QQ(1)},
+        4:{((2,),):QQ(1)},6:{((3,),):QQ(1)}}

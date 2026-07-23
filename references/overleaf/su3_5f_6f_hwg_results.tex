@@ -1,0 +1,164 @@
+\documentclass[9pt]{article}
+\usepackage[a4paper,margin=1.45cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+\setlength{\jot}{2pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{7pt}{2pt}
+\newcommand{\PE}{\operatorname{PE}}
+\newcommand{\HWG}{\operatorname{HWG}}
+\allowdisplaybreaks
+
+\begin{document}
+\small
+
+\begin{center}
+    {\large\bfseries Infinite-coupling HWGs for $SU(3)+6F$ and $SU(3)+5F$}\\[-1mm]
+    {\footnotesize General formulas from Ferlito--Hanany--Mekareeya--Zafrir and $N=3$ specialisations}
+\end{center}
+
+\textbf{Notation.}
+The paper uses $n$ for the gauge rank; here it is written as $N$.
+The $\mu_i$ are highest-weight fugacities, $q$ is a $U(1)$ fugacity, and
+$\nu,\nu_1,\nu_2$ are $SU(2)$ highest-weight fugacities. Results depend on $|k|$.
+
+\section*{$N_f=2N$: general formulas}
+
+\emph{$|k|=2$, $SO(4N)\times U(1)$} (paper eq.~(7.3)):
+\begin{equation}
+\HWG_{2N,2}=\PE\!\left[
+\sum_{i=1}^{N-1}\mu_{2i}t^{2i}+t^2+
+\left(q+q^{-1}\right)\mu_{2N}t^N
+\right].
+\end{equation}
+
+\emph{$|k|=1$, $SU(2N+1)\times U(1)$} (paper eq.~(8.3)):
+\begin{equation}
+\HWG_{2N,1}=\PE\!\left[
+\sum_{i=1}^{N-1}\mu_i\mu_{2N-i+1}t^{2i}+t^2+
+\left(q\mu_N+q^{-1}\mu_{N+1}\right)t^N
+\right].
+\end{equation}
+
+\emph{$k=0$, $SU(2N)\times SU(2)\times SU(2)$} (paper eq.~(9.5)):
+\begin{equation}
+\HWG_{2N,0}=\PE\!\left[
+\sum_{i=1}^{N}\mu_i\mu_{2N-i}t^{2i}
++(\nu_1^2+\nu_2^2)t^2+t^4
++\nu_1\nu_2\mu_N\left(t^N+t^{N+2}\right)
+-\nu_1^2\nu_2^2\mu_N^2t^{2N+4}
+\right].
+\end{equation}
+
+\section*{$SU(3)+6F$: $N=3$ and explicit PE fractions}
+For monomials $x_a,y_b$,
+$\PE[\sum_a x_a-\sum_b y_b]=\prod_b(1-y_b)/\prod_a(1-x_a)$.
+
+\emph{$|k|=2$, $SO(12)\times U(1)$:}
+\begin{align}
+\HWG_{6F,2}
+&=\PE\!\left[(\mu_2+1)t^2+(q+q^{-1})\mu_6t^3+\mu_4t^4\right]\\
+&=\frac{1}{(1-t^2)(1-\mu_2t^2)(1-q\mu_6t^3)(1-q^{-1}\mu_6t^3)(1-\mu_4t^4)}.
+\end{align}
+
+\emph{$|k|=1$, $SU(7)\times U(1)$:}
+\begin{align}
+\HWG_{6F,1}
+&=\PE\!\left[(\mu_1\mu_6+1)t^2+(q\mu_3+q^{-1}\mu_4)t^3+\mu_2\mu_5t^4\right]\\
+&=\frac{1}{(1-t^2)(1-\mu_1\mu_6t^2)(1-q\mu_3t^3)(1-q^{-1}\mu_4t^3)(1-\mu_2\mu_5t^4)}.
+\end{align}
+
+\emph{$k=0$, $SU(6)\times SU(2)\times SU(2)$:}
+\begin{align}
+\HWG_{6F,0}
+&=\PE\!\left[
+(\mu_1\mu_5+\nu_1^2+\nu_2^2)t^2
++\nu_1\nu_2\mu_3t^3
++(\mu_2\mu_4+1)t^4
++\nu_1\nu_2\mu_3t^5
++\mu_3^2t^6
+-\nu_1^2\nu_2^2\mu_3^2t^{10}
+\right]\\
+&=\frac{1-\nu_1^2\nu_2^2\mu_3^2t^{10}}
+{(1-t^4)(1-\mu_1\mu_5t^2)(1-\nu_1^2t^2)(1-\nu_2^2t^2)
+ (1-\nu_1\nu_2\mu_3t^3)(1-\mu_2\mu_4t^4)
+ (1-\nu_1\nu_2\mu_3t^5)(1-\mu_3^2t^6)}.
+\end{align}
+
+\newpage
+\section*{$N_f=2N-1$: general formulas}
+
+\emph{$|k|=\frac52$, $SO(4N-2)\times U(1)$} (paper eq.~(10.3)):
+\begin{equation}
+\HWG_{2N-1,\frac52}=\PE\!\left[
+\sum_{i=1}^{N-2}\mu_{2i}t^{2i}+t^2
++t^N\left(q\mu_{2N-2}+q^{-1}\mu_{2N-1}\right)
++\mu_{2N-2}\mu_{2N-1}\left(t^{2N-2}-t^{2N}\right)
+\right].
+\end{equation}
+
+\emph{$|k|=\frac32$, $SU(2N)\times U(1)$} (paper eq.~(11.3)):
+\begin{equation}
+\HWG_{2N-1,\frac32}=\PE\!\left[
+\sum_{i=1}^{N-1}\mu_i\mu_{2N-i}t^{2i}+t^2
++\left(q\mu_{N-1}+q^{-1}\mu_{N+1}\right)t^N
+-\mu_{N-1}\mu_{N+1}t^{2N}
+\right].
+\end{equation}
+
+\emph{$|k|=\frac12$, $SU(2N-1)\times SU(2)\times U(1)$} (paper eq.~(12.3)):
+\begin{equation}
+\HWG_{2N-1,\frac12}=\PE\!\left[
+\sum_{i=1}^{N-1}\mu_i\mu_{2N-i-1}t^{2i}
++(\nu^2+1)t^2
++\nu\left(q\mu_{N-1}+q^{-1}\mu_N\right)t^N
+-\nu^2\mu_{N-1}\mu_Nt^{2N}
+\right].
+\end{equation}
+
+\section*{$SU(3)+5F$: $N=3$ and explicit PE fractions}
+
+\emph{$|k|=\frac52$, $SO(10)\times U(1)$:}
+\begin{align}
+\HWG_{5F,\frac52}
+&=\PE\!\left[(\mu_2+1)t^2+(q\mu_4+q^{-1}\mu_5)t^3
++\mu_4\mu_5t^4-\mu_4\mu_5t^6\right]\\
+&=\frac{1-\mu_4\mu_5t^6}
+{(1-t^2)(1-\mu_2t^2)(1-q\mu_4t^3)(1-q^{-1}\mu_5t^3)(1-\mu_4\mu_5t^4)}.
+\end{align}
+
+\emph{$|k|=\frac32$, $SU(6)\times U(1)$:}
+\begin{align}
+\HWG_{5F,\frac32}
+&=\PE\!\left[(\mu_1\mu_5+1)t^2+(q\mu_2+q^{-1}\mu_4)t^3
++\mu_2\mu_4t^4-\mu_2\mu_4t^6\right]\\
+&=\frac{1-\mu_2\mu_4t^6}
+{(1-t^2)(1-\mu_1\mu_5t^2)(1-q\mu_2t^3)(1-q^{-1}\mu_4t^3)(1-\mu_2\mu_4t^4)}.
+\end{align}
+
+\emph{$|k|=\frac12$, $SU(5)\times SU(2)\times U(1)$:}
+\begin{align}
+\HWG_{5F,\frac12}
+&=\PE\!\left[(\mu_1\mu_4+\nu^2+1)t^2
++\nu(q\mu_2+q^{-1}\mu_3)t^3
++\mu_2\mu_3t^4-\nu^2\mu_2\mu_3t^6\right]\\
+&=\frac{1-\nu^2\mu_2\mu_3t^6}
+{(1-t^2)(1-\nu^2t^2)(1-\mu_1\mu_4t^2)
+ (1-\nu q\mu_2t^3)(1-\nu q^{-1}\mu_3t^3)(1-\mu_2\mu_3t^4)}.
+\end{align}
+
+\vfill
+\begin{thebibliography}{1}\footnotesize
+\bibitem{FerlitoEtAl}
+G.~Ferlito, A.~Hanany, N.~Mekareeya and G.~Zafrir,
+\emph{3d Coulomb branch and 5d Higgs branch at infinite coupling},
+\href{https://arxiv.org/abs/1712.06604}{arXiv:1712.06604 [hep-th]}.
+\end{thebibliography}
+
+\end{document}

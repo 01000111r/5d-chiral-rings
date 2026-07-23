@@ -1,0 +1,25 @@
+# Blind HWG benchmark manifest
+
+- **Theory ID:** `su3_nf9_k1o2_infinite`
+- **Initial commit hash:** `a52845e0e903b4023c7fbf57484586cc3c100537`
+- **Input-only source:** `references/blind_inputs/su3_nf9_k1o2_e8_sequence_input.md`
+- **Source equation:** 2.4
+- **Cutoff:** order 6 (through `t^6`)
+- **Exact commands executed:**
+  - `./scripts/sage-python -m hwg_pipeline expand su3_nf9_k1o2_infinite --order 6`
+  - `./scripts/sage-python -m hwg_pipeline characters su3_nf9_k1o2_infinite --order 6`
+  - `./scripts/sage-python -m hwg_pipeline plethystic-log su3_nf9_k1o2_infinite --order 6`
+  - `./scripts/sage-python -m hwg_pipeline reconstruct su3_nf9_k1o2_infinite --order 6`
+  - `./scripts/sage-python -m pytest`
+- **Sage convention:** `WeylCharacterRing("D10", style="coroots")`
+  - `[0,0,0,0,0,0,0,0,0,0]`: dimension 1
+  - `[1,0,0,0,0,0,0,0,0,0]`: dimension 20
+  - `[0,1,0,0,0,0,0,0,0,0]`: dimension 190
+  - `[0,0,0,0,0,0,0,0,0,1]`: dimension 512
+- **Pytest:** PASS, 70 passed, 0 failed, no warnings (`70 passed in 72.18s`).
+- **Refined reconstruction:** PASS; exact equality representation by representation through degree 6, with zero mismatches.
+- **Scalar reconstruction:** PASS; the independently unrefined scalar PE equals the unrefined Hilbert series through degree 6.
+- **Core mathematical files changed:** No. The mathematical algorithms in `expansion.py`, `characters.py`, `sage_backend.py`, and `plethystic.py` were unchanged. CLI orchestration in `src/hwg_pipeline/__main__.py` changed only to support a missing optional rational product and to scope pre-existing fixture-specific checks.
+- **Paper-output restriction:** No expected paper Hilbert series or plethystic logarithm was provided or used; the input-only source explicitly withholds both.
+- **Source rational-product comparison:** Not applicable; this fixture contains a structured PE only.
+- **Determinism:** PASS; SHA-256 checksums of every generated file were identical before and after the required second execution of all four CLI commands.

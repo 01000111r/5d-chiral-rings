@@ -48,7 +48,7 @@ def _validations(theory, order, pe, product):
                                       expand_hwg(theory, degree + 1).truncate(degree))
     unit = next((coefficient for monomial, coefficient in pe if monomial.t_degree == 0), ZZ(0))
     checks = {
-        "pe_equals_rational_product": pe == product,
+        "pe_equals_rational_product": None if product is None else pe == product,
         "constant_coefficient_is_one": unit == 1,
         "no_terms_above_requested_degree": all(m.t_degree <= order for m, _ in pe),
         "all_multiplicities_are_integers": all(c in ZZ for _, c in pe),
@@ -56,7 +56,7 @@ def _validations(theory, order, pe, product):
         "truncation_stability": stability,
     }
     checks["all_passed"] = all(value if isinstance(value, bool) else all(value.values())
-                                for value in checks.values())
+                                for value in checks.values() if value is not None)
     return checks
 
 
@@ -76,15 +76,20 @@ def _write_outputs(theory, order, series, checks, output):
     lines += [r"\end{align*}", ""]
     (output / "hwg_expansion.tex").write_text("\n".join(lines), encoding="utf-8")
     check_payload = {"theory_id": theory.id, "maximum_t_degree": int(order),
-                     "routes_compared": ["plethystic_exponential", "rational_product"],
+                     "routes_compared": (["plethystic_exponential", "rational_product"]
+                                         if theory.rational_product else ["plethystic_exponential"]),
                      "validation_results": checks}
     (output / "checks.json").write_text(json.dumps(check_payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    md = [f"# Expansion checks: `{theory.id}` through t^{order}", "",
-          "Independent routes: structured PE and structured rational product.", ""]
+    comparison = ("Independent routes: structured PE and structured rational product."
+                  if theory.rational_product else
+                  "Source rational-product comparison: not applicable (structured PE only).")
+    md = [f"# Expansion checks: `{theory.id}` through t^{order}", "", comparison, ""]
     for key, value in checks.items():
         if isinstance(value, dict):
             md.append(f"- **{'PASS' if all(value.values()) else 'FAIL'} — {key}**: " +
                       ", ".join(f"D={d}: {'PASS' if passed else 'FAIL'}" for d, passed in value.items()))
+        elif value is None:
+            md.append(f"- **N/A — {key}**")
         else:
             md.append(f"- **{'PASS' if value else 'FAIL'} — {key}**")
     (output / "checks.md").write_text("\n".join(md) + "\n", encoding="utf-8")
@@ -163,9 +168,10 @@ def _character_outputs(theory, order, hwg, output):
         "dimensions_nonnegative_integers": all(c in ZZ and c >= 0 for _, c in refined),
         "q_equals_one_matches_unrefined": dict(plain) == {d: sum(c for (sd, _), c in refined if sd == d) for d, _ in plain},
     }
-    expected = {0: 1, 1: 0, 2: 36, 3: 30, 4: 630}
-    actual = {int(d): int(c) for d, c in plain}
-    checks["leading_coefficients"] = all(actual.get(d, 0) == c for d, c in expected.items())
+    if [factor.cartan_name for factor in theory.simple_factors] == ["A5"] and [x.id for x in theory.abelian_factors] == ["q"]:
+        expected = {0: 1, 1: 0, 2: 36, 3: 30, 4: 630}
+        actual = {int(d): int(c) for d, c in plain}
+        checks["leading_coefficients"] = all(actual.get(d, 0) == c for d, c in expected.items())
     checks["all_passed"] = all(checks.values())
     check_payload = {"theory_id": theory.id, "maximum_t_degree": int(order), "validation_results": checks}
     (output / "character_checks.json").write_text(json.dumps(check_payload, indent=2, sort_keys=True) + "\n")
@@ -319,15 +325,17 @@ def _pl_outputs(theory, order, hwg, output):
     (output/"unrefined_plethystic_logarithm.json").write_text(json.dumps(upayload,indent=2,sort_keys=True)+"\n")
     (output/"unrefined_plethystic_logarithm.tex").write_text("% Exact unrefined plethystic logarithm.\n\\begin{align*}\nPL[H] = "+" + ".join(f"{c}t^{{{d}}}" for d,c in plain)+"\n\\end{align*}\n")
     direct=scalar_plethystic_logarithm(unrefine(series),order)
-    expected2={((0,0,0,0,0),):1,((1,0,0,0,1),):1}; actual2={k:int(c) for (d,q),x in pl if d==2 for k,c in x}
-    expected3={(1,((0,1,0,0,0),)):1,(-1,((0,0,0,1,0),)):1}
-    actual3={(int(dict(q)["q"]),k):int(c) for (d,q),x in pl if d==3 for k,c in x}
     checks={"all_final_coefficients_integral":all(c.denominator()==1 for _,x in pl for _,c in x),
             "negative_coefficients_retained":any(c<0 for _,x in pl for _,c in x),
             "degrees_truncated":all(d<=order for (d,_),_ in pl),
-            "degree_2_independent_value":actual2==expected2,"degree_3_independent_value":actual3==expected3,
-            "degree_4_independent_value":{k:int(c) for (d,q),x in pl if d==4 for k,c in x}=={((0,0,0,0,0),):-1,((1,0,0,0,1),):-1},
             "direct_scalar_matches_refined_unrefinement":direct==plain}
+    if [factor.cartan_name for factor in theory.simple_factors] == ["A5"] and [x.id for x in theory.abelian_factors] == ["q"]:
+        expected2={((0,0,0,0,0),):1,((1,0,0,0,1),):1}; actual2={k:int(c) for (d,q),x in pl if d==2 for k,c in x}
+        expected3={(1,((0,1,0,0,0),)):1,(-1,((0,0,0,1,0),)):1}
+        actual3={(int(dict(q)["q"]),k):int(c) for (d,q),x in pl if d==3 for k,c in x}
+        checks.update({"degree_2_independent_value":actual2==expected2,
+                       "degree_3_independent_value":actual3==expected3,
+                       "degree_4_independent_value":{k:int(c) for (d,q),x in pl if d==4 for k,c in x}=={((0,0,0,0,0),):-1,((1,0,0,0,1),):-1}})
     checks["all_passed"]=all(checks.values())
     cp={"theory_id":theory.id,"maximum_t_degree":int(order),"direct_scalar_plethystic_logarithm":{str(d):_rational(c) for d,c in direct},"validation_results":checks}
     (output/"plethystic_logarithm_checks.json").write_text(json.dumps(cp,indent=2,sort_keys=True)+"\n")
@@ -356,7 +364,8 @@ def main(argv=None):
     pe = expand_pe(theory, args.order)
     output = root / "generated" / theory.id / f"order_{args.order}"
     if args.command == "expand":
-        product = expand_rational_product(theory, args.order)
+        product = (expand_rational_product(theory, args.order)
+                   if theory.rational_product is not None else None)
         checks = _validations(theory, args.order, pe, product)
         _write_outputs(theory, args.order, pe, checks, output)
     elif args.command == "characters":

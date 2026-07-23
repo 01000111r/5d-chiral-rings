@@ -1,0 +1,42 @@
+{
+  "coefficients_by_t_degree": {
+    "0": [
+      {
+        "abelian_charges": {},
+        "coefficient": 1
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {},
+        "coefficient": 190
+      }
+    ],
+    "3": [
+      {
+        "abelian_charges": {},
+        "coefficient": 512
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {},
+        "coefficient": 17936
+      }
+    ],
+    "5": [
+      {
+        "abelian_charges": {},
+        "coefficient": 87552
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {},
+        "coefficient": 1214157
+      }
+    ]
+  },
+  "maximum_t_degree": 6,
+  "theory_id": "su3_nf9_k1o2_infinite"
+}

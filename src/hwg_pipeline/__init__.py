@@ -6,5 +6,7 @@ from .model import (AbelianFactorSpec, HighestWeightMonomial, HWGTerm,
                     RationalProductSpec, RepresentationSpec, SimpleGroupSpec,
                     SourceReference, TheorySpec)
 from .render import render_monomial, render_pe, render_pe_exponent, render_rational_product
+from .expansion import (SparseSeries, expand_hwg, expand_pe,
+                        expand_rational_product, unit_monomial)
 
 __version__ = "0.1.0"

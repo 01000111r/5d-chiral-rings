@@ -67,7 +67,32 @@ class HighestWeightMonomial:
         if degree < 0:
             raise ValueError("t-degree must be nonnegative")
         object.__setattr__(self, "t_degree", degree)
-        object.__setattr__(self, "abelian_charges", tuple((key, QQ(value)) for key, value in self.abelian_charges))
+        reps = tuple(sorted(self.representations, key=lambda x: x.simple_factor_id))
+        charges = tuple(sorted(((key, QQ(value)) for key, value in self.abelian_charges), key=lambda x: x[0]))
+        if len({x.simple_factor_id for x in reps}) != len(reps) or len(dict(charges)) != len(charges):
+            raise ValueError("monomial factor identifiers must be unique")
+        object.__setattr__(self, "representations", reps)
+        object.__setattr__(self, "abelian_charges", charges)
+
+    def __mul__(self, other):
+        if not isinstance(other, HighestWeightMonomial):
+            return NotImplemented
+        left_reps = {x.simple_factor_id: x.dynkin_labels for x in self.representations}
+        right_reps = {x.simple_factor_id: x.dynkin_labels for x in other.representations}
+        if left_reps.keys() != right_reps.keys() or dict(self.abelian_charges).keys() != dict(other.abelian_charges).keys():
+            raise ValueError("cannot multiply monomials with different factor sets")
+        reps = tuple(RepresentationSpec(key, tuple(a + b for a, b in zip(left_reps[key], right_reps[key]))) for key in sorted(left_reps))
+        right_charges = dict(other.abelian_charges)
+        charges = tuple((key, value + right_charges[key]) for key, value in self.abelian_charges)
+        return HighestWeightMonomial(self.t_degree + other.t_degree, reps, charges)
+
+    def __pow__(self, exponent):
+        exponent = ZZ(exponent)
+        if exponent < 0:
+            raise ValueError("monomial exponent must be nonnegative")
+        return HighestWeightMonomial(self.t_degree * exponent,
+            tuple(RepresentationSpec(x.simple_factor_id, tuple(exponent * y for y in x.dynkin_labels)) for x in self.representations),
+            tuple((key, exponent * value) for key, value in self.abelian_charges))
 
 
 @dataclass(frozen=True)

@@ -54,7 +54,14 @@ def theory_from_dict(data):
     product_data = data.get("rational_product")
     product = None if product_data is None else RationalProductSpec(tuple(RationalProductFactor(_monomial(x["monomial"]), _integer(x["power"], "factor power")) for x in product_data["factors"]), product_data.get("original_rational_product_latex"))
     refs = tuple(SourceReference(x["path"], x["description"], x.get("equation")) for x in data.get("source_references", []))
-    return TheorySpec(data["id"], data["title"], bool(data.get("nonphysical", False)), refs, simple, abelian, _exact(data["chern_simons_level"], "chern_simons_level"), pe, product)
+    flavours = data.get("number_of_flavours")
+    if flavours is not None:
+        flavours = _integer(flavours, "number_of_flavours")
+    return TheorySpec(data["id"], data["title"], bool(data.get("nonphysical", False)), refs, simple, abelian,
+                      _exact(data["chern_simons_level"], "chern_simons_level"), pe, product,
+                      data.get("gauge_algebra"), data.get("gauge_display_name"), flavours,
+                      data.get("chern_simons_convention"), data.get("coupling"),
+                      data.get("grading_variable", "t"))
 
 
 def load_theory(path):
@@ -80,6 +87,15 @@ def theory_to_dict(value):
       "simple_factors": [{"id": x.id, "cartan_type": x.cartan_type, "rank": int(x.rank), "display_name": x.display_name, "highest_weight_fugacities": list(x.highest_weight_fugacities)} for x in value.simple_factors],
       "abelian_factors": [{"id": x.id, "display_name": x.display_name, "fugacity": x.fugacity} for x in value.abelian_factors],
       "pe": {"original_pe_latex": value.pe.original_pe_latex, "terms": [{"coefficient": int(x.coefficient), "monomial": _monomial_dict(x.monomial)} for x in value.pe.terms]}}
+    metadata = {
+        "gauge_algebra": value.gauge_algebra,
+        "gauge_display_name": value.gauge_display_name,
+        "number_of_flavours": None if value.number_of_flavours is None else int(value.number_of_flavours),
+        "chern_simons_convention": value.chern_simons_convention,
+        "coupling": value.coupling,
+        "grading_variable": value.grading_variable,
+    }
+    result.update({key: item for key, item in metadata.items() if item is not None})
     if value.rational_product:
         result["rational_product"] = {"original_rational_product_latex": value.rational_product.original_rational_product_latex, "factors": [{"power": int(x.power), "monomial": _monomial_dict(x.monomial)} for x in value.rational_product.factors]}
     return result

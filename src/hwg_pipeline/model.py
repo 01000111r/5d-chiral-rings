@@ -120,9 +120,20 @@ class TheorySpec:
     chern_simons_level: object
     pe: PlethysticExponentialSpec
     rational_product: RationalProductSpec | None = None
+    gauge_algebra: str | None = None
+    gauge_display_name: str | None = None
+    number_of_flavours: int | None = None
+    chern_simons_convention: str | None = None
+    coupling: str | None = None
+    grading_variable: str = "t"
 
     def __post_init__(self):
         object.__setattr__(self, "chern_simons_level", QQ(self.chern_simons_level))
+        if self.number_of_flavours is not None:
+            flavours = ZZ(self.number_of_flavours)
+            if flavours < 0:
+                raise ValueError("number of flavours must be nonnegative")
+            object.__setattr__(self, "number_of_flavours", flavours)
         simple = {factor.id: factor for factor in self.simple_factors}
         abelian = {factor.id: factor for factor in self.abelian_factors}
         if len(simple) != len(self.simple_factors) or len(abelian) != len(self.abelian_factors):

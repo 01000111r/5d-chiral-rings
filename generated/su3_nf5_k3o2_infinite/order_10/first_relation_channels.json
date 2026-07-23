@@ -1,0 +1,432 @@
+{
+  "actual_hilbert_series_coefficient": [
+    {
+      "multiplicity": 1,
+      "representation_dimension": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "representation_dimension": 189,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "representation_dimension": 35,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "representation_dimension": 405,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          2
+        ]
+      ]
+    }
+  ],
+  "exact_deficit": [
+    {
+      "multiplicity": 1,
+      "representation_dimension": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "representation_dimension": 35,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "first_relation_degree": 4,
+  "free_symmetric_algebra_coefficient": [
+    {
+      "multiplicity": 2,
+      "representation_dimension": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "representation_dimension": 189,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "multiplicity": 2,
+      "representation_dimension": 35,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "multiplicity": 1,
+      "representation_dimension": 405,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          2
+        ]
+      ]
+    }
+  ],
+  "maximum_t_degree": 10,
+  "quadratic_channels": [
+    {
+      "complete_irreducible_decomposition": [
+        {
+          "multiplicity": 1,
+          "representation_dimension": 1,
+          "simple_factor_dynkin_labels": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "first_relation_multiplicities": [
+        {
+          "multiplicity": 1,
+          "representation_dimension": 1,
+          "simple_factor_dynkin_labels": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "left_generator": {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 1,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "source_theory_id": "su3_nf5_k3o2_infinite",
+        "t_degree": 2
+      },
+      "product_type": "symmetric_square",
+      "right_generator": {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 1,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "source_theory_id": "su3_nf5_k3o2_infinite",
+        "t_degree": 2
+      },
+      "total_abelian_charge": {
+        "q": "0"
+      },
+      "total_t_degree": 4
+    },
+    {
+      "complete_irreducible_decomposition": [
+        {
+          "multiplicity": 1,
+          "representation_dimension": 35,
+          "simple_factor_dynkin_labels": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "first_relation_multiplicities": [
+        {
+          "multiplicity": 1,
+          "representation_dimension": 35,
+          "simple_factor_dynkin_labels": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "left_generator": {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 1,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "source_theory_id": "su3_nf5_k3o2_infinite",
+        "t_degree": 2
+      },
+      "product_type": "tensor",
+      "right_generator": {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 35,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "source_theory_id": "su3_nf5_k3o2_infinite",
+        "t_degree": 2
+      },
+      "total_abelian_charge": {
+        "q": "0"
+      },
+      "total_t_degree": 4
+    },
+    {
+      "complete_irreducible_decomposition": [
+        {
+          "multiplicity": 1,
+          "representation_dimension": 1,
+          "simple_factor_dynkin_labels": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "representation_dimension": 189,
+          "simple_factor_dynkin_labels": [
+            [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "representation_dimension": 35,
+          "simple_factor_dynkin_labels": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "representation_dimension": 405,
+          "simple_factor_dynkin_labels": [
+            [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          ]
+        }
+      ],
+      "first_relation_multiplicities": [
+        {
+          "multiplicity": 1,
+          "representation_dimension": 1,
+          "simple_factor_dynkin_labels": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "representation_dimension": 35,
+          "simple_factor_dynkin_labels": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "left_generator": {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 35,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "source_theory_id": "su3_nf5_k3o2_infinite",
+        "t_degree": 2
+      },
+      "product_type": "symmetric_square",
+      "right_generator": {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 35,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "source_theory_id": "su3_nf5_k3o2_infinite",
+        "t_degree": 2
+      },
+      "total_abelian_charge": {
+        "q": "0"
+      },
+      "total_t_degree": 4
+    }
+  ],
+  "theory_id": "su3_nf5_k3o2_infinite"
+}

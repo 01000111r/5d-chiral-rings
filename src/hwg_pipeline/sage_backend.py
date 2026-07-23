@@ -67,6 +67,18 @@ def tensor_product(group_spec, left_labels, right_labels):
     return tuple(sorted(terms))
 
 
+def symmetric_power(group_spec, dynkin_labels, n):
+    """Decompose an irreducible symmetric power using Sage characters."""
+    labels = _labels(group_spec, dynkin_labels)
+    n = ZZ(n)
+    if n <= 0:
+        raise ValueError("symmetric-power exponent must be positive")
+    character = irrep(group_spec, labels).symmetric_power(int(n))
+    ring = character_ring(group_spec)
+    return tuple(sorted((_weight_labels(ring, weight), ZZ(mult))
+                        for weight, mult in character.monomial_coefficients().items()))
+
+
 @lru_cache(maxsize=None)
 def _adams_decomposition(cartan_name, dynkin_labels, k):
     """Cached irreducible decomposition of a character Adams operation."""

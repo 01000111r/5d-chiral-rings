@@ -15,6 +15,7 @@ from .plethystic import (dimension_refine_virtual, plethystic_logarithm,
                          scalar_plethystic_logarithm, unrefine_virtual,
                          VirtualCharacterSeries, VirtualRepresentationContent,
                          plethystic_exponential)
+from .operator_outputs import write_operator_outputs
 
 
 def _root():
@@ -338,7 +339,8 @@ def main(argv=None):
     for name, help_text in (("expand", "expand a structured HWG"),
                             ("characters", "restore irreducible characters and dimensions"),
                             ("plethystic-log", "compute the exact refined plethystic logarithm"),
-                            ("reconstruct", "reconstruct a character series from its refined PL")):
+                            ("reconstruct", "reconstruct a character series from its refined PL"),
+                            ("analyze-pl", "classify PL content and first relation channels")):
         command = commands.add_parser(name, help=help_text)
         command.add_argument("theory_id")
         command.add_argument("--order", required=True, type=int)
@@ -359,9 +361,14 @@ def main(argv=None):
     elif args.command == "plethystic-log":
         output.mkdir(parents=True, exist_ok=True)
         checks = _pl_outputs(theory, args.order, pe, output)
-    else:
+    elif args.command == "reconstruct":
         output.mkdir(parents=True, exist_ok=True)
         checks = _reconstruction_outputs(theory, args.order, pe, output)
+    else:
+        output.mkdir(parents=True, exist_ok=True)
+        pl = _load_virtual_pl(theory, output / "refined_plethystic_logarithm.json", args.order)
+        characters = json.loads((output / "character_series.json").read_text())
+        checks = write_operator_outputs(theory, args.order, pl, characters, output)
     if not checks["all_passed"]:
         raise SystemExit("expansion validation failed")
 

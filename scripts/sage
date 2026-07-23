@@ -1,0 +1,29 @@
+#!/bin/sh
+# Locate the SageMath executable consistently in interactive and CI shells.
+set -eu
+
+if [ "${HWG_SAGE_EXECUTABLE:-}" ]; then
+    if [ ! -x "$HWG_SAGE_EXECUTABLE" ]; then
+        printf '%s\n' "error: HWG_SAGE_EXECUTABLE is not an executable file: $HWG_SAGE_EXECUTABLE" >&2
+        exit 127
+    fi
+    exec "$HWG_SAGE_EXECUTABLE" "$@"
+fi
+
+self=$(readlink -f "$0" 2>/dev/null || printf '%s\n' "$0")
+path_sage=$(command -v sage 2>/dev/null || true)
+if [ -n "$path_sage" ] && [ -x "$path_sage" ]; then
+    resolved=$(readlink -f "$path_sage" 2>/dev/null || printf '%s\n' "$path_sage")
+    if [ "$resolved" != "$self" ]; then
+        exec "$path_sage" "$@"
+    fi
+fi
+
+fallback="$HOME/miniforge3/envs/hwg-sage/bin/sage"
+if [ -x "$fallback" ]; then
+    exec "$fallback" "$@"
+fi
+
+printf '%s\n' \
+    "error: SageMath not found; set HWG_SAGE_EXECUTABLE, add sage to PATH, or install it at $fallback" >&2
+exit 127

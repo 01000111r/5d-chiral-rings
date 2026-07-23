@@ -8,5 +8,9 @@ from .model import (AbelianFactorSpec, HighestWeightMonomial, HWGTerm,
 from .render import render_monomial, render_pe, render_pe_exponent, render_rational_product
 from .expansion import (SparseSeries, expand_hwg, expand_pe,
                         expand_rational_product, unit_monomial)
+from .sage_backend import (character_ring, irrep, irrep_dimension,
+                           tensor_product)
+from .characters import (CharacterSeries, RepresentationContent,
+                         dimension_refine, restore_characters, unrefine)
 
 __version__ = "0.1.0"

@@ -1,0 +1,25 @@
+{
+  "direct_scalar_plethystic_logarithm": {
+    "10": -86259,
+    "2": 36,
+    "3": 30,
+    "4": -36,
+    "5": -282,
+    "6": -395,
+    "7": 1752,
+    "8": 7815,
+    "9": 166
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su3_nf5_k3o2_infinite",
+  "validation_results": {
+    "all_final_coefficients_integral": true,
+    "all_passed": true,
+    "degree_2_independent_value": true,
+    "degree_3_independent_value": true,
+    "degree_4_independent_value": true,
+    "degrees_truncated": true,
+    "direct_scalar_matches_refined_unrefinement": true,
+    "negative_coefficients_retained": true
+  }
+}

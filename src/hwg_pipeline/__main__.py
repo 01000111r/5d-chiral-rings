@@ -10,6 +10,8 @@ from .expansion import expand_hwg, expand_pe, expand_rational_product
 from .io import load_theory
 from .render import render_monomial
 from .characters import dimension_refine, restore_characters, unrefine
+from .plethystic import (dimension_refine_virtual, plethystic_logarithm,
+                         scalar_plethystic_logarithm, unrefine_virtual)
 
 
 def _root():
@@ -172,11 +174,70 @@ def _latex_power(name, value):
     return rf"{name}^{{{value}}}"
 
 
+def _rational(value):
+    return int(value) if value.denominator() == 1 else {
+        "numerator": int(value.numerator()), "denominator": int(value.denominator())}
+
+
+def _pl_outputs(theory, order, hwg, output):
+    series = restore_characters(theory, hwg)
+    pl = plethystic_logarithm(series, order)
+    dim = dimension_refine_virtual(pl); plain = unrefine_virtual(pl)
+    groups, texgroups = {}, {}
+    for (degree, charges), content in pl:
+        for labels, coefficient in content:
+            groups.setdefault(str(degree), []).append({
+                "abelian_charges": _charge_dict(charges),
+                "irreducible_representations": [{"cartan_factor_id": factor.id,
+                    "dynkin_labels": [int(x) for x in label]}
+                    for factor,label in zip(theory.simple_factors,labels)],
+                "coefficient": _rational(coefficient)})
+            reps=" ".join("["+",".join(map(str,label))+rf"]_{{{factor.cartan_type}_{factor.rank}}}"
+                          for factor,label in zip(theory.simple_factors,labels))
+            texgroups.setdefault(int(degree),[]).append((coefficient,charges,reps))
+    payload={"theory_id":theory.id,"maximum_t_degree":int(order),"coefficients_by_t_degree":groups}
+    (output/"refined_plethystic_logarithm.json").write_text(json.dumps(payload,indent=2,sort_keys=True)+"\n")
+    pieces=[]
+    for degree in sorted(texgroups):
+        body=[]
+        for c,charges,reps in texgroups[degree]:
+            sign="-" if c<0 else ("+" if body else "")
+            magnitude=abs(c); scalar="" if magnitude==1 else str(magnitude)
+            body.append(sign+scalar+"".join(_latex_power(k,v) for k,v in charges if v)+reps)
+        pieces.append("("+" ".join(body)+rf")t^{{{degree}}}")
+    (output/"refined_plethystic_logarithm.tex").write_text("% Exact refined plethystic logarithm.\n\\begin{align*}\nPL[H] = "+" + ".join(pieces)+"\n\\end{align*}\n")
+    dgroups={}
+    for (degree,charges),coefficient in dim:
+        dgroups.setdefault(str(degree),[]).append({"abelian_charges":_charge_dict(charges),"coefficient":_rational(coefficient)})
+    (output/"q_refined_dimension_pl.json").write_text(json.dumps({"theory_id":theory.id,"maximum_t_degree":int(order),"coefficients_by_t_degree":dgroups},indent=2,sort_keys=True)+"\n")
+    dtex=" + ".join(f"{c}"+"".join(_latex_power(k,v) for k,v in q if v)+rf"t^{{{d}}}" for (d,q),c in dim)
+    (output/"q_refined_dimension_pl.tex").write_text("% Exact dimension-refined plethystic logarithm.\n\\begin{align*}\nPL_{\\dim}[H] = "+dtex+"\n\\end{align*}\n")
+    upayload={"theory_id":theory.id,"maximum_t_degree":int(order),"coefficients_by_t_degree":{str(d):_rational(c) for d,c in plain}}
+    (output/"unrefined_plethystic_logarithm.json").write_text(json.dumps(upayload,indent=2,sort_keys=True)+"\n")
+    (output/"unrefined_plethystic_logarithm.tex").write_text("% Exact unrefined plethystic logarithm.\n\\begin{align*}\nPL[H] = "+" + ".join(f"{c}t^{{{d}}}" for d,c in plain)+"\n\\end{align*}\n")
+    direct=scalar_plethystic_logarithm(unrefine(series),order)
+    expected2={((0,0,0,0,0),):1,((1,0,0,0,1),):1}; actual2={k:int(c) for (d,q),x in pl if d==2 for k,c in x}
+    expected3={(1,((0,1,0,0,0),)):1,(-1,((0,0,0,1,0),)):1}
+    actual3={(int(dict(q)["q"]),k):int(c) for (d,q),x in pl if d==3 for k,c in x}
+    checks={"all_final_coefficients_integral":all(c.denominator()==1 for _,x in pl for _,c in x),
+            "negative_coefficients_retained":any(c<0 for _,x in pl for _,c in x),
+            "degrees_truncated":all(d<=order for (d,_),_ in pl),
+            "degree_2_independent_value":actual2==expected2,"degree_3_independent_value":actual3==expected3,
+            "degree_4_independent_value":{k:int(c) for (d,q),x in pl if d==4 for k,c in x}=={((0,0,0,0,0),):-1,((1,0,0,0,1),):-1},
+            "direct_scalar_matches_refined_unrefinement":direct==plain}
+    checks["all_passed"]=all(checks.values())
+    cp={"theory_id":theory.id,"maximum_t_degree":int(order),"direct_scalar_plethystic_logarithm":{str(d):_rational(c) for d,c in direct},"validation_results":checks}
+    (output/"plethystic_logarithm_checks.json").write_text(json.dumps(cp,indent=2,sort_keys=True)+"\n")
+    (output/"plethystic_logarithm_checks.md").write_text("# Plethystic-logarithm checks\n\n"+"\n".join(f"- **{'PASS' if v else 'FAIL'} — {k}**" for k,v in checks.items())+"\n")
+    return checks
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="python -m hwg_pipeline")
     commands = parser.add_subparsers(dest="command", required=True)
     for name, help_text in (("expand", "expand a structured HWG"),
-                            ("characters", "restore irreducible characters and dimensions")):
+                            ("characters", "restore irreducible characters and dimensions"),
+                            ("plethystic-log", "compute the exact refined plethystic logarithm")):
         command = commands.add_parser(name, help=help_text)
         command.add_argument("theory_id")
         command.add_argument("--order", required=True, type=int)
@@ -191,9 +252,12 @@ def main(argv=None):
         product = expand_rational_product(theory, args.order)
         checks = _validations(theory, args.order, pe, product)
         _write_outputs(theory, args.order, pe, checks, output)
-    else:
+    elif args.command == "characters":
         output.mkdir(parents=True, exist_ok=True)
         checks = _character_outputs(theory, args.order, pe, output)
+    else:
+        output.mkdir(parents=True, exist_ok=True)
+        checks = _pl_outputs(theory, args.order, pe, output)
     if not checks["all_passed"]:
         raise SystemExit("expansion validation failed")
 

@@ -43,7 +43,10 @@ def character_ring(group_spec):
 
 def irrep(group_spec, dynkin_labels):
     labels = _labels(group_spec, dynkin_labels)
-    return character_ring(group_spec)(*labels)
+    ring = character_ring(group_spec)
+    weight = sum((coefficient * ring.fundamental_weights()[i + 1]
+                  for i, coefficient in enumerate(labels)), ring.space().zero())
+    return ring(weight)
 
 
 def irrep_dimension(group_spec, dynkin_labels):
@@ -62,3 +65,22 @@ def tensor_product(group_spec, left_labels, right_labels):
     terms = ((_weight_labels(ring, weight), ZZ(mult))
              for weight, mult in product.monomial_coefficients().items())
     return tuple(sorted(terms))
+
+
+@lru_cache(maxsize=None)
+def _adams_decomposition(cartan_name, dynkin_labels, k):
+    """Cached irreducible decomposition of a character Adams operation."""
+    ring = _ring(cartan_name)
+    weight = sum((coefficient * ring.fundamental_weights()[i + 1]
+                  for i, coefficient in enumerate(dynkin_labels)), ring.space().zero())
+    character = ring(weight).adams_operator(k)
+    return tuple(sorted((_weight_labels(ring, weight), ZZ(mult))
+                        for weight, mult in character.monomial_coefficients().items()))
+
+
+def adams_decomposition(group_spec, dynkin_labels, k):
+    labels = _labels(group_spec, dynkin_labels)
+    k = ZZ(k)
+    if k <= 0:
+        raise ValueError("Adams index must be a positive integer")
+    return _adams_decomposition(_validate_group(group_spec), labels, int(k))

@@ -1,0 +1,55 @@
+# NONPHYSICAL documentation example. This is not a physics formula.
+id: nonphysical_template             # Stable theory identifier.
+title: Nonphysical structured-data template
+nonphysical: true                    # Explicitly labels this example nonphysical.
+source_references:                   # Literal source provenance (zero or more).
+  - path: references/overleaf/example.tex
+    description: Nonexistent illustrative source
+    equation: example                # Optional equation label.
+chern_simons_level: "3/2"            # Integer or exact rational string; never float.
+simple_factors:                      # Ordered simple symmetry factors.
+  - id: flavor                      # Stable factor identifier.
+    cartan_type: A                   # Cartan family; together with rank this is A2.
+    rank: 2
+    display_name: SU(3)
+    highest_weight_fugacities: [mu_1, mu_2] # Ordered by Dynkin-label position.
+abelian_factors:                     # Ordered U(1) factors.
+  - id: topological
+    display_name: U(1)
+    fugacity: q
+pe:
+  # Preserved literally as metadata; the loader does not parse this LaTeX.
+  original_pe_latex: 'mu_1 q^(1/2) t^2 - mu_2 q^(-1) t^4'
+  terms:                            # A structured PE exponent, one monomial per term.
+    - coefficient: 1                # Exact nonzero/zero integer coefficients supported.
+      monomial:
+        t_degree: 2                 # Nonnegative integer.
+        representations:            # Every declared simple factor is required.
+          flavor: [1, 0]            # Dynkin labels; [0, 0] would be a singlet.
+        abelian_charges:             # Every declared abelian factor is required.
+          topological: "1/2"
+    - coefficient: -1               # Negative PE term.
+      monomial:
+        t_degree: 4
+        representations:
+          flavor: [0, 1]
+        abelian_charges:
+          topological: -1
+rational_product:
+  # Optional preserved literal source string, separately from structured factors.
+  original_rational_product_latex: '(1-mu_2 q^{-1}t^4)/(1-mu_1 q^{1/2}t^2)'
+  factors:                          # Each is (1 - monomial)^power.
+    - power: -1                     # Negative: denominator factor.
+      monomial:
+        t_degree: 2
+        representations:
+          flavor: [1, 0]
+        abelian_charges:
+          topological: "1/2"
+    - power: 1                      # Positive: numerator factor.
+      monomial:
+        t_degree: 4
+        representations:
+          flavor: [0, 1]
+        abelian_charges:
+          topological: -1

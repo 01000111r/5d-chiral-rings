@@ -1,7 +1,10 @@
-"""SageMath-only infrastructure for the planned HWG pipeline.
+"""Structured, exact theory data for the HWG pipeline."""
 
-Mathematical pipeline functionality is intentionally not implemented in this
-initial scaffold.
-"""
+from .io import dump_theory, load_theory, theory_from_dict, theory_to_dict
+from .model import (AbelianFactorSpec, HighestWeightMonomial, HWGTerm,
+                    PlethysticExponentialSpec, RationalProductFactor,
+                    RationalProductSpec, RepresentationSpec, SimpleGroupSpec,
+                    SourceReference, TheorySpec)
+from .render import render_monomial, render_pe, render_pe_exponent, render_rational_product
 
 __version__ = "0.1.0"

@@ -70,17 +70,28 @@ def _signed_term(coefficient, body, first=False):
     return f"{sign}{scalar}{body}"
 
 
-def _entry_terms(entries, kind):
+def _entry_terms(entries, kind, theory=None):
     raw = []
     for entry in entries:
         if kind == "hwg":
-            labels = next(iter(entry["dynkin_labels"].values()))
-            body = render_highest_weight(labels, entry["abelian_charges"].get("q", 0))
+            if theory is None:
+                labels = next(iter(entry["dynkin_labels"].values()))
+                body = render_highest_weight(labels, entry["abelian_charges"].get("q", 0))
+            else:
+                body = render_q_power(entry["abelian_charges"].get("q", 0))
+                for factor in theory.simple_factors:
+                    labels = entry["dynkin_labels"][factor.id]
+                    body += "".join(
+                        rf"\{name}^{{{n}}}" if n != 1 else rf"\{name}"
+                        for name, n in zip(factor.highest_weight_fugacities, labels) if n)
+                body = body or "1"
             coefficient = entry["multiplicity"]
         else:
             body = render_q_power(entry["abelian_charges"].get("q", 0))
-            body += "".join(render_dynkin(x["dynkin_labels"])
-                            for x in entry["irreducible_representations"])
+            rendered = [render_dynkin(x["dynkin_labels"])
+                        for x in entry["irreducible_representations"]]
+            body += (rendered[0] if len(rendered) == 1 else
+                     "[" + ";".join(x[1:-1] for x in rendered) + "]")
             coefficient = entry.get("multiplicity", entry.get("coefficient"))
         raw.append((_fraction(coefficient), body))
     result = []
@@ -105,11 +116,11 @@ def _term_chunks(terms, maximum_terms=3, maximum_width=72):
     return chunks
 
 
-def _render_grouped(symbol, groups, order, kind, chunk=3, maximum_width=72):
+def _render_grouped(symbol, groups, order, kind, chunk=3, maximum_width=72, theory=None):
     lines = [r"\begin{aligned}", symbol + " ={}&"]
     for degree in sorted(map(int, groups)):
         entries = groups[str(degree)]
-        terms = _entry_terms(entries, kind)
+        terms = _entry_terms(entries, kind, theory)
         if not terms:
             continue
         prefix = " " if degree == 0 else "+ "
@@ -212,12 +223,16 @@ def generate_compact_latex(root, theory_id, order):
             if int(degree) > order:
                 raise CompactLatexError("term exceeds requested cutoff")
             for entry in entries:
-                labels = (list(entry[repkey].values()) if repkey == "dynkin_labels" else
-                          [x["dynkin_labels"] for x in entry[repkey]])
-                expected_rank = int(theory.simple_factors[0].rank)
-                if any(len(x) != expected_rank for x in labels):
-                    raise CompactLatexError(
-                        f"expected {expected_rank} {theory.simple_factors[0].cartan_name} Dynkin labels")
+                if repkey == "dynkin_labels":
+                    labels_by_id = entry[repkey]
+                else:
+                    labels_by_id = {x["cartan_factor_id"]: x["dynkin_labels"]
+                                    for x in entry[repkey]}
+                for factor in theory.simple_factors:
+                    labels = labels_by_id.get(factor.id)
+                    if labels is None or len(labels) != int(factor.rank):
+                        raise CompactLatexError(
+                            f"expected {factor.rank} {factor.cartan_name} Dynkin labels")
                 _fraction(entry.get("multiplicity", entry.get("coefficient")))
     dim_hilbert = payloads["q_refined_dimension_series.json"]["coefficients_by_t_degree"]
     dim_pl = payloads["q_refined_dimension_pl.json"]["coefficients_by_t_degree"]
@@ -232,17 +247,26 @@ def generate_compact_latex(root, theory_id, order):
     product = theory.rational_product.original_rational_product_latex
     title = (rf"$\mathrm{{{theory.gauge_display_name}}}+{int(theory.number_of_flavours)}F$ "
              rf"at $\lvert k\rvert={render_exact(abs(theory.chern_simons_level))}$")
-    display_name = theory.simple_factors[0].display_name
-    display_match = re.fullmatch(r"([A-Za-z]+)\((\d+)\)", display_name)
-    group_latex = (rf"\mathrm{{{display_match.group(1)}}}({display_match.group(2)})"
-                   if display_match else rf"\mathrm{{{display_name}}}")
-    rendered_hwg = _render_grouped(r"\mathrm{HWG}(t,q;\mu)", hwg, order, "hwg")
-    rendered_chars = _render_grouped(rf"H(t,q;{group_latex})", chars, order, "character")
+    group_names = []
+    for factor in theory.simple_factors:
+        match = re.fullmatch(r"([A-Za-z]+)\((\d+)\)", factor.display_name)
+        group_names.append((rf"\mathrm{{{match.group(1)}}}({match.group(2)})" if match
+                            else rf"\mathrm{{{factor.display_name}}}"))
+    group_latex = r"\times".join(group_names)
+    rendered_hwg = _render_grouped(r"\mathrm{HWG}(t,q;\mu,\nu)", hwg, order, "hwg", theory=theory)
+    rendered_chars = _render_grouped(rf"H(t,q;{group_latex})", chars, order, "character", theory=theory)
     rendered_dim_hilbert = _render_dimension_series(r"H_{\mathrm{dim}}(t,q)", dim_hilbert, order)
     rendered_hilbert = _render_scalar(r"H(t)", payloads["unrefined_hilbert_series.json"]["coefficients_by_t_degree"], order)
-    rendered_pl = _render_grouped(rf"\operatorname{{PL}}[H(t,q;{group_latex})]", pl, order, "character")
+    rendered_pl = _render_grouped(rf"\operatorname{{PL}}[H(t,q;{group_latex})]", pl, order, "character", theory=theory)
     rendered_dim_pl = _render_dimension_series(r"\operatorname{PL}_{\mathrm{dim}}(t,q)", dim_pl, order)
     rendered_pl_plain = _render_scalar(r"\operatorname{PL}[H(t)]", payloads["unrefined_plethystic_logarithm.json"]["coefficients_by_t_degree"], order)
+    if len(theory.simple_factors) == 2:
+        representation_notation = (r"[a_1,\ldots,a_4;b]:="
+                                   r"[a_1,\ldots,a_4]_{A_4}\otimes[b]_{A_1}")
+    else:
+        rank = int(theory.simple_factors[0].rank)
+        representation_notation = (rf"[a_1,\ldots,a_{{{rank}}}]:="
+                                   rf"[a_1,\ldots,a_{{{rank}}}]_{{{theory.simple_factors[0].cartan_name}}}")
     document = rf"""\documentclass[10pt]{{article}}
 \usepackage{{amsmath}}
 \usepackage{{amssymb}}
@@ -258,8 +282,7 @@ def generate_compact_latex(root, theory_id, order):
 \maketitle
 At infinite coupling the enhanced symmetry is ${group_latex}\times\mathrm{{U}}(1)_q$.
 The expansion is truncated at $O(t^{{{order+1}}})$.  We define
-$[a_1,\ldots,a_{{{int(theory.simple_factors[0].rank)}}}]
-:=[a_1,\ldots,a_{{{int(theory.simple_factors[0].rank)}}}]_{{{theory.simple_factors[0].cartan_name}}}$.
+${representation_notation}$.
 Dimension evaluation is the ring homomorphism
 $\dim_{{{group_latex}}}:R({group_latex})\to\mathbb{{Z}}$, with
 $H_{{\mathrm{{dim}}}}(t,q)=\dim_{{{group_latex}}}H(t,q;{group_latex})$

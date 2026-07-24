@@ -363,6 +363,9 @@ def main(argv=None):
         command = commands.add_parser(name, help=help_text)
         command.add_argument("theory_id")
         command.add_argument("--order", required=True, type=int)
+        if name == "plethystic-log":
+            command.add_argument("--formal-log", choices=("direct",), default="direct",
+                                 help="validated formal-logarithm implementation")
         if name in ("branch", "charge-map", "latex-report", "project-notebook"): command.add_argument("--branching", required=True)
         if name == "charge-map": command.add_argument("--charge-map", required=True)
         if name == "latex-report":

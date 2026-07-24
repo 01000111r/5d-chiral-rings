@@ -1,0 +1,12 @@
+./scripts/sage-python -m hwg_pipeline expand su3_nf5_k1o2_infinite --order 10
+elapsed_seconds=2.813 peak_rss_kb=unavailable status=0
+./scripts/sage-python -m hwg_pipeline characters su3_nf5_k1o2_infinite --order 10
+elapsed_seconds=3.787 peak_rss_kb=unavailable status=0
+./scripts/sage-python -m hwg_pipeline plethystic-log su3_nf5_k1o2_infinite --order 10 --formal-log direct
+elapsed_seconds=18.191 peak_rss_kb=unavailable status=0
+./scripts/sage-python -m hwg_pipeline reconstruct su3_nf5_k1o2_infinite --order 10
+elapsed_seconds=46.173 peak_rss_kb=unavailable status=0
+./scripts/sage-python -m hwg_pipeline analyze-pl su3_nf5_k1o2_infinite --order 10
+elapsed_seconds=3.852 peak_rss_kb=unavailable status=0
+./scripts/sage-python -m hwg_pipeline compact-latex su3_nf5_k1o2_infinite --order 10
+elapsed_seconds=2.739 peak_rss_kb=unavailable status=0

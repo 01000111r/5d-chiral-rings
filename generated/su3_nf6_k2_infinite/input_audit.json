@@ -1,0 +1,258 @@
+{
+  "abelian_charge_convention": "integer exponent of q; source-selected mu_6 spinor occurs in both charges +1 and -1",
+  "d6_checks": {
+    "adjoint": {
+      "dimension": 66,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "degree_four_representation": {
+      "dimension": 495,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "other_chiral_spinor": {
+      "dimension": 32,
+      "dual_labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "selected_spinor": {
+      "dimension": 32,
+      "dual_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "singlet": {
+      "dimension": 1,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "vector": {
+      "dimension": 12,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "d6_convention": "WeylCharacterRing(\"D6\", style=\"coroots\")",
+  "fixture_sha256": "1f99f98c4c48ee59dcd88153c8bf7acc37c7a986f0a24ba535e09b409ccbdb58",
+  "fixture_validation": {
+    "exact_comparison": "five PE terms and five denominator factors agree literally and structurally with the explicit SU(3)+6F |k|=2 source specialization",
+    "passed": true,
+    "rational_product_source_match": true,
+    "term_by_term_source_match": true
+  },
+  "pe_terms": [
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "q_charge": 1,
+      "t_degree": 3
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "q_charge": -1,
+      "t_degree": 3
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "q_charge": 0,
+      "t_degree": 4
+    }
+  ],
+  "product_factors": [
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 1,
+      "t_degree": 3
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": -1,
+      "t_degree": 3
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 4
+    }
+  ],
+  "source": {
+    "equation": "7.3",
+    "file": "references/overleaf/su3_5f_6f_hwg_results.tex",
+    "normalized_pe_expression": "\\operatorname{PE}[t^2+mu_2t^2+qmu_6t^3+q^{-1}mu_6t^3+mu_4t^4]",
+    "normalized_rational_product_expression": "(1-t^2)^{-1}(1-mu_2t^2)^{-1}(1-qmu_6t^3)^{-1}(1-q^{-1}mu_6t^3)^{-1}(1-mu_4t^4)^{-1}",
+    "original_pe_expression": "\\PE\\!\\left[(\\mu_2+1)t^2+(q+q^{-1})\\mu_6t^3+\\mu_4t^4\\right]",
+    "original_rational_product_expression": "\\frac{1}{(1-t^2)(1-\\mu_2t^2)(1-q\\mu_6t^3)(1-q^{-1}\\mu_6t^3)(1-\\mu_4t^4)}"
+  },
+  "source_file_sha256": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359",
+  "source_spinor_convention": "mu_6 is [0,0,0,0,0,1]; it is not swapped with distinct mu_5=[0,0,0,0,1,0]",
+  "theory_metadata": {
+    "abelian_factor": "q",
+    "chern_simons_convention": "absolute value",
+    "chern_simons_magnitude": 2,
+    "coupling": "infinite",
+    "enhanced_display_name": "SO(12)",
+    "enhanced_simple_algebra": "D6",
+    "gauge_algebra": "A2",
+    "gauge_display_name": "SU(3)",
+    "grading_variable": "t",
+    "number_of_flavours": 6,
+    "theory_id": "su3_nf6_k2_infinite"
+  },
+  "unresolved_ambiguities": []
+}

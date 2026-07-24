@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "check_id": "fixture_matches_source",
+      "claim": "fixture matches source",
+      "evidence_path": "generated/su3_nf6_k2_infinite/input_audit.json",
+      "mathematical_input": "stored Overleaf HWG and D6 convention",
+      "mathematical_operation": "literal and structural source comparison plus independent WeylCharacterRing checks",
+      "mathematical_output": "validated fixture and input audit",
+      "stage_name": "input validation",
+      "stage_number": 0,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "unresolved_ambiguities_empty",
+      "claim": "unresolved ambiguities empty",
+      "evidence_path": "generated/su3_nf6_k2_infinite/input_audit.json",
+      "mathematical_input": "stored Overleaf HWG and D6 convention",
+      "mathematical_operation": "literal and structural source comparison plus independent WeylCharacterRing checks",
+      "mathematical_output": "validated fixture and input audit",
+      "stage_name": "input validation",
+      "stage_number": 0,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "d6_conventions_verified",
+      "claim": "d6 conventions verified",
+      "evidence_path": "generated/su3_nf6_k2_infinite/input_audit.json",
+      "mathematical_input": "stored Overleaf HWG and D6 convention",
+      "mathematical_operation": "literal and structural source comparison plus independent WeylCharacterRing checks",
+      "mathematical_output": "validated fixture and input audit",
+      "stage_name": "input validation",
+      "stage_number": 0,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_name": "input validation",
+  "stage_number": 0,
+  "theory_id": "su3_nf6_k2_infinite"
+}

@@ -17,6 +17,20 @@ RESULT_NAMES = ("hwg_expansion.json", "character_series.json",
                 "unrefined_hilbert_series.json", "refined_plethystic_logarithm.json",
                 "unrefined_plethystic_logarithm.json")
 
+ABELIAN_ID = "q"
+
+
+def render_abelian_symbol():
+    """Render the declared abelian fugacity as a LaTeX math symbol."""
+    if re.fullmatch(r"[A-Za-z]", ABELIAN_ID):
+        return ABELIAN_ID
+    greek = {"alpha", "beta", "gamma", "delta", "epsilon", "theta",
+             "lambda", "mu", "nu", "rho", "sigma", "tau", "phi",
+             "chi", "psi", "omega"}
+    if ABELIAN_ID in greek:
+        return "\\" + ABELIAN_ID
+    return rf"\mathrm{{{ABELIAN_ID.replace('_', '-') }}}"
+
 
 def render_exact(value):
     """Render an integer or structured exact rational as LaTeX."""
@@ -37,9 +51,14 @@ def render_q_power(charge):
     charge = Fraction(charge)
     if not charge:
         return ""
+    symbol = render_abelian_symbol()
     if charge == 1:
-        return "q"
-    return rf"q^{{{render_exact(charge)}}}"
+        return symbol
+    return rf"{symbol}^{{{render_exact(charge)}}}"
+
+
+def _charge(entry):
+    return entry.get("abelian_charges", {}).get(ABELIAN_ID, 0)
 
 
 def render_dynkin(labels):
@@ -73,9 +92,9 @@ def _entry_terms(entries, kind, theory=None):
         if kind == "hwg":
             if theory is None:
                 labels = next(iter(entry["dynkin_labels"].values()))
-                body = render_highest_weight(labels, entry["abelian_charges"].get("q", 0))
+                body = render_highest_weight(labels, _charge(entry))
             else:
-                body = render_q_power(entry["abelian_charges"].get("q", 0))
+                body = render_q_power(_charge(entry))
                 for factor in theory.simple_factors:
                     labels = entry["dynkin_labels"][factor.id]
                     body += "".join(
@@ -84,7 +103,7 @@ def _entry_terms(entries, kind, theory=None):
                 body = body or "1"
             coefficient = entry["multiplicity"]
         else:
-            body = render_q_power(entry["abelian_charges"].get("q", 0))
+            body = render_q_power(_charge(entry))
             rendered = [render_dynkin(x["dynkin_labels"])
                         for x in entry["irreducible_representations"]]
             body += (rendered[0] if len(rendered) == 1 else
@@ -153,7 +172,7 @@ def _render_scalar(symbol, coefficients, order, maximum_width=78):
 
 def render_laurent_coefficient(entries):
     """Render stored dimension coefficients as a compact Laurent polynomial."""
-    sectors = {int(entry["abelian_charges"].get("q", 0)): _fraction(entry["coefficient"])
+    sectors = {int(_charge(entry)): _fraction(entry["coefficient"])
                for entry in entries if _fraction(entry["coefficient"])}
     parts = []
     zero = sectors.pop(0, Fraction(0))
@@ -163,7 +182,9 @@ def render_laurent_coefficient(entries):
         positive = sectors.get(power, Fraction(0))
         negative = sectors.get(-power, Fraction(0))
         if positive and positive == negative:
-            body = rf"\bigl(q^{{{power}}}+q^{{-{power}}}\bigr)" if power != 1 else r"\bigl(q+q^{-1}\bigr)"
+            symbol = render_abelian_symbol()
+            body = (rf"\bigl({symbol}^{{{power}}}+{symbol}^{{-{power}}}\bigr)"
+                    if power != 1 else rf"\bigl({symbol}+{symbol}^{{-1}}\bigr)")
             parts.append(_signed_term(positive, body, first=not parts))
         else:
             for charge, coefficient in ((-power, negative), (power, positive)):
@@ -205,9 +226,11 @@ def generate_compact_latex(root, theory_id, order):
     audit_path = root / "generated" / theory_id / "input_audit.md"
     result_dir = root / "generated" / theory_id / f"order_{order}"
     theory = load_theory(theory_path)
+    global ABELIAN_ID
+    ABELIAN_ID = theory.abelian_factors[0].id if theory.abelian_factors else "q"
     names = list(RESULT_NAMES)
     if theory.abelian_factors:
-        names += ["q_refined_dimension_series.json", "q_refined_dimension_pl.json"]
+        names += [f"{ABELIAN_ID}_refined_dimension_series.json", f"{ABELIAN_ID}_refined_dimension_pl.json"]
     paths = [result_dir / name for name in names]
     payloads = {path.name: json.loads(path.read_text(encoding="utf-8")) for path in paths}
     if theory.id != theory_id or any(x.get("theory_id") != theory_id for x in payloads.values()):
@@ -235,35 +258,38 @@ def generate_compact_latex(root, theory_id, order):
                             f"expected {factor.rank} {factor.cartan_name} Dynkin labels")
                 _fraction(entry.get("multiplicity", entry.get("coefficient")))
     has_abelian = bool(theory.abelian_factors)
-    dim_hilbert = (payloads["q_refined_dimension_series.json"]["coefficients_by_t_degree"]
+    dim_hilbert = (payloads[f"{ABELIAN_ID}_refined_dimension_series.json"]["coefficients_by_t_degree"]
                    if has_abelian else {})
-    dim_pl = (payloads["q_refined_dimension_pl.json"]["coefficients_by_t_degree"]
+    dim_pl = (payloads[f"{ABELIAN_ID}_refined_dimension_pl.json"]["coefficients_by_t_degree"]
               if has_abelian else {})
     def dimension_sums(name):
         return {d: sum(_fraction(x["coefficient"]) for x in entries)
                 for d, entries in payloads[name]["coefficients_by_t_degree"].items()}
     hilbert_plain = {d: _fraction(v) for d, v in payloads["unrefined_hilbert_series.json"]["coefficients_by_t_degree"].items()}
     pl_plain = {d: _fraction(v) for d, v in payloads["unrefined_plethystic_logarithm.json"]["coefficients_by_t_degree"].items()}
-    hilbert_match = (dimension_sums("q_refined_dimension_series.json") == {d:v for d,v in hilbert_plain.items() if v}
+    hilbert_match = (dimension_sums(f"{ABELIAN_ID}_refined_dimension_series.json") == {d:v for d,v in hilbert_plain.items() if v}
                      if has_abelian else True)
-    pl_match = dimension_sums("q_refined_dimension_pl.json") == pl_plain if has_abelian else True
+    pl_match = dimension_sums(f"{ABELIAN_ID}_refined_dimension_pl.json") == pl_plain if has_abelian else True
     pe = theory.pe.original_pe_latex
     product = theory.rational_product.original_rational_product_latex
-    title = (rf"$\mathrm{{{theory.gauge_display_name}}}+{int(theory.number_of_flavours)}F$ "
-             rf"at $\lvert k\rvert={render_exact(abs(theory.chern_simons_level))}$")
+    title = (rf"$\mathrm{{{theory.gauge_display_name}}}+{int(theory.number_of_flavours)}F$ at finite coupling"
+             if theory.coupling == "finite" else
+             rf"$\mathrm{{{theory.gauge_display_name}}}+{int(theory.number_of_flavours)}F$ at $\lvert k\rvert={render_exact(abs(theory.chern_simons_level))}$")
     group_names = []
     for factor in theory.simple_factors:
         match = re.fullmatch(r"([A-Za-z]+)\((\d+)\)", factor.display_name)
         group_names.append((rf"\mathrm{{{match.group(1)}}}({match.group(2)})" if match
                             else rf"\mathrm{{{factor.display_name}}}"))
     group_latex = r"\times".join(group_names)
-    args = r"t,q" if has_abelian else "t"
-    rendered_hwg = _render_grouped(rf"\mathrm{{HWG}}({args};\mu,\nu)", hwg, order, "hwg", theory=theory)
+    abelian_symbol = render_abelian_symbol()
+    args = f"t,{abelian_symbol}" if has_abelian else "t"
+    highest_weight_args = r"\mu,\nu" if len(theory.simple_factors) > 1 else r"\mu"
+    rendered_hwg = _render_grouped(rf"\mathrm{{HWG}}({args};{highest_weight_args})", hwg, order, "hwg", theory=theory)
     rendered_chars = _render_grouped(rf"H({args};{group_latex})", chars, order, "character", theory=theory)
-    rendered_dim_hilbert = _render_dimension_series(r"H_{\mathrm{dim}}(t,q)", dim_hilbert, order)
+    rendered_dim_hilbert = _render_dimension_series(rf"H_{{\mathrm{{dim}}}}(t,{abelian_symbol})", dim_hilbert, order)
     rendered_hilbert = _render_scalar(r"H(t)", payloads["unrefined_hilbert_series.json"]["coefficients_by_t_degree"], order)
     rendered_pl = _render_grouped(rf"\operatorname{{PL}}[H({args};{group_latex})]", pl, order, "character", theory=theory)
-    rendered_dim_pl = _render_dimension_series(r"\operatorname{PL}_{\mathrm{dim}}(t,q)", dim_pl, order)
+    rendered_dim_pl = _render_dimension_series(rf"\operatorname{{PL}}_{{\mathrm{{dim}}}}(t,{abelian_symbol})", dim_pl, order)
     rendered_pl_plain = _render_scalar(r"\operatorname{PL}[H(t)]", payloads["unrefined_plethystic_logarithm.json"]["coefficients_by_t_degree"], order)
     if len(theory.simple_factors) > 1:
         slots = [f"a_1,\\ldots,a_{{{int(theory.simple_factors[0].rank)}}}"]
@@ -276,24 +302,38 @@ def generate_compact_latex(root, theory_id, order):
         rank = int(theory.simple_factors[0].rank)
         representation_notation = (rf"[a_1,\ldots,a_{{{rank}}}]:="
                                    rf"[a_1,\ldots,a_{{{rank}}}]_{{{theory.simple_factors[0].cartan_name}}}")
-    abelian_suffix = r"\times\mathrm{U}(1)_q" if has_abelian else ""
-    dimension_explanation = (rf"""$H_{{\mathrm{{dim}}}}(t,q)=\dim_{{{group_latex}}}H(t,q;{group_latex})$
+    abelian_suffix = rf"\times\mathrm{{U}}(1)_{{{abelian_symbol}}}" if has_abelian else ""
+    dimension_explanation = (rf"""$H_{{\mathrm{{dim}}}}(t,{abelian_symbol})=\dim_{{{group_latex}}}H(t,{abelian_symbol};{group_latex})$
 and $H(t)=H_{{\mathrm{{dim}}}}(t,1)$. Likewise,
-$\operatorname{{PL}}_{{\mathrm{{dim}}}}(t,q)=\dim_{{{group_latex}}}
-\operatorname{{PL}}[H(t,q;{group_latex})]$ and
+$\operatorname{{PL}}_{{\mathrm{{dim}}}}(t,{abelian_symbol})=\dim_{{{group_latex}}}
+\operatorname{{PL}}[H(t,{abelian_symbol};{group_latex})]$ and
 $\operatorname{{PL}}[H(t)]=\operatorname{{PL}}_{{\mathrm{{dim}}}}(t,1)$"""
         if has_abelian else
         rf"""$H(t)=\dim_{{{group_latex}}}H(t;{group_latex})$ and
 $\operatorname{{PL}}[H(t)]=\dim_{{{group_latex}}}
 \operatorname{{PL}}[H(t;{group_latex})]$""")
-    dimension_hilbert_section = (rf"""\paragraph{{$q$-refined dimension Hilbert series.}}
+    dimension_hilbert_section = (rf"""\paragraph{{${abelian_symbol}$-refined dimension Hilbert series.}}
 \[
 {rendered_dim_hilbert}
 \]""" if has_abelian else "")
-    dimension_pl_section = (rf"""\paragraph{{$q$-refined dimension plethystic logarithm.}}
+    dimension_pl_section = (rf"""\paragraph{{${abelian_symbol}$-refined dimension plethystic logarithm.}}
 \[
 {rendered_dim_pl}
 \]""" if has_abelian else "")
+    finite_source = (r"""\section{Finite-coupling source specialization}
+Equation (5.52) gives
+\[\mathrm{HWG}^{\mathrm{finite}}_{N_c,N_f}=\PE\!\left[t^2+(\mu_{N_c}\beta+\mu_{N_f-N_c}\beta^{-1})t^{N_c}+\sum_{j=1}^{N_c}\mu_j\mu_{N_f-j}t^{2j}-\mu_{N_c}\mu_{N_f-N_c}t^{2N_c}\right].\]
+For $N_c=3,N_f=5$, the unsimplified exponent is
+\[t^2+(\mu_3\beta+\mu_2\beta^{-1})t^3+\mu_1\mu_4t^2+\mu_2\mu_3t^4+\mu_3\mu_2t^6-\mu_3\mu_2t^6.\]
+Thus $+\mu_3\mu_2t^6-\mu_3\mu_2t^6=0$ exactly.
+""" if theory.coupling == "finite" else "")
+    classical_summary = (r"""\section{Classical operator summary}
+The calculated PL gives degree-two singlet and adjoint mesonic candidates,
+$[0,0,1,0]$ at $B_\beta=+1$, and $[0,1,0,0]$ at $B_\beta=-1$.
+The first negative degree is four, with singlet and adjoint first-relation
+candidates. No complete-intersection claim is made.
+\[B=3B_\beta,\qquad I=0.\]
+""" if theory.coupling == "finite" else "")
     document = rf"""\documentclass[10pt]{{article}}
 \usepackage{{amsmath}}
 \usepackage{{amssymb}}
@@ -307,13 +347,14 @@ $\operatorname{{PL}}[H(t)]=\dim_{{{group_latex}}}
 \date{{}}
 \begin{{document}}
 \maketitle
-At infinite coupling the enhanced symmetry is ${group_latex}{abelian_suffix}$.
+The flavour symmetry is ${group_latex}{abelian_suffix}$.
 The expansion is truncated at $O(t^{{{order+1}}})$.  We define
 ${representation_notation}$.
 Dimension evaluation is the ring homomorphism
 $\dim_{{{group_latex}}}:R({group_latex})\to\mathbb{{Z}}$, with
 {dimension_explanation};
 the latter agrees with the independently stored scalar result.
+{finite_source}
 
 \section{{Highest-weight generating function}}
 \begin{{equation}}
@@ -349,6 +390,7 @@ the latter agrees with the independently stored scalar result.
 \[
 {rendered_pl_plain}
 \]
+{classical_summary}
 \end{{document}}
 """
     all_multiplicities = [entry.get("multiplicity", entry.get("coefficient"))
@@ -358,18 +400,18 @@ the latter agrees with the independently stored scalar result.
     checks = {
         "theory_ids_agree": True, "loaded_results_have_requested_order": True,
         "dynkin_labels_have_expected_rank": True,
-        "character_hilbert_retains_simple_factor_labels_and_q": "[" in rendered_chars and ("q" in rendered_chars if has_abelian else True),
+        "character_hilbert_retains_simple_factor_labels_and_q": "[" in rendered_chars and (ABELIAN_ID in rendered_chars if has_abelian else True),
         "q_refined_dimension_hilbert_has_no_dynkin_labels": "[" not in rendered_dim_hilbert,
         "q_refined_dimension_hilbert_retains_every_q_charge": all(
-            render_q_power(entry["abelian_charges"]["q"]) in rendered_dim_hilbert
-            for entries in dim_hilbert.values() for entry in entries if int(entry["abelian_charges"]["q"])),
+            render_q_power(entry["abelian_charges"][ABELIAN_ID]) in rendered_dim_hilbert
+            for entries in dim_hilbert.values() for entry in entries if int(entry["abelian_charges"][ABELIAN_ID])),
         "q_refined_dimension_hilbert_matches_stored": bool(dim_hilbert) if has_abelian else True,
         "q_equals_one_dimension_hilbert_matches_stored_unrefined": hilbert_match,
-        "refined_character_pl_retains_simple_factor_labels_and_q": "[" in rendered_pl and ("q" in rendered_pl if has_abelian else True),
+        "refined_character_pl_retains_simple_factor_labels_and_q": "[" in rendered_pl and (ABELIAN_ID in rendered_pl if has_abelian else True),
         "q_refined_dimension_pl_has_no_dynkin_labels": "[" not in rendered_dim_pl,
         "q_refined_dimension_pl_retains_every_q_charge": all(
-            render_q_power(entry["abelian_charges"]["q"]) in rendered_dim_pl
-            for entries in dim_pl.values() for entry in entries if int(entry["abelian_charges"]["q"])),
+            render_q_power(entry["abelian_charges"][ABELIAN_ID]) in rendered_dim_pl
+            for entries in dim_pl.values() for entry in entries if int(entry["abelian_charges"][ABELIAN_ID])),
         "q_refined_dimension_pl_signed_coefficients_match_stored": bool(dim_pl) if has_abelian else True,
         "q_equals_one_dimension_pl_matches_stored_unrefined": pl_match,
         "no_terms_above_order": True, "all_stored_terms_through_order_included": degree_sets_complete,
@@ -403,8 +445,8 @@ the latter agrees with the independently stored scalar result.
                     *( ["q_refined_dimension_plethystic_logarithm"] if has_abelian else []), "fully_unrefined_plethystic_logarithm"],
                 "term_counts": term_counts,
                 "q_charge_support": ({
-                    "q_refined_dimension_hilbert_series": sorted({int(e["abelian_charges"]["q"]) for es in dim_hilbert.values() for e in es}),
-                    "q_refined_dimension_plethystic_logarithm": sorted({int(e["abelian_charges"]["q"]) for es in dim_pl.values() for e in es})} if has_abelian else None)}
+                    "q_refined_dimension_hilbert_series": sorted({int(e["abelian_charges"][ABELIAN_ID]) for es in dim_hilbert.values() for e in es}),
+                    "q_refined_dimension_plethystic_logarithm": sorted({int(e["abelian_charges"][ABELIAN_ID]) for es in dim_pl.values() for e in es})} if has_abelian else None)}
     out = result_dir / "compact_report"
     out.mkdir(parents=True, exist_ok=True)
     (out / "compact_results.tex").write_text(document, encoding="utf-8")

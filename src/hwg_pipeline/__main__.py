@@ -105,6 +105,7 @@ def _charge_dict(charges):
 
 
 def _character_outputs(theory, order, hwg, output):
+    abelian_name = theory.abelian_factors[0].id if theory.abelian_factors else ""
     series = restore_characters(theory, hwg)
     refined = dimension_refine(series)
     plain = unrefine(series)
@@ -134,7 +135,7 @@ def _character_outputs(theory, order, hwg, output):
                                             for x in theory.simple_factors],
                          "coefficients_by_t_degree": groups}
     (output / "character_series.json").write_text(json.dumps(character_payload, indent=2, sort_keys=True) + "\n")
-    lines = [rf"% Irreducible-character series through $t^{{{order}}}$.", r"\begin{align*}", "H(t,q) = {}"]
+    lines = [rf"% Irreducible-character series through $t^{{{order}}}$.", r"\begin{align*}", f"H(t,{abelian_name}) = {{}}"]
     pieces = []
     for degree in sorted(latex_groups):
         coefficient = " + ".join(" ".join(x for x in entry if x) for entry in latex_groups[degree])
@@ -152,12 +153,13 @@ def _character_outputs(theory, order, hwg, output):
     refined_payload = {"theory_id": theory.id, "maximum_t_degree": int(order),
                        "coefficients_by_t_degree": refined_groups}
     if theory.abelian_factors:
-        (output / "q_refined_dimension_series.json").write_text(json.dumps(refined_payload, indent=2, sort_keys=True) + "\n")
-        rtex = [rf"% Exact q-refined dimension series through $t^{{{order}}}$.", r"\begin{align*}",
-                "H_{\\dim}(t,q) = " + " + ".join(
+        prefix = theory.abelian_factors[0].id
+        (output / f"{prefix}_refined_dimension_series.json").write_text(json.dumps(refined_payload, indent=2, sort_keys=True) + "\n")
+        rtex = [rf"% Exact {prefix}-refined dimension series through $t^{{{order}}}$.", r"\begin{align*}",
+                f"H_{{\\dim}}(t,{prefix}) = " + " + ".join(
                     f"{coefficient}" + "".join(_latex_power(k, v) for k, v in charges if v) + rf"t^{{{degree}}}"
                     for degree, charges, coefficient in refined_latex), r"\end{align*}", ""]
-        (output / "q_refined_dimension_series.tex").write_text("\n".join(rtex))
+        (output / f"{prefix}_refined_dimension_series.tex").write_text("\n".join(rtex))
 
     plain_payload = {"theory_id": theory.id, "maximum_t_degree": int(order),
                      "coefficients_by_t_degree": {str(d): int(c) for d, c in plain}}
@@ -266,11 +268,12 @@ def _reconstruction_outputs(theory, order, hwg, output):
     for (d, q), c in refined_dim:
         qgroups.setdefault(str(d), []).append({"abelian_charges": _charge_dict(q), "coefficient": _rational(c)})
     if theory.abelian_factors:
-        (output / "reconstructed_q_refined_dimension_series.json").write_text(json.dumps(
+        prefix = theory.abelian_factors[0].id
+        (output / f"reconstructed_{prefix}_refined_dimension_series.json").write_text(json.dumps(
             {**base, "coefficients_by_t_degree": qgroups}, indent=2, sort_keys=True) + "\n")
         qtex = " + ".join(f"{c}{''.join(_latex_power(k,v) for k,v in q if v)}t^{{{d}}}" for (d,q),c in refined_dim)
-        (output / "reconstructed_q_refined_dimension_series.tex").write_text(
-            "% Reconstructed q-refined dimensions.\n\\begin{align*}\nH_{dim,rec}=" + qtex + "\n\\end{align*}\n")
+        (output / f"reconstructed_{prefix}_refined_dimension_series.tex").write_text(
+            f"% Reconstructed {prefix}-refined dimensions.\n\\begin{{align*}}\nH_{{dim,rec}}=" + qtex + "\n\\end{align*}\n")
     (output / "reconstructed_unrefined_hilbert_series.json").write_text(json.dumps(
         {**base, "coefficients_by_t_degree": {str(d): _rational(c) for d,c in unrefined}}, indent=2, sort_keys=True) + "\n")
     (output / "reconstructed_unrefined_hilbert_series.tex").write_text(
@@ -326,9 +329,10 @@ def _pl_outputs(theory, order, hwg, output):
     for (degree,charges),coefficient in dim:
         dgroups.setdefault(str(degree),[]).append({"abelian_charges":_charge_dict(charges),"coefficient":_rational(coefficient)})
     if theory.abelian_factors:
-        (output/"q_refined_dimension_pl.json").write_text(json.dumps({"theory_id":theory.id,"maximum_t_degree":int(order),"coefficients_by_t_degree":dgroups},indent=2,sort_keys=True)+"\n")
+        prefix = theory.abelian_factors[0].id
+        (output/f"{prefix}_refined_dimension_pl.json").write_text(json.dumps({"theory_id":theory.id,"maximum_t_degree":int(order),"coefficients_by_t_degree":dgroups},indent=2,sort_keys=True)+"\n")
         dtex=" + ".join(f"{c}"+"".join(_latex_power(k,v) for k,v in q if v)+rf"t^{{{d}}}" for (d,q),c in dim)
-        (output/"q_refined_dimension_pl.tex").write_text("% Exact dimension-refined plethystic logarithm.\n\\begin{align*}\nPL_{\\dim}[H] = "+dtex+"\n\\end{align*}\n")
+        (output/f"{prefix}_refined_dimension_pl.tex").write_text("% Exact dimension-refined plethystic logarithm.\n\\begin{align*}\nPL_{\\dim}[H] = "+dtex+"\n\\end{align*}\n")
     upayload={"theory_id":theory.id,"maximum_t_degree":int(order),"coefficients_by_t_degree":{str(d):_rational(c) for d,c in plain}}
     (output/"unrefined_plethystic_logarithm.json").write_text(json.dumps(upayload,indent=2,sort_keys=True)+"\n")
     (output/"unrefined_plethystic_logarithm.tex").write_text("% Exact unrefined plethystic logarithm.\n\\begin{align*}\nPL[H] = "+" + ".join(f"{c}t^{{{d}}}" for d,c in plain)+"\n\\end{align*}\n")

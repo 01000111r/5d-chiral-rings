@@ -1,0 +1,190 @@
+{
+  "A4_convention": "Dynkin labels [a1,a2,a3,a4] in WeylCharacterRing(A4, style=coroots)",
+  "beta_charge_convention": "B_beta is the exponent of beta",
+  "cancelled_source_terms": [
+    {
+      "A4_labels": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "A4_labels": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": -1,
+      "t_degree": 6
+    }
+  ],
+  "exact_cancellation": "+mu_3 mu_2 t^6 - mu_3 mu_2 t^6 = 0",
+  "finite_coupling_instanton_charge": "I = 0",
+  "fixture_sha256": "c638ff970359723deda9256a3c12b56d242f2581969c65879fc5d570538c3886",
+  "general_formula": "PE[t^2 + (mu_Nc beta + mu_(Nf-Nc) beta^(-1)) t^Nc + sum_(j=1)^Nc mu_j mu_(Nf-j) t^(2j) - mu_Nc mu_(Nf-Nc) t^(2Nc)]",
+  "input_checks": {
+    "all_A4_labels_length_four": true,
+    "all_passed": true,
+    "beta_only_abelian_fugacity": true,
+    "degree_six_sum_zero": true,
+    "degree_six_terms_identical_apart_from_sign": true,
+    "domain_5_ge_5": true,
+    "five_denominator_no_numerator": true,
+    "five_positive_simplified_terms": true,
+    "local_source_exists": true,
+    "no_instanton_fugacity": true,
+    "source_identifies_equation_5_52": true,
+    "source_says_finite_coupling": true
+  },
+  "paper": {
+    "authors": [
+      "A. Bourget",
+      "S. Cabrera",
+      "J. F. Grimminger",
+      "A. Hanany",
+      "Z. Zhong"
+    ],
+    "citation": "JHEP 03 (2020) 176",
+    "title": "Brane webs and magnetic quivers for SQCD"
+  },
+  "physical_baryon_conversion": "B = 3 B_beta",
+  "rational_product": "1/[(1-t^2)(1-mu_1 mu_4 t^2)(1-beta mu_3 t^3)(1-beta^(-1) mu_2 t^3)(1-mu_2 mu_3 t^4)]",
+  "simplified_pe": "PE[(1 + mu_1 mu_4)t^2 + (beta mu_3 + beta^(-1) mu_2)t^3 + mu_2 mu_3 t^4]",
+  "source_equation": "5.52",
+  "source_file": "references/overleaf/su3_nf5_nf6_finite_hwg_results.tex",
+  "source_identification": "finite coupling",
+  "source_sha256": "44759e2f6ffbc7004a7b4a1d370bb8a5395a2da1fe0ce2675348410e13bd30c1",
+  "structured_pe_terms": [
+    {
+      "A4_labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "A4_labels": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "A4_labels": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "beta_charge": 1,
+      "coefficient": 1,
+      "t_degree": 3
+    },
+    {
+      "A4_labels": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": -1,
+      "coefficient": 1,
+      "t_degree": 3
+    },
+    {
+      "A4_labels": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 4
+    }
+  ],
+  "structured_product_factors": [
+    {
+      "A4_labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 2
+    },
+    {
+      "A4_labels": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 2
+    },
+    {
+      "A4_labels": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "beta_charge": 1,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 3
+    },
+    {
+      "A4_labels": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": -1,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 3
+    },
+    {
+      "A4_labels": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 4
+    }
+  ],
+  "substitution": {
+    "N_c": 3,
+    "N_f": 5
+  },
+  "theory_id": "su3_nf5_finite",
+  "unresolved_ambiguities": [],
+  "unsimplified_exponent": "t^2 + (mu_3 beta + mu_2 beta^(-1)) t^3 + mu_1 mu_4 t^2 + mu_2 mu_3 t^4 + mu_3 mu_2 t^6 - mu_3 mu_2 t^6"
+}

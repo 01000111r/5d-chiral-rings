@@ -42,6 +42,20 @@ def test_deterministic_render_generation():
  rows=[(2,'a','b'),(10,'c','d')]; assert render_degree_table(rows,'f','u')==render_degree_table(rows,'f','u')
 def test_branching_deterministic(): assert branch_irrep(g(5),g(4),(2,1,0,1,0))==branch_irrep(g(5),g(4),(2,1,0,1,0))
 
+def a6pieces(labels):
+ return {(tuple(map(int,p.child_dynkin_labels)),int(p.x_charge)):int(p.multiplicity) for p in branch_irrep(g(6),g(5),labels)}
+def test_a6_fundamental_and_antifundamental():
+ assert a6pieces((1,0,0,0,0,0))=={((1,0,0,0,0),1):1,((0,0,0,0,0),-6):1}
+ assert a6pieces((0,0,0,0,0,1))=={((0,0,0,0,1),-1):1,((0,0,0,0,0),6):1}
+def test_a6_adjoint_and_antisymmetrics():
+ assert a6pieces((1,0,0,0,0,1))=={((1,0,0,0,1),0):1,((0,0,0,0,0),0):1,((1,0,0,0,0),7):1,((0,0,0,0,1),-7):1}
+ assert a6pieces((0,0,1,0,0,0))=={((0,0,1,0,0),3):1,((0,1,0,0,0),-4):1}
+ assert a6pieces((0,0,0,1,0,0))=={((0,0,1,0,0),-3):1,((0,0,0,1,0),4):1}
+def test_a6_twenty_self_conjugate_and_exact_map():
+ assert tuple(reversed((0,0,1,0,0)))==(0,0,1,0,0)
+ M,R,T=solve_charge_map([{'raw':[7,0],'physical':[0,1]},{'raw':[3,1],'physical':[-3,0]}])
+ assert M==matrix(QQ,[[0,-3],[QQ(1)/7,-QQ(3)/7]]) and M*R==T
+
 def d5pieces(labels):
  return {(tuple(map(int,p.child_dynkin_labels)),int(p.x_charge)):int(p.multiplicity)
          for p in branch_irrep(SimpleGroupSpec('d','D',5,'SO(10)',tuple('abcde')),g(4),labels,D5_EMBEDDING)}

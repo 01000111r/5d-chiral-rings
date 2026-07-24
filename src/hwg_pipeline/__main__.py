@@ -23,6 +23,7 @@ from .charge_map_outputs import write_charge_map_outputs
 from .reporting import ReportError, generate_report
 from .notebook_report import NotebookError, generate_notebook
 from .compact_latex import CompactLatexError, generate_compact_latex
+from .branching_comparison import ComparisonError, generate as generate_branching_comparison
 
 
 def _root():
@@ -386,10 +387,23 @@ def main(argv=None):
     compact = commands.add_parser("compact-latex", help="render compact LaTeX from stored results")
     compact.add_argument("theory_id")
     compact.add_argument("--order", required=True, type=int)
+    comparison = commands.add_parser("branching-comparison", help="compare stored finite and UV refined PLs")
+    comparison.add_argument("theory_id")
+    comparison.add_argument("--finite-reference", required=True)
+    comparison.add_argument("--order", required=True, type=int)
+    comparison.add_argument("--spec", required=True)
+    comparison.add_argument("--strict", action="store_true")
     args = parser.parse_args(argv)
     if args.order < 0:
         parser.error("--order must be nonnegative")
     root = _root()
+    if args.command == "branching-comparison":
+        try:
+            generate_branching_comparison(root, args.theory_id, args.finite_reference,
+                                          args.order, root / args.spec, args.strict)
+        except ComparisonError as exc:
+            parser.error(str(exc))
+        return
     if args.command == "compact-latex":
         try:
             generate_compact_latex(root, args.theory_id, args.order)

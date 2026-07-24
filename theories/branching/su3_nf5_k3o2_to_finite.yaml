@@ -1,0 +1,17 @@
+id: su3_nf5_k3o2_to_finite
+uv_theory_id: su3_nf5_k3o2_infinite
+finite_theory_id: su3_nf5_finite
+order: 10
+parent_simple_factor: A5
+child_simple_factor: A4
+embedding_type: A_n_to_A_n_minus_1_u1
+branching_convention: "6 -> 5_(+1) + 1_(-5)"
+raw_charges: [x, q]
+physical_charges: [B, I]
+normalization:
+  fundamental:
+    - {child_dynkin_labels: [1, 0, 0, 0], x_charge: 1}
+    - {child_dynkin_labels: [0, 0, 0, 0], x_charge: -5}
+anchors:
+  - {id: positive_unit_instanton, degree: 2, child_dynkin_labels: [1, 0, 0, 0], raw: [6, 0], physical: [0, 1]}
+  - {id: classical_antibaryon, degree: 3, child_dynkin_labels: [0, 1, 0, 0], raw: [2, 1], physical: [-3, 0], finite_beta_charge: -1}

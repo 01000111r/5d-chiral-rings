@@ -1,0 +1,85 @@
+{
+  "imported_check_status_totals": {
+    "PASS": 250
+  },
+  "validation_results": [
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-REQUIRED-FILES-EXIST-77CF3F",
+      "name": "required_files_exist",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-REQUIRED-JSON-PARSES-608776",
+      "name": "required_json_parses",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-THEORY-IDS-AGREE-7F11F5",
+      "name": "theory_ids_agree",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-ORDERS-AGREE-5FF0EA",
+      "name": "orders_agree",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-DYNKIN-LABEL-RANKS-AGREE-0FCFED",
+      "name": "dynkin_label_ranks_agree",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "JSON contains integers and rational numerator/denominator objects; strings preserve exact charges",
+      "id": "INPUT-REPORT-ALL-VALUES-EXACT-44DA6B",
+      "name": "all_values_exact",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-CHECK-STATUSES-NORMALIZED-04B381",
+      "name": "check_statuses_normalized",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-EVERY-STAGE-HAS-EVIDENCE-30C68B",
+      "name": "every_stage_has_evidence",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-RECONSTRUCTION-DIFFERENCE-AGREES-12CE4C",
+      "name": "reconstruction_difference_agrees",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-BRANCHING-FACTORS-AGREE-7EDB2E",
+      "name": "branching_factors_agree",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "",
+      "id": "INPUT-REPORT-RAW-X-AND-Q-DISTINCT-9967E4",
+      "name": "raw_x_and_q_distinct",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "generator only reads evidence and writes report directory",
+      "id": "INPUT-REPORT-SOURCE-RESULTS-NOT-MODIFIED-F5F80B",
+      "name": "source_results_not_modified",
+      "status": "PASS"
+    },
+    {
+      "diagnostic": "validated by repeat invocation in the build procedure",
+      "id": "INPUT-REPORT-DETERMINISTIC-GENERATION-A0D00E",
+      "name": "deterministic_generation",
+      "status": "PASS"
+    }
+  ]
+}

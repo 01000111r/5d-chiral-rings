@@ -1,0 +1,41 @@
+{
+  "check_totals": {
+    "fail": 0,
+    "not-applicable": 0,
+    "pass": 57,
+    "pending": 0,
+    "unavailable": 1
+  },
+  "commands_file": "generated/su3_nf5_k5o2_infinite/order_10/command_log.txt",
+  "compact_report_status": "pass",
+  "deterministic_rerun": "pass: 36 JSON/TeX files byte-for-byte identical",
+  "formal_log_implementation": "direct (validated CLI default; CLI has no --formal-log option)",
+  "full_pytest": "126 passed in 72.93s",
+  "independent_scalar_reconstruction": "pass",
+  "maximum_t_degree": 10,
+  "pdf_compilation_status": "unavailable: no LaTeX compiler",
+  "python_version": "3.11.15",
+  "reconstruction_difference_empty": true,
+  "reconstruction_status": "pass",
+  "regression_status": "pass: complete suite including reference theory and n=3 benchmark tests; stored outputs unchanged",
+  "sage_version": "10.7",
+  "shared_implementation_files_changed": true,
+  "stage_elapsed_seconds": {
+    "stage_1_expand": 3,
+    "stage_2_characters": 3,
+    "stage_3_plethystic_log": 16,
+    "stage_4_reconstruct": 19,
+    "stage_5_analyze_pl": 4,
+    "stage_6_compact_latex": 5
+  },
+  "stage_results": {
+    "0": "pass",
+    "1": "pass",
+    "2": "pass",
+    "3": "pass",
+    "4": "pass",
+    "5": "pass",
+    "6": "pass"
+  },
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

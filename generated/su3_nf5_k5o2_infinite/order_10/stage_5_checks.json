@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "calculation_performed": "Conservative operator-content analysis",
+      "check_name": "deficit_equals_negative_pl_content",
+      "claim": "deficit equals negative pl content",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "generator and first-relation candidates",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Conservative operator-content analysis",
+      "check_name": "dimensions_exact",
+      "claim": "dimensions exact",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "generator and first-relation candidates",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Conservative operator-content analysis",
+      "check_name": "first_negative_degree_exists",
+      "claim": "first negative degree exists",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "generator and first-relation candidates",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Conservative operator-content analysis",
+      "check_name": "relation_degree_not_mixed",
+      "claim": "relation degree not mixed",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "generator and first-relation candidates",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_number": 5,
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

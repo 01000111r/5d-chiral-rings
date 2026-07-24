@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "calculation_performed": "Source fixture and input audit",
+      "check_name": "fixture_matches_source",
+      "claim": "fixture matches source",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/input_audit.json",
+      "mathematical_input": "stored Overleaf HWG",
+      "mathematical_output": "validated structured fixture",
+      "stage_number": 0,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Source fixture and input audit",
+      "check_name": "unresolved_ambiguities_empty",
+      "claim": "unresolved ambiguities empty",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/input_audit.json",
+      "mathematical_input": "stored Overleaf HWG",
+      "mathematical_output": "validated structured fixture",
+      "stage_number": 0,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_number": 0,
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

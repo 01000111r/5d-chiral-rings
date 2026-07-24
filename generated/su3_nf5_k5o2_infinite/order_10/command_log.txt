@@ -1,0 +1,17 @@
+./scripts/sage-python -m hwg_pipeline expand su3_nf5_k5o2_infinite --order 10
+elapsed_seconds=3
+./scripts/sage-python -m hwg_pipeline characters su3_nf5_k5o2_infinite --order 10
+elapsed_seconds=3
+./scripts/sage-python -m hwg_pipeline plethystic-log su3_nf5_k5o2_infinite --order 10
+elapsed_seconds=16
+./scripts/sage-python -m hwg_pipeline reconstruct su3_nf5_k5o2_infinite --order 10
+elapsed_seconds=19
+./scripts/sage-python -m hwg_pipeline analyze-pl su3_nf5_k5o2_infinite --order 10
+elapsed_seconds=4
+./scripts/sage-python -m hwg_pipeline compact-latex su3_nf5_k5o2_infinite --order 10
+./scripts/sage-python -m hwg_pipeline expand su3_nf5_k5o2_infinite --order 10
+./scripts/sage-python -m hwg_pipeline characters su3_nf5_k5o2_infinite --order 10
+./scripts/sage-python -m hwg_pipeline plethystic-log su3_nf5_k5o2_infinite --order 10
+./scripts/sage-python -m hwg_pipeline reconstruct su3_nf5_k5o2_infinite --order 10
+./scripts/sage-python -m hwg_pipeline analyze-pl su3_nf5_k5o2_infinite --order 10
+./scripts/sage-python -m hwg_pipeline compact-latex su3_nf5_k5o2_infinite --order 10

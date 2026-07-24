@@ -1,0 +1,139 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "all_multiplicities_are_integers",
+      "claim": "all multiplicities are integers",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "all_multiplicities_are_nonnegative",
+      "claim": "all multiplicities are nonnegative",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "constant_coefficient_is_one",
+      "claim": "constant coefficient is one",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "no_terms_above_requested_degree",
+      "claim": "no terms above requested degree",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "pe_equals_rational_product",
+      "claim": "pe equals rational product",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "truncation_stability.0",
+      "claim": "truncation stability.0",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "truncation_stability.10",
+      "claim": "truncation stability.10",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "truncation_stability.2",
+      "claim": "truncation stability.2",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "truncation_stability.4",
+      "claim": "truncation stability.4",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "truncation_stability.6",
+      "claim": "truncation stability.6",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "HWG expansion by PE and rational product",
+      "check_name": "truncation_stability.8",
+      "claim": "truncation stability.8",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/checks.json",
+      "mathematical_input": "validated fixture",
+      "mathematical_output": "highest-weight expansion through t^10",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_number": 1,
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

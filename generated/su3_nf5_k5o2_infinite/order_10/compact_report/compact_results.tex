@@ -1,0 +1,201 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\newcommand{\PE}{\operatorname{PE}}
+\title{Compact Hilbert-series results for $\mathrm{SU(3)}+5F$ at $\lvert k\rvert=\frac{5}{2}$}
+\date{}
+\begin{document}
+\maketitle
+At infinite coupling the enhanced symmetry is $\mathrm{SO}(10)\times\mathrm{U}(1)_q$.
+The expansion is truncated at $O(t^{11})$, and
+$[a_1,\ldots,a_{5}]$ denotes the $\mathrm{SO}(10)$ Dynkin label.
+Dimension evaluation is the ring homomorphism
+$\dim_{\mathrm{SO}(10)}:R(\mathrm{SO}(10))\to\mathbb{Z}$, with
+$H_{\mathrm{dim}}(t,q)=\dim_{\mathrm{SO}(10)}H(t,q;\mathrm{SO}(10))$
+and $H(t)=H_{\mathrm{dim}}(t,1)$.  Likewise,
+$\operatorname{PL}_{\mathrm{dim}}(t,q)=\dim_{\mathrm{SO}(10)}
+\operatorname{PL}[H(t,q;\mathrm{SO}(10))]$ and
+$\operatorname{PL}[H(t)]=\operatorname{PL}_{\mathrm{dim}}(t,1)$;
+the latter agrees with the independently stored scalar result.
+
+\section{Highest-weight generating function}
+\begin{equation}
+\mathrm{HWG}=\PE\!\left[(\mu_2+1)t^2+(q\mu_4+q^{-1}\mu_5)t^3
++\mu_4\mu_5t^4-\mu_4\mu_5t^6\right].
+\end{equation}
+\begin{equation}
+\resizebox{0.98\linewidth}{!}{${\displaystyle
+\mathrm{HWG}=\frac{1-\mu_4\mu_5t^6}
+{(1-t^2)(1-\mu_2t^2)(1-q\mu_4t^3)(1-q^{-1}\mu_5t^3)(1-\mu_4\mu_5t^4)}.}$}
+\end{equation}
+
+\section{Highest-weight expansion}
+\[
+\begin{aligned}
+\mathrm{HWG}(t,q;\mu) ={}&
+   \Bigl(1\Bigr) \\
+  + \Bigl(1\,+\mu_{2}\Bigr)t^{2} \\
+  + \Bigl(q^{-1}\mu_{5}\,+q\mu_{4}\Bigr)t^{3} \\
+  + \Bigl(\begin{aligned}[t]1\,+\mu_{4}\mu_{5}\,+\mu_{2} \\
+  &{}+\mu_{2}^{2}\end{aligned}\Bigr)t^{4} \\
+  + \Bigl(\begin{aligned}[t]q^{-1}\mu_{5}\,+q\mu_{4}\,+q^{-1}\mu_{2}\mu_{5} \\
+  &{}+q\mu_{2}\mu_{4}\end{aligned}\Bigr)t^{5} \\
+  + \Bigl(\begin{aligned}[t]1\,+q^{-2}\mu_{5}^{2}\,+\mu_{4}\mu_{5} \\
+  &{}+q^{2}\mu_{4}^{2}\,+\mu_{2}\,+\mu_{2}\mu_{4}\mu_{5} \\
+  &{}+\mu_{2}^{2}\,+\mu_{2}^{3}\end{aligned}\Bigr)t^{6} \\
+  + \Bigl(\begin{aligned}[t]q^{-1}\mu_{5}\,+q\mu_{4}\,+q^{-1}\mu_{4}\mu_{5}^{2} \\
+  &{}+q\mu_{4}^{2}\mu_{5}\,+q^{-1}\mu_{2}\mu_{5}\,+q\mu_{2}\mu_{4} \\
+  &{}+q^{-1}\mu_{2}^{2}\mu_{5}\,+q\mu_{2}^{2}\mu_{4}\end{aligned}\Bigr)t^{7} \\
+  + \Bigl(\begin{aligned}[t]1\,+q^{-2}\mu_{5}^{2}\,+\mu_{4}\mu_{5} \\
+  &{}+q^{2}\mu_{4}^{2}\,+\mu_{4}^{2}\mu_{5}^{2}\,+\mu_{2} \\
+  &{}+q^{-2}\mu_{2}\mu_{5}^{2}\,+\mu_{2}\mu_{4}\mu_{5} \\
+  &{}+q^{2}\mu_{2}\mu_{4}^{2}\,+\mu_{2}^{2}\,+\mu_{2}^{2}\mu_{4}\mu_{5} \\
+  &{}+\mu_{2}^{3}\,+\mu_{2}^{4}\end{aligned}\Bigr)t^{8} \\
+  + \Bigl(\begin{aligned}[t]q^{-1}\mu_{5}\,+q^{-3}\mu_{5}^{3}\,+q\mu_{4} \\
+  &{}+q^{-1}\mu_{4}\mu_{5}^{2}\,+q\mu_{4}^{2}\mu_{5}\,+q^{3}\mu_{4}^{3} \\
+  &{}+q^{-1}\mu_{2}\mu_{5}\,+q\mu_{2}\mu_{4} \\
+  &{}+q^{-1}\mu_{2}\mu_{4}\mu_{5}^{2}\,+q\mu_{2}\mu_{4}^{2}\mu_{5} \\
+  &{}+q^{-1}\mu_{2}^{2}\mu_{5}\,+q\mu_{2}^{2}\mu_{4} \\
+  &{}+q^{-1}\mu_{2}^{3}\mu_{5}\,+q\mu_{2}^{3}\mu_{4}\end{aligned}\Bigr)t^{9} \\
+  + \Bigl(\begin{aligned}[t]1\,+q^{-2}\mu_{5}^{2}\,+\mu_{4}\mu_{5} \\
+  &{}+q^{-2}\mu_{4}\mu_{5}^{3}\,+q^{2}\mu_{4}^{2}\,+\mu_{4}^{2}\mu_{5}^{2} \\
+  &{}+q^{2}\mu_{4}^{3}\mu_{5}\,+\mu_{2}\,+q^{-2}\mu_{2}\mu_{5}^{2} \\
+  &{}+\mu_{2}\mu_{4}\mu_{5}\,+q^{2}\mu_{2}\mu_{4}^{2} \\
+  &{}+\mu_{2}\mu_{4}^{2}\mu_{5}^{2}\,+\mu_{2}^{2} \\
+  &{}+q^{-2}\mu_{2}^{2}\mu_{5}^{2}\,+\mu_{2}^{2}\mu_{4}\mu_{5} \\
+  &{}+q^{2}\mu_{2}^{2}\mu_{4}^{2}\,+\mu_{2}^{3}\,+\mu_{2}^{3}\mu_{4}\mu_{5} \\
+  &{}+\mu_{2}^{4}\,+\mu_{2}^{5}\end{aligned}\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+
+\section{Character Hilbert series}
+\[
+\begin{aligned}
+H(t,q;\mathrm{SO}(10)) ={}&
+   \Bigl([0,0,0,0,0]\Bigr) \\
+  + \Bigl([0,0,0,0,0]\,+[0,1,0,0,0]\Bigr)t^{2} \\
+  + \Bigl(q^{-1}[0,0,0,0,1]\,+q[0,0,0,1,0]\Bigr)t^{3} \\
+  + \Bigl(\begin{aligned}[t][0,0,0,0,0]\,+[0,0,0,1,1]\,+[0,1,0,0,0] \\
+  &{}+[0,2,0,0,0]\end{aligned}\Bigr)t^{4} \\
+  + \Bigl(\begin{aligned}[t]q^{-1}[0,0,0,0,1]\,+q^{-1}[0,1,0,0,1]\,+q[0,0,0,1,0] \\
+  &{}+q[0,1,0,1,0]\end{aligned}\Bigr)t^{5} \\
+  + \Bigl(\begin{aligned}[t]q^{-2}[0,0,0,0,2]\,+[0,0,0,0,0]\,+[0,0,0,1,1] \\
+  &{}+[0,1,0,0,0]\,+[0,1,0,1,1]\,+[0,2,0,0,0] \\
+  &{}+[0,3,0,0,0]\,+q^{2}[0,0,0,2,0]\end{aligned}\Bigr)t^{6} \\
+  + \Bigl(\begin{aligned}[t]q^{-1}[0,0,0,0,1]\,+q^{-1}[0,0,0,1,2]\,+q^{-1}[0,1,0,0,1] \\
+  &{}+q^{-1}[0,2,0,0,1]\,+q[0,0,0,1,0]\,+q[0,0,0,2,1] \\
+  &{}+q[0,1,0,1,0]\,+q[0,2,0,1,0]\end{aligned}\Bigr)t^{7} \\
+  + \Bigl(\begin{aligned}[t]q^{-2}[0,0,0,0,2]\,+q^{-2}[0,1,0,0,2]\,+[0,0,0,0,0] \\
+  &{}+[0,0,0,1,1]\,+[0,0,0,2,2]\,+[0,1,0,0,0] \\
+  &{}+[0,1,0,1,1]\,+[0,2,0,0,0]\,+[0,2,0,1,1] \\
+  &{}+[0,3,0,0,0]\,+[0,4,0,0,0]\,+q^{2}[0,0,0,2,0] \\
+  &{}+q^{2}[0,1,0,2,0]\end{aligned}\Bigr)t^{8} \\
+  + \Bigl(\begin{aligned}[t]q^{-3}[0,0,0,0,3]\,+q^{-1}[0,0,0,0,1]\,+q^{-1}[0,0,0,1,2] \\
+  &{}+q^{-1}[0,1,0,0,1]\,+q^{-1}[0,1,0,1,2]\,+q^{-1}[0,2,0,0,1] \\
+  &{}+q^{-1}[0,3,0,0,1]\,+q[0,0,0,1,0]\,+q[0,0,0,2,1] \\
+  &{}+q[0,1,0,1,0]\,+q[0,1,0,2,1]\,+q[0,2,0,1,0] \\
+  &{}+q[0,3,0,1,0]\,+q^{3}[0,0,0,3,0]\end{aligned}\Bigr)t^{9} \\
+  + \Bigl(\begin{aligned}[t]q^{-2}[0,0,0,0,2]\,+q^{-2}[0,0,0,1,3]\,+q^{-2}[0,1,0,0,2] \\
+  &{}+q^{-2}[0,2,0,0,2]\,+[0,0,0,0,0]\,+[0,0,0,1,1] \\
+  &{}+[0,0,0,2,2]\,+[0,1,0,0,0]\,+[0,1,0,1,1] \\
+  &{}+[0,1,0,2,2]\,+[0,2,0,0,0]\,+[0,2,0,1,1] \\
+  &{}+[0,3,0,0,0]\,+[0,3,0,1,1]\,+[0,4,0,0,0] \\
+  &{}+[0,5,0,0,0]\,+q^{2}[0,0,0,2,0]\,+q^{2}[0,0,0,3,1] \\
+  &{}+q^{2}[0,1,0,2,0]\,+q^{2}[0,2,0,2,0]\end{aligned}\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\paragraph{$q$-refined dimension Hilbert series.}
+\[
+\begin{aligned}
+H_{\mathrm{dim}}(t,q) ={}&
+   1 \\
+  + 46t^{2} \\
+  + \Bigl(16\bigl(q+q^{-1}\bigr)\Bigr)t^{3} \\
+  + 1026t^{4} \\
+  + \Bigl(576\bigl(q+q^{-1}\bigr)\Bigr)t^{5} \\
+  + \Bigl(14610\,+126\bigl(q^{2}+q^{-2}\bigr)\Bigr)t^{6} \\
+  + \Bigl(10080\bigl(q+q^{-1}\bigr)\Bigr)t^{7} \\
+  + \Bigl(150150\,+3822\bigl(q^{2}+q^{-2}\bigr)\Bigr)t^{8} \\
+  + \Bigl(115632\bigl(q+q^{-1}\bigr)\,+672\bigl(q^{3}+q^{-3}\bigr)\Bigr)t^{9} \\
+  + \Bigl(1199583\,+57552\bigl(q^{2}+q^{-2}\bigr)\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+
+\section{Unrefined Hilbert series}
+\[
+\begin{aligned}
+H(t) ={}& 1\,+46t^{2}\,+32t^{3}\,+1026t^{4}\,+1152t^{5}\,+14862t^{6}\,+20160t^{7} \\
+  &{}+157794t^{8}\,+232608t^{9}\,+1314687t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+
+\section{Plethystic logarithm}
+\[
+\begin{aligned}
+\operatorname{PL}[H(t,q;\mathrm{SO}(10))] ={}&
+  + \Bigl([0,0,0,0,0]\,+[0,1,0,0,0]\Bigr)t^{2} \\
+  + \Bigl(q^{-1}[0,0,0,0,1]\,+q[0,0,0,1,0]\Bigr)t^{3} \\
+  + \Bigl(-[0,0,0,0,0]\,-[2,0,0,0,0]\Bigr)t^{4} \\
+  + \Bigl(\begin{aligned}[t]-q^{-1}[0,0,0,0,1]\,-q^{-1}[1,0,0,1,0]\,-q[0,0,0,1,0] \\
+  &{}-q[1,0,0,0,1]\end{aligned}\Bigr)t^{5} \\
+  + \Bigl(\begin{aligned}[t]-q^{-2}[1,0,0,0,0]\,-[0,0,0,0,0]\,-2[0,0,0,1,1] \\
+  &{}-[0,1,0,0,0]\,+[2,0,0,0,0]\,-q^{2}[1,0,0,0,0]\end{aligned}\Bigr)t^{6} \\
+  + \Bigl(\begin{aligned}[t]q^{-1}[0,0,0,0,1]\,+2q^{-1}[1,0,0,1,0]\,+q^{-1}[2,0,0,0,1] \\
+  &{}+q[0,0,0,1,0]\,+2q[1,0,0,0,1]\,+q[2,0,0,1,0]\end{aligned}\Bigr)t^{7} \\
+  + \Bigl(\begin{aligned}[t]q^{-2}[0,0,0,2,0]\,+q^{-2}[0,0,1,0,0]\,+2q^{-2}[1,0,0,0,0] \\
+  &{}+q^{-2}[1,1,0,0,0]\,+2[0,0,0,0,0]\,+6[0,0,0,1,1] \\
+  &{}+3[0,1,0,0,0]\,+2[1,0,0,0,2]\,+2[1,0,0,2,0] \\
+  &{}+3[1,0,1,0,0]\,+2[2,0,0,0,0]\,+q^{2}[0,0,0,0,2] \\
+  &{}+q^{2}[0,0,1,0,0]\,+2q^{2}[1,0,0,0,0]\,+q^{2}[1,1,0,0,0]\end{aligned}\Bigr)t^{8} \\
+  + \Bigl(\begin{aligned}[t]q^{-3}[0,0,0,1,0]\,+q^{-1}[0,0,0,0,1]\,+q^{-1}[0,0,0,1,2] \\
+  &{}+q^{-1}[0,0,0,3,0]\,+2q^{-1}[0,0,1,1,0]\,+q^{-1}[0,1,0,0,1] \\
+  &{}-2q^{-1}[2,0,0,0,1]\,-q^{-1}[3,0,0,1,0]\,+q[0,0,0,0,3] \\
+  &{}+q[0,0,0,1,0]\,+q[0,0,0,2,1]\,+2q[0,0,1,0,1] \\
+  &{}+q[0,1,0,1,0]\,-2q[2,0,0,1,0]\,-q[3,0,0,0,1] \\
+  &{}+q^{3}[0,0,0,0,1]\end{aligned}\Bigr)t^{9} \\
+  + \Bigl(\begin{aligned}[t]-q^{-2}[0,0,0,2,0]\,-5q^{-2}[0,0,1,0,0]\,-4q^{-2}[1,0,0,0,0] \\
+  &{}-2q^{-2}[1,0,0,1,1]\,-4q^{-2}[1,1,0,0,0]\,-q^{-2}[2,0,1,0,0] \\
+  &{}-q^{-2}[3,0,0,0,0]\,-4[0,0,0,0,0]\,-15[0,0,0,1,1] \\
+  &{}-11[0,1,0,0,0]\,-2[0,1,0,1,1]\,-[0,2,0,0,0] \\
+  &{}-8[1,0,0,0,2]\,-8[1,0,0,2,0]\,-13[1,0,1,0,0] \\
+  &{}-9[2,0,0,0,0]\,-5[2,0,0,1,1]\,-4[2,1,0,0,0] \\
+  &{}-q^{2}[0,0,0,0,2]\,-5q^{2}[0,0,1,0,0]\,-4q^{2}[1,0,0,0,0] \\
+  &{}-2q^{2}[1,0,0,1,1]\,-4q^{2}[1,1,0,0,0]\,-q^{2}[2,0,1,0,0] \\
+  &{}-q^{2}[3,0,0,0,0]\end{aligned}\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\paragraph{$q$-refined dimension plethystic logarithm.}
+\[
+\begin{aligned}
+\operatorname{PL}_{\mathrm{dim}}(t,q) ={}&
+   46t^{2} \\
+  + \Bigl(16\bigl(q+q^{-1}\bigr)\Bigr)t^{3} \\
+  -55t^{4} \\
+  -\Bigl(160\bigl(q+q^{-1}\bigr)\Bigr)t^{5} \\
+  -\Bigl(412\,+10\bigl(q^{2}+q^{-2}\bigr)\Bigr)t^{6} \\
+  + \Bigl(1024\bigl(q+q^{-1}\bigr)\Bigr)t^{7} \\
+  + \Bigl(8540\,+586\bigl(q^{2}+q^{-2}\bigr)\Bigr)t^{8} \\
+  + \Bigl(1008\bigl(q+q^{-1}\bigr)\,+16\bigl(q^{3}+q^{-3}\bigr)\Bigr)t^{9} \\
+  -\Bigl(91839\,+10024\bigl(q^{2}+q^{-2}\bigr)\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\paragraph{Fully unrefined plethystic logarithm.}
+\[
+\begin{aligned}
+\operatorname{PL}[H(t)] ={}& 46t^{2}\,+32t^{3}\,-55t^{4}\,-320t^{5}\,-432t^{6}\,+2048t^{7}\,+9712t^{8} \\
+  &{}+2048t^{9}\,-111887t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\end{document}

@@ -1,0 +1,67 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "calculation_performed": "Direct formal-log M\u00f6bius/Adams plethystic logarithm",
+      "check_name": "all_final_coefficients_integral",
+      "claim": "all final coefficients integral",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined D5 character series",
+      "mathematical_output": "refined, q-refined dimension, and unrefined PL",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Direct formal-log M\u00f6bius/Adams plethystic logarithm",
+      "check_name": "degrees_truncated",
+      "claim": "degrees truncated",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined D5 character series",
+      "mathematical_output": "refined, q-refined dimension, and unrefined PL",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Direct formal-log M\u00f6bius/Adams plethystic logarithm",
+      "check_name": "direct_scalar_matches_refined_unrefinement",
+      "claim": "direct scalar matches refined unrefinement",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined D5 character series",
+      "mathematical_output": "refined, q-refined dimension, and unrefined PL",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Direct formal-log M\u00f6bius/Adams plethystic logarithm",
+      "check_name": "negative_coefficients_retained",
+      "claim": "negative coefficients retained",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined D5 character series",
+      "mathematical_output": "refined, q-refined dimension, and unrefined PL",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Direct formal-log M\u00f6bius/Adams plethystic logarithm",
+      "check_name": "order_10_stable_against_order_11",
+      "claim": "order 10 stable against order 11",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined D5 character series",
+      "mathematical_output": "refined, q-refined dimension, and unrefined PL",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_number": 3,
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

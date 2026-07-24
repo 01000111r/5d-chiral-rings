@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "calculation_performed": "D5 character restoration and dimension evaluations",
+      "check_name": "dimensions_nonnegative_integers",
+      "claim": "dimensions nonnegative integers",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/character_checks.json",
+      "mathematical_input": "highest-weight expansion",
+      "mathematical_output": "refined, q-refined dimension, and unrefined Hilbert series",
+      "stage_number": 2,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "D5 character restoration and dimension evaluations",
+      "check_name": "one_irrep_per_hwg_monomial_before_combining",
+      "claim": "one irrep per hwg monomial before combining",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/character_checks.json",
+      "mathematical_input": "highest-weight expansion",
+      "mathematical_output": "refined, q-refined dimension, and unrefined Hilbert series",
+      "stage_number": 2,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "D5 character restoration and dimension evaluations",
+      "check_name": "q_charges_preserved",
+      "claim": "q charges preserved",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/character_checks.json",
+      "mathematical_input": "highest-weight expansion",
+      "mathematical_output": "refined, q-refined dimension, and unrefined Hilbert series",
+      "stage_number": 2,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "D5 character restoration and dimension evaluations",
+      "check_name": "q_equals_one_matches_unrefined",
+      "claim": "q equals one matches unrefined",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/character_checks.json",
+      "mathematical_input": "highest-weight expansion",
+      "mathematical_output": "refined, q-refined dimension, and unrefined Hilbert series",
+      "stage_number": 2,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "D5 character restoration and dimension evaluations",
+      "check_name": "representation_multiplicities_nonnegative_integers",
+      "claim": "representation multiplicities nonnegative integers",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/character_checks.json",
+      "mathematical_input": "highest-weight expansion",
+      "mathematical_output": "refined, q-refined dimension, and unrefined Hilbert series",
+      "stage_number": 2,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "D5 character restoration and dimension evaluations",
+      "check_name": "t_degrees_preserved",
+      "claim": "t degrees preserved",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/character_checks.json",
+      "mathematical_input": "highest-weight expansion",
+      "mathematical_output": "refined, q-refined dimension, and unrefined Hilbert series",
+      "stage_number": 2,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_number": 2,
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

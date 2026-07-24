@@ -1,0 +1,187 @@
+{
+  "abelian_charge_convention": "integer exponent of q; spinor mu_4 has +1 and conjugate spinor mu_5 has -1",
+  "d5_convention": "WeylCharacterRing(\"D5\", style=\"coroots\")",
+  "fixture_sha256": "6d82c13ca6ebe4b89b1d44f19363a0e6d7d2c27292f3caec8505b3769ccb66ef",
+  "fixture_validation": {
+    "passed": true,
+    "rational_product_source_match": true,
+    "term_by_term_source_match": true
+  },
+  "pe_terms": [
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "q_charge": 1,
+      "t_degree": 3
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "q_charge": -1,
+      "t_degree": 3
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "q_charge": 0,
+      "t_degree": 4
+    },
+    {
+      "coefficient": -1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "q_charge": 0,
+      "t_degree": 6
+    }
+  ],
+  "product_factors": [
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "location": "numerator",
+      "power": 1,
+      "q_charge": 0,
+      "t_degree": 6
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 1,
+      "t_degree": 3
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": -1,
+      "t_degree": 3
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 4
+    }
+  ],
+  "source": {
+    "equation": "10.3",
+    "file": "references/overleaf/su3_5f_6f_hwg_results.tex",
+    "normalized_pe_expression": "\\operatorname{PE}\\!\\left[mu_2 t^{2} + t^{2} + mu_4 q t^{3} + mu_5 q^{-1} t^{3} + mu_4 mu_5 t^{4} - mu_4 mu_5 t^{6}\\right]",
+    "normalized_rational_product_expression": "\\left(1 - mu_2 t^{2}\\right)^{-1} \\left(1 - mu_4 mu_5 t^{4}\\right)^{-1} \\left(1 - mu_4 q t^{3}\\right)^{-1} \\left(1 - mu_5 q^{-1} t^{3}\\right)^{-1} \\left(1 - t^{2}\\right)^{-1} \\left(1 - mu_4 mu_5 t^{6}\\right)",
+    "original_pe_expression": "\\PE\\!\\left[(\\mu_2+1)t^2+(q\\mu_4+q^{-1}\\mu_5)t^3\n+\\mu_4\\mu_5t^4-\\mu_4\\mu_5t^6\\right]",
+    "original_rational_product_expression": "\\frac{1-\\mu_4\\mu_5t^6}\n{(1-t^2)(1-\\mu_2t^2)(1-q\\mu_4t^3)(1-q^{-1}\\mu_5t^3)(1-\\mu_4\\mu_5t^4)}"
+  },
+  "source_file_sha256": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359",
+  "theory_metadata": {
+    "abelian_factor": "q",
+    "chern_simons_convention": "absolute value",
+    "chern_simons_magnitude": "5/2",
+    "coupling": "infinite",
+    "enhanced_display_name": "SO(10)",
+    "enhanced_simple_algebra": "D5",
+    "gauge_algebra": "A2",
+    "gauge_display_name": "SU(3)",
+    "grading_variable": "t",
+    "number_of_flavours": 5,
+    "theory_id": "su3_nf5_k5o2_infinite"
+  },
+  "unresolved_ambiguities": []
+}

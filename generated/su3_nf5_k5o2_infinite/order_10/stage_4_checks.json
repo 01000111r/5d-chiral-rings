@@ -1,0 +1,103 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "difference_is_empty",
+      "claim": "difference is empty",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "independent_scalar_pe_equal",
+      "claim": "independent scalar pe equal",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "multiplicities_integral",
+      "claim": "multiplicities integral",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "multiplicities_nonnegative",
+      "claim": "multiplicities nonnegative",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "order_stability",
+      "claim": "order stability",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "q_refined_dimensions_equal",
+      "claim": "q refined dimensions equal",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "refined_character_series_equal",
+      "claim": "refined character series equal",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "calculation_performed": "Refined and scalar plethystic reconstruction",
+      "check_name": "unrefined_dimensions_equal",
+      "claim": "unrefined dimensions equal",
+      "evidence_path": "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_output": "reconstructed series and empty difference",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_number": 4,
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

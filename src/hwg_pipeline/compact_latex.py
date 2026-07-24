@@ -3,6 +3,7 @@
 from fractions import Fraction
 import hashlib
 import json
+import re
 from pathlib import Path
 
 from .io import load_theory
@@ -213,8 +214,10 @@ def generate_compact_latex(root, theory_id, order):
             for entry in entries:
                 labels = (list(entry[repkey].values()) if repkey == "dynkin_labels" else
                           [x["dynkin_labels"] for x in entry[repkey]])
-                if any(len(x) != 5 for x in labels):
-                    raise CompactLatexError("expected five A5 Dynkin labels")
+                expected_rank = int(theory.simple_factors[0].rank)
+                if any(len(x) != expected_rank for x in labels):
+                    raise CompactLatexError(
+                        f"expected {expected_rank} {theory.simple_factors[0].cartan_name} Dynkin labels")
                 _fraction(entry.get("multiplicity", entry.get("coefficient")))
     dim_hilbert = payloads["q_refined_dimension_series.json"]["coefficients_by_t_degree"]
     dim_pl = payloads["q_refined_dimension_pl.json"]["coefficients_by_t_degree"]
@@ -229,11 +232,15 @@ def generate_compact_latex(root, theory_id, order):
     product = theory.rational_product.original_rational_product_latex
     title = (rf"$\mathrm{{{theory.gauge_display_name}}}+{int(theory.number_of_flavours)}F$ "
              rf"at $\lvert k\rvert={render_exact(abs(theory.chern_simons_level))}$")
+    display_name = theory.simple_factors[0].display_name
+    display_match = re.fullmatch(r"([A-Za-z]+)\((\d+)\)", display_name)
+    group_latex = (rf"\mathrm{{{display_match.group(1)}}}({display_match.group(2)})"
+                   if display_match else rf"\mathrm{{{display_name}}}")
     rendered_hwg = _render_grouped(r"\mathrm{HWG}(t,q;\mu)", hwg, order, "hwg")
-    rendered_chars = _render_grouped(r"H(t,q;\mathrm{SU}(6))", chars, order, "character")
+    rendered_chars = _render_grouped(rf"H(t,q;{group_latex})", chars, order, "character")
     rendered_dim_hilbert = _render_dimension_series(r"H_{\mathrm{dim}}(t,q)", dim_hilbert, order)
     rendered_hilbert = _render_scalar(r"H(t)", payloads["unrefined_hilbert_series.json"]["coefficients_by_t_degree"], order)
-    rendered_pl = _render_grouped(r"\operatorname{PL}[H(t,q;\mathrm{SU}(6))]", pl, order, "character")
+    rendered_pl = _render_grouped(rf"\operatorname{{PL}}[H(t,q;{group_latex})]", pl, order, "character")
     rendered_dim_pl = _render_dimension_series(r"\operatorname{PL}_{\mathrm{dim}}(t,q)", dim_pl, order)
     rendered_pl_plain = _render_scalar(r"\operatorname{PL}[H(t)]", payloads["unrefined_plethystic_logarithm.json"]["coefficients_by_t_degree"], order)
     document = rf"""\documentclass[10pt]{{article}}
@@ -249,15 +256,15 @@ def generate_compact_latex(root, theory_id, order):
 \date{{}}
 \begin{{document}}
 \maketitle
-At infinite coupling the enhanced symmetry is $\mathrm{{SU}}(6)\times\mathrm{{U}}(1)$.
+At infinite coupling the enhanced symmetry is ${group_latex}\times\mathrm{{U}}(1)_q$.
 The expansion is truncated at $O(t^{{{order+1}}})$, and
-$[a_1,\ldots,a_5]$ denotes the $\mathrm{{SU}}(6)$ Dynkin label.
+$[a_1,\ldots,a_{{{int(theory.simple_factors[0].rank)}}}]$ denotes the ${group_latex}$ Dynkin label.
 Dimension evaluation is the ring homomorphism
-$\dim_{{\mathrm{{SU}}(6)}}:R(\mathrm{{SU}}(6))\to\mathbb{{Z}}$, with
-$H_{{\mathrm{{dim}}}}(t,q)=\dim_{{\mathrm{{SU}}(6)}}H(t,q;\mathrm{{SU}}(6))$
+$\dim_{{{group_latex}}}:R({group_latex})\to\mathbb{{Z}}$, with
+$H_{{\mathrm{{dim}}}}(t,q)=\dim_{{{group_latex}}}H(t,q;{group_latex})$
 and $H(t)=H_{{\mathrm{{dim}}}}(t,1)$.  Likewise,
-$\operatorname{{PL}}_{{\mathrm{{dim}}}}(t,q)=\dim_{{\mathrm{{SU}}(6)}}
-\operatorname{{PL}}[H(t,q;\mathrm{{SU}}(6))]$ and
+$\operatorname{{PL}}_{{\mathrm{{dim}}}}(t,q)=\dim_{{{group_latex}}}
+\operatorname{{PL}}[H(t,q;{group_latex})]$ and
 $\operatorname{{PL}}[H(t)]=\operatorname{{PL}}_{{\mathrm{{dim}}}}(t,1)$;
 the latter agrees with the independently stored scalar result.
 

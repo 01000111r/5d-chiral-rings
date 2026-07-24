@@ -1,0 +1,24 @@
+# Stage 6 checks
+
+- **PASS — a5_dynkin_labels_have_length_five**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — all_multiplicities_are_exact_integers**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — all_stored_terms_through_order_included**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — character_hilbert_retains_su6_labels_and_q**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — existing_mathematical_results_unchanged**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — generation_is_deterministic**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — latex_has_no_python_json_or_sage_objects**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — loaded_results_have_requested_order**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — negative_pl_coefficients_retained**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — no_character_valued_q_equals_one_series**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — no_terms_above_order**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_equals_one_dimension_hilbert_matches_stored_unrefined**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_equals_one_dimension_pl_matches_stored_unrefined**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_refined_dimension_hilbert_has_no_dynkin_labels**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_refined_dimension_hilbert_matches_stored**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_refined_dimension_hilbert_retains_every_q_charge**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_refined_dimension_pl_has_no_dynkin_labels**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_refined_dimension_pl_retains_every_q_charge**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — q_refined_dimension_pl_signed_coefficients_match_stored**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — refined_character_pl_retains_su6_labels_and_q**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **PASS — theory_ids_agree**: actual `True`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results_checks.json`.
+- **UNAVAILABLE — pdf_compilation**: actual `pdflatex not installed`; evidence `generated/su3_nf5_k5o2_infinite/order_10/compact_report/compact_results.tex`.

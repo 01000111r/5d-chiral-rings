@@ -1,0 +1,67 @@
+{
+  "generated_sections": [
+    "highest_weight_generating_function",
+    "highest_weight_expansion",
+    "refined_character_hilbert_series",
+    "q_refined_dimension_hilbert_series",
+    "fully_unrefined_hilbert_series",
+    "refined_character_plethystic_logarithm",
+    "q_refined_dimension_plethystic_logarithm",
+    "fully_unrefined_plethystic_logarithm"
+  ],
+  "order": 10,
+  "q_charge_support": {
+    "q_refined_dimension_hilbert_series": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "q_refined_dimension_plethystic_logarithm": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "result_files_read": [
+    "generated/su3_nf5_k5o2_infinite/order_10/hwg_expansion.json",
+    "generated/su3_nf5_k5o2_infinite/order_10/character_series.json",
+    "generated/su3_nf5_k5o2_infinite/order_10/q_refined_dimension_series.json",
+    "generated/su3_nf5_k5o2_infinite/order_10/unrefined_hilbert_series.json",
+    "generated/su3_nf5_k5o2_infinite/order_10/refined_plethystic_logarithm.json",
+    "generated/su3_nf5_k5o2_infinite/order_10/q_refined_dimension_pl.json",
+    "generated/su3_nf5_k5o2_infinite/order_10/unrefined_plethystic_logarithm.json"
+  ],
+  "sha256": {
+    "generated/su3_nf5_k5o2_infinite/input_audit.md": "64a427cd7f59f1e0cdf85c2e561fc2c87d4cdf7e4b5c46074a78696ef9ae4a0f",
+    "generated/su3_nf5_k5o2_infinite/order_10/character_series.json": "9a79659ff7c28356b51e2d74ab693fa95b8fc2cb4fa6b807f68f5af19ace9674",
+    "generated/su3_nf5_k5o2_infinite/order_10/hwg_expansion.json": "a720fefefb594f7f33be55c7e820cdec50f15c86f77dccf21b2ef7f8940f11f7",
+    "generated/su3_nf5_k5o2_infinite/order_10/q_refined_dimension_pl.json": "4b0efa6dc486fb51315c6de8e991c6b7653b584eb2d74e28a28659e77cd60bf0",
+    "generated/su3_nf5_k5o2_infinite/order_10/q_refined_dimension_series.json": "d657b89f8d3ea83c7a294fa542e940e42be0013e947fe0294bfe9e3574429bf8",
+    "generated/su3_nf5_k5o2_infinite/order_10/refined_plethystic_logarithm.json": "c3610935e3984712f99a15a30cd529c40981a4513b7956b9e7695a9a42bd4fe6",
+    "generated/su3_nf5_k5o2_infinite/order_10/unrefined_hilbert_series.json": "08e413bb53371822e03d6fab0ade3bcb2f2483eb178989fc6520bfe1dc9e5a48",
+    "generated/su3_nf5_k5o2_infinite/order_10/unrefined_plethystic_logarithm.json": "591fdbb71e5404c484bf0eceba62a4071cf1b17083b01d8fc90bf183e359a941",
+    "theories/su3_nf5_k5o2_infinite.yaml": "6d82c13ca6ebe4b89b1d44f19363a0e6d7d2c27292f3caec8505b3769ccb66ef"
+  },
+  "source_files_read": [
+    "theories/su3_nf5_k5o2_infinite.yaml",
+    "generated/su3_nf5_k5o2_infinite/input_audit.md"
+  ],
+  "term_counts": {
+    "fully_unrefined_hilbert_series": 10,
+    "fully_unrefined_plethystic_logarithm": 9,
+    "highest_weight_expansion": 76,
+    "q_refined_dimension_hilbert_series": 22,
+    "q_refined_dimension_plethystic_logarithm": 21,
+    "refined_character_hilbert_series": 76,
+    "refined_character_plethystic_logarithm": 78
+  },
+  "theory_id": "su3_nf5_k5o2_infinite"
+}

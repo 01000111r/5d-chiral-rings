@@ -1,0 +1,308 @@
+{
+  "abelian_factor": {
+    "charge_convention": "integer exponent of q; conjugation reverses q charge",
+    "id": "q"
+  },
+  "fixture_sha256": "486338e780eb512a60816963b6355494ab736f9f8bcff2e91542c9da72d31f7d",
+  "normalized_pe_expression": "PE[t^2 + nu^2 t^2 + mu_1 mu_4 t^2 + nu q mu_2 t^3 + nu q^(-1) mu_3 t^3 + mu_2 mu_3 t^4 - nu^2 mu_2 mu_3 t^6]",
+  "normalized_rational_product": "(1-nu^2 mu_2 mu_3 t^6)/((1-t^2)(1-nu^2 t^2)(1-mu_1 mu_4 t^2)(1-nu q mu_2 t^3)(1-nu q^(-1) mu_3 t^3)(1-mu_2 mu_3 t^4))",
+  "ordered_simple_factors": [
+    {
+      "cartan_type": "A4",
+      "convention": "Sage coroot Dynkin labels",
+      "display_name": "SU(5)",
+      "id": "enhanced"
+    },
+    {
+      "cartan_type": "A1",
+      "convention": "Sage coroot Dynkin labels",
+      "display_name": "SU(2)",
+      "id": "su2"
+    }
+  ],
+  "original_pe_expression": "\\PE\\!\\left[(\\mu_1\\mu_4+\\nu^2+1)t^2\n+\\nu(q\\mu_2+q^{-1}\\mu_3)t^3\n+\\mu_2\\mu_3t^4-\\nu^2\\mu_2\\mu_3t^6\\right]",
+  "original_rational_product_expression": "\\frac{1-\\nu^2\\mu_2\\mu_3t^6}\n{(1-t^2)(1-\\nu^2t^2)(1-\\mu_1\\mu_4t^2)\n (1-\\nu q\\mu_2t^3)(1-\\nu q^{-1}\\mu_3t^3)(1-\\mu_2\\mu_3t^4)}",
+  "rational_product_factors": [
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "location": "numerator",
+      "power": 1,
+      "representations": {
+        "enhanced": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "su2": [
+          2
+        ]
+      },
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "enhanced": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "su2": [
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "enhanced": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "su2": [
+          2
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "enhanced": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "su2": [
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "enhanced": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "su2": [
+          1
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "enhanced": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "su2": [
+          1
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "enhanced": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "su2": [
+          0
+        ]
+      },
+      "t_degree": 4
+    }
+  ],
+  "source_equation": "12.3",
+  "source_file": "references/overleaf/su3_5f_6f_hwg_results.tex",
+  "source_file_sha256": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359",
+  "source_versus_fixture_comparison": {
+    "factor_count": 7,
+    "method": "manual term-by-term transcription of the explicit SU(3)+5F |k|=1/2 specialization in the committed source; PE and rational factors cross-checked structurally",
+    "pe_term_count": 7,
+    "status": "pass"
+  },
+  "structured_pe_terms": [
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "coefficient": 1,
+      "representations": {
+        "enhanced": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "su2": [
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "coefficient": 1,
+      "representations": {
+        "enhanced": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "su2": [
+          2
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "coefficient": 1,
+      "representations": {
+        "enhanced": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "su2": [
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "coefficient": 1,
+      "representations": {
+        "enhanced": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "su2": [
+          1
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "coefficient": 1,
+      "representations": {
+        "enhanced": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "su2": [
+          1
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "coefficient": 1,
+      "representations": {
+        "enhanced": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "su2": [
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "coefficient": -1,
+      "representations": {
+        "enhanced": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "su2": [
+          2
+        ]
+      },
+      "t_degree": 6
+    }
+  ],
+  "theory_metadata": {
+    "chern_simons_convention": "absolute value",
+    "chern_simons_magnitude": "1/2",
+    "coupling": "infinite",
+    "gauge_algebra": "A2",
+    "gauge_display_name": "SU(3)",
+    "grading_variable": "t",
+    "number_of_flavours": 5,
+    "theory_id": "su3_nf5_k1o2_infinite"
+  },
+  "unresolved_ambiguities": []
+}

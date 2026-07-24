@@ -1,0 +1,11 @@
+{
+  "references/overleaf/su3_5f_6f_hwg_results.tex": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359",
+  "src/hwg_pipeline/__main__.py": "b3008e1328d2c476e4a4d43f8df51b4d04922f695da7e97e29dcc61fe2fcd0a0",
+  "src/hwg_pipeline/characters.py": "4831ca895267335de8da5abe1ee59ee66d7938d70abd3fa08e4c9d0232af1335",
+  "src/hwg_pipeline/compact_latex.py": "98f602ac8af700d2dc41bfd0a2a419bb6fd349c08c198c8173aedcf4cb449337",
+  "src/hwg_pipeline/expansion.py": "54bceac19e91d21762b2ecea81baa78e0edad325bfc53713ff37baaad90f9d64",
+  "src/hwg_pipeline/model.py": "4af0c1c01d81efa998621efc95cf982fc2930e48a3816b5ffdc5cca448a790b5",
+  "src/hwg_pipeline/plethystic.py": "45e417a94f6d0dab86ecafdcd0da3eac07ad8dcac0e1004aec74b12bfe6b08bd",
+  "src/hwg_pipeline/sage_backend.py": "ac240be2c81488214d6e185dacb22edfb6af139ca7d4a2fbef81b68f103bdbdc",
+  "theories/su3_nf5_k1o2_infinite.yaml": "486338e780eb512a60816963b6355494ab736f9f8bcff2e91542c9da72d31f7d"
+}

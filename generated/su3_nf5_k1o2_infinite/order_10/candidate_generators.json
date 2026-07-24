@@ -1,0 +1,121 @@
+{
+  "generator_candidates": [
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf5_k1o2_infinite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 3,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "source_theory_id": "su3_nf5_k1o2_infinite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 24,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf5_k1o2_infinite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 20,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf5_k1o2_infinite",
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 20,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf5_k1o2_infinite",
+      "t_degree": 3
+    }
+  ],
+  "maximum_t_degree": 10,
+  "theory_id": "su3_nf5_k1o2_infinite"
+}

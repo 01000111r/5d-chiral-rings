@@ -1,0 +1,108 @@
+{
+  "check_totals": {
+    "fail": 0,
+    "not-applicable": 1,
+    "pass": 62,
+    "pending": 0,
+    "unavailable": 2
+  },
+  "compact_report_status": "pass",
+  "deterministic_rerun": "pass: deterministic mathematical JSON and TeX hashes identical",
+  "order": 10,
+  "pdf_compilation_status": "unavailable: pdflatex not installed",
+  "python_version": "3.11.15",
+  "reconstruction_status": {
+    "difference_empty": true,
+    "independent_scalar": "pass",
+    "q_refined_dimension": "pass",
+    "refined": "pass"
+  },
+  "regression_status": {
+    "n3_benchmark_su3_nf9_k1o2_infinite": "unchanged",
+    "su3_nf5_k3o2_infinite": "unchanged",
+    "su3_nf5_k5o2_infinite": "unchanged",
+    "su3_nf6_k1_infinite": "unchanged",
+    "su3_nf6_k2_infinite": "unchanged"
+  },
+  "sage_version": "10.7",
+  "shared_implementation_files_changed": [
+    "src/hwg_pipeline/__main__.py",
+    "src/hwg_pipeline/compact_latex.py"
+  ],
+  "stage_runtime": [
+    {
+      "command": "./scripts/sage-python -m hwg_pipeline expand su3_nf5_k1o2_infinite --order 10",
+      "elapsed_seconds": "2.813",
+      "exit_status": 0,
+      "peak_rss_kb": "unavailable"
+    },
+    {
+      "command": "./scripts/sage-python -m hwg_pipeline characters su3_nf5_k1o2_infinite --order 10",
+      "elapsed_seconds": "3.787",
+      "exit_status": 0,
+      "peak_rss_kb": "unavailable"
+    },
+    {
+      "command": "./scripts/sage-python -m hwg_pipeline plethystic-log su3_nf5_k1o2_infinite --order 10 --formal-log direct",
+      "elapsed_seconds": "18.191",
+      "exit_status": 0,
+      "peak_rss_kb": "unavailable"
+    },
+    {
+      "command": "./scripts/sage-python -m hwg_pipeline reconstruct su3_nf5_k1o2_infinite --order 10",
+      "elapsed_seconds": "46.173",
+      "exit_status": 0,
+      "peak_rss_kb": "unavailable"
+    },
+    {
+      "command": "./scripts/sage-python -m hwg_pipeline analyze-pl su3_nf5_k1o2_infinite --order 10",
+      "elapsed_seconds": "3.852",
+      "exit_status": 0,
+      "peak_rss_kb": "unavailable"
+    },
+    {
+      "command": "./scripts/sage-python -m hwg_pipeline compact-latex su3_nf5_k1o2_infinite --order 10",
+      "elapsed_seconds": "2.739",
+      "exit_status": 0,
+      "peak_rss_kb": "unavailable"
+    }
+  ],
+  "stages": [
+    {
+      "name": "source and fixture validation",
+      "stage": 0,
+      "status": "pass"
+    },
+    {
+      "name": "HWG expansion",
+      "stage": 1,
+      "status": "pass"
+    },
+    {
+      "name": "product-character restoration",
+      "stage": 2,
+      "status": "pass"
+    },
+    {
+      "name": "refined plethystic logarithm",
+      "stage": 3,
+      "status": "pass"
+    },
+    {
+      "name": "plethystic reconstruction",
+      "stage": 4,
+      "status": "pass"
+    },
+    {
+      "name": "operator-content analysis",
+      "stage": 5,
+      "status": "pass"
+    },
+    {
+      "name": "compact paper-style LaTeX",
+      "stage": 6,
+      "status": "pass"
+    }
+  ],
+  "theory_id": "su3_nf5_k1o2_infinite"
+}

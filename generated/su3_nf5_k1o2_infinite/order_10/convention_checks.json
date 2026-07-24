@@ -1,0 +1,40 @@
+{
+  "a1_conjugation": "all irreps self-conjugate",
+  "a1_dimensions": {
+    "[0]": 1,
+    "[1]": 2,
+    "[2]": 3
+  },
+  "a4_conjugation": {
+    "[0,1,0,0]": "[0,0,1,0]",
+    "rule": "[a1,a2,a3,a4] -> [a4,a3,a2,a1]"
+  },
+  "a4_dimensions": {
+    "[0,0,0,0]": 1,
+    "[0,0,0,1]": 5,
+    "[0,0,1,0]": 10,
+    "[0,1,0,0]": 10,
+    "[0,1,1,0]": 75,
+    "[1,0,0,0]": 5,
+    "[1,0,0,1]": 24
+  },
+  "convention": "WeylCharacterRing(..., style=\"coroots\")",
+  "factor_order": [
+    "A4",
+    "A1"
+  ],
+  "product_dimensions": {
+    "([0,0,0,0],[2])": 3,
+    "([0,0,1,0],[1])": 20,
+    "([0,1,0,0],[1])": 20,
+    "([0,1,1,0],[0])": 75,
+    "([0,1,1,0],[2])": 225,
+    "([1,0,0,1],[0])": 24
+  },
+  "theory_id": "su3_nf5_k1o2_infinite",
+  "validation_results": {
+    "all_passed": true,
+    "factor_order_never_swapped": true,
+    "product_equality_compares_both_factors": true
+  }
+}

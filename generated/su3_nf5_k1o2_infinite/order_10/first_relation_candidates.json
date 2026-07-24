@@ -1,0 +1,53 @@
+{
+  "first_negative_degree": 4,
+  "maximum_t_degree": 10,
+  "relation_candidates": [
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "first_relation_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "negative",
+      "signed_multiplicity": -2,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf5_k1o2_infinite",
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "first_relation_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 24,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf5_k1o2_infinite",
+      "t_degree": 4
+    }
+  ],
+  "theory_id": "su3_nf5_k1o2_infinite"
+}

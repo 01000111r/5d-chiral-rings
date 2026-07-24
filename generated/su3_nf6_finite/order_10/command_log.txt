@@ -1,0 +1,15 @@
+./scripts/sage-python -m hwg_pipeline expand su3_nf6_finite --order 10
+PASS elapsed_seconds=2
+./scripts/sage-python -m hwg_pipeline characters su3_nf6_finite --order 10
+PASS elapsed_seconds=6
+./scripts/sage-python -m hwg_pipeline plethystic-log su3_nf6_finite --order 10 --formal-log direct
+PASS elapsed_seconds=31
+./scripts/sage-python -m hwg_pipeline reconstruct su3_nf6_finite --order 10
+PASS elapsed_seconds=77
+./scripts/sage-python -m hwg_pipeline analyze-pl su3_nf6_finite --order 10
+PASS elapsed_seconds=4
+./scripts/sage-python -m hwg_pipeline compact-latex su3_nf6_finite --order 10
+PASS elapsed_seconds=2
+Determinism rerun: all six commands PASS; byte-for-byte comparison PASS.
+./scripts/sage-python -m pytest -q
+PASS: 152 passed in 117.05s (0:01:57)

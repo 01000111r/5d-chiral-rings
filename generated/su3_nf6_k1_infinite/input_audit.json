@@ -1,0 +1,261 @@
+{
+  "a6_checks": {
+    "adjoint": {
+      "dimension": 48,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "antifundamental": {
+      "dimension": 7,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "degree_four_representation": {
+      "dimension": 392,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "degree_three_conjugate": {
+      "dimension": 35,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "degree_three_representation": {
+      "dimension": 35,
+      "dual_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "fundamental": {
+      "dimension": 7,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fundamental_tensor_antifundamental": "[0,0,0,0,0,0] + [1,0,0,0,0,1]",
+    "singlet": {
+      "dimension": 1,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "a6_convention": "WeylCharacterRing(\"A6\", style=\"coroots\")",
+  "abelian_charge_convention": "integer exponent of q; conjugate A6 representations occur at opposite charges +1 and -1",
+  "fixture_sha256": "0fe19a849461f7634a84a15ae1602d30c213f5815f14db1a394e72d50b2a7a4c",
+  "fixture_validation": {
+    "exact_comparison": "five PE terms and five denominator factors agree literally and structurally with the explicit SU(3)+6F |k|=1 source specialization",
+    "passed": true,
+    "rational_product_source_match": true,
+    "term_by_term_source_match": true
+  },
+  "pe_terms": [
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "q_charge": 1,
+      "t_degree": 3
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "q_charge": -1,
+      "t_degree": 3
+    },
+    {
+      "coefficient": 1,
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "q_charge": 0,
+      "t_degree": 4
+    }
+  ],
+  "product_factors": [
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 2
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 1,
+      "t_degree": 3
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": -1,
+      "t_degree": 3
+    },
+    {
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "location": "denominator",
+      "power": -1,
+      "q_charge": 0,
+      "t_degree": 4
+    }
+  ],
+  "source": {
+    "equation": "8.3",
+    "file": "references/overleaf/su3_5f_6f_hwg_results.tex",
+    "normalized_pe_expression": "\\operatorname{PE}[t^2+mu_1mu_6t^2+qmu_3t^3+q^{-1}mu_4t^3+mu_2mu_5t^4]",
+    "normalized_rational_product_expression": "(1-t^2)^{-1}(1-mu_1mu_6t^2)^{-1}(1-qmu_3t^3)^{-1}(1-q^{-1}mu_4t^3)^{-1}(1-mu_2mu_5t^4)^{-1}",
+    "original_pe_expression": "\\PE\\!\\left[(\\mu_1\\mu_6+1)t^2+(q\\mu_3+q^{-1}\\mu_4)t^3+\\mu_2\\mu_5t^4\\right]",
+    "original_rational_product_expression": "\\frac{1}{(1-t^2)(1-\\mu_1\\mu_6t^2)(1-q\\mu_3t^3)(1-q^{-1}\\mu_4t^3)(1-\\mu_2\\mu_5t^4)}"
+  },
+  "source_file_sha256": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359",
+  "theory_metadata": {
+    "abelian_factor": "q",
+    "chern_simons_convention": "absolute value",
+    "chern_simons_magnitude": 1,
+    "coupling": "infinite",
+    "enhanced_display_name": "SU(7)",
+    "enhanced_simple_algebra": "A6",
+    "gauge_algebra": "A2",
+    "gauge_display_name": "SU(3)",
+    "grading_variable": "t",
+    "number_of_flavours": 6,
+    "theory_id": "su3_nf6_k1_infinite"
+  },
+  "unresolved_ambiguities": []
+}

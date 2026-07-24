@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "check_id": "deficit_equals_negative_pl_content",
+      "claim": "deficit equals negative pl content",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated signed refined PL",
+      "mathematical_operation": "conservative first-negative-degree classification",
+      "mathematical_output": "candidate generators, first relations, and higher corrections",
+      "stage_name": "operator-content analysis",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "dimensions_exact",
+      "claim": "dimensions exact",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated signed refined PL",
+      "mathematical_operation": "conservative first-negative-degree classification",
+      "mathematical_output": "candidate generators, first relations, and higher corrections",
+      "stage_name": "operator-content analysis",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "first_negative_degree_exists",
+      "claim": "first negative degree exists",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated signed refined PL",
+      "mathematical_operation": "conservative first-negative-degree classification",
+      "mathematical_output": "candidate generators, first relations, and higher corrections",
+      "stage_name": "operator-content analysis",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "relation_degree_not_mixed",
+      "claim": "relation degree not mixed",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/operator_content_checks.json",
+      "mathematical_input": "calculated signed refined PL",
+      "mathematical_operation": "conservative first-negative-degree classification",
+      "mathematical_output": "candidate generators, first relations, and higher corrections",
+      "stage_name": "operator-content analysis",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_name": "operator-content analysis",
+  "stage_number": 5,
+  "theory_id": "su3_nf6_k1_infinite"
+}

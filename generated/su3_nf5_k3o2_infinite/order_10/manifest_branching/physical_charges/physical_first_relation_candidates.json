@@ -1,0 +1,449 @@
+{
+  "branching_id": "su3_nf5_k3o2_to_manifest",
+  "child_simple_factor": "A4",
+  "embedding_type": "A_n_to_A_n_minus_1_u1",
+  "maximum_t_degree": 10,
+  "parent_simple_factor": "A5",
+  "physical_charge_vector_order": [
+    "B",
+    "I"
+  ],
+  "raw_charge_basis": false,
+  "raw_charge_vector_order": [
+    "x",
+    "q"
+  ],
+  "relation_candidates_by_t_degree": {
+    "4": [
+      {
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "physical_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ],
+        "physical_charges": {
+          "B": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "I": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "provenance": [
+          {
+            "child_dynkin_labels": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "child_representation_dimension": 1,
+            "physical_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": 0
+              },
+              {
+                "denominator": 1,
+                "numerator": 0
+              }
+            ],
+            "physical_charges": {
+              "B": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "I": {
+                "denominator": 1,
+                "numerator": 0
+              }
+            },
+            "raw_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": 0
+              },
+              {
+                "denominator": 1,
+                "numerator": 0
+              }
+            ],
+            "raw_charges": {
+              "q": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "x": {
+                "denominator": 1,
+                "numerator": 0
+              }
+            },
+            "signed_multiplicity": -2,
+            "t_degree": 4
+          }
+        ],
+        "raw_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ],
+        "raw_charges": {
+          "q": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "x": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "signed_multiplicity": {
+          "denominator": 1,
+          "numerator": -2
+        },
+        "t_degree": 4
+      },
+      {
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 5,
+        "physical_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": -1
+          }
+        ],
+        "physical_charges": {
+          "B": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "I": {
+            "denominator": 1,
+            "numerator": -1
+          }
+        },
+        "provenance": [
+          {
+            "child_dynkin_labels": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "child_representation_dimension": 5,
+            "physical_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": 0
+              },
+              {
+                "denominator": 1,
+                "numerator": -1
+              }
+            ],
+            "physical_charges": {
+              "B": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "I": {
+                "denominator": 1,
+                "numerator": -1
+              }
+            },
+            "raw_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": -6
+              },
+              {
+                "denominator": 1,
+                "numerator": 0
+              }
+            ],
+            "raw_charges": {
+              "q": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "x": {
+                "denominator": 1,
+                "numerator": -6
+              }
+            },
+            "signed_multiplicity": -1,
+            "t_degree": 4
+          }
+        ],
+        "raw_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": -6
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ],
+        "raw_charges": {
+          "q": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "x": {
+            "denominator": 1,
+            "numerator": -6
+          }
+        },
+        "signed_multiplicity": {
+          "denominator": 1,
+          "numerator": -1
+        },
+        "t_degree": 4
+      },
+      {
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 5,
+        "physical_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 1
+          }
+        ],
+        "physical_charges": {
+          "B": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "I": {
+            "denominator": 1,
+            "numerator": 1
+          }
+        },
+        "provenance": [
+          {
+            "child_dynkin_labels": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "child_representation_dimension": 5,
+            "physical_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": 0
+              },
+              {
+                "denominator": 1,
+                "numerator": 1
+              }
+            ],
+            "physical_charges": {
+              "B": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "I": {
+                "denominator": 1,
+                "numerator": 1
+              }
+            },
+            "raw_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": 6
+              },
+              {
+                "denominator": 1,
+                "numerator": 0
+              }
+            ],
+            "raw_charges": {
+              "q": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "x": {
+                "denominator": 1,
+                "numerator": 6
+              }
+            },
+            "signed_multiplicity": -1,
+            "t_degree": 4
+          }
+        ],
+        "raw_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": 6
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ],
+        "raw_charges": {
+          "q": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "x": {
+            "denominator": 1,
+            "numerator": 6
+          }
+        },
+        "signed_multiplicity": {
+          "denominator": 1,
+          "numerator": -1
+        },
+        "t_degree": 4
+      },
+      {
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 24,
+        "physical_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ],
+        "physical_charges": {
+          "B": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "I": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "provenance": [
+          {
+            "child_dynkin_labels": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "child_representation_dimension": 24,
+            "physical_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": 0
+              },
+              {
+                "denominator": 1,
+                "numerator": 0
+              }
+            ],
+            "physical_charges": {
+              "B": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "I": {
+                "denominator": 1,
+                "numerator": 0
+              }
+            },
+            "raw_charge_vector": [
+              {
+                "denominator": 1,
+                "numerator": 0
+              },
+              {
+                "denominator": 1,
+                "numerator": 0
+              }
+            ],
+            "raw_charges": {
+              "q": {
+                "denominator": 1,
+                "numerator": 0
+              },
+              "x": {
+                "denominator": 1,
+                "numerator": 0
+              }
+            },
+            "signed_multiplicity": -1,
+            "t_degree": 4
+          }
+        ],
+        "raw_charge_vector": [
+          {
+            "denominator": 1,
+            "numerator": 0
+          },
+          {
+            "denominator": 1,
+            "numerator": 0
+          }
+        ],
+        "raw_charges": {
+          "q": {
+            "denominator": 1,
+            "numerator": 0
+          },
+          "x": {
+            "denominator": 1,
+            "numerator": 0
+          }
+        },
+        "signed_multiplicity": {
+          "denominator": 1,
+          "numerator": -1
+        },
+        "t_degree": 4
+      }
+    ]
+  },
+  "theory_id": "su3_nf5_k3o2_infinite"
+}

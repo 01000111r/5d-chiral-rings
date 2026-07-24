@@ -1,0 +1,40 @@
+id: su3_nf5_k3o2_manifest_physical
+source_theory_id: su3_nf5_k3o2_infinite
+branching_id: su3_nf5_k3o2_to_manifest
+raw_charges: [x, q]
+physical_charges: [B, I]
+expected_unique: true
+defining_anchors:
+  - id: unit_instanton
+    t_degree: 2
+    su5_dynkin_labels: [1, 0, 0, 0]
+    raw_charges: {x: 6, q: 0}
+    physical_charges: {B: 0, I: 1}
+    justification: Manually reviewed unit-instanton orientation.
+  - id: antibaryon
+    t_degree: 3
+    su5_dynkin_labels: [0, 1, 0, 0]
+    raw_charges: {x: 2, q: 1}
+    physical_charges: {B: -3, I: 0}
+    justification: Manually reviewed antibaryon convention with B(Q)=+1.
+validation_anchors:
+  - id: anti_instanton_conjugate
+    t_degree: 2
+    su5_dynkin_labels: [0, 0, 0, 1]
+    raw_charges: {x: -6, q: 0}
+    physical_charges: {B: 0, I: -1}
+  - id: baryon_conjugate
+    t_degree: 3
+    su5_dynkin_labels: [0, 0, 1, 0]
+    raw_charges: {x: -2, q: -1}
+    physical_charges: {B: 3, I: 0}
+physical_normalization_notes:
+  - A fundamental five-dimensional quark has B=+1.
+  - A unit instanton operator has I=+1.
+  - Conjugation reverses both physical charges.
+source_and_justification_notes:
+  - Physical meanings are supplied only by the manually reviewed anchors.
+  - The raw x and q charges have no automatic baryon or instanton interpretation.
+notes:
+  - The convention is orientation-dependent; reversing both orientations is equivalent.
+  - The matrix is to be solved, not supplied by this fixture.

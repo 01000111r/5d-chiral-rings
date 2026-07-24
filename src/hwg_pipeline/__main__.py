@@ -18,6 +18,8 @@ from .plethystic import (dimension_refine_virtual, plethystic_logarithm,
 from .operator_outputs import write_operator_outputs
 from .branching import load_branching_spec
 from .branching_outputs import write_branching_outputs
+from .charge_maps import load_charge_map_spec
+from .charge_map_outputs import write_charge_map_outputs
 
 
 def _root():
@@ -351,11 +353,13 @@ def main(argv=None):
                             ("plethystic-log", "compute the exact refined plethystic logarithm"),
                             ("reconstruct", "reconstruct a character series from its refined PL"),
                             ("analyze-pl", "classify PL content and first relation channels"),
-                            ("branch", "branch exact character content to a manifest subgroup")):
+                            ("branch", "branch exact character content to a manifest subgroup"),
+                            ("charge-map", "derive and apply an anchor-defined physical charge map")):
         command = commands.add_parser(name, help=help_text)
         command.add_argument("theory_id")
         command.add_argument("--order", required=True, type=int)
-        if name == "branch": command.add_argument("--branching", required=True)
+        if name in ("branch", "charge-map"): command.add_argument("--branching", required=True)
+        if name == "charge-map": command.add_argument("--charge-map", required=True)
     args = parser.parse_args(argv)
     if args.order < 0:
         parser.error("--order must be nonnegative")
@@ -382,12 +386,20 @@ def main(argv=None):
         pl = _load_virtual_pl(theory, output / "refined_plethystic_logarithm.json", args.order)
         characters = json.loads((output / "character_series.json").read_text())
         checks = write_operator_outputs(theory, args.order, pl, characters, output)
-    else:
+    elif args.command == "branch":
         spec = load_branching_spec(root / "theories" / "branchings" / f"{args.branching}.yaml")
         if spec.source_theory_id != theory.id:
             parser.error("branching specification belongs to a different source theory")
         checks = write_branching_outputs(theory, args.order, spec, output,
                                          output / "manifest_branching")
+    else:
+        branching = load_branching_spec(root / "theories" / "branchings" / f"{args.branching}.yaml")
+        spec = load_charge_map_spec(root / "theories" / "charge_maps" / f"{args.charge_map}.yaml")
+        if branching.source_theory_id != theory.id:
+            parser.error("branching specification belongs to a different source theory")
+        source = output / "manifest_branching"
+        checks = write_charge_map_outputs(spec, theory.id, branching.id, args.order, source,
+                                          source / "physical_charges")
     if not checks["all_passed"]:
         raise SystemExit("expansion validation failed")
 

@@ -1,0 +1,56 @@
+{
+  "anchor_matrix": [
+    [
+      2,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "anchor_residuals": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "determinant": 2,
+  "formula": {
+    "B": "3*(x+y)/2",
+    "I": "(x-y)/2"
+  },
+  "inverse": {
+    "x": "B/3+I",
+    "y": "B/3-I"
+  },
+  "rank": 2,
+  "raw_charge_names": [
+    "x",
+    "y"
+  ],
+  "solution_matrix": [
+    [
+      "3/2",
+      "3/2"
+    ],
+    [
+      "1/2",
+      "-1/2"
+    ]
+  ],
+  "target_charge_matrix": [
+    [
+      3,
+      3
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}

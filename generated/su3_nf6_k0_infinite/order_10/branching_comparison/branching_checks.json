@@ -1,0 +1,52 @@
+{
+  "checks": {
+    "anchors": {
+      "both_present": "pass",
+      "classical_baryon_and_antibaryon_verified": "pass",
+      "raw_vectors_independent": "pass"
+    },
+    "branching": {
+      "a1_exact_weights": "pass",
+      "dimensions_preserved": "pass",
+      "every_parent_once": "pass",
+      "preserved_factor_unchanged": "pass",
+      "raw_charges_integral": "pass",
+      "signed_multiplicities_preserved": "pass"
+    },
+    "charge_map": {
+      "all_physical_charges_integral": "pass",
+      "conjugation_reverses_charges": "pass",
+      "inverse_verified": "pass",
+      "residuals_vanish": "pass",
+      "solved_over_QQ": "pass",
+      "unique_solution": "pass"
+    },
+    "completeness": {
+      "all_terms_through_cutoff": "pass",
+      "negative_terms_retained": "pass",
+      "no_ellipsis_inside_cutoff": "pass",
+      "no_terms_above_cutoff": "pass"
+    },
+    "input": {
+      "all_factors_retained": "pass",
+      "cutoff_order_10": "pass",
+      "external_charge_metadata": "pass",
+      "factor_label_lengths": "pass",
+      "multiplicities_exact_integers": "pass",
+      "no_fictitious_charge": "pass",
+      "stored_reconstruction_checks_pass": "pass",
+      "theory_ids_correct": "pass"
+    },
+    "presentation": {
+      "latex_compile": "unavailable",
+      "output_deterministic": "pass",
+      "product_semicolon": "pass"
+    },
+    "product_structure": {
+      "factor_order_preserved": "pass",
+      "no_label_concatenation": "pass",
+      "repeated_cartan_factors_distinct": "pass",
+      "trivial_factors_retained": "pass"
+    }
+  }
+}

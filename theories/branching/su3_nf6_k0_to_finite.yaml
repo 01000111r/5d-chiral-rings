@@ -1,0 +1,38 @@
+id: su3_nf6_k0_to_finite
+uv_theory_id: su3_nf6_k0_infinite
+finite_theory_id: su3_nf6_finite
+order: 10
+report_variant: double_su2
+parent_factors:
+  - {index: 0, cartan_factor_id: a5, cartan_type: A5, display_name: "SU(6)", action: preserve}
+  - {index: 1, cartan_factor_id: a1_1, cartan_type: A1, display_name: "SU(2)_1", action: branch_to_u1, output_charge: x, convention: su2_weight}
+  - {index: 2, cartan_factor_id: a1_2, cartan_type: A1, display_name: "SU(2)_2", action: branch_to_u1, output_charge: y, convention: su2_weight}
+raw_charges: [x, y]
+external_charges: []
+physical_charges: [B, I]
+expected_charge_map: [["3/2", "3/2"], ["1/2", "-1/2"]]
+charge_formula: {B: "3*(x+y)/2", I: "(x-y)/2"}
+inverse_formula: {x: "B/3+I", y: "B/3-I"}
+anchors:
+  - id: positive_unit_instanton_current
+    degree: 2
+    raw: [2, 0]
+    physical: [3, 1]
+    parent_labels: [[0, 0, 0, 0, 0], [2], [0]]
+    child_dynkin_labels: [0, 0, 0, 0, 0]
+  - id: classical_baryon
+    degree: 3
+    raw: [1, 1]
+    physical: [3, 0]
+    parent_labels: [[0, 0, 1, 0, 0], [1], [1]]
+    child_dynkin_labels: [0, 0, 1, 0, 0]
+    finite_beta_charge: 1
+anchor_evidence:
+  positive_unit_instanton_current: "The degree-two non-Cartan root of the first enhanced SU(2) is an SU(6)-singlet conserved-current component; the one-instanton convention, not singletness alone, assigns (B,I)=(3,1)."
+  classical_baryon: "The degree-three SU(6) 20 at raw weight (1,1) matches the finite beta^1 channel and is assigned (B,I)=(3,0); beta^-1 identifies its antibaryon."
+conjugate_check:
+  degree: 3
+  parent_labels: [[0, 0, 1, 0, 0], [1], [1]]
+  raw: [-1, -1]
+  physical: {B: -3, I: 0}
+

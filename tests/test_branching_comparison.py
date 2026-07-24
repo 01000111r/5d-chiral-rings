@@ -98,3 +98,34 @@ def test_product_parent_physical_rendering():
 def test_product_deterministic(): assert branch_product(product_term(),product_meta())==branch_product(product_term(),product_meta())
 def test_product_matching_key_discards_parent_a1():
  a=branch_product(product_term(1),product_meta())['children'][0]; b=branch_product(product_term(3),product_meta())['children'][0]; assert a['child_factors']==b['child_factors']
+
+def double_meta(): return [
+ {'index':0,'cartan_factor_id':'a5','cartan_type':'A5','display_name':'SU(6)','action':'preserve'},
+ {'index':1,'cartan_factor_id':'a1_1','cartan_type':'A1','display_name':'SU(2)_1','action':'branch_to_u1','output_charge':'x','convention':'su2_weight'},
+ {'index':2,'cartan_factor_id':'a1_2','cartan_type':'A1','display_name':'SU(2)_2','action':'branch_to_u1','output_charge':'y','convention':'su2_weight'}]
+def double_term(b=1,c=1,m=-2):
+ return {'degree':3,'multiplicity':m,'charges':{},'product_irrep':ProductIrrep((FactorIrrep('a5','A5','SU(6)',(0,0,1,0,0)),FactorIrrep('a1_1','A1','SU(2)_1',(b,)),FactorIrrep('a1_2','A1','SU(2)_2',(c,))))}
+def test_three_factor_parse_preserves_repeated_a1_identity_order_and_trivial_factors():
+ payload=stored([{'cartan_factor_id':'a5','dynkin_labels':[0,0,1,0,0]},{'cartan_factor_id':'a1_1','dynkin_labels':[1]},{'cartan_factor_id':'a1_2','dynkin_labels':[0]}],q=0)
+ payload['coefficients_by_t_degree']['3'][0]['abelian_charges']={}
+ t=parse_terms(payload,double_meta())[0]
+ assert [(f.cartan_factor_id,f.labels) for f in t['product_irrep'].factors]==[('a5',(0,0,1,0,0)),('a1_1',(1,)),('a1_2',(0,))]
+def test_repeated_factor_exchange_is_rejected():
+ payload=stored([{'cartan_factor_id':'a5','dynkin_labels':[0,0,1,0,0]},{'cartan_factor_id':'a1_2','dynkin_labels':[1]},{'cartan_factor_id':'a1_1','dynkin_labels':[0]}])
+ with pytest.raises(ComparisonError): parse_terms(payload,double_meta())
+@pytest.mark.parametrize(('b','c'),[(1,1),(2,1),(1,2),(2,2)])
+def test_double_a1_branching_uses_distinct_arbitrary_charge_names(b,c):
+ p=branch_product(double_term(b,c),double_meta())
+ assert [(z['raw_charges']['x'],z['raw_charges']['y']) for z in p['children']]==[(x,y) for x in su2_weights((b,)) for y in su2_weights((c,))]
+ assert len(p['children'])==(b+1)*(c+1) and p['parent_dimension']==sum(z['child_dimension'] for z in p['children'])
+ assert all(z['signed_child_multiplicity']==-2 and z['child_factors'][0]['labels']==[0,0,1,0,0] for z in p['children'])
+def test_three_factor_json_latex_and_no_external_q():
+ p=branch_product(double_term(),double_meta())
+ assert ProductIrrep.from_json(double_term()['product_irrep'].to_json())==double_term()['product_irrep']
+ assert render_product(double_term()['product_irrep'])=='[0,0,1,0,0;1;1]_{6,2,2}'
+ assert 'q' not in str(p) and 'q' not in render_product_parent(p)
+def test_double_a1_exact_charge_map_and_integrality_rejection():
+ M,R,T=solve_charge_map([{'raw':[2,0],'physical':[3,1]},{'raw':[1,1],'physical':[3,0]}])
+ assert M==matrix(QQ,[[QQ(3)/2,QQ(3)/2],[QQ(1)/2,-QQ(1)/2]]) and M*R==T
+ assert physical_charge(1,-1,M)==(0,1)
+ with pytest.raises(ComparisonError): physical_charge(1,0,M)

@@ -1,0 +1,53 @@
+{
+  "check_totals": {
+    "fail": 0,
+    "not-applicable": 7,
+    "pass": 7,
+    "pending": 0,
+    "unavailable": 7
+  },
+  "compact_report_status": "pass",
+  "deterministic_rerun": "pass: deterministic JSON and TeX outputs byte-for-byte identical",
+  "formal_log_implementation": "direct",
+  "full_pytest": "142 passed in 74.90s",
+  "independent_scalar_reconstruction": "pass",
+  "maximum_t_degree": 10,
+  "no_abelian_factor": true,
+  "pdf_compilation_status": "unavailable: no LaTeX compiler installed",
+  "python_version": "3.11.15",
+  "reconstruction_difference_empty": true,
+  "reconstruction_status": "pass",
+  "regression_status": "pass: completed campaign and n=3 benchmark tracked outputs unchanged",
+  "sage_version": "10.7",
+  "shared_change_scope": "generic no-abelian output selection and compact rendering only; mathematical algorithms unchanged",
+  "shared_implementation_files_changed": true,
+  "shared_mathematical_implementation_files_changed": false,
+  "stage_elapsed_seconds": {
+    "stage_0": 3,
+    "stage_1": 3,
+    "stage_2": 4,
+    "stage_3": 46,
+    "stage_4": 104,
+    "stage_5": 4,
+    "stage_6": 2
+  },
+  "stage_peak_rss_kb": {
+    "stage_0": "unavailable: /usr/bin/time is not installed",
+    "stage_1": "unavailable: /usr/bin/time is not installed",
+    "stage_2": "unavailable: /usr/bin/time is not installed",
+    "stage_3": "unavailable: /usr/bin/time is not installed",
+    "stage_4": "unavailable: /usr/bin/time is not installed",
+    "stage_5": "unavailable: /usr/bin/time is not installed",
+    "stage_6": "unavailable: /usr/bin/time is not installed"
+  },
+  "stage_statuses": {
+    "0": "pass",
+    "1": "pass",
+    "2": "pass",
+    "3": "pass",
+    "4": "pass",
+    "5": "pass",
+    "6": "pass"
+  },
+  "theory_id": "su3_nf6_k0_infinite"
+}

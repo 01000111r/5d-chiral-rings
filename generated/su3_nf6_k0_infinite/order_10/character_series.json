@@ -1,0 +1,4996 @@
+{
+  "coefficients_by_t_degree": {
+    "0": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "10": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              10
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              8
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              8
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              10
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 2
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              2,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              2,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              8
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              8
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              2,
+              0,
+              2,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              2,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              2,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              1,
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              1,
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              1,
+              0,
+              1,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              4,
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              4,
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              5,
+              0,
+              0,
+              0,
+              5
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "3": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "5": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "7": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              5
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              5
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              8
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              8
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              2,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              6
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              6
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              1,
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              4,
+              0,
+              0,
+              0,
+              4
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "9": [
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              5
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              7
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              5
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              5
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              5
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              7
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              0,
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              5
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              5
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              2,
+              0,
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {},
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "a5",
+            "dynkin_labels": [
+              3,
+              0,
+              1,
+              0,
+              3
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_1",
+            "dynkin_labels": [
+              1
+            ]
+          },
+          {
+            "cartan_factor_id": "a1_2",
+            "dynkin_labels": [
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ]
+  },
+  "maximum_t_degree": 10,
+  "simple_factors": [
+    {
+      "cartan_factor_id": "a5",
+      "cartan_type": "A5"
+    },
+    {
+      "cartan_factor_id": "a1_1",
+      "cartan_type": "A1"
+    },
+    {
+      "cartan_factor_id": "a1_2",
+      "cartan_type": "A1"
+    }
+  ],
+  "theory_id": "su3_nf6_k0_infinite"
+}

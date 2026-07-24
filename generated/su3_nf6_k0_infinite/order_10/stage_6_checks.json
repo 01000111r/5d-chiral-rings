@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "actual_result": "all stored stage validations passed",
+      "check_id": "stage_6_completed",
+      "claim": "compact paper-style LaTeX completed exactly",
+      "evidence_path": "generated/su3_nf6_k0_infinite/order_10/compact_report/compact_results.tex",
+      "mathematical_input": "seven complete stored mathematical expressions",
+      "mathematical_operation": "validated deterministic compact rendering",
+      "mathematical_output": "compact_results.tex without abelian sections",
+      "stage_name": "compact paper-style LaTeX",
+      "stage_number": 6,
+      "status": "pass",
+      "validation_target": "generated/su3_nf6_k0_infinite/order_10/compact_report/compact_results.tex"
+    },
+    {
+      "actual_result": "theory has no abelian factor",
+      "check_id": "stage_6_q_refinement",
+      "claim": "q-refined intermediate is required",
+      "evidence_path": "theories/su3_nf6_k0_infinite.yaml",
+      "mathematical_input": "seven complete stored mathematical expressions",
+      "mathematical_operation": "validated deterministic compact rendering",
+      "mathematical_output": "compact_results.tex without abelian sections",
+      "stage_name": "compact paper-style LaTeX",
+      "stage_number": 6,
+      "status": "not-applicable",
+      "validation_target": "external abelian factor declaration"
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_name": "compact paper-style LaTeX",
+  "stage_number": 6,
+  "theory_id": "su3_nf6_k0_infinite"
+}

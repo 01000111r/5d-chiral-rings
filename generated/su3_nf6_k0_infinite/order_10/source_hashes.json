@@ -1,0 +1,8 @@
+{
+  "references/overleaf/su3_5f_6f_hwg_results.tex": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359",
+  "src/hwg_pipeline/characters.py": "4831ca895267335de8da5abe1ee59ee66d7938d70abd3fa08e4c9d0232af1335",
+  "src/hwg_pipeline/compact_latex.py": "be5ca2b190a0295374525d502993270d9b4720406ee4024845b87a5dd98f44f1",
+  "src/hwg_pipeline/expansion.py": "54bceac19e91d21762b2ecea81baa78e0edad325bfc53713ff37baaad90f9d64",
+  "src/hwg_pipeline/plethystic.py": "45e417a94f6d0dab86ecafdcd0da3eac07ad8dcac0e1004aec74b12bfe6b08bd",
+  "theories/su3_nf6_k0_infinite.yaml": "cb74f362add7be3e1afcfb2b5e59709bbe7c2a2a392d18985e081a9daddbcef3"
+}

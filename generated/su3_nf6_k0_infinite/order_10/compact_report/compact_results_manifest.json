@@ -1,0 +1,42 @@
+{
+  "generated_sections": [
+    "highest_weight_generating_function",
+    "highest_weight_expansion",
+    "refined_character_hilbert_series",
+    "fully_unrefined_hilbert_series",
+    "refined_character_plethystic_logarithm",
+    "fully_unrefined_plethystic_logarithm"
+  ],
+  "order": 10,
+  "q_charge_support": null,
+  "result_files_read": [
+    "generated/su3_nf6_k0_infinite/order_10/hwg_expansion.json",
+    "generated/su3_nf6_k0_infinite/order_10/character_series.json",
+    "generated/su3_nf6_k0_infinite/order_10/unrefined_hilbert_series.json",
+    "generated/su3_nf6_k0_infinite/order_10/refined_plethystic_logarithm.json",
+    "generated/su3_nf6_k0_infinite/order_10/unrefined_plethystic_logarithm.json"
+  ],
+  "sha256": {
+    "generated/su3_nf6_k0_infinite/input_audit.md": "20f492cba97fc270fadb62747316632b6af0e26ac43487f5ec1d54ccf09945fe",
+    "generated/su3_nf6_k0_infinite/order_10/character_series.json": "4d80bf4e375ee3befc2eeb2d6803ad3a62ecd21dc01f3212892f05c08af1b2e5",
+    "generated/su3_nf6_k0_infinite/order_10/hwg_expansion.json": "2724637c30bc3e4de34ca2fd227ef29820bc83c30c9311f8e12b9357d2eb55a9",
+    "generated/su3_nf6_k0_infinite/order_10/refined_plethystic_logarithm.json": "4315fb7439dc2bd882a312889a2fbdc5255b0203a23b6320aa8d85b77470e52e",
+    "generated/su3_nf6_k0_infinite/order_10/unrefined_hilbert_series.json": "22aebb831c16aeb1a26b6f99f51de447a735362b9df292e2154ed0d22e93b1f9",
+    "generated/su3_nf6_k0_infinite/order_10/unrefined_plethystic_logarithm.json": "b97b937ac446223d54bf58d96a68793ee8499bed43a6cf1388e732989a3bcd8e",
+    "theories/su3_nf6_k0_infinite.yaml": "cb74f362add7be3e1afcfb2b5e59709bbe7c2a2a392d18985e081a9daddbcef3"
+  },
+  "source_files_read": [
+    "theories/su3_nf6_k0_infinite.yaml",
+    "generated/su3_nf6_k0_infinite/input_audit.md"
+  ],
+  "term_counts": {
+    "fully_unrefined_hilbert_series": 10,
+    "fully_unrefined_plethystic_logarithm": 9,
+    "highest_weight_expansion": 177,
+    "q_refined_dimension_hilbert_series": 0,
+    "q_refined_dimension_plethystic_logarithm": 0,
+    "refined_character_hilbert_series": 177,
+    "refined_character_plethystic_logarithm": 132
+  },
+  "theory_id": "su3_nf6_k0_infinite"
+}

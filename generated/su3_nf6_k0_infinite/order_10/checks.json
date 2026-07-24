@@ -1,0 +1,24 @@
+{
+  "maximum_t_degree": 10,
+  "routes_compared": [
+    "plethystic_exponential",
+    "rational_product"
+  ],
+  "theory_id": "su3_nf6_k0_infinite",
+  "validation_results": {
+    "all_multiplicities_are_integers": true,
+    "all_multiplicities_are_nonnegative": true,
+    "all_passed": true,
+    "constant_coefficient_is_one": true,
+    "no_terms_above_requested_degree": true,
+    "pe_equals_rational_product": true,
+    "truncation_stability": {
+      "0": true,
+      "10": true,
+      "2": true,
+      "4": true,
+      "6": true,
+      "8": true
+    }
+  }
+}

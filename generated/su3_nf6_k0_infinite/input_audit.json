@@ -1,0 +1,963 @@
+{
+  "a1_1_convention_checks": {
+    "0": {
+      "dimension": 1,
+      "labels": [
+        0
+      ],
+      "self_conjugate": true
+    },
+    "1": {
+      "dimension": 2,
+      "labels": [
+        1
+      ],
+      "self_conjugate": true
+    },
+    "2": {
+      "dimension": 3,
+      "labels": [
+        2
+      ],
+      "self_conjugate": true
+    }
+  },
+  "a1_2_convention_checks": {
+    "0": {
+      "dimension": 1,
+      "labels": [
+        0
+      ],
+      "self_conjugate": true
+    },
+    "1": {
+      "dimension": 2,
+      "labels": [
+        1
+      ],
+      "self_conjugate": true
+    },
+    "2": {
+      "dimension": 3,
+      "labels": [
+        2
+      ],
+      "self_conjugate": true
+    }
+  },
+  "a5_convention_checks": {
+    "adjoint": {
+      "dimension": 35,
+      "dual_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "antifundamental": {
+      "dimension": 6,
+      "dual_labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "degree_four": {
+      "dimension": 189,
+      "dual_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    "degree_six": {
+      "dimension": 175,
+      "dual_labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    "fundamental": {
+      "dimension": 6,
+      "dual_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "middle_antisymmetric": {
+      "dimension": 20,
+      "dual_labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "singlet": {
+      "dimension": 1,
+      "dual_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "abelian_factors": [],
+  "audit_status": "pass",
+  "degree_10_boundary_term_check": {
+    "included": true,
+    "status": "pass"
+  },
+  "fixture_sha256": "cb74f362add7be3e1afcfb2b5e59709bbe7c2a2a392d18985e081a9daddbcef3",
+  "identical_factor_distinction": "A1_1 and A1_2 retain separate ordered IDs despite identical Cartan type",
+  "normalized_pe_expression": [
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": -1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 10
+    }
+  ],
+  "normalized_rational_product": [
+    {
+      "abelian_charges": {},
+      "location": "numerator",
+      "power": 1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 6
+    }
+  ],
+  "ordered_simple_factors": [
+    {
+      "cartan_type": "A5",
+      "convention": "WeylCharacterRing(\"A5\", style=\"coroots\")",
+      "display_name": "SU(6)",
+      "id": "a5"
+    },
+    {
+      "cartan_type": "A1",
+      "convention": "WeylCharacterRing(\"A1\", style=\"coroots\")",
+      "display_name": "SU(2)_1",
+      "id": "a1_1"
+    },
+    {
+      "cartan_type": "A1",
+      "convention": "WeylCharacterRing(\"A1\", style=\"coroots\")",
+      "display_name": "SU(2)_2",
+      "id": "a1_2"
+    }
+  ],
+  "original_pe_expression": "\\PE\\!\\left[\n(\\mu_1\\mu_5+\\nu_1^2+\\nu_2^2)t^2\n+\\nu_1\\nu_2\\mu_3t^3\n+(\\mu_2\\mu_4+1)t^4\n+\\nu_1\\nu_2\\mu_3t^5\n+\\mu_3^2t^6\n-\\nu_1^2\\nu_2^2\\mu_3^2t^{10}\n\\right]",
+  "original_rational_product_expression": "\\frac{1-\\nu_1^2\\nu_2^2\\mu_3^2t^{10}}\n{(1-t^4)(1-\\mu_1\\mu_5t^2)(1-\\nu_1^2t^2)(1-\\nu_2^2t^2)\n (1-\\nu_1\\nu_2\\mu_3t^3)(1-\\mu_2\\mu_4t^4)\n (1-\\nu_1\\nu_2\\mu_3t^5)(1-\\mu_3^2t^6)}",
+  "rational_product_factors": [
+    {
+      "abelian_charges": {},
+      "location": "numerator",
+      "power": 1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {},
+      "location": "denominator",
+      "power": -1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 6
+    }
+  ],
+  "source_equation": "9.5",
+  "source_file": "references/overleaf/su3_5f_6f_hwg_results.tex",
+  "source_sha256": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359",
+  "source_versus_fixture_comparison": {
+    "claim": "nine PE terms and nine rational factors agree term-by-term with the explicit stored SU(3)+6F k=0 formula",
+    "status": "pass"
+  },
+  "structured_pe_terms": [
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          1
+        ],
+        "a1_2": [
+          1
+        ],
+        "a5": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": 1,
+      "representations": {
+        "a1_1": [
+          0
+        ],
+        "a1_2": [
+          0
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {},
+      "coefficient": -1,
+      "representations": {
+        "a1_1": [
+          2
+        ],
+        "a1_2": [
+          2
+        ],
+        "a5": [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "t_degree": 10
+    }
+  ],
+  "theory_metadata": {
+    "chern_simons_convention": "signed zero",
+    "chern_simons_level": 0,
+    "coupling": "infinite",
+    "gauge_algebra": "A2",
+    "gauge_display_name": "SU(3)",
+    "grading_variable": "t",
+    "id": "su3_nf6_k0_infinite",
+    "number_of_flavours": 6
+  },
+  "unresolved_ambiguities": []
+}

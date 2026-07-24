@@ -1,0 +1,135 @@
+\documentclass[9pt]{article}
+\usepackage[a4paper,margin=1.45cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+\setlength{\jot}{2pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{7pt}{2pt}
+\newcommand{\PE}{\operatorname{PE}}
+\newcommand{\HWG}{\operatorname{HWG}}
+\allowdisplaybreaks
+
+\begin{document}
+\small
+
+\begin{center}
+    {\large\bfseries Finite-coupling HWGs for $SU(3)+5F$ and $SU(3)+6F$}\\[-1mm]
+    {\footnotesize General baryonic-branch formula from Bourget--Cabrera--Grimminger--Hanany--Zhong and $N_c=3$ specialisations}
+\end{center}
+
+\textbf{Notation.}
+The $\mu_i$ are highest-weight fugacities for $SU(N_f)$, $\beta$ is the
+finite-coupling baryonic $U(1)_B$ fugacity, and $t$ is the grading variable.
+The exponent of $\beta$ is denoted $B_\beta$.  In quark-normalised baryon
+number, $B(Q)=1$, one has $B=3B_\beta$ for $SU(3)$.
+
+\section*{General finite-coupling formula}
+For $N_f\geq 2N_c-1$, the finite-coupling Higgs branch consists of the
+baryonic branch.  Equation~(5.52) of Bourget et al. gives
+\begin{equation}
+\label{eq:general-finite-hwg}
+\HWG^{\mathrm{finite}}_{N_c,N_f}
+=
+\PE\!\left[
+ t^2
+ +\left(\mu_{N_c}\beta+\mu_{N_f-N_c}\beta^{-1}\right)t^{N_c}
+ +\sum_{j=1}^{N_c}\mu_j\mu_{N_f-j}t^{2j}
+ -\mu_{N_c}\mu_{N_f-N_c}t^{2N_c}
+\right].
+\end{equation}
+
+\section*{$SU(3)+5F$: $N_c=3$, $N_f=5$}
+Since $5=2\cdot3-1$, equation~\eqref{eq:general-finite-hwg} applies directly.
+Before cancellation,
+\begin{align}
+\HWG^{\mathrm{finite}}_{5F}
+=\PE\!\Big[
+&t^2
++\left(\mu_3\beta+\mu_2\beta^{-1}\right)t^3
++\mu_1\mu_4t^2
++\mu_2\mu_3t^4 \notag\\
+&+\mu_3\mu_2t^6
+-\mu_3\mu_2t^6
+\Big].
+\end{align}
+The two degree-six terms cancel exactly, so
+\begin{align}
+\HWG^{\mathrm{finite}}_{5F}
+&=\PE\!\left[
+(1+\mu_1\mu_4)t^2
++\left(\beta\mu_3+\beta^{-1}\mu_2\right)t^3
++\mu_2\mu_3t^4
+\right] \\
+&=\frac{1}
+{(1-t^2)(1-\mu_1\mu_4t^2)
+ (1-\beta\mu_3t^3)(1-\beta^{-1}\mu_2t^3)
+ (1-\mu_2\mu_3t^4)}.
+\end{align}
+
+In $SU(5)$ Dynkin-label notation, the simplified PE input is
+\begin{align}
+ t^2:&\quad [0,0,0,0]_{0}+[1,0,0,1]_{0},\\
+ t^3:&\quad [0,0,1,0]_{+1}+[0,1,0,0]_{-1},\\
+ t^4:&\quad [0,1,1,0]_{0},
+\end{align}
+where the subscript is $B_\beta$.
+
+\section*{$SU(3)+6F$: $N_c=3$, $N_f=6$}
+Since $6\geq2\cdot3-1$, equation~\eqref{eq:general-finite-hwg} applies directly.
+Before cancellation,
+\begin{align}
+\HWG^{\mathrm{finite}}_{6F}
+=\PE\!\Big[
+&t^2
++\mu_3\left(\beta+\beta^{-1}\right)t^3
++\mu_1\mu_5t^2
++\mu_2\mu_4t^4 \notag\\
+&+\mu_3^2t^6
+-\mu_3^2t^6
+\Big].
+\end{align}
+The two degree-six terms cancel exactly, so
+\begin{align}
+\HWG^{\mathrm{finite}}_{6F}
+&=\PE\!\left[
+(1+\mu_1\mu_5)t^2
++\mu_3\left(\beta+\beta^{-1}\right)t^3
++\mu_2\mu_4t^4
+\right] \\
+&=\frac{1}
+{(1-t^2)(1-\mu_1\mu_5t^2)
+ (1-\beta\mu_3t^3)(1-\beta^{-1}\mu_3t^3)
+ (1-\mu_2\mu_4t^4)}.
+\end{align}
+
+In $SU(6)$ Dynkin-label notation, the simplified PE input is
+\begin{align}
+ t^2:&\quad [0,0,0,0,0]_{0}+[1,0,0,0,1]_{0},\\
+ t^3:&\quad [0,0,1,0,0]_{+1}+[0,0,1,0,0]_{-1},\\
+ t^4:&\quad [0,1,0,1,0]_{0},
+\end{align}
+where the subscript is $B_\beta$.
+
+\section*{Use as finite-coupling references}
+The $5F$ result is the common finite-coupling reference for
+$|k|=\frac12,\frac32,\frac52$.  The $6F$ result is the common finite-coupling
+reference for $k=0,|k|=1,|k|=2$.  No instanton fugacity is introduced at
+finite coupling; derived physical operator records should use $I=0$.
+
+\vfill
+\begin{thebibliography}{1}\footnotesize
+\bibitem{BourgetEtAl}
+A.~Bourget, S.~Cabrera, J.~F.~Grimminger, A.~Hanany and Z.~Zhong,
+\emph{Brane webs and magnetic quivers for SQCD},
+JHEP \textbf{03} (2020) 176,
+\href{https://arxiv.org/abs/1909.00667}{arXiv:1909.00667 [hep-th]},
+Eq.~(5.52).
+\end{thebibliography}
+
+\end{document}

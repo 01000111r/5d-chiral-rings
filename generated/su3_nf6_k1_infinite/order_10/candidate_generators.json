@@ -1,0 +1,94 @@
+{
+  "generator_candidates": [
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k1_infinite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 48,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k1_infinite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 35,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k1_infinite",
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 35,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k1_infinite",
+      "t_degree": 3
+    }
+  ],
+  "maximum_t_degree": 10,
+  "theory_id": "su3_nf6_k1_infinite"
+}

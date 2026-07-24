@@ -1,0 +1,42 @@
+id: su3_nf6_k1_infinite
+title: SU(3)+6F at infinite coupling with |k|=1
+nonphysical: false
+gauge_algebra: A2
+gauge_display_name: SU(3)
+number_of_flavours: 6
+chern_simons_level: 1
+chern_simons_convention: absolute value
+coupling: infinite
+grading_variable: t
+source_references:
+  - path: references/overleaf/su3_5f_6f_hwg_results.tex
+    description: Committed LaTeX source for the infinite-coupling HWG
+    equation: "8.3"
+simple_factors:
+  - id: enhanced
+    cartan_type: A
+    rank: 6
+    display_name: SU(7)
+    highest_weight_fugacities: [mu_1, mu_2, mu_3, mu_4, mu_5, mu_6]
+abelian_factors:
+  - id: q
+    display_name: U(1)
+    fugacity: q
+pe:
+  original_pe_latex: |-
+    \PE\!\left[(\mu_1\mu_6+1)t^2+(q\mu_3+q^{-1}\mu_4)t^3+\mu_2\mu_5t^4\right]
+  terms:
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {enhanced: [0, 0, 0, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {enhanced: [1, 0, 0, 0, 0, 1]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 3, representations: {enhanced: [0, 0, 1, 0, 0, 0]}, abelian_charges: {q: 1}}}
+    - {coefficient: 1, monomial: {t_degree: 3, representations: {enhanced: [0, 0, 0, 1, 0, 0]}, abelian_charges: {q: -1}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {enhanced: [0, 1, 0, 0, 1, 0]}, abelian_charges: {q: 0}}}
+rational_product:
+  original_rational_product_latex: |-
+    \frac{1}{(1-t^2)(1-\mu_1\mu_6t^2)(1-q\mu_3t^3)(1-q^{-1}\mu_4t^3)(1-\mu_2\mu_5t^4)}
+  factors:
+    - {power: -1, monomial: {t_degree: 2, representations: {enhanced: [0, 0, 0, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {power: -1, monomial: {t_degree: 2, representations: {enhanced: [1, 0, 0, 0, 0, 1]}, abelian_charges: {q: 0}}}
+    - {power: -1, monomial: {t_degree: 3, representations: {enhanced: [0, 0, 1, 0, 0, 0]}, abelian_charges: {q: 1}}}
+    - {power: -1, monomial: {t_degree: 3, representations: {enhanced: [0, 0, 0, 1, 0, 0]}, abelian_charges: {q: -1}}}
+    - {power: -1, monomial: {t_degree: 4, representations: {enhanced: [0, 1, 0, 0, 1, 0]}, abelian_charges: {q: 0}}}

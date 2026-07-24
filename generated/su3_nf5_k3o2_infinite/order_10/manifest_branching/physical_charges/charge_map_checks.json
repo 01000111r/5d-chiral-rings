@@ -1,0 +1,89 @@
+{
+  "branching_id": "su3_nf5_k3o2_to_manifest",
+  "theory_id": "su3_nf5_k3o2_infinite",
+  "validation_anchors": [
+    {
+      "actual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "anti_instanton_conjugate",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 1,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 1,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "id": "baryon_conjugate",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    }
+  ],
+  "validation_results": {
+    "all_defining_residuals_zero": true,
+    "all_passed": true,
+    "all_physical_charges_integral": true,
+    "all_validation_anchors_pass": true,
+    "dimension_evaluated_pl_preserved": true,
+    "physical_sector_count_checked_for_integrality": 769,
+    "representation_dimensions_preserved": true,
+    "signed_multiplicities_preserved_before_combining": true,
+    "solution_unique": true,
+    "t_degrees_preserved": true,
+    "total_dimension_at_every_degree_preserved": true,
+    "two_neutral_degree_2_singlet_copies": true,
+    "unrefined_hilbert_series_preserved": true
+  }
+}

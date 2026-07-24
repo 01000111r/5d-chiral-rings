@@ -1,0 +1,221 @@
+{
+  "charge_map_id": "su3_nf5_k3o2_manifest_physical",
+  "defining_equations": [
+    {
+      "id": "unit_instanton",
+      "physical": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "raw": [
+        {
+          "denominator": 1,
+          "numerator": 6
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "id": "antibaryon",
+      "physical": [
+        {
+          "denominator": 1,
+          "numerator": -3
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "raw": [
+        {
+          "denominator": 1,
+          "numerator": 2
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ]
+    }
+  ],
+  "derived_formulas": [
+    "B = -3 q",
+    "I = (x - 2 q)/6"
+  ],
+  "determinant": {
+    "denominator": 2,
+    "numerator": 1
+  },
+  "diagnostics": {
+    "augmented_rank": 4,
+    "coefficient_rank": 4,
+    "consistent": true,
+    "defining_residuals": [
+      [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    ],
+    "equation_count": 4,
+    "nullspace": [],
+    "unique": true,
+    "unknown_count": 4
+  },
+  "integrality": {
+    "all_integral": true,
+    "sector_count": 769
+  },
+  "inverse_formulas": [
+    "q = -B/3",
+    "x = 6 I - 2 B/3"
+  ],
+  "inverse_matrix": [
+    [
+      {
+        "denominator": 3,
+        "numerator": -2
+      },
+      {
+        "denominator": 1,
+        "numerator": 6
+      }
+    ],
+    [
+      {
+        "denominator": 3,
+        "numerator": -1
+      },
+      {
+        "denominator": 1,
+        "numerator": 0
+      }
+    ]
+  ],
+  "matrix": [
+    [
+      {
+        "denominator": 1,
+        "numerator": 0
+      },
+      {
+        "denominator": 1,
+        "numerator": -3
+      }
+    ],
+    [
+      {
+        "denominator": 6,
+        "numerator": 1
+      },
+      {
+        "denominator": 3,
+        "numerator": -1
+      }
+    ]
+  ],
+  "matrix_rank": 2,
+  "physical_charge_order": [
+    "B",
+    "I"
+  ],
+  "raw_charge_order": [
+    "x",
+    "q"
+  ],
+  "validation_anchors": [
+    {
+      "actual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "anti_instanton_conjugate",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 1,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 1,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "id": "baryon_conjugate",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "branching_id": "su3_nf5_k3o2_to_manifest",
+  "builder_version": "1.0.0",
+  "calculation_order": 10,
+  "check_status_totals": {
+    "FAIL": 0,
+    "NOT APPLICABLE": 0,
+    "PASS": 242,
+    "PENDING": 0,
+    "UNAVAILABLE": 0
+  },
+  "checks_imported_by_stage": {
+    "branching": 198,
+    "characters": 8,
+    "hwg": 14,
+    "operator-analysis": 5,
+    "plethystic-log": 8,
+    "reconstruction": 9
+  },
+  "execution_mode": "stored-results",
+  "mathematical_result_terms_embedded": 785,
+  "missing_files": [],
+  "notebook_table_of_contents": [
+    "0. Purpose and reading guide",
+    "1. Whole-pipeline overview",
+    "2. Project and repository layout",
+    "3. Stage 0 — Source HWG and structured input",
+    "4. Stage 1 — Highest-weight expansion",
+    "5. Stage 2 — Restoration of irreducible characters",
+    "6. Stage 3 — Dimension refinement and unrefinement",
+    "7. Stage 4 — Refined plethystic logarithm",
+    "8. Stage 5 — Plethystic reconstruction",
+    "9. Stage 6 — Low-degree operator analysis",
+    "10. Stage 7 — Branching to the manifest subgroup",
+    "11. How checks are organised",
+    "12. Independent validation benchmarks",
+    "13. Implementation guide",
+    "14. How to run a new theory",
+    "15. Limitations and next steps",
+    "Appendices A–J"
+  ],
+  "physical_pipeline_rerun": false,
+  "requested_final_stage": "branching",
+  "stages_included": [
+    "input",
+    "hwg",
+    "characters",
+    "dimensions",
+    "plethystic-log",
+    "reconstruction",
+    "operator-analysis",
+    "branching"
+  ],
+  "theory_id": "su3_nf5_k3o2_infinite"
+}

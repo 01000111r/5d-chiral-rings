@@ -22,6 +22,7 @@ from .charge_maps import load_charge_map_spec
 from .charge_map_outputs import write_charge_map_outputs
 from .reporting import ReportError, generate_report
 from .notebook_report import NotebookError, generate_notebook
+from .compact_latex import CompactLatexError, generate_compact_latex
 
 
 def _root():
@@ -372,10 +373,19 @@ def main(argv=None):
             command.add_argument("--through", choices=("input", "hwg", "characters", "dimensions",
                 "plethystic-log", "reconstruction", "operator-analysis", "branching", "charge-map"), required=True)
             command.add_argument("--strict", action="store_true")
+    compact = commands.add_parser("compact-latex", help="render compact LaTeX from stored results")
+    compact.add_argument("theory_id")
+    compact.add_argument("--order", required=True, type=int)
     args = parser.parse_args(argv)
     if args.order < 0:
         parser.error("--order must be nonnegative")
     root = _root()
+    if args.command == "compact-latex":
+        try:
+            generate_compact_latex(root, args.theory_id, args.order)
+        except CompactLatexError as exc:
+            parser.error(str(exc))
+        return
     if args.command == "latex-report":
         try:
             generate_report(root, args.theory_id, args.order, args.branching,

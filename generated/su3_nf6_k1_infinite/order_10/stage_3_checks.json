@@ -1,0 +1,60 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "check_id": "all_final_coefficients_integral",
+      "claim": "all final coefficients integral",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined A6 character Hilbert series",
+      "mathematical_operation": "M\u00f6bius/Adams PL with direct formal logarithm",
+      "mathematical_output": "refined and dimension-valued PL through degree 10",
+      "stage_name": "plethystic logarithm",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "degrees_truncated",
+      "claim": "degrees truncated",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined A6 character Hilbert series",
+      "mathematical_operation": "M\u00f6bius/Adams PL with direct formal logarithm",
+      "mathematical_output": "refined and dimension-valued PL through degree 10",
+      "stage_name": "plethystic logarithm",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "direct_scalar_matches_refined_unrefinement",
+      "claim": "direct scalar matches refined unrefinement",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined A6 character Hilbert series",
+      "mathematical_operation": "M\u00f6bius/Adams PL with direct formal logarithm",
+      "mathematical_output": "refined and dimension-valued PL through degree 10",
+      "stage_name": "plethystic logarithm",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "negative_coefficients_retained",
+      "claim": "negative coefficients retained",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/plethystic_logarithm_checks.json",
+      "mathematical_input": "refined A6 character Hilbert series",
+      "mathematical_operation": "M\u00f6bius/Adams PL with direct formal logarithm",
+      "mathematical_output": "refined and dimension-valued PL through degree 10",
+      "stage_name": "plethystic logarithm",
+      "stage_number": 3,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_name": "plethystic logarithm",
+  "stage_number": 3,
+  "theory_id": "su3_nf6_k1_infinite"
+}

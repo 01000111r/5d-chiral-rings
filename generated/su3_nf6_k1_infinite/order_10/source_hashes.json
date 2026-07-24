@@ -1,0 +1,30 @@
+{
+  "implementation_files": {
+    "src/hwg_pipeline/__init__.py": "d800a15a3a946292e8a74b519482730449cb93e2e8267cf0e528cd17e7349125",
+    "src/hwg_pipeline/__main__.py": "f0a7f751392ded660e9557a05c1be277a7d403a627aa27a11dcba5f4fb76c4e1",
+    "src/hwg_pipeline/branching.py": "8e4bd2b77a1136af3520759eaba214344ea45fe8b5f02ecda91976bf563065ad",
+    "src/hwg_pipeline/branching_outputs.py": "be5142f4693ae21f2ffe4f82a16bf60f473faca28c8869fdcb525a11fa0bd755",
+    "src/hwg_pipeline/characters.py": "4831ca895267335de8da5abe1ee59ee66d7938d70abd3fa08e4c9d0232af1335",
+    "src/hwg_pipeline/charge_map_outputs.py": "1573292f2b966684cb418456787a90759710ea7203487a7b8aa4d2bfa6cb686b",
+    "src/hwg_pipeline/charge_maps.py": "66583374daf0f7a0948bdf2b3a3d7cea6eb8877aadd59a274241a85084986c8c",
+    "src/hwg_pipeline/compact_latex.py": "6d840015f85ad48247e01dfcf327169a3d11341b5535ffaba9e556634468700e",
+    "src/hwg_pipeline/expansion.py": "54bceac19e91d21762b2ecea81baa78e0edad325bfc53713ff37baaad90f9d64",
+    "src/hwg_pipeline/io.py": "309bda305dbc1ee1ce34811588e127a419408b7ce486ad58b3b86aafb91aed55",
+    "src/hwg_pipeline/model.py": "4af0c1c01d81efa998621efc95cf982fc2930e48a3816b5ffdc5cca448a790b5",
+    "src/hwg_pipeline/notebook_report.py": "50d178620df68caeb9bde4a697cfe06fb889cb3e1f2d5e0c60ef4fe06a903542",
+    "src/hwg_pipeline/operator_outputs.py": "1e4212b100a303df89293ee52eee36b65adbfc18103472a18c3cbb7f0e5f928f",
+    "src/hwg_pipeline/operators.py": "7aed43a129ff559a5b6a2bc34da053c4162bbaef02e8ed1293386efc4f848e66",
+    "src/hwg_pipeline/plethystic.py": "45e417a94f6d0dab86ecafdcd0da3eac07ad8dcac0e1004aec74b12bfe6b08bd",
+    "src/hwg_pipeline/render.py": "9ac48983f29c0cc02c89897c0fcffdb4735d665d584bbc13168671c9a3336e35",
+    "src/hwg_pipeline/reporting.py": "029643510e49ab3df91ec11700075e868de7698b3b0fd9ca760757a6513cb98f",
+    "src/hwg_pipeline/sage_backend.py": "ac240be2c81488214d6e185dacb22edfb6af139ca7d4a2fbef81b68f103bdbdc"
+  },
+  "overleaf_source": {
+    "path": "references/overleaf/su3_5f_6f_hwg_results.tex",
+    "sha256": "2e79f9e66dfb0a2a7d2086f642aa94b45b5284287ce41ade80a128dc0439b359"
+  },
+  "theory_fixture": {
+    "path": "theories/su3_nf6_k1_infinite.yaml",
+    "sha256": "0fe19a849461f7634a84a15ae1602d30c213f5815f14db1a394e72d50b2a7a4c"
+  }
+}

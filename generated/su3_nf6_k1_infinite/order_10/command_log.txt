@@ -1,0 +1,9 @@
+./scripts/sage-python -m pytest -q tests/test_su3_nf6_k1_infinite.py
+./scripts/sage-python -m hwg_pipeline expand su3_nf6_k1_infinite --order 10
+./scripts/sage-python -m hwg_pipeline characters su3_nf6_k1_infinite --order 10
+./scripts/sage-python -m hwg_pipeline plethystic-log su3_nf6_k1_infinite --order 10
+./scripts/sage-python -m hwg_pipeline reconstruct su3_nf6_k1_infinite --order 10
+./scripts/sage-python -m hwg_pipeline analyze-pl su3_nf6_k1_infinite --order 10
+./scripts/sage-python -m hwg_pipeline compact-latex su3_nf6_k1_infinite --order 10
+./scripts/sage-python -m pytest
+# Deterministic rerun: the six pipeline commands above were repeated with identical deterministic JSON/TeX hashes.

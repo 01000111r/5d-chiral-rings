@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "check_id": "all_multiplicities_are_integers",
+      "claim": "all multiplicities are integers",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/checks.json",
+      "mathematical_input": "five structured source PE terms and product factors",
+      "mathematical_operation": "exact truncated PE and independent rational-product expansion",
+      "mathematical_output": "highest-weight expansion through degree 10",
+      "stage_name": "HWG expansion",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "all_multiplicities_are_nonnegative",
+      "claim": "all multiplicities are nonnegative",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/checks.json",
+      "mathematical_input": "five structured source PE terms and product factors",
+      "mathematical_operation": "exact truncated PE and independent rational-product expansion",
+      "mathematical_output": "highest-weight expansion through degree 10",
+      "stage_name": "HWG expansion",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "constant_coefficient_is_one",
+      "claim": "constant coefficient is one",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/checks.json",
+      "mathematical_input": "five structured source PE terms and product factors",
+      "mathematical_operation": "exact truncated PE and independent rational-product expansion",
+      "mathematical_output": "highest-weight expansion through degree 10",
+      "stage_name": "HWG expansion",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "no_terms_above_requested_degree",
+      "claim": "no terms above requested degree",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/checks.json",
+      "mathematical_input": "five structured source PE terms and product factors",
+      "mathematical_operation": "exact truncated PE and independent rational-product expansion",
+      "mathematical_output": "highest-weight expansion through degree 10",
+      "stage_name": "HWG expansion",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "pe_equals_rational_product",
+      "claim": "pe equals rational product",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/checks.json",
+      "mathematical_input": "five structured source PE terms and product factors",
+      "mathematical_operation": "exact truncated PE and independent rational-product expansion",
+      "mathematical_output": "highest-weight expansion through degree 10",
+      "stage_name": "HWG expansion",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "truncation_stability",
+      "claim": "truncation stability",
+      "evidence_path": "generated/su3_nf6_k1_infinite/order_10/checks.json",
+      "mathematical_input": "five structured source PE terms and product factors",
+      "mathematical_operation": "exact truncated PE and independent rational-product expansion",
+      "mathematical_output": "highest-weight expansion through degree 10",
+      "stage_name": "HWG expansion",
+      "stage_number": 1,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_name": "HWG expansion",
+  "stage_number": 1,
+  "theory_id": "su3_nf6_k1_infinite"
+}

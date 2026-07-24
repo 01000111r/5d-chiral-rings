@@ -1,0 +1,1953 @@
+{
+  "finite_terms": [
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 2,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 2
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 2,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 3,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 3,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 4,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 5,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 5,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 6,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 7,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 7,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 7,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 5
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 7,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 7,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 7,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 7,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 7,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 7,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 5
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 7,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 7,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 7,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": 3,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 5
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 6
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "multiplicity": 3,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 6
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 4
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 6,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 14
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": 5,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 15
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 4
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": 3,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 5
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -9,
+      "I": 0,
+      "beta_charge": -3,
+      "charge": -3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -9,
+      "I": 0,
+      "beta_charge": -3,
+      "charge": -3,
+      "degree": 9,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": -2,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -5
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 2
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 2
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-sign",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "beta_charge": -1,
+      "charge": -1,
+      "degree": 9,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -5
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": 2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-sign",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "beta_charge": 1,
+      "charge": 1,
+      "degree": 9,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 9,
+      "I": 0,
+      "beta_charge": 3,
+      "charge": 3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": 9,
+      "I": 0,
+      "beta_charge": 3,
+      "charge": 3,
+      "degree": 9,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": 1
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -14
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        3
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": -5,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -8
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": -9,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -19
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -11,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -27
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": -2,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": -5,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -8
+    },
+    {
+      "B": -6,
+      "I": 0,
+      "beta_charge": -2,
+      "charge": -2,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -7,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -33
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        2,
+        2
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        3
+      ],
+      "multiplicity": -3,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -5
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "multiplicity": -11,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -23
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "multiplicity": -10,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -28
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": -13,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -32
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": -23,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -70
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -22,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -80
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        2,
+        0,
+        1
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -7
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -11,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -23
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -8
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": -13,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -32
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "charge": 0,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -3,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -5
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -14
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        3
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": -5,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -8
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": -9,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -19
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": -11,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -27
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -3
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        2
+      ],
+      "multiplicity": -2,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -2
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": -5,
+      "status": "representation-match-different-multiplicity",
+      "uv_combined_multiplicity": -8
+    },
+    {
+      "B": 6,
+      "I": 0,
+      "beta_charge": 2,
+      "charge": 2,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": -1,
+      "status": "exact-match",
+      "uv_combined_multiplicity": -1
+    }
+  ],
+  "statement": "Representation-channel comparison; not an assertion that the finite PL equals the UV I=0 sector.",
+  "summary": {
+    "exact-match": 42,
+    "representation-match-different-multiplicity": 70,
+    "representation-match-different-sign": 2
+  },
+  "uv_channel_counts": {
+    "mixed_baryon_instanton": 220,
+    "neutral": 33,
+    "pure_instanton": 76
+  }
+}

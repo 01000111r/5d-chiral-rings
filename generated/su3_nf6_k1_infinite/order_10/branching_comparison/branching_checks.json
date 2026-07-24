@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "anchors": {
+      "antibaryon_anchor_degree_3": "pass",
+      "antibaryon_matches_finite_beta_minus_1": "pass",
+      "instanton_anchor_degree_2": "pass",
+      "instanton_outside_finite_current": "pass",
+      "raw_vectors_independent": "pass"
+    },
+    "branching": {
+      "child_multiplicities_nonnegative_integer": "pass",
+      "conjugation_reverses_x": "pass",
+      "deterministic": "pass",
+      "dimensions_preserved": "pass",
+      "every_parent_once": "pass",
+      "fundamental_normalization": "pass",
+      "low_representation_checks": "pass",
+      "q_preserved": "pass",
+      "x_integral": "pass"
+    },
+    "charge_map": {
+      "all_physical_charges_integral": "pass",
+      "conjugation_reverses_physical_charges": "pass",
+      "exact_unique_solution": "pass",
+      "expected_map_recovered": "pass",
+      "inverse_correct": "pass",
+      "residuals_vanish": "pass"
+    },
+    "completeness": {
+      "all_terms_through_cutoff": "pass",
+      "negative_terms_retained": "pass",
+      "no_ellipsis_inside_cutoff": "pass",
+      "no_terms_above_cutoff": "pass"
+    },
+    "input": {
+      "cutoffs_equal_10": "pass",
+      "labels_complete": "pass",
+      "multiplicities_integer": "pass",
+      "stored_reconstruction_checks_pass": "pass",
+      "theory_ids_correct": "pass"
+    },
+    "presentation": {
+      "latex_compile": "unavailable",
+      "no_object_tuple_json_syntax_in_tex": "pass",
+      "output_deterministic": "pass",
+      "tables_and_equations_generated": "pass"
+    }
+  },
+  "low_representation_results": {
+    "(0, 0, 0, 0, 0, 1)": true,
+    "(0, 0, 0, 1, 0, 0)": true,
+    "(0, 0, 1, 0, 0, 0)": true,
+    "(1, 0, 0, 0, 0, 0)": true,
+    "(1, 0, 0, 0, 0, 1)": true
+  }
+}

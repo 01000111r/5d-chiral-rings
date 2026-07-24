@@ -50,3 +50,37 @@ def test_d5_adjoint_convention(): assert d5pieces((0,1,0,0,0))=={((1,0,0,1),0):1
 def test_d5_spinor_nodes_remain_distinct():
  assert d5pieces((0,0,0,1,0))=={((0,0,1,0),1):1,((1,0,0,0),-3):1,((0,0,0,0),5):1}
  assert d5pieces((0,0,0,0,1))=={((0,1,0,0),-1):1,((0,0,0,1),3):1,((0,0,0,0),-5):1}
+
+from hwg_pipeline.branching_comparison import (FactorIrrep, ProductIrrep,
+    branch_product, parse_terms, product_dimension, render_product,
+    render_product_parent, su2_weights)
+
+def product_meta(): return [
+ {'index':0,'cartan_factor_id':'enhanced','cartan_type':'A4','display_name':'SU(5)','action':'preserve'},
+ {'index':1,'cartan_factor_id':'su2','cartan_type':'A1','display_name':'SU(2)','action':'branch_to_u1','output_charge':'x','convention':'su2_weight'}]
+def stored(reps,coefficient=-2,q=1): return {'theory_id':'synthetic','coefficients_by_t_degree':{'3':[{'abelian_charges':{'q':str(q)},'coefficient':coefficient,'irreducible_representations':reps}]}}
+def reps(): return [{'cartan_factor_id':'enhanced','dynkin_labels':[0,1,0,0]},{'cartan_factor_id':'su2','dynkin_labels':[1]}]
+def test_parse_single_factor_stored_term():
+ t=parse_terms(stored([{'cartan_factor_id':'flavour','dynkin_labels':[1,0,0,0]}]),[{'index':0,'cartan_factor_id':'flavour','cartan_type':'A4','display_name':'SU(5)'}])[0]; assert len(t['product_irrep'].factors)==1
+def test_parse_two_factor_and_order_preserved():
+ t=parse_terms(stored(reps()),product_meta())[0]; assert [f.cartan_factor_id for f in t['product_irrep'].factors]==['enhanced','su2'] and [f.labels for f in t['product_irrep'].factors]==[(0,1,0,0),(1,)]
+@pytest.mark.parametrize('bad',[[{'cartan_factor_id':'enhanced','dynkin_labels':[0,1,0,0,1]},{'cartan_factor_id':'su2','dynkin_labels':[]}],[{'cartan_factor_id':'enhanced','dynkin_labels':[0,1,0,0,1]}],[]])
+def test_reject_bad_per_factor_lengths_missing_or_concatenated(bad):
+ with pytest.raises(ComparisonError): parse_terms(stored(bad),product_meta())
+@pytest.mark.parametrize(('label','expected'),[(0,(0,)),(1,(1,-1)),(2,(2,0,-2)),(3,(3,1,-1,-3))])
+def test_exact_a1_weights(label,expected): assert su2_weights((label,))==expected
+def product_term(b=2,m=-2,q=1):
+ return {'degree':3,'multiplicity':m,'charges':{'q':q},'product_irrep':ProductIrrep((FactorIrrep('enhanced','A4','SU(5)',(0,1,0,0)),FactorIrrep('su2','A1','SU(2)',(b,))))}
+def test_product_branch_preserves_a4_q_sign_and_dimensions():
+ p=branch_product(product_term(),product_meta()); assert all(c['child_factors'][0]['labels']==[0,1,0,0] and c['raw_charges']['q']==1 and c['signed_child_multiplicity']==-2 for c in p['children']); assert p['parent_dimension']==sum(c['child_dimension'] for c in p['children'])
+def test_product_dimension(): assert product_dimension(product_term()['product_irrep'])==product_dimension(ProductIrrep((product_term()['product_irrep'].factors[0],)))*3
+def test_product_json_roundtrip():
+ p=product_term()['product_irrep']; assert ProductIrrep.from_json(p.to_json())==p
+def test_product_latex_semicolon_and_single_factor_compatibility():
+ assert render_product(product_term()['product_irrep'])=='[0,1,0,0;2]_{5,2}'
+ assert render_product(ProductIrrep((product_term()['product_irrep'].factors[0],)))=='[0,1,0,0]_{5}'
+def test_product_parent_physical_rendering():
+ p=branch_product(product_term(1),product_meta()); p['children']=[{**c,'physical_charges':{'B':-3,'I':0}} for c in p['children']]; assert '[0,1,0,0;1]_{5,2}' in render_product_parent(p,True) and 'B=-3,I=0' in render_product_parent(p,True)
+def test_product_deterministic(): assert branch_product(product_term(),product_meta())==branch_product(product_term(),product_meta())
+def test_product_matching_key_discards_parent_a1():
+ a=branch_product(product_term(1),product_meta())['children'][0]; b=branch_product(product_term(3),product_meta())['children'][0]; assert a['child_factors']==b['child_factors']

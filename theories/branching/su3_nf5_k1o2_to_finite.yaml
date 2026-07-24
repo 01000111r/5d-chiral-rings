@@ -1,0 +1,12 @@
+id: su3_nf5_k1o2_to_finite
+uv_theory_id: su3_nf5_k1o2_infinite
+finite_theory_id: su3_nf5_finite
+order: 10
+parent_factors:
+  - {index: 0, cartan_factor_id: enhanced, cartan_type: A4, display_name: SU(5), action: preserve}
+  - {index: 1, cartan_factor_id: su2, cartan_type: A1, display_name: SU(2), action: branch_to_u1, output_charge: x, convention: su2_weight}
+raw_charges: [x, q]
+physical_charges: [B, I]
+anchors:
+  - {id: positive_unit_instanton, degree: 2, parent_labels: [[0, 0, 0, 0], [2]], child_dynkin_labels: [0, 0, 0, 0], raw: [2, 0], physical: [0, 1]}
+  - {id: classical_antibaryon, degree: 3, parent_labels: [[0, 1, 0, 0], [1]], child_dynkin_labels: [0, 1, 0, 0], raw: [1, 1], physical: [-3, 0], finite_beta_charge: -1}

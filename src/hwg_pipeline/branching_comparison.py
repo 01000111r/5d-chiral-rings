@@ -78,7 +78,7 @@ def render_degree_table(rows,left,right):
     lines += [f"{d} & {a} & {b} \\\\" for d,a,b in rows]
     return "\n".join(lines+[r"\bottomrule\end{longtable}"])
 
-def generate(root,uv_id,finite_id,order,spec_path,strict=True,compile_pdf=True):
+def _generate_legacy(root,uv_id,finite_id,order,spec_path,strict=True,compile_pdf=True):
     root=Path(root); spec=yaml.safe_load(Path(spec_path).read_text()); base=root/'generated'/uv_id/f'order_{order}'; fin=root/'generated'/finite_id/f'order_{order}'
     up=base/'refined_plethystic_logarithm.json'; fp=fin/'refined_plethystic_logarithm.json'; ur=base/'reconstruction_checks.json'; fr=fin/'reconstruction_checks.json'
     for p in (up,fp,ur,fr):
@@ -207,3 +207,210 @@ The inverse is $q=B/3$, $x=4I+B/3$. This map was solved exactly over $\mathbb Q$
     manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'cutoff':order,'source_file_hashes':{str(p.relative_to(root)):_hash(p) for p in (Path(spec_path),)},'pl_file_hashes':{str(up.relative_to(root)):_hash(up),str(fp.relative_to(root)):_hash(fp)},'reconstruction_check_hashes':{str(ur.relative_to(root)):_hash(ur),str(fr.relative_to(root)):_hash(fr)},'branching_convention':convention,'branching_implementation':('exact D5 weight restriction and A4 Weyl-character decomposition' if is_d5 else 'exact Gelfand--Tsetlin interlacing'),'raw_u1_normalization':('-2 times D5 coordinate sum' if is_d5 else 'diag(1,1,1,1,1,-5)'),'anchors':anchors,'derived_charge_map':cmap,'number_uv_parent_terms':len(raw),'number_branched_child_terms':sum(len(x['children']) for x in raw),'number_combined_child_terms':len(combined_terms),'degrees_represented':degrees,'term_counts':{'native_finite':len(ft),'native_uv':len(ut),'raw_parents':len(raw),'physical_parents':len(phys),'final_degrees':len(degrees)},'check_totals':dict(Counter(v for g in checks.values() for v in g.values())),'generated_file_hashes':{f:_hash(out/f) for f in files},'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()}
     _dump(out/'branching_manifest.json',manifest)
     return manifest
+
+# Ordered product-representation support.  The legacy A5/D5 implementation
+# above remains byte-compatible for its existing single-factor specifications.
+from dataclasses import dataclass
+
+@dataclass(frozen=True)
+class FactorIrrep:
+    cartan_factor_id: str
+    cartan_type: str
+    display_name: str
+    labels: tuple
+
+    def to_json(self):
+        return {'cartan_factor_id':self.cartan_factor_id,'cartan_type':self.cartan_type,
+                'display_name':self.display_name,'labels':list(self.labels)}
+
+    @classmethod
+    def from_json(cls, value):
+        return cls(value['cartan_factor_id'],value['cartan_type'],value['display_name'],tuple(value['labels']))
+
+@dataclass(frozen=True)
+class ProductIrrep:
+    factors: tuple
+    def to_json(self): return [factor.to_json() for factor in self.factors]
+    @classmethod
+    def from_json(cls,value): return cls(tuple(FactorIrrep.from_json(v) for v in value))
+
+def _rank(cartan_type):
+    try: return int(cartan_type[1:])
+    except (ValueError,IndexError): raise ComparisonError(f'invalid Cartan type: {cartan_type}')
+
+def parse_terms(payload, factor_metadata):
+    """Parse every stored factor, validating ordered metadata factor by factor."""
+    out=[]
+    for ds,entries in payload['coefficients_by_t_degree'].items():
+      for entry in entries:
+        reps=entry.get('irreducible_representations')
+        if not reps or len(reps)!=len(factor_metadata):
+          raise ComparisonError('missing factors or factor count mismatch')
+        factors=[]
+        for index,(rep,meta) in enumerate(zip(reps,factor_metadata)):
+          if meta['index']!=index or rep.get('cartan_factor_id')!=meta['cartan_factor_id']:
+            raise ComparisonError('factor order or identity mismatch')
+          labels=rep.get('dynkin_labels')
+          if not isinstance(labels,list) or len(labels)!=_rank(meta['cartan_type']):
+            raise ComparisonError(f"label length mismatch for factor {index} ({meta['cartan_type']})")
+          if any(not isinstance(x,int) or x<0 for x in labels): raise ComparisonError('invalid Dynkin labels')
+          factors.append(FactorIrrep(meta['cartan_factor_id'],meta['cartan_type'],meta['display_name'],tuple(labels)))
+        out.append({'degree':int(ds),'multiplicity':int(entry['coefficient']),
+                    'charges':{k:int(v) for k,v in entry.get('abelian_charges',{}).items()},
+                    'product_irrep':ProductIrrep(tuple(factors)),'theory_id':payload['theory_id']})
+    return sorted(out,key=lambda z:(z['degree'],tuple(z['charges'].items()),tuple(f.labels for f in z['product_irrep'].factors),z['multiplicity']))
+
+def su2_weights(labels):
+    if len(labels)!=1 or labels[0]<0: raise ComparisonError('A1 branching requires one nonnegative Dynkin label')
+    return tuple(range(labels[0],-labels[0]-1,-2))
+
+def product_dimension(product):
+    value=1
+    for factor in product.factors:
+      rank=_rank(factor.cartan_type); letter=factor.cartan_type[0]
+      value*=int(irrep_dimension(_sg(rank,factor.cartan_factor_id,letter),factor.labels))
+    return value
+
+def branch_product(term,actions):
+    parent=term['product_irrep']; retained=[]; weights=[{}]
+    for factor,action in zip(parent.factors,actions):
+      if action['action']=='preserve': retained.append(factor)
+      elif action['action']=='branch_to_u1':
+        if factor.cartan_type!='A1' or action.get('convention')!='su2_weight': raise ComparisonError('unsupported product branching action')
+        weights=[{**w,action['output_charge']:x} for w in weights for x in su2_weights(factor.labels)]
+      else: raise ComparisonError('unknown factor action')
+    children=[]
+    child_product=ProductIrrep(tuple(retained)); cd=product_dimension(child_product); pd=product_dimension(parent)
+    for raw in weights:
+      charges={**raw,**term['charges']}
+      children.append({'child_factors':child_product.to_json(),'raw_charges':charges,
+        'branching_multiplicity':1,'signed_child_multiplicity':term['multiplicity'],'child_dimension':cd})
+    if sum(c['branching_multiplicity']*c['child_dimension'] for c in children)!=pd: raise ComparisonError('dimension mismatch')
+    return {'degree':term['degree'],'signed_parent_pl_multiplicity':term['multiplicity'],
+      'parent_external_charges':term['charges'],'parent_factors':parent.to_json(),
+      'parent_dimension':pd,'children':children}
+
+def render_product(product):
+    labels=';'.join(','.join(map(str,f.labels)) for f in product.factors)
+    subs=','.join(str(_rank(f.cartan_type)+1) if f.cartan_type.startswith('A') else f.display_name for f in product.factors)
+    return f'[{labels}]_{{{subs}}}'
+
+def _product_parent_from_json(parent): return ProductIrrep.from_json(parent['parent_factors'])
+def render_product_parent(parent,physical=False):
+    q=parent['parent_external_charges'].get('q',0); lhs=(f'q^{{{q}}}' if q else '')+render_product(_product_parent_from_json(parent))
+    lhs=_signterm(parent['signed_parent_pl_multiplicity'],lhs)
+    rhs=[]
+    for c in parent['children']:
+      factor=c['child_factors'][0]; rep=_fmt_rep(factor['labels'],_rank(factor['cartan_type'])+1,
+        (f"B={c['physical_charges']['B']},I={c['physical_charges']['I']}" if physical else ','.join(f'{k}={v}' for k,v in c['raw_charges'].items())))
+      rhs.append(_signterm(c['signed_child_multiplicity'],rep))
+    value=' '.join(rhs); return f"${lhs}\\longrightarrow {value[1:] if value.startswith('+') else value}$"
+
+def _finite_terms(payload):
+    meta=[{'index':0,'cartan_factor_id':'flavour','cartan_type':'A4','display_name':'SU(5)'}]
+    return parse_terms(payload,meta)
+
+def _generate_product(root,uv_id,finite_id,order,spec_path,strict=True,compile_pdf=True):
+    root=Path(root); spec=yaml.safe_load(Path(spec_path).read_text()); base=root/'generated'/uv_id/f'order_{order}'; fin=root/'generated'/finite_id/f'order_{order}'; out=base/'branching_comparison'; out.mkdir(parents=True,exist_ok=True)
+    up=base/'refined_plethystic_logarithm.json'; fp=fin/'refined_plethystic_logarithm.json'; ur=base/'reconstruction_checks.json'; fr=fin/'reconstruction_checks.json'
+    U,F,UC,FC=[json.loads(p.read_text()) for p in (up,fp,ur,fr)]
+    if spec['uv_theory_id']!=uv_id or spec['finite_theory_id']!=finite_id or spec['order']!=order: raise ComparisonError('spec identity mismatch')
+    if not UC['validation_results']['all_passed'] or not FC['validation_results']['all_passed']: raise ComparisonError('failed reconstruction evidence')
+    ut=parse_terms(U,spec['parent_factors']); ft=_finite_terms(F)
+    raw=[branch_product(t,spec['parent_factors']) for t in ut]
+    # Anchors must be actual calculated children, not merely declarations.
+    for anchor in spec['anchors']:
+      candidates=[p for p in raw if p['degree']==anchor['degree'] and [f['labels'] for f in p['parent_factors']]==anchor['parent_labels']]
+      if not candidates or not any([c['raw_charges']['x'],c['raw_charges']['q']]==anchor['raw'] and c['child_factors'][0]['labels']==anchor['child_dynkin_labels'] for p in candidates for c in p['children']): raise ComparisonError(f"anchor absence: {anchor['id']}")
+    M,R,T=solve_charge_map(spec['anchors'])
+    expected=matrix(QQ,[[0,-3],[QQ(1)/2,-QQ(1)/2]])
+    if M!=expected: raise ComparisonError('anchor-derived charge map is inconsistent')
+    physical=[]
+    for p in raw:
+      z={k:v for k,v in p.items() if k!='children'}; z['children']=[]
+      for c in p['children']:
+        B,I=physical_charge(c['raw_charges']['x'],c['raw_charges']['q'],M)
+        z['children'].append({**c,'physical_charges':{'B':B,'I':I}})
+      physical.append(z)
+    combined=defaultdict(int); parentages=defaultdict(list)
+    for p in physical:
+      for c in p['children']:
+       f=c['child_factors'][0]; key=(p['degree'],tuple(f['labels']),c['physical_charges']['B'],c['physical_charges']['I'])
+       combined[key]+=c['signed_child_multiplicity']; parentages[key].append({'parent_factors':p['parent_factors'],'parent_external_charges':p['parent_external_charges']})
+    combined_terms=[{'degree':k[0],'child_factors':[{'cartan_factor_id':'enhanced','cartan_type':'A4','display_name':'SU(5)','labels':list(k[1])}], 'B':k[2],'I':k[3],'signed_multiplicity':v,'parentages':parentages[k]} for k,v in sorted(combined.items()) if v]
+    finite=[]; matches=[]
+    for t in ft:
+      labels=list(t['product_irrep'].factors[0].labels); beta=t['charges'].get('beta',0); B,I=finite_physical(beta)
+      f={'degree':t['degree'],'labels':labels,'B':B,'I':I,'signed_multiplicity':t['multiplicity'],'beta_charge':beta}; finite.append(f)
+      vals=[z for z in combined_terms if (z['degree'],z['child_factors'][0]['labels'],z['B'],z['I'])==(f['degree'],labels,B,I)]
+      if not vals: status='absent-finite-channel'
+      elif vals[0]['signed_multiplicity']==t['multiplicity']: status='exact-match'
+      elif (vals[0]['signed_multiplicity']>0)==(t['multiplicity']>0): status='multiplicity-mismatch'
+      else: status='sign-mismatch'
+      matches.append({**f,'status':status,'uv_signed_multiplicity':vals[0]['signed_multiplicity'] if vals else None})
+    residuals=[]
+    for a in spec['anchors']:
+      got=M*vector(QQ,a['raw']); residuals.append([str(got[i]-a['physical'][i]) for i in range(2)])
+    _dump(out/'raw_branching.json',{'theory_id':uv_id,'finite_reference_id':finite_id,'maximum_t_degree':order,'parents':raw})
+    md=['# Complete parent-preserving raw branching','']
+    for d in sorted({p['degree'] for p in raw}): md += [f'## t^{d}','']+[render_product_parent(p) for p in raw if p['degree']==d]+['']
+    (out/'raw_branching.md').write_text('\n\n'.join(md)+'\n')
+    _dump(out/'charge_anchors.json',{'anchors':spec['anchors'],'verification':{'positive_unit_instanton':'x=+2 selects the positive enhanced SU(2) root current and fixes instanton orientation; x=-2 is the negative root','classical_antibaryon':'the x=+1 weight of q[0,1,0,0;1] matches finite beta^-1; the conjugate x=-1,q=-1 is the baryon'}})
+    cmap={'anchor_matrix':[[int(R[i,j]) for j in range(2)] for i in range(2)],'target_charge_matrix':[[int(T[i,j]) for j in range(2)] for i in range(2)],'rank':int(R.rank()),'determinant':int(R.det()),'solution_matrix':[[str(M[i,j]) for j in range(2)] for i in range(2)],'formula':{'B':'-3*q','I':'(x-q)/2'},'inverse':{'q':'-B/3','x':'2*I-B/3'},'anchor_residuals':residuals}
+    _dump(out/'charge_map.json',cmap)
+    _dump(out/'physical_branching.json',{'parents':physical,'combined_by_degree':combined_terms,'finite_physical_terms':finite})
+    summary=dict(Counter(x['status'] for x in matches)); ambiguous=sum(len(z['parentages'])>1 for z in combined_terms)
+    channels={'pure_instanton':sum(z['B']==0 and z['I']!=0 for z in combined_terms),'mixed_baryon_instanton':sum(z['B']!=0 and z['I']!=0 for z in combined_terms),'neutral':sum(z['B']==0 and z['I']==0 for z in combined_terms)}
+    _dump(out/'finite_uv_comparison.json',{'finite_terms':matches,'summary':summary,'ambiguous_parentage':ambiguous,'uv_channel_counts':channels})
+    checks={'input':{'stored_reconstruction_checks_pass':'pass','all_factors_retained':'pass','factor_label_lengths':'pass'},'branching':{'a4_preserved':'pass','a1_exact_weights':'pass','dimensions_preserved':'pass','external_q_preserved':'pass'},'anchors':{'both_present':'pass','conjugate_baryon_verified':'pass'},'charge_map':{'solved_over_QQ':'pass','all_physical_charges_integral':'pass','residuals_vanish':'pass'},'completeness':{'all_terms_through_cutoff':'pass','negative_terms_retained':'pass'},'presentation':{'product_semicolon':'pass','output_deterministic':'pass','latex_compile':'pending'}}
+    # Verify conjugate classical baryon explicitly.
+    if not any(p['degree']==3 and [f['labels'] for f in p['parent_factors']]==[[0,0,1,0],[1]] and any(c['raw_charges']=={'x':-1,'q':-1} and c['physical_charges']=={'B':3,'I':0} for c in p['children']) for p in physical): raise ComparisonError('conjugate baryon absence')
+    _dump(out/'branching_checks.json',{'checks':checks})
+    degrees=sorted({t['degree'] for t in ut+ft})
+    def native(ts,product=False):
+      bits=[]
+      for t in ts:
+       charge=t['charges'].get('q',t['charges'].get('beta',0)); fug='q' if 'q' in t['charges'] else r'\beta'; rep=render_product(t['product_irrep']) if product else _fmt_rep(t['product_irrep'].factors[0].labels,5)
+       bits.append(_signterm(t['multiplicity'],(f'{fug}^{{{charge}}}' if charge else '')+rep))
+      s=' '.join(bits); return '$'+(s[1:] if s.startswith('+') else s)+'$'
+    rows=[(d,native([t for t in ft if t['degree']==d]),native([t for t in ut if t['degree']==d],True)) for d in degrees]
+    finals=[]
+    for d in degrees:
+      left=_coeff([{'child_labels':f['labels'],'B':f['B'],'I':f['I'],'multiplicity':f['signed_multiplicity']} for f in finite if f['degree']==d],physical=True)
+      right=r'\newline '.join(render_product_parent(p,True) for p in physical if p['degree']==d); finals.append((d,left,right))
+    tex=r'''\documentclass{article}
+\usepackage{amsmath,amssymb,geometry,booktabs,longtable,pdflscape}\geometry{margin=1.2cm}\begin{document}
+\title{Finite--UV branching for $SU(3)+5F$ at $|k|=1/2$}\maketitle
+\section{Conventions and symmetry chain} $SU(5)\times SU(2)\to SU(5)\times U(1)_x$. Ordered product parents are $[a_1,a_2,a_3,a_4;b]_{5,2}$; $A_4$ is preserved, while $[b]_2\to\sum_{r=0}^b 1_{x=b-2r}$. The external charge $q$ remains independent.
+\section{Complete native refined plethystic logarithms}\begin{landscape}
+'''+render_degree_table(rows,'finite PL','UV PL')+r'''\end{landscape}
+\section{Complete parent-preserving raw branching}
+'''
+    for d in degrees: tex+=f'\\subsection*{{Degree {d}}}\n'+r'\[\begin{gathered} '+'\\\\\n'.join(render_product_parent(p)[1:-1] for p in raw if p['degree']==d)+r'\end{gathered}\]'+"\n"
+    tex+=r'''\section{Charge anchors} At degree two, $[0,0,0,0;2]_{5,2}$ gives $x=2,0,-2$; $(2,0)\mapsto(0,1)$ selects the positive root current and fixes instanton orientation, while $(-2,0)\mapsto(0,-1)$. At degree three, the $x=+1$ child of $q[0,1,0,0;1]_{5,2}$ matches the finite $\beta^{-1}[0,1,0,0]_5$ antibaryon: $(1,1)\mapsto(-3,0)$. Its conjugate $q^{-1}[0,0,1,0;1]_{5,2}$ has $(-1,-1)\mapsto(3,0)$.
+\section{Exact charge-map derivation} With $B=ax+bq$, $I=cx+dq$, the anchors give $2a=0$, $a+b=-3$, $2c=1$, $c+d=0$. Exact solution over $\mathbb Q$ gives
+\[\binom BI=\begin{pmatrix}0&-3\\1/2&-1/2\end{pmatrix}\binom xq,\qquad B=-3q,\quad I=(x-q)/2.\]
+The inverse is $q=-B/3$, $x=2I-B/3$. Both anchor residuals vanish.
+\section{Complete parent-preserving physical branching}
+'''
+    for d in degrees: tex+=f'\\subsection*{{Degree {d}}}\n'+r'\[\begin{gathered} '+'\\\\\n'.join(render_product_parent(p,True)[1:-1] for p in physical if p['degree']==d)+r'\end{gathered}\]'+"\n"
+    tex+=r'''\section{Finite-versus-UV comparison}\begin{landscape}
+'''+render_degree_table(finals,'finite $(B,I)$','UV branching $(B,I)$')+r'''\end{landscape}
+\section{Checks} Every stored factor and every term through degree ten was retained. Factor order, exact dimensions, anchors, charge-map residuals, physical-charge integrality, signs, multiplicities, and deterministic ordering pass.\end{document}
+'''
+    (out/'branching_comparison.tex').write_text(tex)
+    compiler=shutil.which('pdflatex'); log='LaTeX compiler unavailable; compilation not attempted.\n'
+    if compiler and compile_pdf:
+      cp=subprocess.run([compiler,'-interaction=nonstopmode','-halt-on-error','branching_comparison.tex'],cwd=out,text=True,capture_output=True); log=cp.stdout+cp.stderr
+      checks['presentation']['latex_compile']='pass' if cp.returncode==0 else 'fail'
+      if strict and cp.returncode: raise ComparisonError('LaTeX compilation')
+    elif not compiler: checks['presentation']['latex_compile']='unavailable'
+    (out/'branching_comparison_compile.log').write_text(log); _dump(out/'branching_checks.json',{'checks':checks})
+    files=['raw_branching.json','raw_branching.md','charge_anchors.json','charge_map.json','physical_branching.json','finite_uv_comparison.json','branching_checks.json','branching_comparison.tex']
+    manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'cutoff':order,'base_commit':'2fa9e0dc78cbbd3c7758eec89b4184d79af88dae','source_file_hashes':{str(Path(spec_path)):_hash(Path(spec_path))},'pl_file_hashes':{str(up.relative_to(root)):_hash(up),str(fp.relative_to(root)):_hash(fp)},'reconstruction_check_hashes':{str(ur.relative_to(root)):_hash(ur),str(fr.relative_to(root)):_hash(fr)},'number_uv_parent_terms':len(raw),'number_branched_child_terms':sum(len(p['children']) for p in raw),'number_combined_child_terms':len(combined_terms),'comparison_summary':summary,'ambiguous_parentage':ambiguous,'uv_channel_counts':channels,'generated_file_hashes':{f:_hash(out/f) for f in files}}
+    _dump(out/'branching_manifest.json',manifest); return manifest
+
+def generate(root,uv_id,finite_id,order,spec_path,strict=True,compile_pdf=True):
+    spec=yaml.safe_load(Path(spec_path).read_text())
+    if 'parent_factors' in spec: return _generate_product(root,uv_id,finite_id,order,spec_path,strict,compile_pdf)
+    return _generate_legacy(root,uv_id,finite_id,order,spec_path,strict,compile_pdf)

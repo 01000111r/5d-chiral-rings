@@ -1,0 +1,11 @@
+{
+  "maximum_t_degree": 10,
+  "theory_id": "su3_nf6_k0_infinite",
+  "validation_results": {
+    "all_passed": true,
+    "deficit_equals_negative_pl_content": true,
+    "dimensions_exact": true,
+    "first_negative_degree_exists": true,
+    "relation_degree_not_mixed": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "actual_result": "all stored stage validations passed",
+      "check_id": "stage_5_completed",
+      "claim": "operator-content analysis completed exactly",
+      "evidence_path": "generated/su3_nf6_k0_infinite/order_10/operator_content.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "conservative first-negative-degree classification",
+      "mathematical_output": "candidate generators and first relation candidates",
+      "stage_name": "operator-content analysis",
+      "stage_number": 5,
+      "status": "pass",
+      "validation_target": "generated/su3_nf6_k0_infinite/order_10/operator_content.json"
+    },
+    {
+      "actual_result": "theory has no abelian factor",
+      "check_id": "stage_5_q_refinement",
+      "claim": "q-refined intermediate is required",
+      "evidence_path": "theories/su3_nf6_k0_infinite.yaml",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "conservative first-negative-degree classification",
+      "mathematical_output": "candidate generators and first relation candidates",
+      "stage_name": "operator-content analysis",
+      "stage_number": 5,
+      "status": "not-applicable",
+      "validation_target": "external abelian factor declaration"
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_name": "operator-content analysis",
+  "stage_number": 5,
+  "theory_id": "su3_nf6_k0_infinite"
+}

@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib
 import pytest
 from sage.all import QQ, matrix
-from hwg_pipeline.branching import branch_irrep
+from hwg_pipeline.branching import branch_irrep, D5_EMBEDDING
 from hwg_pipeline.branching_comparison import (ComparisonError, finite_physical,
     physical_charge, render_degree_table, render_parent, solve_charge_map,
     _fmt_rep)
@@ -41,3 +41,12 @@ def test_complete_cutoff_inclusion():
 def test_deterministic_render_generation():
  rows=[(2,'a','b'),(10,'c','d')]; assert render_degree_table(rows,'f','u')==render_degree_table(rows,'f','u')
 def test_branching_deterministic(): assert branch_irrep(g(5),g(4),(2,1,0,1,0))==branch_irrep(g(5),g(4),(2,1,0,1,0))
+
+def d5pieces(labels):
+ return {(tuple(map(int,p.child_dynkin_labels)),int(p.x_charge)):int(p.multiplicity)
+         for p in branch_irrep(SimpleGroupSpec('d','D',5,'SO(10)',tuple('abcde')),g(4),labels,D5_EMBEDDING)}
+def test_d5_vector_convention(): assert d5pieces((1,0,0,0,0))=={((1,0,0,0),-2):1,((0,0,0,1),2):1}
+def test_d5_adjoint_convention(): assert d5pieces((0,1,0,0,0))=={((1,0,0,1),0):1,((0,0,0,0),0):1,((0,0,1,0),4):1,((0,1,0,0),-4):1}
+def test_d5_spinor_nodes_remain_distinct():
+ assert d5pieces((0,0,0,1,0))=={((0,0,1,0),1):1,((1,0,0,0),-3):1,((0,0,0,0),5):1}
+ assert d5pieces((0,0,0,0,1))=={((0,1,0,0),-1):1,((0,0,0,1),3):1,((0,0,0,0),-5):1}

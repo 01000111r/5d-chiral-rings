@@ -1,4 +1,4 @@
-"""Exact :math:`A_n\to A_{n-1}\times U(1)` character branching.
+"""Exact character branching with a retained raw :math:`U(1)` charge.
 
 The implementation restricts every Sage weight.  In ambient A_n coordinates
 the U(1) cocharacter is ``diag(1,...,1,-n)``; no physical interpretation is
@@ -19,6 +19,7 @@ from .sage_backend import irrep, irrep_dimension
 
 
 EMBEDDING = "A_n_to_A_n_minus_1_u1"
+D5_EMBEDDING = "D5_to_A4_u1"
 
 
 @dataclass(frozen=True)
@@ -136,7 +137,66 @@ def branch_irrep(parent_group, child_group, labels, embedding=EMBEDDING):
     """Return the finite exact irreducible branching of one parent irrep."""
     parent, child = _cartan_name(parent_group), _cartan_name(child_group)
     labels = tuple(ZZ(x) for x in labels)
+    if embedding == D5_EMBEDDING:
+        if parent != "D5" or child != "A4":
+            raise ValueError("D5 embedding requires D5 -> A4")
+        return _branch_d5_a4(labels)
     return _branch_cached(parent, labels, child, embedding)
+
+
+@lru_cache(maxsize=None)
+def _branch_d5_a4(labels):
+    """Restrict every D5 weight and exactly decompose each charge slice.
+
+    In orthonormal D5 coordinates the embedded A4 has the usual coordinate
+    differences and ``x=-2*sum(weight)``.  Thus the vector restricts as
+    ``5_(-2) + anti-5_(+2)``; this also fixes both spinor-node conventions.
+    """
+    from sage.all import WeylCharacterRing
+    if len(labels) != 5 or any(x < 0 for x in labels):
+        raise ValueError("Dynkin-label length must equal parent rank 5")
+    D = WeylCharacterRing("D5", style="coroots")
+    A = WeylCharacterRing("A4", style="coroots")
+    def character(ring, dynkin):
+        weight = sum((a*ring.fundamental_weights()[i+1]
+                      for i,a in enumerate(dynkin)), ring.space().zero())
+        return ring(weight)
+    slices = {}
+    # Sage's ambient D5 realization names the two terminal fundamental
+    # weights oppositely to the project convention.  Apply that documented
+    # diagram automorphism once at the boundary; the public labels remain in
+    # the requested [a1,a2,a3,a4,a5] order and are never interchanged later.
+    sage_labels = labels[:3] + (labels[4], labels[3])
+    for weight, multiplicity in character(D, sage_labels).weight_multiplicities().items():
+        coords = tuple(weight[i] for i in range(5))
+        x = ZZ(-2 * sum(coords))
+        dynkin_weight = tuple(ZZ(coords[i] - coords[i+1]) for i in range(4))
+        slices.setdefault(x, {})[dynkin_weight] = ZZ(multiplicity)
+
+    answer = []
+    for x, remaining in slices.items():
+        remaining = {k:v for k,v in remaining.items() if v}
+        while remaining:
+            dominant = [k for k,v in remaining.items() if v > 0 and all(a >= 0 for a in k)]
+            if not dominant:
+                raise ValueError("exact A4 character decomposition failed")
+            # Pairing with rho is strictly increasing in the dominance order.
+            highest = max(dominant, key=lambda k: (sum((i+1)*(5-i)*k[i] for i in range(4)), k))
+            coefficient = remaining[highest]
+            # Convert Sage's ambient terminal-node convention to the project's
+            # convention.  On the tensor weight-lattice coset the induced A4
+            # diagram automorphism accompanies x reversal; on the spinor coset
+            # (odd terminal parity) the node swap already supplies it.
+            child = highest if (labels[3] + labels[4]) % 2 else tuple(reversed(highest))
+            answer.append(BranchedIrrepTerm(child, -x, coefficient))
+            for weight, mult in character(A, highest).weight_multiplicities().items():
+                c = tuple(weight[i] for i in range(5))
+                key = tuple(ZZ(c[i]-c[i+1]) for i in range(4))
+                remaining[key] = remaining.get(key, ZZ.zero()) - coefficient*ZZ(mult)
+                if not remaining[key]: del remaining[key]
+            if any(v < 0 for v in remaining.values()):
+                raise ValueError("non-character encountered in exact A4 decomposition")
+    return tuple(sorted(answer, key=lambda term: (term.x_charge, term.child_dynkin_labels)))
 
 
 def branch_representation_content(content, branching_spec, t_degree=0, abelian_charges=()):

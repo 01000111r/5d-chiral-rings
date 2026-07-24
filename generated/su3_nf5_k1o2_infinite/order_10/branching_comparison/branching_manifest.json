@@ -1,0 +1,41 @@
+{
+  "ambiguous_parentage": 63,
+  "base_commit": "2fa9e0dc78cbbd3c7758eec89b4184d79af88dae",
+  "comparison_summary": {
+    "absent-finite-channel": 2,
+    "exact-match": 26,
+    "multiplicity-mismatch": 51
+  },
+  "cutoff": 10,
+  "finite_theory_id": "su3_nf5_finite",
+  "generated_file_hashes": {
+    "branching_checks.json": "044ccca84ed55302f0219b4d0cd1835e0b80c797ec8648cf4fed273b07452450",
+    "branching_comparison.tex": "fc02dae75a7a7db24aade6aa9adca028b54857f970a5a326153d2deb7a247299",
+    "charge_anchors.json": "8a431c557f42e1422c9006910f3a197789ebbd0e1b855a8e729cfa05bec0afaf",
+    "charge_map.json": "5c513320fe36492c2f6eb296c901a832300fa39725bf4326a54f5a69d10ca64a",
+    "finite_uv_comparison.json": "991b6ba9c25cbcb8243ac0e0499694e38791b4c95f4aac448ed4cd4374969d8c",
+    "physical_branching.json": "65f5bb1a64c40c9c5880001dedf68384bb8f7085dae47ffba18be4b77a0e2a7a",
+    "raw_branching.json": "72bd0dd015eb58d663c4123c782b21006ebabba12e0367322fdebfeecb213f05",
+    "raw_branching.md": "3d4044af1de4c68e816288b38933821add68b4f9f51c2914a11e76dca64109c6"
+  },
+  "number_branched_child_terms": 334,
+  "number_combined_child_terms": 263,
+  "number_uv_parent_terms": 162,
+  "pl_file_hashes": {
+    "generated/su3_nf5_finite/order_10/refined_plethystic_logarithm.json": "d7cd0845541f1a26ea6c54feef7585aa932f18e659d33e9d3caa345cc9964e2f",
+    "generated/su3_nf5_k1o2_infinite/order_10/refined_plethystic_logarithm.json": "dbcf07c28af4cb54e323a4424675fa028eff77116d0ca29a0d28ab6434748978"
+  },
+  "reconstruction_check_hashes": {
+    "generated/su3_nf5_finite/order_10/reconstruction_checks.json": "f5a0194cd91d1dfdd1aca65d2458737c6189c33557ef3afd0d23c6feacaac3e2",
+    "generated/su3_nf5_k1o2_infinite/order_10/reconstruction_checks.json": "83bc3339a565308a1b9cd6f9d568c2eea9abf9e68ae512fd1fb8e508a0f52cae"
+  },
+  "source_file_hashes": {
+    "/workspace/5d-chiral-rings/theories/branching/su3_nf5_k1o2_to_finite.yaml": "4a924327e9f03cdbd5dc337e34f9da29349326626c87ca343da672ab744353f3"
+  },
+  "uv_channel_counts": {
+    "mixed_baryon_instanton": 134,
+    "neutral": 25,
+    "pure_instanton": 44
+  },
+  "uv_theory_id": "su3_nf5_k1o2_infinite"
+}

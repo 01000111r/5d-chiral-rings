@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "anchors": {
+      "both_present": "pass",
+      "conjugate_baryon_verified": "pass"
+    },
+    "branching": {
+      "a1_exact_weights": "pass",
+      "a4_preserved": "pass",
+      "dimensions_preserved": "pass",
+      "external_q_preserved": "pass"
+    },
+    "charge_map": {
+      "all_physical_charges_integral": "pass",
+      "residuals_vanish": "pass",
+      "solved_over_QQ": "pass"
+    },
+    "completeness": {
+      "all_terms_through_cutoff": "pass",
+      "negative_terms_retained": "pass"
+    },
+    "input": {
+      "all_factors_retained": "pass",
+      "factor_label_lengths": "pass",
+      "stored_reconstruction_checks_pass": "pass"
+    },
+    "presentation": {
+      "latex_compile": "unavailable",
+      "output_deterministic": "pass",
+      "product_semicolon": "pass"
+    }
+  }
+}

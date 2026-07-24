@@ -1,0 +1,67 @@
+{
+  "anchors": [
+    {
+      "child_dynkin_labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree": 2,
+      "id": "positive_unit_instanton",
+      "parent_labels": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "physical": [
+        0,
+        1
+      ],
+      "raw": [
+        2,
+        0
+      ]
+    },
+    {
+      "child_dynkin_labels": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "degree": 3,
+      "finite_beta_charge": -1,
+      "id": "classical_antibaryon",
+      "parent_labels": [
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "physical": [
+        -3,
+        0
+      ],
+      "raw": [
+        1,
+        1
+      ]
+    }
+  ],
+  "verification": {
+    "classical_antibaryon": "the x=+1 weight of q[0,1,0,0;1] matches finite beta^-1; the conjugate x=-1,q=-1 is the baryon",
+    "positive_unit_instanton": "x=+2 selects the positive enhanced SU(2) root current and fixes instanton orientation; x=-2 is the negative root"
+  }
+}

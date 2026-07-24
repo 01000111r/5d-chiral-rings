@@ -21,6 +21,7 @@ from .branching_outputs import write_branching_outputs
 from .charge_maps import load_charge_map_spec
 from .charge_map_outputs import write_charge_map_outputs
 from .reporting import ReportError, generate_report
+from .notebook_report import NotebookError, generate_notebook
 
 
 def _root():
@@ -356,15 +357,20 @@ def main(argv=None):
                             ("analyze-pl", "classify PL content and first relation channels"),
                             ("branch", "branch exact character content to a manifest subgroup"),
                             ("charge-map", "derive and apply an anchor-defined physical charge map"),
-                            ("latex-report", "render a read-only audit report from stored evidence")):
+                            ("latex-report", "render a read-only audit report from stored evidence"),
+                            ("project-notebook", "render a read-only project notebook from stored evidence")):
         command = commands.add_parser(name, help=help_text)
         command.add_argument("theory_id")
         command.add_argument("--order", required=True, type=int)
-        if name in ("branch", "charge-map", "latex-report"): command.add_argument("--branching", required=True)
+        if name in ("branch", "charge-map", "latex-report", "project-notebook"): command.add_argument("--branching", required=True)
         if name == "charge-map": command.add_argument("--charge-map", required=True)
         if name == "latex-report":
             command.add_argument("--through", choices=("input", "hwg", "characters",
                 "plethystic-log", "reconstruction", "operator-analysis", "branching"), required=True)
+            command.add_argument("--strict", action="store_true")
+        if name == "project-notebook":
+            command.add_argument("--through", choices=("input", "hwg", "characters", "dimensions",
+                "plethystic-log", "reconstruction", "operator-analysis", "branching", "charge-map"), required=True)
             command.add_argument("--strict", action="store_true")
     args = parser.parse_args(argv)
     if args.order < 0:
@@ -375,6 +381,13 @@ def main(argv=None):
             generate_report(root, args.theory_id, args.order, args.branching,
                             args.through, args.strict)
         except ReportError as exc:
+            parser.error(str(exc))
+        return
+    if args.command == "project-notebook":
+        try:
+            generate_notebook(root, args.theory_id, args.order, args.branching,
+                              args.through, args.strict)
+        except NotebookError as exc:
             parser.error(str(exc))
         return
     theory = load_theory(root / "theories" / f"{args.theory_id}.yaml")

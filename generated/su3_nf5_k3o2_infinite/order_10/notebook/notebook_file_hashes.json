@@ -1,0 +1,245 @@
+{
+  "generated/su3_nf5_k3o2_infinite/order_10/candidate_generators.json": {
+    "git": {
+      "commit": "7c50c0d7fa9287df82aed756d311f81dcb61c343",
+      "date": "2026-07-23T16:39:57+01:00",
+      "status": "committed",
+      "subject": "Analyze refined PL operator content"
+    },
+    "sha256": "e786abc9ce35fc51adcefd22a172c45473f60719fa9b5be5c218c4b83b2d3738"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/character_checks.json": {
+    "git": {
+      "commit": "d562e55b97222ee53371097c7a3b1818f5550a22",
+      "date": "2026-07-23T15:50:21+01:00",
+      "status": "committed",
+      "subject": "Verify character pipeline with Sage launcher"
+    },
+    "sha256": "8445d4750734c99b4c1067f944d5f77ab9d34c188a893656341f768ba1e506bf"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/character_series.json": {
+    "git": {
+      "commit": "d562e55b97222ee53371097c7a3b1818f5550a22",
+      "date": "2026-07-23T15:50:21+01:00",
+      "status": "committed",
+      "subject": "Verify character pipeline with Sage launcher"
+    },
+    "sha256": "d6f3ebed0906bd62460a612d5fca5bbb3acb2dd8995630da19febf1488f9a561"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/checks.json": {
+    "git": {
+      "commit": "3d3a7bae82c586b7363ada08221758bb90f4f168",
+      "date": "2026-07-23T15:28:16+01:00",
+      "status": "committed",
+      "subject": "Implement exact sparse HWG expansion"
+    },
+    "sha256": "7f4be7914684d93fa3711e7655e509e63d6cea80526d3e7ec5d62ea2782c7a3d"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/first_relation_candidates.json": {
+    "git": {
+      "commit": "7c50c0d7fa9287df82aed756d311f81dcb61c343",
+      "date": "2026-07-23T16:39:57+01:00",
+      "status": "committed",
+      "subject": "Analyze refined PL operator content"
+    },
+    "sha256": "44d0e6d69d9d73df35df3d3b8745ae8725bfed13f4e1905ab850d99ea5f545d7"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/first_relation_channels.json": {
+    "git": {
+      "commit": "7c50c0d7fa9287df82aed756d311f81dcb61c343",
+      "date": "2026-07-23T16:39:57+01:00",
+      "status": "committed",
+      "subject": "Analyze refined PL operator content"
+    },
+    "sha256": "7c7dd1496c2000cc98f1856e0699174111098314f726b9ac8a0b604348993f0f"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/hwg_expansion.json": {
+    "git": {
+      "commit": "3d3a7bae82c586b7363ada08221758bb90f4f168",
+      "date": "2026-07-23T15:28:16+01:00",
+      "status": "committed",
+      "subject": "Implement exact sparse HWG expansion"
+    },
+    "sha256": "e28dca48190e0ca68c27dd64daf9a250987e5909573b1fd074bc0ec8789afae0"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/manifest_branching/branched_candidate_generators.json": {
+    "git": {
+      "commit": "a49d1b010160ba3d31f70c2cdba5a6fe658bf572",
+      "date": "2026-07-23T17:05:04+01:00",
+      "status": "committed",
+      "subject": "Implement exact manifest symmetry branching"
+    },
+    "sha256": "df727f85d3a2e8ef4b42c31858a0946a20a2553e8af86797fa423e8f02bea624"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/manifest_branching/branched_character_series.json": {
+    "git": {
+      "commit": "a49d1b010160ba3d31f70c2cdba5a6fe658bf572",
+      "date": "2026-07-23T17:05:04+01:00",
+      "status": "committed",
+      "subject": "Implement exact manifest symmetry branching"
+    },
+    "sha256": "d90b5c1c8f3efca8dc14114ed073a323a488983dd498e84a418de4741a2059c8"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/manifest_branching/branched_first_relation_candidates.json": {
+    "git": {
+      "commit": "a49d1b010160ba3d31f70c2cdba5a6fe658bf572",
+      "date": "2026-07-23T17:05:04+01:00",
+      "status": "committed",
+      "subject": "Implement exact manifest symmetry branching"
+    },
+    "sha256": "ca8747f06a430a8c657c91bd86dbbe862f0748bacb1b13fdb2429ab598022026"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/manifest_branching/branched_refined_plethystic_logarithm.json": {
+    "git": {
+      "commit": "a49d1b010160ba3d31f70c2cdba5a6fe658bf572",
+      "date": "2026-07-23T17:05:04+01:00",
+      "status": "committed",
+      "subject": "Implement exact manifest symmetry branching"
+    },
+    "sha256": "1d4b0a47aca2ada202466d650d8da1623bb132d8c85fa76b1978b2f138755f24"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/manifest_branching/branching_checks.json": {
+    "git": {
+      "commit": "a49d1b010160ba3d31f70c2cdba5a6fe658bf572",
+      "date": "2026-07-23T17:05:04+01:00",
+      "status": "committed",
+      "subject": "Implement exact manifest symmetry branching"
+    },
+    "sha256": "42553aa7f654d5d67d504fbef6e800fe00964c1dd45a24e8bff19e52aef6a2b8"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/operator_content.json": {
+    "git": {
+      "commit": "7c50c0d7fa9287df82aed756d311f81dcb61c343",
+      "date": "2026-07-23T16:39:57+01:00",
+      "status": "committed",
+      "subject": "Analyze refined PL operator content"
+    },
+    "sha256": "046c458478d21d11bd8121db92a48429c9d7c8d7f15b0d8c7ff60b9ef254518d"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/operator_content_checks.json": {
+    "git": {
+      "commit": "7c50c0d7fa9287df82aed756d311f81dcb61c343",
+      "date": "2026-07-23T16:39:57+01:00",
+      "status": "committed",
+      "subject": "Analyze refined PL operator content"
+    },
+    "sha256": "820960ef14e1cf233c54e3f2ba44108de5ca9dcb30466e0b15ad9110331c5093"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/plethystic_logarithm_checks.json": {
+    "git": {
+      "commit": "ebc32f70bed45f167dd50eb67152a646d3c0185d",
+      "date": "2026-07-23T16:14:39+01:00",
+      "status": "committed",
+      "subject": "Implement exact refined plethystic logarithms"
+    },
+    "sha256": "894f8711c63d2f00efb36f9a4508c74d063a0895926fabcd80ca3c45609405ab"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/q_refined_dimension_pl.json": {
+    "git": {
+      "commit": "ebc32f70bed45f167dd50eb67152a646d3c0185d",
+      "date": "2026-07-23T16:14:39+01:00",
+      "status": "committed",
+      "subject": "Implement exact refined plethystic logarithms"
+    },
+    "sha256": "7a75f15852425799386f61137c2afde2ff8cf00ddb2079e1f2c634bd6064bc57"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/q_refined_dimension_series.json": {
+    "git": {
+      "commit": "d562e55b97222ee53371097c7a3b1818f5550a22",
+      "date": "2026-07-23T15:50:21+01:00",
+      "status": "committed",
+      "subject": "Verify character pipeline with Sage launcher"
+    },
+    "sha256": "b65ece00740c59533f397b3c3a08231081f58ab1d8cafe81fc6e8c9c9d7f73cc"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/reconstructed_character_series.json": {
+    "git": {
+      "commit": "d55b1caf1e54e50083ec2a330f588913788e0104",
+      "date": "2026-07-23T16:28:06+01:00",
+      "status": "committed",
+      "subject": "Add exact plethystic reconstruction"
+    },
+    "sha256": "db51012453766ec48a6e5002e6c5c788ef4f1230c7fa433d29ac0e0d02274feb"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/reconstructed_q_refined_dimension_series.json": {
+    "git": {
+      "commit": "d55b1caf1e54e50083ec2a330f588913788e0104",
+      "date": "2026-07-23T16:28:06+01:00",
+      "status": "committed",
+      "subject": "Add exact plethystic reconstruction"
+    },
+    "sha256": "b65ece00740c59533f397b3c3a08231081f58ab1d8cafe81fc6e8c9c9d7f73cc"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/reconstructed_unrefined_hilbert_series.json": {
+    "git": {
+      "commit": "d55b1caf1e54e50083ec2a330f588913788e0104",
+      "date": "2026-07-23T16:28:06+01:00",
+      "status": "committed",
+      "subject": "Add exact plethystic reconstruction"
+    },
+    "sha256": "456a88380b8c275986d3fb78f5b12f57377fd56cd6c031b6c9834462e771384a"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/reconstruction_checks.json": {
+    "git": {
+      "commit": "d55b1caf1e54e50083ec2a330f588913788e0104",
+      "date": "2026-07-23T16:28:06+01:00",
+      "status": "committed",
+      "subject": "Add exact plethystic reconstruction"
+    },
+    "sha256": "cf5a9192ba770df87198f28af36ffaea73e247cb2cb1b15eb743c86ed6121f9d"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/reconstruction_difference.json": {
+    "git": {
+      "commit": "d55b1caf1e54e50083ec2a330f588913788e0104",
+      "date": "2026-07-23T16:28:06+01:00",
+      "status": "committed",
+      "subject": "Add exact plethystic reconstruction"
+    },
+    "sha256": "1252330f449e2e02a036e8ed3cb4e9e162268d965299fd8d4a1cded50be5ce72"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/refined_plethystic_logarithm.json": {
+    "git": {
+      "commit": "ebc32f70bed45f167dd50eb67152a646d3c0185d",
+      "date": "2026-07-23T16:14:39+01:00",
+      "status": "committed",
+      "subject": "Implement exact refined plethystic logarithms"
+    },
+    "sha256": "e377c29e17e2ed5425c9ecc68918629ed9b29d6536c8109451deb705f9272d5e"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/unrefined_hilbert_series.json": {
+    "git": {
+      "commit": "d562e55b97222ee53371097c7a3b1818f5550a22",
+      "date": "2026-07-23T15:50:21+01:00",
+      "status": "committed",
+      "subject": "Verify character pipeline with Sage launcher"
+    },
+    "sha256": "0be75a824c53474c8531c054488baee72e4b5dc731a76248aee37776ebaf0741"
+  },
+  "generated/su3_nf5_k3o2_infinite/order_10/unrefined_plethystic_logarithm.json": {
+    "git": {
+      "commit": "ebc32f70bed45f167dd50eb67152a646d3c0185d",
+      "date": "2026-07-23T16:14:39+01:00",
+      "status": "committed",
+      "subject": "Implement exact refined plethystic logarithms"
+    },
+    "sha256": "a3eb15f44e7b5ead9acfbec7e03a1a6c88411e220de0c9a5ea5237967d5ed9e9"
+  },
+  "notebooks/hwg_pipeline_project_walkthrough.ipynb": {
+    "git": {
+      "commit": null,
+      "date": null,
+      "status": "not committed",
+      "subject": null
+    },
+    "sha256": "8ff735b1f39e6d98df6a0b1cb2aa99cc8ceeccaac346597b2905c24cd18a4d09"
+  },
+  "theories/su3_nf5_k3o2_infinite.yaml": {
+    "git": {
+      "commit": "a39d9050c7f85c5678b4080eeebbf4c59a63975c",
+      "date": "2026-07-23T15:19:55+01:00",
+      "status": "committed",
+      "subject": "Add SU(3)+5F infinite-coupling fixture"
+    },
+    "sha256": "d7bc6347fc39b430b6244e5812b066f3173f0c45ef057ac9d40f4c6ab981906c"
+  }
+}

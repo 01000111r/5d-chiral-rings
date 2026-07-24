@@ -1,0 +1,112 @@
+{
+  "checks": [
+    {
+      "actual_result": true,
+      "check_id": "difference_is_empty",
+      "claim": "difference is empty",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "independent_scalar_pe_equal",
+      "claim": "independent scalar pe equal",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "multiplicities_integral",
+      "claim": "multiplicities integral",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "multiplicities_nonnegative",
+      "claim": "multiplicities nonnegative",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "order_stability",
+      "claim": "order stability",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "q_refined_dimensions_equal",
+      "claim": "q refined dimensions equal",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "refined_character_series_equal",
+      "claim": "refined character series equal",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    },
+    {
+      "actual_result": true,
+      "check_id": "unrefined_dimensions_equal",
+      "claim": "unrefined dimensions equal",
+      "evidence_path": "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json",
+      "mathematical_input": "calculated refined PL",
+      "mathematical_operation": "exact Adams plethystic exponential and independent scalar PE",
+      "mathematical_output": "three reconstructed Hilbert series and empty refined difference",
+      "stage_name": "plethystic reconstruction",
+      "stage_number": 4,
+      "status": "pass",
+      "validation_target": true
+    }
+  ],
+  "maximum_t_degree": 10,
+  "stage_name": "plethystic reconstruction",
+  "stage_number": 4,
+  "theory_id": "su3_nf6_k2_infinite"
+}

@@ -257,8 +257,9 @@ def generate_compact_latex(root, theory_id, order):
 \begin{{document}}
 \maketitle
 At infinite coupling the enhanced symmetry is ${group_latex}\times\mathrm{{U}}(1)_q$.
-The expansion is truncated at $O(t^{{{order+1}}})$, and
-$[a_1,\ldots,a_{{{int(theory.simple_factors[0].rank)}}}]$ denotes the ${group_latex}$ Dynkin label.
+The expansion is truncated at $O(t^{{{order+1}}})$.  We define
+$[a_1,\ldots,a_{{{int(theory.simple_factors[0].rank)}}}]
+:=[a_1,\ldots,a_{{{int(theory.simple_factors[0].rank)}}}]_{{{theory.simple_factors[0].cartan_name}}}$.
 Dimension evaluation is the ring homomorphism
 $\dim_{{{group_latex}}}:R({group_latex})\to\mathbb{{Z}}$, with
 $H_{{\mathrm{{dim}}}}(t,q)=\dim_{{{group_latex}}}H(t,q;{group_latex})$
@@ -316,15 +317,15 @@ the latter agrees with the independently stored scalar result.
         if groups.get(str(d))} for groups in (hwg, chars, pl))
     checks = {
         "theory_ids_agree": True, "loaded_results_have_requested_order": True,
-        "a5_dynkin_labels_have_length_five": True,
-        "character_hilbert_retains_su6_labels_and_q": "[" in rendered_chars and "q" in rendered_chars,
+        "dynkin_labels_have_expected_rank": True,
+        "character_hilbert_retains_simple_factor_labels_and_q": "[" in rendered_chars and "q" in rendered_chars,
         "q_refined_dimension_hilbert_has_no_dynkin_labels": "[" not in rendered_dim_hilbert,
         "q_refined_dimension_hilbert_retains_every_q_charge": all(
             render_q_power(entry["abelian_charges"]["q"]) in rendered_dim_hilbert
             for entries in dim_hilbert.values() for entry in entries if int(entry["abelian_charges"]["q"])),
         "q_refined_dimension_hilbert_matches_stored": bool(dim_hilbert),
         "q_equals_one_dimension_hilbert_matches_stored_unrefined": hilbert_match,
-        "refined_character_pl_retains_su6_labels_and_q": "[" in rendered_pl and "q" in rendered_pl,
+        "refined_character_pl_retains_simple_factor_labels_and_q": "[" in rendered_pl and "q" in rendered_pl,
         "q_refined_dimension_pl_has_no_dynkin_labels": "[" not in rendered_dim_pl,
         "q_refined_dimension_pl_retains_every_q_charge": all(
             render_q_power(entry["abelian_charges"]["q"]) in rendered_dim_pl

@@ -1,0 +1,150 @@
+{
+  "coefficients_by_t_degree": {
+    "10": [
+      {
+        "abelian_charges": {
+          "q": "-2"
+        },
+        "coefficient": -60029
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": -422722
+      },
+      {
+        "abelian_charges": {
+          "q": "2"
+        },
+        "coefficient": -60029
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 67
+      }
+    ],
+    "3": [
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 32
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 32
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": -78
+      }
+    ],
+    "5": [
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": -384
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": -384
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {
+          "q": "-2"
+        },
+        "coefficient": -66
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": -1409
+      },
+      {
+        "abelian_charges": {
+          "q": "2"
+        },
+        "coefficient": -66
+      }
+    ],
+    "7": [
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 2848
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 2848
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {
+          "q": "-2"
+        },
+        "coefficient": 3246
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 33057
+      },
+      {
+        "abelian_charges": {
+          "q": "2"
+        },
+        "coefficient": 3246
+      }
+    ],
+    "9": [
+      {
+        "abelian_charges": {
+          "q": "-3"
+        },
+        "coefficient": 352
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 16544
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 16544
+      },
+      {
+        "abelian_charges": {
+          "q": "3"
+        },
+        "coefficient": 352
+      }
+    ]
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su3_nf6_k2_infinite"
+}

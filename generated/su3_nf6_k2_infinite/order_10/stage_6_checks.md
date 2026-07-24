@@ -1,0 +1,24 @@
+# Stage 6 — compact LaTeX
+
+- **PASS — all_multiplicities_are_exact_integers**: True
+- **PASS — all_stored_terms_through_order_included**: True
+- **PASS — character_hilbert_retains_simple_factor_labels_and_q**: True
+- **PASS — dynkin_labels_have_expected_rank**: True
+- **PASS — existing_mathematical_results_unchanged**: True
+- **PASS — generation_is_deterministic**: True
+- **PASS — latex_has_no_python_json_or_sage_objects**: True
+- **PASS — loaded_results_have_requested_order**: True
+- **PASS — negative_pl_coefficients_retained**: True
+- **PASS — no_character_valued_q_equals_one_series**: True
+- **PASS — no_terms_above_order**: True
+- **PASS — q_equals_one_dimension_hilbert_matches_stored_unrefined**: True
+- **PASS — q_equals_one_dimension_pl_matches_stored_unrefined**: True
+- **PASS — q_refined_dimension_hilbert_has_no_dynkin_labels**: True
+- **PASS — q_refined_dimension_hilbert_matches_stored**: True
+- **PASS — q_refined_dimension_hilbert_retains_every_q_charge**: True
+- **PASS — q_refined_dimension_pl_has_no_dynkin_labels**: True
+- **PASS — q_refined_dimension_pl_retains_every_q_charge**: True
+- **PASS — q_refined_dimension_pl_signed_coefficients_match_stored**: True
+- **PASS — refined_character_pl_retains_simple_factor_labels_and_q**: True
+- **PASS — theory_ids_agree**: True
+- **UNAVAILABLE — pdf_compilation**: no LaTeX compiler installed

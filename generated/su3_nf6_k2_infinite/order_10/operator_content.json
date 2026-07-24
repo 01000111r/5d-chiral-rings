@@ -1,0 +1,2119 @@
+{
+  "first_negative_degree": 4,
+  "maximum_t_degree": 10,
+  "operators": [
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 66,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 32,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "low_degree_generator_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 32,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 3
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "first_relation_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "first_relation_candidate",
+      "mixed_degree": false,
+      "representation_dimension": 77,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 32,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 352,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 32,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 352,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 5
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 66,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 1,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 462,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 462,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 495,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 66,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 77,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 66,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 32,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 7
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 352,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 7
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2112,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 7
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 32,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 7
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 352,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 7
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2112,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 7
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 495,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 66,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2079,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 77,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "positive",
+      "signed_multiplicity": 3,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 495,
+      "sign": "positive",
+      "signed_multiplicity": 4,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 66,
+      "sign": "positive",
+      "signed_multiplicity": 3,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 8085,
+      "sign": "positive",
+      "signed_multiplicity": 3,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2079,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 77,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 495,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 66,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2079,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": false,
+      "representation_dimension": 77,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-3"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 352,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 32,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 9504,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 8800,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 4928,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 1728,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 2112,
+      "sign": "negative",
+      "signed_multiplicity": -2,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 9152,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 32,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 9504,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 8800,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 4928,
+      "sign": "positive",
+      "signed_multiplicity": 2,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 1728,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 2112,
+      "sign": "negative",
+      "signed_multiplicity": -2,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": true,
+      "representation_dimension": 9152,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "3"
+      },
+      "classification": "higher_positive_correction",
+      "mixed_degree": true,
+      "representation_dimension": 352,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 9
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "negative",
+      "signed_multiplicity": -3,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 495,
+      "sign": "negative",
+      "signed_multiplicity": -5,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 66,
+      "sign": "negative",
+      "signed_multiplicity": -4,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1638,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 8085,
+      "sign": "negative",
+      "signed_multiplicity": -2,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2079,
+      "sign": "negative",
+      "signed_multiplicity": -4,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 77,
+      "sign": "negative",
+      "signed_multiplicity": -5,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 27456,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2860,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "negative",
+      "signed_multiplicity": -4,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "negative",
+      "signed_multiplicity": -5,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "negative",
+      "signed_multiplicity": -7,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 495,
+      "sign": "negative",
+      "signed_multiplicity": -12,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 66,
+      "sign": "negative",
+      "signed_multiplicity": -10,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 21450,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 21450,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 21021,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1638,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 8085,
+      "sign": "negative",
+      "signed_multiplicity": -12,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2079,
+      "sign": "negative",
+      "signed_multiplicity": -10,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 77,
+      "sign": "negative",
+      "signed_multiplicity": -9,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 27027,
+      "sign": "negative",
+      "signed_multiplicity": -2,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 27027,
+      "sign": "negative",
+      "signed_multiplicity": -2,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 27456,
+      "sign": "negative",
+      "signed_multiplicity": -4,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2860,
+      "sign": "negative",
+      "signed_multiplicity": -3,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1,
+      "sign": "negative",
+      "signed_multiplicity": -3,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 462,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 495,
+      "sign": "negative",
+      "signed_multiplicity": -5,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 66,
+      "sign": "negative",
+      "signed_multiplicity": -4,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 1638,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 8085,
+      "sign": "negative",
+      "signed_multiplicity": -2,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2079,
+      "sign": "negative",
+      "signed_multiplicity": -4,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 77,
+      "sign": "negative",
+      "signed_multiplicity": -5,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 27456,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "classification": "higher_negative_correction",
+      "mixed_degree": false,
+      "representation_dimension": 2860,
+      "sign": "negative",
+      "signed_multiplicity": -1,
+      "simple_factor_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf6_k2_infinite",
+      "t_degree": 10
+    }
+  ],
+  "theory_id": "su3_nf6_k2_infinite"
+}

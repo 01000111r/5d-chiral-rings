@@ -1,0 +1,51 @@
+{
+  "check_totals": {
+    "fail": 0,
+    "not-applicable": 0,
+    "pass": 52,
+    "pending": 0,
+    "unavailable": 1
+  },
+  "commands_file": "generated/su3_nf6_k2_infinite/order_10/command_log.txt",
+  "compact_report_status": "pass",
+  "deterministic_rerun": "pass: 43 deterministic JSON/TeX files byte-for-byte identical",
+  "formal_log_implementation": "direct (validated CLI default; CLI has no --formal-log option)",
+  "full_pytest": "129 passed in 74.10s",
+  "independent_scalar_reconstruction": "pass",
+  "maximum_t_degree": 10,
+  "pdf_compilation_status": "unavailable: no LaTeX compiler",
+  "python_version": "3.11.15",
+  "q_refined_dimension_reconstruction": "pass",
+  "reconstruction_difference_empty": true,
+  "reconstruction_status": "pass",
+  "regression_status": "pass: tracked outputs for both completed SU(3)+5F theories and n=3 benchmark have no working-tree changes",
+  "sage_version": "10.7",
+  "shared_implementation_files_changed": true,
+  "shared_mathematical_implementation_files_changed": false,
+  "stage_elapsed_seconds": {
+    "stage_1_expand": 3,
+    "stage_2_characters": 3,
+    "stage_3_plethystic_log": 63,
+    "stage_4_reconstruct": 64,
+    "stage_5_analyze_pl": 4,
+    "stage_6_compact_latex": 2
+  },
+  "stage_peak_rss_kb": {
+    "stage_1": "unavailable: /usr/bin/time is not installed",
+    "stage_2": "unavailable: /usr/bin/time is not installed",
+    "stage_3": "unavailable: /usr/bin/time is not installed",
+    "stage_4": "unavailable: /usr/bin/time is not installed",
+    "stage_5": "unavailable: /usr/bin/time is not installed",
+    "stage_6": "unavailable: /usr/bin/time is not installed"
+  },
+  "stage_results": {
+    "0": "pass",
+    "1": "pass",
+    "2": "pass",
+    "3": "pass",
+    "4": "pass",
+    "5": "pass",
+    "6": "pass"
+  },
+  "theory_id": "su3_nf6_k2_infinite"
+}

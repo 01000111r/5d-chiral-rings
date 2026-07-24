@@ -1,0 +1,13 @@
+{
+  "maximum_t_degree": 10,
+  "theory_id": "su3_nf5_finite",
+  "validation_results": {
+    "all_passed": true,
+    "dimensions_nonnegative_integers": true,
+    "one_irrep_per_hwg_monomial_before_combining": true,
+    "q_charges_preserved": true,
+    "q_equals_one_matches_unrefined": true,
+    "representation_multiplicities_nonnegative_integers": true,
+    "t_degrees_preserved": true
+  }
+}

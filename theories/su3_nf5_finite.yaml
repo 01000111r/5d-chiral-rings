@@ -1,0 +1,44 @@
+id: su3_nf5_finite
+title: SU(3)+5F classical Higgs branch at finite coupling
+nonphysical: false
+gauge_algebra: A2
+gauge_display_name: SU(3)
+number_of_flavours: 5
+chern_simons_level: 0
+chern_simons_convention: none for this finite-coupling reference
+coupling: finite
+grading_variable: t
+source_references:
+  - path: references/overleaf/su3_nf5_nf6_finite_hwg_results.tex
+    description: Committed authoritative finite-coupling HWG extract
+    equation: "5.52, specialised to N_c=3 and N_f=5"
+simple_factors:
+  - id: flavour
+    cartan_type: A
+    rank: 4
+    display_name: SU(5)
+    highest_weight_fugacities: [mu_1, mu_2, mu_3, mu_4]
+abelian_factors:
+  - id: beta
+    display_name: U(1)_B
+    fugacity: beta
+pe:
+  original_pe_latex: |-
+    \PE\!\left[(1+\mu_1\mu_4)t^2
+    +(\beta\mu_3+\beta^{-1}\mu_2)t^3+\mu_2\mu_3t^4\right]
+  terms:
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {flavour: [0, 0, 0, 0]}, abelian_charges: {beta: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {flavour: [1, 0, 0, 1]}, abelian_charges: {beta: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 3, representations: {flavour: [0, 0, 1, 0]}, abelian_charges: {beta: 1}}}
+    - {coefficient: 1, monomial: {t_degree: 3, representations: {flavour: [0, 1, 0, 0]}, abelian_charges: {beta: -1}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {flavour: [0, 1, 1, 0]}, abelian_charges: {beta: 0}}}
+rational_product:
+  original_rational_product_latex: |-
+    \frac{1}{(1-t^2)(1-\mu_1\mu_4t^2)(1-\beta\mu_3t^3)
+    (1-\beta^{-1}\mu_2t^3)(1-\mu_2\mu_3t^4)}
+  factors:
+    - {power: -1, monomial: {t_degree: 2, representations: {flavour: [0, 0, 0, 0]}, abelian_charges: {beta: 0}}}
+    - {power: -1, monomial: {t_degree: 2, representations: {flavour: [1, 0, 0, 1]}, abelian_charges: {beta: 0}}}
+    - {power: -1, monomial: {t_degree: 3, representations: {flavour: [0, 0, 1, 0]}, abelian_charges: {beta: 1}}}
+    - {power: -1, monomial: {t_degree: 3, representations: {flavour: [0, 1, 0, 0]}, abelian_charges: {beta: -1}}}
+    - {power: -1, monomial: {t_degree: 4, representations: {flavour: [0, 1, 1, 0]}, abelian_charges: {beta: 0}}}

@@ -1,0 +1,27 @@
+{
+  "deterministic_rerun": true,
+  "order": 10,
+  "reconstruction": {
+    "all_passed": true,
+    "difference_is_empty": true,
+    "independent_scalar_pe_equal": true,
+    "multiplicities_integral": true,
+    "multiplicities_nonnegative": true,
+    "order_stability": true,
+    "q_refined_dimensions_equal": true,
+    "refined_character_series_equal": true,
+    "unrefined_dimensions_equal": true
+  },
+  "source_authority": "references/overleaf/su3_nf5_nf6_finite_hwg_results.tex",
+  "stages": [
+    "input audit",
+    "expansion",
+    "characters",
+    "plethystic logarithm",
+    "reconstruction",
+    "operator analysis",
+    "compact LaTeX"
+  ],
+  "status": "complete",
+  "theory_id": "su3_nf5_finite"
+}

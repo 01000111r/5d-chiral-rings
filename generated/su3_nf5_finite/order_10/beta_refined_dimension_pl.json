@@ -1,0 +1,150 @@
+{
+  "coefficients_by_t_degree": {
+    "10": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -2320
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -6453
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -2320
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 25
+      }
+    ],
+    "3": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 10
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 10
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -25
+      }
+    ],
+    "5": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -65
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -65
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -5
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -5
+      }
+    ],
+    "7": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 340
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 340
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": 170
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 574
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": 170
+      }
+    ],
+    "9": [
+      {
+        "abelian_charges": {
+          "beta": "-3"
+        },
+        "coefficient": 5
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -1395
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -1395
+      },
+      {
+        "abelian_charges": {
+          "beta": "3"
+        },
+        "coefficient": 5
+      }
+    ]
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su3_nf5_finite"
+}

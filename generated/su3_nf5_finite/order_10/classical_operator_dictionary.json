@@ -1,0 +1,109 @@
+{
+  "antibaryon": {
+    "abelian_charges": {
+      "beta": "-1"
+    },
+    "beta_charge": -1,
+    "classification": "low_degree_generator_candidate",
+    "evidence_path": "generated/su3_nf5_finite/order_10/refined_plethystic_logarithm.json",
+    "instanton_charge": 0,
+    "mixed_degree": false,
+    "physical_baryon_number": -3,
+    "pl_sign": "positive",
+    "representation_dimension": 10,
+    "sign": "positive",
+    "signed_multiplicity": 1,
+    "simple_factor_dynkin_labels": [
+      [
+        0,
+        1,
+        0,
+        0
+      ]
+    ],
+    "source_theory_id": "su3_nf5_finite",
+    "t_degree": 3
+  },
+  "baryon": {
+    "abelian_charges": {
+      "beta": "1"
+    },
+    "beta_charge": 1,
+    "classification": "low_degree_generator_candidate",
+    "evidence_path": "generated/su3_nf5_finite/order_10/refined_plethystic_logarithm.json",
+    "instanton_charge": 0,
+    "mixed_degree": false,
+    "physical_baryon_number": 3,
+    "pl_sign": "positive",
+    "representation_dimension": 10,
+    "sign": "positive",
+    "signed_multiplicity": 1,
+    "simple_factor_dynkin_labels": [
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "source_theory_id": "su3_nf5_finite",
+    "t_degree": 3
+  },
+  "mesonic_sector": [
+    {
+      "abelian_charges": {
+        "beta": "0"
+      },
+      "beta_charge": 0,
+      "classification": "low_degree_generator_candidate",
+      "evidence_path": "generated/su3_nf5_finite/order_10/refined_plethystic_logarithm.json",
+      "instanton_charge": 0,
+      "mixed_degree": false,
+      "physical_baryon_number": 0,
+      "pl_sign": "positive",
+      "representation_dimension": 1,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_theory_id": "su3_nf5_finite",
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "beta": "0"
+      },
+      "beta_charge": 0,
+      "classification": "low_degree_generator_candidate",
+      "evidence_path": "generated/su3_nf5_finite/order_10/refined_plethystic_logarithm.json",
+      "instanton_charge": 0,
+      "mixed_degree": false,
+      "physical_baryon_number": 0,
+      "pl_sign": "positive",
+      "representation_dimension": 24,
+      "sign": "positive",
+      "signed_multiplicity": 1,
+      "simple_factor_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "source_theory_id": "su3_nf5_finite",
+      "t_degree": 2
+    }
+  ],
+  "normalization": {
+    "B": "3 B_beta",
+    "I": 0
+  },
+  "theory_id": "su3_nf5_finite"
+}

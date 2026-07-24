@@ -1,0 +1,77 @@
+{
+  "anchors": [
+    {
+      "child_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree": 2,
+      "id": "positive_unit_instanton_current",
+      "parent_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "physical": [
+        3,
+        1
+      ],
+      "raw": [
+        2,
+        0
+      ]
+    },
+    {
+      "child_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "degree": 3,
+      "finite_beta_charge": 1,
+      "id": "classical_baryon",
+      "parent_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "physical": [
+        3,
+        0
+      ],
+      "raw": [
+        1,
+        1
+      ]
+    }
+  ],
+  "verification": {
+    "classical_baryon": "The degree-three SU(6) 20 at raw weight (1,1) matches the finite beta^1 channel and is assigned (B,I)=(3,0); beta^-1 identifies its antibaryon.",
+    "positive_unit_instanton_current": "The degree-two non-Cartan root of the first enhanced SU(2) is an SU(6)-singlet conserved-current component; the one-instanton convention, not singletness alone, assigns (B,I)=(3,1)."
+  }
+}

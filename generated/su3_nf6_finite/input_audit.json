@@ -1,0 +1,205 @@
+{
+  "A5_convention": "Dynkin labels [a1,a2,a3,a4,a5] in WeylCharacterRing(A5, style=coroots)",
+  "baryon_representation_self_conjugate": true,
+  "beta_charge_convention": "B_beta is the exponent of beta",
+  "cancelled_source_terms": [
+    {
+      "A5_labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "A5_labels": [
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": -1,
+      "t_degree": 6
+    }
+  ],
+  "degree_four_representation_self_conjugate": true,
+  "exact_cancellation": "+mu_3^2 t^6 - mu_3^2 t^6 = 0",
+  "finite_coupling_instanton_charge": "I = 0",
+  "fixture_sha256": "a7aac0d923723d12c9b10e6db988e15a2890731e915597ea0ba83cb9145ead68",
+  "general_formula": "PE[t^2 + (mu_Nc beta + mu_(Nf-Nc) beta^(-1)) t^Nc + sum_(j=1)^Nc mu_j mu_(Nf-j) t^(2j) - mu_Nc mu_(Nf-Nc) t^(2Nc)]",
+  "input_checks": {
+    "all_A5_labels_length_five": true,
+    "all_passed": true,
+    "beta_only_abelian_fugacity": true,
+    "degree_six_sum_zero": true,
+    "degree_six_terms_identical_apart_from_sign": true,
+    "domain_6_ge_5": true,
+    "five_denominator_no_numerator": true,
+    "five_positive_simplified_terms": true,
+    "local_source_exists": true,
+    "no_instanton_fugacity": true,
+    "opposite_beta_sectors_distinct": true,
+    "source_identifies_equation_5_52": true,
+    "source_says_finite_coupling": true
+  },
+  "paper": {
+    "authors": [
+      "A. Bourget",
+      "S. Cabrera",
+      "J. F. Grimminger",
+      "A. Hanany",
+      "Z. Zhong"
+    ],
+    "citation": "JHEP 03 (2020) 176",
+    "title": "Brane webs and magnetic quivers for SQCD"
+  },
+  "physical_baryon_conversion": "B = 3 B_beta",
+  "rational_product": "1/[(1-t^2)(1-mu_1 mu_5 t^2)(1-beta mu_3 t^3)(1-beta^(-1) mu_3 t^3)(1-mu_2 mu_4 t^4)]",
+  "simplified_pe": "PE[(1 + mu_1 mu_5)t^2 + mu_3(beta + beta^(-1))t^3 + mu_2 mu_4 t^4]",
+  "source_equation": "5.52",
+  "source_file": "references/overleaf/su3_nf5_nf6_finite_hwg_results.tex",
+  "source_identification": "finite coupling",
+  "source_sha256": "44759e2f6ffbc7004a7b4a1d370bb8a5395a2da1fe0ce2675348410e13bd30c1",
+  "structured_pe_terms": [
+    {
+      "A5_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "A5_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "A5_labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 1,
+      "coefficient": 1,
+      "t_degree": 3
+    },
+    {
+      "A5_labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": -1,
+      "coefficient": 1,
+      "t_degree": 3
+    },
+    {
+      "A5_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 4
+    }
+  ],
+  "structured_product_factors": [
+    {
+      "A5_labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 2
+    },
+    {
+      "A5_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 2
+    },
+    {
+      "A5_labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 1,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 3
+    },
+    {
+      "A5_labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": -1,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 3
+    },
+    {
+      "A5_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 4
+    }
+  ],
+  "substitution": {
+    "N_c": 3,
+    "N_f": 6
+  },
+  "theory_id": "su3_nf6_finite",
+  "unresolved_ambiguities": [],
+  "unsimplified_exponent": "t^2 + (mu_3 beta + mu_3 beta^(-1)) t^3 + mu_1 mu_5 t^2 + mu_2 mu_4 t^4 + mu_3^2 t^6 - mu_3^2 t^6"
+}

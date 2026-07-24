@@ -1,0 +1,2238 @@
+{
+  "abelian_fugacity": "beta",
+  "abelian_symmetry": "U(1)_B",
+  "beta_normalization": "B_beta = exponent of beta",
+  "candidate_classical_generators": {
+    "generator_candidates": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 1,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "source_theory_id": "su3_nf6_finite",
+        "t_degree": 2
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 35,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "source_theory_id": "su3_nf6_finite",
+        "t_degree": 2
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 20,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "source_theory_id": "su3_nf6_finite",
+        "t_degree": 3
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "classification": "low_degree_generator_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 20,
+        "sign": "positive",
+        "signed_multiplicity": 1,
+        "simple_factor_dynkin_labels": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "source_theory_id": "su3_nf6_finite",
+        "t_degree": 3
+      }
+    ],
+    "maximum_t_degree": 10,
+    "theory_id": "su3_nf6_finite"
+  },
+  "compatible_uv_theory_ids": [
+    "su3_nf6_k0_infinite",
+    "su3_nf6_k1_infinite",
+    "su3_nf6_k2_infinite"
+  ],
+  "finite_coupling_instanton_charge": "I = 0",
+  "first_negative_pl_degree": 4,
+  "first_relation_channels": {
+    "first_negative_degree": 4,
+    "maximum_t_degree": 10,
+    "relation_candidates": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "classification": "first_relation_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 1,
+        "sign": "negative",
+        "signed_multiplicity": -1,
+        "simple_factor_dynkin_labels": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "source_theory_id": "su3_nf6_finite",
+        "t_degree": 4
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "classification": "first_relation_candidate",
+        "mixed_degree": false,
+        "representation_dimension": 35,
+        "sign": "negative",
+        "signed_multiplicity": -1,
+        "simple_factor_dynkin_labels": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "source_theory_id": "su3_nf6_finite",
+        "t_degree": 4
+      }
+    ],
+    "theory_id": "su3_nf6_finite"
+  },
+  "flavour_symmetry": "SU(6)",
+  "order": 10,
+  "physical_baryon_normalization": "B = 3 B_beta",
+  "reconstruction_status": {
+    "all_passed": true,
+    "difference_is_empty": true,
+    "independent_scalar_pe_equal": true,
+    "multiplicities_integral": true,
+    "multiplicities_nonnegative": true,
+    "order_stability": true,
+    "q_refined_dimensions_equal": true,
+    "refined_character_series_equal": true,
+    "unrefined_dimensions_equal": true
+  },
+  "refined_plethystic_logarithm": {
+    "10": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -4,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -5,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -9,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -11,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -5,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              3,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -7,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              2,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              3,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -3,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -11,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -10,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -13,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -23,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              3,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -22,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              2,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -4,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -11,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -4,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -13,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -3,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              3,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -4,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -5,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -9,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -11,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -5,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              3,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "7": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": 3,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 3,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 6,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 5,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": 2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": 3,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "9": [
+      {
+        "abelian_charges": {
+          "beta": "-3"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-3"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              2,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              1,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              2,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              0,
+              2,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              2,
+              1,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "coefficient": -2,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              3,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "3"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "abelian_charges": {
+          "beta": "3"
+        },
+        "coefficient": 1,
+        "irreducible_representations": [
+          {
+            "cartan_factor_id": "flavour",
+            "dynkin_labels": [
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "theory_id": "su3_nf6_finite"
+}

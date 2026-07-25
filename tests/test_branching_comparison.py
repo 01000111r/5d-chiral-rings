@@ -129,3 +129,16 @@ def test_double_a1_exact_charge_map_and_integrality_rejection():
  assert M==matrix(QQ,[[QQ(3)/2,QQ(3)/2],[QQ(1)/2,-QQ(1)/2]]) and M*R==T
  assert physical_charge(1,-1,M)==(0,1)
  with pytest.raises(ComparisonError): physical_charge(1,0,M)
+
+from hwg_pipeline.branching import D6_EMBEDDING
+
+def d6pieces(labels):
+ return {(tuple(map(int,p.child_dynkin_labels)),int(p.x_charge)):int(p.multiplicity)
+         for p in branch_irrep(SimpleGroupSpec('d6','D',6,'SO(12)',tuple('abcdef')),g(5),labels,D6_EMBEDDING)}
+def test_d6_vector_adjoint_and_node_six_spinor_conventions():
+ assert d6pieces((1,0,0,0,0,0))=={((1,0,0,0,0),1):1,((0,0,0,0,1),-1):1}
+ assert d6pieces((0,1,0,0,0,0))=={((1,0,0,0,1),0):1,((0,0,0,0,0),0):1,((0,1,0,0,0),2):1,((0,0,0,1,0),-2):1}
+ assert d6pieces((0,0,0,0,0,1))=={((1,0,0,0,0),2):1,((0,0,1,0,0),0):1,((0,0,0,0,1),-2):1}
+def test_d6_exact_physical_charge_map():
+ M,R,T=solve_charge_map([{'raw':[2,0],'physical':[0,1]},{'raw':[0,1],'physical':[3,0]}])
+ assert M==matrix(QQ,[[0,3],[QQ(1)/2,0]]) and M*R==T

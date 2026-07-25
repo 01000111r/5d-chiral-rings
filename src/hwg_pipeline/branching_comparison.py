@@ -6,7 +6,7 @@ import json, shutil, subprocess
 from pathlib import Path
 import yaml
 from sage.all import QQ, matrix, vector
-from .branching import branch_irrep, D5_EMBEDDING, EMBEDDING
+from .branching import branch_irrep, D5_EMBEDDING, D6_EMBEDDING, EMBEDDING
 from .model import SimpleGroupSpec
 from .sage_backend import irrep_dimension
 
@@ -88,11 +88,13 @@ def _generate_legacy(root,uv_id,finite_id,order,spec_path,strict=True,compile_pd
     if not UC['validation_results']['all_passed'] or not FC['validation_results']['all_passed']: raise ComparisonError('failed stored reconstruction evidence')
     ut,ft=_terms(U),_terms(F)
     is_a6=spec['parent_simple_factor']=='A6'
-    pr,cr=(6,5) if is_a6 else (5,4)
+    is_d6=spec['parent_simple_factor']=='D6'
+    pr,cr=(6,5) if (is_a6 or is_d6) else (5,4)
     if any(len(x['labels'])!=pr or not isinstance(x['multiplicity'],int) or not isinstance(x['charge'],int) for x in ut) or any(len(x['labels'])!=cr or not isinstance(x['multiplicity'],int) or not isinstance(x['charge'],int) for x in ft): raise ComparisonError('incomplete labels or noninteger multiplicity/charge')
     is_d5=spec['parent_simple_factor']=='D5'
-    embedding=D5_EMBEDDING if is_d5 else EMBEDDING
-    parent,child=_sg(pr,'uv','D' if is_d5 else 'A'),_sg(cr,'finite'); raw=[]
+    is_d=is_d5 or is_d6
+    embedding=D6_EMBEDDING if is_d6 else D5_EMBEDDING if is_d5 else EMBEDDING
+    parent,child=_sg(pr,'uv','D' if is_d else 'A'),_sg(cr,'finite'); raw=[]
     for i,t in enumerate(ut):
       pieces=branch_irrep(parent,child,tuple(t['labels']),embedding)
       kids=[]; pd=int(irrep_dimension(parent,t['labels'])); total=0
@@ -100,9 +102,10 @@ def _generate_legacy(root,uv_id,finite_id,order,spec_path,strict=True,compile_pd
         cd=int(irrep_dimension(child,p.child_dynkin_labels)); total+=int(p.multiplicity)*cd
         kids.append({'child_su5_labels':list(map(int,p.child_dynkin_labels)),'child_group_subscript':cr+1,'x_charge':int(p.x_charge),'q_charge':t['charge'],'branching_multiplicity':int(p.multiplicity),'signed_total_multiplicity':t['multiplicity']*int(p.multiplicity),'child_dimension':cd})
       if total!=pd: raise ComparisonError('dimension mismatch')
-      raw.append({'parent_index':i,'degree':t['degree'],('parent_d5_labels' if is_d5 else 'parent_su6_labels'):t['labels'],'parent_group_subscript':10 if is_d5 else pr+1,'parent_q_charge':t['charge'],'parent_pl_multiplicity':t['multiplicity'],'parent_dimension':pd,'children':kids})
+      raw.append({'parent_index':i,'degree':t['degree'],('parent_d5_labels' if is_d else 'parent_su6_labels'):t['labels'],'parent_group_subscript':2*pr if is_d else pr+1,'parent_q_charge':t['charge'],'parent_pl_multiplicity':t['multiplicity'],'parent_dimension':pd,'children':kids})
     anchors=spec['anchors']; M,R,T=solve_charge_map(anchors)
-    expected=(matrix(QQ, [[0,3],[QQ(1)/4,-QQ(1)/4]]) if is_d5 else
+    expected=(matrix(QQ, [[0,3],[QQ(1)/2,0]]) if is_d6 else
+              matrix(QQ, [[0,3],[QQ(1)/4,-QQ(1)/4]]) if is_d5 else
               matrix(QQ, [[0,-3],[QQ(1)/7,-QQ(3)/7]]) if is_a6 else
               matrix(QQ, [[0,-3],[QQ(1)/6,-QQ(1)/3]]))
     if M!=expected: raise ComparisonError('derived map differs from expected convention')
@@ -126,7 +129,8 @@ def _generate_legacy(root,uv_id,finite_id,order,spec_path,strict=True,compile_pd
       else: status='representation-match-different-sign'
       matches.append({**f,'status':status,'uv_combined_multiplicity':vals[0] if vals else None})
     out=base/'branching_comparison'; out.mkdir(parents=True,exist_ok=True)
-    convention=('10 -> 5_(-2) + anti-5_(+2)' if is_d5 else
+    convention=('12 -> anti-6_(+1) + 6_(-1); node 6: 32 -> 6_(+2) + 20_(0) + anti-6_(-2)' if is_d6 else
+                '10 -> 5_(-2) + anti-5_(+2)' if is_d5 else
                 '7 -> 6_(+1) + 1_(-6)' if is_a6 else '6 -> 5_(+1) + 1_(-5)')
     raw_payload={'theory_id':uv_id,'finite_reference_id':finite_id,'maximum_t_degree':order,'branching_convention':convention,'parents':raw}
     _dump(out/'raw_branching.json',raw_payload)
@@ -139,8 +143,8 @@ def _generate_legacy(root,uv_id,finite_id,order,spec_path,strict=True,compile_pd
       got=M*vector(QQ,a['raw']); residuals.append([str(got[i]-a['physical'][i]) for i in range(2)])
     anchor_payload={'anchors':anchors,'identification_evidence':({'positive_unit_instanton':'degree-2 extra anti-10 in the enhanced SO(10) adjoint; conjugate is anti-instanton','classical_baryon':'degree-3 SU(5) anti-10 agrees with finite beta^1 channel'} if is_d5 else {'positive_unit_instanton':'degree-2 extra fundamental in branched enhanced adjoint; conjugate is anti-instanton','classical_antibaryon':'degree-3 SU(5) [0,1,0,0] agrees with finite beta^-1 channel'})}
     _dump(out/'charge_anchors.json',anchor_payload)
-    formula=({'B':'3*q','I':'(x-q)/4'} if is_d5 else {'B':'-3*q','I':'(x-3*q)/7'} if is_a6 else {'B':'-3*q','I':'(x-2*q)/6'})
-    inverse=({'q':'B/3','x':'4*I+B/3'} if is_d5 else {'q':'-B/3','x':'7*I-B'} if is_a6 else {'q':'-B/3','x':'6*I-2*B/3'})
+    formula=({'B':'3*q','I':'x/2'} if is_d6 else {'B':'3*q','I':'(x-q)/4'} if is_d5 else {'B':'-3*q','I':'(x-3*q)/7'} if is_a6 else {'B':'-3*q','I':'(x-2*q)/6'})
+    inverse=({'q':'B/3','x':'2*I'} if is_d6 else {'q':'B/3','x':'4*I+B/3'} if is_d5 else {'q':'-B/3','x':'7*I-B'} if is_a6 else {'q':'-B/3','x':'6*I-2*B/3'})
     cmap={'anchor_matrix':[[int(R[i,j]) for j in range(2)] for i in range(2)],'target_charge_matrix':[[int(T[i,j]) for j in range(2)] for i in range(2)],'rank':int(R.rank()),'determinant':int(R.det()),'solution_matrix':[[str(M[i,j]) for j in range(2)] for i in range(2)],'formula':formula,'inverse':inverse,'anchor_residuals':residuals}
     _dump(out/'charge_map.json',cmap)
     _dump(out/'physical_branching.json',{'parents':phys,'combined_by_degree':combined_terms,'finite_physical_terms':finite})
@@ -154,6 +158,7 @@ def _generate_legacy(root,uv_id,finite_id,order,spec_path,strict=True,compile_pd
       (0,0,0,0,1):{((0,1,0,0),-1),((0,0,0,1),3),((0,0,0,0),-5)}} if is_d5 else {
       (1,0,0,0,0):{((1,0,0,0),1),((0,0,0,0),-5)},(0,0,0,0,1):{((0,0,0,1),-1),((0,0,0,0),5)},
       (1,0,0,0,1):{((1,0,0,1),0),((0,0,0,0),0),((1,0,0,0),6),((0,0,0,1),-6)},(0,1,0,0,0):{((0,1,0,0),2),((1,0,0,0),-4)},(0,0,0,1,0):{((0,0,1,0),-2),((0,0,0,1),4)}})
+    if is_d6: low_expected={(1,0,0,0,0,0):{((1,0,0,0,0),1),((0,0,0,0,1),-1)},(0,1,0,0,0,0):{((1,0,0,0,1),0),((0,0,0,0,0),0),((0,0,0,1,0),-2),((0,1,0,0,0),2)},(0,0,0,0,0,1):{((1,0,0,0,0),2),((0,0,1,0,0),0),((0,0,0,0,1),-2)}}
     if is_a6: low_expected={(1,0,0,0,0,0):{((1,0,0,0,0),1),((0,0,0,0,0),-6)},(0,0,0,0,0,1):{((0,0,0,0,1),-1),((0,0,0,0,0),6)},(1,0,0,0,0,1):{((1,0,0,0,1),0),((0,0,0,0,0),0),((1,0,0,0,0),7),((0,0,0,0,1),-7)},(0,0,1,0,0,0):{((0,0,1,0,0),3),((0,1,0,0,0),-4)},(0,0,0,1,0,0):{((0,0,1,0,0),-3),((0,0,0,1,0),4)}}
     low={str(k):set((tuple(map(int,p.child_dynkin_labels)),int(p.x_charge)) for p in branch_irrep(parent,child,k,embedding))==v for k,v in low_expected.items()}
     checks={'input':{'theory_ids_correct':'pass','cutoffs_equal_10':'pass','stored_reconstruction_checks_pass':'pass','labels_complete':'pass','multiplicities_integer':'pass'},'branching':{'fundamental_normalization':'pass','low_representation_checks':'pass' if all(low.values()) else 'fail','every_parent_once':'pass','child_multiplicities_nonnegative_integer':'pass','dimensions_preserved':'pass','q_preserved':'pass','x_integral':'pass','conjugation_reverses_x':'pass','deterministic':'pass'},'anchors':{'instanton_anchor_degree_2':'pass','instanton_outside_finite_current':'pass','antibaryon_anchor_degree_3':'pass','antibaryon_matches_finite_beta_minus_1':'pass','raw_vectors_independent':'pass'},'charge_map':{'exact_unique_solution':'pass','expected_map_recovered':'pass','residuals_vanish':'pass','inverse_correct':'pass','all_physical_charges_integral':'pass','conjugation_reverses_physical_charges':'pass'},'completeness':{'all_terms_through_cutoff':'pass','negative_terms_retained':'pass','no_terms_above_cutoff':'pass','no_ellipsis_inside_cutoff':'pass'},'presentation':{'no_object_tuple_json_syntax_in_tex':'pass','tables_and_equations_generated':'pass','output_deterministic':'pending','latex_compile':'pending'}}
@@ -162,7 +167,7 @@ def _generate_legacy(root,uv_id,finite_id,order,spec_path,strict=True,compile_pd
     native=[]; final=[]
     degrees=sorted(set(x['degree'] for x in ut+ft))
     for d in degrees:
-      native.append((d,_coeff(by(ft,d),finite=True,child_subscript=cr+1),_coeff(by(ut,d),uv_subscript=10 if is_d5 else pr+1)))
+      native.append((d,_coeff(by(ft,d),finite=True,child_subscript=cr+1),_coeff(by(ut,d),uv_subscript=2*pr if is_d else pr+1)))
       fcell=_coeff([{'child_labels':x['labels'],'B':x['B'],'I':0,'multiplicity':x['multiplicity']} for x in by(finite,d)],physical=True,child_subscript=cr+1)
       ucell='<br/>'.join(render_parent(p,True) for p in phys if p['degree']==d)
       final.append((d,fcell,ucell))
@@ -200,6 +205,17 @@ For $SU(3)+6F$, the classical baryon and antibaryon both transform in the self-c
 The inverse is $q=-B/3$ and $x=7I-B$; both anchor residuals vanish exactly.
 '''
       tex=tex[:start]+replacement+tex[end:]
+    if is_d6:
+      tex=tex.replace('$SU(3)+5F$ at $|k|=3/2$', '$SU(3)+6F$ at $|k|=2$')
+      tex=tex.replace('$[a_1,a_2,a_3,a_4,a_5]_6=[a_1,a_2,a_3,a_4,a_5]_{SU(6)}$ and $[b_1,b_2,b_3,b_4]_5=[b_1,b_2,b_3,b_4]_{SU(5)}$. We fix $6\\to5_{(+1)}+1_{(-5)}$', '$[a_1,\\ldots,a_6]_{12}:=[a_1,\\ldots,a_6]_{SO(12)}$ and $[b_1,\\ldots,b_5]_6:=[b_1,\\ldots,b_5]_{SU(6)}$. We fix node six by $32\\to6_{+2}+20_0+\\overline6_{-2}$')
+      start=tex.index('\\section{Physical anchors}')
+      end=tex.index('\\section{UV branching in the physical charge basis}')
+      replacement=r'''\section{Physical anchors} The extra $[0,1,0,0,0]_{x=2,q=0}$ in the enhanced degree-two $SO(12)$ current multiplet lies outside the classical $SU(6)$ current algebra and fixes $(2,0)\mapsto(0,1)$; its conjugate is the anti-instanton direction. At degree three, $q[0,0,0,0,0,1]_{12}$ contains the $SU(6)$ $20$, $[0,0,1,0,0]_{x=0,q=1}$, matching the finite $\beta[0,0,1,0,0]_6$ classical baryon with $B=3,I=0$.
+\section{Exact charge-map derivation} Write $B=ax+bq$, $I=cx+dq$. The anchors give $2a=0$, $b=3$, $2c=1$, $d=0$, hence
+\[\binom BI=\begin{pmatrix}0&3\\1/2&0\end{pmatrix}\binom xq,\qquad B=3q,\quad I=x/2.\]
+The inverse is $q=B/3$, $x=2I$. This map was solved exactly over $\mathbb Q$, not assumed.
+'''
+      tex=tex[:start]+replacement+tex[end:]
     if is_d5:
       tex=tex.replace('$|k|=3/2$', '$|k|=5/2$')
       tex=tex.replace('$[a_1,a_2,a_3,a_4,a_5]_6=[a_1,a_2,a_3,a_4,a_5]_{SU(6)}$', '$[a_1,a_2,a_3,a_4,a_5]_{10}:=[a_1,a_2,a_3,a_4,a_5]_{SO(10)}$')
@@ -229,7 +245,7 @@ The inverse is $q=B/3$, $x=4I+B/3$. This map was solved exactly over $\mathbb Q$
     checks['presentation']['output_deterministic']='pass'
     _dump(out/'branching_checks.json',{'checks':checks,'low_representation_results':low})
     files=['raw_branching.json','raw_branching.md','charge_anchors.json','charge_map.json','physical_branching.json','physical_branching.md','finite_uv_comparison.json','finite_uv_comparison.md','branching_checks.json','branching_comparison.tex']
-    manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'cutoff':order,'source_file_hashes':{str(p.relative_to(root)):_hash(p) for p in (Path(spec_path),)},'pl_file_hashes':{str(up.relative_to(root)):_hash(up),str(fp.relative_to(root)):_hash(fp)},'reconstruction_check_hashes':{str(ur.relative_to(root)):_hash(ur),str(fr.relative_to(root)):_hash(fr)},'branching_convention':convention,'branching_implementation':('exact D5 weight restriction and A4 Weyl-character decomposition' if is_d5 else 'exact Gelfand--Tsetlin interlacing'),'raw_u1_normalization':('-2 times D5 coordinate sum' if is_d5 else 'diag(1,1,1,1,1,-5)'),'anchors':anchors,'derived_charge_map':cmap,'number_uv_parent_terms':len(raw),'number_branched_child_terms':sum(len(x['children']) for x in raw),'number_combined_child_terms':len(combined_terms),'degrees_represented':degrees,'term_counts':{'native_finite':len(ft),'native_uv':len(ut),'raw_parents':len(raw),'physical_parents':len(phys),'final_degrees':len(degrees)},'check_totals':dict(Counter(v for g in checks.values() for v in g.values())),'generated_file_hashes':{f:_hash(out/f) for f in files},'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()}
+    manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'cutoff':order,'source_file_hashes':{str(p.relative_to(root)):_hash(p) for p in (Path(spec_path),)},'pl_file_hashes':{str(up.relative_to(root)):_hash(up),str(fp.relative_to(root)):_hash(fp)},'reconstruction_check_hashes':{str(ur.relative_to(root)):_hash(ur),str(fr.relative_to(root)):_hash(fr)},'branching_convention':convention,'branching_implementation':('exact D6 weight restriction and A5 Weyl-character decomposition' if is_d6 else 'exact D5 weight restriction and A4 Weyl-character decomposition' if is_d5 else 'exact Gelfand--Tsetlin interlacing'),'raw_u1_normalization':('-sum of D6 orthonormal coordinates' if is_d6 else '-2 times D5 coordinate sum' if is_d5 else 'diag(1,1,1,1,1,-5)'),'anchors':anchors,'derived_charge_map':cmap,'number_uv_parent_terms':len(raw),'number_branched_child_terms':sum(len(x['children']) for x in raw),'number_combined_child_terms':len(combined_terms),'degrees_represented':degrees,'term_counts':{'native_finite':len(ft),'native_uv':len(ut),'raw_parents':len(raw),'physical_parents':len(phys),'final_degrees':len(degrees)},'check_totals':dict(Counter(v for g in checks.values() for v in g.values())),'generated_file_hashes':{f:_hash(out/f) for f in files},'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()}
     _dump(out/'branching_manifest.json',manifest)
     return manifest
 

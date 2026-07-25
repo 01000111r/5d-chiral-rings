@@ -1,0 +1,52 @@
+{
+  "anchor_matrix": [
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "anchor_residuals": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "determinant": 2,
+  "formula": {
+    "B": "3*q",
+    "I": "x/2"
+  },
+  "inverse": {
+    "q": "B/3",
+    "x": "2*I"
+  },
+  "rank": 2,
+  "solution_matrix": [
+    [
+      "0",
+      "3"
+    ],
+    [
+      "1/2",
+      "0"
+    ]
+  ],
+  "target_charge_matrix": [
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}

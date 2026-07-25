@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+\usepackage{qfffcalc}
+
+\QFFFMetadata
+  {$\mathrm{SU}(3)+5F$}
+  {\frac12}
+  {$\mathrm{SU}(5)\times\mathrm{U}(1)_B\times\mathrm{U}(1)_I$}
+  {$\mathrm{SU}(5)\times\mathrm{SU}(2)\times\mathrm{U}(1)_q$}
+  {degrees $2$--$10$}
+  {Finite--UV branching and charge map}
+  {Complete}
+
+\begin{document}
+\MakeQFFFTitle
+
+\section{Conventions}
+\[
+\mathrm{SU}(5)\times\mathrm{SU}(2)
+\longrightarrow
+\mathrm{SU}(5)\times\mathrm{U}(1)_x,
+\qquad
+[a_1,a_2,a_3,a_4;b]_{5,2}
+=[a_1,a_2,a_3,a_4]_5\otimes[b]_2,
+\]
+\[
+[b]_2\longrightarrow\sum_{r=0}^{b}1_{x=b-2r}.
+\]
+The raw abelian basis is $(x,q)$.
+
+\section{Finite and ultraviolet plethystic logarithms}
+{\small
+\begin{xltabular}{\linewidth}{@{}>{\centering\arraybackslash}p{0.05\linewidth} p{0.39\linewidth} X@{}}
+\toprule
+$d$ & finite PL & UV PL\\
+\midrule
+2 & $[0,0,0,0]_{5}\QFFFplus [1,0,0,1]_{5}$
+& $[0,0,0,0;0]_{5,2}\QFFFplus [0,0,0,0;2]_{5,2}\QFFFplus [1,0,0,1;0]_{5,2}$\\
+3 & $\beta^{-1}[0,1,0,0]_{5}\QFFFplus \beta[0,0,1,0]_{5}$
+& $q^{-1}[0,0,1,0;1]_{5,2}\QFFFplus q[0,1,0,0;1]_{5,2}$\\
+4 & $\QFFFminus [0,0,0,0]_{5}\QFFFminus [1,0,0,1]_{5}$
+& $\QFFFminus 2[0,0,0,0;0]_{5,2}\QFFFminus [1,0,0,1;0]_{5,2}$\\
+5 & $\QFFFminus \beta^{-1}\bigl([0,0,1,1]\QFFFplus [0,1,0,0]\QFFFplus [2,0,0,0]\bigr)_{5}$
+$\QFFFminus \beta\bigl([0,0,0,2]\QFFFplus [0,0,1,0]\QFFFplus [1,1,0,0]\bigr)_{5}$
+& $\QFFFminus q^{-1}[0,0,0,2;1]_{5,2}\QFFFminus 2q^{-1}[0,0,1,0;1]_{5,2}\QFFFminus q^{-1}[1,1,0,0;1]_{5,2}$
+$\QFFFminus q[0,0,1,1;1]_{5,2}\QFFFminus 2q[0,1,0,0;1]_{5,2}\QFFFminus q[2,0,0,0;1]_{5,2}$\\
+6 & $\QFFFminus \beta^{-2}[0,0,0,1]_{5}\QFFFminus [0,0,0,0]_{5}\QFFFminus \beta^{2}[1,0,0,0]_{5}$
+& $\QFFFminus q^{-2}[0,1,0,1;0]_{5,2}\QFFFminus q^{-2}[1,0,0,0;2]_{5,2}\QFFFminus [0,0,0,0;0]_{5,2}$
+$\QFFFminus [0,0,0,0;2]_{5,2}\QFFFminus [0,1,1,0;0]_{5,2}\QFFFminus [0,1,1,0;2]_{5,2}$
+$\QFFFminus [1,0,0,1;2]_{5,2}\QFFFminus q^2[0,0,0,1;2]_{5,2}\QFFFminus q^2[1,0,1,0;0]_{5,2}$\\
+\bottomrule
+\end{xltabular}
+}
+
+\section{Raw branching of the generators}
+\subsection*{Degree 2}
+\begin{align*}
+[0,0,0,0;0]_{5,2}
+&\longrightarrow [0,0,0,0]_{5;(0,0)},\\
+[0,0,0,0;2]_{5,2}
+&\longrightarrow [0,0,0,0]_{5;(2,0)}
+\QFFFplus [0,0,0,0]_{5;(0,0)}
+\QFFFplus [0,0,0,0]_{5;(-2,0)},\\
+[1,0,0,1;0]_{5,2}
+&\longrightarrow [1,0,0,1]_{5;(0,0)}.
+\end{align*}
+
+\subsection*{Degree 3}
+\begin{align*}
+q^{-1}[0,0,1,0;1]_{5,2}
+&\longrightarrow [0,0,1,0]_{5;(1,-1)}
+\QFFFplus [0,0,1,0]_{5;(-1,-1)},\\
+q[0,1,0,0;1]_{5,2}
+&\longrightarrow [0,1,0,0]_{5;(1,1)}
+\QFFFplus [0,1,0,0]_{5;(-1,1)}.
+\end{align*}
+The ordered charge pair is $(x,q)$.
+
+\section{Charge map}
+\[
+(2,0)_{x,q}\longmapsto(0,1)_{B,I},
+\qquad
+(1,1)_{x,q}\longmapsto(-3,0)_{B,I}.
+\]
+\begin{equation}
+\begin{pmatrix}B\\ I\end{pmatrix}
+=
+\begin{pmatrix}
+0&-3\\[1mm]
+\frac12&-\frac12
+\end{pmatrix}
+\begin{pmatrix}x\\ q\end{pmatrix},
+\qquad
+B=-3q,
+\qquad
+I=\frac{x\QFFFminus q}{2}.
+\end{equation}
+The inverse map is
+\[
+q=-\frac{B}{3},
+\qquad
+x=2I-\frac{B}{3}.
+\]
+
+\section{Physical branching through degree six}
+{\small\input{data/branching_physical_low.tex}}
+
+\BeginQFFFAppendices
+
+\clearpage
+\begin{landscape}
+\section{Complete native finite and ultraviolet plethystic logarithms}
+{\footnotesize\input{data/branching_native_pl_table.tex}}
+\end{landscape}
+
+\clearpage
+\begin{landscape}
+\section{Complete raw branching through degree ten}
+{\footnotesize\input{data/branching_raw_full.tex}}
+\end{landscape}
+
+\clearpage
+\begin{landscape}
+\section{Complete physical branching through degree ten}
+{\footnotesize\input{data/branching_physical_full.tex}}
+\end{landscape}
+
+\clearpage
+\begin{landscape}
+\section{Complete finite-versus-UV comparison}
+{\footnotesize
+\renewcommand{\arraystretch}{1.06}%
+\input{data/branching_comparison_sections.tex}}
+\end{landscape}
+
+\end{document}

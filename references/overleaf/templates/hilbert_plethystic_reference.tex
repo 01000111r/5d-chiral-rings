@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage{qfffcalc}
+
+\QFFFMetadata
+  {$\mathrm{SU}(3)+5F$}
+  {\frac12}
+  {$\mathrm{SU}(5)\times\mathrm{U}(1)_B$}
+  {$\mathrm{SU}(5)\times\mathrm{SU}(2)\times\mathrm{U}(1)_q$}
+  {$O(t^{11})$}
+  {Hilbert series and plethystic logarithm}
+  {Complete}
+
+\begin{document}
+\MakeQFFFTitle
+
+\section{Conventions}
+\[
+[a_1,a_2,a_3,a_4;b]
+=[a_1,a_2,a_3,a_4]_{\mathrm{SU}(5)}\otimes[b]_{\mathrm{SU}(2)},
+\qquad t^{2R}.
+\]
+The fugacity $q$ denotes the raw ultraviolet abelian charge.  Non-abelian unrefinement replaces each character by its dimension.
+
+\section{Highest-weight generating function}
+\begin{align}
+\mathrm{HWG}
+={}&\PE\!\left[(\mu_1\mu_4+\nu^2+1)t^2
++\nu(q\mu_2+q^{-1}\mu_3)t^3
++\mu_2\mu_3t^4-\nu^2\mu_2\mu_3t^6\right],
+\label{eq:hwg-pe}
+\end{align}
+\begin{align}
+\mathrm{HWG}
+={}&\frac{1-\nu^2\mu_2\mu_3t^6}
+{(1-t^2)(1-\nu^2t^2)(1-\mu_1\mu_4t^2)}
+\nonumber\\[-1mm]
+&\times\frac{1}
+{(1-\nu q\mu_2t^3)(1-\nu q^{-1}\mu_3t^3)(1-\mu_2\mu_3t^4)}.
+\label{eq:hwg-rational}
+\end{align}
+
+\section{Highest-weight expansion}
+\begin{align*}
+\mathrm{HWG}(t,q;\mu,\nu)={}&1
++\bigl(1+\nu^2+\mu_1\mu_4\bigr)t^2
++\bigl(q^{-1}\mu_3\nu+q\mu_2\nu\bigr)t^3\\
+&+\Bigl(1+\nu^2+\nu^4+\mu_2\mu_3+\mu_1\mu_4
+ +\mu_1\mu_4\nu^2+\mu_1^2\mu_4^2\Bigr)t^4\\
+&+\Bigl(q^{-1}\mu_3\nu+q^{-1}\mu_3\nu^3
+ +q\mu_2\nu+q\mu_2\nu^3\\
+&\hspace{1.4cm}+q^{-1}\mu_1\mu_3\mu_4\nu
+ +q\mu_1\mu_2\mu_4\nu\Bigr)t^5\\
+&+\Bigl(1+\nu^2+\nu^4+\nu^6+q^{-2}\mu_3^2\nu^2
+ +\mu_2\mu_3+\mu_2\mu_3\nu^2\\
+&\hspace{1.4cm}+q^2\mu_2^2\nu^2+\mu_1\mu_4
+ +\mu_1\mu_4\nu^2+\mu_1\mu_4\nu^4\\
+&\hspace{1.4cm}+\mu_1\mu_2\mu_3\mu_4+\mu_1^2\mu_4^2
+ +\mu_1^2\mu_4^2\nu^2+\mu_1^3\mu_4^3\Bigr)t^6
++O(t^7).
+\end{align*}
+The complete expansion through $t^{10}$ is given in Appendix~A.
+
+\section{Hilbert series}
+\subsection{Character-valued series}
+\begin{align*}
+H(t,q)={}&[0,0,0,0;0]\\
+&+\bigl([0,0,0,0;0]+[0,0,0,0;2]+[1,0,0,1;0]\bigr)t^2\\
+&+\bigl(q^{-1}[0,0,1,0;1]+q[0,1,0,0;1]\bigr)t^3\\
+&+\Bigl([0,0,0,0;0]+[0,0,0,0;2]+[0,0,0,0;4]
++[0,1,1,0;0]\\
+&\hspace{1.2cm}+[1,0,0,1;0]+[1,0,0,1;2]+[2,0,0,2;0]\Bigr)t^4\\
+&+\Bigl(q^{-1}[0,0,1,0;1]+q^{-1}[0,0,1,0;3]
++q^{-1}[1,0,1,1;1]\\
+&\hspace{1.2cm}+q[0,1,0,0;1]+q[0,1,0,0;3]
++q[1,1,0,1;1]\Bigr)t^5\\
+&+\Bigl(q^{-2}[0,0,2,0;2]+[0,0,0,0;0]+[0,0,0,0;2]
++[0,0,0,0;4]\\
+&\hspace{1.2cm}+[0,0,0,0;6]+[0,1,1,0;0]+[0,1,1,0;2]
++[1,0,0,1;0]\\
+&\hspace{1.2cm}+[1,0,0,1;2]+[1,0,0,1;4]+[1,1,1,1;0]
++[2,0,0,2;0]\\
+&\hspace{1.2cm}+[2,0,0,2;2]+[3,0,0,3;0]+q^2[0,2,0,0;2]\Bigr)t^6
++O(t^7).
+\end{align*}
+
+\subsection{$q$-refined dimension series}
+\input{data/f5k12_hdim_full.tex}
+
+\subsection{Unrefined series}
+\begin{align}
+H(t)={}&1+28t^2+40t^3+380t^4+820t^5+3656t^6+8460t^7
+\nonumber\\
+&+27076t^8+60620t^9+160068t^{10}+O(t^{11}).
+\label{eq:unrefined-hs}
+\end{align}
+
+\paragraph{Literature comparison.}
+The coefficients through $t^6$ agree with equation (12.5) of Ferlito--Hanany--Mekareeya--Zafrir for the $n=3$ member of the $\mathrm{SU}(n)_{\pm1/2}$, $N_f=2n-1$ sequence.  The terms from $t^7$ through $t^{10}$ extend the displayed order.
+
+\section{Plethystic logarithm}
+\subsection{Character-valued series}
+\begin{align*}
+\PL[H(t,q)]={}&
+\bigl([0,0,0,0;0]+[0,0,0,0;2]+[1,0,0,1;0]\bigr)t^2\\
+&+\bigl(q^{-1}[0,0,1,0;1]+q[0,1,0,0;1]\bigr)t^3\\
+&-\bigl(2[0,0,0,0;0]+[1,0,0,1;0]\bigr)t^4\\
+&-\Bigl(q^{-1}[0,0,0,2;1]+2q^{-1}[0,0,1,0;1]
++q^{-1}[1,1,0,0;1]\\
+&\hspace{1.2cm}+q[0,0,1,1;1]+2q[0,1,0,0;1]
++q[2,0,0,0;1]\Bigr)t^5\\
+&-\Bigl(q^{-2}[0,1,0,1;0]+q^{-2}[1,0,0,0;2]
++[0,0,0,0;0]\\
+&\hspace{1.2cm}+[0,0,0,0;2]+[0,1,1,0;0]+[0,1,1,0;2]
++[1,0,0,1;2]\\
+&\hspace{1.2cm}+q^2[0,0,0,1;2]+q^2[1,0,1,0;0]\Bigr)t^6
++O(t^7).
+\end{align*}
+
+\subsection{Dimension-refined and unrefined series}
+\input{data/f5k12_pl_dim_full.tex}
+\input{data/f5k12_pl_unrefined_full.tex}
+
+\begin{thebibliography}{9}
+\bibitem{Ferlito2017}
+G.~Ferlito, A.~Hanany, N.~Mekareeya and G.~Zafrir,
+``3d Coulomb branch and 5d Higgs branch at infinite coupling,''
+\emph{JHEP} \textbf{07} (2018) 061,
+\href{https://arxiv.org/abs/1712.06604}{arXiv:1712.06604}.
+\end{thebibliography}
+
+\BeginQFFFAppendices
+
+\clearpage
+\begin{landscape}
+\section{Complete highest-weight expansion through $t^{10}$}
+{\small\input{data/f5k12_highest_weight_full.tex}}
+\end{landscape}
+
+\clearpage
+\begin{landscape}
+\section{Complete character Hilbert series through $t^{10}$}
+{\small\input{data/f5k12_character_hs_full.tex}}
+\end{landscape}
+
+\clearpage
+\begin{landscape}
+\section{Complete character-valued plethystic logarithm through $t^{10}$}
+{\footnotesize\input{data/f5k12_pl_character_full.tex}}
+\end{landscape}
+
+\end{document}

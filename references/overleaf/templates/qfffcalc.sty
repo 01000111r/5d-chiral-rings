@@ -1,0 +1,145 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{qfffcalc}[2026/07/25 Minimal QFFF calculation-note style]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{amsmath,amssymb,mathtools}
+\RequirePackage{newtxtext,newtxmath}
+\RequirePackage{microtype}
+\RequirePackage[a4paper,margin=25mm,headheight=14pt]{geometry}
+\RequirePackage{booktabs,longtable,array,tabularx,xltabular}
+\RequirePackage{pdflscape}
+\RequirePackage{enumitem}
+\RequirePackage{needspace}
+\RequirePackage{fancyhdr}
+\RequirePackage{titlesec}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage[nameinlink,noabbrev]{cleveref}
+\RequirePackage{xparse}
+
+\allowdisplaybreaks[4]
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.6em,itemsep=0.15em,topsep=0.4em}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=0.15em,topsep=0.4em}
+\renewcommand{\arraystretch}{1.16}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.4em}
+\setlength{\abovedisplayskip}{0.65em}
+\setlength{\belowdisplayskip}{0.65em}
+\setlength{\abovedisplayshortskip}{0.35em}
+\setlength{\belowdisplayshortskip}{0.35em}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{1.8em}{0.55em}
+\titlespacing*{\subsection}{0pt}{1.25em}{0.35em}
+\titlespacing*{\subsubsection}{0pt}{1em}{0.25em}
+
+\newcommand{\QFFFTheory}{Theory not set}
+\newcommand{\QFFFCS}{--}
+\newcommand{\QFFFFiniteSymmetry}{--}
+\newcommand{\QFFFUVSymmetry}{--}
+\newcommand{\QFFFExpansionOrder}{--}
+\newcommand{\QFFFDocumentKind}{Calculation note}
+\newcommand{\QFFFStatus}{Draft}
+
+% Change only this metadata block when reusing the template for another case.
+\newcommand{\QFFFMetadata}[7]{%
+  \renewcommand{\QFFFTheory}{#1}%
+  \renewcommand{\QFFFCS}{#2}%
+  \renewcommand{\QFFFFiniteSymmetry}{#3}%
+  \renewcommand{\QFFFUVSymmetry}{#4}%
+  \renewcommand{\QFFFExpansionOrder}{#5}%
+  \renewcommand{\QFFFDocumentKind}{#6}%
+  \renewcommand{\QFFFStatus}{#7}%
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape \QFFFTheory}
+\fancyhead[R]{\small\itshape \QFFFDocumentKind}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\MakeQFFFTitle}{%
+  \thispagestyle{plain}%
+  \begin{center}
+    \rule{\linewidth}{0.7pt}\\[0.9em]
+    {\LARGE\bfseries \QFFFDocumentKind\par}
+    \vspace{0.45em}
+    {\Large \QFFFTheory,\quad $\lvert k\rvert=\QFFFCS$\par}
+    \vspace{0.8em}
+    \rule{\linewidth}{0.7pt}
+  \end{center}
+  \vspace{0.5em}
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}>{\bfseries}l X@{}}
+    Finite symmetry: & \QFFFFiniteSymmetry\\
+    UV symmetry: & \QFFFUVSymmetry\\
+    Expansion order: & \QFFFExpansionOrder
+  \end{tabularx}
+  \vspace{0.7em}
+}
+
+% Plain black-and-white blocks. They deliberately avoid colour, fills and rounded frames.
+\NewDocumentEnvironment{resultbox}{O{}}{%
+  \par\addvspace{0.75em}
+  \noindent\rule{\linewidth}{0.45pt}\par\nobreak
+  \vspace{0.35em}
+  \if\relax\detokenize{#1}\relax\else\noindent\textbf{#1}\par\smallskip\fi
+  \begin{quote}
+}{%
+  \end{quote}
+  \vspace{-0.25em}
+  \noindent\rule{\linewidth}{0.45pt}\par
+  \addvspace{0.75em}
+}
+
+\NewDocumentEnvironment{literaturecheck}{O{Literature check}}{%
+  \par\addvspace{0.65em}
+  \begin{quote}\small
+  \noindent\textbf{#1.}\quad
+}{%
+  \end{quote}
+  \addvspace{0.45em}
+}
+
+\NewDocumentEnvironment{notebox}{O{Note}}{%
+  \par\addvspace{0.55em}
+  \begin{quote}\small
+  \noindent\textit{#1.}\quad
+}{%
+  \end{quote}
+  \addvspace{0.35em}
+}
+
+\newcommand{\CheckPass}[1]{\item #1}
+\newcommand{\PE}{\operatorname{PE}}
+\newcommand{\PL}{\operatorname{PL}}
+\newcommand{\Rep}[1]{\left[#1\right]}
+\newcommand{\PhysCharge}[2]{_{B=#1,\,I=#2}}
+\newcommand{\RawCharge}[2]{_{x=#1,\,q=#2}}
+% Signed terms may break before the sign, but never between the sign and its term.
+% This prevents a + or - from being stranded at the end of a line.
+\newcommand{\QFFFplus}{\allowbreak\mathord{+}\nobreak\,}
+\newcommand{\QFFFminus}{\allowbreak\mathord{-}\nobreak\,}
+
+\newcommand{\DegreeHeading}[1]{\Needspace{5\baselineskip}\subsubsection*{Degree #1}}
+
+\newcommand{\FullDataNotice}[1]{%
+  \begin{notebox}[Full data]
+  #1 The exhaustive expressions are retained in the appendices so that the main calculation remains readable. No term, sign, multiplicity, Dynkin label or charge has been removed.
+  \end{notebox}
+}
+
+\newcommand{\BeginQFFFAppendices}{%
+  \clearpage
+  \appendix
+  \renewcommand{\thesection}{\Alph{section}}
+}
+
+\AtBeginDocument{%
+  \setlength{\emergencystretch}{2em}%
+}

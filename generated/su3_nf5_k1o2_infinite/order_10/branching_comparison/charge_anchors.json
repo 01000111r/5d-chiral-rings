@@ -1,67 +1,108 @@
 {
-  "anchors": [
-    {
-      "child_dynkin_labels": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "degree": 2,
-      "id": "positive_unit_instanton",
-      "parent_labels": [
-        [
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          2
-        ]
-      ],
-      "physical": [
-        0,
-        1
-      ],
-      "raw": [
-        2,
-        0
-      ]
+  "classical_anchor": {
+    "child_representation": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "degree": 3,
+    "evidence": {
+      "level": "finite_pl",
+      "source": "finite beta-graded refined PL and exact branching"
     },
-    {
-      "child_dynkin_labels": [
+    "finite_beta_charge": -1,
+    "parent_representations": [
+      [
         0,
         1,
         0,
         0
       ],
-      "degree": 3,
-      "finite_beta_charge": -1,
-      "id": "classical_antibaryon",
-      "parent_labels": [
-        [
-          0,
-          1,
-          0,
-          0
-        ],
-        [
-          1
-        ]
-      ],
-      "physical": [
-        -3,
-        0
-      ],
-      "raw": [
-        1,
+      [
         1
       ]
+    ],
+    "raw_charges": {
+      "q": 1,
+      "x": 1
+    },
+    "role": "classical antibaryon",
+    "target": {
+      "B": -3,
+      "I": 0
     }
-  ],
-  "verification": {
-    "classical_antibaryon": "the x=+1 weight of q[0,1,0,0;1] matches finite beta^-1; the conjugate x=-1,q=-1 is the baryon",
-    "positive_unit_instanton": "x=+2 selects the positive enhanced SU(2) root current and fixes instanton orientation; x=-2 is the negative root"
-  }
+  },
+  "conjugate_check": {
+    "child_representation": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree": 2,
+    "evidence": {
+      "level": "exact_branching",
+      "source": "exact conjugate child in stored branching"
+    },
+    "parent_representations": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    "raw_charges": {
+      "q": 0,
+      "x": -2
+    },
+    "role": "conjugate anti-instanton",
+    "target": {
+      "B": "5/2",
+      "I": -1
+    }
+  },
+  "cs_orientation": "hanany_negative",
+  "instanton_anchor": {
+    "child_representation": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree": 2,
+    "evidence": {
+      "level": "project_derived",
+      "source": "Hanany family section and exact stored branching"
+    },
+    "parent_representations": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2
+      ]
+    ],
+    "raw_charges": {
+      "q": 0,
+      "x": 2
+    },
+    "role": "negative-CS E_- conserved current",
+    "target": {
+      "B": "-5/2",
+      "I": 1
+    }
+  },
+  "literature_orientation": {
+    "convention": "Ferlito--Hanany--Mekareeya--Zafrir negative-CS",
+    "project_note": "references/project_notes/hanany_negative_cs_convention.md"
+  },
+  "signed_k": "-1/2"
 }

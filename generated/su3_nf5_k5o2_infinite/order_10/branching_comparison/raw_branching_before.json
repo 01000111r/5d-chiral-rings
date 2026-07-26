@@ -1,5 +1,5 @@
 {
-  "branching_convention": "D5 -> A4 + U(1)_x; A4 roots e_i-e_(i+1), x=-2 sum_i w_i",
+  "branching_convention": "10 -> 5_(-2) + anti-5_(+2)",
   "finite_reference_id": "su3_nf5_finite",
   "maximum_t_degree": 10,
   "parents": [
@@ -122,8 +122,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -134,10 +134,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -164,10 +164,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
             0,
-            0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -178,8 +178,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -320,8 +320,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -332,10 +332,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -373,12 +373,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
-            0,
-            2
+            1,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -389,8 +389,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -399,25 +399,38 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
-            1,
-            1,
+            2,
+            0,
             0,
             0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
           "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            0,
             1,
             0,
-            1
+            1,
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -431,19 +444,6 @@
             0,
             0,
             0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -1,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 5,
-          "child_su5_labels": [
-            0,
-            0,
-            0,
-            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -470,10 +470,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
             0,
-            0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -484,8 +484,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -526,10 +526,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -537,10 +537,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 5,
+          "child_dimension": 45,
           "child_su5_labels": [
             0,
-            0,
+            1,
             0,
             1
           ],
@@ -550,11 +550,11 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 45,
+          "child_dimension": 5,
           "child_su5_labels": [
             1,
             0,
-            1,
+            0,
             0
           ],
           "q_charge": 1,
@@ -563,12 +563,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
             0,
             0,
-            1,
-            1
+            0,
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -579,8 +579,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -589,10 +589,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
-            2,
-            0,
+            1,
+            1,
             0,
             0
           ],
@@ -1023,8 +1023,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -1035,10 +1035,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -1076,12 +1076,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
-            0,
-            2
+            1,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
@@ -1092,8 +1092,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -1102,25 +1102,38 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
-            1,
-            1,
+            2,
+            0,
             0,
             0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
           "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            0,
             1,
             0,
-            1
+            1,
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
@@ -1134,19 +1147,6 @@
             0,
             0,
             0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 2,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 5,
-          "child_su5_labels": [
-            0,
-            0,
-            0,
-            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
@@ -1173,14 +1173,27 @@
           "branching_multiplicity": 1,
           "child_dimension": 15,
           "child_su5_labels": [
-            2,
             0,
             0,
-            0
+            0,
+            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
           "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
         },
         {
           "branching_multiplicity": 1,
@@ -1197,25 +1210,25 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 126,
+          "child_dimension": 35,
           "child_su5_labels": [
-            2,
             0,
-            1,
-            0
+            0,
+            0,
+            3
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
-          "x_charge": -5
+          "x_charge": -1
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
-            0,
-            2
+            1,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -1226,8 +1239,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            0,
             1,
+            0,
             1
           ],
           "q_charge": -1,
@@ -1236,22 +1249,9 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
-            1,
-            1,
-            0,
-            0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 35,
-          "child_su5_labels": [
-            3,
+            2,
             0,
             0,
             0
@@ -1262,11 +1262,11 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 105,
+          "child_dimension": 70,
           "child_su5_labels": [
-            0,
-            0,
             1,
+            0,
+            0,
             2
           ],
           "q_charge": -1,
@@ -1277,10 +1277,23 @@
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            0,
             1,
             0,
-            1
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -1294,19 +1307,6 @@
             0,
             0,
             1
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_su5_labels": [
-            1,
-            0,
-            0,
-            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -1333,10 +1333,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
             0,
-            0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -1347,8 +1347,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -1389,10 +1389,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
@@ -1400,10 +1400,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 5,
+          "child_dimension": 45,
           "child_su5_labels": [
             0,
-            0,
+            1,
             0,
             1
           ],
@@ -1413,11 +1413,11 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 45,
+          "child_dimension": 5,
           "child_su5_labels": [
             1,
             0,
-            1,
+            0,
             0
           ],
           "q_charge": 1,
@@ -1426,12 +1426,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
             0,
             0,
-            1,
-            1
+            0,
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
@@ -1442,8 +1442,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -1452,10 +1452,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
-            2,
-            0,
+            1,
+            1,
             0,
             0
           ],
@@ -1497,10 +1497,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            2,
+            1,
             0,
             0,
-            1
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -1508,11 +1508,11 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 70,
+          "child_dimension": 105,
           "child_su5_labels": [
+            0,
+            0,
             1,
-            0,
-            0,
             2
           ],
           "q_charge": 1,
@@ -1523,10 +1523,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            1,
             0,
             1,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -1534,12 +1534,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 105,
+          "child_dimension": 70,
           "child_su5_labels": [
             2,
-            1,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -1547,25 +1547,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 35,
+          "child_dimension": 15,
           "child_su5_labels": [
             0,
             0,
             0,
-            3
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 1,
-          "x_charge": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 40,
-          "child_su5_labels": [
-            0,
-            0,
-            1,
-            1
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -1576,8 +1563,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            1,
             0,
+            1,
             1
           ],
           "q_charge": 1,
@@ -1586,10 +1573,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
-            2,
-            0,
+            1,
+            1,
             0,
             0
           ],
@@ -1599,16 +1586,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 126,
+          "child_dimension": 35,
           "child_su5_labels": [
+            3,
             0,
-            1,
             0,
-            2
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
-          "x_charge": 5
+          "x_charge": 1
         },
         {
           "branching_multiplicity": 1,
@@ -1625,12 +1612,25 @@
         },
         {
           "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
           "child_dimension": 15,
           "child_su5_labels": [
+            2,
             0,
             0,
-            0,
-            2
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -3277,10 +3277,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
             0,
-            0,
-            1
+            0
           ],
           "q_charge": -3,
           "signed_total_multiplicity": 1,
@@ -3291,8 +3291,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": -3,
@@ -3347,8 +3347,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -3359,10 +3359,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3389,10 +3389,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
             0,
-            0,
-            1
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3400,12 +3400,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 10,
           "child_su5_labels": [
             0,
             0,
             1,
-            1
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3413,9 +3413,9 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 10,
+          "child_dimension": 40,
           "child_su5_labels": [
-            0,
+            1,
             1,
             0,
             0
@@ -3432,19 +3432,6 @@
             0,
             0,
             0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -5
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 175,
-          "child_su5_labels": [
-            0,
-            0,
-            2,
-            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3478,11 +3465,37 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 10,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
             1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -3494,8 +3507,8 @@
           "child_dimension": 315,
           "child_su5_labels": [
             0,
-            1,
             2,
+            1,
             0
           ],
           "q_charge": -1,
@@ -3507,8 +3520,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            0,
             1,
+            0,
             1
           ],
           "q_charge": -1,
@@ -3517,38 +3530,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
-          "child_su5_labels": [
-            1,
-            1,
-            0,
-            0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 50,
-          "child_su5_labels": [
-            0,
-            0,
-            2,
-            0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3558,9 +3545,22 @@
           "branching_multiplicity": 1,
           "child_dimension": 280,
           "child_su5_labels": [
+            0,
             1,
             1,
-            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
             0
           ],
           "q_charge": -1,
@@ -3571,10 +3571,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            2,
+            1,
             0,
             0,
-            1
+            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3582,12 +3582,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 45,
+          "child_dimension": 105,
           "child_su5_labels": [
-            1,
+            0,
             0,
             1,
-            0
+            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3595,12 +3595,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 105,
+          "child_dimension": 45,
           "child_su5_labels": [
-            2,
+            0,
             1,
             0,
-            0
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3610,10 +3610,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 15,
           "child_su5_labels": [
-            2,
             0,
             0,
-            0
+            0,
+            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3640,10 +3640,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 35,
           "child_su5_labels": [
+            3,
             0,
             0,
-            0,
-            3
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3653,10 +3653,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 126,
           "child_su5_labels": [
+            2,
             0,
             1,
-            0,
-            2
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3664,25 +3664,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
-          "child_su5_labels": [
-            0,
-            0,
-            0,
-            2
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_su5_labels": [
+            1,
             0,
             2,
-            0,
-            1
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3690,24 +3677,24 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 45,
+          "child_dimension": 15,
           "child_su5_labels": [
+            2,
             0,
-            1,
             0,
-            1
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
-          "x_charge": 3
+          "x_charge": -1
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 175,
           "child_su5_labels": [
             0,
-            3,
             0,
+            3,
             0
           ],
           "q_charge": -1,
@@ -3716,12 +3703,25 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 5,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
           "child_su5_labels": [
             0,
             0,
-            0,
-            1
+            2,
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -3729,10 +3729,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 50,
+          "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
-            2,
             0,
             0
           ],
@@ -3745,8 +3745,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": -1,
@@ -3787,27 +3787,14 @@
           "branching_multiplicity": 1,
           "child_dimension": 40,
           "child_su5_labels": [
-            0,
-            0,
             1,
-            1
+            1,
+            0,
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
           "x_charge": -9
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 126,
-          "child_su5_labels": [
-            0,
-            1,
-            0,
-            2
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 2,
-          "x_charge": -5
         },
         {
           "branching_multiplicity": 1,
@@ -3837,12 +3824,25 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
-            0,
-            2
+            1,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
@@ -3853,8 +3853,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -3865,10 +3865,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_su5_labels": [
+            1,
             0,
             2,
-            0,
-            1
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
@@ -3879,8 +3879,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            0,
             1,
+            0,
             1
           ],
           "q_charge": -1,
@@ -3889,38 +3889,25 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
-            1,
-            1,
+            2,
+            0,
             0,
             0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
           "x_charge": -1
-        },
-        {
-          "branching_multiplicity": 2,
-          "child_dimension": 45,
-          "child_su5_labels": [
-            0,
-            1,
-            0,
-            1
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 4,
-          "x_charge": 3
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
@@ -3930,35 +3917,35 @@
           "branching_multiplicity": 1,
           "child_dimension": 280,
           "child_su5_labels": [
+            0,
             1,
             1,
-            1,
-            0
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 2,
           "x_charge": 3
         },
         {
-          "branching_multiplicity": 1,
-          "child_dimension": 5,
+          "branching_multiplicity": 2,
+          "child_dimension": 45,
           "child_su5_labels": [
+            1,
             0,
-            0,
-            0,
-            1
+            1,
+            0
           ],
           "q_charge": -1,
-          "signed_total_multiplicity": 2,
-          "x_charge": 7
+          "signed_total_multiplicity": 4,
+          "x_charge": 3
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 50,
           "child_su5_labels": [
             0,
-            2,
             0,
+            2,
             0
           ],
           "q_charge": -1,
@@ -3969,9 +3956,22 @@
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            1,
             0,
             1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
             0
           ],
           "q_charge": -1,
@@ -3983,8 +3983,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": -1,
@@ -4013,8 +4013,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": -1,
@@ -4061,12 +4061,25 @@
           "x_charge": -5
         },
         {
-          "branching_multiplicity": 2,
-          "child_dimension": 10,
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
             1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
             0
           ],
           "q_charge": -1,
@@ -4078,8 +4091,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            0,
             1,
+            0,
             1
           ],
           "q_charge": -1,
@@ -4088,49 +4101,23 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 5,
           "child_su5_labels": [
-            1,
-            1,
             0,
-            0
+            0,
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
-          "x_charge": -1
+          "x_charge": 3
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 50,
           "child_su5_labels": [
             0,
-            0,
             2,
-            0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 45,
-          "child_su5_labels": [
-            0,
-            1,
-            0,
-            1
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": 1,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 5,
-          "child_su5_labels": [
-            1,
-            0,
             0,
             0
           ],
@@ -4142,10 +4129,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            2,
+            1,
             0,
             0,
-            1
+            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -4159,6 +4146,19 @@
             0,
             1,
             0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": 1,
@@ -4185,14 +4185,27 @@
           "branching_multiplicity": 1,
           "child_dimension": 15,
           "child_su5_labels": [
-            2,
             0,
             0,
-            0
+            0,
+            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -2,
           "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -5
         },
         {
           "branching_multiplicity": 1,
@@ -4209,25 +4222,25 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 126,
+          "child_dimension": 35,
           "child_su5_labels": [
-            2,
             0,
-            1,
-            0
+            0,
+            0,
+            3
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -2,
-          "x_charge": -5
+          "x_charge": -1
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
-            0,
-            2
+            1,
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -2,
@@ -4238,8 +4251,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            0,
             1,
+            0,
             1
           ],
           "q_charge": -1,
@@ -4248,22 +4261,9 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
-            1,
-            1,
-            0,
-            0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -2,
-          "x_charge": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 35,
-          "child_su5_labels": [
-            3,
+            2,
             0,
             0,
             0
@@ -4274,11 +4274,11 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 105,
+          "child_dimension": 70,
           "child_su5_labels": [
-            0,
-            0,
             1,
+            0,
+            0,
             2
           ],
           "q_charge": -1,
@@ -4289,10 +4289,23 @@
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            0,
             1,
             0,
-            1
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -2,
@@ -4306,19 +4319,6 @@
             0,
             0,
             1
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -2,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_su5_labels": [
-            1,
-            0,
-            0,
-            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -2,
@@ -4345,14 +4345,40 @@
           "branching_multiplicity": 1,
           "child_dimension": 160,
           "child_su5_labels": [
-            3,
+            1,
             0,
             0,
-            1
+            3
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
           "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 224,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
         },
         {
           "branching_multiplicity": 1,
@@ -4369,38 +4395,25 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 126,
+          "child_dimension": 35,
           "child_su5_labels": [
-            2,
             0,
-            1,
-            0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -1,
-          "x_charge": -5
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 224,
-          "child_su5_labels": [
-            3,
-            1,
-            0,
-            0
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -1,
-          "x_charge": -5
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 160,
-          "child_su5_labels": [
-            1,
             0,
             0,
             3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 450,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            2
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -4411,19 +4424,6 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            0,
-            1,
-            1
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -1,
-          "x_charge": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 450,
-          "child_su5_labels": [
-            2,
             1,
             0,
             1
@@ -4434,12 +4434,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 35,
+          "child_dimension": 160,
           "child_su5_labels": [
             3,
             0,
             0,
-            0
+            1
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -4449,22 +4449,9 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            0,
-            0,
-            0,
-            4
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -1,
-          "x_charge": 3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 105,
-          "child_su5_labels": [
-            0,
-            0,
             1,
+            0,
+            0,
             2
           ],
           "q_charge": -1,
@@ -4475,10 +4462,36 @@
           "branching_multiplicity": 1,
           "child_dimension": 480,
           "child_su5_labels": [
+            2,
+            0,
             1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
             1,
             0,
-            2
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            4,
+            0,
+            0,
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -4495,29 +4508,16 @@
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
-          "x_charge": 3
+          "x_charge": 7
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 280,
           "child_su5_labels": [
+            3,
             0,
             1,
-            0,
-            3
-          ],
-          "q_charge": -1,
-          "signed_total_multiplicity": -1,
-          "x_charge": 7
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_su5_labels": [
-            1,
-            0,
-            0,
-            2
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -4527,10 +4527,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 35,
           "child_su5_labels": [
+            3,
             0,
             0,
-            0,
-            3
+            0
           ],
           "q_charge": -1,
           "signed_total_multiplicity": -1,
@@ -4571,8 +4571,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": 1,
@@ -4581,11 +4581,24 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 50,
+          "child_dimension": 5,
           "child_su5_labels": [
             0,
             0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
             2,
+            0,
             0
           ],
           "q_charge": 1,
@@ -4594,24 +4607,24 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 5,
+          "child_dimension": 45,
           "child_su5_labels": [
+            0,
             1,
             0,
-            0,
-            0
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
-          "x_charge": -7
+          "x_charge": -3
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 175,
           "child_su5_labels": [
             0,
-            0,
             3,
+            0,
             0
           ],
           "q_charge": 1,
@@ -4620,25 +4633,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 45,
+          "child_dimension": 15,
           "child_su5_labels": [
-            1,
             0,
-            1,
-            0
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 210,
-          "child_su5_labels": [
-            1,
             0,
-            2,
-            0
+            0,
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4646,12 +4646,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 210,
           "child_su5_labels": [
+            0,
             2,
             0,
-            0,
-            0
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4661,10 +4661,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 126,
           "child_su5_labels": [
-            2,
             0,
             1,
-            0
+            0,
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4674,10 +4674,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 35,
           "child_su5_labels": [
-            3,
             0,
             0,
-            0
+            0,
+            3
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4704,10 +4704,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
             0,
-            0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4718,8 +4718,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -4760,10 +4760,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 15,
           "child_su5_labels": [
+            2,
             0,
             0,
-            0,
-            2
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4771,12 +4771,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 105,
+          "child_dimension": 45,
           "child_su5_labels": [
-            0,
+            1,
             0,
             1,
-            2
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4784,25 +4784,38 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 45,
+          "child_dimension": 105,
           "child_su5_labels": [
-            0,
+            2,
             1,
             0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
           "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
         },
         {
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
             0,
-            0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4812,22 +4825,9 @@
           "branching_multiplicity": 1,
           "child_dimension": 280,
           "child_su5_labels": [
-            0,
             1,
             1,
-            1
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 50,
-          "child_su5_labels": [
-            0,
-            2,
-            0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -4838,10 +4838,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            1,
+            2,
             0,
             0,
-            2
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4849,24 +4849,11 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
-          "child_su5_labels": [
-            0,
-            0,
-            1,
-            1
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 1,
-          "x_charge": 1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -4878,8 +4865,8 @@
           "child_dimension": 315,
           "child_su5_labels": [
             0,
-            2,
             1,
+            2,
             0
           ],
           "q_charge": 1,
@@ -4891,9 +4878,22 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
             1,
             0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4907,6 +4907,19 @@
             0,
             0,
             0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4940,25 +4953,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 175,
-          "child_su5_labels": [
-            1,
-            2,
-            0,
-            0
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 1,
-          "x_charge": 5
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 10,
+          "child_dimension": 40,
           "child_su5_labels": [
             0,
             0,
             1,
-            0
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -4966,9 +4966,9 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 10,
           "child_su5_labels": [
-            1,
+            0,
             1,
             0,
             0
@@ -4981,10 +4981,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -5012,8 +5012,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": 1,
@@ -5022,11 +5022,24 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 50,
+          "child_dimension": 5,
           "child_su5_labels": [
             0,
             0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
             2,
+            0,
             0
           ],
           "q_charge": 1,
@@ -5037,14 +5050,27 @@
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 45,
+          "child_su5_labels": [
             0,
             1,
             0,
             1
           ],
           "q_charge": 1,
-          "signed_total_multiplicity": 2,
-          "x_charge": -7
+          "signed_total_multiplicity": 4,
+          "x_charge": -3
         },
         {
           "branching_multiplicity": 1,
@@ -5054,19 +5080,6 @@
             0,
             0,
             0
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 2,
-          "x_charge": -7
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 5,
-          "child_su5_labels": [
-            0,
-            0,
-            0,
-            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
@@ -5076,36 +5089,23 @@
           "branching_multiplicity": 1,
           "child_dimension": 280,
           "child_su5_labels": [
-            0,
             1,
             1,
-            1
+            1,
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
           "x_charge": -3
         },
         {
-          "branching_multiplicity": 2,
-          "child_dimension": 45,
-          "child_su5_labels": [
-            1,
-            0,
-            1,
-            0
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 4,
-          "x_charge": -3
-        },
-        {
           "branching_multiplicity": 1,
-          "child_dimension": 40,
+          "child_dimension": 15,
           "child_su5_labels": [
             0,
             0,
-            1,
-            1
+            0,
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
@@ -5116,8 +5116,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -5128,10 +5128,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_su5_labels": [
-            1,
             0,
             2,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
@@ -5142,8 +5142,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            1,
             0,
+            1,
             1
           ],
           "q_charge": 1,
@@ -5152,16 +5152,29 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
-            2,
-            0,
+            1,
+            1,
             0,
             0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
           "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
         },
         {
           "branching_multiplicity": 1,
@@ -5191,25 +5204,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 126,
-          "child_su5_labels": [
-            2,
-            0,
-            1,
-            0
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 2,
-          "x_charge": 5
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 40,
           "child_su5_labels": [
-            1,
-            1,
             0,
-            0
+            0,
+            1,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 2,
@@ -5236,10 +5236,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            0,
             1,
             0,
-            1
+            1,
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -5247,10 +5247,23 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 5,
+          "child_dimension": 50,
           "child_su5_labels": [
             0,
             0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
             0,
             1
           ],
@@ -5260,10 +5273,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 50,
+          "child_dimension": 5,
           "child_su5_labels": [
+            1,
             0,
-            2,
             0,
             0
           ],
@@ -5275,48 +5288,22 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            1,
+            2,
             0,
             0,
-            2
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 45,
-          "child_su5_labels": [
-            1,
-            0,
-            1,
-            0
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": 1,
-          "x_charge": -3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 40,
-          "child_su5_labels": [
-            0,
-            0,
-            1,
             1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
-          "x_charge": 1
+          "x_charge": -3
         },
         {
           "branching_multiplicity": 2,
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            1,
             0,
+            1,
             0
           ],
           "q_charge": 1,
@@ -5328,9 +5315,22 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
             1,
             0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": 1,
@@ -5380,8 +5380,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": 1,
@@ -5409,10 +5409,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            2,
+            1,
             0,
             0,
-            1
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -2,
@@ -5420,11 +5420,11 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 70,
+          "child_dimension": 105,
           "child_su5_labels": [
+            0,
+            0,
             1,
-            0,
-            0,
             2
           ],
           "q_charge": 1,
@@ -5435,10 +5435,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 45,
           "child_su5_labels": [
-            1,
             0,
             1,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -2,
@@ -5446,12 +5446,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 105,
+          "child_dimension": 70,
           "child_su5_labels": [
             2,
-            1,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -2,
@@ -5459,25 +5459,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 35,
+          "child_dimension": 15,
           "child_su5_labels": [
             0,
             0,
             0,
-            3
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": -2,
-          "x_charge": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 40,
-          "child_su5_labels": [
-            0,
-            0,
-            1,
-            1
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -2,
@@ -5488,8 +5475,8 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
-            1,
             0,
+            1,
             1
           ],
           "q_charge": 1,
@@ -5498,10 +5485,10 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 15,
+          "child_dimension": 40,
           "child_su5_labels": [
-            2,
-            0,
+            1,
+            1,
             0,
             0
           ],
@@ -5511,16 +5498,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 126,
+          "child_dimension": 35,
           "child_su5_labels": [
+            3,
             0,
-            1,
             0,
-            2
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -2,
-          "x_charge": 5
+          "x_charge": 1
         },
         {
           "branching_multiplicity": 1,
@@ -5537,12 +5524,25 @@
         },
         {
           "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
           "child_dimension": 15,
           "child_su5_labels": [
+            2,
             0,
             0,
-            0,
-            2
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -2,
@@ -5569,10 +5569,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 35,
           "child_su5_labels": [
-            3,
             0,
             0,
-            0
+            0,
+            3
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -5580,25 +5580,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_su5_labels": [
-            2,
-            0,
-            0,
-            1
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": -1,
-          "x_charge": -7
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 280,
           "child_su5_labels": [
-            3,
             0,
             1,
-            0
+            0,
+            3
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -5611,6 +5598,32 @@
             1,
             0,
             0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            4
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
             2
           ],
           "q_charge": 1,
@@ -5621,23 +5634,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 480,
           "child_su5_labels": [
-            2,
-            0,
             1,
-            1
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": -1,
-          "x_charge": -3
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 105,
-          "child_su5_labels": [
-            2,
             1,
             0,
-            0
+            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -5647,10 +5647,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 70,
           "child_su5_labels": [
-            4,
+            2,
             0,
             0,
-            0
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -5658,25 +5658,12 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 35,
+          "child_dimension": 160,
           "child_su5_labels": [
-            0,
+            1,
             0,
             0,
             3
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": -1,
-          "x_charge": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 450,
-          "child_su5_labels": [
-            1,
-            0,
-            1,
-            2
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -5687,6 +5674,19 @@
           "child_dimension": 175,
           "child_su5_labels": [
             1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 450,
+          "child_su5_labels": [
+            2,
             1,
             0,
             1
@@ -5697,42 +5697,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 160,
+          "child_dimension": 35,
           "child_su5_labels": [
             3,
             0,
             0,
-            1
+            0
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
           "x_charge": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 224,
-          "child_su5_labels": [
-            0,
-            0,
-            1,
-            3
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": -1,
-          "x_charge": 5
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 126,
-          "child_su5_labels": [
-            0,
-            1,
-            0,
-            2
-          ],
-          "q_charge": 1,
-          "signed_total_multiplicity": -1,
-          "x_charge": 5
         },
         {
           "branching_multiplicity": 1,
@@ -5749,12 +5723,38 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 160,
+          "child_dimension": 126,
           "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 224,
+          "child_su5_labels": [
+            3,
             1,
             0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            3,
             0,
-            3
+            0,
+            1
           ],
           "q_charge": 1,
           "signed_total_multiplicity": -1,
@@ -5795,8 +5795,8 @@
           "child_dimension": 10,
           "child_su5_labels": [
             0,
-            0,
             1,
+            0,
             0
           ],
           "q_charge": 3,
@@ -5807,10 +5807,10 @@
           "branching_multiplicity": 1,
           "child_dimension": 5,
           "child_su5_labels": [
-            1,
             0,
             0,
-            0
+            0,
+            1
           ],
           "q_charge": 3,
           "signed_total_multiplicity": 1,

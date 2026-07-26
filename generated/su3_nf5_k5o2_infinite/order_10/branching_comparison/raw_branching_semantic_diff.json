@@ -1,0 +1,6828 @@
+{
+  "all_changed_rules_spinorial": true,
+  "changed_rule_count": 28,
+  "changed_rules": [
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "degree": 3,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 2,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "degree": 3,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 3,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        }
+      ],
+      "degree": 5,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 6,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 7
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 7
+        }
+      ],
+      "degree": 5,
+      "parent_d5_labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 7,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        }
+      ],
+      "degree": 5,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 8,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        }
+      ],
+      "degree": 5,
+      "parent_d5_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 9,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "degree": 7,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 16,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        }
+      ],
+      "degree": 7,
+      "parent_d5_labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 17,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        }
+      ],
+      "degree": 7,
+      "parent_d5_labels": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 18,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "degree": 7,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 19,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        }
+      ],
+      "degree": 7,
+      "parent_d5_labels": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 20,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        }
+      ],
+      "degree": 7,
+      "parent_d5_labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 21,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -3,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -3,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -3,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -3,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -3,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -3,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 37,
+      "q": -3,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 38,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -13
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 315,
+          "child_su5_labels": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 11
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -13
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 315,
+          "child_su5_labels": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 11
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "parent_index": 39,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            0,
+            3,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 15
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            1,
+            0,
+            2,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            0,
+            0,
+            3,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 15
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "parent_index": 40,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 4,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 11
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            1,
+            0,
+            2,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 4,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 11
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "parent_index": 41,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 7
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 42,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 7
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 7
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 43,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 200,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 224,
+          "child_su5_labels": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 450,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            4
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 480,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 11
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 224,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 200,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 450,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 480,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            4,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            3,
+            0,
+            1,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": -1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 11
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 44,
+      "q": -1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -15
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            0,
+            0,
+            3,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            1,
+            0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -15
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            0,
+            3,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_index": 45,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 46,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 315,
+          "child_su5_labels": [
+            0,
+            2,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 13
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 315,
+          "child_su5_labels": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 13
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "parent_index": 47,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 4,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            1,
+            0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 9
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 4,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 9
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_index": 48,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 50,
+          "child_su5_labels": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 2,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 75,
+          "child_su5_labels": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": 1,
+          "x_charge": 9
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 49,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 9
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 45,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 40,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 24,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 15,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -2,
+          "x_charge": 9
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_index": 50,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            3,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 480,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            4,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 450,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 224,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 200,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 9
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -11
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 280,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -7
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            4
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 105,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 480,
+          "child_su5_labels": [
+            1,
+            1,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 70,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": -3
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 175,
+          "child_su5_labels": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 450,
+          "child_su5_labels": [
+            2,
+            1,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 35,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 200,
+          "child_su5_labels": [
+            2,
+            0,
+            0,
+            2
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 126,
+          "child_su5_labels": [
+            2,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 224,
+          "child_su5_labels": [
+            3,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 160,
+          "child_su5_labels": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 1,
+          "signed_total_multiplicity": -1,
+          "x_charge": 9
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 51,
+      "q": 1,
+      "spinorial": true
+    },
+    {
+      "after": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 3,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "q_charge": 3,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 3,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "before": [
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 1,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "q_charge": 3,
+          "signed_total_multiplicity": 1,
+          "x_charge": -5
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 10,
+          "child_su5_labels": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "q_charge": 3,
+          "signed_total_multiplicity": 1,
+          "x_charge": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 5,
+          "child_su5_labels": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "q_charge": 3,
+          "signed_total_multiplicity": 1,
+          "x_charge": 3
+        }
+      ],
+      "degree": 9,
+      "parent_d5_labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_index": 52,
+      "q": 3,
+      "spinorial": true
+    }
+  ],
+  "parent_rule_count": 78,
+  "unchanged_rule_count": 50
+}

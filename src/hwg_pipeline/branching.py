@@ -149,6 +149,32 @@ def branch_irrep(parent_group, child_group, labels, embedding=EMBEDDING):
     return _branch_cached(parent, labels, child, embedding)
 
 
+def validate_d_type_branching(parent_name, labels, actual_children):
+    """Strict exact validation; dimensions alone are deliberately insufficient.
+
+    ``actual_children`` is an iterable of ``(A-labels, x, multiplicity)``.
+    The expected label/charge multiset is obtained from exact restricted
+    weights, not from dimensions.  The resulting error identifies both sides.
+    """
+    rank=int(str(parent_name)[1:])
+    if parent_name not in ("D5", "D6"):
+        raise ValueError("strict D-type validation supports the configured D5/D6 embeddings")
+    child_rank=rank-1
+    parent=SimpleGroupSpec("strict-parent","D",rank,f"SO({2*rank})",tuple(f"p{i}" for i in range(rank)))
+    child=SimpleGroupSpec("strict-child","A",child_rank,f"SU({rank})",tuple(f"c{i}" for i in range(child_rank)))
+    embedding=D5_EMBEDDING if rank==5 else D6_EMBEDDING
+    expected=branch_irrep(parent,child,tuple(labels),embedding)
+    e=sorted((tuple(z.child_dynkin_labels),ZZ(z.x_charge),ZZ(z.multiplicity)) for z in expected)
+    a=sorted((tuple(ZZ(v) for v in lab),ZZ(x),ZZ(m)) for lab,x,m in actual_children)
+    pd=irrep_dimension(parent,labels); ad=sum(m*irrep_dimension(child,lab) for lab,x,m in a)
+    if pd != ad or e != a:
+        raise ValueError(f"strict restricted-character failure for {parent_name} parent {tuple(labels)}: "
+                         f"expected children {e}; actual children {a}; dimension {pd} versus {ad}; "
+                         "fixed-charge restricted-weight evidence differs")
+    return {"parent":tuple(labels),"expected_children":tuple(e),"actual_children":tuple(a),
+            "dimension_equal":True,"restricted_character_equal":True}
+
+
 @lru_cache(maxsize=None)
 def _branch_d5_a4(labels):
     """Restrict every D5 weight and exactly decompose each charge slice.
@@ -167,12 +193,11 @@ def _branch_d5_a4(labels):
                       for i,a in enumerate(dynkin)), ring.space().zero())
         return ring(weight)
     slices = {}
-    # Sage's ambient D5 realization names the two terminal fundamental
-    # weights oppositely to the project convention.  Apply that documented
-    # diagram automorphism once at the boundary; the public labels remain in
-    # the requested [a1,a2,a3,a4,a5] order and are never interchanged later.
-    sage_labels = labels[:3] + (labels[4], labels[3])
-    for weight, multiplicity in character(D, sage_labels).weight_multiplicities().items():
+    # ``style="coroots"`` already uses the public Bourbaki D5 ordering.  In
+    # particular its fourth and fifth fundamental weights are the two
+    # distinct half-spinors.  No terminal-node swap or charge-dependent A4
+    # conjugation is permissible at this boundary.
+    for weight, multiplicity in character(D, labels).weight_multiplicities().items():
         coords = tuple(weight[i] for i in range(5))
         x = ZZ(-2 * sum(coords))
         dynkin_weight = tuple(ZZ(coords[i] - coords[i+1]) for i in range(4))
@@ -188,12 +213,7 @@ def _branch_d5_a4(labels):
             # Pairing with rho is strictly increasing in the dominance order.
             highest = max(dominant, key=lambda k: (sum((i+1)*(5-i)*k[i] for i in range(4)), k))
             coefficient = remaining[highest]
-            # Convert Sage's ambient terminal-node convention to the project's
-            # convention.  On the tensor weight-lattice coset the induced A4
-            # diagram automorphism accompanies x reversal; on the spinor coset
-            # (odd terminal parity) the node swap already supplies it.
-            child = highest if (labels[3] + labels[4]) % 2 else tuple(reversed(highest))
-            answer.append(BranchedIrrepTerm(child, -x, coefficient))
+            answer.append(BranchedIrrepTerm(highest, x, coefficient))
             for weight, mult in character(A, highest).weight_multiplicities().items():
                 c = tuple(weight[i] for i in range(5))
                 key = tuple(ZZ(c[i]-c[i+1]) for i in range(4))

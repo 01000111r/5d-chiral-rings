@@ -196,8 +196,8 @@
         1
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
     },
     {
       "B": 0,
@@ -226,8 +226,8 @@
         0
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
     },
     {
       "B": -3,
@@ -391,8 +391,8 @@
         1
       ],
       "signed_multiplicity": 2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": 4
     },
     {
       "B": -6,
@@ -406,8 +406,8 @@
         2
       ],
       "signed_multiplicity": 1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
     },
     {
       "B": -6,
@@ -421,8 +421,8 @@
         0
       ],
       "signed_multiplicity": 2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": 3
     },
     {
       "B": 0,
@@ -511,8 +511,8 @@
         1
       ],
       "signed_multiplicity": 2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": 3
     },
     {
       "B": 6,
@@ -526,8 +526,8 @@
         0
       ],
       "signed_multiplicity": 2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": 4
     },
     {
       "B": 6,
@@ -541,8 +541,8 @@
         1
       ],
       "signed_multiplicity": 1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
     },
     {
       "B": -9,
@@ -796,8 +796,8 @@
         1
       ],
       "signed_multiplicity": -6,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -15
     },
     {
       "B": -6,
@@ -811,8 +811,8 @@
         3
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
     },
     {
       "B": -6,
@@ -826,8 +826,8 @@
         1
       ],
       "signed_multiplicity": -2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -3
     },
     {
       "B": -6,
@@ -841,8 +841,8 @@
         0
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -2
     },
     {
       "B": -6,
@@ -856,8 +856,8 @@
         2
       ],
       "signed_multiplicity": -5,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -9
     },
     {
       "B": -6,
@@ -871,8 +871,8 @@
         0
       ],
       "signed_multiplicity": -8,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -15
     },
     {
       "B": -6,
@@ -886,8 +886,8 @@
         1
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
     },
     {
       "B": -6,
@@ -901,8 +901,8 @@
         0
       ],
       "signed_multiplicity": -2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -3
     },
     {
       "B": 0,
@@ -1081,8 +1081,8 @@
         2
       ],
       "signed_multiplicity": -2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -3
     },
     {
       "B": 6,
@@ -1096,8 +1096,8 @@
         0
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -2
     },
     {
       "B": 6,
@@ -1111,8 +1111,8 @@
         1
       ],
       "signed_multiplicity": -8,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -15
     },
     {
       "B": 6,
@@ -1126,8 +1126,8 @@
         0
       ],
       "signed_multiplicity": -6,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -15
     },
     {
       "B": 6,
@@ -1141,8 +1141,8 @@
         2
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
     },
     {
       "B": 6,
@@ -1156,8 +1156,8 @@
         0
       ],
       "signed_multiplicity": -2,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -3
     },
     {
       "B": 6,
@@ -1171,8 +1171,8 @@
         1
       ],
       "signed_multiplicity": -5,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "ambiguous-parentage",
+      "uv_signed_multiplicity": -9
     },
     {
       "B": 6,
@@ -1186,23 +1186,26 @@
         0
       ],
       "signed_multiplicity": -1,
-      "status": "absent",
-      "uv_signed_multiplicity": null
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
     }
   ],
   "physical_basis": "microscopic_baryon_and_instanton",
   "physical_sector_counts": {
-    "classical": 55,
+    "classical": 79,
     "mixed-baryon-instanton": 248,
     "neutral-UV-addition": 4,
     "pure-instanton": 0
   },
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
   "signed_k": "-5/2",
   "statement": "Representation-channel comparison in two different coordinate rings; not an equality with the UV I=0 sector.",
   "summary": {
-    "absent": 24,
-    "ambiguous-parentage": 34,
-    "exact-match": 19,
-    "representation-match-different-multiplicity": 2
+    "ambiguous-parentage": 48,
+    "exact-match": 27,
+    "representation-match-different-multiplicity": 4
   }
 }

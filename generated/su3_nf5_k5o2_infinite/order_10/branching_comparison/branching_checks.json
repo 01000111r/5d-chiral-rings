@@ -8,8 +8,13 @@
       "conjugate_current": "pass",
       "instanton_representation_and_charge": "pass"
     },
+    "branching": {
+      "dimensions": "pass",
+      "exact_restricted_characters": "pass",
+      "representation_labels_and_x_charges": "pass"
+    },
     "charges": {
-      "half_integral_B": "pass",
+      "configured_B_lattice": "pass",
       "integer_I": "pass",
       "lattice_all_children": "pass"
     },
@@ -24,8 +29,8 @@
       "signed_k": "-5/2"
     },
     "input": {
-      "reconstruction_evidence": "pass",
-      "stored_raw_branching_reused": "pass"
+      "raw_branching_recomputed": "pass",
+      "reconstruction_evidence": "pass"
     },
     "map": {
       "exact_QQ_solution": "pass",
@@ -42,5 +47,9 @@
   },
   "cs_orientation": "hanany_negative",
   "physical_basis": "microscopic_baryon_and_instanton",
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
   "signed_k": "-5/2"
 }

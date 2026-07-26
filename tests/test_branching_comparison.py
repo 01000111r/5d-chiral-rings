@@ -173,3 +173,22 @@ def test_canonical_signed_report_integration_repository_outputs():
     physical=json.loads((out/'physical_branching.json').read_text())
     assert len(physical['parents'])==len(json.loads(raw.read_text())['parents'])
     assert max(p['degree'] for p in physical['parents'])==10
+
+def test_canonical_signed_report_accepts_validated_legacy_raw_schema():
+    """Canonical derived layers also consume accepted pre-product raw JSON."""
+    import json
+    from pathlib import Path
+    from hwg_pipeline.branching_comparison import generate
+    root=Path(__file__).resolve().parents[1]
+    sp=root/'theories/branching/su3_nf5_k3o2_to_finite.yaml'
+    raw=root/'generated/su3_nf5_k3o2_infinite/order_10/branching_comparison/raw_branching.json'
+    before=hashlib.sha256(raw.read_bytes()).hexdigest()
+    result=generate(root,'su3_nf5_k3o2_infinite','su3_nf5_finite',10,sp,True,False)
+    assert hashlib.sha256(raw.read_bytes()).hexdigest()==before
+    assert result['number_uv_parent_terms']==102
+    assert result['number_raw_child_terms']==result['number_translated_child_terms']==547
+    charge=json.loads((raw.parent/'charge_map.json').read_text())
+    assert charge['solution_matrix']==[['-1/4','-5/2'],['1/6','-1/3']]
+    assert charge['inverse']=={'q':'-B/3-I/2','x':'-2*B/3+5*I'}
+    tex=(raw.parent/'branching_comparison.tex').read_text()
+    assert 'SU(3)_{-3/2}+5F' in tex and r'6\to5_{+1}+1_{-5}' in tex

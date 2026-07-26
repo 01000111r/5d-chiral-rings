@@ -1,45 +1,100 @@
 {
-  "anchors": [
-    {
-      "child_dynkin_labels": [
-        1,
-        0,
-        0,
-        0
-      ],
-      "degree": 2,
-      "id": "positive_unit_instanton",
-      "physical": [
-        0,
-        1
-      ],
-      "raw": [
-        6,
-        0
-      ]
+  "baryon_normalization": {
+    "fundamental_hyper": 1
+  },
+  "classical_anchor": {
+    "child_representation": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "degree": 3,
+    "evidence": {
+      "level": "finite_pl",
+      "source": "finite beta-graded refined PL and exact branching"
     },
-    {
-      "child_dynkin_labels": [
-        0,
-        1,
-        0,
-        0
-      ],
-      "degree": 3,
-      "finite_beta_charge": -1,
-      "id": "classical_antibaryon",
-      "physical": [
-        -3,
-        0
-      ],
-      "raw": [
-        2,
-        1
-      ]
+    "finite_beta_charge": -1,
+    "parent_representations": [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "raw_charges": {
+      "q": 1,
+      "x": 2
+    },
+    "role": "classical antibaryon",
+    "target": {
+      "B": -3,
+      "I": 0
     }
-  ],
-  "identification_evidence": {
-    "classical_antibaryon": "degree-3 SU(5) [0,1,0,0] agrees with finite beta^-1 channel",
-    "positive_unit_instanton": "degree-2 extra fundamental in branched enhanced adjoint; conjugate is anti-instanton"
-  }
+  },
+  "conjugate_check": {
+    "child_representation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "degree": 2,
+    "evidence": {
+      "level": "exact_branching",
+      "source": "exact conjugate child in stored branching"
+    },
+    "parent_representations": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "raw_charges": {
+      "q": 0,
+      "x": -6
+    },
+    "role": "conjugate anti-instanton",
+    "target": {
+      "B": "3/2",
+      "I": -1
+    }
+  },
+  "cs_orientation": "hanany_negative",
+  "instanton_anchor": {
+    "child_representation": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "degree": 2,
+    "evidence": {
+      "level": "project_derived",
+      "source": "Hanany family section and exact stored branching"
+    },
+    "parent_representations": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "raw_charges": {
+      "q": 0,
+      "x": 6
+    },
+    "role": "negative-CS E_- conserved current",
+    "target": {
+      "B": "-3/2",
+      "I": 1
+    }
+  },
+  "literature_orientation": {
+    "convention": "Ferlito--Hanany--Mekareeya--Zafrir negative-CS",
+    "project_note": "references/project_notes/hanany_negative_cs_convention.md"
+  },
+  "physical_basis": "microscopic_baryon_and_instanton",
+  "signed_k": "-3/2"
 }

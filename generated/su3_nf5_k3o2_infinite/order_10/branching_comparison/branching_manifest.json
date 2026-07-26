@@ -1,146 +1,41 @@
 {
-  "anchors": [
-    {
-      "child_dynkin_labels": [
-        1,
-        0,
-        0,
-        0
-      ],
-      "degree": 2,
-      "id": "positive_unit_instanton",
-      "physical": [
-        0,
-        1
-      ],
-      "raw": [
-        6,
-        0
-      ]
-    },
-    {
-      "child_dynkin_labels": [
-        0,
-        1,
-        0,
-        0
-      ],
-      "degree": 3,
-      "finite_beta_charge": -1,
-      "id": "classical_antibaryon",
-      "physical": [
-        -3,
-        0
-      ],
-      "raw": [
-        2,
-        1
-      ]
-    }
-  ],
-  "branching_convention": "6 -> 5_(+1) + 1_(-5)",
-  "branching_implementation": "exact Gelfand--Tsetlin interlacing",
-  "check_totals": {
-    "pass": 32,
-    "unavailable": 1
+  "baryon_normalization": {
+    "fundamental_hyper": 1
   },
-  "cutoff": 10,
-  "degrees_represented": [
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-  ],
-  "derived_charge_map": {
-    "anchor_matrix": [
-      [
-        6,
-        2
-      ],
-      [
-        0,
-        1
-      ]
-    ],
-    "anchor_residuals": [
-      [
-        "0",
-        "0"
-      ],
-      [
-        "0",
-        "0"
-      ]
-    ],
-    "determinant": 6,
-    "formula": {
-      "B": "-3*q",
-      "I": "(x-2*q)/6"
-    },
-    "inverse": {
-      "q": "-B/3",
-      "x": "6*I-2*B/3"
-    },
-    "rank": 2,
-    "solution_matrix": [
-      [
-        "0",
-        "-3"
-      ],
-      [
-        "1/6",
-        "-1/3"
-      ]
-    ],
-    "target_charge_matrix": [
-      [
-        0,
-        -3
-      ],
-      [
-        1,
-        0
-      ]
-    ]
+  "base_commit": "b7ba5ee9b59e8c04a7683fccfb36137dd4b8b92d",
+  "comparison_summary": {
+    "ambiguous-parentage": 52,
+    "exact-match": 27
   },
+  "cs_orientation": "hanany_negative",
   "finite_theory_id": "su3_nf5_finite",
   "generated_file_hashes": {
-    "branching_checks.json": "8d09d67e17863bf5b950e3ae773ed63406a473ed2777f92540b62ec9e6310fc0",
-    "branching_comparison.tex": "03423c9f84ef7f309fe44f6a0bbf2642ac705d714c1e390a5e1613ff230de27d",
-    "charge_anchors.json": "93d49a8ecb4f9a12526f75dfc55872197f653b90aa39475114fc233d4857bde1",
-    "charge_map.json": "1b7a370deb656c11ab298f4bbb3a7769e80f36e3acadba3f03df577b12932227",
-    "finite_uv_comparison.json": "12a69346417280011149c522cc59b926430885bb8f7b09cc62ddc62c6c642853",
-    "physical_branching.json": "0c50288e4967a16ba8e11d37e1306589ec4cb73f501b05275e344d1849226858",
-    "raw_branching.json": "6e5e1b56bb67dd83c345d755632407bdde4d8cfe01b2feae57626c5774d06aaa",
-    "raw_branching.md": "997cda9ac86dbb73239b3df2be7e999914be549955dfaf06cc189e3fa24747f4"
+    "branching_checks.json": "e64320ce4325fc6011c4fdf4ac11a383fe40d465a6c4b78ee58a0f5395b343ca",
+    "branching_comparison.tex": "29ddabf743d4435c69321129e86f8ced04decbd6dcbe6036a7ebf38b2c8af928",
+    "charge_anchors.json": "eea5ba433d54909bd455f750215de34a0aae59a32f12880983c1028b04c52a4d",
+    "charge_map.json": "29a4f5a243af83ed18755102de7c31d7199025b15fe9659ec3380704e350cbc1",
+    "finite_uv_comparison.json": "30f476a285a6a98fa02b544503a434d6807f84676bd8e75bae3d82ef77d5b3a1",
+    "physical_branching.json": "c0e548a385887b38f5f78e8b67c374c22ff85cf6eff82030cc55f28edb572e6d",
+    "raw_branching.json": "6e5e1b56bb67dd83c345d755632407bdde4d8cfe01b2feae57626c5774d06aaa"
   },
-  "git_commit": "5f8ce358df64de3c0d05289cdf2189e097d22f68",
-  "number_branched_child_terms": 547,
-  "number_combined_child_terms": 301,
-  "number_uv_parent_terms": 102,
-  "pl_file_hashes": {
+  "input_hashes": {
+    "generated/su3_nf5_finite/order_10/reconstruction_checks.json": "f5a0194cd91d1dfdd1aca65d2458737c6189c33557ef3afd0d23c6feacaac3e2",
     "generated/su3_nf5_finite/order_10/refined_plethystic_logarithm.json": "d7cd0845541f1a26ea6c54feef7585aa932f18e659d33e9d3caa345cc9964e2f",
+    "generated/su3_nf5_k3o2_infinite/order_10/branching_comparison/raw_branching.json": "6e5e1b56bb67dd83c345d755632407bdde4d8cfe01b2feae57626c5774d06aaa",
+    "generated/su3_nf5_k3o2_infinite/order_10/reconstruction_checks.json": "cf5a9192ba770df87198f28af36ffaea73e247cb2cb1b15eb743c86ed6121f9d",
     "generated/su3_nf5_k3o2_infinite/order_10/refined_plethystic_logarithm.json": "e377c29e17e2ed5425c9ecc68918629ed9b29d6536c8109451deb705f9272d5e"
   },
-  "raw_u1_normalization": "diag(1,1,1,1,1,-5)",
-  "reconstruction_check_hashes": {
-    "generated/su3_nf5_finite/order_10/reconstruction_checks.json": "f5a0194cd91d1dfdd1aca65d2458737c6189c33557ef3afd0d23c6feacaac3e2",
-    "generated/su3_nf5_k3o2_infinite/order_10/reconstruction_checks.json": "cf5a9192ba770df87198f28af36ffaea73e247cb2cb1b15eb743c86ed6121f9d"
+  "number_raw_child_terms": 547,
+  "number_translated_child_terms": 547,
+  "number_uv_parent_terms": 102,
+  "order": 10,
+  "physical_basis": "microscopic_baryon_and_instanton",
+  "physical_sector_counts": {
+    "classical": 79,
+    "mixed-baryon-instanton": 198,
+    "neutral-UV-addition": 4,
+    "pure-instanton": 16
   },
-  "source_file_hashes": {
-    "theories/branching/su3_nf5_k3o2_to_finite.yaml": "f7aeba3fbbb749ab6c1eae985d9153dd7cfd53161b21afa4ffa5432107e80ab8"
-  },
-  "term_counts": {
-    "final_degrees": 9,
-    "native_finite": 79,
-    "native_uv": 102,
-    "physical_parents": 102,
-    "raw_parents": 102
-  },
+  "signed_k": "-3/2",
   "uv_theory_id": "su3_nf5_k3o2_infinite"
 }

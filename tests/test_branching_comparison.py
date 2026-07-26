@@ -138,7 +138,7 @@ def d6pieces(labels):
 def test_d6_vector_adjoint_and_node_six_spinor_conventions():
  assert d6pieces((1,0,0,0,0,0))=={((1,0,0,0,0),1):1,((0,0,0,0,1),-1):1}
  assert d6pieces((0,1,0,0,0,0))=={((1,0,0,0,1),0):1,((0,0,0,0,0),0):1,((0,1,0,0,0),2):1,((0,0,0,1,0),-2):1}
- assert d6pieces((0,0,0,0,0,1))=={((1,0,0,0,0),2):1,((0,0,1,0,0),0):1,((0,0,0,0,1),-2):1}
+ assert d6pieces((0,0,0,0,0,1))=={((1,0,0,0,0),-2):1,((0,0,1,0,0),0):1,((0,0,0,0,1),2):1}
 def test_d6_exact_physical_charge_map():
  M,R,T=solve_charge_map([{'raw':[2,0],'physical':[0,1]},{'raw':[0,1],'physical':[3,0]}])
  assert M==matrix(QQ,[[0,3],[QQ(1)/2,0]]) and M*R==T

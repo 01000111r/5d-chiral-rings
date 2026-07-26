@@ -1,0 +1,27 @@
+{
+  "anchors": {
+    "classical_baryon": {
+      "change_justified": false,
+      "child_representation": [0, 0, 1, 0, 0],
+      "corrected_parent_branching": "[0,0,0,0,0,1] contains [0,0,1,0,0] at x=0 with multiplicity 1",
+      "current_specification": {"degree": 3, "raw": [0, 1], "target": [3, 0]},
+      "physical_evidence": "finite beta^[+1][0,0,1,0,0], hence B=3 and I=0",
+      "raw_charge": {"x": 0, "q": 1},
+      "uniqueness": "unique configured degree-three parent/child/raw-charge occurrence",
+      "verdict": "retain",
+      "justification": "The self-conjugate 20_0 survives exact corrected restriction; beta, rather than its Dynkin label, fixes the baryon sign."
+    },
+    "instanton_current": {
+      "change_justified": false,
+      "child_representation": [0, 1, 0, 0, 0],
+      "corrected_parent_branching": "[0,1,0,0,0,0] contains [0,1,0,0,0] at x=2 with multiplicity 1",
+      "current_specification": {"degree": 2, "raw": [2, 0], "target": [-1, 1]},
+      "physical_evidence": "signed k=-2 gives B(E_-)=-3-k=-1 and I(E_-)=1",
+      "raw_charge": {"x": 2, "q": 0},
+      "uniqueness": "unique adjoint child at the configured representation and raw charge",
+      "verdict": "retain",
+      "justification": "The adjoint is nonspinorial and independently fixes the embedding orientation; its exact branch is unchanged."
+    }
+  },
+  "no_anchor_changed_without_exact_justification": true
+}

@@ -60,8 +60,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": -2,
-      "I": -1,
+      "B": -4,
+      "I": 1,
       "degree": 3,
       "labels": [
         0,
@@ -74,8 +74,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": 4,
-      "I": -1,
+      "B": 2,
+      "I": 1,
       "degree": 3,
       "labels": [
         0,
@@ -116,8 +116,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": -4,
-      "I": 1,
+      "B": -2,
+      "I": -1,
       "degree": 3,
       "labels": [
         1,
@@ -130,8 +130,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": 2,
-      "I": 1,
+      "B": 4,
+      "I": -1,
       "degree": 3,
       "labels": [
         1,
@@ -200,155 +200,15 @@
       "signed_multiplicity": -1
     },
     {
-      "B": -5,
-      "I": 2,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -2
-    },
-    {
-      "B": 1,
-      "I": 2,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -2
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -2
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 5,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -2
-    },
-    {
       "B": -4,
       "I": 1,
       "degree": 5,
       "labels": [
         0,
-        1,
+        0,
         0,
         0,
         1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 2,
-      "I": 1,
-      "degree": 5,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -4,
-      "I": 1,
-      "degree": 5,
-      "labels": [
-        1,
-        0,
-        0,
-        0,
-        0
       ],
       "parent_count": 2,
       "signed_multiplicity": -2
@@ -358,11 +218,11 @@
       "I": -2,
       "degree": 5,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 1,
       "signed_multiplicity": -1
@@ -372,11 +232,11 @@
       "I": 1,
       "degree": 5,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 2,
       "signed_multiplicity": -2
@@ -384,6 +244,104 @@
     {
       "B": 5,
       "I": -2,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 5,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": -2,
+      "I": -1,
+      "degree": 5,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 4,
+      "I": -1,
+      "degree": 5,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -5,
+      "I": 2,
       "degree": 5,
       "labels": [
         1,
@@ -403,7 +361,21 @@
         1,
         0,
         0,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 5,
+      "labels": [
         1,
+        0,
+        0,
+        0,
         0
       ],
       "parent_count": 1,
@@ -412,6 +384,34 @@
     {
       "B": 4,
       "I": -1,
+      "degree": 5,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 5,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 2,
+      "I": 1,
       "degree": 5,
       "labels": [
         1,
@@ -816,22 +816,8 @@
       "signed_multiplicity": -1
     },
     {
-      "B": -5,
-      "I": 2,
-      "degree": 7,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 2
-    },
-    {
-      "B": -2,
-      "I": -1,
+      "B": -4,
+      "I": 1,
       "degree": 7,
       "labels": [
         0,
@@ -844,8 +830,8 @@
       "signed_multiplicity": 3
     },
     {
-      "B": 1,
-      "I": 2,
+      "B": -1,
+      "I": -2,
       "degree": 7,
       "labels": [
         0,
@@ -858,8 +844,8 @@
       "signed_multiplicity": 2
     },
     {
-      "B": 4,
-      "I": -1,
+      "B": 2,
+      "I": 1,
       "degree": 7,
       "labels": [
         0,
@@ -870,6 +856,20 @@
       ],
       "parent_count": 2,
       "signed_multiplicity": 3
+    },
+    {
+      "B": 5,
+      "I": -2,
+      "degree": 7,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
     },
     {
       "B": -3,
@@ -956,8 +956,8 @@
       "signed_multiplicity": 3
     },
     {
-      "B": -4,
-      "I": 1,
+      "B": -2,
+      "I": -1,
       "degree": 7,
       "labels": [
         0,
@@ -970,8 +970,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": 2,
-      "I": 1,
+      "B": 4,
+      "I": -1,
       "degree": 7,
       "labels": [
         0,
@@ -984,8 +984,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": -4,
-      "I": 1,
+      "B": -2,
+      "I": -1,
       "degree": 7,
       "labels": [
         0,
@@ -998,8 +998,8 @@
       "signed_multiplicity": 3
     },
     {
-      "B": 2,
-      "I": 1,
+      "B": 4,
+      "I": -1,
       "degree": 7,
       "labels": [
         0,
@@ -1010,62 +1010,6 @@
       ],
       "parent_count": 2,
       "signed_multiplicity": 3
-    },
-    {
-      "B": -4,
-      "I": 1,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": -1,
-      "I": -2,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 2
-    },
-    {
-      "B": 2,
-      "I": 1,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 5,
-      "I": -2,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 2
     },
     {
       "B": -5,
@@ -1076,10 +1020,10 @@
         0,
         0,
         0,
-        2
+        0
       ],
       "parent_count": 1,
-      "signed_multiplicity": 1
+      "signed_multiplicity": 2
     },
     {
       "B": -2,
@@ -1090,10 +1034,10 @@
         0,
         0,
         0,
-        2
+        0
       ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
+      "parent_count": 2,
+      "signed_multiplicity": 3
     },
     {
       "B": 1,
@@ -1104,10 +1048,10 @@
         0,
         0,
         0,
-        2
+        0
       ],
       "parent_count": 1,
-      "signed_multiplicity": 1
+      "signed_multiplicity": 2
     },
     {
       "B": 4,
@@ -1116,90 +1060,6 @@
       "labels": [
         1,
         0,
-        0,
-        0,
-        2
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        0,
-        1,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        0,
-        1,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        1,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 7,
-      "labels": [
-        1,
-        0,
-        1,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 7,
-      "labels": [
-        1,
-        1,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 7,
-      "labels": [
-        1,
-        1,
         0,
         0,
         0
@@ -1212,11 +1072,11 @@
       "I": 1,
       "degree": 7,
       "labels": [
-        2,
+        1,
         0,
         0,
         0,
-        1
+        2
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -1226,11 +1086,11 @@
       "I": -2,
       "degree": 7,
       "labels": [
-        2,
+        1,
         0,
         0,
         0,
-        1
+        2
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -1240,11 +1100,11 @@
       "I": 1,
       "degree": 7,
       "labels": [
-        2,
+        1,
         0,
         0,
         0,
-        1
+        2
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -1252,6 +1112,104 @@
     {
       "B": 5,
       "I": -2,
+      "degree": 7,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 7,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 7,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 7,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 7,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 7,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 7,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": -5,
+      "I": 2,
       "degree": 7,
       "labels": [
         2,
@@ -1270,6 +1228,48 @@
       "labels": [
         2,
         0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 7,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 4,
+      "I": -1,
+      "degree": 7,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 7,
+      "labels": [
+        2,
+        0,
         1,
         0,
         0
@@ -1278,8 +1278,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": 4,
-      "I": -1,
+      "B": 2,
+      "I": 1,
       "degree": 7,
       "labels": [
         2,
@@ -2384,911 +2384,15 @@
       "signed_multiplicity": 3
     },
     {
-      "B": -11,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -8,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -5,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 6
-    },
-    {
-      "B": 1,
-      "I": -4,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 1,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 6
-    },
-    {
-      "B": 7,
-      "I": -4,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 7,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 10,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -6,
-      "I": 3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        3
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        3
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
-    },
-    {
-      "B": 0,
-      "I": 3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        3
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        0,
-        3
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
-    },
-    {
-      "B": -9,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 0,
-      "I": -3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 2
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 6,
-      "I": -3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 2
-    },
-    {
-      "B": 9,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -4,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        3
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 2,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        1,
-        3
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -1,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        2,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 5,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        0,
-        2,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -9,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -6,
-      "I": 3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 9
-    },
-    {
-      "B": 0,
-      "I": -3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 0,
-      "I": 3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 9
-    },
-    {
-      "B": 6,
-      "I": -3,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 9,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -4,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
-    },
-    {
-      "B": -1,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 2,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
-    },
-    {
-      "B": 5,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        0,
-        2
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -4,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        1,
-        0
-      ],
-      "parent_count": 4,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": -1,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        1,
-        0
-      ],
-      "parent_count": 3,
-      "signed_multiplicity": 4
-    },
-    {
-      "B": 2,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        1,
-        0
-      ],
-      "parent_count": 4,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": 5,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        1,
-        0
-      ],
-      "parent_count": 3,
-      "signed_multiplicity": 4
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        2,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        1,
-        2,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        2,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        0,
-        2,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
       "B": -10,
       "I": 1,
       "degree": 9,
       "labels": [
         0,
-        1,
+        0,
         0,
         0,
         1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -4,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": -1,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 4,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": 2,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 5,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": 5,
-      "I": -2,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 4,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": 8,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -5,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        3
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 1,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        0,
-        3
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 3,
-      "signed_multiplicity": 4
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 3,
-      "signed_multiplicity": 4
-    },
-    {
-      "B": -5,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 3,
-      "signed_multiplicity": 4
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 4,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": 1,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 3,
-      "signed_multiplicity": 4
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 4,
-      "signed_multiplicity": 5
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        1,
-        1,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 2
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        1,
-        1,
-        1,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 2
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        2,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        0,
-        2,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 3
-    },
-    {
-      "B": -4,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        2,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 2,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        0,
-        2,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -10,
-      "I": 1,
-      "degree": 9,
-      "labels": [
-        1,
-        0,
-        0,
-        0,
-        0
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -3298,11 +2402,11 @@
       "I": -2,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -3312,11 +2416,11 @@
       "I": 4,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -3326,11 +2430,11 @@
       "I": 1,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 5,
       "signed_multiplicity": 6
@@ -3340,11 +2444,11 @@
       "I": -2,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 2,
       "signed_multiplicity": 3
@@ -3354,11 +2458,11 @@
       "I": 4,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -3368,11 +2472,11 @@
       "I": 1,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 5,
       "signed_multiplicity": 6
@@ -3382,11 +2486,11 @@
       "I": -2,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 2,
       "signed_multiplicity": 3
@@ -3396,11 +2500,11 @@
       "I": 1,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
@@ -3410,80 +2514,318 @@
       "I": -2,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
     },
     {
-      "B": -5,
-      "I": 2,
+      "B": -3,
+      "I": 0,
       "degree": 9,
       "labels": [
-        1,
         0,
         0,
         0,
-        2
+        0,
+        3
       ],
       "parent_count": 2,
       "signed_multiplicity": -3
+    },
+    {
+      "B": 0,
+      "I": -3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": 6,
+      "I": -3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -9,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -6,
+      "I": 3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 0,
+      "I": 3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 9,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
     },
     {
       "B": -2,
       "I": -1,
       "degree": 9,
       "labels": [
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
-        2
+        3
       ],
-      "parent_count": 4,
+      "parent_count": 1,
       "signed_multiplicity": -1
-    },
-    {
-      "B": 1,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        1,
-        0,
-        0,
-        0,
-        2
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
     },
     {
       "B": 4,
       "I": -1,
       "degree": 9,
       "labels": [
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
-        2
+        3
       ],
-      "parent_count": 4,
+      "parent_count": 1,
       "signed_multiplicity": -1
     },
     {
-      "B": -8,
-      "I": -1,
+      "B": -5,
+      "I": 2,
       "degree": 9,
       "labels": [
-        1,
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -9,
+      "I": 0,
+      "degree": 9,
+      "labels": [
         0,
         0,
         1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -6,
+      "I": 3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 9
+    },
+    {
+      "B": 0,
+      "I": -3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 0,
+      "I": 3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 9
+    },
+    {
+      "B": 6,
+      "I": -3,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 9,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
         0
       ],
       "parent_count": 1,
@@ -3494,11 +2836,193 @@
       "I": 2,
       "degree": 9,
       "labels": [
+        0,
+        0,
         1,
         0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -2,
+      "I": -1,
+      "degree": 9,
+      "labels": [
         0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 4,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": -5,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
         1,
         0
+      ],
+      "parent_count": 3,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": -2,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 3,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": 4,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -8,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -5,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1
       ],
       "parent_count": 4,
       "signed_multiplicity": 5
@@ -3508,11 +3032,11 @@
       "I": -1,
       "degree": 9,
       "labels": [
+        0,
         1,
         0,
         0,
-        1,
-        0
+        1
       ],
       "parent_count": 5,
       "signed_multiplicity": 5
@@ -3522,11 +3046,11 @@
       "I": 2,
       "degree": 9,
       "labels": [
+        0,
         1,
         0,
         0,
-        1,
-        0
+        1
       ],
       "parent_count": 4,
       "signed_multiplicity": 5
@@ -3536,11 +3060,11 @@
       "I": -1,
       "degree": 9,
       "labels": [
+        0,
         1,
         0,
         0,
-        1,
-        0
+        1
       ],
       "parent_count": 5,
       "signed_multiplicity": 5
@@ -3550,98 +3074,350 @@
       "I": -1,
       "degree": 9,
       "labels": [
+        0,
         1,
         0,
         0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        0,
         1,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 5,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 3,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 3,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 3,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 5,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 3,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": -2,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        0,
+        2,
+        1,
+        0,
         0
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
     },
     {
-      "B": -3,
-      "I": 0,
+      "B": 4,
+      "I": -1,
       "degree": 9,
       "labels": [
-        1,
-        0,
-        0,
-        1,
-        2
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        1,
-        0,
-        0,
-        1,
-        2
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -3,
-      "I": 0,
-      "degree": 9,
-      "labels": [
-        1,
-        0,
         0,
         2,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -11,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -8,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -5,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
         0
       ],
       "parent_count": 2,
       "signed_multiplicity": 3
     },
     {
-      "B": 3,
-      "I": 0,
+      "B": -2,
+      "I": -1,
       "degree": 9,
       "labels": [
         1,
         0,
         0,
-        2,
+        0,
+        0
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 6
+    },
+    {
+      "B": 1,
+      "I": -4,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
         0
       ],
       "parent_count": 2,
       "signed_multiplicity": 3
     },
     {
-      "B": -3,
-      "I": 0,
+      "B": 4,
+      "I": -1,
       "degree": 9,
       "labels": [
         1,
         0,
-        1,
         0,
-        1
+        0,
+        0
       ],
       "parent_count": 5,
-      "signed_multiplicity": 2
+      "signed_multiplicity": 6
     },
     {
-      "B": 3,
-      "I": 0,
+      "B": 7,
+      "I": -4,
       "degree": 9,
       "labels": [
         1,
         0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 7,
+      "I": 2,
+      "degree": 9,
+      "labels": [
         1,
         0,
-        1
+        0,
+        0,
+        0
       ],
-      "parent_count": 5,
-      "signed_multiplicity": 2
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 10,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
     },
     {
       "B": -4,
@@ -3650,6 +3426,230 @@
       "labels": [
         1,
         0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 5,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": -10,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 5,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 8,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": -3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": 3,
+      "I": 0,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 5,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -2,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        1,
+        0,
         2,
         0,
         0
@@ -3658,8 +3658,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": 2,
-      "I": 1,
+      "B": 4,
+      "I": -1,
       "degree": 9,
       "labels": [
         1,
@@ -3686,20 +3686,6 @@
       "signed_multiplicity": 1
     },
     {
-      "B": -6,
-      "I": 3,
-      "degree": 9,
-      "labels": [
-        1,
-        1,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": 2
-    },
-    {
       "B": -3,
       "I": 0,
       "degree": 9,
@@ -3715,7 +3701,7 @@
     },
     {
       "B": 0,
-      "I": 3,
+      "I": -3,
       "degree": 9,
       "labels": [
         1,
@@ -3740,6 +3726,20 @@
       ],
       "parent_count": 5,
       "signed_multiplicity": 3
+    },
+    {
+      "B": 6,
+      "I": -3,
+      "degree": 9,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": 2
     },
     {
       "B": 9,
@@ -3756,8 +3756,8 @@
       "signed_multiplicity": 1
     },
     {
-      "B": -4,
-      "I": 1,
+      "B": -2,
+      "I": -1,
       "degree": 9,
       "labels": [
         1,
@@ -3770,8 +3770,8 @@
       "signed_multiplicity": -1
     },
     {
-      "B": 2,
-      "I": 1,
+      "B": 4,
+      "I": -1,
       "degree": 9,
       "labels": [
         1,
@@ -3784,8 +3784,8 @@
       "signed_multiplicity": -1
     },
     {
-      "B": -4,
-      "I": 1,
+      "B": -2,
+      "I": -1,
       "degree": 9,
       "labels": [
         1,
@@ -3798,8 +3798,8 @@
       "signed_multiplicity": 4
     },
     {
-      "B": 2,
-      "I": 1,
+      "B": 4,
+      "I": -1,
       "degree": 9,
       "labels": [
         1,
@@ -3810,38 +3810,52 @@
       ],
       "parent_count": 3,
       "signed_multiplicity": 4
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 5,
+      "I": -2,
+      "degree": 9,
+      "labels": [
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
     },
     {
       "B": -5,
       "I": 2,
       "degree": 9,
       "labels": [
-        1,
         2,
         0,
         0,
-        0
+        0,
+        1
       ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
+      "parent_count": 2,
+      "signed_multiplicity": -3
     },
     {
-      "B": 1,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        1,
-        2,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": -4,
-      "I": 1,
+      "B": -2,
+      "I": -1,
       "degree": 9,
       "labels": [
         2,
@@ -3852,6 +3866,76 @@
       ],
       "parent_count": 4,
       "signed_multiplicity": -1
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 9,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": 4,
+      "I": -1,
+      "degree": 9,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 4,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 2,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 1,
+      "degree": 9,
+      "labels": [
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 2,
+      "signed_multiplicity": -3
     },
     {
       "B": -1,
@@ -3860,12 +3944,12 @@
       "labels": [
         2,
         0,
+        1,
         0,
-        0,
-        1
+        0
       ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
+      "parent_count": 1,
+      "signed_multiplicity": 1
     },
     {
       "B": 2,
@@ -3874,12 +3958,12 @@
       "labels": [
         2,
         0,
+        1,
         0,
-        0,
-        1
+        0
       ],
-      "parent_count": 4,
-      "signed_multiplicity": -1
+      "parent_count": 2,
+      "signed_multiplicity": -3
     },
     {
       "B": 5,
@@ -3888,96 +3972,12 @@
       "labels": [
         2,
         0,
-        0,
-        0,
-        1
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        2,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        2,
-        0,
-        0,
-        1,
-        1
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -5,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        2,
-        0,
         1,
         0,
         0
       ],
       "parent_count": 1,
       "signed_multiplicity": 1
-    },
-    {
-      "B": -2,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        2,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
-    },
-    {
-      "B": 1,
-      "I": 2,
-      "degree": 9,
-      "labels": [
-        2,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": 1
-    },
-    {
-      "B": 4,
-      "I": -1,
-      "degree": 9,
-      "labels": [
-        2,
-        0,
-        1,
-        0,
-        0
-      ],
-      "parent_count": 2,
-      "signed_multiplicity": -3
     },
     {
       "B": -3,
@@ -4003,6 +4003,20 @@
         0,
         0,
         1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -6,
+      "I": 3,
+      "degree": 9,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0
       ],
       "parent_count": 1,
       "signed_multiplicity": -1
@@ -4023,7 +4037,7 @@
     },
     {
       "B": 0,
-      "I": -3,
+      "I": 3,
       "degree": 9,
       "labels": [
         3,
@@ -4050,22 +4064,8 @@
       "signed_multiplicity": -3
     },
     {
-      "B": 6,
-      "I": -3,
-      "degree": 9,
-      "labels": [
-        3,
-        0,
-        0,
-        0,
-        0
-      ],
-      "parent_count": 1,
-      "signed_multiplicity": -1
-    },
-    {
-      "B": -1,
-      "I": -2,
+      "B": -5,
+      "I": 2,
       "degree": 9,
       "labels": [
         3,
@@ -4078,8 +4078,8 @@
       "signed_multiplicity": -1
     },
     {
-      "B": 5,
-      "I": -2,
+      "B": 1,
+      "I": 2,
       "degree": 9,
       "labels": [
         3,
@@ -4092,8 +4092,8 @@
       "signed_multiplicity": -1
     },
     {
-      "B": -2,
-      "I": -1,
+      "B": -4,
+      "I": 1,
       "degree": 9,
       "labels": [
         3,
@@ -4106,8 +4106,8 @@
       "signed_multiplicity": -1
     },
     {
-      "B": 4,
-      "I": -1,
+      "B": 2,
+      "I": 1,
       "degree": 9,
       "labels": [
         3,
@@ -8562,11 +8562,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -8616,11 +8616,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -8668,11 +8668,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -8722,11 +8722,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -8932,11 +8932,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -8986,11 +8986,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -9038,11 +9038,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -9058,7 +9058,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 84,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -9066,7 +9066,7 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
+                1,
                 0,
                 0,
                 1
@@ -9085,7 +9085,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -9095,7 +9095,7 @@
                 1,
                 0,
                 0,
-                1,
+                0,
                 0
               ]
             }
@@ -9193,7 +9193,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -9201,10 +9201,37 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
+                0,
                 0,
                 0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
               ]
             }
           ],
@@ -9232,33 +9259,6 @@
                 0,
                 0,
                 0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
               ]
             }
           ],
@@ -9306,11 +9306,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -9360,11 +9360,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -9412,11 +9412,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -9432,7 +9432,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 84,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -9440,7 +9440,7 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
+                1,
                 0,
                 0,
                 1
@@ -9459,7 +9459,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -9469,7 +9469,7 @@
                 1,
                 0,
                 0,
-                1,
+                0,
                 0
               ]
             }
@@ -9567,7 +9567,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -9575,10 +9575,37 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
+                0,
                 0,
                 0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
               ]
             }
           ],
@@ -9606,33 +9633,6 @@
                 0,
                 0,
                 0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
               ]
             }
           ],
@@ -10987,11 +10987,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -11041,11 +11041,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -11093,11 +11093,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -11113,7 +11113,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 84,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -11121,7 +11121,7 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
+                1,
                 0,
                 0,
                 1
@@ -11140,7 +11140,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -11150,7 +11150,7 @@
                 1,
                 0,
                 0,
-                1,
+                0,
                 0
               ]
             }
@@ -11248,7 +11248,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -11256,10 +11256,37 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
+                0,
                 0,
                 0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
               ]
             }
           ],
@@ -11287,33 +11314,6 @@
                 0,
                 0,
                 0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
               ]
             }
           ],
@@ -11361,11 +11361,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -11381,16 +11381,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 120,
+          "child_dimension": 336,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                0,
                 1,
-                0,
-                0,
                 0,
                 2
               ]
@@ -11415,11 +11415,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -11435,7 +11435,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -11444,9 +11444,9 @@
               "labels": [
                 2,
                 0,
-                1,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -11597,16 +11597,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
                 1,
+                0,
+                0,
                 0,
                 2
               ]
@@ -11631,11 +11631,38 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                1,
+                0,
+                0
               ]
             }
           ],
@@ -11663,33 +11690,6 @@
                 0,
                 0,
                 1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                2
               ]
             }
           ],
@@ -11737,11 +11737,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -11791,11 +11791,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -11843,11 +11843,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -11863,7 +11863,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 84,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -11871,7 +11871,7 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
+                1,
                 0,
                 0,
                 1
@@ -11890,7 +11890,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -11900,7 +11900,7 @@
                 1,
                 0,
                 0,
-                1,
+                0,
                 0
               ]
             }
@@ -11998,7 +11998,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -12006,10 +12006,37 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
+                0,
                 0,
                 0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
               ]
             }
           ],
@@ -12037,33 +12064,6 @@
                 0,
                 0,
                 0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
               ]
             }
           ],
@@ -12111,11 +12111,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -12131,16 +12131,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 120,
+          "child_dimension": 336,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                0,
                 1,
-                0,
-                0,
                 0,
                 2
               ]
@@ -12165,11 +12165,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -12185,7 +12185,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -12194,9 +12194,9 @@
               "labels": [
                 2,
                 0,
-                1,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -12347,16 +12347,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
                 1,
+                0,
+                0,
                 0,
                 2
               ]
@@ -12381,11 +12381,38 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                1,
+                0,
+                0
               ]
             }
           ],
@@ -12413,33 +12440,6 @@
                 0,
                 0,
                 1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                2
               ]
             }
           ],
@@ -17307,11 +17307,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -17327,7 +17327,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 84,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -17335,7 +17335,7 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
+                1,
                 0,
                 0,
                 1
@@ -17354,7 +17354,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -17364,7 +17364,7 @@
                 1,
                 0,
                 0,
-                1,
+                0,
                 0
               ]
             }
@@ -17462,7 +17462,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -17470,10 +17470,37 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
+                0,
                 0,
                 0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -10,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -3,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
               ]
             }
           ],
@@ -17501,33 +17528,6 @@
                 0,
                 0,
                 0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -10,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -3,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
               ]
             }
           ],
@@ -17575,11 +17575,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -17629,11 +17629,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -17681,11 +17681,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -17696,33 +17696,6 @@
           "raw_charges": {
             "q": -1,
             "x": -8
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 0,
-            "I": -3
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -6
           },
           "signed_child_multiplicity": 1
         },
@@ -17755,7 +17728,34 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 420,
+          "child_dimension": 70,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 0,
+            "I": -3
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -6
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -17765,8 +17765,89 @@
                 0,
                 0,
                 0,
-                2,
+                0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -1,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -1,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -1,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 420,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                2,
+                0,
+                0,
+                0
               ]
             }
           ],
@@ -17798,12 +17879,12 @@
             }
           ],
           "physical_charges": {
-            "B": -1,
-            "I": -2
+            "B": -2,
+            "I": -1
           },
           "raw_charges": {
             "q": -1,
-            "x": -4
+            "x": -2
           },
           "signed_child_multiplicity": 1
         },
@@ -17818,60 +17899,6 @@
               "labels": [
                 0,
                 1,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -1,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -4
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -1,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -4
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
                 0,
                 0,
                 1
@@ -17898,9 +17925,36 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
-                1,
                 2,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -2,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                0,
                 0
               ]
             }
@@ -17924,62 +17978,8 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                1,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -2,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 210,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
                 1,
                 1,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -2,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
                 0,
                 1,
                 0
@@ -18160,7 +18160,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -18169,33 +18169,6 @@
               "labels": [
                 0,
                 0,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
                 0,
                 0,
                 1
@@ -18222,36 +18195,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
+                0,
+                1,
                 2,
-                1,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
                 0
               ]
             }
@@ -18275,8 +18221,62 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
                 1,
                 1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
                 0,
                 1,
                 0
@@ -18295,7 +18295,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 420,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -18305,7 +18305,7 @@
                 0,
                 0,
                 0,
-                0,
+                2,
                 1
               ]
             }
@@ -18330,9 +18330,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -18356,10 +18356,37 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -5,
+            "I": 2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
                 1,
+                0,
+                0,
+                0,
                 0
               ]
             }
@@ -18376,28 +18403,28 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 420,
+          "child_dimension": 70,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                0,
+                0,
                 1,
-                2,
-                0,
-                0,
-                0
+                1
               ]
             }
           ],
           "physical_charges": {
-            "B": -5,
-            "I": 2
+            "B": -6,
+            "I": 3
           },
           "raw_charges": {
             "q": -1,
-            "x": 4
+            "x": 6
           },
           "signed_child_multiplicity": 1
         },
@@ -18430,33 +18457,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                1,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -6,
-            "I": 3
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 6
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 6,
           "child_factors": [
             {
@@ -18464,11 +18464,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -18516,11 +18516,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
-                0,
                 1,
-                1
+                1,
+                0,
+                0,
+                0
               ]
             }
           ],
@@ -18536,7 +18536,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 210,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -18544,10 +18544,64 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
+                1,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -1,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -1,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
                 0,
                 1,
                 0,
-                2
+                0
               ]
             }
           ],
@@ -18579,12 +18633,12 @@
             }
           ],
           "physical_charges": {
-            "B": -1,
-            "I": -2
+            "B": -2,
+            "I": -1
           },
           "raw_charges": {
             "q": -1,
-            "x": -4
+            "x": -2
           },
           "signed_child_multiplicity": 1
         },
@@ -18606,12 +18660,12 @@
             }
           ],
           "physical_charges": {
-            "B": -1,
-            "I": -2
+            "B": -2,
+            "I": -1
           },
           "raw_charges": {
             "q": -1,
-            "x": -4
+            "x": -2
           },
           "signed_child_multiplicity": 1
         },
@@ -18624,11 +18678,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -18651,11 +18705,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
+                1,
                 0,
                 2,
                 0,
-                1
+                0
               ]
             }
           ],
@@ -18678,37 +18732,10 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                1,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -2,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 210,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
                 1,
                 1,
                 0,
+                1,
                 0
               ]
             }
@@ -18732,38 +18759,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                2,
                 0,
                 0,
                 0,
-                2
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -2,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -18914,7 +18914,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -18923,33 +18923,6 @@
               "labels": [
                 0,
                 0,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
                 0,
                 0,
                 1
@@ -18968,33 +18941,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 840,
           "child_factors": [
             {
@@ -19002,11 +18948,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                0,
                 0,
                 2,
                 0,
-                0
+                1
               ]
             }
           ],
@@ -19029,10 +18975,37 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                0,
                 1,
                 0,
                 1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                1,
+                0,
                 0
               ]
             }
@@ -19056,11 +19029,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -19076,6 +19049,60 @@
         },
         {
           "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                0,
+                1,
+                0,
+                2
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -5,
+            "I": 2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_factors": [
             {
@@ -19084,9 +19111,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -19110,38 +19137,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
-                0,
-                0,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -5,
-            "I": 2
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 4
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 336,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                2,
                 0,
                 1,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -19164,11 +19164,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
-                1,
                 0,
                 0,
-                0
+                0,
+                1,
+                1
               ]
             }
           ],
@@ -19236,7 +19236,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -19245,8 +19245,35 @@
               "labels": [
                 0,
                 0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -1,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
                 1,
                 1,
+                0,
                 0
               ]
             }
@@ -19270,37 +19297,10 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -1,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -4
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
                 1,
-                0,
-                0,
-                0,
                 0
               ]
             }
@@ -19317,60 +19317,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -2,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 840,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -2,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_factors": [
             {
@@ -19379,9 +19325,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -19405,8 +19351,62 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
+                0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -2,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 4
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -2,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 840,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                1,
                 0,
                 1,
                 0
@@ -19421,7 +19421,7 @@
             "q": -1,
             "x": -2
           },
-          "signed_child_multiplicity": 4
+          "signed_child_multiplicity": 2
         },
         {
           "branching_multiplicity": 1,
@@ -19587,7 +19587,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -19596,8 +19596,62 @@
               "labels": [
                 0,
                 0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 840,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
                 1,
                 1,
+                0,
                 0
               ]
             }
@@ -19621,11 +19675,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
               ]
             }
           ],
@@ -19641,87 +19695,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 840,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                1,
-                0,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -5,
-            "I": 2
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 4
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_factors": [
             {
@@ -19730,9 +19703,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -19756,10 +19729,37 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -5,
+            "I": 2
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 4
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
                 1,
+                0,
+                0,
+                0,
                 0
               ]
             }
@@ -19835,11 +19835,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
               ]
             }
           ],
@@ -19855,7 +19855,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 210,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -19864,6 +19864,33 @@
               "labels": [
                 0,
                 0,
+                1,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -2,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
                 0,
                 0,
                 1
@@ -19882,16 +19909,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
-                1,
-                1,
+                0,
                 0,
                 0
               ]
@@ -19916,38 +19943,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                2,
                 0,
                 0,
                 0,
-                2
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -2,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -20071,7 +20071,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -20080,33 +20080,6 @@
               "labels": [
                 0,
                 0,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
                 0,
                 0,
                 1
@@ -20125,16 +20098,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 210,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
-                0,
-                0,
+                1,
                 0,
                 0
               ]
@@ -20159,11 +20132,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -20191,6 +20164,33 @@
                 0,
                 1,
                 0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                0,
+                0,
+                1
               ]
             }
           ],
@@ -20238,11 +20238,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -20258,16 +20258,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 120,
+          "child_dimension": 336,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                0,
                 1,
-                0,
-                0,
                 0,
                 2
               ]
@@ -20292,11 +20292,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -20312,7 +20312,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -20321,9 +20321,9 @@
               "labels": [
                 2,
                 0,
-                1,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -20474,16 +20474,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
                 1,
+                0,
+                0,
                 0,
                 2
               ]
@@ -20508,11 +20508,38 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                1,
+                0,
+                0
               ]
             }
           ],
@@ -20540,33 +20567,6 @@
                 0,
                 0,
                 1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": -2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                2
               ]
             }
           ],
@@ -20614,11 +20614,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                3,
                 0,
                 0,
                 0,
-                0
+                0,
+                3
               ]
             }
           ],
@@ -20634,33 +20634,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                2,
-                0,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -1,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": -4
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 720,
           "child_factors": [
             {
@@ -20668,11 +20641,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                3,
-                0,
                 0,
                 1,
-                0
+                0,
+                0,
+                3
               ]
             }
           ],
@@ -20704,29 +20677,29 @@
             }
           ],
           "physical_charges": {
-            "B": -2,
-            "I": -1
+            "B": -1,
+            "I": -2
           },
           "raw_charges": {
             "q": -1,
-            "x": -2
+            "x": -4
           },
           "signed_child_multiplicity": -1
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 1260,
+          "child_dimension": 504,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                0,
                 0,
                 0,
                 1,
-                1
+                3
               ]
             }
           ],
@@ -20749,11 +20722,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                0,
                 0,
                 1,
                 0,
-                0
+                2
               ]
             }
           ],
@@ -20769,18 +20742,45 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 504,
+          "child_dimension": 1260,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                3,
+                1,
                 1,
                 0,
                 0,
-                0
+                2
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -2,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": -2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 120,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                0,
+                0,
+                1
               ]
             }
           ],
@@ -20931,43 +20931,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 504,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
-                0,
                 1,
-                3
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -4,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 2
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 336,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
                 0,
                 0,
-                1,
                 0,
                 2
               ]
@@ -20992,11 +20965,65 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                2,
+                0,
+                0,
                 1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": -4,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": -1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 504,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                3,
                 1,
                 0,
                 0,
-                2
+                0
               ]
             }
           ],
@@ -21028,12 +21055,12 @@
             }
           ],
           "physical_charges": {
-            "B": -4,
-            "I": 1
+            "B": -5,
+            "I": 2
           },
           "raw_charges": {
             "q": -1,
-            "x": 2
+            "x": 4
           },
           "signed_child_multiplicity": -1
         },
@@ -21046,38 +21073,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                3,
+                0,
                 0,
                 1,
-                0,
-                0,
-                3
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": -5,
-            "I": 2
-          },
-          "raw_charges": {
-            "q": -1,
-            "x": 4
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                2
+                0
               ]
             }
           ],
@@ -21100,11 +21100,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                3,
                 0,
                 0,
                 0,
-                0,
-                3
+                0
               ]
             }
           ],
@@ -21152,11 +21152,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -21206,11 +21206,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -21258,11 +21258,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -21273,33 +21273,6 @@
           "raw_charges": {
             "q": 1,
             "x": -8
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 6,
-            "I": -3
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -6
           },
           "signed_child_multiplicity": 1
         },
@@ -21332,7 +21305,34 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 420,
+          "child_dimension": 70,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 6,
+            "I": -3
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -6
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -21342,8 +21342,89 @@
                 0,
                 0,
                 0,
-                2,
+                0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 5,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 5,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 5,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 420,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                2,
+                0,
+                0,
+                0
               ]
             }
           ],
@@ -21375,12 +21456,12 @@
             }
           ],
           "physical_charges": {
-            "B": 5,
-            "I": -2
+            "B": 4,
+            "I": -1
           },
           "raw_charges": {
             "q": 1,
-            "x": -4
+            "x": -2
           },
           "signed_child_multiplicity": 1
         },
@@ -21395,60 +21476,6 @@
               "labels": [
                 0,
                 1,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 5,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -4
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 5,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -4
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
                 0,
                 0,
                 1
@@ -21475,9 +21502,36 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
-                1,
                 2,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 4,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                0,
                 0
               ]
             }
@@ -21501,62 +21555,8 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                1,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 4,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 210,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
                 1,
                 1,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 4,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
                 0,
                 1,
                 0
@@ -21737,7 +21737,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -21746,33 +21746,6 @@
               "labels": [
                 0,
                 0,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
                 0,
                 0,
                 1
@@ -21799,36 +21772,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
+                0,
+                1,
                 2,
-                1,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
                 0
               ]
             }
@@ -21852,8 +21798,62 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
                 1,
                 1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
                 0,
                 1,
                 0
@@ -21872,7 +21872,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 420,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -21882,7 +21882,7 @@
                 0,
                 0,
                 0,
-                0,
+                2,
                 1
               ]
             }
@@ -21907,9 +21907,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -21933,10 +21933,37 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 1,
+            "I": 2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
                 1,
+                0,
+                0,
+                0,
                 0
               ]
             }
@@ -21953,28 +21980,28 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 420,
+          "child_dimension": 70,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                0,
+                0,
                 1,
-                2,
-                0,
-                0,
-                0
+                1
               ]
             }
           ],
           "physical_charges": {
-            "B": 1,
-            "I": 2
+            "B": 0,
+            "I": 3
           },
           "raw_charges": {
             "q": 1,
-            "x": 4
+            "x": 6
           },
           "signed_child_multiplicity": 1
         },
@@ -22007,33 +22034,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 70,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                1,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 0,
-            "I": 3
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 6
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 6,
           "child_factors": [
             {
@@ -22041,11 +22041,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -22093,11 +22093,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
-                0,
                 1,
-                1
+                1,
+                0,
+                0,
+                0
               ]
             }
           ],
@@ -22113,7 +22113,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 210,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -22121,10 +22121,64 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
+                1,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 5,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 5,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
                 0,
                 1,
                 0,
-                2
+                0
               ]
             }
           ],
@@ -22156,12 +22210,12 @@
             }
           ],
           "physical_charges": {
-            "B": 5,
-            "I": -2
+            "B": 4,
+            "I": -1
           },
           "raw_charges": {
             "q": 1,
-            "x": -4
+            "x": -2
           },
           "signed_child_multiplicity": 1
         },
@@ -22183,12 +22237,12 @@
             }
           ],
           "physical_charges": {
-            "B": 5,
-            "I": -2
+            "B": 4,
+            "I": -1
           },
           "raw_charges": {
             "q": 1,
-            "x": -4
+            "x": -2
           },
           "signed_child_multiplicity": 1
         },
@@ -22201,11 +22255,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ]
             }
           ],
@@ -22228,11 +22282,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
+                1,
                 0,
                 2,
                 0,
-                1
+                0
               ]
             }
           ],
@@ -22255,37 +22309,10 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                1,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 4,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 210,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
                 1,
                 1,
                 0,
+                1,
                 0
               ]
             }
@@ -22309,38 +22336,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                2,
                 0,
                 0,
                 0,
-                2
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 4,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -22491,7 +22491,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -22500,33 +22500,6 @@
               "labels": [
                 0,
                 0,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
                 0,
                 0,
                 1
@@ -22545,33 +22518,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 840,
           "child_factors": [
             {
@@ -22579,11 +22525,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                0,
                 0,
                 2,
                 0,
-                0
+                1
               ]
             }
           ],
@@ -22606,10 +22552,37 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                0,
                 1,
                 0,
                 1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                1,
+                0,
                 0
               ]
             }
@@ -22633,11 +22606,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -22653,6 +22626,60 @@
         },
         {
           "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                0,
+                1,
+                0,
+                2
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 1,
+            "I": 2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 4
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_factors": [
             {
@@ -22661,9 +22688,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -22687,38 +22714,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
-                0,
-                0,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 1,
-            "I": 2
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 4
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 336,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                2,
                 0,
                 1,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -22741,11 +22741,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
-                1,
                 0,
                 0,
-                0
+                0,
+                1,
+                1
               ]
             }
           ],
@@ -22813,7 +22813,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -22822,8 +22822,35 @@
               "labels": [
                 0,
                 0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 5,
+            "I": -2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -4
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
                 1,
                 1,
+                0,
                 0
               ]
             }
@@ -22847,37 +22874,10 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 5,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -4
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
                 1,
-                0,
-                0,
-                0,
                 0
               ]
             }
@@ -22894,60 +22894,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 4,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 840,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
-                0,
-                1,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 4,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_factors": [
             {
@@ -22956,9 +22902,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -22982,8 +22928,62 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
+                0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 4,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 4
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 4,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 840,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                1,
                 0,
                 1,
                 0
@@ -22998,7 +22998,7 @@
             "q": 1,
             "x": -2
           },
-          "signed_child_multiplicity": 4
+          "signed_child_multiplicity": 2
         },
         {
           "branching_multiplicity": 1,
@@ -23164,7 +23164,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -23173,8 +23173,62 @@
               "labels": [
                 0,
                 0,
+                0,
+                0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 840,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 210,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
                 1,
                 1,
+                0,
                 0
               ]
             }
@@ -23198,11 +23252,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
               ]
             }
           ],
@@ -23218,87 +23272,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 840,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                1,
-                0,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 1,
-            "I": 2
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 4
-          },
-          "signed_child_multiplicity": 2
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 210,
           "child_factors": [
             {
@@ -23307,9 +23280,9 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
-                1,
                 0,
+                1,
+                1,
                 0
               ]
             }
@@ -23333,10 +23306,37 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 1,
+            "I": 2
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 4
+          },
+          "signed_child_multiplicity": 2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 6,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
                 1,
+                0,
+                0,
+                0,
                 0
               ]
             }
@@ -23412,11 +23412,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
               ]
             }
           ],
@@ -23432,7 +23432,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 210,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -23441,6 +23441,33 @@
               "labels": [
                 0,
                 0,
+                1,
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 4,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
                 0,
                 0,
                 1
@@ -23459,16 +23486,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                1,
                 0,
-                1,
-                1,
+                0,
                 0,
                 0
               ]
@@ -23493,38 +23520,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
+                2,
                 0,
                 0,
                 0,
-                2
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 4,
-            "I": -1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -23648,7 +23648,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 210,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -23657,33 +23657,6 @@
               "labels": [
                 0,
                 0,
-                1,
-                1,
-                0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 84,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                1,
                 0,
                 0,
                 1
@@ -23702,16 +23675,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 210,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
-                0,
-                0,
+                1,
                 0,
                 0
               ]
@@ -23736,11 +23709,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -23768,6 +23741,33 @@
                 0,
                 1,
                 0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                0,
+                1,
+                0,
+                0,
+                1
               ]
             }
           ],
@@ -23815,11 +23815,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                1,
                 0,
                 0,
                 0,
-                1
+                2
               ]
             }
           ],
@@ -23835,16 +23835,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 120,
+          "child_dimension": 336,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
+                0,
                 1,
-                0,
-                0,
                 0,
                 2
               ]
@@ -23869,11 +23869,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                0,
                 1,
                 0,
                 0,
-                1,
-                0
+                1
               ]
             }
           ],
@@ -23889,7 +23889,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -23898,9 +23898,9 @@
               "labels": [
                 2,
                 0,
-                1,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -24051,16 +24051,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 336,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
                 1,
+                0,
+                0,
                 0,
                 2
               ]
@@ -24085,11 +24085,38 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
                 1,
                 0,
                 0,
-                1
+                1,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -2
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                1,
+                0,
+                0
               ]
             }
           ],
@@ -24117,33 +24144,6 @@
                 0,
                 0,
                 1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": -2
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                2
               ]
             }
           ],
@@ -24191,11 +24191,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                3,
                 0,
                 0,
                 0,
-                0
+                0,
+                3
               ]
             }
           ],
@@ -24211,33 +24211,6 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                2,
-                0,
-                0,
-                0,
-                1
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 5,
-            "I": -2
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": -4
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
           "child_dimension": 720,
           "child_factors": [
             {
@@ -24245,11 +24218,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                3,
-                0,
                 0,
                 1,
-                0
+                0,
+                0,
+                3
               ]
             }
           ],
@@ -24281,29 +24254,29 @@
             }
           ],
           "physical_charges": {
-            "B": 4,
-            "I": -1
+            "B": 5,
+            "I": -2
           },
           "raw_charges": {
             "q": 1,
-            "x": -2
+            "x": -4
           },
           "signed_child_multiplicity": -1
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 1260,
+          "child_dimension": 504,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                0,
                 0,
                 0,
                 1,
-                1
+                3
               ]
             }
           ],
@@ -24326,11 +24299,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                2,
+                0,
                 0,
                 1,
                 0,
-                0
+                2
               ]
             }
           ],
@@ -24346,18 +24319,45 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 504,
+          "child_dimension": 1260,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                3,
+                1,
                 1,
                 0,
                 0,
-                0
+                2
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 4,
+            "I": -1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": -2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 120,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                0,
+                0,
+                1
               ]
             }
           ],
@@ -24508,43 +24508,16 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 504,
+          "child_dimension": 120,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                0,
-                0,
-                0,
                 1,
-                3
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 2,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 2
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 336,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
                 0,
                 0,
-                1,
                 0,
                 2
               ]
@@ -24569,11 +24542,65 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                2,
+                0,
+                0,
                 1,
+                1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 336,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                2,
+                0,
+                1,
+                0,
+                0
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 2,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 1,
+            "x": 2
+          },
+          "signed_child_multiplicity": -1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 504,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                3,
                 1,
                 0,
                 0,
-                2
+                0
               ]
             }
           ],
@@ -24605,12 +24632,12 @@
             }
           ],
           "physical_charges": {
-            "B": 2,
-            "I": 1
+            "B": 1,
+            "I": 2
           },
           "raw_charges": {
             "q": 1,
-            "x": 2
+            "x": 4
           },
           "signed_child_multiplicity": -1
         },
@@ -24623,38 +24650,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                3,
+                0,
                 0,
                 1,
-                0,
-                0,
-                3
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 1,
-            "I": 2
-          },
-          "raw_charges": {
-            "q": 1,
-            "x": 4
-          },
-          "signed_child_multiplicity": -1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 120,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                1,
-                0,
-                0,
-                0,
-                2
+                0
               ]
             }
           ],
@@ -24677,11 +24677,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
+                3,
                 0,
                 0,
                 0,
-                0,
-                3
+                0
               ]
             }
           ],
@@ -24729,11 +24729,11 @@
               "cartan_type": "A5",
               "display_name": "SU(6)",
               "labels": [
-                1,
                 0,
                 0,
                 0,
-                0
+                0,
+                1
               ]
             }
           ],
@@ -24749,7 +24749,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 6,
+          "child_dimension": 84,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -24757,7 +24757,7 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                0,
+                1,
                 0,
                 0,
                 1
@@ -24776,7 +24776,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -24786,7 +24786,7 @@
                 1,
                 0,
                 0,
-                1,
+                0,
                 0
               ]
             }
@@ -24884,7 +24884,7 @@
         },
         {
           "branching_multiplicity": 1,
-          "child_dimension": 84,
+          "child_dimension": 6,
           "child_factors": [
             {
               "cartan_factor_id": "flavour",
@@ -24892,10 +24892,37 @@
               "display_name": "SU(6)",
               "labels": [
                 0,
-                1,
+                0,
                 0,
                 0,
                 1
+              ]
+            }
+          ],
+          "physical_charges": {
+            "B": 8,
+            "I": 1
+          },
+          "raw_charges": {
+            "q": 3,
+            "x": 2
+          },
+          "signed_child_multiplicity": 1
+        },
+        {
+          "branching_multiplicity": 1,
+          "child_dimension": 84,
+          "child_factors": [
+            {
+              "cartan_factor_id": "flavour",
+              "cartan_type": "A5",
+              "display_name": "SU(6)",
+              "labels": [
+                1,
+                0,
+                0,
+                1,
+                0
               ]
             }
           ],
@@ -24923,33 +24950,6 @@
                 0,
                 0,
                 0
-              ]
-            }
-          ],
-          "physical_charges": {
-            "B": 8,
-            "I": 1
-          },
-          "raw_charges": {
-            "q": 3,
-            "x": 2
-          },
-          "signed_child_multiplicity": 1
-        },
-        {
-          "branching_multiplicity": 1,
-          "child_dimension": 6,
-          "child_factors": [
-            {
-              "cartan_factor_id": "flavour",
-              "cartan_type": "A5",
-              "display_name": "SU(6)",
-              "labels": [
-                0,
-                0,
-                0,
-                0,
-                1
               ]
             }
           ],

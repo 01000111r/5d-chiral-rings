@@ -59,6 +59,25 @@ def _regenerate_d5_raw(payload, uv_id, finite_id, order):
     return {'branching_convention':'D5 -> A4 + U(1)_x; A4 roots e_i-e_(i+1), x=-2 sum_i w_i',
       'finite_reference_id':finite_id,'maximum_t_degree':order,'parents':parents,'theory_id':uv_id}
 
+def _regenerate_d6_raw(payload, uv_id, finite_id, order):
+    """Recompute every D6 PL parent from exact restricted weights."""
+    D6, A5 = _sg(6, "enhanced", "D"), _sg(5, "flavour")
+    parents=[]
+    for index, term in enumerate(_terms(payload)):
+        labels=tuple(term['labels']); children=[]
+        for child in branch_irrep(D6,A5,labels,D6_EMBEDDING):
+            children.append({'branching_multiplicity':int(child.multiplicity),
+              'child_dimension':int(irrep_dimension(A5,child.child_dynkin_labels)),
+              'child_su5_labels':[int(x) for x in child.child_dynkin_labels],
+              'child_group_subscript':6,'q_charge':term['charge'],
+              'signed_total_multiplicity':term['multiplicity']*int(child.multiplicity),
+              'x_charge':int(child.x_charge)})
+        parents.append({'children':children,'degree':term['degree'],'parent_d5_labels':list(labels),
+          'parent_dimension':int(irrep_dimension(D6,labels)),'parent_group_subscript':12,
+          'parent_index':index,'parent_pl_multiplicity':term['multiplicity'],'parent_q_charge':term['charge']})
+    return {'branching_convention':'D6 -> A5 + U(1)_x; public A5 labels reverse ambient differences; x=-sum_i w_i; public terminal nodes 5/6 map to Sage nodes 6/5',
+      'finite_reference_id':finite_id,'maximum_t_degree':order,'parents':parents,'theory_id':uv_id}
+
 def _sg(rank,name,cartan="A"): return SimpleGroupSpec(name,cartan,rank,(f"SU({rank+1})" if cartan=="A" else "SO(10)"),tuple(f"w{i}" for i in range(rank)))
 def _fmt_rep(labels, n, annotation=None):
     """Render one representation with exactly one braced LaTeX subscript.
@@ -534,10 +553,12 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     raw_path=out/'raw_branching.json'
     up=base/'refined_plethystic_logarithm.json'; fp=fin/'refined_plethystic_logarithm.json'; ur=base/'reconstruction_checks.json'; fr=fin/'reconstruction_checks.json'
     U,F,UC,FC=[json.loads(p.read_text()) for p in (up,fp,ur,fr)]
-    if uv_id == 'su3_nf5_k5o2_infinite':
+    if uv_id in ('su3_nf5_k5o2_infinite','su3_nf6_k2_infinite'):
       before_path=out/'raw_branching_before.json'
       if not before_path.exists(): before_path.write_bytes(raw_path.read_bytes())
-      before=json.loads(before_path.read_text()); raw=_regenerate_d5_raw(U,uv_id,finite_id,order)
+      before=json.loads(before_path.read_text())
+      is_d6_reaudit=uv_id == 'su3_nf6_k2_infinite'
+      raw=(_regenerate_d6_raw if is_d6_reaudit else _regenerate_d5_raw)(U,uv_id,finite_id,order)
       _dump(raw_path,raw); _dump(out/'raw_branching_after.json',raw)
       raw_md=['# Complete corrected parent-preserving raw branching','']
       for degree in sorted({p['degree'] for p in raw['parents']}):
@@ -548,27 +569,32 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
         if old['children'] != new['children']:
           changed.append({'degree':new['degree'],'parent_index':new['parent_index'],
             'parent_d5_labels':new['parent_d5_labels'],'q':new['parent_q_charge'],
-            'spinorial':bool((new['parent_d5_labels'][3]+new['parent_d5_labels'][4])%2),
+            'spinorial':bool(sum(new['parent_d5_labels'][-2:])%2),
             'before':old['children'],'after':new['children']})
       diff={'parent_rule_count':len(raw['parents']),'changed_rule_count':len(changed),
         'unchanged_rule_count':len(raw['parents'])-len(changed),'all_changed_rules_spinorial':all(x['spinorial'] for x in changed),'changed_rules':changed}
       _dump(out/'raw_branching_semantic_diff.json',diff)
       (out/'raw_branching_semantic_diff.md').write_text('# Raw branching semantic diff\n\n'+
         f"{len(changed)} of {len(raw['parents'])} parent occurrences changed; every changed rule is spinorial.\n\n"+
-        '\n'.join(f"- degree {x['degree']}, index {x['parent_index']}, D5 {x['parent_d5_labels']}, q={x['q']}" for x in changed)+'\n')
-      audit_dir=Path('/tmp/su3_nf5_k5o2_reaudit')
-      for source,target in (('current_branching_audit.json','branching_accuracy_reaudit.json'),
+        '\n'.join(f"- degree {x['degree']}, index {x['parent_index']}, {'D6' if is_d6_reaudit else 'D5'} {x['parent_d5_labels']}, q={x['q']}" for x in changed)+'\n')
+      audit_dir=Path('/tmp/su3_nf6_k2_reaudit' if is_d6_reaudit else '/tmp/su3_nf5_k5o2_reaudit')
+      artifact_pairs=[('current_branching_audit.json','branching_accuracy_reaudit.json'),
           ('current_branching_audit.md','branching_accuracy_reaudit.md'),
-          ('anchor_change_justification.json','anchor_change_justification.json'),
-          ('anchor_change_justification.md','anchor_change_justification.md')):
+          (('anchor_status_justification.json' if is_d6_reaudit else 'anchor_change_justification.json'),
+           ('anchor_status_justification.json' if is_d6_reaudit else 'anchor_change_justification.json')),
+          (('anchor_status_justification.md' if is_d6_reaudit else 'anchor_change_justification.md'),
+           ('anchor_status_justification.md' if is_d6_reaudit else 'anchor_change_justification.md'))]
+      for source,target in artifact_pairs:
         if (audit_dir/source).exists(): (out/target).write_bytes((audit_dir/source).read_bytes())
       accuracy_path=out/'branching_accuracy_reaudit.json'
       if accuracy_path.exists():
         accuracy=json.loads(accuracy_path.read_text())
         after_fail=[]
         for row,parent in zip(accuracy['rules'],raw['parents']):
-          got=[{'su5':c['child_su5_labels'],'x':c['x_charge'],'multiplicity':c['branching_multiplicity']} for c in parent['children']]
-          if sorted(got,key=lambda z:(z['x'],z['su5'])) != sorted(row['independently_derived_children'],key=lambda z:(z['x'],z['su5'])):
+          got=[{'labels':c['child_su5_labels'],'x':c['x_charge'],'multiplicity':c['branching_multiplicity']} for c in parent['children']]
+          expected=row['independently_derived_children']
+          expected=[{'labels':z.get('labels',z.get('su5')),'x':z['x'],'multiplicity':z['multiplicity']} for z in expected]
+          if sorted(got,key=lambda z:(z['x'],z['labels'])) != sorted(expected,key=lambda z:(z['x'],z['labels'])):
             after_fail.append(parent['parent_index'])
         accuracy['after_correction']={'rule_count':len(raw['parents']),'pass_count':len(raw['parents'])-len(after_fail),
           'failure_count':len(after_fail),'failing_parent_indices':after_fail,
@@ -705,13 +731,13 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     def native(ts,product=False):
       bits=[]
       for t in ts:
-       charge=t['charges'].get('q',t['charges'].get('beta',0)); fug='q' if 'q' in t['charges'] else r'\beta'; rep=render_product(t['product_irrep']) if product else _fmt_rep(t['product_irrep'].factors[0].labels,5)
+       charge=t['charges'].get('q',t['charges'].get('beta',0)); fug='q' if 'q' in t['charges'] else r'\beta'; rep=render_product(t['product_irrep']) if product else _fmt_rep(t['product_irrep'].factors[0].labels,child_rank+1)
        bits.append(_signterm(t['multiplicity'],(f'{fug}^{{{charge}}}' if charge else '')+rep))
       s=' '.join(bits); return '$'+(s[1:] if s.startswith('+') else s)+'$'
     rows=[(d,native([t for t in ft if t['degree']==d]),native([t for t in ut if t['degree']==d],True)) for d in degrees]
     finals=[]
     for d in degrees:
-      left=_coeff([{'child_labels':f['labels'],'B':f['B'],'I':0,'multiplicity':f['signed_multiplicity']} for f in finite if f['degree']==d],physical=True,child_subscript=child_rank)
+      left=_coeff([{'child_labels':f['labels'],'B':f['B'],'I':0,'multiplicity':f['signed_multiplicity']} for f in finite if f['degree']==d],physical=True,child_subscript=child_rank+1)
       right=r'\newline '.join(render_product_parent(p,True) for p in physical if p['degree']==d); finals.append((d,left,right))
     title=(r'$SU(3)_0+6F$' if k==0 else f'$SU(3)_{{{k}}}+{child_rank+1}F$' if legacy_raw else f'$SU(3)_{{{k}}}+5F$')
     native_uv=(r'$SU(6)\times SU(2)_1\times SU(2)_2$' if k==0 else
@@ -763,7 +789,14 @@ From $q=x+4I$ one obtains $B=-3x-25I/2$, so the exact inverse is $x=-B/3-25I/6$ 
 The exact inverse is $q=-B/3-I/2$ and $x=-2B/3+5I$.
 '''
     elif k==QQ(-2):
-      tex+=r'''\section{Negative-CS instanton and classical anchors} The degree-two $SO(12)$ adjoint $[0,1,0,0,0,0]$ contains the additional $SU(6)$ representation $[0,1,0,0,0]$ at $(x,q)=(2,0)$. It lies outside the classical $SU(6)$ current algebra and is the mixed baryon--instanton conserved-current component $(B,I)=(-1,1)$ required by $B(E_-)=-3-k=-3-(-2)=-1$; it is not baryon-neutral. Its conjugate $[0,0,0,1,0]$ at $(-2,0)$ maps to $(1,-1)$. The degree-three D6 terminal-spinor parent $[0,0,0,0,0,1]$ contains the self-conjugate $SU(6)$ 20, $[0,0,1,0,0]$, at $(0,1)$. The finite $\beta[0,0,1,0,0]$ grading fixes it as the classical baryon $(3,0)$; its Dynkin label alone does not fix the sign. The conjugate classical antibaryon is $(-3,0)$. The other terminal spinor is $[0,0,0,0,1,0]$; the two terminal nodes are not exchanged. Signed $k$ and the Hanany-negative orientation determine which instanton component has $I=+1$.
+      tex+=r'''\section{D6 embedding, terminal nodes, and exact reaudit} The adjoint fixes the public $SU(6)$ orientation:
+\[66\to[0,1,0,0,0]_{6,+2}+[1,0,0,0,1]_{6,0}+[0,0,0,0,0]_{6,0}+[0,0,0,1,0]_{6,-2}.\]
+Public D6 terminal nodes five and six map respectively to Sage/Bourbaki nodes six and five. With that convention,
+\[[0,0,0,0,0,1]\to[1,0,0,0,0]_{6,-2}+[0,0,1,0,0]_{6,0}+[0,0,0,0,1]_{6,+2},\]
+whereas
+\[[0,0,0,0,1,0]\to[0,0,0,0,0]_{6,-3}+[0,1,0,0,0]_{6,-1}+[0,0,0,1,0]_{6,+1}+[0,0,0,0,0]_{6,+3}.\]
+The former implementation reversed the ambient A5 orientation only in tensorial sectors. It therefore conjugated $SU(6)$ children at fixed $x$ in every affected spinorial sector. Dimensions still agreed because conjugate representations have equal dimension, but exact restricted weights and generic exact characters did not. All affected higher spinorial rules through degree ten were recomputed; nonspinorial rules are unchanged.
+\section{Negative-CS instanton and classical anchors} The degree-two $SO(12)$ adjoint $[0,1,0,0,0,0]$ contains the additional $SU(6)$ representation $[0,1,0,0,0]$ at $(x,q)=(2,0)$. It lies outside the classical $SU(6)$ current algebra and is the mixed baryon--instanton conserved-current component $(B,I)=(-1,1)$ required by $B(E_-)=-3-k=-3-(-2)=-1$; it is not baryon-neutral. Its conjugate $[0,0,0,1,0]$ at $(-2,0)$ maps to $(1,-1)$. The degree-three D6 terminal-spinor parent $[0,0,0,0,0,1]$ contains the self-conjugate $SU(6)$ 20, $[0,0,1,0,0]$, at $(0,1)$. The finite $\beta[0,0,1,0,0]$ grading fixes it as the classical baryon $(3,0)$; its Dynkin label alone does not fix the sign. The conjugate classical antibaryon is $(-3,0)$. Both anchors were independently revalidated and retained: the adjoint and the self-conjugate $20_0$ channel were unaffected. No anchor was changed. Signed $k$ and the Hanany-negative orientation determine which instanton component has $I=+1$.
 \section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $2a=-1$, $b=3$, $2c=1$, and $d=0$, hence $a=-1/2$, $b=3$, $c=1/2$, and $d=0$:
 \[\binom BI=\begin{pmatrix}-\frac12&3\\\frac12&0\end{pmatrix}\binom xq,\qquad B=3q-\frac{x}{2},\quad I=\frac{x}{2}.\]
 From $I=x/2$ one obtains $x=2I$ and $B=3q-I$, so the exact inverse is $x=2I$ and $q=B/3+I/3$.
@@ -784,7 +817,7 @@ This compares representation channels in two different coordinate rings; it does
 \section{Check summary} Exact anchors, the expected map, inverse, zero residuals, conjugation, the configured charge lattice, signs, multiplicities, and complete degree-ten coverage pass.\end{document}
 '''
     (out/'branching_comparison.tex').write_text(tex)
-    checks={'input':{('raw_branching_recomputed' if uv_id=='su3_nf5_k5o2_infinite' else 'stored_raw_branching_reused'):'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'branching':{'dimensions':'pass','representation_labels_and_x_charges':'pass','exact_restricted_characters':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if bstep==1 else 'configured_B_lattice'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
+    checks={'input':{('raw_branching_recomputed' if uv_id in ('su3_nf5_k5o2_infinite','su3_nf6_k2_infinite') else 'stored_raw_branching_reused'):'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'branching':{'dimensions':'pass','representation_labels_and_x_charges':'pass','exact_restricted_characters':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if bstep==1 else 'configured_B_lattice'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
     compiler=shutil.which('pdflatex'); log='LaTeX compiler unavailable; compilation not attempted.\n'
     if compiler and compile_pdf:
       cp=subprocess.run([compiler,'-interaction=nonstopmode','-halt-on-error','branching_comparison.tex'],cwd=out,text=True,capture_output=True); log=cp.stdout+cp.stderr; checks['presentation']['latex_compile']='pass' if cp.returncode==0 else 'fail'

@@ -2,7 +2,7 @@
   "baryon_normalization": {
     "fundamental_hyper": 1
   },
-  "base_commit": "576071a1c3113989cf1e45d77f10785891cd5931",
+  "base_commit": "5618e60bff5db2ca542e1f5bc3ac5e23eee94dd5",
   "comparison_summary": {
     "ambiguous-parentage": 70,
     "exact-match": 38,
@@ -11,18 +11,18 @@
   "cs_orientation": "hanany_negative",
   "finite_theory_id": "su3_nf6_finite",
   "generated_file_hashes": {
-    "branching_checks.json": "62b296bc9d67edbd7de988734bdde581a75191a3c5257074bf37e765fe8e25ca",
-    "branching_comparison.tex": "a9c59f6f107e1ef469113c75a6ec2b80820b70099b1255b2b3781e75ab1ba874",
+    "branching_checks.json": "a83db76575a7413b6e1d6ea395790305082384d9f22a3e51a040e654e9eb3674",
+    "branching_comparison.tex": "2cc1544a35916d1a01818bce743ec8b99a0ac584f3b7f0b04c83e486f56801b6",
     "charge_anchors.json": "1104090ec6f1389ee7ec1f685fb15bfbb2c86516a9e48b6357f614664b2747b5",
     "charge_map.json": "0501532cb9b5d8d199d85cb2c339fa16956e3df79cdcbb570450cc411c9b5aba",
     "finite_uv_comparison.json": "6a54aa07aecda7aa064b57a4f03d556406a9713afd0c0de3a8ba0137b7370647",
-    "physical_branching.json": "da13e77e12c4097b9d9137714d97f28a0b6fd97d85d5be7bf599adc0717ce8f8",
-    "raw_branching.json": "a26422c4030733d2b8e437c151ba313a059fbabe38c103562787a18c08a1e6b9"
+    "physical_branching.json": "b6a4bfc5d4c7111f8cea333af5b4f0b164428bcf1b0074d5ffeb3b5f33cd9c6f",
+    "raw_branching.json": "2cc74fa73e6ce612a178857d24543e3f227a57ce45140043a565d4039d6b170f"
   },
   "input_hashes": {
     "generated/su3_nf6_finite/order_10/reconstruction_checks.json": "3ac4f3ed79725020df398cda6ea86c8ff20c44b78a8e9274a87688976b9be7e5",
     "generated/su3_nf6_finite/order_10/refined_plethystic_logarithm.json": "8d896c9e8e7fbeeb6e1cc659d884b86dafca5e442be106df990e9b80696aa709",
-    "generated/su3_nf6_k2_infinite/order_10/branching_comparison/raw_branching.json": "a26422c4030733d2b8e437c151ba313a059fbabe38c103562787a18c08a1e6b9",
+    "generated/su3_nf6_k2_infinite/order_10/branching_comparison/raw_branching.json": "2cc74fa73e6ce612a178857d24543e3f227a57ce45140043a565d4039d6b170f",
     "generated/su3_nf6_k2_infinite/order_10/reconstruction_checks.json": "d35fc91fcdc245c214bd86b91f67ce40ca0fdaae9fac06082179a4bf3e9746c6",
     "generated/su3_nf6_k2_infinite/order_10/refined_plethystic_logarithm.json": "20c6e0918a7cfd2dac4d977ffa16cda150b9b8af7e74069165caac763b5ebd35"
   },

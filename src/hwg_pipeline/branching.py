@@ -229,7 +229,7 @@ def _branch_d6_a5(labels):
     """Exact ``SO(12) -> SU(6) x U(1)`` restriction.
 
     The project Dynkin-node convention fixes node six by
-    ``32 -> 6_(+2) + 20_0 + anti-6_(-2)``.  In orthonormal D6
+    ``32' -> 6_(-2) + 20_0 + anti-6_(+2)``.  In orthonormal D6
     coordinates this is ``x=-sum(weight)``.  Charge slices are decomposed
     into complete A5 characters, so this remains exact for every irrep used
     by the order-ten plethystic logarithm.
@@ -260,10 +260,11 @@ def _branch_d6_a5(labels):
                 raise ValueError("exact A5 character decomposition failed")
             highest = max(dominant, key=lambda k: (sum((i+1)*(6-i)*k[i] for i in range(5)), k))
             coefficient = remaining[highest]
-            # On the tensor coset Sage's ambient A5 orientation is opposite
-            # to the public SU(6) Dynkin ordering; the spinor coset already
-            # has the requested node-six orientation.
-            child = highest if (labels[4] + labels[5]) % 2 else tuple(reversed(highest))
+            # The adjoint fixes the public A5 orientation opposite to the
+            # ambient coordinate-difference labels.  This is one orientation
+            # for every weight coset: making spinorial cosets an exception
+            # conjugates 6 and anti-6 at fixed x while preserving dimensions.
+            child = tuple(reversed(highest))
             answer.append(BranchedIrrepTerm(child, x, coefficient))
             for weight, mult in character(A, highest).weight_multiplicities().items():
                 c = tuple(weight[i] for i in range(6))

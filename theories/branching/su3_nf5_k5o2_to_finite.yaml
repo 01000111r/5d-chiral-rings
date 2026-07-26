@@ -1,24 +1,90 @@
-id: su3_nf5_k5o2_to_finite
-uv_theory_id: su3_nf5_k5o2_infinite
-finite_theory_id: su3_nf5_finite
-order: 10
-parent_simple_factor: D5
-child_simple_factor: A4
-embedding_type: D5_to_A4_u1
-branching_convention: "10 -> 5_(-2) + anti-5_(+2)"
-raw_charges: [x, q]
-physical_charges: [B, I]
+schema_version: 1
+theory_id: su3_nf5_k5o2_infinite
+finite_reference_id: su3_nf5_finite
+gauge_rank: 3
+signed_k: -5/2
+cs_orientation: hanany_negative
+raw_charge_names: &id001
+- x
+- q
+raw_charge_order: *id001
 normalization:
-  vector:
-    - {child_dynkin_labels: [1, 0, 0, 0], x_charge: -2}
-    - {child_dynkin_labels: [0, 0, 0, 1], x_charge: 2}
-  adjoint:
-    - {child_dynkin_labels: [1, 0, 0, 1], x_charge: 0}
-    - {child_dynkin_labels: [0, 0, 0, 0], x_charge: 0}
-    - {child_dynkin_labels: [0, 0, 1, 0], x_charge: 4}
-    - {child_dynkin_labels: [0, 1, 0, 0], x_charge: -4}
-  spinor_4: [{child_dynkin_labels: [0, 0, 1, 0], x_charge: 1}, {child_dynkin_labels: [1, 0, 0, 0], x_charge: -3}, {child_dynkin_labels: [0, 0, 0, 0], x_charge: 5}]
-  spinor_5: [{child_dynkin_labels: [0, 1, 0, 0], x_charge: -1}, {child_dynkin_labels: [0, 0, 0, 1], x_charge: 3}, {child_dynkin_labels: [0, 0, 0, 0], x_charge: -5}]
-anchors:
-  - {id: positive_unit_instanton, degree: 2, child_dynkin_labels: [0, 0, 1, 0], raw: [4, 0], physical: [0, 1]}
-  - {id: classical_baryon, degree: 3, child_dynkin_labels: [0, 0, 1, 0], raw: [1, 1], physical: [3, 0], finite_beta_charge: 1}
+  B_definition: microscopic baryon number
+  B_of_Q: 1
+  classical_SU3_baryon_B: 3
+classical_anchor:
+  role: classical baryon
+  degree: 3
+  parent_representations:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  child_representation:
+  - 0
+  - 0
+  - 1
+  - 0
+  raw_charges:
+    x: 1
+    q: 1
+  target:
+    B: 3
+    I: 0
+  evidence:
+    source: finite beta-graded refined PL and exact branching
+    level: finite_pl
+  finite_beta_charge: 1
+instanton_anchor:
+  role: negative-CS E_- conserved current
+  degree: 2
+  parent_representations: &id002
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  child_representation:
+  - 0
+  - 1
+  - 0
+  - 0
+  raw_charges:
+    x: -4
+    q: 0
+  target:
+    B: -1/2
+    I: 1
+  evidence:
+    source: Hanany family section and exact stored branching
+    level: project_derived
+expected_charge_map:
+- - 1/8
+  - 23/8
+- - -1/4
+  - 1/4
+charge_lattice:
+  B_step: 1/2
+  I_step: '1'
+literature_orientation:
+  convention: Ferlito--Hanany--Mekareeya--Zafrir negative-CS
+  project_note: references/project_notes/hanany_negative_cs_convention.md
+conjugate_check:
+  role: conjugate anti-instanton
+  degree: 2
+  parent_representations: *id002
+  child_representation:
+  - 0
+  - 0
+  - 1
+  - 0
+  raw_charges:
+    x: 4
+    q: 0
+  target:
+    B: 1/2
+    I: -1
+  evidence:
+    source: exact conjugate child in stored branching
+    level: exact_branching

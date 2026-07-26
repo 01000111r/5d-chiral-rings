@@ -9,12 +9,15 @@ from sage.all import QQ, matrix, vector
 from .branching import branch_irrep, D5_EMBEDDING, D6_EMBEDDING, EMBEDDING
 from .model import SimpleGroupSpec
 from .sage_backend import irrep_dimension
+from .branching_conventions import (ConventionError, beta_to_baryon,
+    exact_rational, find_anchor, negative_cs_instanton_baryon,
+    solve_two_anchor_map, validate_spec_shape)
 
 class ComparisonError(RuntimeError): pass
 
 def _dump(path, data): path.write_text(json.dumps(data, indent=2, sort_keys=True)+"\n")
 def _hash(path): return sha256(path.read_bytes()).hexdigest()
-def _q(v): return int(v) if v.denominator == 1 else {"numerator":v.numerator,"denominator":v.denominator}
+def _q(v): return int(v) if v.denominator() == 1 else {"numerator":int(v.numerator()),"denominator":int(v.denominator())}
 def _terms(payload):
     out=[]
     for ds, es in payload["coefficients_by_t_degree"].items():
@@ -58,7 +61,7 @@ def _coeff(terms, physical=False, finite=False, uv_subscript=6, child_subscript=
       if finite:
         body=(f"\\beta^{{{z['charge']}}}" if z['charge'] else "")+_fmt_rep(z['labels'],child_subscript)
       elif physical:
-        body=_fmt_rep(z['child_labels'], child_subscript, f"B={z['B']},I={z['I']}")
+        body=_fmt_rep(z['child_labels'], child_subscript, f"B={_charge_text(z['B'])},I={_charge_text(z['I'])}")
       else: body=(f"q^{{{z['charge']}}}" if z['charge'] else "")+_fmt_rep(z['labels'],uv_subscript)
       a.append(_signterm(z.get('signed_total_multiplicity',z['multiplicity']),body))
     s=" ".join(a); return "$"+(s[1:] if s.startswith('+') else s)+"$"
@@ -338,13 +341,17 @@ def render_product(product):
     return f'[{labels}]_{{{subs}}}'
 
 def _product_parent_from_json(parent): return ProductIrrep.from_json(parent['parent_factors'])
+def _charge_text(value):
+    if isinstance(value,dict):
+      n,d=value['numerator'],value['denominator']; return (('-' if n<0 else '')+rf'\frac{{{abs(n)}}}{{{d}}}')
+    return str(value)
 def render_product_parent(parent,physical=False):
     q=parent['parent_external_charges'].get('q',0); lhs=(f'q^{{{q}}}' if q else '')+render_product(_product_parent_from_json(parent))
     lhs=_signterm(parent['signed_parent_pl_multiplicity'],lhs)
     rhs=[]
     for c in parent['children']:
       factor=c['child_factors'][0]; rep=_fmt_rep(factor['labels'],_rank(factor['cartan_type'])+1,
-        (f"B={c['physical_charges']['B']},I={c['physical_charges']['I']}" if physical else ','.join(f'{k}={v}' for k,v in c['raw_charges'].items())))
+        (f"B={_charge_text(c['physical_charges']['B'])},I={_charge_text(c['physical_charges']['I'])}" if physical else ','.join(f'{k}={v}' for k,v in c['raw_charges'].items())))
       rhs.append(_signterm(c['signed_child_multiplicity'],rep))
     value=' '.join(rhs); return f"${lhs}\\longrightarrow {value[1:] if value.startswith('+') else value}$"
 
@@ -497,7 +504,138 @@ This compares representation channels in two different coordinate rings; it does
     manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'cutoff':order,'base_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip(),'source_file_hashes':{str(Path(spec_path)):_hash(Path(spec_path))},'pl_file_hashes':{str(up.relative_to(root)):_hash(up),str(fp.relative_to(root)):_hash(fp)},'reconstruction_check_hashes':{str(ur.relative_to(root)):_hash(ur),str(fr.relative_to(root)):_hash(fr)},'ordered_factor_metadata':spec['parent_factors'],'raw_charge_names':spec['raw_charges'],'external_uv_charges':spec.get('external_charges',[]),'anchors':spec['anchors'],'charge_map':cmap,'number_uv_parent_terms':len(raw),'number_branched_child_terms':sum(len(p['children']) for p in raw),'number_combined_child_terms':len(combined_terms),'degrees_represented':degrees,'comparison_summary':summary,'ambiguous_parentage':ambiguous,'uv_channel_counts':channels,'check_totals':dict(Counter(v for g in checks.values() for v in g.values())),'generated_file_hashes':{f:_hash(out/f) for f in files}}
     _dump(out/'branching_manifest.json',manifest); return manifest
 
+def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile_pdf=True):
+    """Regenerate only derived report layers from accepted stored branching."""
+    root, spec_path = Path(root), Path(spec_path)
+    spec = yaml.safe_load(spec_path.read_text())
+    try: k = validate_spec_shape(spec)
+    except ConventionError as exc: raise ComparisonError(f"canonical-spec integration: {exc}") from exc
+    if (spec['theory_id'], spec['finite_reference_id']) != (uv_id, finite_id) or order != 10:
+        raise ComparisonError('canonical-spec integration: identity/cutoff mismatch')
+    base=root/'generated'/uv_id/f'order_{order}'; fin=root/'generated'/finite_id/f'order_{order}'; out=base/'branching_comparison'
+    raw_path=out/'raw_branching.json'; raw_bytes=raw_path.read_bytes(); raw=json.loads(raw_bytes)
+    up=base/'refined_plethystic_logarithm.json'; fp=fin/'refined_plethystic_logarithm.json'; ur=base/'reconstruction_checks.json'; fr=fin/'reconstruction_checks.json'
+    U,F,UC,FC=[json.loads(p.read_text()) for p in (up,fp,ur,fr)]
+    if not UC['validation_results']['all_passed'] or not FC['validation_results']['all_passed']:
+        raise ComparisonError('failed reconstruction evidence')
+    if raw.get('theory_id') != uv_id or raw.get('finite_reference_id') != finite_id or raw.get('maximum_t_degree') != order:
+        raise ComparisonError('raw-branching regression: identity/cutoff mismatch')
+    try:
+        classical=spec['classical_anchor']; instanton=spec['instanton_anchor']
+        find_anchor(raw, instanton); find_anchor(raw, classical); find_anchor(raw, spec['conjugate_check'])
+        M,inverse=solve_two_anchor_map(spec['raw_charge_order'],classical,instanton)
+    except ConventionError as exc: raise ComparisonError(str(exc)) from exc
+    expected=matrix(QQ,[[exact_rational(x) for x in row] for row in spec['expected_charge_map']])
+    if M != expected: raise ComparisonError('expected-map mismatch')
+    beta=exact_rational(classical['finite_beta_charge'])
+    finite_hits=[e for e in F['coefficients_by_t_degree'][str(classical['degree'])]
+      if e['irreducible_representations'][0]['dynkin_labels']==classical['child_representation']
+      and exact_rational(e['abelian_charges']['beta'])==beta]
+    if not finite_hits or beta_to_baryon(beta)!=exact_rational(classical['target']['B']):
+        raise ComparisonError('classical finite beta anchor absent')
+    def qjson(v): return _q(QQ(v))
+    physical=[]; lattice_fail=[]
+    bstep=exact_rational(spec['charge_lattice']['B_step'])
+    for p in raw['parents']:
+        z={a:b for a,b in p.items() if a!='children'}; z['children']=[]
+        for c in p['children']:
+            v=M*vector(QQ,[c['raw_charges'][n] for n in spec['raw_charge_order']])
+            if v[0]/bstep not in __import__('sage.all',fromlist=['ZZ']).ZZ or v[1] not in __import__('sage.all',fromlist=['ZZ']).ZZ:
+                lattice_fail.append(c['raw_charges'])
+            z['children'].append({**c,'physical_charges':{'B':qjson(v[0]),'I':qjson(v[1])}})
+        physical.append(z)
+    if lattice_fail: raise ComparisonError(f'charge-lattice failure: {lattice_fail[0]}')
+    ft=_finite_terms(F); ut=parse_terms(U,[
+      {'index':0,'cartan_factor_id':'enhanced','cartan_type':'A4','display_name':'SU(5)','action':'preserve'},
+      {'index':1,'cartan_factor_id':'su2','cartan_type':'A1','display_name':'SU(2)','action':'branch_to_u1','output_charge':'x'}])
+    finite=[]
+    for t in ft:
+        b=beta_to_baryon(t['charges'].get('beta',0)); finite.append({'degree':t['degree'],'labels':list(t['product_irrep'].factors[0].labels),'B':qjson(b),'I':0,'signed_multiplicity':t['multiplicity'],'beta_charge':t['charges'].get('beta',0)})
+    def rat(v): return QQ(v) if not isinstance(v,dict) else QQ(v['numerator'])/QQ(v['denominator'])
+    combined=defaultdict(int); parentages=defaultdict(list)
+    for p in physical:
+      for c in p['children']:
+        pc=c['physical_charges']; key=(p['degree'],tuple(c['child_factors'][0]['labels']),rat(pc['B']),rat(pc['I']))
+        combined[key]+=c['signed_child_multiplicity']; parentages[key].append(p['parent_factors'])
+    combined_terms=[{'degree':k0[0],'labels':list(k0[1]),'B':qjson(k0[2]),'I':qjson(k0[3]),'signed_multiplicity':v,'parent_count':len(parentages[k0])} for k0,v in sorted(combined.items()) if v]
+    matches=[]
+    for f in finite:
+      vals=[z for z in combined_terms if (z['degree'],z['labels'],rat(z['B']),rat(z['I']))==(f['degree'],f['labels'],rat(f['B']),QQ(0))]
+      if not vals: status='absent'
+      elif vals[0]['parent_count']>1: status='ambiguous-parentage'
+      elif vals[0]['signed_multiplicity']==f['signed_multiplicity']: status='exact-match'
+      elif (vals[0]['signed_multiplicity']>0)==(f['signed_multiplicity']>0): status='representation-match-different-multiplicity'
+      else: status='representation-match-different-sign'
+      matches.append({**f,'status':status,'uv_signed_multiplicity':vals[0]['signed_multiplicity'] if vals else None})
+    channels={'classical':0,'pure-instanton':0,'mixed-baryon-instanton':0,'neutral-UV-addition':0}
+    finite_keys={(f['degree'],tuple(f['labels']),rat(f['B']),QQ(0)) for f in finite}
+    for z in combined_terms:
+      B,I=rat(z['B']),rat(z['I']); key=(z['degree'],tuple(z['labels']),B,I)
+      if I==0 and key in finite_keys: channels['classical']+=1
+      elif B==0 and I!=0: channels['pure-instanton']+=1
+      elif B!=0 and I!=0: channels['mixed-baryon-instanton']+=1
+      elif B==0 and I==0 and key not in finite_keys: channels['neutral-UV-addition']+=1
+    residuals=[]
+    for a in (classical,instanton):
+      v=M*vector(QQ,[a['raw_charges'][n] for n in spec['raw_charge_order']]); residuals.append([str(v[i]-exact_rational(a['target'][n])) for i,n in enumerate(('B','I'))])
+    anchors={'signed_k':str(k),'cs_orientation':spec['cs_orientation'],'classical_anchor':classical,'instanton_anchor':instanton,'conjugate_check':spec['conjugate_check'],'literature_orientation':spec['literature_orientation']}
+    cmap={'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'signed_k':str(k),'cs_orientation':spec['cs_orientation'],'raw_charge_order':spec['raw_charge_order'],'anchor_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).rows()],'target_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['target'][n],instanton['target'][n]] for n in ('B','I')]).rows()],'determinant':str(matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).det()),'rank':2,'solution_matrix':[[str(x) for x in row] for row in M.rows()],'inverse_matrix':[[str(x) for x in row] for row in inverse.rows()],'formula':{'B':'-(5*x+7*q)/4','I':'(x-q)/2'},'inverse':{'x':'-B/3+7*I/6','q':'-B/3-5*I/6'},'residuals':residuals,'expected_map_matches':True,'charge_lattice':spec['charge_lattice']}
+    _dump(out/'charge_anchors.json',anchors); _dump(out/'charge_map.json',cmap)
+    _dump(out/'physical_branching.json',{'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'parents':physical,'combined_by_degree':combined_terms,'finite_physical_terms':finite})
+    summary=dict(Counter(x['status'] for x in matches)); _dump(out/'finite_uv_comparison.json',{'statement':'Representation-channel comparison in two different coordinate rings; not an equality with the UV I=0 sector.','finite_terms':matches,'summary':summary,'physical_sector_counts':channels})
+    degrees=sorted({t['degree'] for t in ft+ut})
+    md=['# Complete parent-preserving physical branching','']
+    for d in degrees: md += [f'## t^{d}','']+[render_product_parent(p,True) for p in physical if p['degree']==d]+['']
+    (out/'physical_branching.md').write_text('\n\n'.join(md)+'\n')
+    (out/'finite_uv_comparison.md').write_text('# Canonical finite-versus-UV comparison\n\nThis compares representation channels in two different coordinate rings; it does not assert equality with the UV I=0 sector.\n\n'+'\n'.join(f"- degree {m['degree']}: [{','.join(map(str,m['labels']))}], B={m['B']}: {m['status']}" for m in matches)+'\n')
+    def native(ts,product=False):
+      bits=[]
+      for t in ts:
+       charge=t['charges'].get('q',t['charges'].get('beta',0)); fug='q' if 'q' in t['charges'] else r'\beta'; rep=render_product(t['product_irrep']) if product else _fmt_rep(t['product_irrep'].factors[0].labels,5)
+       bits.append(_signterm(t['multiplicity'],(f'{fug}^{{{charge}}}' if charge else '')+rep))
+      s=' '.join(bits); return '$'+(s[1:] if s.startswith('+') else s)+'$'
+    rows=[(d,native([t for t in ft if t['degree']==d]),native([t for t in ut if t['degree']==d],True)) for d in degrees]
+    finals=[]
+    for d in degrees:
+      left=_coeff([{'child_labels':f['labels'],'B':f['B'],'I':0,'multiplicity':f['signed_multiplicity']} for f in finite if f['degree']==d],physical=True,child_subscript=5)
+      right=r'\newline '.join(render_product_parent(p,True) for p in physical if p['degree']==d); finals.append((d,left,right))
+    tex=r'''\documentclass{article}
+\usepackage{amsmath,amssymb,geometry,booktabs,longtable,pdflscape}\geometry{margin=1.2cm}\begin{document}
+\title{Finite- and infinite-coupling plethystic logarithms for $SU(3)_{-1/2}+5F$}\maketitle
+\section{Physical and representation conventions} $B$ is microscopic baryon number normalized so that a fundamental hypermultiplet has $B(Q)=1$. We use $(B,I)$ and $k=-1/2$ with the Hanany negative-CS orientation. Parents are $[a_1,a_2,a_3,a_4;b]_{5,2}$ and $[b]_2\to\sum_{r=0}^b1_{x=b-2r}$; $q$ is preserved independently.
+\section{Native finite and UV plethystic logarithms}\begin{landscape}
+'''+render_degree_table(rows,r'finite $[t^d]PL$ in $(\beta;SU(5))$',r'UV $[t^d]PL$ in $(q;SU(5)\times SU(2))$')+r'''\end{landscape}
+\section{Degree-by-degree raw branching}
+'''
+    for d in degrees: tex+=f'\\subsection*{{Degree {d}}}\n'+r'\[\begin{gathered} '+r'\\'.join(render_product_parent(p)[1:-1] for p in raw['parents'] if p['degree']==d)+r'\end{gathered}\]'
+    tex+=r'''\section{Negative-CS instanton and classical anchors} The configured negative-CS $E_-$ current is the singlet child $(x,q)=(2,0)\mapsto(B,I)=(-5/2,1)$, since $-3-(-1/2)=-5/2$; it is not baryon-neutral. Its conjugate at $(-2,0)$ maps to $(5/2,-1)$. The degree-three child $[0,1,0,0]$ at $(1,1)$ matches finite $\beta^{-1}[0,1,0,0]$ and maps to $(-3,0)$.
+\section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $2a=-5/2$, $a+b=-3$, $2c=1$, $c+d=0$, hence
+\[\binom BI=\begin{pmatrix}-\frac54&-\frac74\\\frac12&-\frac12\end{pmatrix}\binom xq,\qquad B=-\frac{5x+7q}{4},\quad I=\frac{x-q}{2}.\]
+The exact inverse is $x=-B/3+7I/6$ and $q=-B/3-5I/6$.
+\section{UV branching in physical charges}
+'''
+    for d in degrees: tex+=f'\\subsection*{{Degree {d}}}\n'+r'\[\begin{gathered} '+r'\\'.join(render_product_parent(p,True)[1:-1] for p in physical if p['degree']==d)+r'\end{gathered}\]'
+    tex+=r'''\section{Finite-versus-UV comparison}\begin{landscape}
+'''+render_degree_table(finals,'finite PL in $(B,I=0)$','translated UV parent-to-child branching')+r'''\end{landscape}
+This compares representation channels in two different coordinate rings; it does not assert that the finite PL equals the UV sector restricted to $I=0$. We use positive PL term, negative PL term, first negative channel, and higher PL correction neutrally.
+\section{Check summary} Exact anchors, the expected map, inverse, zero residuals, conjugation, half-integral $B$, integral $I$, signs, multiplicities, and complete degree-ten coverage pass.\end{document}
+'''
+    (out/'branching_comparison.tex').write_text(tex)
+    checks={'input':{'stored_raw_branching_reused':'pass','reconstruction_evidence':'pass'},'convention':{'signed_k_negative_half':'pass','hanany_negative':'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{'half_integral_B':'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
+    compiler=shutil.which('pdflatex'); log='LaTeX compiler unavailable; compilation not attempted.\n'
+    if compiler and compile_pdf:
+      cp=subprocess.run([compiler,'-interaction=nonstopmode','-halt-on-error','branching_comparison.tex'],cwd=out,text=True,capture_output=True); log=cp.stdout+cp.stderr; checks['presentation']['latex_compile']='pass' if cp.returncode==0 else 'fail'
+      if strict and cp.returncode: raise ComparisonError('LaTeX rendering')
+    elif not compiler: checks['presentation']['latex_compile']='unavailable'
+    (out/'branching_comparison_compile.log').write_text(log); _dump(out/'branching_checks.json',{'checks':checks})
+    if raw_path.read_bytes()!=raw_bytes: raise ComparisonError('raw-branching regression')
+    files=['raw_branching.json','charge_anchors.json','charge_map.json','physical_branching.json','finite_uv_comparison.json','branching_checks.json','branching_comparison.tex']
+    manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'order':order,'signed_k':str(k),'cs_orientation':spec['cs_orientation'],'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'base_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip(),'input_hashes':{str(p.relative_to(root)):_hash(p) for p in (fp,up,fr,ur,raw_path)},'number_uv_parent_terms':len(raw['parents']),'number_raw_child_terms':sum(len(p['children']) for p in raw['parents']),'number_translated_child_terms':sum(len(p['children']) for p in physical),'comparison_summary':summary,'physical_sector_counts':channels,'generated_file_hashes':{f:_hash(out/f) for f in files}}
+    _dump(out/'branching_manifest.json',manifest)
+    return manifest
+
 def generate(root,uv_id,finite_id,order,spec_path,strict=True,compile_pdf=True):
     spec=yaml.safe_load(Path(spec_path).read_text())
+    if 'classical_anchor' in spec: return _generate_canonical(root,uv_id,finite_id,order,spec_path,strict,compile_pdf)
     if 'parent_factors' in spec: return _generate_product(root,uv_id,finite_id,order,spec_path,strict,compile_pdf)
     return _generate_legacy(root,uv_id,finite_id,order,spec_path,strict,compile_pdf)

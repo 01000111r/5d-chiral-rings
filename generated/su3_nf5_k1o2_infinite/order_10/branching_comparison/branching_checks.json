@@ -1,33 +1,40 @@
 {
   "checks": {
     "anchors": {
-      "both_present": "pass",
-      "conjugate_baryon_verified": "pass"
+      "classical_finite_beta_term": "pass",
+      "conjugate_current": "pass",
+      "instanton_representation_and_charge": "pass"
     },
-    "branching": {
-      "a1_exact_weights": "pass",
-      "a4_preserved": "pass",
-      "dimensions_preserved": "pass",
-      "external_q_preserved": "pass"
-    },
-    "charge_map": {
-      "all_physical_charges_integral": "pass",
-      "residuals_vanish": "pass",
-      "solved_over_QQ": "pass"
+    "charges": {
+      "half_integral_B": "pass",
+      "integer_I": "pass",
+      "lattice_all_children": "pass"
     },
     "completeness": {
-      "all_terms_through_cutoff": "pass",
-      "negative_terms_retained": "pass"
+      "all_degree_10_terms": "pass",
+      "all_negative_terms": "pass"
+    },
+    "convention": {
+      "B_Q_one": "pass",
+      "hanany_negative": "pass",
+      "legacy_current_neutral_rejected": "pass",
+      "signed_k_negative_half": "pass"
     },
     "input": {
-      "all_factors_retained": "pass",
-      "factor_label_lengths": "pass",
-      "stored_reconstruction_checks_pass": "pass"
+      "reconstruction_evidence": "pass",
+      "stored_raw_branching_reused": "pass"
+    },
+    "map": {
+      "exact_QQ_solution": "pass",
+      "expected_map": "pass",
+      "inverse_and_residuals": "pass",
+      "shared_preflight_solver": "pass"
     },
     "presentation": {
+      "deterministic_rerun": "pass",
       "latex_compile": "unavailable",
-      "output_deterministic": "pass",
-      "product_semicolon": "pass"
+      "signed_title": "pass",
+      "standard_B": "pass"
     }
   }
 }

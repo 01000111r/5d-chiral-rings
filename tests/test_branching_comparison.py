@@ -142,3 +142,34 @@ def test_d6_vector_adjoint_and_node_six_spinor_conventions():
 def test_d6_exact_physical_charge_map():
  M,R,T=solve_charge_map([{'raw':[2,0],'physical':[0,1]},{'raw':[0,1],'physical':[3,0]}])
  assert M==matrix(QQ,[[0,3],[QQ(1)/2,0]]) and M*R==T
+
+
+def test_canonical_signed_report_integration_repository_outputs():
+    """Canonical report consumes preflight spec and preserves the accepted raw layer."""
+    import hashlib, json
+    from pathlib import Path
+    import yaml
+    from hwg_pipeline.branching_comparison import generate
+    from hwg_pipeline.branching_conventions import solve_two_anchor_map
+    root=Path(__file__).resolve().parents[1]
+    sp=root/'theories/branching/su3_nf5_k1o2_to_finite.yaml'
+    spec=yaml.safe_load(sp.read_text())
+    raw=root/'generated/su3_nf5_k1o2_infinite/order_10/branching_comparison/raw_branching.json'
+    before=hashlib.sha256(raw.read_bytes()).hexdigest()
+    generate(root,spec['theory_id'],spec['finite_reference_id'],10,sp,True,False)
+    assert hashlib.sha256(raw.read_bytes()).hexdigest()==before
+    M,_=solve_two_anchor_map(spec['raw_charge_order'],spec['classical_anchor'],spec['instanton_anchor'])
+    assert M == matrix(QQ,[[-QQ(5)/4,-QQ(7)/4],[QQ(1)/2,-QQ(1)/2]])
+    out=raw.parent
+    charge=json.loads((out/'charge_map.json').read_text())
+    assert charge['physical_basis']=='microscopic_baryon_and_instanton'
+    assert charge['baryon_normalization']=={'fundamental_hyper':1}
+    assert charge['solution_matrix']==[['-5/4','-7/4'],['1/2','-1/2']]
+    tex=(out/'branching_comparison.tex').read_text()
+    assert 'SU(3)_{-1/2}+5F' in tex and 'B(Q)=1' in tex
+    assert 'B_mic' not in tex and '|k|' not in tex and '(0,1)' not in tex
+    comparison=json.loads((out/'finite_uv_comparison.json').read_text())
+    assert comparison['physical_sector_counts']['mixed-baryon-instanton']>0
+    physical=json.loads((out/'physical_branching.json').read_text())
+    assert len(physical['parents'])==len(json.loads(raw.read_text())['parents'])
+    assert max(p['degree'] for p in physical['parents'])==10

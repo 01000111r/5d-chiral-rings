@@ -571,12 +571,16 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
             z['children'].append({**c,'physical_charges':{'B':qjson(v[0]),'I':qjson(v[1])}})
         physical.append(z)
     if lattice_fail: raise ComparisonError(f'charge-lattice failure: {lattice_fail[0]}')
-    ft=_finite_terms(F)
+    if legacy_raw:
+      ft=_finite_terms(F)
+    else:
+      child_meta=working_parents[0]['children'][0]['child_factors'][0]
+      ft=_finite_terms(F,child_meta['cartan_type'],child_meta['display_name'])
     uv_factors=([{'index':0,'cartan_factor_id':'enhanced','cartan_type':parent_type,
                   'display_name':parent_name,'action':'preserve'}]
       if legacy_raw else [
-      {'index':0,'cartan_factor_id':'enhanced','cartan_type':'A4','display_name':'SU(5)','action':'preserve'},
-      {'index':1,'cartan_factor_id':'su2','cartan_type':'A1','display_name':'SU(2)','action':'branch_to_u1','output_charge':'x'}])
+      {'index':i,'cartan_factor_id':f['cartan_factor_id'],'cartan_type':f['cartan_type'],
+       'display_name':f['display_name']} for i,f in enumerate(working_parents[0]['parent_factors'])])
     ut=parse_terms(U,uv_factors)
     finite=[]
     for t in ft:
@@ -608,14 +612,16 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     residuals=[]
     for a in (classical,instanton):
       v=M*vector(QQ,[a['raw_charges'][n] for n in spec['raw_charge_order']]); residuals.append([str(v[i]-exact_rational(a['target'][n])) for i,n in enumerate(('B','I'))])
-    canonical_meta={'signed_k':str(k),'cs_orientation':spec['cs_orientation'],
-      'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1}}
+    canonical_meta={'signed_k':int(k) if k.denominator()==1 else str(k),'cs_orientation':spec['cs_orientation'],
+      'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},
+      'raw_charge_names':list(spec['raw_charge_order'])}
     anchors={**canonical_meta,'classical_anchor':classical,'instanton_anchor':instanton,'conjugate_check':spec['conjugate_check'],'literature_orientation':spec['literature_orientation']}
     formulas={QQ(-1)/2:({'B':'-(5*x+7*q)/4','I':'(x-q)/2'},{'x':'-B/3+7*I/6','q':'-B/3-5*I/6'}),
       QQ(-3)/2:({'B':'-(x+10*q)/4','I':'(x-2*q)/6'},{'x':'-2*B/3+5*I','q':'-B/3-I/2'}),
-      QQ(-5)/2:({'B':'(x+23*q)/8','I':'(q-x)/4'},{'x':'B/3-23*I/6','q':'B/3+I/6'})}
+      QQ(-5)/2:({'B':'(x+23*q)/8','I':'(q-x)/4'},{'x':'B/3-23*I/6','q':'B/3+I/6'}),
+      QQ(0):({'B':'3*(x+y)/2','I':'(x-y)/2'},{'x':'B/3+I','y':'B/3-I'})}
     formula, inverse_formula=formulas[k]
-    cmap={'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'signed_k':str(k),'cs_orientation':spec['cs_orientation'],'raw_charge_order':spec['raw_charge_order'],'anchor_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).rows()],'target_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['target'][n],instanton['target'][n]] for n in ('B','I')]).rows()],'determinant':str(matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).det()),'rank':2,'solution_matrix':[[str(x) for x in row] for row in M.rows()],'inverse_matrix':[[str(x) for x in row] for row in inverse.rows()],'formula':formula,'inverse':inverse_formula,'residuals':residuals,'expected_map_matches':True,'charge_lattice':spec['charge_lattice']}
+    cmap={'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'signed_k':int(k) if k.denominator()==1 else str(k),'cs_orientation':spec['cs_orientation'],'raw_charge_names':spec['raw_charge_order'],'raw_charge_order':spec['raw_charge_order'],'anchor_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).rows()],'target_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['target'][n],instanton['target'][n]] for n in ('B','I')]).rows()],'determinant':str(matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).det()),'rank':2,'solution_matrix':[[str(x) for x in row] for row in M.rows()],'inverse_matrix':[[str(x) for x in row] for row in inverse.rows()],'formula':formula,'inverse':inverse_formula,'residuals':residuals,'expected_map_matches':True,'charge_lattice':spec['charge_lattice']}
     _dump(out/'charge_anchors.json',anchors); _dump(out/'charge_map.json',cmap)
     _dump(out/'physical_branching.json',{**canonical_meta,'parents':physical,'combined_by_degree':combined_terms,'finite_physical_terms':finite})
     summary=dict(Counter(x['status'] for x in matches)); _dump(out/'finite_uv_comparison.json',{**canonical_meta,'statement':'Representation-channel comparison in two different coordinate rings; not an equality with the UV I=0 sector.','finite_terms':matches,'summary':summary,'physical_sector_counts':channels})
@@ -635,22 +641,33 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     for d in degrees:
       left=_coeff([{'child_labels':f['labels'],'B':f['B'],'I':0,'multiplicity':f['signed_multiplicity']} for f in finite if f['degree']==d],physical=True,child_subscript=5)
       right=r'\newline '.join(render_product_parent(p,True) for p in physical if p['degree']==d); finals.append((d,left,right))
+    title=(r'$SU(3)_0+6F$' if k==0 else f'$SU(3)_{{{k}}}+5F$')
+    native_uv=(r'$SU(6)\times SU(2)_1\times SU(2)_2$' if k==0 else r'$(q;SU(5)\times SU(2))$')
     tex=r'''\documentclass{article}
 \usepackage{amsmath,amssymb,geometry,booktabs,longtable,pdflscape}\geometry{margin=1.2cm}\begin{document}
-\title{Finite- and infinite-coupling plethystic logarithms for $SU(3)_{SIGNED_K}+5F$}\maketitle
-\section{Physical and representation conventions} $B$ is microscopic baryon number normalized by $B(Q)=1$. We use $(B,I)$ and $k=SIGNED_K$ with the Hanany negative-CS orientation. RAW_CONVENTION
+\title{Finite- and infinite-coupling plethystic logarithms for REPORT_TITLE}\maketitle
+\section{Physical and representation conventions} $B$ is microscopic baryon number normalized by $B(Q)=1$. We use $(B,I)$ and $k=SIGNED_K$. RAW_CONVENTION
 \section{Native finite and UV plethystic logarithms}\begin{landscape}
-'''+render_degree_table(rows,r'finite $[t^d]PL$ in $(\beta;SU(5))$',r'UV $[t^d]PL$ in $(q;SU(5)\times SU(2))$')+r'''\end{landscape}
+'''+render_degree_table(rows,r'finite $[t^d]PL$ in $(\beta;SU(6))$' if k==0 else r'finite $[t^d]PL$ in $(\beta;SU(5))$',r'UV $[t^d]PL$ in '+native_uv)+r'''\end{landscape}
 \section{Degree-by-degree raw branching}
 '''
-    raw_convention=(r'$SO(10)\to SU(5)\times U(1)_x$ uses the stored D5 convention; the external $q$ is kept independent.'
+    raw_convention=(r'The ordered factors are $SU(6),SU(2)_1,SU(2)_2$. The two $A_1$ factors are distinct: $SU(2)_1\to U(1)_x$ and $SU(2)_2\to U(1)_y$. Baryon and instanton number are different linear combinations of $x,y$; no external charge exists.' if k==0 else
+                    r'$SO(10)\to SU(5)\times U(1)_x$ uses the stored D5 convention; the external $q$ is kept independent.'
                     if legacy_raw and parent_type == 'D5' else
                     r'$SU(6)\to SU(5)\times U(1)_x$ uses $6\to5_{+1}+1_{-5}$; the external $q$ is kept independent.'
                     if legacy_raw else
                     r'Parents are $[a_1,a_2,a_3,a_4;b]_{5,2}$ and $[b]_2\to\sum_{r=0}^b1_{x=b-2r}$; $q$ is preserved independently.')
-    tex=tex.replace('SIGNED_K',str(k)).replace('RAW_CONVENTION',raw_convention)
+    tex=tex.replace('REPORT_TITLE',title).replace('SIGNED_K',str(k)).replace('RAW_CONVENTION',raw_convention)
     for d in degrees: tex+=f'\\subsection*{{Degree {d}}}\n'+r'\[\begin{gathered} '+r'\\'.join(render_product_parent(p)[1:-1] for p in working_parents if p['degree']==d)+r'\end{gathered}\]'
-    if k==QQ(-5)/2:
+    if k==0:
+      tex+=r'''\section{Current and classical anchors} The degree-two parent $[0,0,0,0,0;2;0]_{6,2,2}$ contains the $SU(6)$ singlet at $(x,y)=(2,0)$. This non-Cartan root of the first enhanced $SU(2)$ is a one-instanton conserved-current component and a mixed baryon--instanton current: $(2,0)\mapsto(B,I)=(3,1)$; its conjugate maps $(-2,0)\mapsto(-3,-1)$.
+The degree-three parent $[0,0,1,0,0;1;1]_{6,2,2}$ contains $[0,0,1,0,0]$ at $(1,1)$. The finite $\beta[0,0,1,0,0]$ term fixes it as the classical baryon $(3,0)$; its self-conjugate Dynkin label alone does not fix the sign. The conjugate at $(-1,-1)$ is the classical antibaryon $(-3,0)$.
+\section{Exact charge-map derivation} Write $B=ax+by$ and $I=cx+dy$. The anchors imply $2a=3$, $a+b=3$, $2c=1$, and $c+d=0$, hence $a=b=3/2$, $c=1/2$, and $d=-1/2$:
+\[\binom BI=\begin{pmatrix}\frac32&\frac32\\\frac12&-\frac12\end{pmatrix}\binom xy,\qquad B=\frac{3(x+y)}2,\quad I=\frac{x-y}2.\]
+The exact inverse is $x=B/3+I$, $y=B/3-I$.
+\section{Low-degree checks} The roots map $(2,0)\mapsto(3,1)$, $(0,-2)\mapsto(-3,1)$, $(-2,0)\mapsto(-3,-1)$, and $(0,2)\mapsto(3,-1)$. The bifundamental weights map $(1,1)\mapsto(3,0)$, $(-1,-1)\mapsto(-3,0)$, $(1,-1)\mapsto(0,1)$, and $(-1,1)\mapsto(0,-1)$, respectively the classical baryon, classical antibaryon, pure instanton, and pure anti-instanton components.
+'''
+    elif k==QQ(-5)/2:
       tex+=r'''\section{Negative-CS instanton and classical anchors} The previous presentation used the opposite CS orientation; the raw branching is unchanged. The degree-two $SO(10)$ adjoint $[0,1,0,0,0]$ contains $[0,1,0,0]$ at $(x,q)=(-4,0)$. The Hanany-negative $I=+1$ current is therefore $(B,I)=(-1/2,1)$, in agreement with $B(E_-)=-3-k=-1/2$. Its conjugate at $(4,0)$ is $(1/2,-1)$ in the fixed $k=-5/2$ theory; reversing signed $k$ is not operator conjugation. The degree-three parent $[0,0,0,1,0]$ contains $[0,0,1,0]$ at $(1,1)$, matching finite $\beta[0,0,1,0]$ and giving the classical baryon $(3,0)$; its conjugate is $(-3,0)$.
 \section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $-4a=-1/2$, $a+b=3$, $-4c=1$, and $c+d=0$, hence $a=1/8$, $b=23/8$, $c=-1/4$, and $d=1/4$:
 \[\binom BI=\begin{pmatrix}\frac18&\frac{23}{8}\\-\frac14&\frac14\end{pmatrix}\binom xq,\qquad B=\frac{x+23q}{8},\quad I=\frac{q-x}{4}.\]
@@ -675,10 +692,10 @@ The exact inverse is $x=-B/3+7I/6$ and $q=-B/3-5I/6$.
     tex+=r'''\section{Finite-versus-UV comparison}\begin{landscape}
 '''+render_degree_table(finals,'finite PL in $(B,I=0)$','translated UV parent-to-child branching')+r'''\end{landscape}
 This compares representation channels in two different coordinate rings; it does not assert that the finite PL equals the UV sector restricted to $I=0$. We use positive PL term, negative PL term, first negative channel, and higher PL correction neutrally.
-\section{Check summary} Exact anchors, the expected map, inverse, zero residuals, conjugation, half-integral $B$, integral $I$, signs, multiplicities, and complete degree-ten coverage pass.\end{document}
+\section{Check summary} Exact anchors, the expected map, inverse, zero residuals, conjugation, the configured charge lattice, signs, multiplicities, and complete degree-ten coverage pass.\end{document}
 '''
     (out/'branching_comparison.tex').write_text(tex)
-    checks={'input':{'stored_raw_branching_reused':'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':str(k),'hanany_negative':'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{'half_integral_B':'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
+    checks={'input':{'stored_raw_branching_reused':'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if k==0 else 'half_integral_B'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
     compiler=shutil.which('pdflatex'); log='LaTeX compiler unavailable; compilation not attempted.\n'
     if compiler and compile_pdf:
       cp=subprocess.run([compiler,'-interaction=nonstopmode','-halt-on-error','branching_comparison.tex'],cwd=out,text=True,capture_output=True); log=cp.stdout+cp.stderr; checks['presentation']['latex_compile']='pass' if cp.returncode==0 else 'fail'
@@ -687,7 +704,7 @@ This compares representation channels in two different coordinate rings; it does
     (out/'branching_comparison_compile.log').write_text(log); _dump(out/'branching_checks.json',{**canonical_meta,'checks':checks})
     if raw_path.read_bytes()!=raw_bytes: raise ComparisonError('raw-branching regression')
     files=['raw_branching.json','charge_anchors.json','charge_map.json','physical_branching.json','finite_uv_comparison.json','branching_checks.json','branching_comparison.tex']
-    manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'order':order,'signed_k':str(k),'cs_orientation':spec['cs_orientation'],'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'base_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip(),'input_hashes':{str(p.relative_to(root)):_hash(p) for p in (fp,up,fr,ur,raw_path)},'number_uv_parent_terms':len(raw['parents']),'number_raw_child_terms':sum(len(p['children']) for p in raw['parents']),'number_translated_child_terms':sum(len(p['children']) for p in physical),'comparison_summary':summary,'physical_sector_counts':channels,'generated_file_hashes':{f:_hash(out/f) for f in files}}
+    manifest={'uv_theory_id':uv_id,'finite_theory_id':finite_id,'order':order,'signed_k':int(k) if k.denominator()==1 else str(k),'cs_orientation':spec['cs_orientation'],'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'raw_charge_names':list(spec['raw_charge_order']),'base_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip(),'input_hashes':{str(p.relative_to(root)):_hash(p) for p in (fp,up,fr,ur,raw_path)},'number_uv_parent_terms':len(raw['parents']),'number_raw_child_terms':sum(len(p['children']) for p in raw['parents']),'number_translated_child_terms':sum(len(p['children']) for p in physical),'comparison_summary':summary,'physical_sector_counts':channels,'generated_file_hashes':{f:_hash(out/f) for f in files}}
     _dump(out/'branching_manifest.json',manifest)
     return manifest
 

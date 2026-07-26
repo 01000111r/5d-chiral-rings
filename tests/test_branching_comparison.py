@@ -212,3 +212,28 @@ def test_canonical_k5o2_report_uses_d5_raw_schema_and_negative_cs_map():
     tex=(raw.parent/'branching_comparison.tex').read_text()
     assert 'SU(3)_{-5/2}+5F' in tex and r'SO(10)\to SU(5)' in tex
     assert '(x,q)=(-4,0)' in tex and 'I=-I_{\\rm old}' in tex
+
+def test_canonical_k0_double_a1_report_preserves_order_and_exact_map():
+    """The canonical solver consumes accepted ordered A5 x A1 x A1 evidence."""
+    import hashlib, json
+    from pathlib import Path
+    from hwg_pipeline.branching_comparison import generate
+    root=Path(__file__).resolve().parents[1]
+    sp=root/'theories/branching/su3_nf6_k0_to_finite.yaml'
+    raw=root/'generated/su3_nf6_k0_infinite/order_10/branching_comparison/raw_branching.json'
+    before=hashlib.sha256(raw.read_bytes()).hexdigest()
+    result=generate(root,'su3_nf6_k0_infinite','su3_nf6_finite',10,sp,True,False)
+    assert hashlib.sha256(raw.read_bytes()).hexdigest()==before
+    assert result['signed_k']==0 and result['raw_charge_names']==['x','y']
+    assert result['number_uv_parent_terms']==132
+    assert result['number_raw_child_terms']==result['number_translated_child_terms']==557
+    charge=json.loads((raw.parent/'charge_map.json').read_text())
+    assert charge['solution_matrix']==[['3/2','3/2'],['1/2','-1/2']]
+    assert charge['inverse']=={'x':'B/3+I','y':'B/3-I'}
+    physical=json.loads((raw.parent/'physical_branching.json').read_text())
+    factors=physical['parents'][0]['parent_factors']
+    assert [f['cartan_factor_id'] for f in factors]==['a5','a1_1','a1_2']
+    assert physical['raw_charge_names']==['x','y']
+    tex=(raw.parent/'branching_comparison.tex').read_text()
+    assert 'SU(3)_0+6F' in tex and 'SU(2)_1' in tex and 'SU(2)_2' in tex
+    assert 'q^' not in tex and 'U(1)_q' not in tex

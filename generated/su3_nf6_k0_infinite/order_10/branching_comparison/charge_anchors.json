@@ -1,77 +1,131 @@
 {
-  "anchors": [
-    {
-      "child_dynkin_labels": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "degree": 2,
-      "id": "positive_unit_instanton_current",
-      "parent_labels": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          2
-        ],
-        [
-          0
-        ]
-      ],
-      "physical": [
-        3,
-        1
-      ],
-      "raw": [
-        2,
-        0
-      ]
+  "baryon_normalization": {
+    "fundamental_hyper": 1
+  },
+  "classical_anchor": {
+    "child_representation": [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "degree": 3,
+    "evidence": {
+      "level": "finite_pl",
+      "source": "finite beta-graded refined PL and exact branching"
     },
-    {
-      "child_dynkin_labels": [
+    "finite_beta_charge": 1,
+    "parent_representations": [
+      [
         0,
         0,
         1,
         0,
         0
       ],
-      "degree": 3,
-      "finite_beta_charge": 1,
-      "id": "classical_baryon",
-      "parent_labels": [
-        [
-          0,
-          0,
-          1,
-          0,
-          0
-        ],
-        [
-          1
-        ],
-        [
-          1
-        ]
+      [
+        1
       ],
-      "physical": [
-        3,
-        0
-      ],
-      "raw": [
-        1,
+      [
         1
       ]
+    ],
+    "raw_charges": {
+      "x": 1,
+      "y": 1
+    },
+    "role": "classical baryon",
+    "target": {
+      "B": 3,
+      "I": 0
     }
+  },
+  "conjugate_check": {
+    "child_representation": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree": 2,
+    "evidence": {
+      "level": "exact_branching",
+      "source": "exact conjugate child in stored branching"
+    },
+    "parent_representations": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2
+      ],
+      [
+        0
+      ]
+    ],
+    "raw_charges": {
+      "x": -2,
+      "y": 0
+    },
+    "role": "conjugate anti-instanton",
+    "target": {
+      "B": "-3",
+      "I": -1
+    }
+  },
+  "cs_orientation": "zero_level_fixed",
+  "instanton_anchor": {
+    "child_representation": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree": 2,
+    "evidence": {
+      "level": "direct_literature",
+      "source": "Hanany family section and exact stored branching"
+    },
+    "parent_representations": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2
+      ],
+      [
+        0
+      ]
+    ],
+    "raw_charges": {
+      "x": 2,
+      "y": 0
+    },
+    "role": "negative-CS E_- conserved current",
+    "target": {
+      "B": "3",
+      "I": 1
+    }
+  },
+  "literature_orientation": {
+    "convention": "Ferlito--Hanany--Mekareeya--Zafrir negative-CS",
+    "project_note": "references/project_notes/hanany_negative_cs_convention.md"
+  },
+  "physical_basis": "microscopic_baryon_and_instanton",
+  "raw_charge_names": [
+    "x",
+    "y"
   ],
-  "verification": {
-    "classical_baryon": "The degree-three SU(6) 20 at raw weight (1,1) matches the finite beta^1 channel and is assigned (B,I)=(3,0); beta^-1 identifies its antibaryon.",
-    "positive_unit_instanton_current": "The degree-two non-Cartan root of the first enhanced SU(2) is an SU(6)-singlet conserved-current component; the one-instanton convention, not singletness alone, assigns (B,I)=(3,1)."
-  }
+  "signed_k": 0
 }

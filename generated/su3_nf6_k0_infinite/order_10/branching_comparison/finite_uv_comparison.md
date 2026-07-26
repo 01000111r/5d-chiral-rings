@@ -1,4 +1,4 @@
-# Finite-versus-UV channel comparison
+# Canonical finite-versus-UV comparison
 
 This compares representation channels in two different coordinate rings; it does not assert equality with the UV I=0 sector.
 

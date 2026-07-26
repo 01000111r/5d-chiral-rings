@@ -1,11 +1,11 @@
 {
   "anchor_matrix": [
     [
-      "1",
+      "-1",
       "-4"
     ],
     [
-      "1",
+      "-1",
       "0"
     ]
   ],
@@ -17,28 +17,32 @@
     "I_step": "1"
   },
   "cs_orientation": "hanany_negative",
-  "determinant": "4",
+  "determinant": "-4",
   "expected_map_matches": true,
   "formula": {
-    "B": "(x+23*q)/8",
+    "B": "(x-25*q)/8",
     "I": "(q-x)/4"
   },
   "inverse": {
-    "q": "B/3+I/6",
-    "x": "B/3-23*I/6"
+    "q": "-B/3-I/6",
+    "x": "-B/3-25*I/6"
   },
   "inverse_matrix": [
     [
-      "1/3",
-      "-23/6"
+      "-1/3",
+      "-25/6"
     ],
     [
-      "1/3",
-      "1/6"
+      "-1/3",
+      "-1/6"
     ]
   ],
   "physical_basis": "microscopic_baryon_and_instanton",
   "rank": 2,
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
   "raw_charge_order": [
     "x",
     "q"
@@ -57,7 +61,7 @@
   "solution_matrix": [
     [
       "1/8",
-      "23/8"
+      "-25/8"
     ],
     [
       "-1/4",

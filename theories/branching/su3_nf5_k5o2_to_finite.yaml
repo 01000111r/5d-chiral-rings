@@ -19,22 +19,23 @@ classical_anchor:
   - 0
   - 0
   - 0
-  - 1
   - 0
+  - 1
   child_representation:
   - 0
   - 0
   - 1
   - 0
   raw_charges:
-    x: 1
-    q: 1
+    x: -1
+    q: -1
   target:
     B: 3
     I: 0
   evidence:
     source: finite beta-graded refined PL and exact branching
     level: finite_pl
+    audit_artifact: generated/su3_nf5_k5o2_infinite/order_10/branching_comparison/anchor_change_justification.json
   finite_beta_charge: 1
 instanton_anchor:
   role: negative-CS E_- conserved current
@@ -61,7 +62,7 @@ instanton_anchor:
     level: project_derived
 expected_charge_map:
 - - 1/8
-  - 23/8
+  - -25/8
 - - -1/4
   - 1/4
 charge_lattice:

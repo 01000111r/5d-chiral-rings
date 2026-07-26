@@ -1,0 +1,211 @@
+{
+  "candidate_enumeration": [
+    {
+      "degree": 3,
+      "multiplicity": 1,
+      "parent": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "pl_multiplicity": 1,
+      "q": -1,
+      "su5": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "x": -1
+    }
+  ],
+  "finite_beta_term": [
+    {
+      "abelian_charges": {
+        "beta": "1"
+      },
+      "coefficient": 1,
+      "irreducible_representations": [
+        {
+          "cartan_factor_id": "flavour",
+          "dynkin_labels": [
+            0,
+            0,
+            1,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "finite_physics": {
+    "B": "3",
+    "I": "0",
+    "beta_power": 1,
+    "reason": "B(Q)=1 and an SU(3) classical baryon contains three fundamentals; finite beta has no instanton grading"
+  },
+  "instanton_anchor_unchanged": {
+    "child": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "raw": {
+      "q": 0,
+      "x": -4
+    },
+    "signed_cs_evidence": "k=-5/2 gives B(E_-)=-3-k=-1/2 and I(E_-)=1",
+    "target": {
+      "B": "-1/2",
+      "I": "1"
+    }
+  },
+  "instanton_candidates": [
+    {
+      "degree": 2,
+      "multiplicity": 1,
+      "parent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "q": 0,
+      "su5": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "x": -4
+    },
+    {
+      "degree": 2,
+      "multiplicity": 1,
+      "parent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "q": 0,
+      "su5": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "x": 0
+    },
+    {
+      "degree": 2,
+      "multiplicity": 1,
+      "parent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "q": 0,
+      "su5": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "x": 0
+    },
+    {
+      "degree": 2,
+      "multiplicity": 1,
+      "parent": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "q": 0,
+      "su5": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "x": 4
+    }
+  ],
+  "justified": true,
+  "new_child_representation": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "new_degree": 3,
+  "new_parent_representation": [
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "new_raw_charge": {
+    "q": -1,
+    "x": -1
+  },
+  "old_classical_anchor": {
+    "child_claimed": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "parent": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "raw": {
+      "q": 1,
+      "x": 1
+    },
+    "target": {
+      "B": "3",
+      "I": "0"
+    }
+  },
+  "old_parent_corrected_branch": [
+    {
+      "degree": 3,
+      "multiplicity": 1,
+      "parent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "pl_multiplicity": 1,
+      "q": 1,
+      "su5": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "x": 1
+    }
+  ],
+  "old_rejection": "At (x,q)=(1,1) the exact child is [0,1,0,0], not finite baryon [0,0,1,0].",
+  "selection_basis": "Exact representation, degree, q, x, multiplicity and finite beta channel; charge-map coefficients were not used to select the anchor.",
+  "unique": true
+}

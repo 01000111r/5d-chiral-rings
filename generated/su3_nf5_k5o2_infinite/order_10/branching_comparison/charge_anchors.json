@@ -11,6 +11,7 @@
     ],
     "degree": 3,
     "evidence": {
+      "audit_artifact": "generated/su3_nf5_k5o2_infinite/order_10/branching_comparison/anchor_change_justification.json",
       "level": "finite_pl",
       "source": "finite beta-graded refined PL and exact branching"
     },
@@ -19,12 +20,12 @@
       0,
       0,
       0,
-      1,
-      0
+      0,
+      1
     ],
     "raw_charges": {
-      "q": 1,
-      "x": 1
+      "q": -1,
+      "x": -1
     },
     "role": "classical baryon",
     "target": {
@@ -96,5 +97,9 @@
     "project_note": "references/project_notes/hanany_negative_cs_convention.md"
   },
   "physical_basis": "microscopic_baryon_and_instanton",
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
   "signed_k": "-5/2"
 }

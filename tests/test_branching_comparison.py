@@ -62,8 +62,8 @@ def d5pieces(labels):
 def test_d5_vector_convention(): assert d5pieces((1,0,0,0,0))=={((1,0,0,0),-2):1,((0,0,0,1),2):1}
 def test_d5_adjoint_convention(): assert d5pieces((0,1,0,0,0))=={((1,0,0,1),0):1,((0,0,0,0),0):1,((0,0,1,0),4):1,((0,1,0,0),-4):1}
 def test_d5_spinor_nodes_remain_distinct():
- assert d5pieces((0,0,0,1,0))=={((0,0,1,0),1):1,((1,0,0,0),-3):1,((0,0,0,0),5):1}
- assert d5pieces((0,0,0,0,1))=={((0,1,0,0),-1):1,((0,0,0,1),3):1,((0,0,0,0),-5):1}
+ assert d5pieces((0,0,0,1,0))=={((0,0,0,1),-3):1,((0,1,0,0),1):1,((0,0,0,0),5):1}
+ assert d5pieces((0,0,0,0,1))=={((0,0,1,0),-1):1,((1,0,0,0),3):1,((0,0,0,0),-5):1}
 
 from hwg_pipeline.branching_comparison import (FactorIrrep, ProductIrrep,
     branch_product, parse_terms, product_dimension, render_product,
@@ -193,8 +193,7 @@ def test_canonical_signed_report_accepts_validated_legacy_raw_schema():
     tex=(raw.parent/'branching_comparison.tex').read_text()
     assert 'SU(3)_{-3/2}+5F' in tex and r'6\to5_{+1}+1_{-5}' in tex
 
-def test_canonical_k5o2_report_uses_d5_raw_schema_and_negative_cs_map():
-    """The accepted D5 raw layer is translated without changing its branching."""
+def test_canonical_k5o2_report_recomputes_d5_raw_and_negative_cs_map():
     import hashlib, json
     from pathlib import Path
     from hwg_pipeline.branching_comparison import generate
@@ -207,11 +206,11 @@ def test_canonical_k5o2_report_uses_d5_raw_schema_and_negative_cs_map():
     assert result['number_uv_parent_terms']==78
     assert result['number_raw_child_terms']==result['number_translated_child_terms']==671
     charge=json.loads((raw.parent/'charge_map.json').read_text())
-    assert charge['solution_matrix']==[['1/8','23/8'],['-1/4','1/4']]
-    assert charge['inverse']=={'x':'B/3-23*I/6','q':'B/3+I/6'}
+    assert charge['solution_matrix']==[['1/8','-25/8'],['-1/4','1/4']]
+    assert charge['inverse']=={'x':'-B/3-25*I/6','q':'-B/3-I/6'}
     tex=(raw.parent/'branching_comparison.tex').read_text()
     assert 'SU(3)_{-5/2}+5F' in tex and r'SO(10)\to SU(5)' in tex
-    assert '(x,q)=(-4,0)' in tex and 'I=-I_{\\rm old}' in tex
+    assert '(x,q)=(-4,0)' in tex and '(1,1)' in tex and 'antibaryon' in tex
 
 def test_canonical_k0_double_a1_report_preserves_order_and_exact_map():
     """The canonical solver consumes accepted ordered A5 x A1 x A1 evidence."""

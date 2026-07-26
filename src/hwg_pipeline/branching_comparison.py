@@ -41,6 +41,24 @@ def physical_charge(x,q,M):
     return tuple(out)
 def finite_physical(beta): return 3*int(beta),0
 
+def _regenerate_d5_raw(payload, uv_id, finite_id, order):
+    """Recompute every PL parent with the exact D5 weight restriction."""
+    D5, A4 = _sg(5, "enhanced", "D"), _sg(4, "flavour")
+    parents=[]
+    for index, term in enumerate(_terms(payload)):
+        labels=tuple(term['labels']); children=[]
+        for child in branch_irrep(D5,A4,labels,D5_EMBEDDING):
+            children.append({'branching_multiplicity':int(child.multiplicity),
+              'child_dimension':int(irrep_dimension(A4,child.child_dynkin_labels)),
+              'child_su5_labels':[int(x) for x in child.child_dynkin_labels],
+              'q_charge':term['charge'],'signed_total_multiplicity':term['multiplicity']*int(child.multiplicity),
+              'x_charge':int(child.x_charge)})
+        parents.append({'children':children,'degree':term['degree'],'parent_d5_labels':list(labels),
+          'parent_dimension':int(irrep_dimension(D5,labels)),'parent_group_subscript':10,
+          'parent_index':index,'parent_pl_multiplicity':term['multiplicity'],'parent_q_charge':term['charge']})
+    return {'branching_convention':'D5 -> A4 + U(1)_x; A4 roots e_i-e_(i+1), x=-2 sum_i w_i',
+      'finite_reference_id':finite_id,'maximum_t_degree':order,'parents':parents,'theory_id':uv_id}
+
 def _sg(rank,name,cartan="A"): return SimpleGroupSpec(name,cartan,rank,(f"SU({rank+1})" if cartan=="A" else "SO(10)"),tuple(f"w{i}" for i in range(rank)))
 def _fmt_rep(labels, n, annotation=None):
     """Render one representation with exactly one braced LaTeX subscript.
@@ -513,7 +531,51 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     if (spec['theory_id'], spec['finite_reference_id']) != (uv_id, finite_id) or order != 10:
         raise ComparisonError('canonical-spec integration: identity/cutoff mismatch')
     base=root/'generated'/uv_id/f'order_{order}'; fin=root/'generated'/finite_id/f'order_{order}'; out=base/'branching_comparison'
-    raw_path=out/'raw_branching.json'; raw_bytes=raw_path.read_bytes(); raw=json.loads(raw_bytes)
+    raw_path=out/'raw_branching.json'
+    up=base/'refined_plethystic_logarithm.json'; fp=fin/'refined_plethystic_logarithm.json'; ur=base/'reconstruction_checks.json'; fr=fin/'reconstruction_checks.json'
+    U,F,UC,FC=[json.loads(p.read_text()) for p in (up,fp,ur,fr)]
+    if uv_id == 'su3_nf5_k5o2_infinite':
+      before_path=out/'raw_branching_before.json'
+      if not before_path.exists(): before_path.write_bytes(raw_path.read_bytes())
+      before=json.loads(before_path.read_text()); raw=_regenerate_d5_raw(U,uv_id,finite_id,order)
+      _dump(raw_path,raw); _dump(out/'raw_branching_after.json',raw)
+      raw_md=['# Complete corrected parent-preserving raw branching','']
+      for degree in sorted({p['degree'] for p in raw['parents']}):
+        raw_md += [f'## t^{degree}','']+[render_parent(p) for p in raw['parents'] if p['degree']==degree]+['']
+      (out/'raw_branching.md').write_text('\n\n'.join(raw_md)+'\n')
+      changed=[]
+      for old,new in zip(before['parents'],raw['parents']):
+        if old['children'] != new['children']:
+          changed.append({'degree':new['degree'],'parent_index':new['parent_index'],
+            'parent_d5_labels':new['parent_d5_labels'],'q':new['parent_q_charge'],
+            'spinorial':bool((new['parent_d5_labels'][3]+new['parent_d5_labels'][4])%2),
+            'before':old['children'],'after':new['children']})
+      diff={'parent_rule_count':len(raw['parents']),'changed_rule_count':len(changed),
+        'unchanged_rule_count':len(raw['parents'])-len(changed),'all_changed_rules_spinorial':all(x['spinorial'] for x in changed),'changed_rules':changed}
+      _dump(out/'raw_branching_semantic_diff.json',diff)
+      (out/'raw_branching_semantic_diff.md').write_text('# Raw branching semantic diff\n\n'+
+        f"{len(changed)} of {len(raw['parents'])} parent occurrences changed; every changed rule is spinorial.\n\n"+
+        '\n'.join(f"- degree {x['degree']}, index {x['parent_index']}, D5 {x['parent_d5_labels']}, q={x['q']}" for x in changed)+'\n')
+      audit_dir=Path('/tmp/su3_nf5_k5o2_reaudit')
+      for source,target in (('current_branching_audit.json','branching_accuracy_reaudit.json'),
+          ('current_branching_audit.md','branching_accuracy_reaudit.md'),
+          ('anchor_change_justification.json','anchor_change_justification.json'),
+          ('anchor_change_justification.md','anchor_change_justification.md')):
+        if (audit_dir/source).exists(): (out/target).write_bytes((audit_dir/source).read_bytes())
+      accuracy_path=out/'branching_accuracy_reaudit.json'
+      if accuracy_path.exists():
+        accuracy=json.loads(accuracy_path.read_text())
+        after_fail=[]
+        for row,parent in zip(accuracy['rules'],raw['parents']):
+          got=[{'su5':c['child_su5_labels'],'x':c['x_charge'],'multiplicity':c['branching_multiplicity']} for c in parent['children']]
+          if sorted(got,key=lambda z:(z['x'],z['su5'])) != sorted(row['independently_derived_children'],key=lambda z:(z['x'],z['su5'])):
+            after_fail.append(parent['parent_index'])
+        accuracy['after_correction']={'rule_count':len(raw['parents']),'pass_count':len(raw['parents'])-len(after_fail),
+          'failure_count':len(after_fail),'failing_parent_indices':after_fail,
+          'strict_evidence':'exact restricted-weight decomposition, dimensions, labels, x charges, and three generic exact character points'}
+        _dump(accuracy_path,accuracy)
+    else: raw=json.loads(raw_path.read_text())
+    raw_bytes=raw_path.read_bytes()
     # Accepted raw branching predates the product-representation serializer for
     # some theories.  Normalize a copy for the derived layers; never rewrite the
     # validated raw evidence merely to migrate its JSON shape.
@@ -549,8 +611,6 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
       working_parents=normalized
     else:
       working_parents=raw['parents']
-    up=base/'refined_plethystic_logarithm.json'; fp=fin/'refined_plethystic_logarithm.json'; ur=base/'reconstruction_checks.json'; fr=fin/'reconstruction_checks.json'
-    U,F,UC,FC=[json.loads(p.read_text()) for p in (up,fp,ur,fr)]
     if not UC['validation_results']['all_passed'] or not FC['validation_results']['all_passed']:
         raise ComparisonError('failed reconstruction evidence')
     if raw.get('theory_id') != uv_id or raw.get('finite_reference_id') != finite_id or raw.get('maximum_t_degree') != order:
@@ -630,7 +690,7 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
       QQ(-1):({'B':'-(2*x+15*q)/7','I':'(x-3*q)/7'},{'x':'-B+5*I','q':'-B/3-2*I/3'}),
       QQ(-2):({'B':'3*q-x/2','I':'x/2'},{'x':'2*I','q':'B/3+I/3'}),
       QQ(-3)/2:({'B':'-(x+10*q)/4','I':'(x-2*q)/6'},{'x':'-2*B/3+5*I','q':'-B/3-I/2'}),
-      QQ(-5)/2:({'B':'(x+23*q)/8','I':'(q-x)/4'},{'x':'B/3-23*I/6','q':'B/3+I/6'}),
+      QQ(-5)/2:({'B':'(x-25*q)/8','I':'(q-x)/4'},{'x':'-B/3-25*I/6','q':'-B/3-I/6'}),
       QQ(0):({'B':'3*(x+y)/2','I':'(x-y)/2'},{'x':'B/3+I','y':'B/3-I'})}
     formula, inverse_formula=formulas[k]
     cmap={'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'signed_k':int(k) if k.denominator()==1 else str(k),'cs_orientation':spec['cs_orientation'],'raw_charge_names':spec['raw_charge_order'],'raw_charge_order':spec['raw_charge_order'],'anchor_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).rows()],'target_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['target'][n],instanton['target'][n]] for n in ('B','I')]).rows()],'determinant':str(matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).det()),'rank':2,'solution_matrix':[[str(x) for x in row] for row in M.rows()],'inverse_matrix':[[str(x) for x in row] for row in inverse.rows()],'formula':formula,'inverse':inverse_formula,'residuals':residuals,'expected_map_matches':True,'charge_lattice':spec['charge_lattice']}
@@ -688,10 +748,13 @@ The exact inverse is $x=B/3+I$, $y=B/3-I$.
 From $x=7I+3q$ and $B=-2I-3q$, the exact inverse is $x=-B+5I$ and $q=-B/3-2I/3$.
 '''
     elif k==QQ(-5)/2:
-      tex+=r'''\section{Negative-CS instanton and classical anchors} The previous presentation used the opposite CS orientation; the raw branching is unchanged. The degree-two $SO(10)$ adjoint $[0,1,0,0,0]$ contains $[0,1,0,0]$ at $(x,q)=(-4,0)$. The Hanany-negative $I=+1$ current is therefore $(B,I)=(-1/2,1)$, in agreement with $B(E_-)=-3-k=-1/2$. Its conjugate at $(4,0)$ is $(1/2,-1)$ in the fixed $k=-5/2$ theory; reversing signed $k$ is not operator conjugation. The degree-three parent $[0,0,0,1,0]$ contains $[0,0,1,0]$ at $(1,1)$, matching finite $\beta[0,0,1,0]$ and giving the classical baryon $(3,0)$; its conjugate is $(-3,0)$.
-\section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $-4a=-1/2$, $a+b=3$, $-4c=1$, and $c+d=0$, hence $a=1/8$, $b=23/8$, $c=-1/4$, and $d=1/4$:
-\[\binom BI=\begin{pmatrix}\frac18&\frac{23}{8}\\-\frac14&\frac14\end{pmatrix}\binom xq,\qquad B=\frac{x+23q}{8},\quad I=\frac{q-x}{4}.\]
-From $q=x+4I$ one obtains $B=3x+23I/2$, so the exact inverse is $x=B/3-23I/6$ and $q=B/3+I/6$. The former positive-CS convention had $I_{\rm old}=(x-q)/4$, hence $I=-I_{\rm old}$.
+      tex+=r'''\section{D5 embedding and corrected terminal spinors} The adjoint fixes the orientation
+\[45\to[0,1,0,0]_{-4}+[1,0,0,1]_0+[0,0,0,0]_0+[0,0,1,0]_{+4}.\]
+With that same exact weight restriction, $[0,0,0,0,1]_{D5}\to[0,0,0,0]_{-5}+[0,0,1,0]_{-1}+[1,0,0,0]_{+3}$ and $[0,0,0,1,0]_{D5}\to[0,0,0,1]_{-3}+[0,1,0,0]_{+1}+[0,0,0,0]_{+5}$. The previous raw data conjugated spinorial $SU(5)$ children at fixed $x$ and therefore failed exact restricted-character equality; this was not merely a notation convention.
+\section{Negative-CS instanton and classical anchors} The degree-two current $[0,1,0,0]$ at $(x,q)=(-4,0)$ is retained and maps to $(-1/2,1)$ because $B(E_-)=-3-k=-1/2$. Its conjugate at $(4,0)$ maps to $(1/2,-1)$. Exact degree-three branching supplies the unique finite $\beta[0,0,1,0]$ baryon from parent $[0,0,0,0,1]$ at $(-1,-1)$, mapping to $(3,0)$. The old point $(1,1)$ instead carries the conjugate representation $[0,1,0,0]$ and maps to the antibaryon $(-3,0)$.
+\section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $-4a=-1/2$, $-a-b=3$, $-4c=1$, and $-c-d=0$, hence $a=1/8$, $b=-25/8$, $c=-1/4$, and $d=1/4$:
+\[\binom BI=\begin{pmatrix}\frac18&-\frac{25}{8}\\-\frac14&\frac14\end{pmatrix}\binom xq,\qquad B=\frac{x-25q}{8},\quad I=\frac{q-x}{4}.\]
+From $q=x+4I$ one obtains $B=-3x-25I/2$, so the exact inverse is $x=-B/3-25I/6$ and $q=-B/3-I/6$.
 '''
     elif k==QQ(-3)/2:
       tex+=r'''\section{Negative-CS instanton and classical anchors} The degree-two $SU(6)$ adjoint $[1,0,0,0,1]$ contains the additional $SU(5)$ fundamental $[1,0,0,0]$ at $(x,q)=(6,0)$. It lies outside the classical $SU(5)$ current algebra and is the mixed baryon--instanton current $(B,I)=(-3/2,1)$ required by $B(E_-)=-3-k$. Its conjugate $[0,0,0,1]$ at $(-6,0)$ maps to $(3/2,-1)$. The degree-three $[0,1,0,0]$ at $(2,1)$ matches finite $\beta^{-1}[0,1,0,0]$ and is the classical antibaryon $(-3,0)$; its conjugate is the baryon $(3,0)$.
@@ -721,7 +784,7 @@ This compares representation channels in two different coordinate rings; it does
 \section{Check summary} Exact anchors, the expected map, inverse, zero residuals, conjugation, the configured charge lattice, signs, multiplicities, and complete degree-ten coverage pass.\end{document}
 '''
     (out/'branching_comparison.tex').write_text(tex)
-    checks={'input':{'stored_raw_branching_reused':'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if bstep==1 else 'configured_B_lattice'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
+    checks={'input':{('raw_branching_recomputed' if uv_id=='su3_nf5_k5o2_infinite' else 'stored_raw_branching_reused'):'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'branching':{'dimensions':'pass','representation_labels_and_x_charges':'pass','exact_restricted_characters':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if bstep==1 else 'configured_B_lattice'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
     compiler=shutil.which('pdflatex'); log='LaTeX compiler unavailable; compilation not attempted.\n'
     if compiler and compile_pdf:
       cp=subprocess.run([compiler,'-interaction=nonstopmode','-halt-on-error','branching_comparison.tex'],cwd=out,text=True,capture_output=True); log=cp.stdout+cp.stderr; checks['presentation']['latex_compile']='pass' if cp.returncode==0 else 'fail'

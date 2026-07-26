@@ -7,7 +7,7 @@
   "generated/su3_nf5_k3o2_infinite/order_10/branching_comparison/raw_branching.json": "6e5e1b56bb67dd83c345d755632407bdde4d8cfe01b2feae57626c5774d06aaa",
   "generated/su3_nf5_k3o2_infinite/order_10/reconstruction_checks.json": "cf5a9192ba770df87198f28af36ffaea73e247cb2cb1b15eb743c86ed6121f9d",
   "generated/su3_nf5_k3o2_infinite/order_10/refined_plethystic_logarithm.json": "e377c29e17e2ed5425c9ecc68918629ed9b29d6536c8109451deb705f9272d5e",
-  "generated/su3_nf5_k5o2_infinite/order_10/branching_comparison/raw_branching.json": "57bfe9be0be1aed10915e50bdcb84bfb6b3acda941b0aec7dae0600c23cfc0c3",
+  "generated/su3_nf5_k5o2_infinite/order_10/branching_comparison/raw_branching.json": "5de44bc6dcc10d9e6f63719c021562bd4f05204725c320f909196d9354451c63",
   "generated/su3_nf5_k5o2_infinite/order_10/reconstruction_checks.json": "61e878295ace7c378d5305e113ff6e6f858b8ce4aaa895be184faf74133803bd",
   "generated/su3_nf5_k5o2_infinite/order_10/refined_plethystic_logarithm.json": "c3610935e3984712f99a15a30cd529c40981a4513b7956b9e7695a9a42bd4fe6",
   "generated/su3_nf6_finite/order_10/reconstruction_checks.json": "3ac4f3ed79725020df398cda6ea86c8ff20c44b78a8e9274a87688976b9be7e5",
@@ -23,7 +23,7 @@
   "generated/su3_nf6_k2_infinite/order_10/refined_plethystic_logarithm.json": "20c6e0918a7cfd2dac4d977ffa16cda150b9b8af7e74069165caac763b5ebd35",
   "theories/branching/su3_nf5_k1o2_to_finite.yaml": "713efe8b6f6f6aa15245755097bdaffa861160ac05d8df2fa75d89f53766c4e1",
   "theories/branching/su3_nf5_k3o2_to_finite.yaml": "f7af9c4a57f783a74cf258d5c0f6fa7dd0c9231b29666060f40f9612db876008",
-  "theories/branching/su3_nf5_k5o2_to_finite.yaml": "fb4a92b596966f19b77470add28c83d4a8c997084f18633effbaaa221a2b89a0",
+  "theories/branching/su3_nf5_k5o2_to_finite.yaml": "63082583d9a35cd8b38259a0caebe1ae58adb299f875d9def6e17c8d84485d41",
   "theories/branching/su3_nf6_k0_to_finite.yaml": "a718f37465bc7c7741ece4660ead10d617946fd2b84f33edd35497be0394a822",
   "theories/branching/su3_nf6_k1_to_finite.yaml": "a44839c279237f2638fd73f3a510c66d61b996cfa4c74cf2bf823c7bf1ed4628",
   "theories/branching/su3_nf6_k2_to_finite.yaml": "1789481e6eb539722da2b21b0e3c87bea6c9b26a7aee2b230acc211ddb6b3f92"

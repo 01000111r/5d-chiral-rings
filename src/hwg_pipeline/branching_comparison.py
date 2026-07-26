@@ -519,11 +519,16 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     # validated raw evidence merely to migrate its JSON shape.
     legacy_raw = bool(raw['parents'] and 'parent_factors' not in raw['parents'][0])
     if legacy_raw:
+      parent_label_key = ('parent_d5_labels' if 'parent_d5_labels' in raw['parents'][0]
+                          else 'parent_su6_labels')
+      parent_type, parent_name = (('D5','SO(10)') if parent_label_key == 'parent_d5_labels'
+                                  else ('A5','SU(6)'))
       normalized=[]
       for p in raw['parents']:
         z={'degree':p['degree'],'parent_dimension':p['parent_dimension'],
            'parent_external_charges':{'q':p['parent_q_charge']},
-           'parent_factors':[{'cartan_factor_id':'enhanced','cartan_type':'A5','display_name':'SU(6)','labels':p['parent_su6_labels']}],
+           'parent_factors':[{'cartan_factor_id':'enhanced','cartan_type':parent_type,
+                              'display_name':parent_name,'labels':p[parent_label_key]}],
            'signed_parent_pl_multiplicity':p['parent_pl_multiplicity'],'children':[]}
         for c in p['children']:
           z['children'].append({'branching_multiplicity':c['branching_multiplicity'],
@@ -567,7 +572,8 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
         physical.append(z)
     if lattice_fail: raise ComparisonError(f'charge-lattice failure: {lattice_fail[0]}')
     ft=_finite_terms(F)
-    uv_factors=([{'index':0,'cartan_factor_id':'enhanced','cartan_type':'A5','display_name':'SU(6)','action':'preserve'}]
+    uv_factors=([{'index':0,'cartan_factor_id':'enhanced','cartan_type':parent_type,
+                  'display_name':parent_name,'action':'preserve'}]
       if legacy_raw else [
       {'index':0,'cartan_factor_id':'enhanced','cartan_type':'A4','display_name':'SU(5)','action':'preserve'},
       {'index':1,'cartan_factor_id':'su2','cartan_type':'A1','display_name':'SU(2)','action':'branch_to_u1','output_charge':'x'}])
@@ -605,7 +611,11 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     canonical_meta={'signed_k':str(k),'cs_orientation':spec['cs_orientation'],
       'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1}}
     anchors={**canonical_meta,'classical_anchor':classical,'instanton_anchor':instanton,'conjugate_check':spec['conjugate_check'],'literature_orientation':spec['literature_orientation']}
-    cmap={'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'signed_k':str(k),'cs_orientation':spec['cs_orientation'],'raw_charge_order':spec['raw_charge_order'],'anchor_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).rows()],'target_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['target'][n],instanton['target'][n]] for n in ('B','I')]).rows()],'determinant':str(matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).det()),'rank':2,'solution_matrix':[[str(x) for x in row] for row in M.rows()],'inverse_matrix':[[str(x) for x in row] for row in inverse.rows()],'formula':{'B':'-(x+10*q)/4','I':'(x-2*q)/6'} if k==QQ(-3)/2 else {'B':'-(5*x+7*q)/4','I':'(x-q)/2'},'inverse':{'x':'-2*B/3+5*I','q':'-B/3-I/2'} if k==QQ(-3)/2 else {'x':'-B/3+7*I/6','q':'-B/3-5*I/6'},'residuals':residuals,'expected_map_matches':True,'charge_lattice':spec['charge_lattice']}
+    formulas={QQ(-1)/2:({'B':'-(5*x+7*q)/4','I':'(x-q)/2'},{'x':'-B/3+7*I/6','q':'-B/3-5*I/6'}),
+      QQ(-3)/2:({'B':'-(x+10*q)/4','I':'(x-2*q)/6'},{'x':'-2*B/3+5*I','q':'-B/3-I/2'}),
+      QQ(-5)/2:({'B':'(x+23*q)/8','I':'(q-x)/4'},{'x':'B/3-23*I/6','q':'B/3+I/6'})}
+    formula, inverse_formula=formulas[k]
+    cmap={'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},'signed_k':str(k),'cs_orientation':spec['cs_orientation'],'raw_charge_order':spec['raw_charge_order'],'anchor_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).rows()],'target_matrix':[[str(x) for x in row] for row in matrix(QQ,[[classical['target'][n],instanton['target'][n]] for n in ('B','I')]).rows()],'determinant':str(matrix(QQ,[[classical['raw_charges'][n],instanton['raw_charges'][n]] for n in spec['raw_charge_order']]).det()),'rank':2,'solution_matrix':[[str(x) for x in row] for row in M.rows()],'inverse_matrix':[[str(x) for x in row] for row in inverse.rows()],'formula':formula,'inverse':inverse_formula,'residuals':residuals,'expected_map_matches':True,'charge_lattice':spec['charge_lattice']}
     _dump(out/'charge_anchors.json',anchors); _dump(out/'charge_map.json',cmap)
     _dump(out/'physical_branching.json',{**canonical_meta,'parents':physical,'combined_by_degree':combined_terms,'finite_physical_terms':finite})
     summary=dict(Counter(x['status'] for x in matches)); _dump(out/'finite_uv_comparison.json',{**canonical_meta,'statement':'Representation-channel comparison in two different coordinate rings; not an equality with the UV I=0 sector.','finite_terms':matches,'summary':summary,'physical_sector_counts':channels})
@@ -633,9 +643,20 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
 '''+render_degree_table(rows,r'finite $[t^d]PL$ in $(\beta;SU(5))$',r'UV $[t^d]PL$ in $(q;SU(5)\times SU(2))$')+r'''\end{landscape}
 \section{Degree-by-degree raw branching}
 '''
-    tex=tex.replace('SIGNED_K',str(k)).replace('RAW_CONVENTION',(r'$SU(6)\to SU(5)\times U(1)_x$ uses $6\to5_{+1}+1_{-5}$; the external $q$ is kept independent.' if legacy_raw else r'Parents are $[a_1,a_2,a_3,a_4;b]_{5,2}$ and $[b]_2\to\sum_{r=0}^b1_{x=b-2r}$; $q$ is preserved independently.'))
+    raw_convention=(r'$SO(10)\to SU(5)\times U(1)_x$ uses the stored D5 convention; the external $q$ is kept independent.'
+                    if legacy_raw and parent_type == 'D5' else
+                    r'$SU(6)\to SU(5)\times U(1)_x$ uses $6\to5_{+1}+1_{-5}$; the external $q$ is kept independent.'
+                    if legacy_raw else
+                    r'Parents are $[a_1,a_2,a_3,a_4;b]_{5,2}$ and $[b]_2\to\sum_{r=0}^b1_{x=b-2r}$; $q$ is preserved independently.')
+    tex=tex.replace('SIGNED_K',str(k)).replace('RAW_CONVENTION',raw_convention)
     for d in degrees: tex+=f'\\subsection*{{Degree {d}}}\n'+r'\[\begin{gathered} '+r'\\'.join(render_product_parent(p)[1:-1] for p in working_parents if p['degree']==d)+r'\end{gathered}\]'
-    if k==QQ(-3)/2:
+    if k==QQ(-5)/2:
+      tex+=r'''\section{Negative-CS instanton and classical anchors} The previous presentation used the opposite CS orientation; the raw branching is unchanged. The degree-two $SO(10)$ adjoint $[0,1,0,0,0]$ contains $[0,1,0,0]$ at $(x,q)=(-4,0)$. The Hanany-negative $I=+1$ current is therefore $(B,I)=(-1/2,1)$, in agreement with $B(E_-)=-3-k=-1/2$. Its conjugate at $(4,0)$ is $(1/2,-1)$ in the fixed $k=-5/2$ theory; reversing signed $k$ is not operator conjugation. The degree-three parent $[0,0,0,1,0]$ contains $[0,0,1,0]$ at $(1,1)$, matching finite $\beta[0,0,1,0]$ and giving the classical baryon $(3,0)$; its conjugate is $(-3,0)$.
+\section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $-4a=-1/2$, $a+b=3$, $-4c=1$, and $c+d=0$, hence $a=1/8$, $b=23/8$, $c=-1/4$, and $d=1/4$:
+\[\binom BI=\begin{pmatrix}\frac18&\frac{23}{8}\\-\frac14&\frac14\end{pmatrix}\binom xq,\qquad B=\frac{x+23q}{8},\quad I=\frac{q-x}{4}.\]
+From $q=x+4I$ one obtains $B=3x+23I/2$, so the exact inverse is $x=B/3-23I/6$ and $q=B/3+I/6$. The former positive-CS convention had $I_{\rm old}=(x-q)/4$, hence $I=-I_{\rm old}$.
+'''
+    elif k==QQ(-3)/2:
       tex+=r'''\section{Negative-CS instanton and classical anchors} The degree-two $SU(6)$ adjoint $[1,0,0,0,1]$ contains the additional $SU(5)$ fundamental $[1,0,0,0]$ at $(x,q)=(6,0)$. It lies outside the classical $SU(5)$ current algebra and is the mixed baryon--instanton current $(B,I)=(-3/2,1)$ required by $B(E_-)=-3-k$. Its conjugate $[0,0,0,1]$ at $(-6,0)$ maps to $(3/2,-1)$. The degree-three $[0,1,0,0]$ at $(2,1)$ matches finite $\beta^{-1}[0,1,0,0]$ and is the classical antibaryon $(-3,0)$; its conjugate is the baryon $(3,0)$.
 \section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $6a=-3/2$, $2a+b=-3$, $6c=1$, $2c+d=0$, hence $a=-1/4$, $b=-5/2$, $c=1/6$, and $d=-1/3$:
 \[\binom BI=\begin{pmatrix}-\frac14&-\frac52\\\frac16&-\frac13\end{pmatrix}\binom xq,\qquad B=-\frac{x+10q}{4},\quad I=\frac{x-2q}{6}.\]

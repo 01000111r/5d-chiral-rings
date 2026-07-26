@@ -192,3 +192,23 @@ def test_canonical_signed_report_accepts_validated_legacy_raw_schema():
     assert charge['inverse']=={'q':'-B/3-I/2','x':'-2*B/3+5*I'}
     tex=(raw.parent/'branching_comparison.tex').read_text()
     assert 'SU(3)_{-3/2}+5F' in tex and r'6\to5_{+1}+1_{-5}' in tex
+
+def test_canonical_k5o2_report_uses_d5_raw_schema_and_negative_cs_map():
+    """The accepted D5 raw layer is translated without changing its branching."""
+    import hashlib, json
+    from pathlib import Path
+    from hwg_pipeline.branching_comparison import generate
+    root=Path(__file__).resolve().parents[1]
+    sp=root/'theories/branching/su3_nf5_k5o2_to_finite.yaml'
+    raw=root/'generated/su3_nf5_k5o2_infinite/order_10/branching_comparison/raw_branching.json'
+    before=hashlib.sha256(raw.read_bytes()).hexdigest()
+    result=generate(root,'su3_nf5_k5o2_infinite','su3_nf5_finite',10,sp,True,False)
+    assert hashlib.sha256(raw.read_bytes()).hexdigest()==before
+    assert result['number_uv_parent_terms']==78
+    assert result['number_raw_child_terms']==result['number_translated_child_terms']==671
+    charge=json.loads((raw.parent/'charge_map.json').read_text())
+    assert charge['solution_matrix']==[['1/8','23/8'],['-1/4','1/4']]
+    assert charge['inverse']=={'x':'B/3-23*I/6','q':'B/3+I/6'}
+    tex=(raw.parent/'branching_comparison.tex').read_text()
+    assert 'SU(3)_{-5/2}+5F' in tex and r'SO(10)\to SU(5)' in tex
+    assert '(x,q)=(-4,0)' in tex and 'I=-I_{\\rm old}' in tex

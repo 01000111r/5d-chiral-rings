@@ -521,8 +521,12 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     if legacy_raw:
       parent_label_key = ('parent_d5_labels' if 'parent_d5_labels' in raw['parents'][0]
                           else 'parent_su6_labels')
+      first_parent_labels = raw['parents'][0][parent_label_key]
       parent_type, parent_name = (('D5','SO(10)') if parent_label_key == 'parent_d5_labels'
-                                  else ('A5','SU(6)'))
+                                  else (f'A{len(first_parent_labels)}',f'SU({len(first_parent_labels)+1})'))
+      child_label_key = next(k for k in raw['parents'][0]['children'][0]
+                             if k.startswith('child_') and k.endswith('_labels'))
+      child_rank = len(raw['parents'][0]['children'][0][child_label_key])
       normalized=[]
       for p in raw['parents']:
         z={'degree':p['degree'],'parent_dimension':p['parent_dimension'],
@@ -533,7 +537,7 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
         for c in p['children']:
           z['children'].append({'branching_multiplicity':c['branching_multiplicity'],
             'child_dimension':c['child_dimension'],
-            'child_factors':[{'cartan_factor_id':'flavour','cartan_type':'A4','display_name':'SU(5)','labels':c['child_su5_labels']}],
+            'child_factors':[{'cartan_factor_id':'flavour','cartan_type':f'A{child_rank}','display_name':f'SU({child_rank+1})','labels':c[child_label_key]}],
             'raw_charges':{'x':c['x_charge'],'q':c['q_charge']},
             'signed_child_multiplicity':c['signed_total_multiplicity']})
         normalized.append(z)
@@ -572,9 +576,10 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
         physical.append(z)
     if lattice_fail: raise ComparisonError(f'charge-lattice failure: {lattice_fail[0]}')
     if legacy_raw:
-      ft=_finite_terms(F)
+      ft=_finite_terms(F,f'A{child_rank}',f'SU({child_rank+1})')
     else:
       child_meta=working_parents[0]['children'][0]['child_factors'][0]
+      child_rank=int(child_meta['cartan_type'][1:])
       ft=_finite_terms(F,child_meta['cartan_type'],child_meta['display_name'])
     uv_factors=([{'index':0,'cartan_factor_id':'enhanced','cartan_type':parent_type,
                   'display_name':parent_name,'action':'preserve'}]
@@ -617,6 +622,7 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
       'raw_charge_names':list(spec['raw_charge_order'])}
     anchors={**canonical_meta,'classical_anchor':classical,'instanton_anchor':instanton,'conjugate_check':spec['conjugate_check'],'literature_orientation':spec['literature_orientation']}
     formulas={QQ(-1)/2:({'B':'-(5*x+7*q)/4','I':'(x-q)/2'},{'x':'-B/3+7*I/6','q':'-B/3-5*I/6'}),
+      QQ(-1):({'B':'-(2*x+15*q)/7','I':'(x-3*q)/7'},{'x':'-B+5*I','q':'-B/3-2*I/3'}),
       QQ(-3)/2:({'B':'-(x+10*q)/4','I':'(x-2*q)/6'},{'x':'-2*B/3+5*I','q':'-B/3-I/2'}),
       QQ(-5)/2:({'B':'(x+23*q)/8','I':'(q-x)/4'},{'x':'B/3-23*I/6','q':'B/3+I/6'}),
       QQ(0):({'B':'3*(x+y)/2','I':'(x-y)/2'},{'x':'B/3+I','y':'B/3-I'})}
@@ -639,22 +645,24 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     rows=[(d,native([t for t in ft if t['degree']==d]),native([t for t in ut if t['degree']==d],True)) for d in degrees]
     finals=[]
     for d in degrees:
-      left=_coeff([{'child_labels':f['labels'],'B':f['B'],'I':0,'multiplicity':f['signed_multiplicity']} for f in finite if f['degree']==d],physical=True,child_subscript=5)
+      left=_coeff([{'child_labels':f['labels'],'B':f['B'],'I':0,'multiplicity':f['signed_multiplicity']} for f in finite if f['degree']==d],physical=True,child_subscript=child_rank)
       right=r'\newline '.join(render_product_parent(p,True) for p in physical if p['degree']==d); finals.append((d,left,right))
-    title=(r'$SU(3)_0+6F$' if k==0 else f'$SU(3)_{{{k}}}+5F$')
-    native_uv=(r'$SU(6)\times SU(2)_1\times SU(2)_2$' if k==0 else r'$(q;SU(5)\times SU(2))$')
+    title=(r'$SU(3)_0+6F$' if k==0 else f'$SU(3)_{{{k}}}+{child_rank+1}F$' if legacy_raw else f'$SU(3)_{{{k}}}+5F$')
+    native_uv=(r'$SU(6)\times SU(2)_1\times SU(2)_2$' if k==0 else
+               rf'$(q;{parent_name})$' if legacy_raw else r'$(q;SU(5)\times SU(2))$')
     tex=r'''\documentclass{article}
 \usepackage{amsmath,amssymb,geometry,booktabs,longtable,pdflscape}\geometry{margin=1.2cm}\begin{document}
 \title{Finite- and infinite-coupling plethystic logarithms for REPORT_TITLE}\maketitle
 \section{Physical and representation conventions} $B$ is microscopic baryon number normalized by $B(Q)=1$. We use $(B,I)$ and $k=SIGNED_K$. RAW_CONVENTION
 \section{Native finite and UV plethystic logarithms}\begin{landscape}
-'''+render_degree_table(rows,r'finite $[t^d]PL$ in $(\beta;SU(6))$' if k==0 else r'finite $[t^d]PL$ in $(\beta;SU(5))$',r'UV $[t^d]PL$ in '+native_uv)+r'''\end{landscape}
+'''+render_degree_table(rows,rf'finite $[t^d]PL$ in $(\beta;SU({child_rank+1}))$',r'UV $[t^d]PL$ in '+native_uv)+r'''\end{landscape}
 \section{Degree-by-degree raw branching}
 '''
     raw_convention=(r'The ordered factors are $SU(6),SU(2)_1,SU(2)_2$. The two $A_1$ factors are distinct: $SU(2)_1\to U(1)_x$ and $SU(2)_2\to U(1)_y$. Baryon and instanton number are different linear combinations of $x,y$; no external charge exists.' if k==0 else
                     r'$SO(10)\to SU(5)\times U(1)_x$ uses the stored D5 convention; the external $q$ is kept independent.'
                     if legacy_raw and parent_type == 'D5' else
-                    r'$SU(6)\to SU(5)\times U(1)_x$ uses $6\to5_{+1}+1_{-5}$; the external $q$ is kept independent.'
+                    (r'$SU(6)\to SU(5)\times U(1)_x$ uses $6\to5_{+1}+1_{-5}$; the external $q$ is kept independent.' if child_rank==4 else
+                     rf'$SU({child_rank+2})\to SU({child_rank+1})\times U(1)_x$ uses ${child_rank+2}\to {child_rank+1}_{{+1}}+1_{{-{child_rank+1}}}$; the external $q$ is kept independent.')
                     if legacy_raw else
                     r'Parents are $[a_1,a_2,a_3,a_4;b]_{5,2}$ and $[b]_2\to\sum_{r=0}^b1_{x=b-2r}$; $q$ is preserved independently.')
     tex=tex.replace('REPORT_TITLE',title).replace('SIGNED_K',str(k)).replace('RAW_CONVENTION',raw_convention)
@@ -666,6 +674,12 @@ The degree-three parent $[0,0,1,0,0;1;1]_{6,2,2}$ contains $[0,0,1,0,0]$ at $(1,
 \[\binom BI=\begin{pmatrix}\frac32&\frac32\\\frac12&-\frac12\end{pmatrix}\binom xy,\qquad B=\frac{3(x+y)}2,\quad I=\frac{x-y}2.\]
 The exact inverse is $x=B/3+I$, $y=B/3-I$.
 \section{Low-degree checks} The roots map $(2,0)\mapsto(3,1)$, $(0,-2)\mapsto(-3,1)$, $(-2,0)\mapsto(-3,-1)$, and $(0,2)\mapsto(3,-1)$. The bifundamental weights map $(1,1)\mapsto(3,0)$, $(-1,-1)\mapsto(-3,0)$, $(1,-1)\mapsto(0,1)$, and $(-1,1)\mapsto(0,-1)$, respectively the classical baryon, classical antibaryon, pure instanton, and pure anti-instanton components.
+'''
+    elif k==QQ(-1):
+      tex+=r'''\section{Negative-CS instanton and classical anchors} The degree-two $SU(7)$ adjoint $[1,0,0,0,0,1]$ contains the additional $SU(6)$ fundamental $[1,0,0,0,0]$ at $(x,q)=(7,0)$. It lies outside the classical $SU(6)$ current algebra and is the mixed baryon--instanton conserved-current component $(B,I)=(-2,1)$ required by $B(E_-)=-3-k=-3-(-1)=-2$; it is not baryon-neutral. Its conjugate $[0,0,0,0,1]$ at $(-7,0)$ maps to $(2,-1)$. The degree-three child $[0,0,1,0,0]$ at $(3,1)$ matches finite $\beta^{-1}[0,0,1,0,0]$ and is the classical antibaryon $(-3,0)$; its conjugate is the baryon $(3,0)$. The $SU(6)$ 20 is self-conjugate, so its baryon sign is fixed by the finite $\beta$ grading, not by its Dynkin label.
+\section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $7a=-2$, $3a+b=-3$, $7c=1$, and $3c+d=0$, hence $a=-2/7$, $b=-15/7$, $c=1/7$, and $d=-3/7$:
+\[\binom BI=\begin{pmatrix}-\frac27&-\frac{15}{7}\\\frac17&-\frac37\end{pmatrix}\binom xq,\qquad B=-\frac{2x+15q}{7},\quad I=\frac{x-3q}{7}.\]
+From $x=7I+3q$ and $B=-2I-3q$, the exact inverse is $x=-B+5I$ and $q=-B/3-2I/3$.
 '''
     elif k==QQ(-5)/2:
       tex+=r'''\section{Negative-CS instanton and classical anchors} The previous presentation used the opposite CS orientation; the raw branching is unchanged. The degree-two $SO(10)$ adjoint $[0,1,0,0,0]$ contains $[0,1,0,0]$ at $(x,q)=(-4,0)$. The Hanany-negative $I=+1$ current is therefore $(B,I)=(-1/2,1)$, in agreement with $B(E_-)=-3-k=-1/2$. Its conjugate at $(4,0)$ is $(1/2,-1)$ in the fixed $k=-5/2$ theory; reversing signed $k$ is not operator conjugation. The degree-three parent $[0,0,0,1,0]$ contains $[0,0,1,0]$ at $(1,1)$, matching finite $\beta[0,0,1,0]$ and giving the classical baryon $(3,0)$; its conjugate is $(-3,0)$.
@@ -695,7 +709,7 @@ This compares representation channels in two different coordinate rings; it does
 \section{Check summary} Exact anchors, the expected map, inverse, zero residuals, conjugation, the configured charge lattice, signs, multiplicities, and complete degree-ten coverage pass.\end{document}
 '''
     (out/'branching_comparison.tex').write_text(tex)
-    checks={'input':{'stored_raw_branching_reused':'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if k==0 else 'half_integral_B'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
+    checks={'input':{'stored_raw_branching_reused':'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if bstep==1 else 'configured_B_lattice'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
     compiler=shutil.which('pdflatex'); log='LaTeX compiler unavailable; compilation not attempted.\n'
     if compiler and compile_pdf:
       cp=subprocess.run([compiler,'-interaction=nonstopmode','-halt-on-error','branching_comparison.tex'],cwd=out,text=True,capture_output=True); log=cp.stdout+cp.stderr; checks['presentation']['latex_compile']='pass' if cp.returncode==0 else 'fail'

@@ -237,3 +237,24 @@ def test_canonical_k0_double_a1_report_preserves_order_and_exact_map():
     tex=(raw.parent/'branching_comparison.tex').read_text()
     assert 'SU(3)_0+6F' in tex and 'SU(2)_1' in tex and 'SU(2)_2' in tex
     assert 'q^' not in tex and 'U(1)_q' not in tex
+
+def test_canonical_k1_six_flavour_report_uses_microscopic_baryon_map():
+    """Legacy field names do not change the stored SU(7) to SU(6) ranks."""
+    import json
+    from pathlib import Path
+    from hwg_pipeline.branching_comparison import generate
+    root=Path(__file__).resolve().parents[1]
+    sp=root/'theories/branching/su3_nf6_k1_to_finite.yaml'
+    raw=root/'generated/su3_nf6_k1_infinite/order_10/branching_comparison/raw_branching.json'
+    before=hashlib.sha256(raw.read_bytes()).hexdigest()
+    result=generate(root,'su3_nf6_k1_infinite','su3_nf6_finite',10,sp,True,False)
+    assert hashlib.sha256(raw.read_bytes()).hexdigest()==before
+    assert result['number_raw_child_terms']==result['number_translated_child_terms']
+    charge=json.loads((raw.parent/'charge_map.json').read_text())
+    assert charge['solution_matrix']==[['-2/7','-15/7'],['1/7','-3/7']]
+    assert charge['inverse']=={'x':'-B+5*I','q':'-B/3-2*I/3'}
+    physical=json.loads((raw.parent/'physical_branching.json').read_text())
+    assert physical['parents'][0]['parent_factors'][0]['cartan_type']=='A6'
+    assert physical['parents'][0]['children'][0]['child_factors'][0]['cartan_type']=='A5'
+    tex=(raw.parent/'branching_comparison.tex').read_text()
+    assert 'SU(3)_{-1}+6F' in tex and 'B(E_-)=-3-k=-3-(-1)=-2' in tex

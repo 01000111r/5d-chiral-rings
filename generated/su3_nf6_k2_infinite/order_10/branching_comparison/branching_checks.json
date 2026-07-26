@@ -1,54 +1,50 @@
 {
+  "baryon_normalization": {
+    "fundamental_hyper": 1
+  },
   "checks": {
     "anchors": {
-      "antibaryon_anchor_degree_3": "pass",
-      "antibaryon_matches_finite_beta_minus_1": "pass",
-      "instanton_anchor_degree_2": "pass",
-      "instanton_outside_finite_current": "pass",
-      "raw_vectors_independent": "pass"
+      "classical_finite_beta_term": "pass",
+      "conjugate_current": "pass",
+      "instanton_representation_and_charge": "pass"
     },
-    "branching": {
-      "child_multiplicities_nonnegative_integer": "pass",
-      "conjugation_reverses_x": "pass",
-      "deterministic": "pass",
-      "dimensions_preserved": "pass",
-      "every_parent_once": "pass",
-      "fundamental_normalization": "pass",
-      "low_representation_checks": "pass",
-      "q_preserved": "pass",
-      "x_integral": "pass"
-    },
-    "charge_map": {
-      "all_physical_charges_integral": "pass",
-      "conjugation_reverses_physical_charges": "pass",
-      "exact_unique_solution": "pass",
-      "expected_map_recovered": "pass",
-      "inverse_correct": "pass",
-      "residuals_vanish": "pass"
+    "charges": {
+      "integer_B": "pass",
+      "integer_I": "pass",
+      "lattice_all_children": "pass"
     },
     "completeness": {
-      "all_terms_through_cutoff": "pass",
-      "negative_terms_retained": "pass",
-      "no_ellipsis_inside_cutoff": "pass",
-      "no_terms_above_cutoff": "pass"
+      "all_degree_10_terms": "pass",
+      "all_negative_terms": "pass"
+    },
+    "convention": {
+      "B_Q_one": "pass",
+      "hanany_negative": "pass",
+      "legacy_current_neutral_rejected": "pass",
+      "signed_k": -2
     },
     "input": {
-      "cutoffs_equal_10": "pass",
-      "labels_complete": "pass",
-      "multiplicities_integer": "pass",
-      "stored_reconstruction_checks_pass": "pass",
-      "theory_ids_correct": "pass"
+      "reconstruction_evidence": "pass",
+      "stored_raw_branching_reused": "pass"
+    },
+    "map": {
+      "exact_QQ_solution": "pass",
+      "expected_map": "pass",
+      "inverse_and_residuals": "pass",
+      "shared_preflight_solver": "pass"
     },
     "presentation": {
+      "deterministic_rerun": "pass",
       "latex_compile": "unavailable",
-      "no_object_tuple_json_syntax_in_tex": "pass",
-      "output_deterministic": "pass",
-      "tables_and_equations_generated": "pass"
+      "signed_title": "pass",
+      "standard_B": "pass"
     }
   },
-  "low_representation_results": {
-    "(0, 0, 0, 0, 0, 1)": true,
-    "(0, 1, 0, 0, 0, 0)": true,
-    "(1, 0, 0, 0, 0, 0)": true
-  }
+  "cs_orientation": "hanany_negative",
+  "physical_basis": "microscopic_baryon_and_instanton",
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
+  "signed_k": -2
 }

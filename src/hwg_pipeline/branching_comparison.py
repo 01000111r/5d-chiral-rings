@@ -522,7 +522,12 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
       parent_label_key = ('parent_d5_labels' if 'parent_d5_labels' in raw['parents'][0]
                           else 'parent_su6_labels')
       first_parent_labels = raw['parents'][0][parent_label_key]
-      parent_type, parent_name = (('D5','SO(10)') if parent_label_key == 'parent_d5_labels'
+      # Older raw files used ``parent_d5_labels`` as a generic orthogonal
+      # label field.  The Dynkin-label rank, not that historical field name,
+      # determines whether the accepted raw parent is D5 or D6.
+      parent_type, parent_name = ((f'D{len(first_parent_labels)}',
+                                   f'SO({2*len(first_parent_labels)})')
+                                  if parent_label_key == 'parent_d5_labels'
                                   else (f'A{len(first_parent_labels)}',f'SU({len(first_parent_labels)+1})'))
       child_label_key = next(k for k in raw['parents'][0]['children'][0]
                              if k.startswith('child_') and k.endswith('_labels'))
@@ -623,6 +628,7 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     anchors={**canonical_meta,'classical_anchor':classical,'instanton_anchor':instanton,'conjugate_check':spec['conjugate_check'],'literature_orientation':spec['literature_orientation']}
     formulas={QQ(-1)/2:({'B':'-(5*x+7*q)/4','I':'(x-q)/2'},{'x':'-B/3+7*I/6','q':'-B/3-5*I/6'}),
       QQ(-1):({'B':'-(2*x+15*q)/7','I':'(x-3*q)/7'},{'x':'-B+5*I','q':'-B/3-2*I/3'}),
+      QQ(-2):({'B':'3*q-x/2','I':'x/2'},{'x':'2*I','q':'B/3+I/3'}),
       QQ(-3)/2:({'B':'-(x+10*q)/4','I':'(x-2*q)/6'},{'x':'-2*B/3+5*I','q':'-B/3-I/2'}),
       QQ(-5)/2:({'B':'(x+23*q)/8','I':'(q-x)/4'},{'x':'B/3-23*I/6','q':'B/3+I/6'}),
       QQ(0):({'B':'3*(x+y)/2','I':'(x-y)/2'},{'x':'B/3+I','y':'B/3-I'})}
@@ -659,8 +665,8 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
 \section{Degree-by-degree raw branching}
 '''
     raw_convention=(r'The ordered factors are $SU(6),SU(2)_1,SU(2)_2$. The two $A_1$ factors are distinct: $SU(2)_1\to U(1)_x$ and $SU(2)_2\to U(1)_y$. Baryon and instanton number are different linear combinations of $x,y$; no external charge exists.' if k==0 else
-                    r'$SO(10)\to SU(5)\times U(1)_x$ uses the stored D5 convention; the external $q$ is kept independent.'
-                    if legacy_raw and parent_type == 'D5' else
+                    rf'${parent_name}\to SU({child_rank+1})\times U(1)_x$ uses the stored {parent_type} convention; the external $q$ is kept independent.'
+                    if legacy_raw and parent_type in ('D5','D6') else
                     (r'$SU(6)\to SU(5)\times U(1)_x$ uses $6\to5_{+1}+1_{-5}$; the external $q$ is kept independent.' if child_rank==4 else
                      rf'$SU({child_rank+2})\to SU({child_rank+1})\times U(1)_x$ uses ${child_rank+2}\to {child_rank+1}_{{+1}}+1_{{-{child_rank+1}}}$; the external $q$ is kept independent.')
                     if legacy_raw else
@@ -692,6 +698,12 @@ From $q=x+4I$ one obtains $B=3x+23I/2$, so the exact inverse is $x=B/3-23I/6$ an
 \section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $6a=-3/2$, $2a+b=-3$, $6c=1$, $2c+d=0$, hence $a=-1/4$, $b=-5/2$, $c=1/6$, and $d=-1/3$:
 \[\binom BI=\begin{pmatrix}-\frac14&-\frac52\\\frac16&-\frac13\end{pmatrix}\binom xq,\qquad B=-\frac{x+10q}{4},\quad I=\frac{x-2q}{6}.\]
 The exact inverse is $q=-B/3-I/2$ and $x=-2B/3+5I$.
+'''
+    elif k==QQ(-2):
+      tex+=r'''\section{Negative-CS instanton and classical anchors} The degree-two $SO(12)$ adjoint $[0,1,0,0,0,0]$ contains the additional $SU(6)$ representation $[0,1,0,0,0]$ at $(x,q)=(2,0)$. It lies outside the classical $SU(6)$ current algebra and is the mixed baryon--instanton conserved-current component $(B,I)=(-1,1)$ required by $B(E_-)=-3-k=-3-(-2)=-1$; it is not baryon-neutral. Its conjugate $[0,0,0,1,0]$ at $(-2,0)$ maps to $(1,-1)$. The degree-three D6 terminal-spinor parent $[0,0,0,0,0,1]$ contains the self-conjugate $SU(6)$ 20, $[0,0,1,0,0]$, at $(0,1)$. The finite $\beta[0,0,1,0,0]$ grading fixes it as the classical baryon $(3,0)$; its Dynkin label alone does not fix the sign. The conjugate classical antibaryon is $(-3,0)$. The other terminal spinor is $[0,0,0,0,1,0]$; the two terminal nodes are not exchanged. Signed $k$ and the Hanany-negative orientation determine which instanton component has $I=+1$.
+\section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $2a=-1$, $b=3$, $2c=1$, and $d=0$, hence $a=-1/2$, $b=3$, $c=1/2$, and $d=0$:
+\[\binom BI=\begin{pmatrix}-\frac12&3\\\frac12&0\end{pmatrix}\binom xq,\qquad B=3q-\frac{x}{2},\quad I=\frac{x}{2}.\]
+From $I=x/2$ one obtains $x=2I$ and $B=3q-I$, so the exact inverse is $x=2I$ and $q=B/3+I/3$.
 '''
     else:
       tex+=r'''\section{Negative-CS instanton and classical anchors} The configured negative-CS $E_-$ current is the singlet child $(x,q)=(2,0)\mapsto(B,I)=(-5/2,1)$, since $-3-(-1/2)=-5/2$; it is not baryon-neutral. Its conjugate at $(-2,0)$ maps to $(5/2,-1)$. The degree-three child $[0,1,0,0]$ at $(1,1)$ matches finite $\beta^{-1}[0,1,0,0]$ and maps to $(-3,0)$.

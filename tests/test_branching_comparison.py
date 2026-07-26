@@ -258,3 +258,25 @@ def test_canonical_k1_six_flavour_report_uses_microscopic_baryon_map():
     assert physical['parents'][0]['children'][0]['child_factors'][0]['cartan_type']=='A5'
     tex=(raw.parent/'branching_comparison.tex').read_text()
     assert 'SU(3)_{-1}+6F' in tex and 'B(E_-)=-3-k=-3-(-1)=-2' in tex
+
+def test_canonical_k2_d6_report_preserves_terminal_spinor_and_exact_map():
+    """Historical raw field names must not misidentify rank-six D labels as D5."""
+    import json
+    from pathlib import Path
+    from hwg_pipeline.branching_comparison import generate
+    root=Path(__file__).resolve().parents[1]
+    sp=root/'theories/branching/su3_nf6_k2_to_finite.yaml'
+    raw=root/'generated/su3_nf6_k2_infinite/order_10/branching_comparison/raw_branching.json'
+    before=hashlib.sha256(raw.read_bytes()).hexdigest()
+    result=generate(root,'su3_nf6_k2_infinite','su3_nf6_finite',10,sp,True,False)
+    assert hashlib.sha256(raw.read_bytes()).hexdigest()==before
+    assert result['number_raw_child_terms']==result['number_translated_child_terms']
+    charge=json.loads((raw.parent/'charge_map.json').read_text())
+    assert charge['solution_matrix']==[['-1/2','3'],['1/2','0']]
+    assert charge['inverse']=={'x':'2*I','q':'B/3+I/3'}
+    physical=json.loads((raw.parent/'physical_branching.json').read_text())
+    assert physical['parents'][0]['parent_factors'][0]['cartan_type']=='D6'
+    assert physical['parents'][0]['children'][0]['child_factors'][0]['cartan_type']=='A5'
+    tex=(raw.parent/'branching_comparison.tex').read_text()
+    assert 'SU(3)_{-2}+6F' in tex and 'B(E_-)=-3-k=-3-(-2)=-1' in tex
+    assert '[0,0,0,0,0,1]' in tex and '[0,0,0,0,1,0]' in tex

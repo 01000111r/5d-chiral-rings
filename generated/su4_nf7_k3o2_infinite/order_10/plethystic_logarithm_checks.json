@@ -1,0 +1,28 @@
+{
+  "direct_scalar_plethystic_logarithm": {
+    "10": 75983,
+    "2": 64,
+    "4": 48,
+    "6": -1393,
+    "8": 5972
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su4_nf7_k3o2_infinite",
+  "validation_results": {
+    "all_final_coefficients_integral": true,
+    "all_passed": true,
+    "degree_10_q_inversion_symmetry": true,
+    "degree_10_q_refined_dimension_benchmark": true,
+    "degree_10_unrefined_is_75983": true,
+    "degree_2_independent_value": true,
+    "degree_3_is_empty": true,
+    "degree_4_independent_value": true,
+    "degrees_truncated": true,
+    "direct_scalar_matches_refined_unrefinement": true,
+    "negative_coefficients_retained": true,
+    "no_odd_degree_sectors_through_9": true,
+    "order_8_full_refined_regression": true,
+    "unrefined_degree_2_is_64": true,
+    "unrefined_degree_4_is_48": true
+  }
+}

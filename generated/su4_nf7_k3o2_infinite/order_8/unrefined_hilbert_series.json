@@ -1,0 +1,15 @@
+{
+  "coefficients_by_t_degree": {
+    "0": 1,
+    "1": 0,
+    "2": 64,
+    "3": 0,
+    "4": 2128,
+    "5": 0,
+    "6": 47439,
+    "7": 0,
+    "8": 784316
+  },
+  "maximum_t_degree": 8,
+  "theory_id": "su4_nf7_k3o2_infinite"
+}

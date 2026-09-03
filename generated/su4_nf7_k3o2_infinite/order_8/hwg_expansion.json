@@ -1,0 +1,729 @@
+{
+  "coefficients_by_t_degree": {
+    "0": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        "multiplicity": 1
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "multiplicity": 1
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-2"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "2"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            0,
+            2,
+            0,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            2,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            2
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "dynkin_labels": {
+          "enhanced": [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        "multiplicity": 1
+      }
+    ]
+  },
+  "expansion_route": "plethystic_exponential",
+  "maximum_t_degree": 8,
+  "theory_id": "su4_nf7_k3o2_infinite",
+  "validation_results": {
+    "all_multiplicities_are_integers": true,
+    "all_multiplicities_are_nonnegative": true,
+    "all_passed": true,
+    "constant_coefficient_is_one": true,
+    "no_terms_above_requested_degree": true,
+    "pe_equals_rational_product": null,
+    "truncation_stability": {
+      "0": true,
+      "2": true,
+      "4": true,
+      "6": true,
+      "8": true
+    }
+  }
+}

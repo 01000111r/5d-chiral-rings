@@ -1,8 +1,12 @@
 {
   "generated/su4_nf7_finite/order_10/reconstruction_checks.json": "a69c93be4f2345ecdae1e8d78a9e0daeb5f65043bbe194d65a2057a2b8b2e66b",
   "generated/su4_nf7_finite/order_10/refined_plethystic_logarithm.json": "586ba6f067b55f343272f39eb2c82c6f6410c4152f0632a32d6055e03b63e1fd",
-  "generated/su4_nf7_k3o2_infinite/order_10/manifest_branching/branched_refined_plethystic_logarithm.json": "d9c4b0cb688c2569dec273874ba442f071f9138d833c177b075473b7b6cabfe1",
+  "generated/su4_nf7_k1o2_infinite/order_10/manifest_branching/branched_refined_plethystic_logarithm.json": "3c073ed34a3656329e5b859cdf338afc048c5a788209b9b383372791b6a4828f",
+  "generated/su4_nf7_k1o2_infinite/order_10/reconstruction_checks.json": "a9fdb3799a1a174cec4e5fede657022f548119edac3347f430cc7035b77dab9c",
+  "generated/su4_nf7_k1o2_infinite/order_10/refined_plethystic_logarithm.json": "eadf6257a83f9aa00757698c1348b6e4db37a130461115a21131ad9764c16d14",
+  "generated/su4_nf7_k3o2_infinite/order_10/branching_comparison/raw_branching.json": "f4c69ce7c82a29234a3fa134e0d48197701b4502704dfe498574061fb958aa99",
   "generated/su4_nf7_k3o2_infinite/order_10/reconstruction_checks.json": "a40e27b7a4ed167168004998438f9acbcde6c60435ef0033116684dbcfb3f0e6",
   "generated/su4_nf7_k3o2_infinite/order_10/refined_plethystic_logarithm.json": "994fddb17cd27ccfa2d08060057f4ca88ab54fdee313d9f39cd686dfa7f2fb75",
+  "theories/branching/su4_nf7_k1o2_to_finite.yaml": "0d8a9b4045b129f69f89f125b90fbdb403f79d9d0c2f846e15866191d6103bf4",
   "theories/branching/su4_nf7_k3o2_to_finite.yaml": "ca600ae110b508487f9fe524afabbe1152a8685d845420e505ad563bff541025"
 }

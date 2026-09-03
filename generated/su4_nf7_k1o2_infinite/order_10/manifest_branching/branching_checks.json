@@ -1,0 +1,6498 @@
+{
+  "branching_id": "su4_nf7_k1o2_to_manifest",
+  "dimension_checks": [
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 0
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 1470,
+      "parent_dimension": 1470,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1470,
+      "signed_parent_dimension": 1470,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 2450,
+      "parent_dimension": 2450,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2450,
+      "signed_parent_dimension": 2450,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 47040,
+      "parent_dimension": 47040,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 47040,
+      "signed_parent_dimension": 47040,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 140,
+      "signed_parent_dimension": 140,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          5
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 210,
+      "signed_parent_dimension": 210,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 280,
+      "parent_dimension": 280,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          7
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 280,
+      "signed_parent_dimension": 280,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 16464,
+      "parent_dimension": 16464,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 16464,
+      "signed_parent_dimension": 16464,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 15120,
+      "parent_dimension": 15120,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 15120,
+      "signed_parent_dimension": 15120,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 30240,
+      "parent_dimension": 30240,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 30240,
+      "signed_parent_dimension": 30240,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 5292,
+      "parent_dimension": 5292,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5292,
+      "signed_parent_dimension": 5292,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 7938,
+      "parent_dimension": 7938,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          5
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 7938,
+      "signed_parent_dimension": 7938,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 339570,
+      "parent_dimension": 339570,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 339570,
+      "signed_parent_dimension": 339570,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 34496,
+      "parent_dimension": 34496,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 34496,
+      "signed_parent_dimension": 34496,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 68992,
+      "parent_dimension": 68992,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 68992,
+      "signed_parent_dimension": 68992,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 262080,
+      "parent_dimension": 262080,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 262080,
+      "signed_parent_dimension": 262080,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3,
+      "signed_parent_dimension": 3,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 5,
+      "parent_dimension": 5,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5,
+      "signed_parent_dimension": 5,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 7,
+      "parent_dimension": 7,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 7,
+      "signed_parent_dimension": 7,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 9,
+      "parent_dimension": 9,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 9,
+      "signed_parent_dimension": 9,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 11,
+      "parent_dimension": 11,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          10
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 11,
+      "signed_parent_dimension": 11,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 784,
+      "parent_dimension": 784,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 784,
+      "signed_parent_dimension": 784,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2352,
+      "parent_dimension": 2352,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2352,
+      "signed_parent_dimension": 2352,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3920,
+      "parent_dimension": 3920,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3920,
+      "signed_parent_dimension": 3920,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 392,
+      "signed_parent_dimension": 392,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1176,
+      "signed_parent_dimension": 1176,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1960,
+      "parent_dimension": 1960,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1960,
+      "signed_parent_dimension": 1960,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2744,
+      "parent_dimension": 2744,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          6
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2744,
+      "signed_parent_dimension": 2744,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 105840,
+      "parent_dimension": 105840,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 105840,
+      "signed_parent_dimension": 105840,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 27000,
+      "parent_dimension": 27000,
+      "parent_dynkin_labels": [
+        [
+          0,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 27000,
+      "signed_parent_dimension": 27000,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 81000,
+      "parent_dimension": 81000,
+      "parent_dynkin_labels": [
+        [
+          0,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 81000,
+      "signed_parent_dimension": 81000,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 48,
+      "signed_parent_dimension": 48,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 144,
+      "parent_dimension": 144,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 144,
+      "signed_parent_dimension": 144,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 240,
+      "parent_dimension": 240,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 240,
+      "signed_parent_dimension": 240,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 336,
+      "parent_dimension": 336,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          6
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 336,
+      "signed_parent_dimension": 336,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 432,
+      "parent_dimension": 432,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          8
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 432,
+      "signed_parent_dimension": 432,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 24500,
+      "parent_dimension": 24500,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 24500,
+      "signed_parent_dimension": 24500,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 73500,
+      "parent_dimension": 73500,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 73500,
+      "signed_parent_dimension": 73500,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 10240,
+      "parent_dimension": 10240,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 10240,
+      "signed_parent_dimension": 10240,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 30720,
+      "parent_dimension": 30720,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 30720,
+      "signed_parent_dimension": 30720,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 51200,
+      "parent_dimension": 51200,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 51200,
+      "signed_parent_dimension": 51200,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 490000,
+      "parent_dimension": 490000,
+      "parent_dynkin_labels": [
+        [
+          1,
+          2,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 490000,
+      "signed_parent_dimension": 490000,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 735,
+      "parent_dimension": 735,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 735,
+      "signed_parent_dimension": 735,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2205,
+      "parent_dimension": 2205,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2205,
+      "signed_parent_dimension": 2205,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3675,
+      "signed_parent_dimension": 3675,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 5145,
+      "parent_dimension": 5145,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          6
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5145,
+      "signed_parent_dimension": 5145,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 279936,
+      "parent_dimension": 279936,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 279936,
+      "signed_parent_dimension": 279936,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 107163,
+      "parent_dimension": 107163,
+      "parent_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 107163,
+      "signed_parent_dimension": 107163,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 321489,
+      "parent_dimension": 321489,
+      "parent_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 321489,
+      "signed_parent_dimension": 321489,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 6272,
+      "parent_dimension": 6272,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 6272,
+      "signed_parent_dimension": 6272,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 18816,
+      "parent_dimension": 18816,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 18816,
+      "signed_parent_dimension": 18816,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 31360,
+      "parent_dimension": 31360,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 31360,
+      "signed_parent_dimension": 31360,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 702464,
+      "parent_dimension": 702464,
+      "parent_dynkin_labels": [
+        [
+          3,
+          1,
+          0,
+          0,
+          1,
+          3
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 702464,
+      "signed_parent_dimension": 702464,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 37044,
+      "parent_dimension": 37044,
+      "parent_dynkin_labels": [
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 37044,
+      "signed_parent_dimension": 37044,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 111132,
+      "parent_dimension": 111132,
+      "parent_dynkin_labels": [
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 111132,
+      "signed_parent_dimension": 111132,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 169344,
+      "parent_dimension": 169344,
+      "parent_dynkin_labels": [
+        [
+          5,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 169344,
+      "signed_parent_dimension": 169344,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 140,
+      "signed_parent_dimension": 140,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          5
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 210,
+      "signed_parent_dimension": 210,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 280,
+      "parent_dimension": 280,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          7
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 280,
+      "signed_parent_dimension": 280,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 16464,
+      "parent_dimension": 16464,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 16464,
+      "signed_parent_dimension": 16464,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 15120,
+      "parent_dimension": 15120,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 15120,
+      "signed_parent_dimension": 15120,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 30240,
+      "parent_dimension": 30240,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 30240,
+      "signed_parent_dimension": 30240,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 5292,
+      "parent_dimension": 5292,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5292,
+      "signed_parent_dimension": 5292,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 7938,
+      "parent_dimension": 7938,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          5
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 7938,
+      "signed_parent_dimension": 7938,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 339570,
+      "parent_dimension": 339570,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 339570,
+      "signed_parent_dimension": 339570,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 34496,
+      "parent_dimension": 34496,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 34496,
+      "signed_parent_dimension": 34496,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 68992,
+      "parent_dimension": 68992,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 68992,
+      "signed_parent_dimension": 68992,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 262080,
+      "parent_dimension": 262080,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          1,
+          0,
+          0,
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 262080,
+      "signed_parent_dimension": 262080,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 1470,
+      "parent_dimension": 1470,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1470,
+      "signed_parent_dimension": 1470,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 2450,
+      "parent_dimension": 2450,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2450,
+      "signed_parent_dimension": 2450,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 47040,
+      "parent_dimension": 47040,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 47040,
+      "signed_parent_dimension": 47040,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3,
+      "signed_parent_dimension": 3,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 48,
+      "signed_parent_dimension": 48,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3,
+      "signed_parent_dimension": 3,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 5,
+      "parent_dimension": 5,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5,
+      "signed_parent_dimension": 5,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 392,
+      "signed_parent_dimension": 392,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 48,
+      "signed_parent_dimension": 48,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 144,
+      "parent_dimension": 144,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 144,
+      "signed_parent_dimension": 144,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 735,
+      "parent_dimension": 735,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 735,
+      "signed_parent_dimension": 735,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 140,
+      "signed_parent_dimension": 140,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3,
+      "signed_parent_dimension": 3,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 5,
+      "parent_dimension": 5,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5,
+      "signed_parent_dimension": 5,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 7,
+      "parent_dimension": 7,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 7,
+      "signed_parent_dimension": 7,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 784,
+      "parent_dimension": 784,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 784,
+      "signed_parent_dimension": 784,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 392,
+      "signed_parent_dimension": 392,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1176,
+      "signed_parent_dimension": 1176,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 48,
+      "signed_parent_dimension": 48,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 144,
+      "parent_dimension": 144,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 144,
+      "signed_parent_dimension": 144,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 240,
+      "parent_dimension": 240,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 240,
+      "signed_parent_dimension": 240,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 10240,
+      "parent_dimension": 10240,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 10240,
+      "signed_parent_dimension": 10240,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 735,
+      "parent_dimension": 735,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 735,
+      "signed_parent_dimension": 735,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2205,
+      "parent_dimension": 2205,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2205,
+      "signed_parent_dimension": 2205,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 6272,
+      "parent_dimension": 6272,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 6272,
+      "signed_parent_dimension": 6272,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 140,
+      "signed_parent_dimension": 140,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 1470,
+      "parent_dimension": 1470,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1470,
+      "signed_parent_dimension": 1470,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 140,
+      "signed_parent_dimension": 140,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          5
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 210,
+      "signed_parent_dimension": 210,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 15120,
+      "parent_dimension": 15120,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 15120,
+      "signed_parent_dimension": 15120,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 5292,
+      "parent_dimension": 5292,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5292,
+      "signed_parent_dimension": 5292,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 34496,
+      "parent_dimension": 34496,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 34496,
+      "signed_parent_dimension": 34496,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3,
+      "signed_parent_dimension": 3,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 5,
+      "parent_dimension": 5,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5,
+      "signed_parent_dimension": 5,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 7,
+      "parent_dimension": 7,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          6
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 7,
+      "signed_parent_dimension": 7,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 9,
+      "parent_dimension": 9,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 9,
+      "signed_parent_dimension": 9,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 784,
+      "parent_dimension": 784,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 784,
+      "signed_parent_dimension": 784,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2352,
+      "parent_dimension": 2352,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2352,
+      "signed_parent_dimension": 2352,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 392,
+      "signed_parent_dimension": 392,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1176,
+      "signed_parent_dimension": 1176,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1960,
+      "parent_dimension": 1960,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1960,
+      "signed_parent_dimension": 1960,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 27000,
+      "parent_dimension": 27000,
+      "parent_dynkin_labels": [
+        [
+          0,
+          2,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 27000,
+      "signed_parent_dimension": 27000,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 48,
+      "signed_parent_dimension": 48,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 144,
+      "parent_dimension": 144,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 144,
+      "signed_parent_dimension": 144,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 240,
+      "parent_dimension": 240,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 240,
+      "signed_parent_dimension": 240,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 336,
+      "parent_dimension": 336,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          6
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 336,
+      "signed_parent_dimension": 336,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 24500,
+      "parent_dimension": 24500,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 24500,
+      "signed_parent_dimension": 24500,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 10240,
+      "parent_dimension": 10240,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 10240,
+      "signed_parent_dimension": 10240,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 30720,
+      "parent_dimension": 30720,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 30720,
+      "signed_parent_dimension": 30720,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 735,
+      "parent_dimension": 735,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 735,
+      "signed_parent_dimension": 735,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2205,
+      "parent_dimension": 2205,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2205,
+      "signed_parent_dimension": 2205,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3675,
+      "parent_dimension": 3675,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3675,
+      "signed_parent_dimension": 3675,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 107163,
+      "parent_dimension": 107163,
+      "parent_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 107163,
+      "signed_parent_dimension": 107163,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 6272,
+      "parent_dimension": 6272,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 6272,
+      "signed_parent_dimension": 6272,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 18816,
+      "parent_dimension": 18816,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 18816,
+      "signed_parent_dimension": 18816,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 37044,
+      "parent_dimension": 37044,
+      "parent_dynkin_labels": [
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 37044,
+      "signed_parent_dimension": 37044,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 140,
+      "signed_parent_dimension": 140,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 210,
+      "parent_dimension": 210,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          5
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 210,
+      "signed_parent_dimension": 210,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 15120,
+      "parent_dimension": 15120,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 15120,
+      "signed_parent_dimension": 15120,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 5292,
+      "parent_dimension": 5292,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5292,
+      "signed_parent_dimension": 5292,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 34496,
+      "parent_dimension": 34496,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 34496,
+      "signed_parent_dimension": 34496,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 1470,
+      "parent_dimension": 1470,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1470,
+      "signed_parent_dimension": 1470,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 2352,
+      "parent_dimension": 2352,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2352,
+      "signed_parent_dimension": 2352,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 490,
+      "parent_dimension": 490,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 490,
+      "signed_parent_dimension": 490,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 840,
+      "parent_dimension": 840,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 840,
+      "signed_parent_dimension": 840,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 2520,
+      "parent_dimension": 2520,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2520,
+      "signed_parent_dimension": 2520,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 588,
+      "parent_dimension": 588,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2352,
+      "signed_parent_dimension": 2352,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 1764,
+      "parent_dimension": 1764,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5292,
+      "signed_parent_dimension": 5292,
+      "source_coefficient": 3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 560,
+      "signed_parent_dimension": 560,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1680,
+      "signed_parent_dimension": 1680,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 7,
+      "parent_dimension": 7,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 21,
+      "signed_parent_dimension": 21,
+      "source_coefficient": 3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 63,
+      "signed_parent_dimension": 63,
+      "source_coefficient": 3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 4410,
+      "parent_dimension": 4410,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 4410,
+      "signed_parent_dimension": 4410,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 2016,
+      "parent_dimension": 2016,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2016,
+      "signed_parent_dimension": 2016,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 6048,
+      "parent_dimension": 6048,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 6048,
+      "signed_parent_dimension": 6048,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 189,
+      "signed_parent_dimension": 189,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 567,
+      "parent_dimension": 567,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 567,
+      "signed_parent_dimension": 567,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 168,
+      "parent_dimension": 168,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -504,
+      "signed_parent_dimension": -504,
+      "source_coefficient": -3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 224,
+      "parent_dimension": 224,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -1568,
+      "signed_parent_dimension": -1568,
+      "source_coefficient": -7,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -630,
+      "signed_parent_dimension": -630,
+      "source_coefficient": -9,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -392,
+      "signed_parent_dimension": -392,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 4900,
+      "parent_dimension": 4900,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -4900,
+      "signed_parent_dimension": -4900,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -10584,
+      "signed_parent_dimension": -10584,
+      "source_coefficient": -4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2940,
+      "signed_parent_dimension": -2940,
+      "source_coefficient": -7,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 9408,
+      "parent_dimension": 9408,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -9408,
+      "signed_parent_dimension": -9408,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 756,
+      "parent_dimension": 756,
+      "parent_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2268,
+      "signed_parent_dimension": -2268,
+      "source_coefficient": -3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -420,
+      "signed_parent_dimension": -420,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 4,
+      "signed_parent_dimension": 4,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 12,
+      "signed_parent_dimension": 12,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 7938,
+      "parent_dimension": 7938,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 7938,
+      "signed_parent_dimension": 7938,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2940,
+      "parent_dimension": 2940,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5880,
+      "signed_parent_dimension": 5880,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 8820,
+      "parent_dimension": 8820,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 17640,
+      "signed_parent_dimension": 17640,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 784,
+      "parent_dimension": 784,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5488,
+      "signed_parent_dimension": 5488,
+      "source_coefficient": 7,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2352,
+      "parent_dimension": 2352,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 14112,
+      "signed_parent_dimension": 14112,
+      "source_coefficient": 6,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 540,
+      "parent_dimension": 540,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1080,
+      "signed_parent_dimension": 1080,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1620,
+      "parent_dimension": 1620,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3240,
+      "signed_parent_dimension": 3240,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3136,
+      "signed_parent_dimension": 3136,
+      "source_coefficient": 8,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 9408,
+      "signed_parent_dimension": 9408,
+      "source_coefficient": 8,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 432,
+      "signed_parent_dimension": 432,
+      "source_coefficient": 9,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 144,
+      "parent_dimension": 144,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1152,
+      "signed_parent_dimension": 1152,
+      "source_coefficient": 8,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 7938,
+      "parent_dimension": 7938,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 7938,
+      "signed_parent_dimension": 7938,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2940,
+      "parent_dimension": 2940,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5880,
+      "signed_parent_dimension": 5880,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 8820,
+      "parent_dimension": 8820,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 17640,
+      "signed_parent_dimension": 17640,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 540,
+      "parent_dimension": 540,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1080,
+      "signed_parent_dimension": 1080,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1620,
+      "parent_dimension": 1620,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3240,
+      "signed_parent_dimension": 3240,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -420,
+      "signed_parent_dimension": -420,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 756,
+      "parent_dimension": 756,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2268,
+      "signed_parent_dimension": -2268,
+      "source_coefficient": -3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -392,
+      "signed_parent_dimension": -392,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2940,
+      "signed_parent_dimension": -2940,
+      "source_coefficient": -7,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -630,
+      "signed_parent_dimension": -630,
+      "source_coefficient": -9,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 9408,
+      "parent_dimension": 9408,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -9408,
+      "signed_parent_dimension": -9408,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -10584,
+      "signed_parent_dimension": -10584,
+      "source_coefficient": -4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 224,
+      "parent_dimension": 224,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -1568,
+      "signed_parent_dimension": -1568,
+      "source_coefficient": -7,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 4900,
+      "parent_dimension": 4900,
+      "parent_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -4900,
+      "signed_parent_dimension": -4900,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 168,
+      "parent_dimension": 168,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -504,
+      "signed_parent_dimension": -504,
+      "source_coefficient": -3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 7,
+      "parent_dimension": 7,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 21,
+      "signed_parent_dimension": 21,
+      "source_coefficient": 3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 21,
+      "parent_dimension": 21,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 63,
+      "signed_parent_dimension": 63,
+      "source_coefficient": 3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 4410,
+      "parent_dimension": 4410,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 4410,
+      "signed_parent_dimension": 4410,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 490,
+      "parent_dimension": 490,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 490,
+      "signed_parent_dimension": 490,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 2016,
+      "parent_dimension": 2016,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2016,
+      "signed_parent_dimension": 2016,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 6048,
+      "parent_dimension": 6048,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 6048,
+      "signed_parent_dimension": 6048,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 588,
+      "parent_dimension": 588,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2352,
+      "signed_parent_dimension": 2352,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 1764,
+      "parent_dimension": 1764,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5292,
+      "signed_parent_dimension": 5292,
+      "source_coefficient": 3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 189,
+      "parent_dimension": 189,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 189,
+      "signed_parent_dimension": 189,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 567,
+      "parent_dimension": 567,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 567,
+      "signed_parent_dimension": 567,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 140,
+      "parent_dimension": 140,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 560,
+      "signed_parent_dimension": 560,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1680,
+      "signed_parent_dimension": 1680,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 2352,
+      "parent_dimension": 2352,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2352,
+      "signed_parent_dimension": 2352,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 840,
+      "parent_dimension": 840,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 840,
+      "signed_parent_dimension": 840,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 2520,
+      "parent_dimension": 2520,
+      "parent_dynkin_labels": [
+        [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2520,
+      "signed_parent_dimension": 2520,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 3,
+      "signed_parent_dimension": 3,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 48,
+      "signed_parent_dimension": 48,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2,
+      "signed_parent_dimension": -2,
+      "source_coefficient": -2,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -48,
+      "signed_parent_dimension": -48,
+      "source_coefficient": -1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 70,
+      "signed_parent_dimension": 70,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 224,
+      "parent_dimension": 224,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -224,
+      "signed_parent_dimension": -224,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -140,
+      "signed_parent_dimension": -140,
+      "source_coefficient": -2,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -420,
+      "signed_parent_dimension": -420,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 48,
+      "signed_parent_dimension": 48,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -420,
+      "signed_parent_dimension": -420,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -140,
+      "signed_parent_dimension": -140,
+      "source_coefficient": -2,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 224,
+      "parent_dimension": 224,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -224,
+      "signed_parent_dimension": -224,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 588,
+      "parent_dimension": 588,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -588,
+      "signed_parent_dimension": -588,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -420,
+      "signed_parent_dimension": -420,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 7,
+      "parent_dimension": 7,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -7,
+      "signed_parent_dimension": -7,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 168,
+      "parent_dimension": 168,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 168,
+      "signed_parent_dimension": 168,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 224,
+      "parent_dimension": 224,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 672,
+      "signed_parent_dimension": 672,
+      "source_coefficient": 3,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 280,
+      "signed_parent_dimension": 280,
+      "source_coefficient": 4,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1260,
+      "signed_parent_dimension": 1260,
+      "source_coefficient": 3,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 756,
+      "parent_dimension": 756,
+      "parent_dynkin_labels": [
+        [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 756,
+      "signed_parent_dimension": 756,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2,
+      "signed_parent_dimension": -2,
+      "source_coefficient": -2,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3,
+      "parent_dimension": 3,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -3,
+      "signed_parent_dimension": -3,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 784,
+      "parent_dimension": 784,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -784,
+      "signed_parent_dimension": -784,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 2352,
+      "parent_dimension": 2352,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2352,
+      "signed_parent_dimension": -2352,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 392,
+      "parent_dimension": 392,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -392,
+      "signed_parent_dimension": -392,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1176,
+      "parent_dimension": 1176,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -1176,
+      "signed_parent_dimension": -1176,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 48,
+      "parent_dimension": 48,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -96,
+      "signed_parent_dimension": -96,
+      "source_coefficient": -2,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 144,
+      "parent_dimension": 144,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -144,
+      "signed_parent_dimension": -144,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 756,
+      "parent_dimension": 756,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 756,
+      "signed_parent_dimension": 756,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1260,
+      "signed_parent_dimension": 1260,
+      "source_coefficient": 3,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 70,
+      "parent_dimension": 70,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 280,
+      "signed_parent_dimension": 280,
+      "source_coefficient": 4,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 2646,
+      "parent_dimension": 2646,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2646,
+      "signed_parent_dimension": 2646,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 224,
+      "parent_dimension": 224,
+      "parent_dynkin_labels": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 672,
+      "signed_parent_dimension": 672,
+      "source_coefficient": 3,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 168,
+      "parent_dimension": 168,
+      "parent_dynkin_labels": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": 168,
+      "signed_parent_dimension": 168,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 7,
+      "parent_dimension": 7,
+      "parent_dynkin_labels": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -7,
+      "signed_parent_dimension": -7,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 588,
+      "parent_dimension": 588,
+      "parent_dynkin_labels": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -588,
+      "signed_parent_dimension": -588,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 420,
+      "parent_dimension": 420,
+      "parent_dynkin_labels": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2
+        ]
+      ],
+      "passed": true,
+      "signed_branched_dimension": -420,
+      "signed_parent_dimension": -420,
+      "source_coefficient": -1,
+      "t_degree": 8
+    }
+  ],
+  "physical_charge_map_assumed": false,
+  "raw_charge_basis": "(x,q)",
+  "theory_id": "su4_nf7_k1o2_infinite",
+  "validation_results": {
+    "all_parent_dimensions_preserved": true,
+    "all_passed": true,
+    "character_unrefinement_preserved": true,
+    "ordinary_multiplicities_nonnegative_integers": true,
+    "physical_charge_map_assumed": false,
+    "plethystic_log_conjugation_consistent": true,
+    "plethystic_log_unrefinement_preserved": true,
+    "q_charges_preserved": true,
+    "raw_charge_basis_only": true,
+    "reconstructed_character_branching_equal": true,
+    "signed_virtual_multiplicities_retained": true,
+    "t_degrees_preserved": true,
+    "x_charges_are_exact_integers": true
+  }
+}

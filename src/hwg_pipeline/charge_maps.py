@@ -56,6 +56,9 @@ class ChargeMapSpec:
     notes: tuple[str, ...] = ()
     expected_unique: bool | None = None
     charge_lattice: Mapping | None = None
+    expected_matrix: tuple[tuple, ...] | None = None
+    expected_determinant: object | None = None
+    physical_pl_benchmarks: Mapping | None = None
 
 
 @dataclass(frozen=True)
@@ -186,6 +189,11 @@ def load_charge_map_spec(path):
         return ChargeAnchor(entry["id"], ChargeVector(tuple(data["raw_charges"]), tuple(entry["raw_charges"][x] for x in data["raw_charges"])),
             ChargeVector(tuple(data["physical_charges"]), tuple(entry["physical_charges"][x] for x in data["physical_charges"])),
             entry.get("t_degree"), tuple(entry.get("child_dynkin_labels", entry.get("su5_dynkin_labels", ()))), entry.get("justification", ""))
+    expected_matrix = data.get("expected_charge_map")
+    if expected_matrix is not None:
+        expected_matrix = tuple(tuple(_exact(v) for v in row) for row in expected_matrix)
     return ChargeMapSpec(data["id"], tuple(data["raw_charges"]), tuple(data["physical_charges"]),
         tuple(anchor(x) for x in data["defining_anchors"]), tuple(anchor(x) for x in data["validation_anchors"]),
-        tuple(data.get("notes", ())), data.get("expected_unique"), data.get("charge_lattice"))
+        tuple(data.get("notes", ())), data.get("expected_unique"), data.get("charge_lattice"),
+        expected_matrix, _exact(data["expected_determinant"]) if "expected_determinant" in data else None,
+        data.get("physical_pl_benchmarks"))

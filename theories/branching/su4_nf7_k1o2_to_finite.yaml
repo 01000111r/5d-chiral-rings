@@ -1,0 +1,48 @@
+schema_version: 1
+theory_id: su4_nf7_k1o2_infinite
+finite_reference_id: su4_nf7_finite
+branching_id: su4_nf7_k1o2_to_manifest
+gauge_rank: 4
+signed_k: "-1/2"
+cs_orientation: canonical_negative
+raw_charge_names: &raw [x, q]
+raw_charge_order: *raw
+normalization:
+  B_definition: microscopic baryon number
+  B_of_Q: 1
+  classical_SU4_baryon_B: 4
+classical_anchor:
+  role: classical antibaryon
+  degree: 4
+  parent_representations: [[0, 0, 1, 0, 0, 0], [1]]
+  child_representation: [0, 0, 1, 0, 0, 0]
+  raw_charges: {x: 1, q: 1}
+  target: {B: -4, I: 0}
+  finite_beta_charge: -1
+  evidence: {source: finite beta-graded refined PL and exact raw branching, level: finite_pl_and_exact_branching}
+instanton_anchor:
+  role: negative-CS E_- conserved current
+  degree: 2
+  parent_representations: [[0, 0, 0, 0, 0, 0], [2]]
+  child_representation: [0, 0, 0, 0, 0, 0]
+  raw_charges: {x: 2, q: 0}
+  target: {B: "-7/2", I: 1}
+  evidence: {source: canonical negative-CS convention and exact A1 branching, level: project_derived}
+expected_charge_map:
+  - ["-7/4", "-9/4"]
+  - ["1/2", "-1/2"]
+charge_lattice: {B_step: "1/2", I_step: 1}
+literature_orientation:
+  convention: canonical negative-CS project convention
+  project_note: B(E_-)= -N-k with I=+1
+conjugate_check:
+  role: conjugate anti-instanton
+  degree: 2
+  parent_representations: [[0, 0, 0, 0, 0, 0], [2]]
+  child_representation: [0, 0, 0, 0, 0, 0]
+  raw_charges: {x: -2, q: 0}
+  target: {B: "7/2", I: -1}
+validation_anchors:
+  - {role: classical baryon, degree: 4, child_representation: [0, 0, 0, 1, 0, 0], raw_charges: {x: -1, q: -1}, target: {B: 4, I: 0}}
+  - {role: mixed anti-instanton, degree: 4, child_representation: [0, 0, 1, 0, 0, 0], raw_charges: {x: -1, q: 1}, target: {B: "-1/2", I: -1}}
+  - {role: mixed instanton, degree: 4, child_representation: [0, 0, 0, 1, 0, 0], raw_charges: {x: 1, q: -1}, target: {B: "1/2", I: 1}}

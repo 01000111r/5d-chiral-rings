@@ -179,7 +179,9 @@ def validate_case(root, spec_path, order=10):
               and {n:int(e["raw_charges"][n]) for n in spec["raw_charge_order"]}==anchor["raw_charges"]]
         if len(hits)!=1: raise ConventionError(f"{anchor['role']}: expected one exact raw child, found {len(hits)}")
         native=json.loads(paths[1].read_text())["coefficients_by_t_degree"].get(str(anchor["degree"]),[])
-        if not any(e["irreducible_representations"][0]["dynkin_labels"]==anchor["parent_representations"] for e in native):
+        if not any([factor["dynkin_labels"] for factor in e["irreducible_representations"]]==anchor["parent_representations"]
+                   if anchor["parent_representations"] and isinstance(anchor["parent_representations"][0], list)
+                   else e["irreducible_representations"][0]["dynkin_labels"]==anchor["parent_representations"] for e in native):
             raise ConventionError(f"{anchor['role']}: parent representation absent")
         return hits[0]
     if compact_raw: compact_find(classical); compact_find(instanton)

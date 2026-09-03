@@ -1,0 +1,18 @@
+{
+  "direct_scalar_plethystic_logarithm": {
+    "10": 102164,
+    "2": 52,
+    "4": 90,
+    "6": -1520,
+    "8": 4585
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su4_nf7_k1o2_infinite",
+  "validation_results": {
+    "all_final_coefficients_integral": true,
+    "all_passed": true,
+    "degrees_truncated": true,
+    "direct_scalar_matches_refined_unrefinement": true,
+    "negative_coefficients_retained": true
+  }
+}

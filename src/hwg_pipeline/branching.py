@@ -19,6 +19,7 @@ from .sage_backend import irrep, irrep_dimension
 
 
 EMBEDDING = "A_n_to_A_n_minus_1_u1"
+PRODUCT_A1_EMBEDDING = "product_preserve_A_branch_A1_to_u1"
 D5_EMBEDDING = "D5_to_A4_u1"
 D6_EMBEDDING = "D6_to_A5_u1"
 
@@ -33,6 +34,8 @@ class BranchingSpec:
     child_display_name: str
     raw_branching_u1_name: str
     preserved_abelian_factors: tuple[str, ...]
+    preserved_simple_factor_id: str | None = None
+    branched_simple_factor_id: str | None = None
 
     @property
     def parent_rank(self): return ZZ(self.parent_simple_factor[1:])
@@ -77,7 +80,16 @@ def load_branching_spec(path):
     data = yaml.safe_load(Path(path).read_text(encoding="utf-8"))
     spec = BranchingSpec(data["id"], data["source_theory_id"], data["parent_simple_factor"],
         data["child_simple_factor"], data["embedding_type"], data["child_display_name"],
-        data["raw_branching_u1_name"], tuple(data["preserved_abelian_factors"]))
+        data["raw_branching_u1_name"], tuple(data["preserved_abelian_factors"]),
+        data.get("preserved_simple_factor_id"), data.get("branched_simple_factor_id"))
+    if spec.embedding_type == PRODUCT_A1_EMBEDDING:
+        if spec.parent_simple_factor != "A1" or not spec.child_simple_factor.startswith("A"):
+            raise ValueError("product A1 branching requires an A1 branched factor and preserved type-A child")
+        if not spec.preserved_simple_factor_id or not spec.branched_simple_factor_id:
+            raise ValueError("product branching must identify preserved and branched factor ids")
+        if data.get("normalization") != {"su2_irrep_weights": "m,m-2,...,-m"}:
+            raise ValueError("A1 -> U(1) normalization must be the exact SU(2) weight convention")
+        return spec
     _validate_embedding(spec.parent_simple_factor, spec.child_simple_factor, spec.embedding_type)
     expected = ({"child_dynkin_labels": [1] + [0]*(int(spec.child_rank)-1), "x_charge": 1},
                 {"child_dynkin_labels": [0]*int(spec.child_rank), "x_charge": -int(spec.parent_rank)})
@@ -87,6 +99,14 @@ def load_branching_spec(path):
     if tuple(data["normalization"]["branches"]) != expected:
         raise ValueError("branching normalization must be fundamental -> fundamental_(+1) + singlet_(-n)")
     return spec
+
+
+def branch_a1_to_u1(labels):
+    """Return the exact weights of the SU(2) irrep with Dynkin label ``m``."""
+    if len(labels) != 1 or ZZ(labels[0]) < 0:
+        raise ValueError("A1 branching requires one nonnegative Dynkin label")
+    m = ZZ(labels[0])
+    return tuple(ZZ(x) for x in range(int(m), -int(m)-1, -2))
 
 
 def _cartan_name(group):

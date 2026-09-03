@@ -1,0 +1,118 @@
+{
+  "coefficients_by_t_degree": {
+    "10": [
+      {
+        "abelian_charges": {
+          "q": "-2"
+        },
+        "coefficient": 29400
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": -33614
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 110592
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": -33614
+      },
+      {
+        "abelian_charges": {
+          "q": "2"
+        },
+        "coefficient": 29400
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 52
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 70
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": -50
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 70
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": -784
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 48
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": -784
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {
+          "q": "-2"
+        },
+        "coefficient": -1015
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 5782
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": -4949
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 5782
+      },
+      {
+        "abelian_charges": {
+          "q": "2"
+        },
+        "coefficient": -1015
+      }
+    ]
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su4_nf7_k1o2_infinite"
+}

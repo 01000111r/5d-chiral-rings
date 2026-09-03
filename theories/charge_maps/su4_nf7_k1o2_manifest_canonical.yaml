@@ -1,0 +1,61 @@
+id: su4_nf7_k1o2_manifest_canonical
+source_theory_id: su4_nf7_k1o2_infinite
+branching_id: su4_nf7_k1o2_to_manifest
+raw_charges: [x, q]
+physical_charges: [B, I]
+expected_unique: true
+expected_charge_map:
+  - ["-7/4", "-9/4"]
+  - ["1/2", "-1/2"]
+expected_determinant: "2"
+charge_lattice: {B_step: "1/2", I_step: 1}
+defining_anchors:
+  - id: classical_antibaryon
+    t_degree: 4
+    child_dynkin_labels: [0, 0, 1, 0, 0, 0]
+    raw_charges: {x: 1, q: 1}
+    physical_charges: {B: -4, I: 0}
+    justification: Independently frozen finite beta^-1 antibaryon and exact raw UV branching.
+  - id: negative_cs_E_minus
+    t_degree: 2
+    child_dynkin_labels: [0, 0, 0, 0, 0, 0]
+    raw_charges: {x: 2, q: 0}
+    physical_charges: {B: "-7/2", I: 1}
+    justification: Negative-CS E_- convention and the exact A1 [2] parent branching.
+validation_anchors:
+  - id: anti_instanton
+    t_degree: 2
+    child_dynkin_labels: [0, 0, 0, 0, 0, 0]
+    raw_charges: {x: -2, q: 0}
+    physical_charges: {B: "7/2", I: -1}
+  - id: classical_baryon
+    t_degree: 4
+    child_dynkin_labels: [0, 0, 0, 1, 0, 0]
+    raw_charges: {x: -1, q: -1}
+    physical_charges: {B: 4, I: 0}
+  - id: mixed_anti_instanton
+    t_degree: 4
+    child_dynkin_labels: [0, 0, 1, 0, 0, 0]
+    raw_charges: {x: -1, q: 1}
+    physical_charges: {B: "-1/2", I: -1}
+  - id: mixed_instanton
+    t_degree: 4
+    child_dynkin_labels: [0, 0, 0, 1, 0, 0]
+    raw_charges: {x: 1, q: -1}
+    physical_charges: {B: "1/2", I: 1}
+physical_pl_benchmarks:
+  2:
+    - {dynkin_labels: [0, 0, 0, 0, 0, 0], B: 0, I: 0, coefficient: 2}
+    - {dynkin_labels: [1, 0, 0, 0, 0, 1], B: 0, I: 0, coefficient: 1}
+    - {dynkin_labels: [0, 0, 0, 0, 0, 0], B: "-7/2", I: 1, coefficient: 1}
+    - {dynkin_labels: [0, 0, 0, 0, 0, 0], B: "7/2", I: -1, coefficient: 1}
+  4:
+    - {dynkin_labels: [0, 0, 1, 0, 0, 0], B: -4, I: 0, coefficient: 1}
+    - {dynkin_labels: [0, 0, 1, 0, 0, 0], B: "-1/2", I: -1, coefficient: 1}
+    - {dynkin_labels: [0, 0, 0, 1, 0, 0], B: "1/2", I: 1, coefficient: 1}
+    - {dynkin_labels: [0, 0, 0, 1, 0, 0], B: 4, I: 0, coefficient: 1}
+    - {dynkin_labels: [0, 0, 0, 0, 0, 0], B: 0, I: 0, coefficient: -2}
+    - {dynkin_labels: [1, 0, 0, 0, 0, 1], B: 0, I: 0, coefficient: -1}
+notes:
+  - B is microscopic baryon number with B(Q)=1.
+  - The signed-CS orientation is k=-1/2 although the source HWG uses |k|.

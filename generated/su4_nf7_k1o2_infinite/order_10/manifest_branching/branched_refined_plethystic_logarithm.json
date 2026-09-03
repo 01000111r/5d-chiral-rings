@@ -1,0 +1,8141 @@
+{
+  "branching_id": "su4_nf7_k1o2_to_manifest",
+  "charge_vector_order": [
+    "x",
+    "q"
+  ],
+  "child_simple_factor": "A6",
+  "coefficients_by_t_degree": {
+    "10": [
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": 8,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": 6,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                4
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 196,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "child_representation_dimension": 196,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -9,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -9,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -9,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -9,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2352,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "child_representation_dimension": 490,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 2646,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 2646,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "child_representation_dimension": 2646,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                2,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -9,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -9,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -9,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -9,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 840,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 840,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 840,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": 7,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2940,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2940,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2940,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 784,
+        "coefficient": 6,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 6,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 784,
+        "coefficient": 13,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 7,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 6,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 784,
+        "coefficient": 6,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 6,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 4410,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 490,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": 8,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 540,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 540,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 540,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 392,
+        "coefficient": 8,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 8,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 392,
+        "coefficient": 16,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 8,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 8,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 392,
+        "coefficient": 8,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 8,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2016,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2016,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 2016,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": 7,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 196,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 196,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": 6,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": 8,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 8,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": 17,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 9,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 8,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": 8,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 8,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 189,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 189,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "child_representation_dimension": 189,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": 8,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2450,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 2450,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": -4,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": -4,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 4704,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        "child_representation_dimension": 4704,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": -4,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": -4,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -4,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 4410,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 2646,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 2646,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 2646,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -7,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -7,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 2016,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 2016,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 2016,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 2940,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 2940,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 2940,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 2352,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 189,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 189,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 189,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 540,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 540,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 540,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 2,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 840,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 840,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 840,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 4704,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 4704,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 2450,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 2450,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                3,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -3,
+            "parent_factor_dynkin_labels": [
+              [
+                3,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                4,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                4,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 10
+      }
+    ],
+    "2": [
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": 2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 2
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 2
+      }
+    ],
+    "4": [
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": -2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 4
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 4
+      }
+    ],
+    "6": [
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -2,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -2,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": -2,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 6
+      }
+    ],
+    "8": [
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -2,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 1,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                2
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 35,
+        "coefficient": 4,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 4,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 784,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 784,
+        "coefficient": -2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 784,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 392,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 392,
+        "coefficient": -2,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 392,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "child_representation_dimension": 588,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "-2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 7,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "-2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": -3,
+        "raw_charges": {
+          "q": "0",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -2,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "0"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 48,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "0",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "2",
+          "x": "-2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "0",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "2",
+          "x": "0"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "2",
+          "2"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "child_representation_dimension": 140,
+        "coefficient": -1,
+        "raw_charges": {
+          "q": "2",
+          "x": "2"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": -1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                2
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 210,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "child_representation_dimension": 1323,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 112,
+        "coefficient": 3,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 3,
+            "parent_factor_dynkin_labels": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "-1"
+        ],
+        "child_dynkin_labels": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 378,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "-1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                2,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "-1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "-1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                3,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      },
+      {
+        "charge_vector": [
+          "1",
+          "1"
+        ],
+        "child_dynkin_labels": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_representation_dimension": 84,
+        "coefficient": 1,
+        "raw_charges": {
+          "q": "1",
+          "x": "1"
+        },
+        "raw_provenance": [
+          {
+            "branching": "su4_nf7_k1o2_to_manifest",
+            "branching_multiplicity": 1,
+            "embedding_type": "product_preserve_A_branch_A1_to_u1",
+            "parent_coefficient": 1,
+            "parent_factor_dynkin_labels": [
+              [
+                3,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          }
+        ],
+        "t_degree": 8
+      }
+    ]
+  },
+  "embedding_type": "product_preserve_A_branch_A1_to_u1",
+  "maximum_t_degree": 10,
+  "parent_simple_factor": "A1",
+  "physical_charge_map_assumed": false,
+  "raw_charge_basis": "(x,q)",
+  "theory_id": "su4_nf7_k1o2_infinite"
+}

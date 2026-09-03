@@ -1,0 +1,206 @@
+{
+  "charge_map_id": "su4_nf7_k1o2_manifest_canonical",
+  "derived_formulas": [
+    "B = (-7/4) x + (-9/4) q",
+    "I = (1/2) x + (-1/2) q"
+  ],
+  "determinant": {
+    "denominator": 1,
+    "numerator": 2
+  },
+  "inverse_formulas": [
+    "x = (-1/4) B + (9/8) I",
+    "q = (-1/4) B + (-7/8) I"
+  ],
+  "inverse_matrix": [
+    [
+      {
+        "denominator": 4,
+        "numerator": -1
+      },
+      {
+        "denominator": 8,
+        "numerator": 9
+      }
+    ],
+    [
+      {
+        "denominator": 4,
+        "numerator": -1
+      },
+      {
+        "denominator": 8,
+        "numerator": -7
+      }
+    ]
+  ],
+  "matrix": [
+    [
+      {
+        "denominator": 4,
+        "numerator": -7
+      },
+      {
+        "denominator": 4,
+        "numerator": -9
+      }
+    ],
+    [
+      {
+        "denominator": 2,
+        "numerator": 1
+      },
+      {
+        "denominator": 2,
+        "numerator": -1
+      }
+    ]
+  ],
+  "matrix_rank": 2,
+  "physical_charge_order": [
+    "B",
+    "I"
+  ],
+  "raw_charge_order": [
+    "x",
+    "q"
+  ],
+  "validation_anchors": [
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 7
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 7
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "anti_instanton",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 1,
+          "numerator": 4
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "id": "classical_baryon",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": -1
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "mixed_anti_instanton",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 1
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "id": "mixed_instanton",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    }
+  ]
+}

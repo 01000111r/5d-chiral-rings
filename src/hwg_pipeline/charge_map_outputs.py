@@ -1,7 +1,7 @@
 """Deterministic, theory-independent physical charge-map reports."""
 import json
 from pathlib import Path
-from sage.all import QQ, ZZ, vector
+from sage.all import QQ, ZZ, matrix, vector
 from .charge_maps import apply_charge_map, apply_charge_map_to_series, rational_json, solve_charge_map
 
 
@@ -48,6 +48,11 @@ def write_charge_map_outputs(spec,theory_id,branching_id,order,source_dir,output
         validations.append({"id":a.id,"expected":[rational_json(x) for x in a.physical.values],"actual":[rational_json(x) for x in actual.values],"residual":[rational_json(x) for x in residual],"passed":not any(residual)})
     sectors=_entries(transformed["character"])+_entries(transformed["pl"])
     raw_sectors=_entries(raw["character"])+_entries(raw["pl"])
+    raw_pl=_entries(raw["pl"])
+    def anchor_present(anchor):
+        return any(x["t_degree"]==anchor.t_degree and tuple(x["child_dynkin_labels"])==anchor.dynkin_labels
+                   and all(_q(x["raw_charges"][name])==value for name,value in zip(anchor.raw.names,anchor.raw.values))
+                   for x in raw_pl)
     bstep=_q((spec.charge_lattice or {}).get("B_step",1)); istep=_q((spec.charge_lattice or {}).get("I_step",1))
     lattice=all(_q(x["physical_charges"]["B"])/bstep in ZZ and _q(x["physical_charges"]["I"])/istep in ZZ for x in sectors)
     roundtrip=all(tuple(solution.inverse_matrix*vector(QQ,[_q(x["physical_charges"][n]) for n in spec.physical_charge_names]))==tuple(_q(x["raw_charges"][n]) for n in spec.raw_charge_names) for x in sectors)
@@ -55,28 +60,27 @@ def write_charge_map_outputs(spec,theory_id,branching_id,order,source_dir,output
     def pl_key(x): return (x["t_degree"],tuple(x["child_dynkin_labels"]),_q(x["physical_charges"]["B"]),_q(x["physical_charges"]["I"]))
     pl_values={pl_key(x):_q(x.get("coefficient",x.get("signed_multiplicity"))) for x in pl_entries}
     conjugation=all(pl_values.get((d,tuple(reversed(labels)),-B,-I))==m for (d,labels,B,I),m in pl_values.items())
-    expected2={
-      (2,(0,0,0,0,0,0),QQ(0),QQ(0)):QQ(2),(2,(1,0,0,0,0,1),QQ(0),QQ(0)):QQ(1),
-      (2,(1,0,0,0,0,0),QQ(-5)/2,QQ(1)):QQ(1),(2,(0,0,0,0,0,1),QQ(5)/2,QQ(-1)):QQ(1)}
-    expected4={
-      (4,(0,0,1,0,0,0),QQ(-4),QQ(0)):QQ(1),(4,(0,1,0,0,0,0),QQ(-3)/2,QQ(-1)):QQ(1),
-      (4,(0,0,0,0,1,0),QQ(3)/2,QQ(1)):QQ(1),(4,(0,0,0,1,0,0),QQ(4),QQ(0)):QQ(1),
-      (4,(0,0,0,0,0,0),QQ(0),QQ(0)):QQ(-2),(4,(1,0,0,0,0,1),QQ(0),QQ(0)):QQ(-1),
-      (4,(1,0,0,0,0,0),QQ(-5)/2,QQ(1)):QQ(-1),(4,(0,0,0,0,0,1),QQ(5)/2,QQ(-1)):QQ(-1)}
+    expected_by_degree={}
+    for degree, entries in (spec.physical_pl_benchmarks or {}).items():
+        expected_by_degree[int(degree)]={(int(degree),tuple(e["dynkin_labels"]),_q(e["B"]),_q(e["I"])):_q(e["coefficient"]) for e in entries}
     def totals(payload):
         out={}
         for x in _entries(payload):
             m=_q(x.get("signed_multiplicity",x.get("coefficient",x.get("multiplicity"))))
             out[x["t_degree"]]=out.get(x["t_degree"],QQ(0))+m*x["child_representation_dimension"]
         return out
-    checks={"solution_unique":True,"matrix_rank_two":solution.matrix.rank()==2,"determinant_one_half":solution.matrix.det()==QQ(1)/2,
+    checks={"solution_unique":True,"matrix_rank_two":solution.matrix.rank()==2,
+      "expected_matrix_recovered":spec.expected_matrix is None or solution.matrix==matrix(QQ,spec.expected_matrix),
+      "expected_determinant":spec.expected_determinant is None or solution.matrix.det()==spec.expected_determinant,
       "all_defining_residuals_zero":all(not any(x) for x in solution.diagnostics.defining_residuals),"all_validation_anchors_pass":all(x["passed"] for x in validations),
+      "all_defining_anchors_exist_in_raw_data":all(anchor_present(a) for a in spec.defining_anchors),
+      "all_validation_anchors_exist_in_raw_data":all(anchor_present(a) for a in spec.validation_anchors),
       "configured_charge_lattice":lattice,"exact_raw_physical_raw_round_trip":roundtrip,
       "complete_pl_conjugation_through_order":conjugation,
-      "physical_t2_benchmark":{k:v for k,v in pl_values.items() if k[0]==2}==expected2,
-      "physical_t4_benchmark":{k:v for k,v in pl_values.items() if k[0]==4}==expected4,
       "t_degrees_and_dimensions_preserved":totals(raw["character"])==totals(transformed["character"]) and totals(raw["pl"])==totals(transformed["pl"]),
       "complete_mandatory_inputs_translated":len(sectors)==len(raw_sectors)}
+    for degree, expected in expected_by_degree.items():
+        checks[f"physical_t{degree}_benchmark"]={k:v for k,v in pl_values.items() if k[0]==degree}==expected
     checks["all_passed"]=all(checks.values())
     M,inv=solution.matrix,solution.inverse_matrix
     payload={"charge_map_id":spec.id,"raw_charge_order":list(spec.raw_charge_names),"physical_charge_order":list(spec.physical_charge_names),

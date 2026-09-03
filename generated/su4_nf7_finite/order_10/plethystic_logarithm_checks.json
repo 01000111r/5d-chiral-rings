@@ -1,0 +1,24 @@
+{
+  "direct_scalar_plethystic_logarithm": {
+    "10": -5832,
+    "2": 49,
+    "4": 21,
+    "6": -666,
+    "8": 4228
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su4_nf7_finite",
+  "validation_results": {
+    "all_final_coefficients_integral": true,
+    "all_passed": true,
+    "beta_inversion_symmetry": true,
+    "beta_refined_dimension_pl_benchmark_through_10": true,
+    "degree_2_independent_value": true,
+    "degree_4_independent_value": true,
+    "degrees_truncated": true,
+    "direct_scalar_matches_refined_unrefinement": true,
+    "negative_coefficients_retained": true,
+    "no_odd_degree_sectors_through_9": true,
+    "unrefined_pl_benchmark_through_10": true
+  }
+}

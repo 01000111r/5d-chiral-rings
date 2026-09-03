@@ -1,0 +1,54 @@
+\documentclass[9pt]{article}
+\usepackage[a4paper,margin=1.45cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\PE}{\operatorname{PE}}
+\newcommand{\HWG}{\operatorname{HWG}}
+\begin{document}
+\section*{Finite-coupling HWG for $SU(4)+7F$}
+The $\mu_i$ are $SU(7)$ highest-weight fugacities, $\beta$ is the
+finite-coupling baryonic fugacity, and $B_\beta$ is its exponent.  With
+$B(Q)=1$, our convention is $B=4B_\beta$.  There is no finite-coupling
+instanton fugacity and every sector has $I=0$.  This is the common classical
+finite-coupling reference, not a signed-Chern--Simons orientation choice.
+
+For $N_f\geq2N_c-1$, equation~(5.52) of Bourget et al. is
+\[
+ \HWG^{\rm finite}_{N_c,N_f}=\PE\!\left[t^2+
+ (\mu_{N_c}\beta+\mu_{N_f-N_c}\beta^{-1})t^{N_c}
+ +\sum_{j=1}^{N_c}\mu_j\mu_{N_f-j}t^{2j}
+ -\mu_{N_c}\mu_{N_f-N_c}t^{2N_c}\right].
+\]
+For $N_c=4,N_f=7$, the domain condition is saturated: $7=2\cdot4-1$.
+Literal substitution gives the unsimplified exponent
+\[
+t^2+(\mu_4\beta+\mu_3\beta^{-1})t^4+\mu_1\mu_6t^2
++\mu_2\mu_5t^4+\mu_3\mu_4t^6+\mu_4\mu_3t^8
+-\mu_4\mu_3t^8.
+\]
+In particular,
+\[+\mu_4\mu_3t^8-\mu_4\mu_3t^8=0.\]
+Thus the authoritative simplified result and its rational-product form are
+\begin{align*}
+\HWG^{\rm finite}_{4,7}
+&=\PE\!\left[(1+\mu_1\mu_6)t^2+
+(\mu_2\mu_5+\beta\mu_4+\beta^{-1}\mu_3)t^4
++\mu_3\mu_4t^6\right]\\
+&=\frac{1}{(1-t^2)(1-\mu_1\mu_6t^2)(1-\mu_2\mu_5t^4)
+(1-\beta\mu_4t^4)(1-\beta^{-1}\mu_3t^4)(1-\mu_3\mu_4t^6)}.
+\end{align*}
+In $A_6$ Dynkin labels (subscripts give $B_\beta$), the six PE terms are
+\begin{align*}
+t^2:&\ [0,0,0,0,0,0]_0+[1,0,0,0,0,1]_0,\\
+t^4:&\ [0,1,0,0,1,0]_0+[0,0,0,1,0,0]_{+1}
+       +[0,0,1,0,0,0]_{-1},\\
+t^6:&\ [0,0,1,1,0,0]_0.
+\end{align*}
+
+\begin{thebibliography}{1}
+\bibitem{BourgetEtAl} A.~Bourget, S.~Cabrera, J.~F.~Grimminger,
+A.~Hanany and Z.~Zhong, \emph{Brane webs and magnetic quivers for SQCD},
+JHEP \textbf{03} (2020) 176,
+\href{https://arxiv.org/abs/1909.00667}{arXiv:1909.00667}, Eq.~(5.52).
+\end{thebibliography}
+\end{document}

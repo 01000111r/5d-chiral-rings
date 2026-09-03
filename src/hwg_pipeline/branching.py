@@ -81,6 +81,9 @@ def load_branching_spec(path):
     _validate_embedding(spec.parent_simple_factor, spec.child_simple_factor, spec.embedding_type)
     expected = ({"child_dynkin_labels": [1] + [0]*(int(spec.child_rank)-1), "x_charge": 1},
                 {"child_dynkin_labels": [0]*int(spec.child_rank), "x_charge": -int(spec.parent_rank)})
+    expected_parent = [1] + [0] * (int(spec.parent_rank) - 1)
+    if data["normalization"].get("parent_fundamental") != expected_parent:
+        raise ValueError("branching normalization must identify the parent fundamental")
     if tuple(data["normalization"]["branches"]) != expected:
         raise ValueError("branching normalization must be fundamental -> fundamental_(+1) + singlet_(-n)")
     return spec

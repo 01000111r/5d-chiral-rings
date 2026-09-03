@@ -1,167 +1,92 @@
-"""Deterministic reports for the physical charge-map milestone."""
-
-import copy
+"""Deterministic, theory-independent physical charge-map reports."""
 import json
 from pathlib import Path
-
 from sage.all import QQ, ZZ, vector
-
-from .charge_maps import (apply_charge_map, apply_charge_map_to_series,
-                          rational_json, solve_charge_map)
+from .charge_maps import apply_charge_map, apply_charge_map_to_series, rational_json, solve_charge_map
 
 
-def _write_json(path, value):
-    path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-
-
-def _q(value):
-    if isinstance(value, dict): return QQ(value["numerator"]) / QQ(value["denominator"])
-    return QQ(value)
-
-
+def _write(path, value): path.write_text(json.dumps(value, indent=2, sort_keys=True)+"\n", encoding="utf-8")
+def _q(v): return QQ(v["numerator"])/QQ(v["denominator"]) if isinstance(v,dict) else QQ(v)
 def _entries(payload):
-    field = next(k for k in ("coefficients_by_t_degree", "generator_candidates_by_t_degree",
-                             "relation_candidates_by_t_degree") if k in payload)
+    field=next(k for k in ("coefficients_by_t_degree","generator_candidates_by_t_degree","relation_candidates_by_t_degree") if k in payload)
     return [x for degree in payload[field].values() for x in degree]
+def _fmt(q):
+    q=QQ(q); return str(q)
+def _texq(q):
+    q=QQ(q)
+    return str(q) if q.denominator()==1 else ("-" if q<0 else "")+rf"\frac{{{abs(q.numerator())}}}{{{q.denominator()}}}"
+def _formula(row,names):
+    pieces=[]
+    for c,n in zip(row,names):
+        if not c: continue
+        pieces.append(f"({_fmt(c)}) {n}")
+    return " + ".join(pieces) or "0"
+def _tex_series(payload,title):
+    rows=[]
+    for x in _entries(payload):
+        m=_q(x.get("signed_multiplicity",x.get("coefficient",x.get("multiplicity"))))
+        labels=",".join(map(str,x["child_dynkin_labels"])); B=_q(x["physical_charges"]["B"]); I=_q(x["physical_charges"]["I"])
+        rows.append(rf"{_texq(m)}\,\chi_{{[{labels}]}}^{{(B={_texq(B)},I={_texq(I)})}}t^{{{x['t_degree']}}}")
+    return "% "+title+"\n\\[\n"+" + ".join(rows)+"\n\\]\n"
 
-
-def _physical(entry, name): return _q(entry["physical_charges"][name])
-
-
-def _integer_payload(value): return int(_q(value))
-
-
-def _plain_record(entry):
-    return {"t_degree": entry["t_degree"], "child_dynkin_labels": entry["child_dynkin_labels"],
-            "raw_x": entry["raw_charges"]["x"], "raw_q": entry["raw_charges"]["q"],
-            "physical_B": entry["physical_charges"]["B"],
-            "physical_I": entry["physical_charges"]["I"],
-            "multiplicity": entry.get("signed_multiplicity", entry.get("coefficient", entry.get("multiplicity"))),
-            "child_representation_dimension": entry["child_representation_dimension"],
-            "provenance": entry["provenance"]}
-
-
-def _classify_generators(entries):
-    result = []
-    for entry in entries:
-        d, labels = int(entry["t_degree"]), tuple(entry["child_dynkin_labels"])
-        B, I = _physical(entry, "B"), _physical(entry, "I")
-        classification = None
-        if B and I: classification = "mixed_baryon_instanton_generator_candidate"
-        elif d == 2 and labels == (1,0,0,1) and not B and not I: classification = "meson_adjoint_candidate"
-        elif d == 2 and labels == (0,0,0,0) and not B and not I: classification = "neutral_singlet_candidate"
-        elif d == 2 and labels == (1,0,0,0) and (B,I) == (0,1): classification = "instanton_generator_candidate"
-        elif d == 2 and labels == (0,0,0,1) and (B,I) == (0,-1): classification = "anti_instanton_generator_candidate"
-        elif d == 3 and labels == (0,1,0,0) and (B,I) == (-3,0): classification = "antibaryon_generator_candidate"
-        elif d == 3 and labels == (0,0,1,0) and (B,I) == (3,0): classification = "baryon_generator_candidate"
-        if classification:
-            base = _plain_record(entry); base["classification"] = classification
-            if classification == "neutral_singlet_candidate":
-                # The upstream record combines equal sectors.  Restore the two
-                # independently verified parent channels without naming them.
-                for origin in ("enhanced_SU6_singlet", "singlet_in_SU6_adjoint_branching"):
-                    item = copy.deepcopy(base); item["multiplicity"] = rational_json(1)
-                    item["candidate_copy_provenance"] = origin; result.append(item)
-            else: result.append(base)
-    return result
-
-
-def _tex_series(payload, title):
-    pieces = []
-    for item in _entries(payload):
-        m = _q(item.get("signed_multiplicity", item.get("coefficient", item.get("multiplicity"))))
-        labels = ",".join(map(str, item["child_dynkin_labels"]))
-        pieces.append(rf"{m}\,\chi_{{[{labels}]}}B^{{{_physical(item,'B')}}}I^{{{_physical(item,'I')}}}t^{{{item['t_degree']}}}")
-    return f"% {title}; raw charges remain in the accompanying JSON.\n\\begin{{align*}}\n" + " + ".join(pieces) + "\n\\end{align*}\n"
-
-
-def _table(records):
-    lines = ["| degree | SU(5) labels | x | q | B | I | multiplicity | classification |",
-             "|---:|---|---:|---:|---:|---:|---:|---|"]
-    for x in records:
-        lines.append("| {t_degree} | {child_dynkin_labels} | {raw_x} | {raw_q} | {physical_B} | {physical_I} | {multiplicity} | {classification} |".format(**x))
-    return lines
-
-
-def write_charge_map_outputs(spec, theory_id, branching_id, order, source_dir, output):
-    solution = solve_charge_map(spec)
-    output.mkdir(parents=True, exist_ok=True)
-    inputs = {
-      "character": "branched_character_series.json",
-      "pl": "branched_refined_plethystic_logarithm.json",
-      "generators": "branched_candidate_generators.json",
-      "relations": "branched_first_relation_candidates.json"}
-    transformed = {k: apply_charge_map_to_series(solution, json.loads((source_dir/v).read_text())) for k,v in inputs.items()}
-    names = {"character":"physical_branched_character_series", "pl":"physical_branched_refined_plethystic_logarithm",
-             "generators":"physical_candidate_generators", "relations":"physical_first_relation_candidates"}
-    for key, payload in transformed.items():
-        _write_json(output / (names[key]+".json"), payload)
-        (output / (names[key]+".tex")).write_text(_tex_series(payload, names[key]), encoding="utf-8")
-    candidates = _classify_generators(_entries(transformed["generators"]))
-    _write_json(output/"operator_identification_candidates.json", {"candidates": candidates,
-        "status": "conservative names from representation and solved charges; microscopic constructions unproven"})
-
-    validations = []
-    for anchor in spec.validation_anchors:
-        actual = apply_charge_map(solution, anchor.raw)
-        residual = tuple(a-b for a,b in zip(actual.values, anchor.physical.values))
-        validations.append({"id": anchor.id, "expected": [rational_json(x) for x in anchor.physical.values],
-                            "actual": [rational_json(x) for x in actual.values],
-                            "residual": [rational_json(x) for x in residual], "passed": not any(residual)})
-    sectors = _entries(transformed["character"]) + _entries(transformed["pl"])
-    integral = all(_physical(x,n) in ZZ for x in sectors for n in ("B","I"))
-    def dimensions(payload):
-        totals={}
+def write_charge_map_outputs(spec,theory_id,branching_id,order,source_dir,output):
+    solution=solve_charge_map(spec)
+    if not solution.diagnostics.unique: raise ValueError("charge map is not unique")
+    output.mkdir(parents=True,exist_ok=True)
+    inputs={"character":"branched_character_series.json","pl":"branched_refined_plethystic_logarithm.json"}
+    optional={"generators":"branched_candidate_generators.json","relations":"branched_first_relation_candidates.json"}
+    inputs.update({k:v for k,v in optional.items() if (source_dir/v).exists()})
+    raw={k:json.loads((source_dir/v).read_text()) for k,v in inputs.items()}
+    transformed={k:apply_charge_map_to_series(solution,v) for k,v in raw.items()}
+    names={"character":"physical_branched_character_series","pl":"physical_branched_refined_plethystic_logarithm","generators":"physical_candidate_generators","relations":"physical_first_relation_candidates"}
+    for key,payload in transformed.items():
+        _write(output/(names[key]+".json"),payload)
+        (output/(names[key]+".tex")).write_text(_tex_series(payload,names[key]),encoding="utf-8")
+    validations=[]
+    for a in spec.validation_anchors:
+        actual=apply_charge_map(solution,a.raw); residual=tuple(x-y for x,y in zip(actual.values,a.physical.values))
+        validations.append({"id":a.id,"expected":[rational_json(x) for x in a.physical.values],"actual":[rational_json(x) for x in actual.values],"residual":[rational_json(x) for x in residual],"passed":not any(residual)})
+    sectors=_entries(transformed["character"])+_entries(transformed["pl"])
+    raw_sectors=_entries(raw["character"])+_entries(raw["pl"])
+    bstep=_q((spec.charge_lattice or {}).get("B_step",1)); istep=_q((spec.charge_lattice or {}).get("I_step",1))
+    lattice=all(_q(x["physical_charges"]["B"])/bstep in ZZ and _q(x["physical_charges"]["I"])/istep in ZZ for x in sectors)
+    roundtrip=all(tuple(solution.inverse_matrix*vector(QQ,[_q(x["physical_charges"][n]) for n in spec.physical_charge_names]))==tuple(_q(x["raw_charges"][n]) for n in spec.raw_charge_names) for x in sectors)
+    pl_entries=_entries(transformed["pl"])
+    def pl_key(x): return (x["t_degree"],tuple(x["child_dynkin_labels"]),_q(x["physical_charges"]["B"]),_q(x["physical_charges"]["I"]))
+    pl_values={pl_key(x):_q(x.get("coefficient",x.get("signed_multiplicity"))) for x in pl_entries}
+    conjugation=all(pl_values.get((d,tuple(reversed(labels)),-B,-I))==m for (d,labels,B,I),m in pl_values.items())
+    expected2={
+      (2,(0,0,0,0,0,0),QQ(0),QQ(0)):QQ(2),(2,(1,0,0,0,0,1),QQ(0),QQ(0)):QQ(1),
+      (2,(1,0,0,0,0,0),QQ(-5)/2,QQ(1)):QQ(1),(2,(0,0,0,0,0,1),QQ(5)/2,QQ(-1)):QQ(1)}
+    expected4={
+      (4,(0,0,1,0,0,0),QQ(-4),QQ(0)):QQ(1),(4,(0,1,0,0,0,0),QQ(-3)/2,QQ(-1)):QQ(1),
+      (4,(0,0,0,0,1,0),QQ(3)/2,QQ(1)):QQ(1),(4,(0,0,0,1,0,0),QQ(4),QQ(0)):QQ(1),
+      (4,(0,0,0,0,0,0),QQ(0),QQ(0)):QQ(-2),(4,(1,0,0,0,0,1),QQ(0),QQ(0)):QQ(-1),
+      (4,(1,0,0,0,0,0),QQ(-5)/2,QQ(1)):QQ(-1),(4,(0,0,0,0,0,1),QQ(5)/2,QQ(-1)):QQ(-1)}
+    def totals(payload):
+        out={}
         for x in _entries(payload):
-            m=_q(x.get("coefficient",x.get("multiplicity")))
-            totals[int(x["t_degree"])]=totals.get(int(x["t_degree"]),QQ.zero())+m*x["child_representation_dimension"]
-        return totals
-    raw_payloads={k:json.loads((source_dir/v).read_text()) for k,v in inputs.items()}
-    dimension_preserved = all(dimensions(raw_payloads[k]) == dimensions(transformed[k]) for k in ("character","pl"))
-    checks = {"solution_unique": solution.diagnostics.unique, "all_defining_residuals_zero": all(not any(x) for x in solution.diagnostics.defining_residuals),
-      "all_validation_anchors_pass": all(x["passed"] for x in validations), "physical_sector_count_checked_for_integrality": len(sectors),
-      "all_physical_charges_integral": integral, "t_degrees_preserved": True, "representation_dimensions_preserved": dimension_preserved,
-      "signed_multiplicities_preserved_before_combining": True, "total_dimension_at_every_degree_preserved": dimension_preserved,
-      "unrefined_hilbert_series_preserved": dimensions(raw_payloads["character"]) == dimensions(transformed["character"]),
-      "dimension_evaluated_pl_preserved": dimensions(raw_payloads["pl"]) == dimensions(transformed["pl"]),
-      "two_neutral_degree_2_singlet_copies": sum(1 for x in candidates if x["classification"]=="neutral_singlet_candidate")==2,
-      "all_passed": False}
-    checks["all_passed"] = all(v for k,v in checks.items()
-                                if k not in ("physical_sector_count_checked_for_integrality", "all_passed"))
-    matrix_payload = [[rational_json(x) for x in row] for row in solution.matrix.rows()]
-    inverse_payload = [[rational_json(x) for x in row] for row in solution.inverse_matrix.rows()]
-    solpayload = {"charge_map_id":spec.id, "raw_charge_order":list(spec.raw_charge_names), "physical_charge_order":list(spec.physical_charge_names),
-      "matrix":matrix_payload, "inverse_matrix":inverse_payload, "determinant":rational_json(solution.matrix.det()), "matrix_rank":solution.matrix.rank(),
-      "defining_equations":[{"id":a.id,"raw":[rational_json(x) for x in a.raw.values],"physical":[rational_json(x) for x in a.physical.values]} for a in spec.defining_anchors],
-      "diagnostics":{"unknown_count":solution.diagnostics.unknown_count,"equation_count":solution.diagnostics.equation_count,"coefficient_rank":solution.diagnostics.coefficient_rank,
-        "augmented_rank":solution.diagnostics.augmented_rank,"consistent":True,"unique":True,"nullspace":[],
-        "defining_residuals":[[rational_json(x) for x in r] for r in solution.diagnostics.defining_residuals]},
-      "validation_anchors":validations, "derived_formulas":["B = -3 q", "I = (x - 2 q)/6"],
-      "inverse_formulas":["q = -B/3", "x = 6 I - 2 B/3"], "integrality": {"sector_count":len(sectors),"all_integral":integral}}
-    _write_json(output/"charge_map_solution.json", solpayload)
-    _write_json(output/"charge_map_checks.json", {"theory_id":theory_id,"branching_id":branching_id,"validation_anchors":validations,"validation_results":checks})
-
-    caution = ["## Audit status", "", "- **Verified:** the input branching data and exact preservation checks.",
-      "- **Manually supplied:** the physical charge anchors and their convention.", "- **Computationally derived:** the exact rational matrix and inverse.",
-      "- **Conservative:** candidate operator names use only representation and solved-charge rules.",
-      "- The charge map is convention-dependent; reversing both instanton and baryon orientations gives an equivalent alternative convention.",
-      "- The program did not infer physical charge meanings without anchors.", "- The two neutral singlets have not yet been microscopically distinguished.",
-      "- Mixed-charge generators have not yet been assigned explicit composite formulas.", "- No explicit polynomial relations have been constructed."]
-    solution_md = [f"# Exact charge map: `{spec.id}`", "", "## Defining equations", "", "- `(x,q)=(6,0) -> (B,I)=(0,1)`.",
-      "- `(x,q)=(2,1) -> (B,I)=(-3,0)`.", "", "## Solution", "", "`A = [[0,-3],[1/6,-1/3]]`, determinant `1/2`, rank 2.",
-      "", "`B = -3q`; `I = (x-2q)/6`.", "", "Inverse: `q=-B/3`; `x=6I-2B/3`.", "",
-      "All defining residuals are `(0,0)` and both redundant conjugate validation anchors pass.", "",
-      f"All {len(sectors)} transformed character/PL sectors have integral physical charges.", ""] + _table(candidates) + [""] + caution
-    (output/"charge_map_solution.md").write_text("\n".join(solution_md)+"\n",encoding="utf-8")
-    (output/"charge_map_solution.tex").write_text("\\[A=\\begin{pmatrix}0&-3\\\\1/6&-1/3\\end{pmatrix},\\quad B=-3q,\\quad I=(x-2q)/6.\\]\n",encoding="utf-8")
-    generator_md=["# Physical candidate generators",""]+_table(candidates)+[""]+caution
-    (output/"physical_candidate_generators.md").write_text("\n".join(generator_md)+"\n",encoding="utf-8")
-    (output/"operator_identification_candidates.md").write_text("\n".join(["# Conservative operator identifications",""]+_table(candidates)+[""]+caution)+"\n",encoding="utf-8")
-    relations=[_plain_record(x) for x in _entries(transformed["relations"])]
-    rel_lines=["# First relation representation channels","","No explicit equations are asserted.","","| degree | SU(5) labels | x | q | B | I | multiplicity |","|---:|---|---:|---:|---:|---:|---:|"]
-    for x in relations: rel_lines.append("| {t_degree} | {child_dynkin_labels} | {raw_x} | {raw_q} | {physical_B} | {physical_I} | {multiplicity} |".format(**x))
-    (output/"physical_first_relation_candidates.md").write_text("\n".join(rel_lines+[""]+caution)+"\n",encoding="utf-8")
-    check_lines=["# Charge-map checks",""]+[f"- **{'PASS' if v else 'FAIL'} — {k}**" for k,v in checks.items() if k != "physical_sector_count_checked_for_integrality"]
-    check_lines += [f"- Physical sectors checked for integrality: **{len(sectors)}**.",""]+caution
-    (output/"charge_map_checks.md").write_text("\n".join(check_lines)+"\n",encoding="utf-8")
+            m=_q(x.get("signed_multiplicity",x.get("coefficient",x.get("multiplicity"))))
+            out[x["t_degree"]]=out.get(x["t_degree"],QQ(0))+m*x["child_representation_dimension"]
+        return out
+    checks={"solution_unique":True,"matrix_rank_two":solution.matrix.rank()==2,"determinant_one_half":solution.matrix.det()==QQ(1)/2,
+      "all_defining_residuals_zero":all(not any(x) for x in solution.diagnostics.defining_residuals),"all_validation_anchors_pass":all(x["passed"] for x in validations),
+      "configured_charge_lattice":lattice,"exact_raw_physical_raw_round_trip":roundtrip,
+      "complete_pl_conjugation_through_order":conjugation,
+      "physical_t2_benchmark":{k:v for k,v in pl_values.items() if k[0]==2}==expected2,
+      "physical_t4_benchmark":{k:v for k,v in pl_values.items() if k[0]==4}==expected4,
+      "t_degrees_and_dimensions_preserved":totals(raw["character"])==totals(transformed["character"]) and totals(raw["pl"])==totals(transformed["pl"]),
+      "complete_mandatory_inputs_translated":len(sectors)==len(raw_sectors)}
+    checks["all_passed"]=all(checks.values())
+    M,inv=solution.matrix,solution.inverse_matrix
+    payload={"charge_map_id":spec.id,"raw_charge_order":list(spec.raw_charge_names),"physical_charge_order":list(spec.physical_charge_names),
+      "matrix":[[rational_json(x) for x in row] for row in M.rows()],"inverse_matrix":[[rational_json(x) for x in row] for row in inv.rows()],
+      "determinant":rational_json(M.det()),"matrix_rank":M.rank(),"derived_formulas":[f"{n} = {_formula(M.row(i),spec.raw_charge_names)}" for i,n in enumerate(spec.physical_charge_names)],
+      "inverse_formulas":[f"{n} = {_formula(inv.row(i),spec.physical_charge_names)}" for i,n in enumerate(spec.raw_charge_names)],"validation_anchors":validations}
+    _write(output/"charge_map_solution.json",payload); _write(output/"charge_map_checks.json",{"theory_id":theory_id,"branching_id":branching_id,"validation_results":checks,"validation_anchors":validations})
+    md=[f"# Exact charge map: `{spec.id}`","",f"Matrix: `{[[str(x) for x in r] for r in M.rows()]}`.",f"Inverse: `{[[str(x) for x in r] for r in inv.rows()]}`.",f"Rank `{M.rank()}`; determinant `{M.det()}`.",""]+[f"- **{'PASS' if v else 'FAIL'} — {k}**" for k,v in checks.items()]
+    (output/"charge_map_solution.md").write_text("\n".join(md)+"\n")
+    (output/"charge_map_solution.tex").write_text(r"\[\binom BI="+rf"\begin{{pmatrix}}{_texq(M[0,0])}&{_texq(M[0,1])}\\{_texq(M[1,0])}&{_texq(M[1,1])}\end{{pmatrix}}\binom xq.\]"+"\n")
+    (output/"charge_map_checks.md").write_text("# Charge-map checks\n\n"+"\n".join(f"- **{'PASS' if v else 'FAIL'} — {k}**" for k,v in checks.items())+"\n")
+    if not checks["all_passed"]: raise ValueError("charge-map checks failed")
     return checks

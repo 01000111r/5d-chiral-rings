@@ -1,0 +1,204 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\newcommand{\PE}{\operatorname{PE}}
+\title{Compact Hilbert-series results for $\mathrm{SU(4)}+7F$ at finite coupling}
+\date{}
+\begin{document}
+\maketitle
+The flavour symmetry is $\mathrm{SU}(7)\times\mathrm{U}(1)_{\beta}$.
+The expansion is truncated at $O(t^{11})$.  We define
+$[a_1,\ldots,a_{6}]:=[a_1,\ldots,a_{6}]_{A6}$.
+Dimension evaluation is the ring homomorphism
+$\dim_{\mathrm{SU}(7)}:R(\mathrm{SU}(7))\to\mathbb{Z}$, with
+$H_{\mathrm{dim}}(t,\beta)=\dim_{\mathrm{SU}(7)}H(t,\beta;\mathrm{SU}(7))$
+and $H(t)=H_{\mathrm{dim}}(t,1)$. Likewise,
+$\operatorname{PL}_{\mathrm{dim}}(t,\beta)=\dim_{\mathrm{SU}(7)}
+\operatorname{PL}[H(t,\beta;\mathrm{SU}(7))]$ and
+$\operatorname{PL}[H(t)]=\operatorname{PL}_{\mathrm{dim}}(t,1)$;
+the latter agrees with the independently stored scalar result.
+\section{Finite-coupling source specialization}
+Equation (5.52) gives
+\[\mathrm{HWG}^{\mathrm{finite}}_{N_c,N_f}=\PE\!\left[t^2+(\mu_{N_c}\beta+\mu_{N_f-N_c}\beta^{-1})t^{N_c}+\sum_{j=1}^{N_c}\mu_j\mu_{N_f-j}t^{2j}-\mu_{N_c}\mu_{N_f-N_c}t^{2N_c}\right].\]
+For $N_c=4,N_f=7$, the unsimplified exponent is
+\[t^2+(\mu_4\beta+\mu_3\beta^{-1})t^4+\mu_1\mu_6t^2+\mu_2\mu_5t^4+\mu_3\mu_4t^6+\mu_4\mu_3t^8-\mu_4\mu_3t^8.\]
+Thus $+\mu_4\mu_3t^8-\mu_4\mu_3t^8=0$ exactly.
+
+
+\section{Highest-weight generating function}
+\begin{equation}
+\mathrm{HWG}=\PE\!\left[(1+\mu_1\mu_6)t^2
++(\mu_2\mu_5+\beta\mu_4+\beta^{-1}\mu_3)t^4
++\mu_3\mu_4t^6\right].
+\end{equation}
+\begin{equation}
+\resizebox{0.98\linewidth}{!}{${\displaystyle
+\mathrm{HWG}=\frac{1}{(1-t^2)(1-\mu_1\mu_6t^2)(1-\mu_2\mu_5t^4)
+(1-\beta\mu_4t^4)(1-\beta^{-1}\mu_3t^4)(1-\mu_3\mu_4t^6)}.}$}
+\end{equation}
+
+\section{Highest-weight expansion}
+\[
+\begin{aligned}
+\mathrm{HWG}(t,\beta;\mu) ={}&
+   \Bigl(1\Bigr) \\
+  + \Bigl(1\,+\mu_1\mu_6\Bigr)t^{2} \\
+  + \Bigl(\begin{aligned}[t]1\,+\beta\mu_4\,+\beta^{-1}\mu_3 \\
+  &{}+\mu_2\mu_5\,+\mu_1\mu_6\,+\mu_1^{2}\mu_6^{2}\end{aligned}\Bigr)t^{4} \\
+  + \Bigl(\begin{aligned}[t]1\,+\beta\mu_4\,+\beta^{-1}\mu_3 \\
+  &{}+\mu_3\mu_4\,+\mu_2\mu_5\,+\mu_1\mu_6 \\
+  &{}+\beta\mu_1\mu_4\mu_6\,+\beta^{-1}\mu_1\mu_3\mu_6\,+\mu_1\mu_2\mu_5\mu_6 \\
+  &{}+\mu_1^{2}\mu_6^{2}\,+\mu_1^{3}\mu_6^{3}\end{aligned}\Bigr)t^{6} \\
+  + \Bigl(\begin{aligned}[t]1\,+\beta\mu_4\,+\beta^{2}\mu_4^{2} \\
+  &{}+\beta^{-1}\mu_3\,+2\mu_3\mu_4\,+\beta^{-2}\mu_3^{2} \\
+  &{}+\mu_2\mu_5\,+\beta\mu_2\mu_4\mu_5\,+\beta^{-1}\mu_2\mu_3\mu_5 \\
+  &{}+\mu_2^{2}\mu_5^{2}\,+\mu_1\mu_6\,+\beta\mu_1\mu_4\mu_6 \\
+  &{}+\beta^{-1}\mu_1\mu_3\mu_6\,+\mu_1\mu_3\mu_4\mu_6\,+\mu_1\mu_2\mu_5\mu_6 \\
+  &{}+\mu_1^{2}\mu_6^{2}\,+\beta\mu_1^{2}\mu_4\mu_6^{2} \\
+  &{}+\beta^{-1}\mu_1^{2}\mu_3\mu_6^{2}\,+\mu_1^{2}\mu_2\mu_5\mu_6^{2} \\
+  &{}+\mu_1^{3}\mu_6^{3}\,+\mu_1^{4}\mu_6^{4}\end{aligned}\Bigr)t^{8} \\
+  + \Bigl(\begin{aligned}[t]1\,+\beta\mu_4\,+\beta^{2}\mu_4^{2} \\
+  &{}+\beta^{-1}\mu_3\,+2\mu_3\mu_4\,+\beta\mu_3\mu_4^{2} \\
+  &{}+\beta^{-2}\mu_3^{2}\,+\beta^{-1}\mu_3^{2}\mu_4\,+\mu_2\mu_5 \\
+  &{}+\beta\mu_2\mu_4\mu_5\,+\beta^{-1}\mu_2\mu_3\mu_5\,+\mu_2\mu_3\mu_4\mu_5 \\
+  &{}+\mu_2^{2}\mu_5^{2}\,+\mu_1\mu_6\,+\beta\mu_1\mu_4\mu_6 \\
+  &{}+\beta^{2}\mu_1\mu_4^{2}\mu_6\,+\beta^{-1}\mu_1\mu_3\mu_6 \\
+  &{}+2\mu_1\mu_3\mu_4\mu_6\,+\beta^{-2}\mu_1\mu_3^{2}\mu_6 \\
+  &{}+\mu_1\mu_2\mu_5\mu_6\,+\beta\mu_1\mu_2\mu_4\mu_5\mu_6 \\
+  &{}+\beta^{-1}\mu_1\mu_2\mu_3\mu_5\mu_6\,+\mu_1\mu_2^{2}\mu_5^{2}\mu_6 \\
+  &{}+\mu_1^{2}\mu_6^{2}\,+\beta\mu_1^{2}\mu_4\mu_6^{2} \\
+  &{}+\beta^{-1}\mu_1^{2}\mu_3\mu_6^{2}\,+\mu_1^{2}\mu_3\mu_4\mu_6^{2} \\
+  &{}+\mu_1^{2}\mu_2\mu_5\mu_6^{2}\,+\mu_1^{3}\mu_6^{3} \\
+  &{}+\beta\mu_1^{3}\mu_4\mu_6^{3}\,+\beta^{-1}\mu_1^{3}\mu_3\mu_6^{3} \\
+  &{}+\mu_1^{3}\mu_2\mu_5\mu_6^{3}\,+\mu_1^{4}\mu_6^{4}\,+\mu_1^{5}\mu_6^{5}\end{aligned}\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+
+\section{Character Hilbert series}
+\[
+\begin{aligned}
+H(t,\beta;\mathrm{SU}(7)) ={}&
+   \Bigl([0,0,0,0,0,0]\Bigr) \\
+  + \Bigl([0,0,0,0,0,0]\,+[1,0,0,0,0,1]\Bigr)t^{2} \\
+  + \Bigl(\begin{aligned}[t]\beta^{-1}[0,0,1,0,0,0]\,+[0,0,0,0,0,0]\,+[0,1,0,0,1,0] \\
+  &{}+[1,0,0,0,0,1]\,+[2,0,0,0,0,2]\,+\beta[0,0,0,1,0,0]\end{aligned}\Bigr)t^{4} \\
+  + \Bigl(\begin{aligned}[t]\beta^{-1}[0,0,1,0,0,0]\,+\beta^{-1}[1,0,1,0,0,1]\,+[0,0,0,0,0,0] \\
+  &{}+[0,0,1,1,0,0]\,+[0,1,0,0,1,0]\,+[1,0,0,0,0,1] \\
+  &{}+[1,1,0,0,1,1]\,+[2,0,0,0,0,2]\,+[3,0,0,0,0,3] \\
+  &{}+\beta[0,0,0,1,0,0]\,+\beta[1,0,0,1,0,1]\end{aligned}\Bigr)t^{6} \\
+  + \Bigl(\begin{aligned}[t]\beta^{-2}[0,0,2,0,0,0]\,+\beta^{-1}[0,0,1,0,0,0] \\
+  &{}+\beta^{-1}[0,1,1,0,1,0]\,+\beta^{-1}[1,0,1,0,0,1] \\
+  &{}+\beta^{-1}[2,0,1,0,0,2]\,+[0,0,0,0,0,0]\,+2[0,0,1,1,0,0] \\
+  &{}+[0,1,0,0,1,0]\,+[0,2,0,0,2,0]\,+[1,0,0,0,0,1] \\
+  &{}+[1,0,1,1,0,1]\,+[1,1,0,0,1,1]\,+[2,0,0,0,0,2] \\
+  &{}+[2,1,0,0,1,2]\,+[3,0,0,0,0,3]\,+[4,0,0,0,0,4] \\
+  &{}+\beta[0,0,0,1,0,0]\,+\beta[0,1,0,1,1,0]\,+\beta[1,0,0,1,0,1] \\
+  &{}+\beta[2,0,0,1,0,2]\,+\beta^{2}[0,0,0,2,0,0]\end{aligned}\Bigr)t^{8} \\
+  + \Bigl(\begin{aligned}[t]\beta^{-2}[0,0,2,0,0,0]\,+\beta^{-2}[1,0,2,0,0,1] \\
+  &{}+\beta^{-1}[0,0,1,0,0,0]\,+\beta^{-1}[0,0,2,1,0,0] \\
+  &{}+\beta^{-1}[0,1,1,0,1,0]\,+\beta^{-1}[1,0,1,0,0,1] \\
+  &{}+\beta^{-1}[1,1,1,0,1,1]\,+\beta^{-1}[2,0,1,0,0,2] \\
+  &{}+\beta^{-1}[3,0,1,0,0,3]\,+[0,0,0,0,0,0]\,+2[0,0,1,1,0,0] \\
+  &{}+[0,1,0,0,1,0]\,+[0,1,1,1,1,0]\,+[0,2,0,0,2,0] \\
+  &{}+[1,0,0,0,0,1]\,+2[1,0,1,1,0,1]\,+[1,1,0,0,1,1] \\
+  &{}+[1,2,0,0,2,1]\,+[2,0,0,0,0,2]\,+[2,0,1,1,0,2] \\
+  &{}+[2,1,0,0,1,2]\,+[3,0,0,0,0,3]\,+[3,1,0,0,1,3] \\
+  &{}+[4,0,0,0,0,4]\,+[5,0,0,0,0,5]\,+\beta[0,0,0,1,0,0] \\
+  &{}+\beta[0,0,1,2,0,0]\,+\beta[0,1,0,1,1,0]\,+\beta[1,0,0,1,0,1] \\
+  &{}+\beta[1,1,0,1,1,1]\,+\beta[2,0,0,1,0,2]\,+\beta[3,0,0,1,0,3] \\
+  &{}+\beta^{2}[0,0,0,2,0,0]\,+\beta^{2}[1,0,0,2,0,1]\end{aligned}\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\paragraph{$\beta$-refined dimension Hilbert series.}
+\[
+\begin{aligned}
+H_{\mathrm{dim}}(t,\beta) ={}&
+   1 \\
+  + 49t^{2} \\
+  + \Bigl(1176\,+35\bigl(\beta+\beta^{-1}\bigr)\Bigr)t^{4} \\
+  + \Bigl(18472\,+1358\bigl(\beta+\beta^{-1}\bigr)\Bigr)t^{6} \\
+  + \Bigl(214963\,+26166\bigl(\beta+\beta^{-1}\bigr)\,+490\bigl(\beta^{2}+\beta^{-2}\bigr)\Bigr)t^{8} \\
+  + \Bigl(1987047\,+335223\bigl(\beta+\beta^{-1}\bigr)\,+16170\bigl(\beta^{2}+\beta^{-2}\bigr)\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+
+\section{Unrefined Hilbert series}
+\[
+\begin{aligned}
+H(t) ={}& 1\,+49t^{2}\,+1246t^{4}\,+21188t^{6}\,+268275t^{8}\,+2689833t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+
+\section{Plethystic logarithm}
+\[
+\begin{aligned}
+\operatorname{PL}[H(t,\beta;\mathrm{SU}(7))] ={}&
+  + \Bigl([0,0,0,0,0,0]\,+[1,0,0,0,0,1]\Bigr)t^{2} \\
+  + \Bigl(\begin{aligned}[t]\beta^{-1}[0,0,1,0,0,0]\,-[0,0,0,0,0,0]\,-[1,0,0,0,0,1] \\
+  &{}+\beta[0,0,0,1,0,0]\end{aligned}\Bigr)t^{4} \\
+  + \Bigl(\begin{aligned}[t]-\beta^{-1}[0,0,0,1,0,1]\,-\beta^{-1}[0,0,1,0,0,0] \\
+  &{}-\beta^{-1}[1,1,0,0,0,0]\,+[1,0,0,0,0,1]\,-\beta[0,0,0,0,1,1] \\
+  &{}-\beta[0,0,0,1,0,0]\,-\beta[1,0,1,0,0,0]\end{aligned}\Bigr)t^{6} \\
+  + \Bigl(\begin{aligned}[t]-\beta^{-2}[1,0,0,0,1,0]\,+\beta^{-1}[0,0,0,0,1,2] \\
+  &{}+2\beta^{-1}[0,0,0,1,0,1]\,+2\beta^{-1}[0,0,1,0,0,0] \\
+  &{}+\beta^{-1}[1,0,1,0,0,1]\,+2\beta^{-1}[1,1,0,0,0,0] \\
+  &{}+\beta^{-1}[3,0,0,0,0,0]\,-2[0,0,0,0,0,0]\,-[0,1,0,0,1,0] \\
+  &{}-2[1,0,0,0,0,1]\,+\beta[0,0,0,0,0,3]\,+2\beta[0,0,0,0,1,1] \\
+  &{}+2\beta[0,0,0,1,0,0]\,+\beta[1,0,0,1,0,1]\,+2\beta[1,0,1,0,0,0] \\
+  &{}+\beta[2,1,0,0,0,0]\,-\beta^{2}[0,1,0,0,0,1]\end{aligned}\Bigr)t^{8} \\
+  + \Bigl(\begin{aligned}[t]2\beta^{-2}[0,0,0,0,0,1]\,+\beta^{-2}[0,1,0,0,1,1] \\
+  &{}+2\beta^{-2}[0,1,0,1,0,0]\,+\beta^{-2}[1,0,0,0,0,2] \\
+  &{}+3\beta^{-2}[1,0,0,0,1,0]\,+\beta^{-2}[2,0,0,1,0,0] \\
+  &{}-\beta^{-1}[0,0,0,0,0,4]\,-2\beta^{-1}[0,0,0,0,1,2] \\
+  &{}-\beta^{-1}[0,0,0,0,2,0]\,-4\beta^{-1}[0,0,0,1,0,1] \\
+  &{}-5\beta^{-1}[0,0,1,0,0,0]\,-\beta^{-1}[1,0,0,1,0,2] \\
+  &{}-3\beta^{-1}[1,0,1,0,0,1]\,-4\beta^{-1}[1,1,0,0,0,0] \\
+  &{}-\beta^{-1}[2,1,0,0,0,1]\,-2\beta^{-1}[3,0,0,0,0,0]\,+2[0,0,0,0,0,0] \\
+  &{}+[0,0,1,0,1,1]\,+3[0,0,1,1,0,0]\,+2[0,1,0,0,0,2] \\
+  &{}+5[0,1,0,0,1,0]\,+7[1,0,0,0,0,1]\,+[1,1,0,1,0,0] \\
+  &{}+2[2,0,0,0,1,0]\,-2\beta[0,0,0,0,0,3]\,-4\beta[0,0,0,0,1,1] \\
+  &{}-5\beta[0,0,0,1,0,0]\,-\beta[0,2,0,0,0,0]\,-\beta[1,0,0,0,1,2] \\
+  &{}-3\beta[1,0,0,1,0,1]\,-4\beta[1,0,1,0,0,0]\,-\beta[2,0,1,0,0,1] \\
+  &{}-2\beta[2,1,0,0,0,0]\,-\beta[4,0,0,0,0,0]\,+\beta^{2}[0,0,1,0,0,2] \\
+  &{}+2\beta^{2}[0,0,1,0,1,0]\,+3\beta^{2}[0,1,0,0,0,1] \\
+  &{}+2\beta^{2}[1,0,0,0,0,0]\,+\beta^{2}[1,1,0,0,1,0] \\
+  &{}+\beta^{2}[2,0,0,0,0,1]\end{aligned}\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\paragraph{$\beta$-refined dimension plethystic logarithm.}
+\[
+\begin{aligned}
+\operatorname{PL}_{\mathrm{dim}}(t,\beta) ={}&
+   49t^{2} \\
+  + \Bigl(-49\,+35\bigl(\beta+\beta^{-1}\bigr)\Bigr)t^{4} \\
+  + \Bigl(48\,-357\bigl(\beta+\beta^{-1}\bigr)\Bigr)t^{6} \\
+  + \Bigl(-490\,+2499\bigl(\beta+\beta^{-1}\bigr)\,-140\bigl(\beta^{2}+\beta^{-2}\bigr)\Bigr)t^{8} \\
+  + \Bigl(12690\,-13916\bigl(\beta+\beta^{-1}\bigr)\,+4655\bigl(\beta^{2}+\beta^{-2}\bigr)\Bigr)t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\paragraph{Fully unrefined plethystic logarithm.}
+\[
+\begin{aligned}
+\operatorname{PL}[H(t)] ={}& 49t^{2}\,+21t^{4}\,-666t^{6}\,+4228t^{8}\,-5832t^{10} \\
+  &+ O(t^{11}).
+\end{aligned}
+\]
+\section{Classical operator summary}
+The calculated PL gives degree-two singlet and adjoint mesonic candidates,
+$[0,0,0,1,0,0]$ at $B_\beta=+1$, and $[0,0,1,0,0,0]$ at $B_\beta=-1$.
+Positive baryonic and negative neutral PL terms may coexist; no primitive
+relation or complete-intersection claim is made from signs alone.
+\[B=4B_\beta,\qquad I=0.\]
+
+\end{document}

@@ -25,9 +25,13 @@ def exact_rational(value, field="value"):
     return QQ(value)
 
 
-def beta_to_baryon(beta):
-    """Convert the finite beta grading to microscopic SU(3) baryon number."""
-    return 3 * exact_rational(beta, "beta charge")
+def beta_to_baryon(beta, gauge_rank=3):
+    """Convert beta grading to microscopic baryon number for ``SU(Nc)``.
+
+    The default preserves the historical SU(3) API; canonical callers must
+    pass the gauge rank supplied by their signed branching specification.
+    """
+    return exact_rational(gauge_rank, "gauge_rank") * exact_rational(beta, "beta charge")
 
 
 def negative_cs_instanton_baryon(gauge_rank, signed_k):
@@ -151,9 +155,10 @@ def validate_spec_shape(spec):
 def _input_paths(root, spec, order):
     uv = root / "generated" / spec["theory_id"] / f"order_{order}"
     fin = root / "generated" / spec["finite_reference_id"] / f"order_{order}"
+    raw = uv/"branching_comparison"/"raw_branching.json"
+    if not raw.exists(): raw = uv/"manifest_branching"/"branched_refined_plethystic_logarithm.json"
     return [fin/"refined_plethystic_logarithm.json", uv/"refined_plethystic_logarithm.json",
-            fin/"reconstruction_checks.json", uv/"reconstruction_checks.json",
-            uv/"branching_comparison"/"raw_branching.json"]
+            fin/"reconstruction_checks.json", uv/"reconstruction_checks.json", raw]
 
 
 def validate_case(root, spec_path, order=10):
@@ -167,11 +172,22 @@ def validate_case(root, spec_path, order=10):
             raise ConventionError(f"failed reconstruction evidence: {p}")
     raw = json.loads(paths[4].read_text())
     classical, instanton = spec["classical_anchor"], spec["instanton_anchor"]
-    find_anchor(raw, classical); find_anchor(raw, instanton)
+    compact_raw = "coefficients_by_t_degree" in raw
+    def compact_find(anchor):
+        entries=raw["coefficients_by_t_degree"].get(str(anchor["degree"]),[])
+        hits=[e for e in entries if e["child_dynkin_labels"]==anchor["child_representation"]
+              and {n:int(e["raw_charges"][n]) for n in spec["raw_charge_order"]}==anchor["raw_charges"]]
+        if len(hits)!=1: raise ConventionError(f"{anchor['role']}: expected one exact raw child, found {len(hits)}")
+        native=json.loads(paths[1].read_text())["coefficients_by_t_degree"].get(str(anchor["degree"]),[])
+        if not any(e["irreducible_representations"][0]["dynkin_labels"]==anchor["parent_representations"] for e in native):
+            raise ConventionError(f"{anchor['role']}: parent representation absent")
+        return hits[0]
+    if compact_raw: compact_find(classical); compact_find(instanton)
+    else: find_anchor(raw, classical); find_anchor(raw, instanton)
     finite = json.loads(paths[0].read_text())
     beta = exact_rational(classical["finite_beta_charge"])
-    if beta_to_baryon(beta) != exact_rational(classical["target"]["B"]):
-        raise ConventionError("finite-anchor mismatch: B is not 3 B_beta")
+    if beta_to_baryon(beta, spec["gauge_rank"]) != exact_rational(classical["target"]["B"]):
+        raise ConventionError("finite-anchor mismatch: B is not Nc B_beta")
     finite_hits = [e for e in finite["coefficients_by_t_degree"][str(classical["degree"])]
                    if e["irreducible_representations"][0]["dynkin_labels"] == classical["child_representation"]
                    and exact_rational(e["abelian_charges"]["beta"]) == beta]
@@ -184,14 +200,15 @@ def validate_case(root, spec_path, order=10):
         if exact_rational(instanton["target"]["B"]) != wanted or exact_rational(instanton["target"]["I"]) != 1:
             raise ConventionError("zero-mode charge mismatch: require B=-3-k and I=1")
     # The conjugate is checked as a fully identified child, then translated.
-    _, conjugate = find_anchor(raw, spec["conjugate_check"])
+    conjugate = compact_find(spec["conjugate_check"]) if compact_raw else find_anchor(raw, spec["conjugate_check"])[1]
     cv = M * vector(QQ, [exact_rational(_raw(conjugate)[n]) for n in spec["raw_charge_order"]])
     if list(cv) != [ -exact_rational(instanton["target"]["B"]), QQ(-1) ]:
         raise ConventionError("conjugation failure: conjugate charges are not (-B,-I)")
     bstep = exact_rational(spec["charge_lattice"]["B_step"])
     count = 0
-    for parent in raw["parents"]:
-        for child in parent["children"]:
+    children = ([e for entries in raw["coefficients_by_t_degree"].values() for e in entries]
+                if compact_raw else [c for parent in raw["parents"] for c in parent["children"]])
+    for child in children:
             v = M * vector(QQ, [exact_rational(_raw(child)[n]) for n in spec["raw_charge_order"]])
             if v[0]/bstep not in __import__('sage.all', fromlist=['ZZ']).ZZ or v[1] not in __import__('sage.all', fromlist=['ZZ']).ZZ:
                 raise ConventionError(f"charge-lattice failure at raw {_raw(child)}: {(v[0],v[1])}")

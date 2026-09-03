@@ -1,0 +1,64 @@
+schema_version: 1
+theory_id: su4_nf7_k3o2_infinite
+finite_reference_id: su4_nf7_finite
+branching_id: su4_nf7_k3o2_to_manifest
+gauge_rank: 4
+signed_k: "-3/2"
+cs_orientation: hanany_negative
+raw_charge_names: &raw [x, q]
+raw_charge_order: *raw
+normalization:
+  B_definition: microscopic baryon number
+  B_of_Q: 1
+  classical_SU4_baryon_B: 4
+classical_anchor:
+  role: classical antibaryon
+  degree: 4
+  parent_representations: [0, 0, 1, 0, 0, 0, 0]
+  child_representation: [0, 0, 1, 0, 0, 0]
+  raw_charges: {x: 3, q: 1}
+  target: {B: -4, I: 0}
+  finite_beta_charge: -1
+  evidence:
+    source: finite beta-graded refined PL and exact raw branching
+    level: finite_pl_and_exact_branching
+instanton_anchor:
+  role: negative-CS E_- conserved current
+  degree: 2
+  parent_representations: [1, 0, 0, 0, 0, 0, 1]
+  child_representation: [1, 0, 0, 0, 0, 0]
+  raw_charges: {x: 8, q: 0}
+  target: {B: "-5/2", I: 1}
+  evidence:
+    source: Hanany-family orientation plus exact branching and zero-mode convention
+    level: project_derived
+expected_charge_map:
+  - ["-5/16", "-49/16"]
+  - ["1/8", "-3/8"]
+charge_lattice: {B_step: "1/2", I_step: 1}
+literature_orientation:
+  convention: Ferlito--Hanany--Mekareeya--Zafrir negative-CS
+  project_note: references/project_notes/hanany_negative_cs_convention.md
+conjugate_check:
+  role: conjugate anti-instanton
+  degree: 2
+  parent_representations: [1, 0, 0, 0, 0, 0, 1]
+  child_representation: [0, 0, 0, 0, 0, 1]
+  raw_charges: {x: -8, q: 0}
+  target: {B: "5/2", I: -1}
+validation_anchors:
+  - role: classical baryon
+    degree: 4
+    child_representation: [0, 0, 0, 1, 0, 0]
+    raw_charges: {x: -3, q: -1}
+    target: {B: 4, I: 0}
+  - role: mixed anti-instanton
+    degree: 4
+    child_representation: [0, 1, 0, 0, 0, 0]
+    raw_charges: {x: -5, q: 1}
+    target: {B: "-3/2", I: -1}
+  - role: mixed instanton
+    degree: 4
+    child_representation: [0, 0, 0, 0, 1, 0]
+    raw_charges: {x: 5, q: -1}
+    target: {B: "3/2", I: 1}

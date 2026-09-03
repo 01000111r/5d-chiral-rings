@@ -1,0 +1,12 @@
+{
+  "campaign_id": "su4_nf7_signed_branching",
+  "files": [
+    "preflight_results.json",
+    "preflight_results.md",
+    "preflight_checks.json",
+    "preflight_manifest.json",
+    "input_hashes.json",
+    "command_log.txt"
+  ],
+  "order": 10
+}

@@ -55,6 +55,7 @@ class ChargeMapSpec:
     validation_anchors: tuple[ChargeAnchor, ...] = ()
     notes: tuple[str, ...] = ()
     expected_unique: bool | None = None
+    charge_lattice: Mapping | None = None
 
 
 @dataclass(frozen=True)
@@ -184,7 +185,7 @@ def load_charge_map_spec(path):
     def anchor(entry):
         return ChargeAnchor(entry["id"], ChargeVector(tuple(data["raw_charges"]), tuple(entry["raw_charges"][x] for x in data["raw_charges"])),
             ChargeVector(tuple(data["physical_charges"]), tuple(entry["physical_charges"][x] for x in data["physical_charges"])),
-            entry.get("t_degree"), tuple(entry.get("su5_dynkin_labels", ())), entry.get("justification", ""))
+            entry.get("t_degree"), tuple(entry.get("child_dynkin_labels", entry.get("su5_dynkin_labels", ()))), entry.get("justification", ""))
     return ChargeMapSpec(data["id"], tuple(data["raw_charges"]), tuple(data["physical_charges"]),
         tuple(anchor(x) for x in data["defining_anchors"]), tuple(anchor(x) for x in data["validation_anchors"]),
-        tuple(data.get("notes", ())), data.get("expected_unique"))
+        tuple(data.get("notes", ())), data.get("expected_unique"), data.get("charge_lattice"))

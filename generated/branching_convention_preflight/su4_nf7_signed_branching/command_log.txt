@@ -1,0 +1,2 @@
+./scripts/sage-python -m hwg_pipeline validate-branching-conventions theories/campaigns/su4_nf7_signed_branching.yaml --order 10 --strict
+status: pass

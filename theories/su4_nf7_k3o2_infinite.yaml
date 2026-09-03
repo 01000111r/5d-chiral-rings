@@ -1,0 +1,36 @@
+id: su4_nf7_k3o2_infinite
+title: SU(4)+7F at infinite coupling with |k|=3/2
+nonphysical: false
+gauge_algebra: A3
+gauge_display_name: SU(4)
+number_of_flavours: 7
+chern_simons_level: "3/2"
+chern_simons_convention: absolute value
+coupling: infinite
+grading_variable: t
+source_references:
+  - path: references/overleaf/su3_5f_6f_hwg_results.tex
+    description: General N_f=2N-1 infinite-coupling HWG, specialized literally at N=4
+    equation: "11.3"
+simple_factors:
+  - id: enhanced
+    cartan_type: A
+    rank: 7
+    display_name: SU(8)
+    highest_weight_fugacities: [mu_1, mu_2, mu_3, mu_4, mu_5, mu_6, mu_7]
+abelian_factors:
+  - id: q
+    display_name: U(1)
+    fugacity: q
+pe:
+  original_pe_latex: |-
+    \PE\!\left[(\mu_1\mu_7+1)t^2+(\mu_2\mu_6+q\mu_3+q^{-1}\mu_5)t^4
+    +\mu_3\mu_5t^6-\mu_3\mu_5t^8\right]
+  terms:
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {enhanced: [1, 0, 0, 0, 0, 0, 1]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {enhanced: [0, 0, 0, 0, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {enhanced: [0, 1, 0, 0, 0, 1, 0]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 1, 0, 0, 0, 0]}, abelian_charges: {q: 1}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 0, 0, 1, 0, 0]}, abelian_charges: {q: -1}}}
+    - {coefficient: 1, monomial: {t_degree: 6, representations: {enhanced: [0, 0, 1, 0, 1, 0, 0]}, abelian_charges: {q: 0}}}
+    - {coefficient: -1, monomial: {t_degree: 8, representations: {enhanced: [0, 0, 1, 0, 1, 0, 0]}, abelian_charges: {q: 0}}}

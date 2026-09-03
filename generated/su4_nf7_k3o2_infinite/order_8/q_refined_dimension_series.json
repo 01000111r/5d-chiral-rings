@@ -1,0 +1,94 @@
+{
+  "coefficients_by_t_degree": {
+    "0": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 1
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 64
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 56
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 2016
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 56
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 2856
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 41727
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 2856
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {
+          "q": "-2"
+        },
+        "coefficient": 1176
+      },
+      {
+        "abelian_charges": {
+          "q": "-1"
+        },
+        "coefficient": 72192
+      },
+      {
+        "abelian_charges": {
+          "q": "0"
+        },
+        "coefficient": 637580
+      },
+      {
+        "abelian_charges": {
+          "q": "1"
+        },
+        "coefficient": 72192
+      },
+      {
+        "abelian_charges": {
+          "q": "2"
+        },
+        "coefficient": 1176
+      }
+    ]
+  },
+  "maximum_t_degree": 8,
+  "theory_id": "su4_nf7_k3o2_infinite"
+}

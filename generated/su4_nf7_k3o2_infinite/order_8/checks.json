@@ -1,0 +1,22 @@
+{
+  "maximum_t_degree": 8,
+  "routes_compared": [
+    "plethystic_exponential"
+  ],
+  "theory_id": "su4_nf7_k3o2_infinite",
+  "validation_results": {
+    "all_multiplicities_are_integers": true,
+    "all_multiplicities_are_nonnegative": true,
+    "all_passed": true,
+    "constant_coefficient_is_one": true,
+    "no_terms_above_requested_degree": true,
+    "pe_equals_rational_product": null,
+    "truncation_stability": {
+      "0": true,
+      "2": true,
+      "4": true,
+      "6": true,
+      "8": true
+    }
+  }
+}

@@ -350,6 +350,43 @@ def _pl_outputs(theory, order, hwg, output):
         checks.update({"degree_2_independent_value":actual2==expected2,
                        "degree_3_independent_value":actual3==expected3,
                        "degree_4_independent_value":{k:int(c) for (d,q),x in pl if d==4 for k,c in x}=={((0,0,0,0,0),):-1,((1,0,0,0,1),):-1}})
+    if theory.id == "su4_nf7_k3o2_infinite":
+        actual2 = {(int(dict(q)["q"]), labels[0]): int(c)
+                   for (d, q), content in pl if d == 2 for labels, c in content}
+        actual4 = {(int(dict(q)["q"]), labels[0]): int(c)
+                   for (d, q), content in pl if d == 4 for labels, c in content}
+        checks.update({
+            "degree_2_independent_value": actual2 == {
+                (0, (0, 0, 0, 0, 0, 0, 0)): 1,
+                (0, (1, 0, 0, 0, 0, 0, 1)): 1},
+            "degree_3_is_empty": not any(d == 3 for (d, _), _ in pl),
+            "degree_4_independent_value": actual4 == {
+                (1, (0, 0, 1, 0, 0, 0, 0)): 1,
+                (-1, (0, 0, 0, 0, 1, 0, 0)): 1,
+                (0, (0, 0, 0, 0, 0, 0, 0)): -1,
+                (0, (1, 0, 0, 0, 0, 0, 1)): -1},
+            "unrefined_degree_2_is_64": dict(plain).get(2) == 64,
+            "unrefined_degree_4_is_48": dict(plain).get(4) == 48,
+        })
+        if order >= 10:
+            expected10 = {-2: ZZ(16576), -1: ZZ(-37024), 0: ZZ(116879),
+                          1: ZZ(-37024), 2: ZZ(16576)}
+            actual10 = {int(dict(charges)["q"]): coefficient
+                        for (degree, charges), coefficient in dim if degree == 10}
+            baseline_path = (_root() / "generated" / theory.id / "order_8" /
+                             "refined_plethystic_logarithm.json")
+            baseline = (_load_virtual_pl(theory, baseline_path, 8)
+                        if baseline_path.exists() else None)
+            truncated = VirtualCharacterSeries(theory, pl.terms, 8)
+            checks.update({
+                "order_8_full_refined_regression": baseline is not None and truncated == baseline,
+                "no_odd_degree_sectors_through_9": not any(
+                    degree <= 9 and degree % 2 for (degree, _), _ in pl),
+                "degree_10_q_refined_dimension_benchmark": actual10 == expected10,
+                "degree_10_unrefined_is_75983": dict(plain).get(10) == 75983,
+                "degree_10_q_inversion_symmetry": all(
+                    actual10.get(charge) == actual10.get(-charge) for charge in actual10),
+            })
     checks["all_passed"]=all(checks.values())
     cp={"theory_id":theory.id,"maximum_t_degree":int(order),"direct_scalar_plethystic_logarithm":{str(d):_rational(c) for d,c in direct},"validation_results":checks}
     (output/"plethystic_logarithm_checks.json").write_text(json.dumps(cp,indent=2,sort_keys=True)+"\n")

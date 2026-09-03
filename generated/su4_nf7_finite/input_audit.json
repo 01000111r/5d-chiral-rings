@@ -1,0 +1,232 @@
+{
+  "A6_convention": "Dynkin labels [a1,a2,a3,a4,a5,a6] in WeylCharacterRing(A6, style=coroots)",
+  "beta_charge_convention": "B_beta is the exponent of beta",
+  "cancelled_source_terms": [
+    {
+      "A6_labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "A6_labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": -1,
+      "t_degree": 8
+    }
+  ],
+  "domain_check": "7 >= 2*4-1",
+  "exact_cancellation": "+mu_4 mu_3 t^8 - mu_4 mu_3 t^8 = 0",
+  "finite_coupling_identification": "common classical finite-coupling Higgs-branch reference; not a signed-CS orientation choice",
+  "finite_coupling_instanton_charge": "I = 0",
+  "fixture_sha256": "3d4291875665b2bd9d08c0c5ec5fa9940104cf239f676d706289d2485b2bf98f",
+  "general_formula": "PE[t^2 + (mu_Nc beta + mu_(Nf-Nc) beta^(-1)) t^Nc + sum_(j=1)^Nc mu_j mu_(Nf-j) t^(2j) - mu_Nc mu_(Nf-Nc) t^(2Nc)]",
+  "input_checks": {
+    "all_A6_labels_length_six": true,
+    "all_passed": true,
+    "beta_only_abelian_fugacity": true,
+    "degree_eight_sum_zero": true,
+    "degree_eight_terms_identical_apart_from_sign": true,
+    "domain_7_ge_7": true,
+    "local_source_exists": true,
+    "no_instanton_fugacity": true,
+    "six_denominator_no_numerator": true,
+    "six_positive_simplified_terms": true,
+    "source_identifies_equation_5_52": true,
+    "source_says_finite_coupling": true
+  },
+  "physical_baryon_conversion": "B = 4 B_beta",
+  "rational_product": "1/[(1-t^2)(1-mu_1 mu_6 t^2)(1-mu_2 mu_5 t^4)(1-beta mu_4 t^4)(1-beta^(-1) mu_3 t^4)(1-mu_3 mu_4 t^6)]",
+  "simplified_pe": "PE[(1 + mu_1 mu_6)t^2 + (mu_2 mu_5 + beta mu_4 + beta^(-1) mu_3)t^4 + mu_3 mu_4 t^6]",
+  "source_equation": "5.52",
+  "source_file": "references/overleaf/su4_nf7_finite_hwg_results.tex",
+  "source_identification": "finite coupling",
+  "source_sha256": "5604c7e678a5215a377165513f654a3857a4409e209bbdd7c07c6580002ca050",
+  "structured_pe_terms": [
+    {
+      "A6_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "A6_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "A6_labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "A6_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 1,
+      "coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "A6_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": -1,
+      "coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "A6_labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "t_degree": 6
+    }
+  ],
+  "structured_product_factors": [
+    {
+      "A6_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 2
+    },
+    {
+      "A6_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 2
+    },
+    {
+      "A6_labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 4
+    },
+    {
+      "A6_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 1,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 4
+    },
+    {
+      "A6_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "beta_charge": -1,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 4
+    },
+    {
+      "A6_labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "beta_charge": 0,
+      "coefficient": 1,
+      "power": -1,
+      "t_degree": 6
+    }
+  ],
+  "substitution": {
+    "N_c": 4,
+    "N_f": 7
+  },
+  "theory_id": "su4_nf7_finite",
+  "unresolved_ambiguities": [],
+  "unsimplified_exponent": "t^2 + (mu_4 beta + mu_3 beta^(-1)) t^4 + mu_1 mu_6 t^2 + mu_2 mu_5 t^4 + mu_3 mu_4 t^6 + mu_4 mu_3 t^8 - mu_4 mu_3 t^8"
+}

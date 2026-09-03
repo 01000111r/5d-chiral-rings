@@ -1,0 +1,1443 @@
+{
+  "coefficients_by_t_degree": {
+    "0": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "10": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              2,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              2,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              1,
+              1,
+              0,
+              1,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              3,
+              0,
+              1,
+              0,
+              0,
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 2
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              2,
+              0,
+              0,
+              2,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 2
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              2,
+              0,
+              0,
+              2,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              1,
+              1,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              1,
+              0,
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              3,
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              3,
+              1,
+              0,
+              0,
+              1,
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              4,
+              0,
+              0,
+              0,
+              0,
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              5,
+              0,
+              0,
+              0,
+              0,
+              5
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              2,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              1,
+              0,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              0,
+              1,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              3,
+              0,
+              0,
+              1,
+              0,
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              2,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "2": [
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "4": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "6": [
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              3,
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "8": [
+      {
+        "abelian_charges": {
+          "beta": "-2"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              2,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              1,
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "-1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              1,
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 2
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              2,
+              0,
+              0,
+              2,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              1,
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              1,
+              0,
+              0,
+              1,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              3,
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "0"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              4,
+              0,
+              0,
+              0,
+              0,
+              4
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              1,
+              0,
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "1"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              2,
+              0,
+              0,
+              1,
+              0,
+              2
+            ]
+          }
+        ],
+        "multiplicity": 1
+      },
+      {
+        "abelian_charges": {
+          "beta": "2"
+        },
+        "dynkin_labels": [
+          {
+            "cartan_factor_id": "flavour",
+            "labels": [
+              0,
+              0,
+              0,
+              2,
+              0,
+              0
+            ]
+          }
+        ],
+        "multiplicity": 1
+      }
+    ]
+  },
+  "maximum_t_degree": 10,
+  "theory_id": "su4_nf7_finite"
+}

@@ -1,0 +1,14 @@
+Exact pipeline commands (wall-clock elapsed seconds, bash TIMEFORMAT=%R):
+3.854  ./scripts/sage-python -m hwg_pipeline expand su4_nf7_finite --order 10
+8.228  ./scripts/sage-python -m hwg_pipeline characters su4_nf7_finite --order 10
+110.763  ./scripts/sage-python -m hwg_pipeline plethystic-log su4_nf7_finite --order 10
+158.225  ./scripts/sage-python -m hwg_pipeline reconstruct su4_nf7_finite --order 10
+
+Validation rerun after benchmark checks were added:
+5.685  ./scripts/sage-python -m hwg_pipeline characters su4_nf7_finite --order 10
+108.815  ./scripts/sage-python -m hwg_pipeline plethystic-log su4_nf7_finite --order 10
+149.869  ./scripts/sage-python -m hwg_pipeline reconstruct su4_nf7_finite --order 10
+
+Tests:
+154.927  ./scripts/sage-python -m pytest -q tests/test_su4_nf7_finite.py
+140.655  ./scripts/sage-python -m pytest -q tests/test_expansion.py tests/test_characters.py tests/test_plethystic.py tests/test_su3_nf5_finite.py tests/test_su3_nf6_finite.py tests/test_theory_data.py

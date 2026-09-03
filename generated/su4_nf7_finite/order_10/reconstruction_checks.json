@@ -1,0 +1,15 @@
+{
+  "maximum_t_degree": 10,
+  "theory_id": "su4_nf7_finite",
+  "validation_results": {
+    "all_passed": true,
+    "difference_is_empty": true,
+    "independent_scalar_pe_equal": true,
+    "multiplicities_integral": true,
+    "multiplicities_nonnegative": true,
+    "order_stability": true,
+    "q_refined_dimensions_equal": true,
+    "refined_character_series_equal": true,
+    "unrefined_dimensions_equal": true
+  }
+}

@@ -182,6 +182,27 @@ def _character_outputs(theory, order, hwg, output):
         expected = {0: 1, 1: 0, 2: 36, 3: 30, 4: 630}
         actual = {int(d): int(c) for d, c in plain}
         checks["leading_coefficients"] = all(actual.get(d, 0) == c for d, c in expected.items())
+    if theory.id == "su4_nf7_finite" and order >= 10:
+        expected_refined = {
+            0: {0: 1}, 2: {0: 49},
+            4: {-1: 35, 0: 1176, 1: 35},
+            6: {-1: 1358, 0: 18472, 1: 1358},
+            8: {-2: 490, -1: 26166, 0: 214963, 1: 26166, 2: 490},
+            10: {-2: 16170, -1: 335223, 0: 1987047, 1: 335223, 2: 16170},
+        }
+        actual_refined = {}
+        for (degree, charges), coefficient in refined:
+            actual_refined.setdefault(int(degree), {})[int(dict(charges)["beta"])] = int(coefficient)
+        expected_plain = {0: 1, 1: 0, 2: 49, 3: 0, 4: 1246, 5: 0,
+                          6: 21188, 7: 0, 8: 268275, 9: 0, 10: 2689833}
+        checks.update({
+            "beta_refined_dimension_benchmark_through_10": actual_refined == expected_refined,
+            "beta_inversion_symmetry": all(
+                sectors.get(charge) == sectors.get(-charge)
+                for sectors in actual_refined.values() for charge in sectors),
+            "unrefined_dimension_benchmark_through_10":
+                {int(d): int(c) for d, c in plain} == expected_plain,
+        })
     checks["all_passed"] = all(checks.values())
     check_payload = {"theory_id": theory.id, "maximum_t_degree": int(order), "validation_results": checks}
     (output / "character_checks.json").write_text(json.dumps(check_payload, indent=2, sort_keys=True) + "\n")
@@ -387,6 +408,41 @@ def _pl_outputs(theory, order, hwg, output):
                 "degree_10_q_inversion_symmetry": all(
                     actual10.get(charge) == actual10.get(-charge) for charge in actual10),
             })
+    if theory.id == "su4_nf7_finite" and order >= 10:
+        def sector(degree):
+            return {(int(dict(q)["beta"]), labels[0]): int(c)
+                    for (d, q), content in pl if d == degree for labels, c in content}
+        expected2 = {
+            (0, (0, 0, 0, 0, 0, 0)): 1,
+            (0, (1, 0, 0, 0, 0, 1)): 1,
+        }
+        expected4 = {
+            (1, (0, 0, 0, 1, 0, 0)): 1,
+            (-1, (0, 0, 1, 0, 0, 0)): 1,
+            (0, (0, 0, 0, 0, 0, 0)): -1,
+            (0, (1, 0, 0, 0, 0, 1)): -1,
+        }
+        expected_dim = {
+            2: {0: 49}, 4: {-1: 35, 0: -49, 1: 35},
+            6: {-1: -357, 0: 48, 1: -357},
+            8: {-2: -140, -1: 2499, 0: -490, 1: 2499, 2: -140},
+            10: {-2: 4655, -1: -13916, 0: 12690, 1: -13916, 2: 4655},
+        }
+        actual_dim = {}
+        for (degree, charges), coefficient in dim:
+            actual_dim.setdefault(int(degree), {})[int(dict(charges)["beta"])] = int(coefficient)
+        checks.update({
+            "degree_2_independent_value": sector(2) == expected2,
+            "degree_4_independent_value": sector(4) == expected4,
+            "no_odd_degree_sectors_through_9": not any(
+                degree <= 9 and degree % 2 for (degree, _), _ in pl),
+            "beta_refined_dimension_pl_benchmark_through_10": actual_dim == expected_dim,
+            "beta_inversion_symmetry": all(
+                sectors.get(charge) == sectors.get(-charge)
+                for sectors in actual_dim.values() for charge in sectors),
+            "unrefined_pl_benchmark_through_10": dict(plain) == {
+                2: 49, 4: 21, 6: -666, 8: 4228, 10: -5832},
+        })
     checks["all_passed"]=all(checks.values())
     cp={"theory_id":theory.id,"maximum_t_degree":int(order),"direct_scalar_plethystic_logarithm":{str(d):_rational(c) for d,c in direct},"validation_results":checks}
     (output/"plethystic_logarithm_checks.json").write_text(json.dumps(cp,indent=2,sort_keys=True)+"\n")

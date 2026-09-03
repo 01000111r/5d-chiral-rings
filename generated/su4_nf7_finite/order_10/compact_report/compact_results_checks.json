@@ -1,0 +1,28 @@
+{
+  "order": 10,
+  "theory_id": "su4_nf7_finite",
+  "validation_results": {
+    "all_multiplicities_are_exact_integers": true,
+    "all_passed": true,
+    "all_stored_terms_through_order_included": true,
+    "character_hilbert_retains_simple_factor_labels_and_q": true,
+    "dynkin_labels_have_expected_rank": true,
+    "existing_mathematical_results_unchanged": true,
+    "generation_is_deterministic": true,
+    "latex_has_no_python_json_or_sage_objects": true,
+    "loaded_results_have_requested_order": true,
+    "negative_pl_coefficients_retained": true,
+    "no_character_valued_q_equals_one_series": true,
+    "no_terms_above_order": true,
+    "q_equals_one_dimension_hilbert_matches_stored_unrefined": true,
+    "q_equals_one_dimension_pl_matches_stored_unrefined": true,
+    "q_refined_dimension_hilbert_has_no_dynkin_labels": true,
+    "q_refined_dimension_hilbert_matches_stored": true,
+    "q_refined_dimension_hilbert_retains_every_q_charge": true,
+    "q_refined_dimension_pl_has_no_dynkin_labels": true,
+    "q_refined_dimension_pl_retains_every_q_charge": true,
+    "q_refined_dimension_pl_signed_coefficients_match_stored": true,
+    "refined_character_pl_retains_simple_factor_labels_and_q": true,
+    "theory_ids_agree": true
+  }
+}

@@ -223,7 +223,9 @@ def generate_compact_latex(root, theory_id, order):
     """Validate stored files and write the deterministic compact report trio."""
     root = Path(root)
     theory_path = root / "theories" / f"{theory_id}.yaml"
-    audit_path = root / "generated" / theory_id / "input_audit.md"
+    audit_base = root / "generated" / theory_id
+    audit_path = (audit_base / "input_audit.json" if (audit_base / "input_audit.json").exists()
+                  else audit_base / "input_audit.md")
     result_dir = root / "generated" / theory_id / f"order_{order}"
     theory = load_theory(theory_path)
     global ABELIAN_ID
@@ -271,7 +273,8 @@ def generate_compact_latex(root, theory_id, order):
                      if has_abelian else True)
     pl_match = dimension_sums(f"{ABELIAN_ID}_refined_dimension_pl.json") == pl_plain if has_abelian else True
     pe = theory.pe.original_pe_latex
-    product = theory.rational_product.original_rational_product_latex
+    product = (theory.rational_product.original_rational_product_latex
+               if theory.rational_product is not None else None)
     title = (rf"$\mathrm{{{theory.gauge_display_name}}}+{int(theory.number_of_flavours)}F$ at finite coupling"
              if theory.coupling == "finite" else
              rf"$\mathrm{{{theory.gauge_display_name}}}+{int(theory.number_of_flavours)}F$ at $\lvert k\rvert={render_exact(abs(theory.chern_simons_level))}$")
@@ -320,32 +323,40 @@ $\operatorname{{PL}}[H(t)]=\dim_{{{group_latex}}}
 \[
 {rendered_dim_pl}
 \]""" if has_abelian else "")
+    nc = int(str(theory.gauge_algebra)[1:]) + 1
     finite_specialization = ({
-        5: (r"t^2+(\mu_3\beta+\mu_2\beta^{-1})t^3+\mu_1\mu_4t^2+"
+        (3, 5): (r"t^2+(\mu_3\beta+\mu_2\beta^{-1})t^3+\mu_1\mu_4t^2+"
             r"\mu_2\mu_3t^4+\mu_3\mu_2t^6-\mu_3\mu_2t^6",
             r"+\mu_3\mu_2t^6-\mu_3\mu_2t^6=0"),
-        6: (r"t^2+\mu_3(\beta+\beta^{-1})t^3+\mu_1\mu_5t^2+"
+        (3, 6): (r"t^2+\mu_3(\beta+\beta^{-1})t^3+\mu_1\mu_5t^2+"
             r"\mu_2\mu_4t^4+\mu_3^2t^6-\mu_3^2t^6",
             r"+\mu_3^2t^6-\mu_3^2t^6=0"),
-    }.get(int(theory.number_of_flavours)))
+        (4, 7): (r"t^2+(\mu_4\beta+\mu_3\beta^{-1})t^4+\mu_1\mu_6t^2+"
+            r"\mu_2\mu_5t^4+\mu_3\mu_4t^6+\mu_4\mu_3t^8-\mu_4\mu_3t^8",
+            r"+\mu_4\mu_3t^8-\mu_4\mu_3t^8=0"),
+    }.get((nc, int(theory.number_of_flavours))))
     finite_source = (r"""\section{Finite-coupling source specialization}
 Equation (5.52) gives
 \[\mathrm{HWG}^{\mathrm{finite}}_{N_c,N_f}=\PE\!\left[t^2+(\mu_{N_c}\beta+\mu_{N_f-N_c}\beta^{-1})t^{N_c}+\sum_{j=1}^{N_c}\mu_j\mu_{N_f-j}t^{2j}-\mu_{N_c}\mu_{N_f-N_c}t^{2N_c}\right].\]
-""" + f"For $N_c=3,N_f={int(theory.number_of_flavours)}$, the unsimplified exponent is\n"
+""" + f"For $N_c={nc},N_f={int(theory.number_of_flavours)}$, the unsimplified exponent is\n"
         + r"\[" + finite_specialization[0] + r".\]" + "\nThus $"
         + finite_specialization[1] + "$ exactly.\n"
         if theory.coupling == "finite" and finite_specialization else "")
-    baryon_labels = ("[0,0,1,0,0]" if int(theory.number_of_flavours) == 6
-                      else "[0,0,1,0]")
-    antibaryon_labels = ("[0,0,1,0,0]" if int(theory.number_of_flavours) == 6
-                          else "[0,1,0,0]")
+    flavour_rank = int(theory.simple_factors[0].rank)
+    baryon_labels = render_dynkin([int(i == nc-1) for i in range(flavour_rank)])
+    antibaryon_labels = render_dynkin([int(i == flavour_rank-nc) for i in range(flavour_rank)])
     classical_summary = (rf"""\section{{Classical operator summary}}
 The calculated PL gives degree-two singlet and adjoint mesonic candidates,
 ${baryon_labels}$ at $B_\beta=+1$, and ${antibaryon_labels}$ at $B_\beta=-1$.
-The first negative degree is four, with singlet and adjoint first-relation
-candidates. No complete-intersection claim is made.
-\[B=3B_\beta,\qquad I=0.\]
+Positive baryonic and negative neutral PL terms may coexist; no primitive
+relation or complete-intersection claim is made from signs alone.
+\[B={nc}B_\beta,\qquad I=0.\]
 """ if theory.coupling == "finite" else "")
+    product_section = (rf"""\begin{{equation}}
+\resizebox{{0.98\linewidth}}{{!}}{{${{\displaystyle
+\mathrm{{HWG}}={product}.}}$}}
+\end{{equation}}""" if product else
+        r"""\paragraph{Rational-product form.} N/A: no independently supplied rational-product source.""")
     document = rf"""\documentclass[10pt]{{article}}
 \usepackage{{amsmath}}
 \usepackage{{amssymb}}
@@ -372,10 +383,7 @@ the latter agrees with the independently stored scalar result.
 \begin{{equation}}
 \mathrm{{HWG}}={pe}.
 \end{{equation}}
-\begin{{equation}}
-\resizebox{{0.98\linewidth}}{{!}}{{${{\displaystyle
-\mathrm{{HWG}}={product}.}}$}}
-\end{{equation}}
+{product_section}
 
 \section{{Highest-weight expansion}}
 \[
@@ -446,9 +454,9 @@ the latter agrees with the independently stored scalar result.
         "q_refined_dimension_plethystic_logarithm": sum(len(x) for x in dim_pl.values()),
         "fully_unrefined_plethystic_logarithm": sum(_fraction(x) != 0 for x in pl_plain.values()),
     }
-    read_paths = [theory_path, audit_path, *paths]
+    read_paths = [theory_path, *([audit_path] if audit_path.exists() else []), *paths]
     manifest = {"theory_id": theory_id, "order": order,
-                "source_files_read": [str(x.relative_to(root)) for x in (theory_path, audit_path)],
+                "source_files_read": [str(x.relative_to(root)) for x in (theory_path, audit_path) if x.exists()],
                 "result_files_read": [str(x.relative_to(root)) for x in paths],
                 "sha256": {str(x.relative_to(root)): _hash(x) for x in read_paths},
                 "generated_sections": ["highest_weight_generating_function", "highest_weight_expansion",

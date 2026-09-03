@@ -1,0 +1,63 @@
+{
+  "all_passed": true,
+  "campaign_id": "su4_nf7_signed_branching",
+  "canonical_B": "microscopic baryon number normalized by B(Q)=1",
+  "failures": [],
+  "order": 10,
+  "theories": [
+    {
+      "charge_lattice": {
+        "B_step": "1/2",
+        "I_step": 1
+      },
+      "classical_B": "-4",
+      "classical_I": "0",
+      "input_paths": [
+        "generated/su4_nf7_finite/order_10/refined_plethystic_logarithm.json",
+        "generated/su4_nf7_k3o2_infinite/order_10/refined_plethystic_logarithm.json",
+        "generated/su4_nf7_finite/order_10/reconstruction_checks.json",
+        "generated/su4_nf7_k3o2_infinite/order_10/reconstruction_checks.json",
+        "generated/su4_nf7_k3o2_infinite/order_10/manifest_branching/branched_refined_plethystic_logarithm.json",
+        "theories/branching/su4_nf7_k3o2_to_finite.yaml"
+      ],
+      "instanton_B": "-5/2",
+      "instanton_I": "1",
+      "instanton_representation": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inverse_charge_map": [
+        [
+          "-3/4",
+          "49/8"
+        ],
+        [
+          "-1/4",
+          "-5/8"
+        ]
+      ],
+      "signed_k": "-3/2",
+      "solved_charge_map": {
+        "B": [
+          "-5/16",
+          "-49/16"
+        ],
+        "I": [
+          "1/8",
+          "-3/8"
+        ],
+        "raw_charge_order": [
+          "x",
+          "q"
+        ]
+      },
+      "status": "pass",
+      "theory_id": "su4_nf7_k3o2_infinite",
+      "translated_children": 234
+    }
+  ]
+}

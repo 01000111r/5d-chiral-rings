@@ -1,0 +1,112 @@
+{
+  "baryon_normalization": {
+    "fundamental_hyper": 1
+  },
+  "classical_anchor": {
+    "child_representation": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "degree": 4,
+    "evidence": {
+      "level": "finite_pl_and_exact_branching",
+      "source": "finite beta-graded refined PL and exact raw branching"
+    },
+    "finite_beta_charge": -1,
+    "parent_representations": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "raw_charges": {
+      "q": 1,
+      "x": 3
+    },
+    "role": "classical antibaryon",
+    "target": {
+      "B": -4,
+      "I": 0
+    }
+  },
+  "conjugate_check": {
+    "child_representation": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "degree": 2,
+    "parent_representations": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "raw_charges": {
+      "q": 0,
+      "x": -8
+    },
+    "role": "conjugate anti-instanton",
+    "target": {
+      "B": "5/2",
+      "I": -1
+    }
+  },
+  "cs_orientation": "hanany_negative",
+  "instanton_anchor": {
+    "child_representation": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "degree": 2,
+    "evidence": {
+      "level": "project_derived",
+      "source": "Hanany-family orientation plus exact branching and zero-mode convention"
+    },
+    "parent_representations": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "raw_charges": {
+      "q": 0,
+      "x": 8
+    },
+    "role": "negative-CS E_- conserved current",
+    "target": {
+      "B": "-5/2",
+      "I": 1
+    }
+  },
+  "literature_orientation": {
+    "convention": "Ferlito--Hanany--Mekareeya--Zafrir negative-CS",
+    "project_note": "references/project_notes/hanany_negative_cs_convention.md"
+  },
+  "physical_basis": "microscopic_baryon_and_instanton",
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
+  "signed_k": "-3/2"
+}

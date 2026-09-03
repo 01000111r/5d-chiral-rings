@@ -1,0 +1,115 @@
+{
+  "baryon_normalization": {
+    "fundamental_hyper": 1
+  },
+  "base_commit": "2411c8f3213aa3f9fa6ef32f4d16305ab416cf60",
+  "comparison_summary": {
+    "exact-match": 31,
+    "representation-match-different-multiplicity": 39
+  },
+  "cs_orientation": "canonical_negative",
+  "degree_summary": [
+    {
+      "combined_physical_uv_sectors": 4,
+      "degree": 2,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 1,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 1,
+      "native_finite_terms": 2,
+      "native_uv_parent_terms": 3,
+      "raw_branched_child_terms": 5,
+      "uv_only_channels": 2
+    },
+    {
+      "combined_physical_uv_sectors": 6,
+      "degree": 4,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 1,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 3,
+      "native_finite_terms": 4,
+      "native_uv_parent_terms": 4,
+      "raw_branched_child_terms": 6,
+      "uv_only_channels": 2
+    },
+    {
+      "combined_physical_uv_sectors": 13,
+      "degree": 6,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 2,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 5,
+      "native_finite_terms": 7,
+      "native_uv_parent_terms": 7,
+      "raw_branched_child_terms": 13,
+      "uv_only_channels": 6
+    },
+    {
+      "combined_physical_uv_sectors": 46,
+      "degree": 8,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 9,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 8,
+      "native_finite_terms": 17,
+      "native_uv_parent_terms": 26,
+      "raw_branched_child_terms": 50,
+      "uv_only_channels": 29
+    },
+    {
+      "combined_physical_uv_sectors": 112,
+      "degree": 10,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 26,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 14,
+      "native_finite_terms": 40,
+      "native_uv_parent_terms": 70,
+      "raw_branched_child_terms": 134,
+      "uv_only_channels": 72
+    }
+  ],
+  "finite_theory_id": "su4_nf7_finite",
+  "generated_file_hashes": {
+    "branching_checks.json": "8d1d4314a981e0d84d64cec0c8c2e3ed3892002497975f58aa40078198d326bf",
+    "branching_comparison.tex": "f96087539359036adf9c2aad7cc72f3749e5b05dbd1ec2a0fe33be698e556586",
+    "charge_anchors.json": "65510f4de5ff82f9ffcac8704040b45a4086267509ee1a88aa8b0527821d6e9c",
+    "charge_map.json": "328d872e6faa2cd1c1ce73d0fd4cf26bb32f4b3c27a5501c85a2f20cfb1635ec",
+    "finite_uv_comparison.json": "01ef39b9620028a79ca6c4d350d59c4851ce831932dc806d9d8600065faf776e",
+    "physical_branching.json": "050e8271c4cbae0d75ac4a7986ebd89baaab6261efbaa09d623d3a24710dc700",
+    "raw_branching.json": "f5acb1d67e6224a466ddbd5a250538a8dd7161bc6ca953f4eee443e695a59c86"
+  },
+  "input_hashes": {
+    "generated/su4_nf7_finite/order_10/reconstruction_checks.json": "a69c93be4f2345ecdae1e8d78a9e0daeb5f65043bbe194d65a2057a2b8b2e66b",
+    "generated/su4_nf7_finite/order_10/refined_plethystic_logarithm.json": "586ba6f067b55f343272f39eb2c82c6f6410c4152f0632a32d6055e03b63e1fd",
+    "generated/su4_nf7_k1o2_infinite/order_10/branching_comparison/raw_branching.json": "f5acb1d67e6224a466ddbd5a250538a8dd7161bc6ca953f4eee443e695a59c86",
+    "generated/su4_nf7_k1o2_infinite/order_10/manifest_branching/branching_checks.json": "1684d29e0c2b50cd84003e3a3170d5bc9ccc74521a32a2b20a380003528fca9c",
+    "generated/su4_nf7_k1o2_infinite/order_10/reconstruction_checks.json": "a9fdb3799a1a174cec4e5fede657022f548119edac3347f430cc7035b77dab9c",
+    "generated/su4_nf7_k1o2_infinite/order_10/refined_plethystic_logarithm.json": "eadf6257a83f9aa00757698c1348b6e4db37a130461115a21131ad9764c16d14",
+    "theories/branching/su4_nf7_k1o2_to_finite.yaml": "0d8a9b4045b129f69f89f125b90fbdb403f79d9d0c2f846e15866191d6103bf4",
+    "theories/charge_maps/su4_nf7_k1o2_manifest_canonical.yaml": "be06b460874bba3143125adecce0be450868a2127f42cbf347f58abce6e4abf9",
+    "theories/su4_nf7_finite.yaml": "3d4291875665b2bd9d08c0c5ec5fa9940104cf239f676d706289d2485b2bf98f",
+    "theories/su4_nf7_k1o2_infinite.yaml": "e23f2a2aa78e853fd9a28fe346683ee620f4515bac950f5ab0b47fdfd3843449"
+  },
+  "number_combined_physical_sectors": 181,
+  "number_raw_child_terms": 208,
+  "number_translated_child_terms": 208,
+  "number_uv_parent_terms": 110,
+  "order": 10,
+  "physical_basis": "microscopic_baryon_and_instanton",
+  "physical_sector_counts": {
+    "classical_baryonic": 54,
+    "mixed-baryon-instanton": 108,
+    "mixed_baryon_instanton": 108,
+    "neutral": 19,
+    "pure-instanton": 0,
+    "pure_instanton": 0
+  },
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
+  "signed_k": "-1/2",
+  "uv_theory_id": "su4_nf7_k1o2_infinite"
+}

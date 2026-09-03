@@ -352,7 +352,8 @@ Positive baryonic and negative neutral PL terms may coexist; no primitive
 relation or complete-intersection claim is made from signs alone.
 \[B={nc}B_\beta,\qquad I=0.\]
 """ if theory.coupling == "finite" else "")
-    product_section = (rf"""\begin{{equation}}
+    product_section = (rf"""\paragraph{{Rational-product form.}} This is the exact algebraic conversion of the specialized plethystic exponential.
+\begin{{equation}}
 \resizebox{{0.98\linewidth}}{{!}}{{${{\displaystyle
 \mathrm{{HWG}}={product}.}}$}}
 \end{{equation}}""" if product else
@@ -380,6 +381,7 @@ the latter agrees with the independently stored scalar result.
 {finite_source}
 
 \section{{Highest-weight generating function}}
+The source is Eq.~({theory.source_references[0].equation}); the expression below is its $N={nc}$ specialization.
 \begin{{equation}}
 \mathrm{{HWG}}={pe}.
 \end{{equation}}
@@ -437,6 +439,11 @@ the latter agrees with the independently stored scalar result.
         "no_terms_above_order": True, "all_stored_terms_through_order_included": degree_sets_complete,
         "all_multiplicities_are_exact_integers": all(_fraction(x).denominator == 1 for x in all_multiplicities),
         "negative_pl_coefficients_retained": any(_fraction(x["coefficient"]) < 0 for es in pl.values() for x in es),
+        "rational_product_section_identifiable": ("Rational-product form" in document),
+        "product_notation_retains_all_simple_factors": all(f.cartan_name in representation_notation for f in theory.simple_factors),
+        "native_a1_triplet_semantically_present": (len(theory.simple_factors) < 2 or
+            any(e["irreducible_representations"][1]["dynkin_labels"] == [2]
+                for e in pl.get("2", []))),
         "no_character_valued_q_equals_one_series": "q=1" not in document,
         "latex_has_no_python_json_or_sage_objects": not any(x in document for x in ("{\\'", '"coefficients', "CharacterRing", "sage.")),
         "generation_is_deterministic": True,

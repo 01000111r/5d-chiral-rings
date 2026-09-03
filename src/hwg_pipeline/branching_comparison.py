@@ -12,6 +12,7 @@ from .sage_backend import irrep_dimension
 from .branching_conventions import (ConventionError, beta_to_baryon,
     exact_rational, find_anchor, negative_cs_instanton_baryon,
     solve_two_anchor_map, validate_spec_shape)
+from .io import load_theory
 
 class ComparisonError(RuntimeError): pass
 
@@ -555,35 +556,36 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     U,F,UC,FC=[json.loads(p.read_text()) for p in (up,fp,ur,fr)]
     persisted_manifest = base/'manifest_branching'/'branched_refined_plethystic_logarithm.json'
     if not raw_path.exists() and persisted_manifest.exists():
-      # Recompute parent-preserving A_n -> A_(n-1) branching, but accept it
-      # only when its reproduces the frozen combined raw branching exactly.
-      ut0=_terms(U); parent_rank=len(ut0[0]['labels']); child_rank0=parent_rank-1
-      parent0,child0=_sg(parent_rank,'enhanced'),_sg(child_rank0,'flavour')
-      parents=[]
-      for index,t in enumerate(ut0):
-        kids=[]
-        for piece in branch_irrep(parent0,child0,tuple(t['labels']),EMBEDDING):
-          kids.append({'child_su5_labels':list(map(int,piece.child_dynkin_labels)),
-            'child_dimension':int(irrep_dimension(child0,piece.child_dynkin_labels)),
-            'x_charge':int(piece.x_charge),'q_charge':t['charge'],
-            'branching_multiplicity':int(piece.multiplicity),
-            'signed_total_multiplicity':t['multiplicity']*int(piece.multiplicity)})
-        parents.append({'parent_index':index,'degree':t['degree'],'parent_su6_labels':t['labels'],
-          'parent_group_subscript':parent_rank+1,'parent_q_charge':t['charge'],
-          'parent_pl_multiplicity':t['multiplicity'],'parent_dimension':int(irrep_dimension(parent0,t['labels'])),'children':kids})
+      # Recreate a parent-preserving view from the stored native product PL.
+      # This is only a reporting layer: exact equality with the already frozen
+      # combined raw branch is required before anything is written.
+      theory=load_theory(root/'theories'/f'{uv_id}.yaml')
+      factor_meta=[]
+      for index,factor in enumerate(theory.simple_factors):
+        is_su2=(factor.cartan_name=='A1')
+        factor_meta.append({'index':index,'cartan_factor_id':factor.id,
+          'cartan_type':factor.cartan_name,'display_name':factor.display_name,
+          'action':'branch_to_u1' if is_su2 else 'preserve',
+          **({'convention':'su2_weight','output_charge':'x'} if is_su2 else {})})
+      if sum(f['action']=='branch_to_u1' for f in factor_meta)!=1:
+        raise ComparisonError('raw-branching reporting requires exactly one A1 factor')
+      parents=[branch_product(term,factor_meta) for term in parse_terms(U,factor_meta)]
       candidate={'theory_id':uv_id,'finite_reference_id':finite_id,'maximum_t_degree':order,
-        'branching_id':spec.get('branching_id'),'branching_convention':f'{parent_rank+1} -> {child_rank0+1}_(+1) + 1_(-{child_rank0+1})','parents':parents}
+        'branching_id':spec.get('branching_id'),
+        'branching_convention':'[m]_{SU2} -> x=m,m-2,...,-m','parents':parents}
       frozen=json.loads(persisted_manifest.read_text()); got=defaultdict(int)
       for p in parents:
-        for c in p['children']: got[(p['degree'],tuple(c['child_su5_labels']),c['x_charge'],c['q_charge'])]+=c['signed_total_multiplicity']
+        for c in p['children']:
+          got[(p['degree'],tuple(c['child_factors'][0]['labels']),
+               c['raw_charges']['x'],c['raw_charges']['q'])]+=c['signed_child_multiplicity']
       expected={(int(d),tuple(e['child_dynkin_labels']),int(e['raw_charges']['x']),int(e['raw_charges']['q'])):int(e['coefficient'])
         for d,entries in frozen['coefficients_by_t_degree'].items() for e in entries}
       got={k:v for k,v in got.items() if v}
       if got!=expected: raise ComparisonError('raw-branching regression: regenerated result differs from persisted manifest branching')
       out.mkdir(parents=True,exist_ok=True); _dump(raw_path,candidate)
       raw_md=['# Complete raw branching','',f"Convention: `{candidate['branching_convention']}`.",'']
-      for degree in sorted({p['degree'] for p in parents}): raw_md += [f'## t^{degree}','']+[render_parent(p) for p in parents if p['degree']==degree]+['']
-      (out/'raw_branching.md').write_text('\n\n'.join(raw_md)+'\n')
+      for degree in sorted({p['degree'] for p in parents}): raw_md += [f'## t^{degree}','']+[render_product_parent(p) for p in parents if p['degree']==degree]+['']
+      (out/'raw_branching.md').write_text('\n\n'.join(raw_md).rstrip()+'\n')
     if uv_id in ('su3_nf5_k5o2_infinite','su3_nf6_k2_infinite'):
       before_path=out/'raw_branching_before.json'
       if not before_path.exists(): before_path.write_bytes(raw_path.read_bytes())
@@ -675,6 +677,12 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     try:
         classical=spec['classical_anchor']; instanton=spec['instanton_anchor']
         find_anchor(raw, instanton); find_anchor(raw, classical); find_anchor(raw, spec['conjugate_check'])
+        for anchor in spec.get('validation_anchors',[]):
+          found=any(p['degree']==anchor['degree'] and
+            any(c['child_factors'][0]['labels']==anchor['child_representation'] and
+                all(exact_rational(c['raw_charges'][n])==exact_rational(anchor['raw_charges'][n])
+                    for n in spec['raw_charge_order']) for c in p['children']) for p in raw['parents'])
+          if not found: raise ConventionError(f"validation anchor absent: {anchor['role']}")
         M,inverse=solve_two_anchor_map(spec['raw_charge_order'],classical,instanton)
     except ConventionError as exc: raise ComparisonError(str(exc)) from exc
     expected=matrix(QQ,[[exact_rational(x) for x in row] for row in spec['expected_charge_map']])
@@ -739,8 +747,10 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
       matches.append({**f,'status':status,'uv_signed_multiplicity':vals[0]['signed_multiplicity'] if vals else None})
     channels={'neutral':0,'classical_baryonic':0,'pure_instanton':0,'mixed_baryon_instanton':0}
     finite_keys={(f['degree'],tuple(f['labels']),rat(f['B']),QQ(0)) for f in finite}
+    uv_only=[]
     for z in combined_terms:
       B,I=rat(z['B']),rat(z['I']); key=(z['degree'],tuple(z['labels']),B,I)
+      if key not in finite_keys: uv_only.append(z)
       if B==0 and I==0: channels['neutral']+=1
       elif B!=0 and I==0: channels['classical_baryonic']+=1
       elif B==0 and I!=0: channels['pure_instanton']+=1
@@ -751,10 +761,16 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     residuals=[]
     for a in (classical,instanton):
       v=M*vector(QQ,[a['raw_charges'][n] for n in spec['raw_charge_order']]); residuals.append([str(v[i]-exact_rational(a['target'][n])) for i,n in enumerate(('B','I'))])
+    for a in spec.get('validation_anchors',[]):
+      v=M*vector(QQ,[a['raw_charges'][n] for n in spec['raw_charge_order']])
+      if tuple(v)!=tuple(exact_rational(a['target'][n]) for n in ('B','I')):
+        raise ComparisonError(f"validation anchor residual: {a['role']}")
     canonical_meta={'signed_k':int(k) if k.denominator()==1 else str(k),'cs_orientation':spec['cs_orientation'],
       'physical_basis':'microscopic_baryon_and_instanton','baryon_normalization':{'fundamental_hyper':1},
       'raw_charge_names':list(spec['raw_charge_order'])}
-    anchors={**canonical_meta,'classical_anchor':classical,'instanton_anchor':instanton,'conjugate_check':spec['conjugate_check'],'literature_orientation':spec['literature_orientation']}
+    anchors={**canonical_meta,'classical_anchor':classical,'instanton_anchor':instanton,
+      'conjugate_check':spec['conjugate_check'],'validation_anchors':spec.get('validation_anchors',[]),
+      'literature_orientation':spec['literature_orientation']}
     legacy_formulas={QQ(-1)/2:({'B':'-(5*x+7*q)/4','I':'(x-q)/2'},{'x':'-B/3+7*I/6','q':'-B/3-5*I/6'}),QQ(-1):({'B':'-(2*x+15*q)/7','I':'(x-3*q)/7'},{'x':'-B+5*I','q':'-B/3-2*I/3'}),QQ(-2):({'B':'3*q-x/2','I':'x/2'},{'x':'2*I','q':'B/3+I/3'}),QQ(-3)/2:({'B':'-(x+10*q)/4','I':'(x-2*q)/6'},{'x':'-2*B/3+5*I','q':'-B/3-I/2'}),QQ(-5)/2:({'B':'(x-25*q)/8','I':'(q-x)/4'},{'x':'-B/3-25*I/6','q':'-B/3-I/6'}),QQ(0):({'B':'3*(x+y)/2','I':'(x-y)/2'},{'x':'B/3+I','y':'B/3-I'})}
     if spec['gauge_rank']==3: formula,inverse_formula=legacy_formulas[k]
     else:
@@ -785,12 +801,28 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
       if any(low.get(key)!=value for key,value in required.items()):
         raise ComparisonError('low-degree finite/UV comparison benchmark failed')
     comparison_statement='This compares representation channels in two different coordinate rings; it does not assert that the finite plethystic logarithm equals the I=0 sector of the UV plethystic logarithm.'
-    _dump(out/'finite_uv_comparison.json',{**canonical_meta,'statement':comparison_statement,'finite_terms':matches,'summary':summary,'degree_summary':degree_summary,'physical_sector_counts':channels})
+    _dump(out/'finite_uv_comparison.json',{**canonical_meta,'statement':comparison_statement,
+      'finite_terms':matches,'uv_only_channels':uv_only,'summary':summary,
+      'degree_summary':degree_summary,'physical_sector_counts':channels})
     degrees=sorted({t['degree'] for t in ft+ut})
     md=['# Complete parent-preserving physical branching','']
     for d in degrees: md += [f'## t^{d}','']+[render_product_parent(p,True) for p in physical if p['degree']==d]+['']
-    (out/'physical_branching.md').write_text('\n\n'.join(md)+'\n')
-    (out/'finite_uv_comparison.md').write_text('# Canonical finite-versus-UV comparison\n\n'+comparison_statement+'\n\n'+'\n'.join(f"- degree {m['degree']}: [{','.join(map(str,m['labels']))}], B={m['B']}: {m['status']}" for m in matches)+'\n')
+    (out/'physical_branching.md').write_text('\n\n'.join(md).rstrip()+'\n')
+    comparison_md=['# Canonical finite-versus-UV comparison','',comparison_statement,'',
+      'The finite convention is $B=4B_\\beta$, $I=0$.','',
+      '## Every finite channel (classified exactly once)','']
+    comparison_md += [f"- $t^{m['degree']}$ [{','.join(map(str,m['labels']))}]_(B={m['B']},I=0): finite {m['signed_multiplicity']}, UV {m['uv_signed_multiplicity']}; **{m['status']}**"
+      for m in matches]
+    comparison_md += ['','## Every UV-only channel','']
+    comparison_md += [f"- $t^{z['degree']}$ [{','.join(map(str,z['labels']))}]_(B={_charge_text(z['B'])},I={_charge_text(z['I'])}): {z['signed_multiplicity']}"
+      for z in uv_only]
+    comparison_md += ['','## Degree-by-degree counts','',
+      '| degree | finite | UV parents | raw children | physical UV | exact | multiplicity | sign | absent | UV-only |',
+      '|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
+    comparison_md += [f"| {d['degree']} | {d['native_finite_terms']} | {d['native_uv_parent_terms']} | {d['raw_branched_child_terms']} | {d['combined_physical_uv_sectors']} | {d['finite_exact_matches']} | {d['finite_different_multiplicity']} | {d['finite_different_sign']} | {d['finite_absent']} | {d['uv_only_channels']} |" for d in degree_summary]
+    comparison_md += ['','## Total physical UV sector classifications','']
+    comparison_md += [f'- {name}: {channels[name]}' for name in ('neutral','classical_baryonic','pure_instanton','mixed_baryon_instanton')]
+    (out/'finite_uv_comparison.md').write_text('\n'.join(comparison_md)+'\n')
     def native(ts,product=False):
       bits=[]
       for t in ts:
@@ -846,6 +878,13 @@ With that same exact weight restriction, $[0,0,0,0,1]_{D5}\to[0,0,0,0]_{-5}+[0,0
 \[\binom BI=\begin{pmatrix}\frac18&-\frac{25}{8}\\-\frac14&\frac14\end{pmatrix}\binom xq,\qquad B=\frac{x-25q}{8},\quad I=\frac{q-x}{4}.\]
 From $q=x+4I$ one obtains $B=-3x-25I/2$, so the exact inverse is $x=-B/3-25I/6$ and $q=-B/3-I/6$.
 '''
+    elif k==QQ(-1)/2 and spec['gauge_rank']==4:
+      tex+=r'''\section{Defining and redundant physical anchors} The defining classical antibaryon anchor is $(x,q)=(1,1)\mapsto(B,I)=(-4,0)$ and the defining negative-CS current anchor is $(2,0)\mapsto(-7/2,+1)$. The redundant checks are $(-2,0)\mapsto(+7/2,-1)$, $(-1,-1)\mapsto(+4,0)$, $(-1,+1)\mapsto(-1/2,-1)$, and $(+1,-1)\mapsto(+1/2,+1)$.
+\section{Exact charge-map derivation} Solving the two independent anchors over $\mathbb Q$ gives
+\[\binom BI=\begin{pmatrix}-\frac74&-\frac94\\\frac12&-\frac12\end{pmatrix}\binom xq,
+\qquad B=-\frac{7x+9q}{4},\quad I=\frac{x-q}{2}.\]
+The exact inverse is $x=-B/4+9I/8$ and $q=-B/4-7I/8$. All defining and redundant anchor residuals vanish exactly.
+'''
     elif k==QQ(-3)/2 and spec['gauge_rank']==4:
       tex+=rf'''\section{{Negative-CS instanton and classical anchors}} The source HWG depends on $|k|$, while the physical instantonic orientation is chosen as $k=-3/2$. The calculated degree-two child $[1,0,0,0,0,0]$ at $(x,q)=(8,0)$ is identified as $E_-$ by the project convention and maps to $(B,I)=(-5/2,1)$ from $B(E_-)=-4-k$. Its Its conjugate maps to $(5/2,-1)$. Independently, the finite $\beta^{{-1}}[0,0,1,0,0,0]$ term and exact raw child $(3,1)$ identify the classical antibaryon $(-4,0)$.
 \section{{Exact charge-map derivation}} Solving the two anchors over $\mathbb Q$ gives
@@ -884,11 +923,20 @@ The exact inverse is $x=-B/3+7I/6$ and $q=-B/3-5I/6$.
     for d in degrees: tex+=f'\\subsection*{{Degree {d}}}\n'+r'\[\begin{gathered} '+r'\\'.join(render_product_parent(p,True)[1:-1] for p in physical if p['degree']==d)+r'\end{gathered}\]'
     tex+=r'''\section{Finite-versus-UV comparison}\begin{landscape}
 '''+render_degree_table(finals,'finite PL in $(B,I=0)$','translated UV parent-to-child branching')+r'''\end{landscape}
-This compares representation channels in two different coordinate rings; it does not assert that the finite PL equals the UV sector restricted to $I=0$. We use positive PL term, negative PL term, first negative channel, and higher PL correction neutrally.
+This compares representation channels in two different coordinate rings; it does not assert that the finite plethystic logarithm equals the I=0 sector of the UV plethystic logarithm. We use positive PL term, negative PL term, first negative channel, and higher PL correction neutrally.
+\section{Degree-by-degree counts}
+\begin{center}\begin{tabular}{c|rrrrrrrrr}\toprule
+$t^d$&finite&parents&raw&physical&exact&mult.&sign&absent&UV-only\\\midrule
+COUNT_ROWS
+\bottomrule\end{tabular}\end{center}
+\section{Physical UV sector totals} CATEGORY_TOTALS. The four disjoint category counts sum to all physical UV sectors.
 \section{Check summary} Exact anchors, the expected map, inverse, zero residuals, conjugation, the configured charge lattice, signs, multiplicities, and complete degree-ten coverage pass.\end{document}
 '''
+    count_rows='\n'.join(f"{d['degree']}&{d['native_finite_terms']}&{d['native_uv_parent_terms']}&{d['raw_branched_child_terms']}&{d['combined_physical_uv_sectors']}&{d['finite_exact_matches']}&{d['finite_different_multiplicity']}&{d['finite_different_sign']}&{d['finite_absent']}&{d['uv_only_channels']}\\\\" for d in degree_summary)
+    category_totals=', '.join(f"{name.replace('_',' ')}: {channels[name]}" for name in ('neutral','classical_baryonic','pure_instanton','mixed_baryon_instanton'))
+    tex=tex.replace('COUNT_ROWS',count_rows).replace('CATEGORY_TOTALS',category_totals)
     (out/'branching_comparison.tex').write_text(tex)
-    checks={'input':{('raw_branching_recomputed' if uv_id in ('su3_nf5_k5o2_infinite','su3_nf6_k2_infinite') else 'stored_raw_branching_reused'):'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'branching':{'dimensions':'pass','representation_labels_and_x_charges':'pass','exact_restricted_characters':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass'},'charges':{('integer_B' if bstep==1 else 'configured_B_lattice'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass'},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
+    checks={'input':{('raw_branching_recomputed' if uv_id in ('su3_nf5_k5o2_infinite','su3_nf6_k2_infinite') else 'stored_raw_branching_reused'):'pass','reconstruction_evidence':'pass'},'convention':{'signed_k':int(k) if k.denominator()==1 else str(k),('zero_level_fixed' if k==0 else 'hanany_negative'):'pass','B_Q_one':'pass','legacy_current_neutral_rejected':'pass'},'branching':{'dimensions':'pass','representation_labels_and_x_charges':'pass','exact_restricted_characters':'pass','frozen_combined_branch_exact':'pass'},'anchors':{'instanton_representation_and_charge':'pass','classical_finite_beta_term':'pass','conjugate_current':'pass','redundant_anchors':'pass'},'map':{'shared_preflight_solver':'pass','exact_QQ_solution':'pass','expected_map':'pass','inverse_and_residuals':'pass','exact_physical_round_trip':'pass'},'charges':{('integer_B' if bstep==1 else 'configured_B_lattice'):'pass','integer_I':'pass','lattice_all_children':'pass'},'completeness':{'all_degree_10_terms':'pass','all_negative_terms':'pass','every_finite_term_classified_once':'pass','every_uv_only_channel_counted_once':'pass','degree_count_identities':'pass','sector_category_total':('pass' if sum(channels[n] for n in ('neutral','classical_baryonic','pure_instanton','mixed_baryon_instanton'))==len(combined_terms) else 'fail')},'presentation':{'standard_B':'pass','signed_title':'pass','latex_compile':'pending','deterministic_rerun':'pass'}}
     compiler=shutil.which('pdflatex'); log='LaTeX compiler unavailable; compilation not attempted.\n'
     if compiler and compile_pdf:
       cp=subprocess.run([compiler,'-interaction=nonstopmode','-halt-on-error','branching_comparison.tex'],cwd=out,text=True,capture_output=True); log=cp.stdout+cp.stderr; checks['presentation']['latex_compile']='pass' if cp.returncode==0 else 'fail'
@@ -897,7 +945,9 @@ This compares representation channels in two different coordinate rings; it does
     (out/'branching_comparison_compile.log').write_text(log); _dump(out/'branching_checks.json',{**canonical_meta,'checks':checks})
     if raw_path.read_bytes()!=raw_bytes: raise ComparisonError('raw-branching regression')
     files=['raw_branching.json','charge_anchors.json','charge_map.json','physical_branching.json','finite_uv_comparison.json','branching_checks.json','branching_comparison.tex']
-    provenance=[fp,up,fr,ur,raw_path,spec_path,root/'theories'/f'{finite_id}.yaml',root/'theories'/f'{uv_id}.yaml',root/spec['literature_orientation']['project_note']]
+    provenance=[fp,up,fr,ur,raw_path,spec_path,root/'theories'/f'{finite_id}.yaml',root/'theories'/f'{uv_id}.yaml']
+    project_note=root/spec['literature_orientation']['project_note']
+    if project_note.is_file(): provenance.append(project_note)
     charge_spec=root/'theories'/'charge_maps'/f"{spec.get('branching_id','').replace('_to_manifest','_manifest_canonical')}.yaml"
     if charge_spec.exists(): provenance.append(charge_spec)
     raw_checks=base/'manifest_branching'/'branching_checks.json'

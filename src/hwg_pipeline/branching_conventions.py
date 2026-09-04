@@ -115,7 +115,15 @@ def find_anchor(raw_payload, anchor):
     """Representation-aware exact anchor lookup (never raw-charge-only)."""
     matches = []
     for parent in raw_payload["parents"]:
-        if parent["degree"] != anchor["degree"] or _parent_labels(parent) != anchor["parent_representations"]:
+        parent_labels = _parent_labels(parent)
+        expected_labels = anchor["parent_representations"]
+        # Product-aware payloads store one list per simple factor, whereas
+        # the canonical single-factor specifications retain the historical
+        # flat Dynkin-label list.
+        if (parent_labels and isinstance(parent_labels[0], list)
+                and expected_labels and isinstance(expected_labels[0], int)):
+            parent_labels = parent_labels[0] if len(parent_labels) == 1 else parent_labels
+        if parent["degree"] != anchor["degree"] or parent_labels != expected_labels:
             continue
         for child in parent["children"]:
             if _child_labels(child) == anchor["child_representation"] and _raw(child) == anchor["raw_charges"]:

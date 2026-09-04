@@ -1,0 +1,5136 @@
+{
+  "baryon_normalization": {
+    "fundamental_hyper": 1
+  },
+  "cs_orientation": "hanany_negative",
+  "degree_summary": [
+    {
+      "combined_physical_uv_sectors": 4,
+      "degree": 2,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 1,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 1,
+      "native_finite_terms": 2,
+      "native_uv_parent_terms": 2,
+      "physical_category_counts": {
+        "classical_baryonic": 0,
+        "mixed_baryon_instanton": 2,
+        "neutral": 2,
+        "pure_instanton": 0
+      },
+      "raw_branched_child_terms": 4,
+      "uv_only_channels": 2
+    },
+    {
+      "combined_physical_uv_sectors": 12,
+      "degree": 4,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 0,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 4,
+      "native_finite_terms": 4,
+      "native_uv_parent_terms": 4,
+      "physical_category_counts": {
+        "classical_baryonic": 2,
+        "mixed_baryon_instanton": 8,
+        "neutral": 2,
+        "pure_instanton": 0
+      },
+      "raw_branched_child_terms": 12,
+      "uv_only_channels": 8
+    },
+    {
+      "combined_physical_uv_sectors": 25,
+      "degree": 6,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 2,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 5,
+      "native_finite_terms": 7,
+      "native_uv_parent_terms": 5,
+      "physical_category_counts": {
+        "classical_baryonic": 6,
+        "mixed_baryon_instanton": 18,
+        "neutral": 1,
+        "pure_instanton": 0
+      },
+      "raw_branched_child_terms": 25,
+      "uv_only_channels": 18
+    },
+    {
+      "combined_physical_uv_sectors": 70,
+      "degree": 8,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 9,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 8,
+      "native_finite_terms": 17,
+      "native_uv_parent_terms": 12,
+      "physical_category_counts": {
+        "classical_baryonic": 16,
+        "mixed_baryon_instanton": 50,
+        "neutral": 4,
+        "pure_instanton": 0
+      },
+      "raw_branched_child_terms": 70,
+      "uv_only_channels": 53
+    },
+    {
+      "combined_physical_uv_sectors": 184,
+      "degree": 10,
+      "finite_absent": 0,
+      "finite_different_multiplicity": 28,
+      "finite_different_sign": 0,
+      "finite_exact_matches": 12,
+      "native_finite_terms": 40,
+      "native_uv_parent_terms": 31,
+      "physical_category_counts": {
+        "classical_baryonic": 32,
+        "mixed_baryon_instanton": 142,
+        "neutral": 10,
+        "pure_instanton": 0
+      },
+      "raw_branched_child_terms": 184,
+      "uv_only_channels": 144
+    }
+  ],
+  "finite_terms": [
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 2,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 2
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 2,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 4,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -2
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 6,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -2
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "beta_charge": -2,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 8,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 8,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -6
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -3
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -5
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 8,
+      "labels": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "beta_charge": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "beta_charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 8
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "beta_charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "beta_charge": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "beta_charge": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "signed_multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 2
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "beta_charge": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signed_multiplicity": 3,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 6
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "beta_charge": -2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "signed_multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -3
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "signed_multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -6
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -5,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -7
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": -3,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -4
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -6
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": -4,
+      "I": 0,
+      "beta_charge": -1,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -3
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 17
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "signed_multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 5
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": 3,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 13
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 7
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signed_multiplicity": 5,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 22
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": 7,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 31
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 5
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "beta_charge": 0,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 7
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "signed_multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -3
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "signed_multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -6
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "signed_multiplicity": -5,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -7
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "signed_multiplicity": -3,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -4
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -4,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -6
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": -3
+    },
+    {
+      "B": 4,
+      "I": 0,
+      "beta_charge": 1,
+      "degree": 10,
+      "labels": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": -1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": -1
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "beta_charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "beta_charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 3
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "beta_charge": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": 3,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 6
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "beta_charge": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "signed_multiplicity": 2,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 8
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "beta_charge": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "signed_multiplicity": 1,
+      "status": "exact-match",
+      "uv_signed_multiplicity": 1
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "beta_charge": 2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "signed_multiplicity": 1,
+      "status": "representation-match-different-multiplicity",
+      "uv_signed_multiplicity": 2
+    }
+  ],
+  "physical_basis": "microscopic_baryon_and_instanton",
+  "physical_sector_counts": {
+    "classical_baryonic": 56,
+    "mixed-baryon-instanton": 220,
+    "mixed_baryon_instanton": 220,
+    "neutral": 19,
+    "pure-instanton": 0,
+    "pure_instanton": 0
+  },
+  "raw_charge_names": [
+    "x",
+    "q"
+  ],
+  "signed_k": "-5/2",
+  "statement": "This compares representation channels in two different coordinate rings; it does not assert that the finite plethystic logarithm equals the I=0 sector of the UV plethystic logarithm.",
+  "summary": {
+    "exact-match": 30,
+    "representation-match-different-multiplicity": 40
+  },
+  "uv_only_channels": [
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 2,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 2,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 4,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 4,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 4,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 4,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 6,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 6,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 6,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 6,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 6,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 6,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -8,
+      "I": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -9
+      },
+      "I": 3,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 17
+      },
+      "I": -3,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -5
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -13
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": 11,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": -11,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 13
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "degree": 8,
+      "labels": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -5
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 9
+      },
+      "I": -3,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": 8,
+      "I": 0,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 8,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -17
+      },
+      "I": 3,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 8,
+      "labels": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -7
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 7
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -9
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 8
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": 6,
+      "I": -4,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -25
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -5
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 9
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 17
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -25
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -7
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 22
+    },
+    {
+      "B": 5,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 17
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -13
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 13
+    },
+    {
+      "B": 11,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 13
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -13
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 15
+    },
+    {
+      "B": 11,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": -11,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 13
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 13
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -11,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 4
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 15
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 13
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": -5,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 22
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 25
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -17
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -5,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 22
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -7
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 25
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 9
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 13
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -13
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": -6,
+      "I": 4,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 9
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 8
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -9
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -4
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 17
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -9
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": -1,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -4
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -25
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -6
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 22
+    },
+    {
+      "B": 5,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -13
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 11,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -13
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -3,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": 11,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 3
+    },
+    {
+      "B": -11,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 13
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": 0,
+      "I": 0,
+      "degree": 10,
+      "labels": [
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -11,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 13
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 13
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 7
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -4
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -17
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -3
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 9
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -5
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 25
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -19
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -5
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -4
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 9
+      },
+      "I": -3,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 7,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 19
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -3
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 5
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -1
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 3,
+      "I": -2,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": 2
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -17
+      },
+      "I": 3,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 11
+      },
+      "I": -1,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": 1,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": -7,
+      "I": 2,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": 5
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        3,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    },
+    {
+      "B": {
+        "denominator": 2,
+        "numerator": -11
+      },
+      "I": 1,
+      "degree": 10,
+      "labels": [
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_count": 1,
+      "signed_multiplicity": -1
+    }
+  ]
+}

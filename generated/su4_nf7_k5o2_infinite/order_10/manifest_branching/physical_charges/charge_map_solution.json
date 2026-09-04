@@ -1,0 +1,274 @@
+{
+  "charge_map_id": "su4_nf7_k5o2_manifest_canonical",
+  "derived_formulas": [
+    "B = (3/8) x + (35/8) q",
+    "I = (-1/4) x + (-1/4) q"
+  ],
+  "determinant": {
+    "denominator": 1,
+    "numerator": 1
+  },
+  "inverse_formulas": [
+    "x = (-1/4) B + (-35/8) I",
+    "q = (1/4) B + (3/8) I"
+  ],
+  "inverse_matrix": [
+    [
+      {
+        "denominator": 4,
+        "numerator": -1
+      },
+      {
+        "denominator": 8,
+        "numerator": -35
+      }
+    ],
+    [
+      {
+        "denominator": 4,
+        "numerator": 1
+      },
+      {
+        "denominator": 8,
+        "numerator": 3
+      }
+    ]
+  ],
+  "matrix": [
+    [
+      {
+        "denominator": 8,
+        "numerator": 3
+      },
+      {
+        "denominator": 8,
+        "numerator": 35
+      }
+    ],
+    [
+      {
+        "denominator": 4,
+        "numerator": -1
+      },
+      {
+        "denominator": 4,
+        "numerator": -1
+      }
+    ]
+  ],
+  "matrix_rank": 2,
+  "physical_charge_order": [
+    "B",
+    "I"
+  ],
+  "raw_charge_order": [
+    "x",
+    "q"
+  ],
+  "validation_anchors": [
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "anti_instanton_current",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "id": "classical_antibaryon",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "id": "spinor_1",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 11
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 11
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "spinor_2",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": -11
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": -11
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "id": "spinor_3",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "spinor_4",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    }
+  ]
+}

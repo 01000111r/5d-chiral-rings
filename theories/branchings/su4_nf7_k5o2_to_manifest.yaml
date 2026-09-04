@@ -1,0 +1,11 @@
+id: su4_nf7_k5o2_to_manifest
+source_theory_id: su4_nf7_k5o2_infinite
+parent_simple_factor: D7
+child_simple_factor: A6
+embedding_type: D_n_to_A_n_minus_1_u1
+child_display_name: SU(7)
+raw_branching_u1_name: x
+preserved_abelian_factors: [q]
+normalization:
+  a_roots: e_i-e_(i+1)
+  x: -2 sum_i w_i

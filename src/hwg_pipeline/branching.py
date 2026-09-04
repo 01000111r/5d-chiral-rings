@@ -22,6 +22,7 @@ EMBEDDING = "A_n_to_A_n_minus_1_u1"
 PRODUCT_A1_EMBEDDING = "product_preserve_A_branch_A1_to_u1"
 D5_EMBEDDING = "D5_to_A4_u1"
 D6_EMBEDDING = "D6_to_A5_u1"
+D_EMBEDDING = "D_n_to_A_n_minus_1_u1"
 
 
 @dataclass(frozen=True)
@@ -89,6 +90,13 @@ def load_branching_spec(path):
             raise ValueError("product branching must identify preserved and branched factor ids")
         if data.get("normalization") != {"su2_irrep_weights": "m,m-2,...,-m"}:
             raise ValueError("A1 -> U(1) normalization must be the exact SU(2) weight convention")
+        return spec
+    if spec.embedding_type == D_EMBEDDING:
+        n = int(spec.parent_simple_factor[1:])
+        if spec.parent_simple_factor != f"D{n}" or spec.child_simple_factor != f"A{n-1}" or n < 4:
+            raise ValueError("D_n embedding requires D_n -> A_(n-1), n >= 4")
+        if data.get("normalization") != {"a_roots": "e_i-e_(i+1)", "x": "-2 sum_i w_i"}:
+            raise ValueError("D_n branching normalization must specify the exact root and x conventions")
         return spec
     _validate_embedding(spec.parent_simple_factor, spec.child_simple_factor, spec.embedding_type)
     expected = ({"child_dynkin_labels": [1] + [0]*(int(spec.child_rank)-1), "x_charge": 1},
@@ -161,6 +169,11 @@ def branch_irrep(parent_group, child_group, labels, embedding=EMBEDDING):
     """Return the finite exact irreducible branching of one parent irrep."""
     parent, child = _cartan_name(parent_group), _cartan_name(child_group)
     labels = tuple(ZZ(x) for x in labels)
+    if embedding == D_EMBEDDING:
+        rank = int(parent[1:]) if parent.startswith("D") else -1
+        if rank < 4 or child != f"A{rank-1}":
+            raise ValueError("D_n embedding requires D_n -> A_(n-1), n >= 4")
+        return _branch_d_a(labels, rank)
     if embedding == D5_EMBEDDING:
         if parent != "D5" or child != "A4":
             raise ValueError("D5 embedding requires D5 -> A4")
@@ -180,12 +193,12 @@ def validate_d_type_branching(parent_name, labels, actual_children):
     weights, not from dimensions.  The resulting error identifies both sides.
     """
     rank=int(str(parent_name)[1:])
-    if parent_name not in ("D5", "D6"):
-        raise ValueError("strict D-type validation supports the configured D5/D6 embeddings")
+    if parent_name not in ("D5", "D6") and not (parent_name.startswith("D") and rank >= 4):
+        raise ValueError("strict D-type validation requires D_n, n >= 4")
     child_rank=rank-1
     parent=SimpleGroupSpec("strict-parent","D",rank,f"SO({2*rank})",tuple(f"p{i}" for i in range(rank)))
     child=SimpleGroupSpec("strict-child","A",child_rank,f"SU({rank})",tuple(f"c{i}" for i in range(child_rank)))
-    embedding=D5_EMBEDDING if rank==5 else D6_EMBEDDING
+    embedding=D5_EMBEDDING if rank==5 else (D6_EMBEDDING if rank==6 else D_EMBEDDING)
     expected=branch_irrep(parent,child,tuple(labels),embedding)
     e=sorted((tuple(z.child_dynkin_labels),ZZ(z.x_charge),ZZ(z.multiplicity)) for z in expected)
     a=sorted((tuple(ZZ(v) for v in lab),ZZ(x),ZZ(m)) for lab,x,m in actual_children)
@@ -196,6 +209,42 @@ def validate_d_type_branching(parent_name, labels, actual_children):
                          "fixed-charge restricted-weight evidence differs")
     return {"parent":tuple(labels),"expected_children":tuple(e),"actual_children":tuple(a),
             "dimension_equal":True,"restricted_character_equal":True}
+
+
+@lru_cache(maxsize=None)
+def _branch_d_a(labels, rank):
+    """Restrict ``D_n`` exactly using roots ``e_i-e_(i+1)`` and ``x=-2 sum(w_i)``."""
+    from sage.all import WeylCharacterRing
+    if len(labels) != rank or any(x < 0 for x in labels):
+        raise ValueError(f"Dynkin-label length must equal parent rank {rank}")
+    D = WeylCharacterRing(f"D{rank}", style="coroots")
+    A = WeylCharacterRing(f"A{rank-1}", style="coroots")
+    def character(ring, dynkin):
+        weight = sum((a*ring.fundamental_weights()[i+1]
+                      for i,a in enumerate(dynkin)), ring.space().zero())
+        return ring(weight)
+    slices = {}
+    for weight, multiplicity in character(D, labels).weight_multiplicities().items():
+        coords = tuple(weight[i] for i in range(rank))
+        x = ZZ(-2*sum(coords))
+        dynkin = tuple(ZZ(coords[i]-coords[i+1]) for i in range(rank-1))
+        slices.setdefault(x, {})[dynkin] = ZZ(multiplicity)
+    answer=[]
+    for x, remaining in slices.items():
+        remaining={k:v for k,v in remaining.items() if v}
+        while remaining:
+            dominant=[k for k,v in remaining.items() if v>0 and all(a>=0 for a in k)]
+            if not dominant: raise ValueError(f"exact A{rank-1} character decomposition failed")
+            highest=max(dominant,key=lambda k:(sum((i+1)*(rank-i)*k[i] for i in range(rank-1)),k))
+            coefficient=remaining[highest]
+            answer.append(BranchedIrrepTerm(highest,x,coefficient))
+            for weight,mult in character(A,highest).weight_multiplicities().items():
+                c=tuple(weight[i] for i in range(rank))
+                key=tuple(ZZ(c[i]-c[i+1]) for i in range(rank-1))
+                remaining[key]=remaining.get(key,ZZ.zero())-coefficient*ZZ(mult)
+                if not remaining[key]: del remaining[key]
+            if any(v<0 for v in remaining.values()): raise ValueError("non-character in exact D_n restriction")
+    return tuple(sorted(answer,key=lambda term:(term.x_charge,term.child_dynkin_labels)))
 
 
 @lru_cache(maxsize=None)

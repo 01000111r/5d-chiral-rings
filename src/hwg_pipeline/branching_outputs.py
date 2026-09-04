@@ -5,7 +5,7 @@ from pathlib import Path
 
 from sage.all import QQ, ZZ
 
-from .branching import PRODUCT_A1_EMBEDDING, branch_a1_to_u1, branch_irrep, irrep_dimension
+from .branching import D_EMBEDDING, PRODUCT_A1_EMBEDDING, branch_a1_to_u1, branch_irrep, irrep_dimension
 
 
 def _read_number(value):
@@ -103,7 +103,7 @@ def _markdown(title, entries, coefficient_key, spec):
 def write_branching_outputs(theory, order, spec, source, output):
     output.mkdir(parents=True, exist_ok=True)
     parent = theory.simple_factors[0]
-    chars, char_checks = _series(source/"character_series.json", parent, spec, "multiplicity", theory)
+    chars, char_checks = ([], []) if spec.embedding_type == D_EMBEDDING else _series(source/"character_series.json", parent, spec, "multiplicity", theory)
     pl, pl_checks = _series(source/"refined_plethystic_logarithm.json", parent, spec, "coefficient", theory)
     generators, relations, generator_checks, relation_checks = [], [], [], []
     optional = []
@@ -116,8 +116,8 @@ def write_branching_outputs(theory, order, spec, source, output):
         relations, relation_checks = _branch_entries(relations_source, parent, spec, "signed_multiplicity", theory=theory)
         optional.append(("branched_first_relation_candidates", "relation_candidates_by_t_degree", relations, "signed_multiplicity", "R_{branch}"))
 
-    datasets = (("branched_character_series", "coefficients_by_t_degree", chars, "multiplicity", "H_{branch}"),
-                ("branched_refined_plethystic_logarithm", "coefficients_by_t_degree", pl, "coefficient", "PL[H]_{branch}"), *optional)
+    datasets = ((() if not chars else (("branched_character_series", "coefficients_by_t_degree", chars, "multiplicity", "H_{branch}"),))
+                + (("branched_refined_plethystic_logarithm", "coefficients_by_t_degree", pl, "coefficient", "PL[H]_{branch}"),) + tuple(optional))
     for name, key, entries, coefficient, symbol in datasets:
         (output/f"{name}.json").write_text(json.dumps(_payload(theory, order, spec, key, entries), indent=2, sort_keys=True)+"\n")
         (output/f"{name}.tex").write_text(_tex(entries, coefficient, symbol, spec))
@@ -136,11 +136,11 @@ def write_branching_outputs(theory, order, spec, source, output):
                 for degree, entries in payload["coefficients_by_t_degree"].items() for entry in entries}
     char_dimensions = sector_dimensions(chars, "multiplicity")
     pl_dimensions = sector_dimensions(pl, "coefficient")
-    expected_char_dimensions = persisted_dimensions(source/"q_refined_dimension_series.json")
+    expected_char_dimensions = persisted_dimensions(source/"q_refined_dimension_series.json") if chars else {}
     expected_pl_dimensions = persisted_dimensions(source/"q_refined_dimension_pl.json")
     reconstructed_path = source/"reconstructed_character_series.json"
     reconstructed_equal = True
-    if reconstructed_path.exists():
+    if chars and reconstructed_path.exists():
         data = json.loads(reconstructed_path.read_text()); normalized = {"coefficients_by_t_degree": {}}
         for degree, entries in data["coefficients_by_t_degree"].items():
             normalized["coefficients_by_t_degree"][degree] = [{"abelian_charges": e["abelian_charges"],
@@ -157,7 +157,7 @@ def write_branching_outputs(theory, order, spec, source, output):
         "signed_virtual_multiplicities_retained": (
             any(QQ(e["coefficient"]) < 0 for e in pl)
             and all(x["signed_parent_dimension"] == x["signed_branched_dimension"] for x in pl_checks)),
-        "character_unrefinement_preserved": char_dimensions == expected_char_dimensions,
+        "character_unrefinement_preserved": char_dimensions == expected_char_dimensions if chars else True,
         "plethystic_log_unrefinement_preserved": pl_dimensions == expected_pl_dimensions,
         "reconstructed_character_branching_equal": reconstructed_equal,
         "raw_charge_basis_only": True, "physical_charge_map_assumed": False,

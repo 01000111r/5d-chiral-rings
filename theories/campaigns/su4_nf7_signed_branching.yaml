@@ -5,3 +5,5 @@ cases:
     specification: theories/branching/su4_nf7_k1o2_to_finite.yaml
   - theory_id: su4_nf7_k3o2_infinite
     specification: theories/branching/su4_nf7_k3o2_to_finite.yaml
+  - theory_id: su4_nf7_k5o2_infinite
+    specification: theories/branching/su4_nf7_k5o2_to_finite.yaml

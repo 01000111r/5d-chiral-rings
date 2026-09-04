@@ -1,0 +1,1157 @@
+{
+  "branching_id": "su4_nf7_k5o2_to_manifest",
+  "dimension_checks": [
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 1716,
+      "parent_dimension": 1716,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1716,
+      "signed_parent_dimension": 1716,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 2002,
+      "parent_dimension": 2002,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2002,
+      "signed_parent_dimension": 2002,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 364,
+      "parent_dimension": 364,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 728,
+      "signed_parent_dimension": 728,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 14,
+      "parent_dimension": 14,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 28,
+      "signed_parent_dimension": 28,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 11648,
+      "parent_dimension": 11648,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 11648,
+      "signed_parent_dimension": 11648,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 896,
+      "parent_dimension": 896,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 896,
+      "signed_parent_dimension": 896,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -128,
+      "signed_parent_dimension": -128,
+      "source_coefficient": -2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 4928,
+      "parent_dimension": 4928,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -4928,
+      "signed_parent_dimension": -4928,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 832,
+      "parent_dimension": 832,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2496,
+      "signed_parent_dimension": -2496,
+      "source_coefficient": -3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 5824,
+      "parent_dimension": 5824,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -11648,
+      "signed_parent_dimension": -11648,
+      "source_coefficient": -2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 29120,
+      "parent_dimension": 29120,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -29120,
+      "signed_parent_dimension": -29120,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2,
+      "signed_parent_dimension": 2,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3003,
+      "parent_dimension": 3003,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": 18018,
+      "signed_parent_dimension": 18018,
+      "source_coefficient": 6,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1001,
+      "parent_dimension": 1001,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 4004,
+      "signed_parent_dimension": 4004,
+      "source_coefficient": 4,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 91,
+      "parent_dimension": 91,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 455,
+      "signed_parent_dimension": 455,
+      "source_coefficient": 5,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 21021,
+      "parent_dimension": 21021,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true,
+      "signed_branched_dimension": 42042,
+      "signed_parent_dimension": 42042,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 21021,
+      "parent_dimension": 21021,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 42042,
+      "signed_parent_dimension": 42042,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 24024,
+      "parent_dimension": 24024,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 72072,
+      "signed_parent_dimension": 72072,
+      "source_coefficient": 3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 4004,
+      "parent_dimension": 4004,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 8008,
+      "signed_parent_dimension": 8008,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 104,
+      "parent_dimension": 104,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 208,
+      "signed_parent_dimension": 208,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -128,
+      "signed_parent_dimension": -128,
+      "source_coefficient": -2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 4928,
+      "parent_dimension": 4928,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -4928,
+      "signed_parent_dimension": -4928,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 832,
+      "parent_dimension": 832,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -2496,
+      "signed_parent_dimension": -2496,
+      "source_coefficient": -3,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 5824,
+      "parent_dimension": 5824,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -11648,
+      "signed_parent_dimension": -11648,
+      "source_coefficient": -2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 29120,
+      "parent_dimension": 29120,
+      "parent_dynkin_labels": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -29120,
+      "signed_parent_dimension": -29120,
+      "source_coefficient": -1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 1716,
+      "parent_dimension": 1716,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1716,
+      "signed_parent_dimension": 1716,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 2002,
+      "parent_dimension": 2002,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 2002,
+      "signed_parent_dimension": 2002,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 364,
+      "parent_dimension": 364,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 728,
+      "signed_parent_dimension": 728,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 14,
+      "parent_dimension": 14,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 28,
+      "signed_parent_dimension": 28,
+      "source_coefficient": 2,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 11648,
+      "parent_dimension": 11648,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 11648,
+      "signed_parent_dimension": 11648,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 896,
+      "parent_dimension": 896,
+      "parent_dynkin_labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 896,
+      "signed_parent_dimension": 896,
+      "source_coefficient": 1,
+      "t_degree": 10
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1,
+      "signed_parent_dimension": 1,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 91,
+      "parent_dimension": 91,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 91,
+      "signed_parent_dimension": 91,
+      "source_coefficient": 1,
+      "t_degree": 2
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": 64,
+      "signed_parent_dimension": 64,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -1,
+      "signed_parent_dimension": -1,
+      "source_coefficient": -1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 104,
+      "parent_dimension": 104,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -104,
+      "signed_parent_dimension": -104,
+      "source_coefficient": -1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 64,
+      "signed_parent_dimension": 64,
+      "source_coefficient": 1,
+      "t_degree": 4
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -64,
+      "signed_parent_dimension": -64,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 832,
+      "parent_dimension": 832,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -832,
+      "signed_parent_dimension": -832,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 104,
+      "parent_dimension": 104,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 104,
+      "signed_parent_dimension": 104,
+      "source_coefficient": 1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -64,
+      "signed_parent_dimension": -64,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 832,
+      "parent_dimension": 832,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -832,
+      "signed_parent_dimension": -832,
+      "source_coefficient": -1,
+      "t_degree": 6
+    },
+    {
+      "abelian_charges": {
+        "q": "-2"
+      },
+      "branched_dimension": 364,
+      "parent_dimension": 364,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -364,
+      "signed_parent_dimension": -364,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": 64,
+      "signed_parent_dimension": 64,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 832,
+      "parent_dimension": 832,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1664,
+      "signed_parent_dimension": 1664,
+      "source_coefficient": 2,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "-1"
+      },
+      "branched_dimension": 5824,
+      "parent_dimension": 5824,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5824,
+      "signed_parent_dimension": 5824,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1,
+      "parent_dimension": 1,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -1,
+      "signed_parent_dimension": -1,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 3003,
+      "parent_dimension": 3003,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": -6006,
+      "signed_parent_dimension": -6006,
+      "source_coefficient": -2,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 1001,
+      "parent_dimension": 1001,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -1001,
+      "signed_parent_dimension": -1001,
+      "source_coefficient": -1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "0"
+      },
+      "branched_dimension": 91,
+      "parent_dimension": 91,
+      "parent_dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -182,
+      "signed_parent_dimension": -182,
+      "source_coefficient": -2,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 64,
+      "parent_dimension": 64,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 64,
+      "signed_parent_dimension": 64,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 832,
+      "parent_dimension": 832,
+      "parent_dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "passed": true,
+      "signed_branched_dimension": 1664,
+      "signed_parent_dimension": 1664,
+      "source_coefficient": 2,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "1"
+      },
+      "branched_dimension": 5824,
+      "parent_dimension": 5824,
+      "parent_dynkin_labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": 5824,
+      "signed_parent_dimension": 5824,
+      "source_coefficient": 1,
+      "t_degree": 8
+    },
+    {
+      "abelian_charges": {
+        "q": "2"
+      },
+      "branched_dimension": 364,
+      "parent_dimension": 364,
+      "parent_dynkin_labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true,
+      "signed_branched_dimension": -364,
+      "signed_parent_dimension": -364,
+      "source_coefficient": -1,
+      "t_degree": 8
+    }
+  ],
+  "physical_charge_map_assumed": false,
+  "raw_charge_basis": "(x,q)",
+  "theory_id": "su4_nf7_k5o2_infinite",
+  "validation_results": {
+    "all_parent_dimensions_preserved": true,
+    "all_passed": true,
+    "character_unrefinement_preserved": true,
+    "ordinary_multiplicities_nonnegative_integers": true,
+    "physical_charge_map_assumed": false,
+    "plethystic_log_conjugation_consistent": true,
+    "plethystic_log_unrefinement_preserved": true,
+    "q_charges_preserved": true,
+    "raw_charge_basis_only": true,
+    "reconstructed_character_branching_equal": true,
+    "signed_virtual_multiplicities_retained": true,
+    "t_degrees_preserved": true,
+    "x_charges_are_exact_integers": true
+  }
+}

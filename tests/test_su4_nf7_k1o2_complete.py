@@ -138,4 +138,4 @@ def test_frozen_references_are_still_regression_cases():
     assert _json(ROOT / "generated/su4_nf7_finite/order_10/reconstruction_checks.json")["validation_results"]["all_passed"]
     assert _json(ROOT / "generated/su4_nf7_k3o2_infinite/order_10/reconstruction_checks.json")["validation_results"]["all_passed"]
     preflight = _json(ROOT / "generated/branching_convention_preflight/su4_nf7_signed_branching/preflight_results.json")
-    assert preflight["all_passed"] and {x["theory_id"] for x in preflight["theories"]} == {"su4_nf7_k1o2_infinite", "su4_nf7_k3o2_infinite"}
+    assert preflight["all_passed"] and {x["theory_id"] for x in preflight["theories"]} == {"su4_nf7_k1o2_infinite", "su4_nf7_k3o2_infinite", "su4_nf7_k5o2_infinite"}

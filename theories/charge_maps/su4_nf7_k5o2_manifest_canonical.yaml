@@ -1,0 +1,52 @@
+schema_version: 1
+id: su4_nf7_k5o2_manifest_canonical
+source_theory_id: su4_nf7_k5o2_infinite
+branching_id: su4_nf7_k5o2_to_manifest
+raw_charges: [x, q]
+physical_charges: [B, I]
+expected_unique: true
+expected_charge_map: [["3/8", "35/8"], ["-1/4", "-1/4"]]
+expected_determinant: 1
+charge_lattice: {B_step: "1/2", I_step: 1}
+defining_anchors:
+  - id: classical_baryon
+    t_degree: 4
+    child_dynkin_labels: [0, 0, 0, 1, 0, 0]
+    raw_charges: {x: -1, q: 1}
+    physical_charges: {B: 4, I: 0}
+    justification: Frozen finite beta-graded PL and exact raw branching.
+  - id: negative_cs_E_minus
+    t_degree: 2
+    child_dynkin_labels: [0, 1, 0, 0, 0, 0]
+    raw_charges: {x: -4, q: 0}
+    physical_charges: {B: "-3/2", I: 1}
+    justification: Negative-CS zero-mode convention B(E_-)=-N-k.
+validation_anchors:
+  - {id: anti_instanton_current, t_degree: 2, child_dynkin_labels: [0, 0, 0, 0, 1, 0], raw_charges: {x: 4, q: 0}, physical_charges: {B: "3/2", I: -1}}
+  - {id: classical_antibaryon, t_degree: 4, child_dynkin_labels: [0, 0, 1, 0, 0, 0], raw_charges: {x: 1, q: -1}, physical_charges: {B: -4, I: 0}}
+  - {id: spinor_1, t_degree: 4, child_dynkin_labels: [0, 0, 0, 0, 0, 1], raw_charges: {x: -5, q: 1}, physical_charges: {B: "5/2", I: 1}}
+  - {id: spinor_2, t_degree: 4, child_dynkin_labels: [0, 1, 0, 0, 0, 0], raw_charges: {x: 3, q: 1}, physical_charges: {B: "11/2", I: -1}}
+  - {id: spinor_3, t_degree: 4, child_dynkin_labels: [0, 0, 0, 0, 1, 0], raw_charges: {x: -3, q: -1}, physical_charges: {B: "-11/2", I: 1}}
+  - {id: spinor_4, t_degree: 4, child_dynkin_labels: [1, 0, 0, 0, 0, 0], raw_charges: {x: 5, q: -1}, physical_charges: {B: "-5/2", I: -1}}
+physical_pl_benchmarks:
+  2:
+    - {dynkin_labels: [0,0,0,0,0,0], B: 0, I: 0, coefficient: 2}
+    - {dynkin_labels: [1,0,0,0,0,1], B: 0, I: 0, coefficient: 1}
+    - {dynkin_labels: [0,1,0,0,0,0], B: "-3/2", I: 1, coefficient: 1}
+    - {dynkin_labels: [0,0,0,0,1,0], B: "3/2", I: -1, coefficient: 1}
+  4:
+    - {dynkin_labels: [0,0,0,0,0,1], B: "5/2", I: 1, coefficient: 1}
+    - {dynkin_labels: [0,0,0,1,0,0], B: 4, I: 0, coefficient: 1}
+    - {dynkin_labels: [0,1,0,0,0,0], B: "11/2", I: -1, coefficient: 1}
+    - {dynkin_labels: [0,0,0,0,0,0], B: 7, I: -2, coefficient: 1}
+    - {dynkin_labels: [0,0,0,0,0,0], B: -7, I: 2, coefficient: 1}
+    - {dynkin_labels: [0,0,0,0,1,0], B: "-11/2", I: 1, coefficient: 1}
+    - {dynkin_labels: [0,0,1,0,0,0], B: -4, I: 0, coefficient: 1}
+    - {dynkin_labels: [1,0,0,0,0,0], B: "-5/2", I: -1, coefficient: 1}
+    - {dynkin_labels: [0,0,0,0,0,0], B: 0, I: 0, coefficient: -1}
+    - {dynkin_labels: [2,0,0,0,0,0], B: "-3/2", I: 1, coefficient: -1}
+    - {dynkin_labels: [1,0,0,0,0,1], B: 0, I: 0, coefficient: -1}
+    - {dynkin_labels: [0,0,0,0,0,2], B: "3/2", I: -1, coefficient: -1}
+notes:
+  - B is microscopic baryon number with B(Q)=1.
+  - The physical signed-CS orientation is k=-5/2.

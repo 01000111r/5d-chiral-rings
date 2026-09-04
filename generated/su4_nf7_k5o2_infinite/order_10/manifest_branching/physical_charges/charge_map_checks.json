@@ -1,0 +1,229 @@
+{
+  "branching_id": "su4_nf7_k5o2_to_manifest",
+  "theory_id": "su4_nf7_k5o2_infinite",
+  "validation_anchors": [
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 3
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "anti_instanton_current",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 1,
+          "numerator": -4
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "id": "classical_antibaryon",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 5
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "id": "spinor_1",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": 11
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": 11
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "spinor_2",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": -11
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": -11
+        },
+        {
+          "denominator": 1,
+          "numerator": 1
+        }
+      ],
+      "id": "spinor_3",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    },
+    {
+      "actual": [
+        {
+          "denominator": 2,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "expected": [
+        {
+          "denominator": 2,
+          "numerator": -5
+        },
+        {
+          "denominator": 1,
+          "numerator": -1
+        }
+      ],
+      "id": "spinor_4",
+      "passed": true,
+      "residual": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ]
+    }
+  ],
+  "validation_results": {
+    "all_defining_anchors_exist_in_raw_data": true,
+    "all_defining_residuals_zero": true,
+    "all_passed": true,
+    "all_validation_anchors_exist_in_raw_data": true,
+    "all_validation_anchors_pass": true,
+    "complete_mandatory_inputs_translated": true,
+    "complete_pl_conjugation_through_order": true,
+    "configured_charge_lattice": true,
+    "exact_raw_physical_raw_round_trip": true,
+    "expected_determinant": true,
+    "expected_matrix_recovered": true,
+    "matrix_rank_two": true,
+    "physical_t2_benchmark": true,
+    "physical_t4_benchmark": true,
+    "raw_provenance_retained": true,
+    "solution_unique": true,
+    "t_degrees_and_dimensions_preserved": true
+  }
+}

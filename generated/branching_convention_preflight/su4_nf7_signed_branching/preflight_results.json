@@ -71,7 +71,7 @@
         "generated/su4_nf7_k3o2_infinite/order_10/refined_plethystic_logarithm.json",
         "generated/su4_nf7_finite/order_10/reconstruction_checks.json",
         "generated/su4_nf7_k3o2_infinite/order_10/reconstruction_checks.json",
-        "generated/su4_nf7_k3o2_infinite/order_10/branching_comparison/raw_branching.json",
+        "generated/su4_nf7_k3o2_infinite/order_10/manifest_branching/branched_refined_plethystic_logarithm.json",
         "theories/branching/su4_nf7_k3o2_to_finite.yaml"
       ],
       "instanton_B": "-5/2",
@@ -111,7 +111,61 @@
       },
       "status": "pass",
       "theory_id": "su4_nf7_k3o2_infinite",
-      "translated_children": 376
+      "translated_children": 234
+    },
+    {
+      "charge_lattice": {
+        "B_step": "1/2",
+        "I_step": 1
+      },
+      "classical_B": "4",
+      "classical_I": "0",
+      "input_paths": [
+        "generated/su4_nf7_finite/order_10/refined_plethystic_logarithm.json",
+        "generated/su4_nf7_k5o2_infinite/order_10/refined_plethystic_logarithm.json",
+        "generated/su4_nf7_finite/order_10/reconstruction_checks.json",
+        "generated/su4_nf7_k5o2_infinite/order_10/reconstruction_checks.json",
+        "generated/su4_nf7_k5o2_infinite/order_10/manifest_branching/branched_refined_plethystic_logarithm.json",
+        "theories/branching/su4_nf7_k5o2_to_finite.yaml"
+      ],
+      "instanton_B": "-3/2",
+      "instanton_I": "1",
+      "instanton_representation": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inverse_charge_map": [
+        [
+          "-1/4",
+          "-35/8"
+        ],
+        [
+          "1/4",
+          "3/8"
+        ]
+      ],
+      "signed_k": "-5/2",
+      "solved_charge_map": {
+        "B": [
+          "3/8",
+          "35/8"
+        ],
+        "I": [
+          "-1/4",
+          "-1/4"
+        ],
+        "raw_charge_order": [
+          "x",
+          "q"
+        ]
+      },
+      "status": "pass",
+      "theory_id": "su4_nf7_k5o2_infinite",
+      "translated_children": 295
     }
   ]
 }

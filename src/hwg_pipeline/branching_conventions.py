@@ -155,8 +155,8 @@ def validate_spec_shape(spec):
 def _input_paths(root, spec, order):
     uv = root / "generated" / spec["theory_id"] / f"order_{order}"
     fin = root / "generated" / spec["finite_reference_id"] / f"order_{order}"
-    raw = uv/"branching_comparison"/"raw_branching.json"
-    if not raw.exists(): raw = uv/"manifest_branching"/"branched_refined_plethystic_logarithm.json"
+    raw = uv/"manifest_branching"/"branched_refined_plethystic_logarithm.json"
+    if not raw.exists(): raw = uv/"branching_comparison"/"raw_branching.json"
     return [fin/"refined_plethystic_logarithm.json", uv/"refined_plethystic_logarithm.json",
             fin/"reconstruction_checks.json", uv/"reconstruction_checks.json", raw]
 

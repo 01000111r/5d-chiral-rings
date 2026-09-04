@@ -33,11 +33,18 @@ def write_charge_map_outputs(spec,theory_id,branching_id,order,source_dir,output
     solution=solve_charge_map(spec)
     if not solution.diagnostics.unique: raise ValueError("charge map is not unique")
     output.mkdir(parents=True,exist_ok=True)
-    inputs={"character":"branched_character_series.json","pl":"branched_refined_plethystic_logarithm.json"}
+    inputs={"pl":"branched_refined_plethystic_logarithm.json"}
+    if (source_dir/"branched_character_series.json").exists():
+        inputs["character"]="branched_character_series.json"
     optional={"generators":"branched_candidate_generators.json","relations":"branched_first_relation_candidates.json"}
     inputs.update({k:v for k,v in optional.items() if (source_dir/v).exists()})
     raw={k:json.loads((source_dir/v).read_text()) for k,v in inputs.items()}
     transformed={k:apply_charge_map_to_series(solution,v) for k,v in raw.items()}
+    # An invertible map cannot merge distinct raw charge vectors.  Preserve
+    # the compact, parent-level ``raw_provenance`` already carried by each
+    # source term instead of duplicating the entire source record.
+    for payload in transformed.values():
+        for entry in _entries(payload): entry.pop("provenance", None)
     names={"character":"physical_branched_character_series","pl":"physical_branched_refined_plethystic_logarithm","generators":"physical_candidate_generators","relations":"physical_first_relation_candidates"}
     for key,payload in transformed.items():
         _write(output/(names[key]+".json"),payload)
@@ -46,8 +53,8 @@ def write_charge_map_outputs(spec,theory_id,branching_id,order,source_dir,output
     for a in spec.validation_anchors:
         actual=apply_charge_map(solution,a.raw); residual=tuple(x-y for x,y in zip(actual.values,a.physical.values))
         validations.append({"id":a.id,"expected":[rational_json(x) for x in a.physical.values],"actual":[rational_json(x) for x in actual.values],"residual":[rational_json(x) for x in residual],"passed":not any(residual)})
-    sectors=_entries(transformed["character"])+_entries(transformed["pl"])
-    raw_sectors=_entries(raw["character"])+_entries(raw["pl"])
+    sectors=sum((_entries(value) for value in transformed.values()),[])
+    raw_sectors=sum((_entries(value) for value in raw.values()),[])
     raw_pl=_entries(raw["pl"])
     def anchor_present(anchor):
         return any(x["t_degree"]==anchor.t_degree and tuple(x["child_dynkin_labels"])==anchor.dynkin_labels
@@ -77,7 +84,8 @@ def write_charge_map_outputs(spec,theory_id,branching_id,order,source_dir,output
       "all_validation_anchors_exist_in_raw_data":all(anchor_present(a) for a in spec.validation_anchors),
       "configured_charge_lattice":lattice,"exact_raw_physical_raw_round_trip":roundtrip,
       "complete_pl_conjugation_through_order":conjugation,
-      "t_degrees_and_dimensions_preserved":totals(raw["character"])==totals(transformed["character"]) and totals(raw["pl"])==totals(transformed["pl"]),
+      "raw_provenance_retained":all(x.get("raw_provenance") for x in sectors),
+      "t_degrees_and_dimensions_preserved":all(totals(raw[k])==totals(transformed[k]) for k in raw),
       "complete_mandatory_inputs_translated":len(sectors)==len(raw_sectors)}
     for degree, expected in expected_by_degree.items():
         checks[f"physical_t{degree}_benchmark"]={k:v for k,v in pl_values.items() if k[0]==degree}==expected

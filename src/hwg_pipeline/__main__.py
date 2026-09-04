@@ -60,6 +60,7 @@ def _validations(theory, order, pe, product):
         "no_terms_above_requested_degree": all(m.t_degree <= order for m, _ in pe),
         "all_multiplicities_are_integers": all(c in ZZ for _, c in pe),
         "all_multiplicities_are_nonnegative": all(c >= 0 for _, c in pe),
+        "no_odd_degree_sectors": not any(m.t_degree % 2 for m, _ in pe),
         "truncation_stability": stability,
     }
     checks["all_passed"] = all(value if isinstance(value, bool) else all(value.values())
@@ -177,7 +178,33 @@ def _character_outputs(theory, order, hwg, output):
         "representation_multiplicities_nonnegative_integers": all(c in ZZ and c >= 0 for _, content in series for _, c in content),
         "dimensions_nonnegative_integers": all(c in ZZ and c >= 0 for _, c in refined),
         "q_equals_one_matches_unrefined": dict(plain) == {d: sum(c for (sd, _), c in refined if sd == d) for d, _ in plain},
+        "no_odd_degree_sectors": not any(degree % 2 for (degree, _), _ in series),
     }
+    if theory.id == "su4_nf7_k5o2_infinite":
+        from .sage_backend import irrep, irrep_dimension
+        # For odd D_n, conjugation exchanges the two terminal spinor labels.
+        def conjugate_d7(labels):
+            return labels[:-2] + (labels[-1], labels[-2])
+        terms = {(int(degree), int(dict(charges)["q"]), labels[0]): int(coefficient)
+                 for (degree, charges), content in series for labels, coefficient in content}
+        checks["q_inversion_and_d7_conjugation_symmetry"] = all(
+            terms.get((degree, -charge, conjugate_d7(labels))) == coefficient
+            for (degree, charge, labels), coefficient in terms.items())
+        dimension_benchmarks = {
+            (0, 0, 0, 0, 0, 0, 0): 1,
+            (0, 1, 0, 0, 0, 0, 0): 91,
+            (0, 0, 0, 1, 0, 0, 0): 1001,
+            (0, 0, 0, 0, 0, 1, 0): 64,
+            (0, 0, 0, 0, 0, 0, 1): 64,
+            (0, 0, 0, 0, 0, 1, 1): 3003,
+            (2, 0, 0, 0, 0, 0, 0): 104,
+        }
+        checks["exact_d7_dimension_benchmarks"] = all(
+            irrep_dimension(theory.simple_factors[0], labels) == expected
+            for labels, expected in dimension_benchmarks.items())
+        checks["d7_spinors_are_conjugate"] = (
+            irrep(theory.simple_factors[0], (0, 0, 0, 0, 0, 1, 0)).dual()
+            == irrep(theory.simple_factors[0], (0, 0, 0, 0, 0, 0, 1)))
     if [factor.cartan_name for factor in theory.simple_factors] == ["A5"] and [x.id for x in theory.abelian_factors] == ["q"]:
         expected = {0: 1, 1: 0, 2: 36, 3: 30, 4: 630}
         actual = {int(d): int(c) for d, c in plain}
@@ -364,6 +391,35 @@ def _pl_outputs(theory, order, hwg, output):
             "negative_coefficients_retained":any(c<0 for _,x in pl for _,c in x),
             "degrees_truncated":all(d<=order for (d,_),_ in pl),
             "direct_scalar_matches_refined_unrefinement":direct==plain}
+    if theory.id == "su4_nf7_k5o2_infinite":
+        def conjugate_d7(labels):
+            return labels[:-2] + (labels[-1], labels[-2])
+        terms = {(int(degree), int(dict(charges)["q"]), labels[0]): coefficient
+                 for (degree, charges), content in pl for labels, coefficient in content}
+        actual2 = {(charge, labels): int(coefficient)
+                   for (degree, charge, labels), coefficient in terms.items() if degree == 2}
+        actual4 = {(charge, labels): int(coefficient)
+                   for (degree, charge, labels), coefficient in terms.items() if degree == 4}
+        actual_dim = {}
+        for (degree, charges), coefficient in dim:
+            actual_dim.setdefault(int(degree), {})[int(dict(charges)["q"])] = int(coefficient)
+        checks.update({
+            "degree_2_independent_value": actual2 == {
+                (0, (0, 0, 0, 0, 0, 0, 0)): 1,
+                (0, (0, 1, 0, 0, 0, 0, 0)): 1},
+            "degree_4_independent_value": actual4 == {
+                (1, (0, 0, 0, 0, 0, 1, 0)): 1,
+                (-1, (0, 0, 0, 0, 0, 0, 1)): 1,
+                (0, (0, 0, 0, 0, 0, 0, 0)): -1,
+                (0, (2, 0, 0, 0, 0, 0, 0)): -1},
+            "degree_2_dimension_is_92": actual_dim.get(2) == {0: 92},
+            "degree_4_dimension_benchmark": actual_dim.get(4) == {-1: 64, 0: -105, 1: 64},
+            "no_odd_degree_sectors_through_9": not any(
+                degree <= 9 and degree % 2 for (degree, _), _ in pl),
+            "q_inversion_and_d7_conjugation_symmetry": all(
+                terms.get((degree, -charge, conjugate_d7(labels))) == coefficient
+                for (degree, charge, labels), coefficient in terms.items()),
+        })
     if [factor.cartan_name for factor in theory.simple_factors] == ["A5"] and [x.id for x in theory.abelian_factors] == ["q"]:
         expected2={((0,0,0,0,0),):1,((1,0,0,0,1),):1}; actual2={k:int(c) for (d,q),x in pl if d==2 for k,c in x}
         expected3={(1,((0,1,0,0,0),)):1,(-1,((0,0,0,1,0),)):1}

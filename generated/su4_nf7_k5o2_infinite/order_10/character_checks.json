@@ -1,0 +1,17 @@
+{
+  "maximum_t_degree": 10,
+  "theory_id": "su4_nf7_k5o2_infinite",
+  "validation_results": {
+    "all_passed": true,
+    "d7_spinors_are_conjugate": true,
+    "dimensions_nonnegative_integers": true,
+    "exact_d7_dimension_benchmarks": true,
+    "no_odd_degree_sectors": true,
+    "one_irrep_per_hwg_monomial_before_combining": true,
+    "q_charges_preserved": true,
+    "q_equals_one_matches_unrefined": true,
+    "q_inversion_and_d7_conjugation_symmetry": true,
+    "representation_multiplicities_nonnegative_integers": true,
+    "t_degrees_preserved": true
+  }
+}

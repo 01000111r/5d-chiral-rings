@@ -1,0 +1,48 @@
+id: su4_nf7_k5o2_infinite
+title: SU(4)+7F at infinite coupling with |k|=5/2
+nonphysical: false
+gauge_algebra: A3
+gauge_display_name: SU(4)
+number_of_flavours: 7
+chern_simons_level: "5/2"
+chern_simons_convention: absolute value
+coupling: infinite
+grading_variable: t
+source_references:
+  - path: references/overleaf/su3_5f_6f_hwg_results.tex
+    description: General N_f=2N-1 infinite-coupling HWG, specialized term-by-term at N=4
+    equation: "10.3"
+simple_factors:
+  - id: enhanced
+    cartan_type: D
+    rank: 7
+    display_name: SO(14)
+    highest_weight_fugacities: [mu_1, mu_2, mu_3, mu_4, mu_5, mu_6, mu_7]
+abelian_factors:
+  - id: q
+    display_name: U(1)
+    fugacity: q
+pe:
+  original_pe_latex: |-
+    \PE\!\left[(1+\mu_2)t^2+(\mu_4+q\mu_6+q^{-1}\mu_7)t^4
+    +\mu_6\mu_7t^6-\mu_6\mu_7t^8\right]
+  terms:
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {enhanced: [0, 0, 0, 0, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 2, representations: {enhanced: [0, 1, 0, 0, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 0, 1, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 0, 0, 0, 1, 0]}, abelian_charges: {q: 1}}}
+    - {coefficient: 1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 0, 0, 0, 0, 1]}, abelian_charges: {q: -1}}}
+    - {coefficient: 1, monomial: {t_degree: 6, representations: {enhanced: [0, 0, 0, 0, 0, 1, 1]}, abelian_charges: {q: 0}}}
+    - {coefficient: -1, monomial: {t_degree: 8, representations: {enhanced: [0, 0, 0, 0, 0, 1, 1]}, abelian_charges: {q: 0}}}
+rational_product:
+  original_rational_product_latex: |-
+    \frac{1-\mu_6\mu_7t^8}
+    {(1-t^2)(1-\mu_2t^2)(1-\mu_4t^4)(1-q\mu_6t^4)(1-q^{-1}\mu_7t^4)(1-\mu_6\mu_7t^6)}
+  factors:
+    - {power: 1, monomial: {t_degree: 8, representations: {enhanced: [0, 0, 0, 0, 0, 1, 1]}, abelian_charges: {q: 0}}}
+    - {power: -1, monomial: {t_degree: 2, representations: {enhanced: [0, 0, 0, 0, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {power: -1, monomial: {t_degree: 2, representations: {enhanced: [0, 1, 0, 0, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {power: -1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 0, 1, 0, 0, 0]}, abelian_charges: {q: 0}}}
+    - {power: -1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 0, 0, 0, 1, 0]}, abelian_charges: {q: 1}}}
+    - {power: -1, monomial: {t_degree: 4, representations: {enhanced: [0, 0, 0, 0, 0, 0, 1]}, abelian_charges: {q: -1}}}
+    - {power: -1, monomial: {t_degree: 6, representations: {enhanced: [0, 0, 0, 0, 0, 1, 1]}, abelian_charges: {q: 0}}}

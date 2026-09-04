@@ -1,0 +1,20 @@
+{
+  "authoritative_equation": "10.3",
+  "authoritative_source": "references/overleaf/su3_5f_6f_hwg_results.tex",
+  "exact_match": true,
+  "specialization": {
+    "N": 4,
+    "N_f": 7,
+    "enhanced_symmetry": "SO(14) x U(1)_q",
+    "terms": [
+      {"origin": "sum, i=1", "result": "mu_2 t^2"},
+      {"origin": "sum, i=2", "result": "mu_4 t^4"},
+      {"origin": "singlet", "result": "t^2"},
+      {"origin": "charged spinors", "result": "(q mu_6 + q^-1 mu_7) t^4"},
+      {"origin": "spinor product", "result": "mu_6 mu_7 (t^6 - t^8)"}
+    ]
+  },
+  "specialized_pe": "PE[(1+mu_2)t^2+(mu_4+q mu_6+q^-1 mu_7)t^4+mu_6 mu_7 t^6-mu_6 mu_7 t^8]",
+  "rational_product_provenance": "exact algebraic conversion of the specialized PE; the N=4 expression is not literally printed in the source",
+  "structured_fixture": "theories/su4_nf7_k5o2_infinite.yaml"
+}

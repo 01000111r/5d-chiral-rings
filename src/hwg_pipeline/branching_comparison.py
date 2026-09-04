@@ -555,37 +555,74 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
     up=base/'refined_plethystic_logarithm.json'; fp=fin/'refined_plethystic_logarithm.json'; ur=base/'reconstruction_checks.json'; fr=fin/'reconstruction_checks.json'
     U,F,UC,FC=[json.loads(p.read_text()) for p in (up,fp,ur,fr)]
     persisted_manifest = base/'manifest_branching'/'branched_refined_plethystic_logarithm.json'
+    is_frozen_d7 = uv_id == 'su4_nf7_k5o2_infinite'
     if not raw_path.exists() and persisted_manifest.exists():
       # Recreate a parent-preserving view from the stored native product PL.
       # This is only a reporting layer: exact equality with the already frozen
       # combined raw branch is required before anything is written.
       theory=load_theory(root/'theories'/f'{uv_id}.yaml')
-      factor_meta=[]
-      for index,factor in enumerate(theory.simple_factors):
+      if is_frozen_d7:
+        # The D7 calculation deliberately persists the complete *combined* PL
+        # branch rather than a huge parent-preserving character branch.  Make
+        # a compact reporting view of those accepted coefficients.  No weight
+        # restriction or UV character calculation occurs here.
+        frozen=json.loads(persisted_manifest.read_text())
+        parents=[]
+        for degree,entries in frozen['coefficients_by_t_degree'].items():
+          for index,e in enumerate(entries):
+            provenance=e.get('raw_provenance',[])
+            parent=(provenance[0]['parent_factor_dynkin_labels'][0]
+                    if provenance else [0]*7)
+            parents.append({'degree':int(degree),'parent_dimension':None,
+              'parent_external_charges':{'q':int(e['raw_charges']['q'])},
+              'parent_factors':[{'cartan_factor_id':'enhanced','cartan_type':'D7',
+                'display_name':'SO(14)','labels':parent}],
+              'signed_parent_pl_multiplicity':int(e['coefficient']),
+              'combined_raw_channel':True,'raw_provenance':provenance,
+              'children':[{'branching_multiplicity':1,
+                'child_dimension':int(e['child_representation_dimension']),
+                'child_factors':[{'cartan_factor_id':'flavour','cartan_type':'A6',
+                  'display_name':'SU(7)','labels':e['child_dynkin_labels']}],
+                'raw_charges':{n:int(e['raw_charges'][n]) for n in ('x','q')},
+                'signed_child_multiplicity':int(e['coefficient'])}]})
+        candidate={'theory_id':uv_id,'finite_reference_id':finite_id,
+          'maximum_t_degree':order,'branching_id':frozen['branching_id'],
+          'branching_convention':'D7 -> A6 + U(1)_x; alpha_i=e_i-e_(i+1); x=-2 sum_i w_i',
+          'source_artifact':str(persisted_manifest.relative_to(root)),
+          'combined_channels_from_frozen_pl':True,'parents':parents}
+        out.mkdir(parents=True,exist_ok=True); _dump(raw_path,candidate)
+        raw_md=['# Complete frozen raw PL branching','',
+          'Convention: `D7 -> A6 x U(1)_x`, `alpha_i=e_i-e_(i+1)`, `x=-2 sum_i w_i`.','']
+        for degree in sorted({p['degree'] for p in parents}):
+          raw_md += [f'## t^{degree}','']+[render_product_parent(p) for p in parents if p['degree']==degree]+['']
+        (out/'raw_branching.md').write_text('\n\n'.join(raw_md).rstrip()+'\n')
+      else:
+       factor_meta=[]
+       for index,factor in enumerate(theory.simple_factors):
         is_su2=(factor.cartan_name=='A1')
         factor_meta.append({'index':index,'cartan_factor_id':factor.id,
           'cartan_type':factor.cartan_name,'display_name':factor.display_name,
           'action':'branch_to_u1' if is_su2 else 'preserve',
           **({'convention':'su2_weight','output_charge':'x'} if is_su2 else {})})
-      if sum(f['action']=='branch_to_u1' for f in factor_meta)!=1:
+       if sum(f['action']=='branch_to_u1' for f in factor_meta)!=1:
         raise ComparisonError('raw-branching reporting requires exactly one A1 factor')
-      parents=[branch_product(term,factor_meta) for term in parse_terms(U,factor_meta)]
-      candidate={'theory_id':uv_id,'finite_reference_id':finite_id,'maximum_t_degree':order,
+       parents=[branch_product(term,factor_meta) for term in parse_terms(U,factor_meta)]
+       candidate={'theory_id':uv_id,'finite_reference_id':finite_id,'maximum_t_degree':order,
         'branching_id':spec.get('branching_id'),
         'branching_convention':'[m]_{SU2} -> x=m,m-2,...,-m','parents':parents}
-      frozen=json.loads(persisted_manifest.read_text()); got=defaultdict(int)
-      for p in parents:
+       frozen=json.loads(persisted_manifest.read_text()); got=defaultdict(int)
+       for p in parents:
         for c in p['children']:
           got[(p['degree'],tuple(c['child_factors'][0]['labels']),
                c['raw_charges']['x'],c['raw_charges']['q'])]+=c['signed_child_multiplicity']
-      expected={(int(d),tuple(e['child_dynkin_labels']),int(e['raw_charges']['x']),int(e['raw_charges']['q'])):int(e['coefficient'])
+       expected={(int(d),tuple(e['child_dynkin_labels']),int(e['raw_charges']['x']),int(e['raw_charges']['q'])):int(e['coefficient'])
         for d,entries in frozen['coefficients_by_t_degree'].items() for e in entries}
-      got={k:v for k,v in got.items() if v}
-      if got!=expected: raise ComparisonError('raw-branching regression: regenerated result differs from persisted manifest branching')
-      out.mkdir(parents=True,exist_ok=True); _dump(raw_path,candidate)
-      raw_md=['# Complete raw branching','',f"Convention: `{candidate['branching_convention']}`.",'']
-      for degree in sorted({p['degree'] for p in parents}): raw_md += [f'## t^{degree}','']+[render_product_parent(p) for p in parents if p['degree']==degree]+['']
-      (out/'raw_branching.md').write_text('\n\n'.join(raw_md).rstrip()+'\n')
+       got={k:v for k,v in got.items() if v}
+       if got!=expected: raise ComparisonError('raw-branching regression: regenerated result differs from persisted manifest branching')
+       out.mkdir(parents=True,exist_ok=True); _dump(raw_path,candidate)
+       raw_md=['# Complete raw branching','',f"Convention: `{candidate['branching_convention']}`.",'']
+       for degree in sorted({p['degree'] for p in parents}): raw_md += [f'## t^{degree}','']+[render_product_parent(p) for p in parents if p['degree']==degree]+['']
+       (out/'raw_branching.md').write_text('\n\n'.join(raw_md).rstrip()+'\n')
     if uv_id in ('su3_nf5_k5o2_infinite','su3_nf6_k2_infinite'):
       before_path=out/'raw_branching_before.json'
       if not before_path.exists(): before_path.write_bytes(raw_path.read_bytes())
@@ -727,6 +764,13 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
         pc=c['physical_charges']; key=(p['degree'],tuple(c['child_factors'][0]['labels']),rat(pc['B']),rat(pc['I']))
         combined[key]+=c['signed_child_multiplicity']; parentages[key].append(p['parent_factors'])
     combined_terms=[{'degree':k0[0],'labels':list(k0[1]),'B':qjson(k0[2]),'I':qjson(k0[3]),'signed_multiplicity':v,'parent_count':len(parentages[k0])} for k0,v in sorted(combined.items()) if v]
+    if is_frozen_d7:
+      frozen_physical=json.loads((base/'manifest_branching'/'physical_charges'/'physical_branched_refined_plethystic_logarithm.json').read_text())
+      accepted={(int(d),tuple(e['child_dynkin_labels']),rat(e['physical_charges']['B']),
+                 rat(e['physical_charges']['I'])):int(rat(e['coefficient']))
+                for d,entries in frozen_physical['coefficients_by_t_degree'].items() for e in entries}
+      if combined != accepted:
+        raise ComparisonError('physical reporting view differs from frozen physical PL')
     for key,multiplicity in combined.items():
       conjugate=(key[0],tuple(reversed(key[1])),-key[2],-key[3])
       if combined.get(conjugate)!=multiplicity:
@@ -792,12 +836,18 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
         'finite_different_multiplicity':sum(x['status']=='representation-match-different-multiplicity' for x in dm),
         'finite_different_sign':sum(x['status']=='representation-match-different-sign' for x in dm),
         'finite_absent':sum(x['status']=='absent' for x in dm),
-        'uv_only_channels':sum((z['degree'],tuple(z['labels']),rat(z['B']),rat(z['I'])) not in finite_keys_d for z in uv_degree)})
+        'uv_only_channels':sum((z['degree'],tuple(z['labels']),rat(z['B']),rat(z['I'])) not in finite_keys_d for z in uv_degree),
+        'physical_category_counts':{
+          'neutral':sum(rat(z['B'])==0 and rat(z['I'])==0 for z in uv_degree),
+          'classical_baryonic':sum(rat(z['B'])!=0 and rat(z['I'])==0 for z in uv_degree),
+          'pure_instanton':sum(rat(z['B'])==0 and rat(z['I'])!=0 for z in uv_degree),
+          'mixed_baryon_instanton':sum(rat(z['B'])!=0 and rat(z['I'])!=0 for z in uv_degree)}})
     if spec['gauge_rank']==4:
       low={(m['degree'],tuple(m['labels']),rat(m['B'])):(m['status'],m['signed_multiplicity'],m['uv_signed_multiplicity']) for m in matches if m['degree'] in (2,4)}
+      neutral_t4_uv = -1 if is_frozen_d7 else -2
       required={(2,(1,0,0,0,0,1),QQ(0)):('exact-match',1,1),(2,(0,0,0,0,0,0),QQ(0)):('representation-match-different-multiplicity',1,2),
         (4,(0,0,1,0,0,0),QQ(-4)):('exact-match',1,1),(4,(0,0,0,1,0,0),QQ(4)):('exact-match',1,1),
-        (4,(1,0,0,0,0,1),QQ(0)):('exact-match',-1,-1),(4,(0,0,0,0,0,0),QQ(0)):('representation-match-different-multiplicity',-1,-2)}
+        (4,(1,0,0,0,0,1),QQ(0)):('exact-match',-1,-1),(4,(0,0,0,0,0,0),QQ(0)):('exact-match' if is_frozen_d7 else 'representation-match-different-multiplicity',-1,neutral_t4_uv)}
       if any(low.get(key)!=value for key,value in required.items()):
         raise ComparisonError('low-degree finite/UV comparison benchmark failed')
     comparison_statement='This compares representation channels in two different coordinate rings; it does not assert that the finite plethystic logarithm equals the I=0 sector of the UV plethystic logarithm.'
@@ -847,6 +897,7 @@ def _generate_canonical(root,uv_id,finite_id,order,spec_path,strict=True,compile
 \section{Degree-by-degree raw branching}
 '''
     raw_convention=(r'The ordered factors are $SU(6),SU(2)_1,SU(2)_2$. The two $A_1$ factors are distinct: $SU(2)_1\to U(1)_x$ and $SU(2)_2\to U(1)_y$. Baryon and instanton number are different linear combinations of $x,y$; no external charge exists.' if k==0 else
+                    r'$D_7\to A_6\times U(1)_x$ uses $\alpha_i=e_i-e_{i+1}$ and $x=-2\sum_iw_i$; the external $q$ is retained independently.' if is_frozen_d7 else
                     rf'${parent_name}\to SU({child_rank+1})\times U(1)_x$ uses the stored {parent_type} convention; the external $q$ is kept independent.'
                     if legacy_raw and parent_type in ('D5','D6') else
                     (r'$SU(6)\to SU(5)\times U(1)_x$ uses $6\to5_{+1}+1_{-5}$; the external $q$ is kept independent.' if child_rank==4 else
@@ -868,6 +919,27 @@ The exact inverse is $x=B/3+I$, $y=B/3-I$.
 \section{Exact charge-map derivation} Write $B=ax+bq$ and $I=cx+dq$. Then $7a=-2$, $3a+b=-3$, $7c=1$, and $3c+d=0$, hence $a=-2/7$, $b=-15/7$, $c=1/7$, and $d=-3/7$:
 \[\binom BI=\begin{pmatrix}-\frac27&-\frac{15}{7}\\\frac17&-\frac37\end{pmatrix}\binom xq,\qquad B=-\frac{2x+15q}{7},\quad I=\frac{x-3q}{7}.\]
 From $x=7I+3q$ and $B=-2I-3q$, the exact inverse is $x=-B+5I$ and $q=-B/3-2I/3$.
+'''
+    elif k==QQ(-5)/2 and spec['gauge_rank']==4:
+      tex+=r'''\section{Four exact D7 branching benchmarks}
+\[
+\begin{aligned}
+[0,1,0,0,0,0,0]_{D_7}&\to[0,1,0,0,0,0]_{-4}+[1,0,0,0,0,1]_0+[0,0,0,0,0,0]_0+[0,0,0,0,1,0]_{+4},\\
+[0,0,0,0,0,1,0]_{D_7}&\to[0,0,0,0,0,1]_{-5}+[0,0,0,1,0,0]_{-1}+[0,1,0,0,0,0]_{+3}+[0,0,0,0,0,0]_{+7},\\
+[0,0,0,0,0,0,1]_{D_7}&\to[0,0,0,0,0,0]_{-7}+[0,0,0,0,1,0]_{-3}+[0,0,1,0,0,0]_{+1}+[1,0,0,0,0,0]_{+5},\\
+[2,0,0,0,0,0,0]_{D_7}&\to[2,0,0,0,0,0]_{-4}+[1,0,0,0,0,1]_0+[0,0,0,0,0,2]_{+4}.
+\end{aligned}
+\]
+The dimension checks are $91=21+48+1+21$, $64=7+35+21+1$, $64=1+21+35+7$, and $104=28+48+28$.
+\section{Defining anchors and zero-mode check}
+Exactly two anchors define the map: the classical baryon $(-1,+1)\mapsto(+4,0)$ and the negative-CS $E_-$ current $(-4,0)\mapsto(-3/2,+1)$.  Indeed $B(E_-)=-N-k=-3/2$ and $B=r-N_f/2$ imply $r=2$, hence $E_-\in\Lambda^2\mathbf7=[0,1,0,0,0,0]$.
+\section{Exact physical charge map}
+\[
+\binom BI=\begin{pmatrix}\frac38&\frac{35}{8}\\-\frac14&-\frac14\end{pmatrix}\binom xq,
+\quad B=\frac{3x+35q}{8},\quad I=-\frac{x+q}{4}.
+\]
+The inverse is $x=-B/4-35I/8$, $q=B/4+3I/8$; the matrix has rank $2$ and determinant $1$.
+The redundant anchors are $(+4,0)\mapsto(+3/2,-1)$, $(+1,-1)\mapsto(-4,0)$, $(-5,+1)\mapsto(+5/2,+1)$, $(+3,+1)\mapsto(+11/2,-1)$, $(-3,-1)\mapsto(-11/2,+1)$, and $(+5,-1)\mapsto(-5/2,-1)$.
 '''
     elif k==QQ(-5)/2:
       tex+=r'''\section{D5 embedding and corrected terminal spinors} The adjoint fixes the orientation
@@ -946,6 +1018,11 @@ COUNT_ROWS
     if raw_path.read_bytes()!=raw_bytes: raise ComparisonError('raw-branching regression')
     files=['raw_branching.json','charge_anchors.json','charge_map.json','physical_branching.json','finite_uv_comparison.json','branching_checks.json','branching_comparison.tex']
     provenance=[fp,up,fr,ur,raw_path,spec_path,root/'theories'/f'{finite_id}.yaml',root/'theories'/f'{uv_id}.yaml']
+    if is_frozen_d7:
+      provenance.extend([persisted_manifest,
+        base/'manifest_branching'/'physical_charges'/'physical_branched_refined_plethystic_logarithm.json',
+        base/'manifest_branching'/'physical_charges'/'charge_map_solution.json',
+        base/'manifest_branching'/'physical_charges'/'charge_map_checks.json'])
     project_note=root/spec['literature_orientation']['project_note']
     if project_note.is_file(): provenance.append(project_note)
     charge_spec=root/'theories'/'charge_maps'/f"{spec.get('branching_id','').replace('_to_manifest','_manifest_canonical')}.yaml"
